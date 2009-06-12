@@ -1,0 +1,15 @@
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta name="description" content="Get informed about health care fraud.">
+<meta name="keywords" content="fraud, medical, dental, insurance, health, care, health care, health fraud, ">
+<meta name="copyright" content="Copyright 2009 HCI an Verisk Health Company">
+<meta name="title" CONTENT="HealthCare Insight">
+<link ref="shortcut icon" href="favicon.ico"   type="image/ico" />
+<title><%= h(yield(:title) || "Welcome") %> | HealthCare Insight</title>
+<%#= auto_discovery_link_tag(type = :atom, articles_url(:atom)) %>
+<%#= ******** CSS ********** %>
+<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/combo?2.7.0/build/reset-fonts/reset-fonts.css">
+<%= stylesheet_link_tag 'jquiwidgets', '960', 'alerts/jquery.alerts', 'application' %>
+
+<%#= ******** JAVASCRIPTS ********** %>
+<script type="text/javascript" src="http://yui.yahooapis.com/2.7.0/build/yahoo-dom-event/yahoo-dom-event.js"></script>
+<%= javascript_include_tag 'jquery', 'jqueryui', 'jeasing', 'jQueryTimer', 'jquery.alerts', 'jquery.validate', 'swfobject', 'application', 'scroll' %>
