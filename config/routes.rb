@@ -5,6 +5,7 @@ ActionController::Routing::Routes.draw do |map|
   # Mail Route Paths
   
   # Custom Named Routes
+  map.home "health-care", :controller => "health_care", :action => "home"
   map.root :controller => "health_care", :action => "home"
   
 end

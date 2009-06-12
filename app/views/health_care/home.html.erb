@@ -1,2 +1,8 @@
-<h1>HealthCare Insight New Site</h1>
-<p>Find me in app/views/health_care/home.html.erb</p>
+<% page_title("Welcome To ") %>
+
+<% content_for :banner do %>
+  <%= render :partial => 'health_care/banners' %>
+<% end %>
+
+<% content_for :sidebar do %>
+<% end %>

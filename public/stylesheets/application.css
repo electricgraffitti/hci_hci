@@ -7,7 +7,6 @@ body {
   color: #000;
 }
 #wrapper {
-  background: url('../images/gradient.png') repeat-y;
   min-height: 1000px;
   text-align: left;
 }
@@ -258,3 +257,120 @@ label.error {
   padding:0;
   position:absolute;
 }
+/*********************************************/
+/*****************HEADER**********************/
+#hd {
+  position: relative;
+  height: 105px;
+}
+/*******Navigation********/
+#main_nav {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  height: 60px;
+  background: url('../images/main_nav_bg.png') repeat-x;
+  border-top: 1px solid #efefef;
+  border-right: 1px solid #efefef;
+  border-left: 1px solid #efefef;
+}
+ul.nav_ul {
+  margin-left: 5px;
+}
+ul.nav_ul li {
+  width: 125px;
+  height: 60px;
+  float: left;
+  text-align: center;
+  border-left: 1px solid #909090;
+  border-right: 1px solid #787878;
+}
+ul.nav_ul li span.hover {
+  position: relative;
+  width: 125px;
+  height: 60px;
+  display: block;
+}
+.nav1 {
+  background: url('../images/main_nav_sprite.png') 0px -120px;
+}
+.nav1.highlight:hover, li.nav1 span.hover {
+  background: url('../images/main_nav_sprite.png') 0px -60px;
+}
+.nav2 {
+  background: url('../images/main_nav_sprite.png') -125px -120px;
+}
+.nav2.highlight:hover, li.nav2 span.hover {
+  background: url('../images/main_nav_sprite.png') -125px -60px;
+}
+.nav3 {
+  background: url('../images/main_nav_sprite.png') -250px -120px;
+}
+.nav3.highlight:hover, li.nav3 span.hover {
+  background: url('../images/main_nav_sprite.png') -250px -60px;
+}
+.nav4 {
+  background: url('../images/main_nav_sprite.png') -375px -120px;
+}
+.nav4.highlight:hover, li.nav4 span.hover {
+  background: url('../images/main_nav_sprite.png') -375px -60px;
+}
+.nav5 {
+  background: url('../images/main_nav_sprite.png') -500px -120px;
+}
+.nav5.highlight:hover, li.nav5 span.hover {
+  background: url('../images/main_nav_sprite.png') -500px -60px;
+}
+.nav6 {
+  background: url('../images/main_nav_sprite.png') -625px -120px;
+}
+.nav6.highlight:hover, li.nav6 span.hover {
+  background: url('../images/main_nav_sprite.png') -625px -60px;
+}
+ul.nav_ul li a {
+  color: #ababab;
+  text-decoration: none;
+  display: block;
+  text-indent: -1000em;
+}
+ul.nav_ul li a:hover {
+  height: 60px;
+  color: #db0404;
+}
+#main_nav a.main_nav_a {
+  height: 60px;
+}
+#main_nav a:hover, .nav_hover {
+  color: #fff;
+}
+#main_nav a#video.active {
+  background-color: #00467f; /*Dk Blue*/
+}
+#main_nav a#articles.active {
+  background-color: #009fc2; /*Lt Blue*/
+}
+#main_nav a#resources.active {
+  background-color: #e37f1c; /*ef8200*/ /*Orange*/
+}
+#main_nav a#contact_us.active {
+  background-color: #00853f; /*Green*/
+}
+#main_nav a#about_us.active {
+  background-color: #79496a; /*Purple*/
+}
+#main_nav a#blog.active {
+  background-color: #fdd000; /*Yellow*/
+}
+#admin_link {
+  float: right;
+}
+
+/********************************/
+/************Banners*************/
+.scroll {
+  background: url('../images/gradient.png') repeat;
+  height: 200px;
+}
+
+/*********************************************/
+/*****************MAIN CONTENT****************/
