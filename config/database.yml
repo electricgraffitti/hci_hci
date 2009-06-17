@@ -3,6 +3,12 @@ development:
   database: hci_development
   username: root
   host: localhost
+  
+stage:
+  adapter: mysql
+  database: hci_stage
+  username: root
+  host: localhost
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
