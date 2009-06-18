@@ -1,4 +1,5 @@
-set :stages, %w(stage production)
-set :default_stage, "stage"
-require 'capistrano/ext/multistage'
+server "hci", :app, :web, :db, :primary => true
+# set :stages, %w(stage production)
+# set :default_stage, "production"
+# require 'capistrano/ext/multistage'
 
