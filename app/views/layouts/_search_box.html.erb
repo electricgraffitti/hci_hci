@@ -1,0 +1,6 @@
+<div id="search_box_wrap" class="content_wrap right">
+  <% form_tag "", :method => :get do %>
+  <%= text_field_tag :search, params[:search] %>
+  <%= submit_tag "Search", :name => nil, :class => 'search_btn', :title => "Search Stop Health Care Fraud" %>
+  <% end %>
+</div>

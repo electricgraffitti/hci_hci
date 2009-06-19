@@ -269,25 +269,26 @@ label.error {
   bottom: 0px;
   left: 0px;
   height: 60px;
-  background: url('../images/main_nav_bg.png') repeat-x;
-  border-top: 1px solid #efefef;
-  border-right: 1px solid #efefef;
-  border-left: 1px solid #efefef;
+  background: url('../images/main_nav_bg2.png') repeat-x;
+  border-top: 1px solid #f8f8f8;
 }
 ul.nav_ul {
   margin-left: 5px;
+  /*border-right: 1px solid #787878;*/
 }
 ul.nav_ul li {
-  width: 125px;
+  width: 100px;
   height: 60px;
   float: left;
   text-align: center;
-  border-left: 1px solid #909090;
-  border-right: 1px solid #787878;
+  border-left: 1px solid #f5f5f5;
+}
+ul.nav_ul li.last {
+  border-right: 1px solid #f5f5f5;
 }
 ul.nav_ul li span.hover {
   position: relative;
-  width: 125px;
+  width: 100px;
   height: 60px;
   display: block;
 }
@@ -297,80 +298,219 @@ ul.nav_ul li span.hover {
 .nav1.highlight:hover, li.nav1 span.hover {
   background: url('../images/main_nav_sprite.png') 0px -60px;
 }
+#main_nav ul li a#home.active {
+  background: url('../images/main_nav_sprite.png') 0px 0px;
+}
 .nav2 {
-  background: url('../images/main_nav_sprite.png') -125px -120px;
+  background: url('../images/main_nav_sprite.png') -100px -120px;
 }
 .nav2.highlight:hover, li.nav2 span.hover {
-  background: url('../images/main_nav_sprite.png') -125px -60px;
+  background: url('../images/main_nav_sprite.png') -100px -60px;
+}
+#main_nav ul li a#products.active {
+  background: url('../images/main_nav_sprite.png') -100px 0px;
 }
 .nav3 {
-  background: url('../images/main_nav_sprite.png') -250px -120px;
+  background: url('../images/main_nav_sprite.png') -200px -120px;
 }
 .nav3.highlight:hover, li.nav3 span.hover {
-  background: url('../images/main_nav_sprite.png') -250px -60px;
+  background: url('../images/main_nav_sprite.png') -200px -60px;
+}
+#main_nav ul li a#media_lab.active {
+  background: url('../images/main_nav_sprite.png') -200px 0px;
 }
 .nav4 {
-  background: url('../images/main_nav_sprite.png') -375px -120px;
+  background: url('../images/main_nav_sprite.png') -300px -120px;
 }
 .nav4.highlight:hover, li.nav4 span.hover {
-  background: url('../images/main_nav_sprite.png') -375px -60px;
+  background: url('../images/main_nav_sprite.png') -300px -60px;
+}
+#main_nav ul li a#events.active {
+  background: url('../images/main_nav_sprite.png') -300px 0px;
 }
 .nav5 {
-  background: url('../images/main_nav_sprite.png') -500px -120px;
+  background: url('../images/main_nav_sprite.png') -400px -120px;
 }
 .nav5.highlight:hover, li.nav5 span.hover {
-  background: url('../images/main_nav_sprite.png') -500px -60px;
+  background: url('../images/main_nav_sprite.png') -400px -60px;
+}
+#main_nav ul li a#about_us.active {
+  background: url('../images/main_nav_sprite.png') -400px 0px;
 }
 .nav6 {
-  background: url('../images/main_nav_sprite.png') -625px -120px;
+  background: url('../images/main_nav_sprite.png') -500px -120px;
 }
 .nav6.highlight:hover, li.nav6 span.hover {
-  background: url('../images/main_nav_sprite.png') -625px -60px;
+  background: url('../images/main_nav_sprite.png') -500px -60px;
 }
-ul.nav_ul li a {
+#main_nav ul li a#contact_us.active {
+  background: url('../images/main_nav_sprite.png') -100px 0px;
+}
+ul#main_nav_ul li a {
   color: #ababab;
   text-decoration: none;
   display: block;
   text-indent: -1000em;
 }
-ul.nav_ul li a:hover {
-  height: 60px;
-  color: #db0404;
-}
-#main_nav a.main_nav_a {
-  height: 60px;
-}
-#main_nav a:hover, .nav_hover {
-  color: #fff;
-}
-#main_nav a#video.active {
-  background-color: #00467f; /*Dk Blue*/
-}
-#main_nav a#articles.active {
-  background-color: #009fc2; /*Lt Blue*/
-}
-#main_nav a#resources.active {
-  background-color: #e37f1c; /*ef8200*/ /*Orange*/
-}
-#main_nav a#contact_us.active {
-  background-color: #00853f; /*Green*/
-}
-#main_nav a#about_us.active {
-  background-color: #79496a; /*Purple*/
-}
-#main_nav a#blog.active {
-  background-color: #fdd000; /*Yellow*/
-}
 #admin_link {
   float: right;
 }
-
+/********************************/
+/************HEADER*************/
+#hci_logo {
+  background: url('../images/HCI_Logo.png') no-repeat;
+  display: block;
+  float: left;
+  text-indent: -1000em;
+  width: 314px;
+  height: 45px;
+  margin-left: 6px;
+}
+/** top Link nav **/
+#top_link_wrap {
+  height: 45px;
+  width: 200px;
+  float: right;
+}
+ul#top_links {
+  position: relative;
+  float: left;
+  margin-top: 15px;
+}
+ul#top_links li {
+  float: left;
+  width: 100px;
+  text-align: center;
+}
+ul#top_links li a {
+  padding: 10px 0px;
+  width: 100px;
+  height: 30px;
+  text-decoration: none;
+  color: #3e3e3e;
+}
+#search_box_wrap {
+  margin: 18px;
+}
 /********************************/
 /************Banners*************/
+#slider {
+  margin: 0 auto;
+  position: relative;
+}
+#banner {
+  /*padding-bottom: 5px;*/
+}
 .scroll {
-  background: url('../images/gradient.png') repeat;
-  height: 200px;
+  height: 290px;
+  overflow: hidden;
+  overflow-x: hidden;
+  position: relative; /* fix for IE to respect overflow */
+  clear: left;
+}
+.scrollContainer {
+  width: 960px;
+  height: 290px;
+}
+.banner_nav {
+  position: relative;
+  float:right;
+  width: 320px;
+  height: 40px;
+  bottom: 45px;
+}
+.banner_nav .banner_li {
+  border: none;
+  width: 30px;
+  height: 30px;
+  margin: 5px 5px;
+  padding: 0px;
+}
+.banner_nav .banner_li.first {
+  border-left: none;
+}
+.banner_nav .banner_li.last {
+  border-right: none;
+}
+.banner_nav .banner_li a {
+  width: 30px;
+  height:30px;
+  line-height: 1.5;
+  font-size: 146.5%;
+  color: #fff;
+  text-decoration: none;
+}
+.banner_nav .banner_li a:hover {
+  width: 30px;
+  height: 30px;
+  color: #fff;
+}
+.banner_nav .banner_li a.selected, .banner_nav .banner_li:hover {
+  background-color: #000;
+  color: #fff;
+}
+img.banner_scroll {
+  float:left;
+  margin-top: 5px;
+  cursor: pointer;
+}
+img.banner_scroll.l {
+}
+img.banner_scroll.r {
 }
 
 /*********************************************/
 /*****************MAIN CONTENT****************/
+.main_content {
+  min-height: 300px;
+}
+/*********************************************/
+/******************SUBBOXES*******************/
+#sub_boxes {
+  color: #fff;
+  background: #191819;
+  text-align: left;
+}
+.sub_box {
+  min-height: 200px;
+}
+.sub_box_wrap {
+  width: 200px;
+  margin-left: 32px;
+  float: left;
+  display: inline;
+}
+.sub_box a.social_icon {
+  display: block;
+  text-indent: -1000em;
+}
+.sub_box p {
+  color: #fff;
+  width: 185px;
+}
+.sub_box, .sub_box2 {
+  min-height: 240px;
+  float:left;
+}
+.go_link {
+  margin-top: 10px;
+  margin-right: 32px;
+}
+/*********************************************/
+/******************BUTTONS********************/
+.search_btn {
+  text-indent: -1000em;
+  width: 20px;
+  height: 25px;
+  background: url('../images/search_icon.png') no-repeat;
+  border: none;
+  cursor: pointer;
+  font-size: 0px;
+  display: inline-block;
+}
+/*********************************************/
+/******************FOOTER********************/
+#ft {
+  background: #fff url('../images/banners/health_care_insight_banner2.png') no-repeat;
+  min-height: 290px;
+}
