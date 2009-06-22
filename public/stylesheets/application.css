@@ -281,10 +281,10 @@ ul.nav_ul li {
   height: 60px;
   float: left;
   text-align: center;
-  border-left: 1px solid #f5f5f5;
+  border-left: 1px solid #e1e1e1;
 }
 ul.nav_ul li.last {
-  border-right: 1px solid #f5f5f5;
+  border-right: 1px solid #e1e1e1;
 }
 ul.nav_ul li span.hover {
   position: relative;
@@ -307,7 +307,7 @@ ul.nav_ul li span.hover {
 .nav2.highlight:hover, li.nav2 span.hover {
   background: url('../images/main_nav_sprite.png') -100px -60px;
 }
-#main_nav ul li a#products.active {
+#main_nav ul li a#services.active {
   background: url('../images/main_nav_sprite.png') -100px 0px;
 }
 .nav3 {
@@ -355,6 +355,30 @@ ul#main_nav_ul li a {
 #admin_link {
   float: right;
 }
+.admin_nav {
+  background: #404040;
+  position: relative;
+  float: left;
+}
+ul#admin_nav_ul {
+ margin-left: 5px; 
+}
+ul#admin_nav_ul li{
+  width: 100px;
+  float: left;
+  text-align: center;
+  border-left: 1px solid #666;
+}
+ul#admin_nav_ul li:hover {
+  background: #67ab89;
+}
+ul#admin_nav_ul li a {
+  float: left;
+  color: #fff;
+  padding: 5px 0px;
+  width: 100px;
+  text-decoration: none;
+}
 /********************************/
 /************HEADER*************/
 #hci_logo {
@@ -372,22 +396,30 @@ ul#main_nav_ul li a {
   width: 200px;
   float: right;
 }
-ul#top_links {
+ul#top_links, ul.login  {
   position: relative;
-  float: left;
-  margin-top: 15px;
+  float: right;
+  height: 20px;
 }
-ul#top_links li {
+ul.login {
+  float: right;
+}
+ul#top_links li, ul#top_links li.top_nav_wide {
   float: left;
-  width: 100px;
+  width: 75px;
   text-align: center;
 }
-ul#top_links li a {
-  padding: 10px 0px;
+ul#top_links li.top_nav_wide {
   width: 100px;
-  height: 30px;
+}
+ul#top_links li a {
+  width: 100px;
+  height: 20px;
   text-decoration: none;
   color: #3e3e3e;
+}
+ul#top_links li a.white {
+  color: white;
 }
 #search_box_wrap {
   margin: 18px;
@@ -397,6 +429,7 @@ ul#top_links li a {
 #slider {
   margin: 0 auto;
   position: relative;
+  height: 290px;
 }
 #banner {
   /*padding-bottom: 5px;*/
@@ -458,11 +491,26 @@ img.banner_scroll.l {
 }
 img.banner_scroll.r {
 }
-
+/****Inner Banners****/
+.inner_banner {
+  width: 960px;
+  height: 165px;
+}
+.services_inner_banner {
+  background: url('../images/banners/inner_banners/health_care_services_banner.png') no-repeat;
+}
 /*********************************************/
 /*****************MAIN CONTENT****************/
-.main_content {
+#bd {
+  background: #000;
+}
+#layout4main, .main_content {
   min-height: 300px;
+  background: #fff;
+  padding: 10px;
+}
+.inner_header {
+  margin: 10px 0px 20px 0px;
 }
 /*********************************************/
 /******************SUBBOXES*******************/
@@ -500,8 +548,8 @@ img.banner_scroll.r {
 /******************BUTTONS********************/
 .search_btn {
   text-indent: -1000em;
-  width: 20px;
-  height: 25px;
+  width: 25px;
+  height: 30px;
   background: url('../images/search_icon.png') no-repeat;
   border: none;
   cursor: pointer;

@@ -17,7 +17,11 @@ $(document).ready(function() {
         $(this).css({fontSize : 0});
         var $span = $('> span.hover', this).css({opacity : 0});
         $(this).hover(function() {
-          $span.fadeTo(500, 1);
+          if ($(this).hasClass('active')) {
+            $span.fadeTo(500, 0);
+          } else {
+           $span.fadeTo(500, 1); 
+          }
         }, function() {
           $span.fadeTo(500, 0);
       });

@@ -1,0 +1,13 @@
+<% page_title("Login ") %>
+
+<% content_for :banner do %>
+  <%= render :partial => 'users/banner' %>
+<% end %>
+
+<% content_for :sidebar do %>
+  <%= render :partial => 'layouts/sub_boxes' %>
+<% end %>
+
+<h1>Login</h1>
+<%= render :partial => "form", :locals => {:user_session => @user_session} %>
+<%= link_to 'Back', users_path %>

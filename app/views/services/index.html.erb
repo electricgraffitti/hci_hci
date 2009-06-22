@@ -1,0 +1,20 @@
+<% page_title "Fraud Prevention Services"%>
+
+<% content_for :banner do %>
+  <%= render :partial => "services/banner" %>
+<% end %>
+
+<% content_for :sidebar do %>
+  <%= render :partial => 'layouts/sub_boxes' %>
+<% end %>
+
+<% @services.each do |serv| %>
+ <%= index_listing(serv) %>
+<div class="clear"></div>
+<div class="grid_12"><% if current_user %>
+  <%= link_to 'New', new_service_path %> |
+  <%= link_to 'Edit', edit_service_path(serv) %>
+  <% end %>
+  <%= link_to 'Back', services_path %>
+</div>
+<% end %>

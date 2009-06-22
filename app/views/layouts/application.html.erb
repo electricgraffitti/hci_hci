@@ -16,6 +16,9 @@
 	  </div>
 	  <div class="clear"></div>
     <div id="bd" class="grid_16 alpha omega">
+      <% if current_user %>
+        <%= render :partial => "layouts/admin_nav" %>
+      <% end %>
       <div id="banner" class="grid_16 alpha omega">
         <%= yield :banner %>
       </div>

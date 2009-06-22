@@ -42,6 +42,9 @@
 # After specifying a gem with config.gem, run 'rake moonshine:gems'
 # to update config/gems.yml. If the gem depends on native packages, 
 # tell Moonshine here:
+:apt_gems:
+  :paperclip:
+    - imagemagick
 #:apt_gems:
 #  :awesomegem:
 #    - awesome
