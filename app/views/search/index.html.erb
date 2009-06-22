@@ -1,0 +1,14 @@
+<% page_title("Health Care Search ") %>
+
+<% content_for :banner do %>
+  <%= render :partial => 'search/banner' %>
+<% end %>
+
+<% content_for :sidebar do %>
+<% end %>
+
+<% content_for :sub_boxes do %>
+  <%= render :partial => 'layouts/sub_boxes' %>
+<% end %>
+
+<%= render :partial => "services/index_list" %>
