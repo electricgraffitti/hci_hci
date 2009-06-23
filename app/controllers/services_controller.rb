@@ -32,7 +32,7 @@ class ServicesController < ApplicationController
     @service = Service.new
 
     respond_to do |format|
-      format.html # new.html.erb
+      format.html { render :layout => "admin"}
       format.xml  { render :xml => @service }
     end
   end
@@ -40,6 +40,10 @@ class ServicesController < ApplicationController
   # GET /services/1/edit
   def edit
     @service = Service.find(params[:id])
+    
+    respond_to do |format|
+      format.html { render :layout => "admin"}
+    end
   end
 
   # POST /services

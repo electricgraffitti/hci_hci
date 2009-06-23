@@ -1,0 +1,4 @@
+<h1>Editing <%= @document.title if @document %></h1>
+<%= render :partial => "form", :locals => {:document => @document, :document_types => @document_types} %>
+<%= link_to 'Show', @document %> |
+<%= link_to 'Back', documents_path %>

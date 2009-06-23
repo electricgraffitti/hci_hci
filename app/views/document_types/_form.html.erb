@@ -1,0 +1,15 @@
+<% form_for(@document_type) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :document_type %><br />
+    <%= f.text_field :document_type %>
+  </p>
+  <p>
+    <%= f.label :document_extension %><br />
+    <%= f.text_field :document_extension %>
+  </p>
+  <p>
+    <%= f.submit 'Submit' %>
+  </p>
+<% end %>

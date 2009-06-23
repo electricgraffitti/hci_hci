@@ -1,0 +1,34 @@
+<% form_for(@link) do |f| %>
+  <%= f.error_messages %>
+
+<div class="grid_5">
+  <h4>Link Content</h4>
+  <p>
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :description %><br />
+    <%= f.text_area :description, :rows => 5, :cols => 28 %>
+  </p>
+  <p>
+    <%= f.label :link_url %><br />
+    <%= f.text_field :link_url %>
+  </p>
+</div>
+<div class="grid_5">
+  <h4>Link SEO</h4>
+  <p>
+    <%= f.label :keywords %><br />
+    <%= f.text_field :keywords %>
+  </p>
+  <p>
+    <%= f.label :permalink %><br />
+    <%= f.text_field :permalink %>
+  </p>
+</div>
+<div class="clear"></div>
+  <p>
+    <%= f.submit 'Submit' %>
+  </p>
+<% end %>

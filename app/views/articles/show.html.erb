@@ -1,0 +1,30 @@
+<p>
+  <b>Title:</b>
+  <%=h @article.title %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @article.description %>
+</p>
+
+<p>
+  <b>Article type:</b>
+  <%=h @article.article_type.article_type %>
+</p>
+
+<p>
+  <b>Keywords:</b>
+  <%=h @article.keywords %>
+</p>
+
+<p>
+  <b>Permalink:</b>
+  <%=h @article.permalink %>
+</p>
+
+<% if current_user %>
+  <%= link_to 'Edit', edit_article_path(@article) %> |
+  <%= link_to 'Dashboard', dashboard_path %> |
+<% end %>
+<%= link_to "Back", request.env["HTTP_REFERER"] %>

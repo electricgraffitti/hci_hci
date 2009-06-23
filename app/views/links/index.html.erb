@@ -1,0 +1,31 @@
+<h1>Listing links</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Description</th>
+    <th>Link url</th>
+    <th>Keywords</th>
+    <th>Permalink</th>
+  </tr>
+
+<% @links.each do |link| %>
+  <tr>
+    <td><%=h link.title %></td>
+    <td><%=h link.description %></td>
+    <td><%=h link.link_url %></td>
+    <td><%=h link.keywords %></td>
+    <td><%=h link.permalink %></td>
+    <% if current_user %>
+      <td><%= link_to 'Show', link %></td>
+      <td><%= link_to 'Edit', edit_link_path(link) %></td>
+      <td><%= link_to 'Delete', link, :confirm => 'Are you sure?', :method => :delete %></td>
+    <% end %>
+  </tr>
+<% end %>
+</table>
+
+<br />
+<% if current_user %>
+<%= link_to 'New link', new_link_path %>
+<% end %>

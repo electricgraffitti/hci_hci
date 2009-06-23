@@ -1,0 +1,4 @@
+<h1>Editing <%= (@article.title).capitalize if @article %></h1>
+<%= render :partial => "form", :locals => {:article => @article, :article_types => @article_types} %>
+<%= link_to 'Show', @article %> |
+<%= link_to 'Back', articles_path %>

@@ -1,6 +1,7 @@
 <% form_for(@service, :html => {:multipart => true}) do |f| %>
   <%= f.error_messages %>
-  <div class="grid_6 alpha omega">
+  <div class="grid_5">
+    <h4>Service Content</h4>
     <p>
       <%= f.label :title %><br />
       <%= f.text_field :title %>
@@ -10,15 +11,16 @@
       <%= f.text_area :description, :rows => 5, :cols => 29 %>
     </p>
     <p>
+      <%= f.label :avatar, "Avatar" %><br/>
+      <%= f.file_field :avatar, :size => 16 %>
+    </p>
+  </div>
+  <div class="grid_5">
+    <h4>Service SEO</h4>
+    <p>
       <%= f.label :permalink %><br />
       <%= f.text_field :permalink %>
     </p>
-    <p>
-      <%= f.label :avatar, "Avatar" %><br/>
-      <%= f.file_field :avatar %>
-    </p>
-  </div>
-  <div class="grid_6 alpha omega">
     <p>
       <%= f.label :keywords %><br />
       <%= f.text_field :keywords %>

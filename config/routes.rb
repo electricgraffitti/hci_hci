@@ -1,15 +1,23 @@
   # The priority is based upon order of creation: first created -> highest priority.
 ActionController::Routing::Routes.draw do |map|
+  map.resources :document_types
+  map.resources :documents
+  map.resources :links
+  map.resources :article_types
+  map.resources :articles
+  map.resources :events
   map.resources :services
   map.resources :users
   map.resources :user_sessions
   # Mail Route Paths
   
   # Custom Named Routes
+  map.media "health-care-media", :controller => "resources", :action => "index"
   map.search "health-care-search-results", :controller => 'search', :action => 'index'
   map.dashboard "dashboard", :controller => "users", :action => "index"
   map.login "login", :controller => "user_sessions", :action => "new"
   map.logout "logout", :controller => "user_sessions", :action => "destroy"
+  map.about "about-healthcare-insight", :controller => "health_care", :action => "about"
   map.home "health-care", :controller => "health_care", :action => "index"
   map.root :controller => "health_care", :action => "index"
   

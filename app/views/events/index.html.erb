@@ -1,0 +1,29 @@
+<h1>Listing events</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Description</th>
+    <th>Keywords</th>
+    <th>Permalink</th>
+  </tr>
+
+<% @events.each do |event| %>
+  <tr>
+    <td><%=h event.title %></td>
+    <td><%=h event.description %></td>
+    <td><%=h event.keywords %></td>
+    <td><%=h event.permalink %></td>
+    <% if current_user %>
+      <td><%= link_to 'Show', event %></td>
+      <td><%= link_to 'Edit', edit_event_path(event) %></td>
+      <td><%= link_to 'Destroy', event, :confirm => 'Are you sure?', :method => :delete %></td>
+    <% end %>
+  </tr>
+<% end %>
+</table>
+
+<br />
+<% if current_user %>
+<%= link_to 'New event', new_event_path %>
+<% end %>

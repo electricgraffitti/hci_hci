@@ -1,0 +1,48 @@
+<% form_for(@document) do |f| %>
+  <%= f.error_messages %>
+
+<div class="grid_5">
+  <h3>Document Content</h3>
+  <p>
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :description %><br />
+    <%= f.text_area :description, :rows => 5, :cols => 28 %>
+  </p>
+  <p>
+    <%= f.label "Select Document Type" %><br />
+    <%= collection_select(:document, :document_type_id, @document_types, :id, :document_type) %>
+  </p>
+</div>
+<div class="grid_5">
+  <h3>Document SEO</h3>
+  <p>
+    <%= f.label :keywords %><br />
+    <%= f.text_field :keywords %>
+  </p>
+  <p>
+    <%= f.label :permalink %><br />
+    <%= f.text_field :permalink %>
+  </p>
+</div>
+<div class="grid_5">
+  <h3>Document Dependencies</h3>
+  <p>
+    <%= link_to "Create New Doc Type", new_document_type_path %>
+  </p>
+  <p>
+    <h4>Document Types Available</h4>
+    <ul>
+      <% for document_type in @document_types %>
+      <li><%= document_type.document_type %> | Ext: <%= document_type.document_extension %></li>
+      <% end %>
+    </ul>
+  </p>
+</div>
+<div class="clear"></div>
+  <p>
+    <%= f.submit 'Submit' %>
+  </p>
+<% end %>

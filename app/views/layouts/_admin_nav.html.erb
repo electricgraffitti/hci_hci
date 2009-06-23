@@ -1,7 +1,11 @@
 <div class="admin_nav grid_16 alpha omega">
   <ul id="admin_nav_ul">
     <li><%= link_to "Dashboard", dashboard_path %></li>
-    <li><%= link_to "Services", services_path %></li>
+    <li><%= link_to "Services", new_service_path %></li>
+    <li><%= link_to "Events", new_event_path %></li>
+    <li><%= link_to "Articles", new_article_path %></li>
+    <li><%= link_to "Documents", new_document_path %></li>
+    <li><%= link_to "Links", new_link_path %></li>
     <li><%= link_to "Account", edit_user_path(current_user) %></li>
   </ul>
 </div>

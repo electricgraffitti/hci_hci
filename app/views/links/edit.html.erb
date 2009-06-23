@@ -1,0 +1,4 @@
+<h1>Editing <%= @link.title if @link %></h1>
+<%= render :partial => "form", :locals => {:link => @link} %>
+<%= link_to 'Show', @link %> |
+<%= link_to 'Back', links_path %>
