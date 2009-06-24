@@ -17,6 +17,8 @@
 
 class Service < ActiveRecord::Base
   
+  has_many :assets, :as => :attachable
+  
   # Thinking Sphinx Indexes
   define_index do
     indexes description
@@ -39,6 +41,13 @@ class Service < ActiveRecord::Base
   # Sets Permalink Routes
   def to_param
     "#{id}-#{permalink}"
+  end
+  
+  #pulls the assets from the form
+  def attachments=(attachments)
+    attachments.each do |attachment|
+      assets.build(attachment)
+    end
   end
   
 end

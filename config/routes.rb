@@ -1,14 +1,15 @@
   # The priority is based upon order of creation: first created -> highest priority.
 ActionController::Routing::Routes.draw do |map|
   map.resources :document_types
-  map.resources :documents
-  map.resources :links
+  map.resources :documents, :has_many => :assets
+  map.resources :links, :has_many => :assets
   map.resources :article_types
-  map.resources :articles
-  map.resources :events
-  map.resources :services
+  map.resources :articles, :has_many => :assets
+  map.resources :events, :has_many => :assets
+  map.resources :services, :has_many => :assets
   map.resources :users
   map.resources :user_sessions
+  
   # Mail Route Paths
   
   # Custom Named Routes

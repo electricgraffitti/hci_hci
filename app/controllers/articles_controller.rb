@@ -30,6 +30,7 @@ class ArticlesController < ApplicationController
   def new
     @article = Article.new
     @article_types = ArticleType.all
+    @article.assets.build
     respond_to do |format|
       format.html { render :layout => "admin" }
       format.xml  { render :xml => @article }
@@ -39,6 +40,8 @@ class ArticlesController < ApplicationController
   # GET /articles/1/edit
   def edit
     @article = Article.find(params[:id])
+    @article_types = ArticleType.all
+    @article.assets.build
     respond_to do |format|
       format.html { render :layout => "admin" }
     end

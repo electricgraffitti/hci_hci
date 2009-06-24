@@ -1,4 +1,14 @@
-<h1>Listing articles</h1>
+<% page_title "Health Care Article "%>
+
+<% content_for :banner do %>
+  <%= render :partial => "articles/banner" %>
+<% end %>
+
+<% content_for :sidebar do %>
+  <%= render :partial => 'layouts/sub_boxes' %>
+<% end %>
+
+<!-- Render Helper Module Here -->
 
 <table>
   <tr>
@@ -16,17 +26,16 @@
     <td><%=h article.article_type.article_type %></td>
     <td><%=h article.keywords %></td>
     <td><%=h article.permalink %></td>
-    <% if current_user %>
     <td><%= link_to 'Show', article %></td>
-    <td><%= link_to 'Edit', edit_article_path(article) %></td>
-    <td><%= link_to 'Destroy', article, :confirm => 'Are you sure?', :method => :delete %></td>
+    <% if current_user %>
+    <%= link_to 'New article', new_article_path %> | 
+    <%= link_to 'Edit', edit_article_path(article) %> |
+    <%= link_to 'Destroy', article, :confirm => 'Are you sure?', :method => :delete %>
     <% end %>
   </tr>
 <% end %>
 </table>
 
 <br />
-<% if current_user %>
-<%= link_to 'New article', new_article_path %> | 
-<% end %>
+
 <%= link_to "Back", request.env["HTTP_REFERER"] %>

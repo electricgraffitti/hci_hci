@@ -29,7 +29,7 @@ class LinksController < ApplicationController
   # GET /links/new.xml
   def new
     @link = Link.new
-
+    @link.assets.build
     respond_to do |format|
       format.html { render :layout => "admin"}
       format.xml  { render :xml => @link }
@@ -39,7 +39,7 @@ class LinksController < ApplicationController
   # GET /links/1/edit
   def edit
     @link = Link.find(params[:id])
-    
+    @link.assets.build
     respond_to do |format|
       format.html { render :layout => "admin"}
     end

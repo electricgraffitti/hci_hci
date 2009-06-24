@@ -1,4 +1,4 @@
-<% form_for(@link) do |f| %>
+<% form_for(@link, :html => {:multipart => true }) do |f| %>
   <%= f.error_messages %>
 
 <div class="grid_5">
@@ -15,6 +15,14 @@
     <%= f.label :link_url %><br />
     <%= f.text_field :link_url %>
   </p>
+  <p>
+    <% for asset in @link.assets %>
+    <% fields_for "link[attachments][]", asset do |asset_form|%>
+    <%= asset_form.label "Avatar" %><br />
+    <%= asset_form.file_field :attachment, :size => 16 %>
+    <% end %>
+    <% end %>
+  </p>
 </div>
 <div class="grid_5">
   <h4>Link SEO</h4>
@@ -28,7 +36,10 @@
   </p>
 </div>
 <div class="clear"></div>
+<div class="grid_5"
   <p>
-    <%= f.submit 'Submit' %>
+    <%= f.submit 'Submit', :class => "btn" %>
+    <%= link_to "Back", request.env["HTTP_REFERER"], :class => "btn" %>
   </p>
+</div>
 <% end %>

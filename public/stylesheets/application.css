@@ -356,7 +356,7 @@ ul#main_nav_ul li a {
   float: right;
 }
 .admin_nav {
-  background: #404040;
+  background: #666 url('../images/healthcare_fraud_btn_black.png') bottom left repeat-x;
   position: relative;
   float: left;
 }
@@ -368,6 +368,9 @@ ul#admin_nav_ul li{
   float: left;
   text-align: center;
   border-left: 1px solid #666;
+}
+ul#admin_nav_ul li.last{
+  border-right: 1px solid #666;
 }
 ul#admin_nav_ul li:hover {
   background: #67ab89;
@@ -509,6 +512,9 @@ img.banner_scroll.r {
   background: #fff;
   padding: 10px;
 }
+#layout4main {
+  min-height: 960px;
+}
 .inner_header {
   margin: 10px 0px 20px 0px;
 }
@@ -546,6 +552,23 @@ img.banner_scroll.r {
 }
 /*********************************************/
 /******************BUTTONS********************/
+.btn {
+  background: #666 url('../images/healthcare_fraud_btn_black.png') bottom left repeat-x;
+  padding: 5px; 
+  color: #fff;
+  border: 1px solid #666; 
+  text-decoration: none; 
+  cursor: pointer; 
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  margin: 10px 10px 10px 0px;
+  min-height: 18px;
+  float: left;
+}
+.btn:hover {
+  background: #67ab89;
+}
 .search_btn {
   text-indent: -1000em;
   width: 25px;

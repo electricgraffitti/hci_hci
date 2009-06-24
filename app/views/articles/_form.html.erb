@@ -1,4 +1,4 @@
-<% form_for(@article) do |f| %>
+<% form_for(@article, :html => {:multipart => true }) do |f| %>
   <%= f.error_messages %>
 
 <div class="grid_5">
@@ -15,6 +15,14 @@
     <%= f.label "Choose Article Type" %><br />
     <%= collection_select(:article, :article_type_id, @article_types, :id, :article_type)%>
   </p>
+  <p>
+    <% for asset in @article.assets %>
+    <% fields_for "article[attachments][]", asset do |asset_form|%>
+    <%= asset_form.label "Add Attachment" %><br />
+    <%= asset_form.file_field :attachment, :size => 16 %>
+    <% end %>
+    <% end %>
+  </p>
 </div>
 <div class="grid_5">
   <h4>Article SEO</h4>
@@ -30,7 +38,7 @@
 <div class="grid_5">
   <h3>Article Dependencies</h3>
   <p>
-    <%= link_to "Create New Article Type", new_article_path %>
+    <%= link_to "Create New Article Type", new_article_type_path %>
   </p>
   <p>
     <h4>Article Types Available</h4>
@@ -42,7 +50,10 @@
   </p>
 </div>
 <div class="clear"></div>
+<div class="grid_5"
   <p>
-    <%= f.submit 'Submit' %>
+    <%= f.submit 'Submit', :class => "btn" %>
+    <%= link_to "Back", request.env["HTTP_REFERER"], :class => "btn" %>
   </p>
+</div>
 <% end %>

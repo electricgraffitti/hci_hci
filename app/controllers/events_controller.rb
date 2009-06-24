@@ -29,7 +29,7 @@ class EventsController < ApplicationController
   # GET /events/new.xml
   def new
     @event = Event.new
-
+    @event.assets.build
     respond_to do |format|
       format.html { render :layout => "admin"}
       format.xml  { render :xml => @event }
@@ -39,6 +39,7 @@ class EventsController < ApplicationController
   # GET /events/1/edit
   def edit
     @event = Event.find(params[:id])
+    @event.assets.build
     respond_to do |format|
       format.html { render :layout => "admin"}
     end

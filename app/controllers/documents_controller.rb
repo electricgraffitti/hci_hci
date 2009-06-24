@@ -30,6 +30,7 @@ class DocumentsController < ApplicationController
   def new
     @document = Document.new
     @document_types = DocumentType.all
+    @document.assets.build
     respond_to do |format|
       format.html { render :layout => "admin"}
       format.xml  { render :xml => @document }
@@ -40,6 +41,7 @@ class DocumentsController < ApplicationController
   def edit
     @document = Document.find(params[:id])
     @document_types = DocumentType.all
+    @document.assets.build
     respond_to do |format|
       format.html { render :layout => "admin"}
     end

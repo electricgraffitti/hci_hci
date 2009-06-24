@@ -1,0 +1,10 @@
+<div class='show_wrap grid_12'>
+  <div class='grid_10 omega'>
+    <h3><%= h document.title %></h3>
+    <p><%= h document.description %></p>
+    <p><% document.assets.each do |asset| %>
+      <%= link_to(document.title, ('/attachments/' + document.id.to_s + '/original_' + asset.attachment_file_name)) %>
+      <% end %>
+    </p>
+  </div>
+</div>
