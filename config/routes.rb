@@ -9,6 +9,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :services, :has_many => :assets
   map.resources :users
   map.resources :user_sessions
+  map.resources :videos, :new => {:upload => :post}
   
   # Mail Route Paths
   

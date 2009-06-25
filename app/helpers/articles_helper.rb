@@ -7,7 +7,7 @@ module ArticlesHelper
   end
     a << "<div class='grid_10 omega'>"
     a << "<h3>#{h mod.title}</h3>"
-    a << "<p>#{h truncate(mod.description, 350)}</p>"
+    a << "<p>#{h truncate(mod.description, :length => 350)}</p>"
     a << "</div>"
     a << "<div class='clear'></div>"
     a << "<div class='widget_links grid_5 omega right'>"

@@ -8,6 +8,16 @@
   <%= render :partial => 'layouts/sub_boxes' %>
 <% end %>
 
-<%= link_to "Articles", articles_path %>
-
+<div class="index_list">
+  <h2>HCI Articles</h2>
+<%= render :partial => "articles/index_article", :locals => {:articles => @articles} %>
+</div>
+<div class="index_list">
+  <h2>Third Party Articles</h2>
+<%= render :partial => "articles/index_article", :locals => {:articles => @third_party_articles} %>
+</div>
+<div class="index_list">
+  <h2>Press Releases</h2>
+<%= render :partial => "articles/index_article", :locals => {:articles => @press_releases} %>
+</div>
 

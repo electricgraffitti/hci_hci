@@ -1,3 +1,17 @@
+# == Schema Information
+#
+# Table name: articles
+#
+#  id              :integer(4)      not null, primary key
+#  title           :string(255)
+#  description     :text
+#  article_type_id :integer(4)
+#  keywords        :string(255)
+#  permalink       :string(255)
+#  created_at      :datetime
+#  updated_at      :datetime
+#
+
 class Article < ActiveRecord::Base
   
   belongs_to :article_type
@@ -15,6 +29,11 @@ class Article < ActiveRecord::Base
   
   # RedCloth (textilize)
   acts_as_textiled  :description
+  
+  # Named Scopes
+  named_scope :small_list, lambda { |limit| {:limit => limit }}
+  named_scope :type, lambda { |type| { :include => :article_type, :conditions => ['article_types.article_type = ?', type]}}
+  named_scope :last_created, :order => "created_at DESC"
   
   #============================= Class Methods ==================================#
   

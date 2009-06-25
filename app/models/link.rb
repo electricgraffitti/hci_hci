@@ -1,3 +1,17 @@
+# == Schema Information
+#
+# Table name: links
+#
+#  id          :integer(4)      not null, primary key
+#  title       :string(255)
+#  description :text
+#  link_url    :string(255)
+#  keywords    :string(255)
+#  permalink   :string(255)
+#  created_at  :datetime
+#  updated_at  :datetime
+#
+
 class Link < ActiveRecord::Base
   
   has_many :assets, :as => :attachable
