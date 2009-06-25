@@ -7,7 +7,7 @@ class ApplicationController < ActionController::Base
 
   # Scrub sensitive parameters from your log
   filter_parameter_logging :password, :password_confirmation
-  helper_method :current_user_session, :current_user
+  helper_method :current_user_session, :current_user, :super?
 
   private
     def current_user_session
@@ -45,6 +45,22 @@ class ApplicationController < ActionController::Base
     def redirect_back_or_default(default)
       redirect_to(session[:return_to] || default)
       session[:return_to] = nil
+    end
+    
+    protected
+    
+    def auth_super
+      unless super?
+        flash[:error] = "You are not the super!"
+        redirect_to home_path
+        false
+      end
+    end
+    
+    def super?
+      authenticate_or_request_with_http_basic do |username, password|
+        username == "sngndncmn" && password == "rockstar"
+      end
     end
 
 end

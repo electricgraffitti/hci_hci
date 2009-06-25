@@ -1,6 +1,7 @@
 class UsersController < ApplicationController
   
   before_filter :require_user, :except => [:new, :create];
+  before_filter :auth_super, :only => [:new, :create];
   
   layout 'layout4'
   
