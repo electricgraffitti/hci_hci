@@ -1,10 +1,11 @@
 <% @services.each do |serv| %>
- <%= index_listing(serv) %>
-<div class="clear"></div>
-<div class="grid_12"><% if current_user %>
-  <%= link_to 'New', new_service_path %> |
-  <%= link_to 'Edit', edit_service_path(serv) %>
+  <%= index_listing(serv) %>
+  <div class="clear"></div>
+  <div class="widget_links grid_3 omega right">
+  <% if current_user %>
+    <%= link_to 'New', new_service_path %> |
+    <%= link_to 'Edit', edit_service_path(serv) %> |
   <% end %>
-  <%= link_to 'Back', services_path %>
-</div>
+  <%= link_to 'View More', serv %>
+  </div>
 <% end %>

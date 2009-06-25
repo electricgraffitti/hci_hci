@@ -9,33 +9,9 @@
 <% end %>
 
 <!-- Render Helper Module Here -->
-
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Description</th>
-    <th>Article type</th>
-    <th>Keywords</th>
-    <th>Permalink</th>
-  </tr>
-
 <% @articles.each do |article| %>
-  <tr>
-    <td><%=h article.title %></td>
-    <td><%=h article.description %></td>
-    <td><%=h article.article_type.article_type %></td>
-    <td><%=h article.keywords %></td>
-    <td><%=h article.permalink %></td>
-    <td><%= link_to 'Show', article %></td>
-    <% if current_user %>
-    <%= link_to 'New article', new_article_path %> | 
-    <%= link_to 'Edit', edit_article_path(article) %> |
-    <%= link_to 'Destroy', article, :confirm => 'Are you sure?', :method => :delete %>
-    <% end %>
-  </tr>
+  <%= index_article(article) %>
 <% end %>
-</table>
-
-<br />
-
-<%= link_to "Back", request.env["HTTP_REFERER"] %>
+<div class="buttons_right">
+  <%= link_to "Back", request.env["HTTP_REFERER"], :class => "btn"%>
+</div>

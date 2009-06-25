@@ -25,6 +25,11 @@ $(document).ready(function() {
         }, function() {
           $span.fadeTo(500, 0);
       });
+      $(this).click( function() {
+        $span.fadeTo(200, 0);
+        $('ul#main_nav_ul a').removeClass('active');
+        $(this).addClass('active');
+      });
   });
 });
 // Sets the Main Nav Current Page Selection Tab

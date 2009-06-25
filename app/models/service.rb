@@ -25,6 +25,9 @@ class Service < ActiveRecord::Base
     indexes title
   end
   
+  # RedCloth (textilize)
+  acts_as_textiled  :description
+  
   # Validations
   validates_presence_of :title, :description, :permalink
   

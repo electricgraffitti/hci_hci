@@ -325,7 +325,7 @@ ul.nav_ul li span.hover {
 .nav4.highlight:hover, li.nav4 span.hover {
   background: url('../images/main_nav_sprite.png') -300px -60px;
 }
-#main_nav ul li a#events.active {
+#main_nav ul li a#press.active {
   background: url('../images/main_nav_sprite.png') -300px 0px;
 }
 .nav5 {
@@ -518,6 +518,12 @@ img.banner_scroll.r {
 .inner_header {
   margin: 10px 0px 20px 0px;
 }
+.show_wrap {
+  margin: 10px 0px 10px 10px;
+}
+.widget_links {
+  text-align: right;
+}
 /*********************************************/
 /******************SUBBOXES*******************/
 #sub_boxes {
@@ -578,6 +584,11 @@ img.banner_scroll.r {
   cursor: pointer;
   font-size: 0px;
   display: inline-block;
+}
+.buttons_right {
+  float: right;
+  text-align: right;
+  width: 200px;
 }
 /*********************************************/
 /******************FOOTER********************/

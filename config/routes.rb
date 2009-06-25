@@ -13,6 +13,7 @@ ActionController::Routing::Routes.draw do |map|
   # Mail Route Paths
   
   # Custom Named Routes
+  map.press "health-care-press", :controller => "announcements", :action => "index"
   map.media "health-care-media", :controller => "resources", :action => "index"
   map.search "health-care-search-results", :controller => 'search', :action => 'index'
   map.dashboard "dashboard", :controller => "users", :action => "index"

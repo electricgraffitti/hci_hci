@@ -13,6 +13,9 @@ class Article < ActiveRecord::Base
     indexes title
   end
   
+  # RedCloth (textilize)
+  acts_as_textiled  :description
+  
   #============================= Class Methods ==================================#
   
   # Sets Permalink Routes
