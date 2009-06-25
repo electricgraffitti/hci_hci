@@ -1,4 +1,4 @@
-<% page_title "Health Care Links "%>
+<% page_title "Links About Health Care "%>
 
 <% content_for :banner do %>
   <%= render :partial => "links/banner" %>
@@ -9,32 +9,9 @@
 <% end %>
 
 <!-- Render Helper Module Here -->
-
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Description</th>
-    <th>Link url</th>
-    <th>Keywords</th>
-    <th>Permalink</th>
-  </tr>
-
 <% @links.each do |link| %>
-  <tr>
-    <td><%=h link.title %></td>
-    <td><%=h link.description %></td>
-    <td><%=h link.link_url %></td>
-    <td><%=h link.keywords %></td>
-    <td><%=h link.permalink %></td>
-    <%= link_to 'Show', link %>
-    <% if current_user %>
-    <%= link_to 'New link', new_link_path %> |
-    <%= link_to 'Edit', edit_link_path(link) %> |
-    <%= link_to 'Delete', link, :confirm => 'Are you sure?', :method => :delete %>
-    <% end %>
-  </tr>
+  <%= index_link(link) %>
 <% end %>
-</table>
-
-<br />
-<%= link_to "Back", request.env["HTTP_REFERER"] %>
+<div>
+  <%= link_to "Back", request.env["HTTP_REFERER"], :class => "btn"%>
+</div>

@@ -12,6 +12,6 @@
 <% @articles.each do |article| %>
   <%= index_article(article) %>
 <% end %>
-<div class="buttons_right">
+<div>
   <%= link_to "Back", request.env["HTTP_REFERER"], :class => "btn"%>
 </div>
