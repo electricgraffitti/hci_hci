@@ -1,4 +1,4 @@
-set :branch, 'master'
+set :branch, 'stage'
 set :scm, :git
 set :git_enable_submodules, 1
 ssh_options[:paranoid] = false
