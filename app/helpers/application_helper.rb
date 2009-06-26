@@ -11,20 +11,9 @@ module ApplicationHelper
       a << "<div class='grid_2 alpha '>#{image_tag(asset.attachment.url(:small), :alt => mod.title)}</div>"
     end
     a << "<div class='grid_10 omega'>"
-    a << "<h3>#{h mod.title}</h3>"
-    a << "<p>#{h mod.description}</p>"
+    a << "<h3>#{mod.title}</h3>"
+    a << mod.description
     a << "</div></div>"
-  end
-  
-  def admin_links(m)
-    model_name = m.class.to_s.underscore
-    if current_user
-      a = link_to('New', send("new_#{model_name}_path", m))
-      a << " | "
-      # a << link_to('Edit', edit_document_path(m)) # send("edit_#{model_name}_path(#{model_name})", m) 
-      a << " | "
-      # a << link_to('Delete', send("#{model_name}", m), :confirm => 'Are you sure?', :method => :delete)
-    end 
   end
   
 end

@@ -6,8 +6,8 @@ module LinksHelper
     a << "<div class='grid_2 alpha '>#{link_to image_tag(asset.attachment.url(:small), :alt => mod.title), mod.link_url}</div>"
   end
     a << "<div class='grid_10 omega'>"
-    a << "<h3>#{link_to((h mod.title), mod.link_url)}</h3>"
-    a << "<p>#{h mod.description}</p>"
+    a << "<h3>#{link_to((mod.title), mod.link_url)}</h3>"
+    a << "<p>#{mod.description}</p>"
     a << "</div>"
     a << "<div class='clear'></div>"
     a << "<div class='widget_links grid_5 omega right'>"

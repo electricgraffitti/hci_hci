@@ -6,8 +6,8 @@ module DocumentsHelper
     a << "<div class='grid_2 alpha '>#{link_to image_tag(asset.attachment.url(:small), :alt => mod.title), document_path(mod)}</div>"
   end
     a << "<div class='grid_10 omega'>"
-    a << "<h3>#{h mod.title}</h3>"
-    a << "<p>#{h truncate(mod.description, :length => 350)}</p>"
+    a << "<h3>#{mod.title}</h3>"
+    a << "<p>#{truncate(mod.description, :length => 350)}</p>"
     a << "</div>"
     a << "<div class='clear'></div>"
     a << "<div class='widget_links grid_5 omega right'>"
