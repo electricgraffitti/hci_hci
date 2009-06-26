@@ -164,6 +164,43 @@ namespace :local_config do
   end
   
 end
+# Thinking Sphinx
+namespace :thinking_sphinx do
+  task :configure, :roles => [:app] do
+    run "cd #{current_path};  rake thinking_sphinx:configure RAILS_ENV=#{rails_env}"
+  end
+  task :index, :roles => [:app] do
+    run "cd #{current_path};  rake thinking_sphinx:index RAILS_ENV=#{rails_env}"
+  end
+  task :start, :roles => [:app] do
+    run "cd #{current_path};  rake thinking_sphinx:start RAILS_ENV=#{rails_env}"
+  end
+  task :stop, :roles => [:app] do
+    run "cd #{current_path};  rake thinking_sphinx:stop RAILS_ENV=#{rails_env}"
+  end
+  task :restart, :roles => [:app] do
+    run "cd #{current_path};  rake thinking_sphinx:restart RAILS_ENV=#{rails_env}"
+  end
+end
+
+# Thinking Sphinx typing shortcuts
+namespace :ts do
+  task :configure, :roles => [:app] do
+    run "cd #{current_path};  rake thinking_sphinx:configure RAILS_ENV=#{rails_env}"
+  end
+  task :in, :roles => [:app] do
+    run "cd #{current_path};  rake thinking_sphinx:index RAILS_ENV=#{rails_env}"
+  end
+  task :start, :roles => [:app] do
+    run "cd #{current_path};  rake thinking_sphinx:start RAILS_ENV=#{rails_env}"
+  end
+  task :stop, :roles => [:app] do
+    run "cd #{current_path};  rake thinking_sphinx:stop RAILS_ENV=#{rails_env}"
+  end
+  task :restart, :roles => [:app] do
+    run "cd #{current_path};  rake thinking_sphinx:restart RAILS_ENV=#{rails_env}"
+  end
+end
 
 namespace :deploy do
   desc "Restart the Passenger processes on the app server by touching tmp/restart.txt."
@@ -191,20 +228,23 @@ namespace :deploy do
   task :setup, :except => { :no_release => true } do
     moonshine.bootstrap
   end
-end
-
-namespace :ruby do
-  desc "Forces a reinstall of Ruby and restarts Apache/Passenger"
-  task :upgrade do
-    set :force_ruby, 'true'
-    moonshine.bootstrap
-    apache.restart
+  
+  # task :before_update do
+  #   # Stop Thinking Sphinx before the update so it finds its configuration file.
+  #   thinking_sphinx.stop
+  # end
+  
+  task :after_update do
+    symlink_sphinx_indexes
+    # thinking_sphinx.configure
+    thinking_sphinx.index
+    # thinking_sphinx.start
+  end
+  
+  desc "Link up Sphinx's indexes."
+  task :symlink_sphinx_indexes, :roles => [:app] do
+    run "ln -nfs #{shared_path}/db/sphinx #{current_path}/db/sphinx"
   end
 end
 
-namespace :apache do
-  desc "Restarts the Apache web server"
-  task :restart do
-    sudo 'service apache2 restart'
-  end
-end
+

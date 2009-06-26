@@ -16,14 +16,15 @@ module ApplicationHelper
     a << "</div></div>"
   end
   
-  # def admin_links(m)
-  #   if current_user
-  #     a = "#{link_to 'New', new_m_path}"
-  #     a << "|"
-  #     a << "#{link_to 'Edit', edit_m_path(m)}" 
-  #     a << "|"
-  #     a << "#{link_to 'Delete', m, :confirm => 'Are you sure?', :method => :delete}"
-  #   end 
-  # end
+  def admin_links(m)
+    model_name = m.class.to_s.underscore
+    if current_user
+      a = link_to('New', send("new_#{model_name}_path", m))
+      a << " | "
+      # a << link_to('Edit', edit_document_path(m)) # send("edit_#{model_name}_path(#{model_name})", m) 
+      a << " | "
+      # a << link_to('Delete', send("#{model_name}", m), :confirm => 'Are you sure?', :method => :delete)
+    end 
+  end
   
 end

@@ -8,35 +8,7 @@
   <%= render :partial => 'layouts/sub_boxes' %>
 <% end %>
 
-<!-- Put partial loop here -->
-
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Description</th>
-    <th>Document type</th>
-    <th>Keywords</th>
-    <th>Permalink</th>
-  </tr>
-
-<% @documents.each do |document| %>
-  <tr>
-    <td><%=h document.title %></td>
-    <td><%=h document.description %></td>
-    <td><%=h document.document_type_id %></td>
-    <td><%=h document.keywords %></td>
-    <td><%=h document.permalink %></td>
-    <td><%= link_to 'Show', document %></td>
-    
-    <% if current_user %>
-    <%= link_to 'New document', new_document_path %> |
-    <%= link_to 'Edit', edit_document_path(document) %> |
-    <%= link_to 'Destroy', document, :confirm => 'Are you sure?', :method => :delete %>
-    <% end %>
-  </tr>
-<% end %>
-</table>
-
-<br />
-
-<%= link_to "Back", request.env["HTTP_REFERER"] %>
+<%= render :partial => "index_document", :locals => {:documents => @documents}%>
+<div class="space_left">
+  <%= link_to "Back", request.env["HTTP_REFERER"], :class => "btn"%>
+</div>

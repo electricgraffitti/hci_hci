@@ -45,3 +45,12 @@ end
 require 'will_paginate'
 require 'hpricot'
 require 'RedCloth'
+
+# set delivery method to :smtp, :sendmail or :test
+ActionMailer::Base.delivery_method = :smtp
+
+# set the default email host for the application
+ActionMailer::Base.default_url_options = { :host => "stophealthcarefraud.com" }
+
+# Establish Application Name
+APPLICATION_NAME = "HealthCare Insight"

@@ -12,10 +12,10 @@
   </p>
   <p>
     <% for asset in @event.assets %>
-    <% fields_for "event[attachments][]", asset do |asset_form|%>
-    <%= asset_form.label "Add Attachment" %><br />
-    <%= asset_form.file_field :attachment, :size => 16 %>
-    <% end %>
+      <% fields_for "event[attachments][]", asset do |asset_form|%>
+        <%= asset_form.label "Add Attachment" %><br />
+        <%= asset_form.file_field :attachment, :size => 16 %><br/>
+      <% end %>
     <% end %>
   </p>
 </div>

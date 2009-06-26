@@ -118,10 +118,10 @@ h2 a.small_text {
   float: left;
 }
 .space_left {
-  margin-left: 15px;
+  margin-left: 10px;
 }
 .space_right {
-  margin-right: 20px;
+  margin-right: 10px;
 }
 .padding_top {
   padding-top: 20px;
@@ -344,7 +344,7 @@ ul.nav_ul li span.hover {
   background: url('../images/main_nav_sprite.png') -500px -60px;
 }
 #main_nav ul li a#contact_us.active {
-  background: url('../images/main_nav_sprite.png') -100px 0px;
+  background: url('../images/main_nav_sprite.png') -500px 0px;
 }
 ul#main_nav_ul li a {
   color: #ababab;

@@ -1,0 +1,31 @@
+<% form_tag(contact_mailer_path, :id => "contact_form") do %>
+  <div class="grid_4 alpha">
+    <div>
+      <%= label :contact, :first_name, "First Name" %><br />
+      <%= text_field :contact, :first_name, :name => "contact_us_first_name" %>
+    </div>
+    <div>
+      <%= label :contact, :last_name, "Last Name" %><br />
+      <%= text_field :contact, :last_name, :name => "contact_us_last_name" %>
+    </div>
+
+    <div>
+      <%= label :contact, :subject, "Subject" %><br />
+      <%= text_field :contact, :subject, :name => "contact_us_subject" %>
+    </div>
+  
+    <div>
+      <%= label :contact, :email, "Email Address" %><br />
+      <%= text_field :contact, :email, :name => "contact_us_email" %>
+    </div>
+  </div>
+  <div class="grid_4">
+	<div>
+    <%= label :contact, :body, "Message" %><br />
+    <%= text_area :contact, :body, :name => "contact_us_message", :rows => 8, :cols => 47 %>
+  </div>
+  </div>
+	<div class="grid_10">
+    <%= submit_tag 'Send Request', :class => "btn", :title => "Submit Your Message to HealthCare Insight" %>
+	</div>
+<% end %>

@@ -12,8 +12,10 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :videos, :new => {:upload => :post}
   
   # Mail Route Paths
+  map.contact_mailer 'contacts_mailer', :controller => "contacts", :action => "contacts_mailer"
   
   # Custom Named Routes
+  map.contact "contact-healthcare-insight", :controller => "contacts", :action => "contact_us"
   map.press "health-care-press", :controller => "announcements", :action => "index"
   map.media "health-care-media", :controller => "resources", :action => "index"
   map.search "health-care-search-results", :controller => 'search', :action => 'index'

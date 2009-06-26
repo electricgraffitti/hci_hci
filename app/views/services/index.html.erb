@@ -9,3 +9,6 @@
 <% end %>
 
 <%= render :partial => "services/index_list" %>
+<div class="space_left">
+  <%= link_to "Back", request.env["HTTP_REFERER"], :class => "btn"%>
+</div>

@@ -9,9 +9,7 @@
 <% end %>
 
 <!-- Render Helper Module Here -->
-<% @links.each do |link| %>
-  <%= index_link(link) %>
-<% end %>
-<div>
+<%= render :partial => "index_link", :locals => {:links => @links} %>
+<div class="space_left">
   <%= link_to "Back", request.env["HTTP_REFERER"], :class => "btn"%>
 </div>

@@ -28,6 +28,10 @@ class Link < ActiveRecord::Base
   # RedCloth (textilize)
   acts_as_textiled  :description
   
+  # Named Scopes
+  named_scope :small_list, lambda { |limit| {:limit => limit }}
+  named_scope :last_created, :order => "created_at DESC"
+  
   #============================= Class Methods ==================================#
   
   # Sets Permalink Routes

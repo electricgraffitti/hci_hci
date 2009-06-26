@@ -1,0 +1,11 @@
+<% page_title("Contact Us ") %>
+
+<% content_for :banner do %>
+  <%= render :partial => 'contacts/banner' %>
+<% end %>
+
+<% content_for :sidebar do %>
+  <%= render :partial => 'layouts/sub_boxes' %>
+<% end %>
+
+<%= render :partial => 'contacts/contact_form' %>

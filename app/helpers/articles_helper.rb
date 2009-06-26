@@ -14,11 +14,11 @@ module ArticlesHelper
     a <<  link_to('Read More', article_path(mod))
     if current_user
       a << " | "
-      a << link_to('New article', new_article_path)
+      a << link_to('New', new_article_path)
       a << " | " 
       a << link_to('Edit', edit_article_path(mod))
       a << " | "
-      a << link_to('Destroy', "#{mod}", :confirm => 'Are you sure?', :method => :delete) 
+      a << link_to('Delete', "#{mod}", :confirm => 'Are you sure?', :method => :delete) 
     end
     a << "</div></div>"
   end
