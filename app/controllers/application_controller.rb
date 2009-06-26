@@ -3,7 +3,7 @@
 
 class ApplicationController < ActionController::Base
   helper :all # include all helpers, all the time
-  protect_from_forgery # See ActionController::RequestForgeryProtection for details
+  #protect_from_forgery # See ActionController::RequestForgeryProtection for details
 
   # Scrub sensitive parameters from your log
   filter_parameter_logging :password, :password_confirmation
@@ -59,7 +59,7 @@ class ApplicationController < ActionController::Base
     
     def super?
       authenticate_or_request_with_http_basic do |username, password|
-        username == "sngndncmn" && password == "rockstar"
+        username == APP['username'] && password == APP['password']
       end
     end
 

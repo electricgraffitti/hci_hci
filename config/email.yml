@@ -1,5 +1,14 @@
 development:
-  email:
+  email_settings:
+    delivery_method: sendmail
+    address: smtp.gmail.com
+    port: 587
+    user_name: stophealthcarefraud@gmail.com
+    password: rockstar
+    authentication: :plain
+    
+stage:
+  email_settings:
     delivery_method: smtp
     address: smtpout.secureserver.net
     port: 25
@@ -8,10 +17,12 @@ development:
     username: 25015209
     password: 239133
     contact_recipient: webmaster@stophealthcarefraud.com
+    
 production:
-  email:
+  email_settings:
     delivery_method: sendmail
     contact_recipient: info@stophealthcarefraud.com
+    
 test:
   fms_host: localhost:3000
   disable_google_ads: false
