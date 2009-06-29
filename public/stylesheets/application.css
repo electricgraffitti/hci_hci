@@ -541,7 +541,7 @@ img.banner_scroll.r {
 .overview_wrap h3 {
   margin-top: 10px;
 }
-.overview_wrap ul {
+.overview_wrap ul, .overview_wrap ol {
   margin: 5px;
 }
 .overview_wrap ul li {
