@@ -5,13 +5,34 @@
 <% end %>
 
 <% content_for :sidebar do %>
+<%= render :partial => 'layouts/sub_boxes' %>
 <% end %>
 
-<% content_for :sub_boxes do %>
-  <%= render :partial => 'layouts/sub_boxes' %>
+<% unless @services.blank? %>
+<h3>Service Results</h3>
+<%= render :partial => "services/index_list", :locals => {:services => @services} %>
 <% end %>
 
-<%= render :partial => "services/index_list" %>
+<% unless @articles.blank? %>
+<h3>Article Results</h3>
+<%= render :partial => "articles/index_article", :locals => {:articles => @articles} %>
+<% end %>
+
+<% unless @documents.blank? %>
+<h3>Document Results</h3>
+<%= render :partial => "documents/index_document", :locals => {:documents => @documents} %>
+<% end %>
+
+<% unless @events.blank? %>
+<h3>Event Results</h3>
+<%= render :partial => "events/index_event", :locals => {:events => @events} %>
+<% end %>
+
+<% unless @links.blank? %>
+<h3>Link Results</h3>
+<%= render :partial => "links/index_link", :locals => {:links => @links} %>
+<% end %>
+
 <div class="space_left">
   <%= link_to "Back", request.env["HTTP_REFERER"], :class => "btn"%>
 </div>

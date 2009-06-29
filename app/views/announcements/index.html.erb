@@ -9,7 +9,7 @@
 <% end %>
 
 <div class="index_list">
-  <h2>HCI Articles</h2>
+  <h2><%= link_to "HCI Articles", articles_path %></h2>
 <%= render :partial => "articles/index_article", :locals => {:articles => @articles} %>
 </div>
 <div class="index_list">
