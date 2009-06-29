@@ -8,7 +8,7 @@
   <%= render :partial => 'layouts/sub_boxes' %>
 <% end %>
 
-<%= show_listing(@service) %>
+<%= render :partial => "show_service", :locals => {:service => @service} %>
 <div class="clear"></div>
 <div class="grid_12"><% if current_user %>
   <%= link_to 'New', new_service_path %> |

@@ -9,29 +9,7 @@
 <% end %>
 
 <%#= render :partial => "# Put helper Here" %>
-
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Description</th>
-    <th>Keywords</th>
-    <th>Permalink</th>
-  </tr>
-
-<% @events.each do |event| %>
-  <tr>
-    <td><%=h event.title %></td>
-    <td><%=h event.description %></td>
-    <td><%=h event.keywords %></td>
-    <td><%=h event.permalink %></td>
-    <td><%= link_to 'Show', event %></td>
-    <% if current_user %>
-    <%= link_to 'New event', new_event_path %> |
-    <%= link_to 'Edit', edit_event_path(event) %> |
-    <%= link_to 'Destroy', event, :confirm => 'Are you sure?', :method => :delete %>
-    <% end %>
-  </tr>
-<% end %>
-</table>
-
-<br />
+<%= render :partial => "index_event", :locals => {:events => @events} %>
+<div class="space_left">
+  <%= link_to "Back", request.env["HTTP_REFERER"], :class => "btn"%>
+</div>
