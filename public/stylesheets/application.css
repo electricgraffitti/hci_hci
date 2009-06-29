@@ -534,6 +534,20 @@ img.banner_scroll.r {
 .widget_links {
   text-align: right;
 }
+/***Show Pages***/
+.overview_wrap {
+  margin-bottom: 10px;
+}
+.overview_wrap h3 {
+  margin-top: 10px;
+}
+.overview_wrap ul {
+  margin: 5px;
+}
+.overview_wrap ul li {
+  list-style-type: circle;
+  margin: 10px;
+}
 /*********************************************/
 /******************SUBBOXES*******************/
 #sub_boxes {
