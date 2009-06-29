@@ -548,6 +548,10 @@ img.banner_scroll.r {
   list-style-type: circle;
   margin: 10px;
 }
+.overview_wrap ol li {
+  list-style-type: decimal;
+  margin: 10px;
+}
 /*********************************************/
 /******************SUBBOXES*******************/
 #sub_boxes {
