@@ -21,7 +21,7 @@ Rails::Initializer.run do |config|
   # config.gem "aws-s3", :lib => "aws/s3"
   config.gem 'RedCloth', :version => ">= 4.1.1", :source => "http://code.whytheluckystiff.net"
   config.gem "authlogic"
-  config.gem "active_youtube"
+  # config.gem "active_youtube"
 
   # Only load the plugins named here, in the order given (default is alphabetical).
   # :all can be used as a placeholder for all plugins not explicitly named
@@ -46,8 +46,8 @@ end
 require 'will_paginate'
 require 'hpricot'
 require 'RedCloth'
-require 'lib/connection.rb'
-require 'youtube_g'
+# require 'lib/connection.rb'
+# require 'youtube_g'
 
 # set delivery method to :smtp, :sendmail or :test
 ActionMailer::Base.delivery_method = :sendmail
