@@ -18,6 +18,7 @@ ActionController::Routing::Routes.draw do |map|
   map.contact "contact-healthcare-insight", :controller => "contacts", :action => "contact_us"
   map.press "health-care-press", :controller => "announcements", :action => "index"
   map.media "health-care-media", :controller => "resources", :action => "index"
+  map.careers "healthcare-insight-careers", :controller => "careers", :action => "index"
   map.search "health-care-search-results", :controller => 'search', :action => 'index'
   map.dashboard "dashboard", :controller => "users", :action => "index"
   map.login "login", :controller => "user_sessions", :action => "new"

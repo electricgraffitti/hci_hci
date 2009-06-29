@@ -334,7 +334,7 @@ ul.nav_ul li span.hover {
 .nav5.highlight:hover, li.nav5 span.hover {
   background: url('../images/main_nav_sprite.png') -400px -61px;
 }
-#main_nav ul li a#about_us.active {
+#main_nav ul li a#careers.active {
   background: url('../images/main_nav_sprite.png') -400px 0px;
 }
 .nav6 {
@@ -343,8 +343,17 @@ ul.nav_ul li span.hover {
 .nav6.highlight:hover, li.nav6 span.hover {
   background: url('../images/main_nav_sprite.png') -500px -61px;
 }
-#main_nav ul li a#contact_us.active {
+#main_nav ul li a#about_us.active {
   background: url('../images/main_nav_sprite.png') -500px 0px;
+}
+.nav7 {
+  background: url('../images/main_nav_sprite.png') -600px -120px;
+}
+.nav7.highlight:hover, li.nav7 span.hover {
+  background: url('../images/main_nav_sprite.png') -600px -61px;
+}
+#main_nav ul li a#contact_us.active {
+  background: url('../images/main_nav_sprite.png') -600px 0px;
 }
 ul#main_nav_ul li a {
   color: #ababab;
