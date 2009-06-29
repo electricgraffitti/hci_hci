@@ -535,6 +535,9 @@ img.banner_scroll.r {
 .sub_box {
   min-height: 200px;
 }
+.sub_box_header {
+  margin: 10px;
+}
 .sub_box_wrap {
   width: 200px;
   margin-left: 32px;
