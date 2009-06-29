@@ -4,8 +4,8 @@ module ServicesHelper
     a = "<div class='show_wrap grid_12 alpha omega'>"
     a << "<div class='grid_2 alpha '>#{link_to image_tag(serv.avatar.url(:small), :alt => serv.title), service_path(serv)}</div>"
     a << "<div class='grid_10 omega'>"
-    a << "<h3>#{h serv.title}&#8482</h3>"
-    a << "<p>#{h serv.description}</p>"
+    a << "<h3>#{serv.title}&#8482</h3>"
+    a << "<p>#{serv.description}</p>"
     a << "</div></div>"
   end
   
@@ -13,8 +13,8 @@ module ServicesHelper
     a = "<div class='show_wrap grid_12'>"
     a << "<div class='grid_2 alpha '>#{link_to image_tag(serv.avatar.url(:small), :alt => serv.title), service_path(serv)}</div>"
     a << "<div class='grid_10 omega'>"
-    a << "<h3>#{h serv.title}&#8482</h3>"
-    a << "<p>#{h serv.description}</p>"
+    a << "<h3>#{serv.title}&#8482</h3>"
+    a << "<p>#{serv.description}</p>"
     a << "</div></div>"
   end
   
