@@ -17,7 +17,9 @@
 
 class Service < ActiveRecord::Base
   
-  has_many :assets, :as => :attachable
+  # has_many :assets, :as => :attachable
+  has_many :case_studies, :class_name => 'CaseStudy'
+  accepts_nested_attributes_for :case_studies, :allow_destroy => true
   
   # Thinking Sphinx Indexes
   define_index do
@@ -44,13 +46,6 @@ class Service < ActiveRecord::Base
   # Sets Permalink Routes
   def to_param
     "#{id}-#{permalink}"
-  end
-  
-  #pulls the assets from the form
-  def attachments=(attachments)
-    attachments.each do |attachment|
-      assets.build(attachment)
-    end
   end
   
 end

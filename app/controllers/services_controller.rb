@@ -30,7 +30,7 @@ class ServicesController < ApplicationController
   # GET /services/new.xml
   def new
     @service = Service.new
-    @service.assets.build
+    @service.case_studies.build
     respond_to do |format|
       format.html { render :layout => "admin"}
       format.xml  { render :xml => @service }
@@ -40,7 +40,7 @@ class ServicesController < ApplicationController
   # GET /services/1/edit
   def edit
     @service = Service.find(params[:id])
-    @service.assets.build
+
     respond_to do |format|
       format.html { render :layout => "admin"}
     end
@@ -49,8 +49,9 @@ class ServicesController < ApplicationController
   # POST /services
   # POST /services.xml
   def create
+    # raise params[:service][:cstudies].to_yaml
     @service = Service.new(params[:service])
-
+    
     respond_to do |format|
       if @service.save
         flash[:notice] = 'Service was successfully created.'
