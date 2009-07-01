@@ -184,6 +184,9 @@ h2 a.small_text {
 .white {
   color: #ffffff;
 }
+.black {
+  color: #000;
+}
 .bgwhite {
   background: #ffffff;
 }
@@ -291,6 +294,7 @@ label.error {
 /*********************************************/
 /*****************HEADER**********************/
 #hd {
+  background: #000 url('../images/headerbgblack.png') repeat-x;
   position: relative;
   height: 105px;
 }
@@ -300,8 +304,8 @@ label.error {
   bottom: 0px;
   left: 0px;
   height: 60px;
-  background: url('../images/main_nav_bg2.png') repeat-x;
-  border-top: 1px solid #f8f8f8;
+  background: url('../images/main_nav_bgblack.png') repeat-x;
+  /*border-top: 1px solid #f8f8f8;*/
 }
 ul.nav_ul {
   margin-left: 5px;
@@ -312,10 +316,12 @@ ul.nav_ul li {
   height: 60px;
   float: left;
   text-align: center;
-  border-left: 1px solid #e1e1e1;
+  /*border-left: 1px solid #e1e1e1;*/
+  border-left: 1px solid #444444;
 }
 ul.nav_ul li.last {
-  border-right: 1px solid #e1e1e1;
+  /*border-right: 1px solid #e1e1e1;*/
+  border-right: 1px solid #444444;
 }
 ul.nav_ul li span.hover {
   position: relative;
@@ -324,73 +330,76 @@ ul.nav_ul li span.hover {
   display: block;
 }
 .nav1 {
-  background: url('../images/main_nav_sprite.png') 0px -120px;
+  background: url('../images/main_nav_sprite_black.png') 0px -120px;
 }
 .nav1.highlight:hover, li.nav1 span.hover {
-  background: url('../images/main_nav_sprite.png') 0px -61px;
+  background: url('../images/main_nav_sprite_black.png') 0px -61px;
 }
 #main_nav ul li a#home.active {
-  background: url('../images/main_nav_sprite.png') 0px 0px;
+  background: url('../images/main_nav_sprite_black.png') 0px 0px;
 }
 .nav2 {
-  background: url('../images/main_nav_sprite.png') -100px -120px;
+  background: url('../images/main_nav_sprite_black.png') -100px -120px;
 }
 .nav2.highlight:hover, li.nav2 span.hover {
-  background: url('../images/main_nav_sprite.png') -100px -61px;
+  background: url('../images/main_nav_sprite_black.png') -100px -61px;
 }
 #main_nav ul li a#services.active {
-  background: url('../images/main_nav_sprite.png') -100px 0px;
+  background: url('../images/main_nav_sprite_black.png') -100px 0px;
 }
 .nav3 {
-  background: url('../images/main_nav_sprite.png') -200px -120px;
+  background: url('../images/main_nav_sprite_black.png') -200px -120px;
 }
 .nav3.highlight:hover, li.nav3 span.hover {
-  background: url('../images/main_nav_sprite.png') -200px -61px;
+  background: url('../images/main_nav_sprite_black.png') -200px -61px;
 }
 #main_nav ul li a#media_lab.active {
-  background: url('../images/main_nav_sprite.png') -200px 0px;
+  background: url('../images/main_nav_sprite_black.png') -200px 0px;
 }
 .nav4 {
-  background: url('../images/main_nav_sprite.png') -300px -120px;
+  background: url('../images/main_nav_sprite_black.png') -300px -120px;
 }
 .nav4.highlight:hover, li.nav4 span.hover {
-  background: url('../images/main_nav_sprite.png') -300px -61px;
+  background: url('../images/main_nav_sprite_black.png') -300px -61px;
 }
 #main_nav ul li a#press.active {
-  background: url('../images/main_nav_sprite.png') -300px 0px;
+  background: url('../images/main_nav_sprite_black.png') -300px 0px;
 }
 .nav5 {
-  background: url('../images/main_nav_sprite.png') -400px -120px;
+  background: url('../images/main_nav_sprite_black.png') -400px -120px;
 }
 .nav5.highlight:hover, li.nav5 span.hover {
-  background: url('../images/main_nav_sprite.png') -400px -61px;
+  background: url('../images/main_nav_sprite_black.png') -400px -61px;
 }
 #main_nav ul li a#careers.active {
-  background: url('../images/main_nav_sprite.png') -400px 0px;
+  background: url('../images/main_nav_sprite_black.png') -400px 0px;
 }
 .nav6 {
-  background: url('../images/main_nav_sprite.png') -500px -120px;
+  background: url('../images/main_nav_sprite_black.png') -500px -120px;
 }
 .nav6.highlight:hover, li.nav6 span.hover {
-  background: url('../images/main_nav_sprite.png') -500px -61px;
+  background: url('../images/main_nav_sprite_black.png') -500px -61px;
 }
 #main_nav ul li a#about_us.active {
-  background: url('../images/main_nav_sprite.png') -500px 0px;
+  background: url('../images/main_nav_sprite_black.png') -500px 0px;
 }
 .nav7 {
-  background: url('../images/main_nav_sprite.png') -600px -120px;
+  background: url('../images/main_nav_sprite_black.png') -600px -120px;
 }
 .nav7.highlight:hover, li.nav7 span.hover {
-  background: url('../images/main_nav_sprite.png') -600px -61px;
+  background: url('../images/main_nav_sprite_black.png') -600px -61px;
 }
 #main_nav ul li a#contact_us.active {
-  background: url('../images/main_nav_sprite.png') -600px 0px;
+  background: url('../images/main_nav_sprite_black.png') -600px 0px;
 }
 ul#main_nav_ul li a {
   color: #ababab;
   text-decoration: none;
   display: block;
   text-indent: -1000em;
+}
+ul#main_nav_ul li a.black {
+  color: #000;
 }
 #admin_link {
   float: right;
@@ -425,7 +434,7 @@ ul#admin_nav_ul li a {
 /********************************/
 /************HEADER*************/
 #hci_logo {
-  background: url('../images/HCI_Logo.png') no-repeat;
+  background: url('../images/HCI_Logo_black.png') no-repeat;
   display: block;
   float: left;
   text-indent: -1000em;
@@ -460,7 +469,10 @@ ul#top_links li a {
   width: 100px;
   height: 20px;
   text-decoration: none;
-  color: #3e3e3e;
+  color: #e3e3e3;
+}
+ul#top_links li a.black {
+  color: #000;
 }
 ul#top_links li a.white {
   color: white;
@@ -666,7 +678,7 @@ img.banner_scroll.r {
   text-indent: -1000em;
   width: 25px;
   height: 30px;
-  background: url('../images/search_icon.png') no-repeat;
+  background: url('../images/search_icon_black.png') no-repeat;
   border: none;
   cursor: pointer;
   font-size: 0px;
