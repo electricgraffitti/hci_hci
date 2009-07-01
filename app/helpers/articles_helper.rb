@@ -22,5 +22,4 @@ module ArticlesHelper
     end
     a << "</div></div>"
   end
-  
 end

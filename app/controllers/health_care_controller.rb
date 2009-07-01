@@ -1,7 +1,7 @@
 class HealthCareController < ApplicationController
   
   def index
-    
+    @articles = Article.small_list(4)
   end
   
   def about

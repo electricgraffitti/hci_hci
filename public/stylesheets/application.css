@@ -141,6 +141,9 @@ h2 a.small_text {
 .bluegrey {
   color: #88d1d0;
 }
+.bluegreen {
+  color: #60a785;
+}
 .green {
   color: #7ed96c;
 }
@@ -520,7 +523,7 @@ img.banner_scroll.r {
 #layout4main, .main_content {
   min-height: 300px;
   background: #fff;
-  padding: 10px;
+  padding: 10px 0px;
 }
 #layout4main {
   min-height: 960px;
@@ -551,6 +554,20 @@ img.banner_scroll.r {
 .overview_wrap ol li {
   list-style-type: decimal;
   margin: 10px;
+}
+.thumb_wrap {
+  width: 70px;
+  margin-right: 10px;
+  float: left;
+}
+.index_list h2 {
+  margin-left: 10px;
+}
+.index_list h2 a {
+  text-decoration: none;
+}
+.index_list h2 a:hover {
+  text-decoration: underline;
 }
 /*********************************************/
 /******************SUBBOXES*******************/
@@ -624,6 +641,13 @@ img.banner_scroll.r {
 /*********************************************/
 /******************FOOTER********************/
 #ft {
-  background: #fff url('../images/banners/health_care_insight_banner2.png') no-repeat;
-  min-height: 290px;
+  /*background: #fff url('../images/banners/health_care_insight_banner2.png') no-repeat;*/
+  background: #000;
+  min-height: 220px;
+}
+
+
+
+.video_holder {
+  min-height: 400px;
 }
