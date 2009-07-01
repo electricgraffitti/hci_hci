@@ -6,7 +6,7 @@ module ApplicationHelper
   end
   
   def show_page_listing(mod)
-    a = "<div class='grid_11 alpha'>"
+    a = "<div class='grid_11 omega'>"
     mod.assets.each do |asset|
       a << "<div class='grid_2 alpha'>#{image_tag(asset.attachment.url(:small), :alt => mod.title)}</div>"
     end

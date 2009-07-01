@@ -148,7 +148,7 @@ h2 a.small_text {
   color: #7ed96c;
 }
 .bluepurple {
-  color: #557bbd;
+  color: #4e3491;
 }
 .purple {
   color: #4b479d;
@@ -562,6 +562,7 @@ img.banner_scroll.r {
 }
 .index_list h2 {
   margin-left: 10px;
+  float:left;
 }
 .index_list h2 a {
   text-decoration: none;

@@ -11,7 +11,7 @@
 <%# This is in the application helper %>
 <%= show_page_listing(@event) %>
 
-<div class="right">
+<div class="widget_links grid_3 omega right">
 <% if current_user %>
   <%= link_to 'Edit', edit_event_path(@event) %> |
   <%= link_to 'New', new_event_path %> |
