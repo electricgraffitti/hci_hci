@@ -1,30 +1,88 @@
 <% form_tag(contact_mailer_path, :id => "contact_form") do %>
-  <div class="grid_4">
+<div class="grid_8 form_section">
+  <div class="grid_4 alpha">
     <div>
-      <%= label :contact, :first_name, "First Name" %><br />
-      <%= text_field :contact, :first_name, :name => "contact_us_first_name" %>
+      <%= label :contact, :contact_name, "Contact Name" %><br />
+      <%= text_field :contact, :contact_name, :name => "contact_us_contact_name" %>
     </div>
     <div>
-      <%= label :contact, :last_name, "Last Name" %><br />
-      <%= text_field :contact, :last_name, :name => "contact_us_last_name" %>
+      <%= label :contact, :business_name, "Business Name" %><br />
+      <%= text_field :contact, :business_name, :name => "contact_us_business_name" %>
     </div>
-
-    <div>
-      <%= label :contact, :subject, "Subject" %><br />
-      <%= text_field :contact, :subject, :name => "contact_us_subject" %>
-    </div>
-  
     <div>
       <%= label :contact, :email, "Email Address" %><br />
       <%= text_field :contact, :email, :name => "contact_us_email" %>
     </div>
+    <div>
+      <%= label :contact, :phone, "Phone Number" %><br />
+      <%= text_field :contact, :phone, :name => "contact_us_phone" %>
+    </div>
   </div>
-  <div class="grid_4">
-	<div>
-    <%= label :contact, :body, "Message" %><br />
-    <%= text_area :contact, :body, :name => "contact_us_message", :rows => 8, :cols => 47 %>
+  <div class="grid_4 alpha">
+    <div>
+      <%= label :contact, :street, "Street" %><br />
+      <%= text_field :contact, :street, :name => "contact_us_street" %>
+    </div>
+    <div>
+      <%= label :contact, :city, "City" %><br />
+      <%= text_field :contact, :city, :name => "contact_us_city" %>
+    </div>
+    <div>
+      <%= label :contact, :state, "State" %><br />
+       <%= collection_select :contact, :state, State.all, :full_name, :full_name %>
+    </div>
+    <div>
+      <%= label :contact, :zipcode, "Zip Code" %><br />
+      <%= text_field :contact, :zipcode, :name => "contact_us_zip_code" %>
+    </div>
   </div>
+</div>
+<div class="grid_8 form_section"> 
+  <div class="grid_4 alpha">
+  	<div>
+      <%= check_box_tag 'contact[interest][]', "Case Studies", params[:case_studies] %>
+      <%= label_tag :case_studies, "Case Studies" %>
+    </div>
+    <div>
+      <%= check_box_tag 'contact[interest][]', "Testimonials", params[:testimonials] %>
+      <%= label_tag :testimonials, "Testimonials" %>
+    </div>
+    <div>
+      <%= check_box_tag 'contact[interest][]', "White Papers", params[:white_papers] %>
+      <%= label_tag :white_papers, "White Papers" %>
+    </div>
+    <div>
+      <%= check_box_tag 'contact[interest][]', "Webinars", params[:webinars] %>
+      <%= label_tag :webinars, "Webinars" %>
+    </div>
+    <div>
+      <%= check_box_tag 'contact[interest][]', "Demo Request", params[:demo_request] %>
+      <%= label_tag :demo_request, "Demo Request" %>
+    </div>
+    <div>
+      <%= check_box_tag 'contact[interest][]', "Service Overviews", params[:service_overviews] %>
+      <%= label_tag :service_overviews, "Service Overviews" %>
+    </div>
+    <div>
+      <%= check_box_tag 'contact[interest][]', "Newsletter", params[:newsletter] %>
+      <%= label_tag :newsletter, "HCI Newsletter" %>
+    </div>
+    <div>
+      <%= check_box_tag 'contact[interest][]', "Process Flow", params[:process_flow] %>
+      <%= label_tag :process_flow, "Process Flow" %>
+    </div>
+    <div>
+      <%= check_box_tag 'contact[interest][]', "Data Analysis", params[:data_analysis] %>
+      <%= label_tag :data_analysis, "Data Analysis" %>
+    </div>
   </div>
+  <div class="grid_4 alpha">
+  	<div>
+      <%= label :contact, :body, "Message" %><br />
+      <%= text_area :contact, :body, :name => "contact_us_message", :rows => 8, :cols => 47 %>
+    </div>
+  </div>
+</div>
 	<div class="grid_10">
     <%= submit_tag 'Send Request', :class => "btn", :title => "Submit Your Message to HealthCare Insight" %>
 	</div>

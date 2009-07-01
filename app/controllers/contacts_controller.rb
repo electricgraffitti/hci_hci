@@ -3,7 +3,7 @@ class ContactsController < ApplicationController
   layout "layout4"
   
   def contacts_mailer
-    
+    # raise params.to_yaml
     #grab the params to pass to the redirect
     @form = params
     

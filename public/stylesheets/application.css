@@ -154,11 +154,11 @@ h2 a.small_text {
   background: #60a785;
 }
 .green {
-  color: #a9e42b;
+  color: #73da10;
 /*  color: #7ed96c;*/
 }
 .background_green {
-  background: #a9e42b;
+  background: #7eda10;
 /*  background: #7ed96c;*/
 }
 .bluepurple {
@@ -294,7 +294,7 @@ label.error {
 /*********************************************/
 /*****************HEADER**********************/
 #hd {
-  background: #000 url('../images/headerbgblack.png') repeat-x;
+  background: #000 url('../images/headerbgblack.png') repeat-x 0px 14px;
   position: relative;
   height: 105px;
 }
@@ -528,6 +528,7 @@ ul#top_links li a.white {
   font-size: 146.5%;
   color: #fff;
   text-decoration: none;
+  display: block;
 }
 .banner_nav .banner_li a:hover {
   width: 30px;
@@ -654,6 +655,11 @@ img.banner_scroll.r {
 .go_link {
   margin-top: 10px;
   margin-right: 32px;
+}
+/*********************************************/
+/******************FORMS**********************/
+.form_section {
+  margin-bottom: 20px;
 }
 /*********************************************/
 /******************BUTTONS********************/

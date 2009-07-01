@@ -13,10 +13,23 @@
   <h3>HCInsight.com :: Contact Us</h3>
   <h4>Contact Requestor:</h4>
   <ul>
-    <li>From: <%= @contact[:contact_us_first_name] %> <%= @contact[:contact_us_last_name] %></li>
+    <li>From: <%= @contact[:contact_us_contact_name] %></li>
+    <li>Business: <%= @contact[:contact_us_business_name] %></li>
     <li>Email: <%= @contact[:contact_us_email] %></li>
-    <li>Title: <%= @contact[:contact_us_subject] %></li>
+    <li>Phone: <%= @contact[:contact_us_phone] %></li>
+    <li>Street: <%= @contact[:contact_us_street] %></li>
+    <li>City: <%= @contact[:contact_us_city] %></li>
+    <li>State: <%= @contact[:contact][:state] %></li>
+    <li>Zip Code: <%= @contact[:contact_us_zip_code] %></li>
   </ul>
+  <p>
+    <h4>Contact Interests:</h4>
+    <ul>
+      <% @contact[:contact][:interest].each do |interest| %>
+      <li><%= interest %></li>
+      <% end %>
+    </ul>
+  </p>
   <p>
   <h4>Comment:</h4>
   <%= @contact[:contact_us_message] %>
