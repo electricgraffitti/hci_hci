@@ -21,6 +21,9 @@ class Service < ActiveRecord::Base
   has_many :case_studies, :class_name => 'CaseStudy'
   accepts_nested_attributes_for :case_studies, :allow_destroy => true
   
+  has_many :brochures, :class_name => "Brochure"
+  accepts_nested_attributes_for :brochures, :allow_destroy => true
+  
   # Thinking Sphinx Indexes
   define_index do
     indexes description

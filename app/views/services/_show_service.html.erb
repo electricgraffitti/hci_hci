@@ -22,6 +22,17 @@
     </div>
     <div class="grid_5">
       <h3>Brochures</h3>
+      <ul>
+        <% s.brochures.each do |brochure|%>
+        <li>
+          <h4><%= (brochure.title).capitalize %></h4>
+          <p>
+            <%= brochure.description %>
+          </p>
+          <%= link_to ("#{brochure.title}", ("/case_studies/" + brochure.id.to_s + "/original_" + brochure.brochure_file_name)) %>
+        </li>
+        <% end %>
+      </ul>
     </div>
   </div>
   <div class="show_video content_wrap grid_12">

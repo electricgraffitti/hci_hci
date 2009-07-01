@@ -138,20 +138,48 @@ h2 a.small_text {
 .lightblue {
   color: #19c0ec;
 }
+.background_lightblue {
+  background: #19c0ec;
+}
 .bluegrey {
   color: #88d1d0;
+}
+.background_bluegrey {
+  background: #88d1d0;
 }
 .bluegreen {
   color: #60a785;
 }
+.background_bluegreen {
+  background: #60a785;
+}
 .green {
-  color: #7ed96c;
+  color: #a9e42b;
+/*  color: #7ed96c;*/
+}
+.background_green {
+  background: #a9e42b;
+/*  background: #7ed96c;*/
 }
 .bluepurple {
   color: #4e3491;
 }
+.background_bluepurple {
+  background: #4e3491;
+}
 .purple {
-  color: #4b479d;
+  color: #4e3491;
+ /* color: #4b479d;*/
+}
+.background_purple {
+  background: #4e3491;
+  /*background: #4b479d;*/
+}
+.maroon {
+  color: #bc1f8c;
+}
+.background_maroon {
+  background: #bc1f8c;
 }
 .white {
   color: #ffffff;
@@ -574,10 +602,20 @@ img.banner_scroll.r {
 /******************SUBBOXES*******************/
 #sub_boxes {
   color: #fff;
-  background: #191819;
+  /*background: #191819;*/
+  background: #000;
   text-align: left;
 }
+#sub_box1 {
+  margin-left: 15px;
+}
 .sub_box {
+  min-height: 200px;
+  margin-left: 10px;
+}
+.inner_sub_box {
+  margin-left: 10px;
+  width: 200px;
   min-height: 200px;
 }
 .sub_box_header {
@@ -642,13 +680,21 @@ img.banner_scroll.r {
 /*********************************************/
 /******************FOOTER********************/
 #ft {
+  position: relative;
   /*background: #fff url('../images/banners/health_care_insight_banner2.png') no-repeat;*/
   background: #000;
   min-height: 220px;
 }
-
+#footer_logo {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background: #000 url('../images/hci_footer_logo.png') no-repeat;
+  width: 350px;
+  height: 60px;
+}
 
 
 .video_holder {
-  min-height: 400px;
+  min-height: 200px;
 }
