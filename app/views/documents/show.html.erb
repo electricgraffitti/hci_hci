@@ -1,3 +1,9 @@
+<% if @document.keywords
+  meta_keywords(@document.keywords)
+  end %>
+<% if @document.meta_description
+  meta_description(@document.meta_description)
+  end %>
 <% page_title "#{@document.title} " %>
 
 <% content_for :banner do %>

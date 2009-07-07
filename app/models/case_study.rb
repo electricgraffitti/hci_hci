@@ -1,3 +1,21 @@
+# == Schema Information
+#
+# Table name: case_studies
+#
+#  id                      :integer(4)      not null, primary key
+#  title                   :string(255)
+#  description             :text
+#  permalink               :string(255)
+#  keywords                :string(255)
+#  service_id              :integer(4)
+#  created_at              :datetime
+#  updated_at              :datetime
+#  case_study_file_name    :string(255)
+#  case_study_content_type :string(255)
+#  case_study_file_size    :integer(4)
+#  case_study_updated_at   :datetime
+#
+
 class CaseStudy < ActiveRecord::Base
   
   belongs_to :service

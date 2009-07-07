@@ -1,3 +1,9 @@
+<% if @article.keywords
+  meta_keywords(@article.keywords)
+  end %>
+<% if @article.meta_description
+  meta_description(@article.meta_description)
+  end %>
 <% page_title "#{@article.title} " %>
 
 <% content_for :banner do %>

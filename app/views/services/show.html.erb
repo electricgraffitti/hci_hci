@@ -1,3 +1,9 @@
+<% if @service.keywords
+  meta_keywords(@service.keywords)
+  end %>
+<% if @service.meta_description
+  meta_description(@service.meta_description)
+  end %>
 <% page_title "#{h(@service.title)}"%>
 
 <% content_for :banner do %>

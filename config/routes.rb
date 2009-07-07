@@ -14,6 +14,9 @@ ActionController::Routing::Routes.draw do |map|
   # Mail Route Paths
   map.contact_mailer 'contacts_mailer', :controller => "contacts", :action => "contacts_mailer"
   
+  # Captcha
+  map.simple_captcha '/simple_captcha/:action', :controller => 'simple_captcha'
+  
   # Custom Named Routes
   map.contact "contact-healthcare-insight", :controller => "contacts", :action => "contact_us"
   map.press "health-care-press", :controller => "announcements", :action => "index"

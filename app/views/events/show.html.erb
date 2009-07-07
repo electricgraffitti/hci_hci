@@ -1,3 +1,9 @@
+<% if @event.keywords
+  meta_keywords(@event.keywords)
+  end %>
+<% if @event.meta_description
+  meta_description(@event.meta_description)
+  end %>
 <% page_title "#{@event.title} " %>
 
 <% content_for :banner do %>

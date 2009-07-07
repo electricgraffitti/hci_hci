@@ -14,7 +14,7 @@ module LinksHelper
     a <<  link_to('Visit Site', mod.link_url)
     if current_user
       a << " | "
-      a << link_to('New article', new_link_path)
+      a << link_to('New', new_link_path)
       a << " | " 
       a << link_to('Edit', edit_link_path(mod))
       a << " | "
