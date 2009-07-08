@@ -632,6 +632,10 @@ img.banner_scroll.r {
   width: 200px;
   min-height: 200px;
 }
+.inner_sub_box p {
+  position: relative;
+  margin: 5px;
+}
 .sub_box_header {
   margin: 10px;
 }

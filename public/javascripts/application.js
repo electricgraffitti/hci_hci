@@ -48,3 +48,24 @@ $(document).everyTime(15000, function () {
   $('#banner_scroll_r').trigger('click');
 });
 
+// This is the calculator method
+$(document).ready(function() {
+  var my_calc_input = $('#calc_input');
+  var member_count = 0;
+  my_calc_input.bind('keyup', function() {
+    member_count = parseInt(my_calc_input.val());
+    return member_count;
+  });
+  
+  var my_calc_button = $('#calc_button');
+  my_calc_button.bind('click', function() {
+    if (member_count <= 0) {
+      jAlert('You need to enter the member lives count', 'Calculator Error');
+    } else {
+      var calculation = (parseInt(member_count) * 127);
+      $('#calc_return_value').html('Your Annual Losses to Fraud <b>$' + calculation + '.00</b>');
+      return false;
+    }
+  });
+});
+

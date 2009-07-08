@@ -1,5 +1,15 @@
 <% color = color || "black" %>
 <h3 class="sub_box_header white">Fraud Calculator</h3>
 <div class="inner_sub_box background_<%= color %>">
-
+<p>Enter the number of member lives below to determine your
+  organization's annual loses to health care fraud and abuse.
+</p>
+<p>
+  <%= label_tag 'calc_input', "Enter Member Lives Count" %>
+  <%= text_field_tag 'calc_input', '', :size => 10, :class => '' %>
+  <%= submit_tag "Calculate", :id => 'calc_button', :class => 'btn right' %>
+</p>
+<p id="calc_return_value" class="left">
+  
+</p>
 </div>
