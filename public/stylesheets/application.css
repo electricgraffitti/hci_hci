@@ -5,6 +5,7 @@ body {
   background: #fff;
   font-family: Arial, "Lucida Grande", Verdana, sans-serif;
   color: #000;
+  font-size: 77%;
 }
 #wrapper {
   min-height: 1000px;
@@ -73,7 +74,7 @@ h5 {
   
 }
 h3 a {
-  font-size: 118.5%;
+  font-size: 100%;
   color: #333333;
   text-decoration: none;
 }

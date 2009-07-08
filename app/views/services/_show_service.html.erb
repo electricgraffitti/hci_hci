@@ -15,7 +15,7 @@
           <p>
             <%= case_study.description %>
           </p>
-          <%= link_to ("#{case_study.title}", ("/case_studies/" + case_study.id.to_s + "/original_" + case_study.case_study_file_name)) %>
+          <%= link_to("#{case_study.title}", ("/case_studies/" + case_study.id.to_s + "/original_" + case_study.case_study_file_name)) %>
         </li>
         <% end %>
       </ul>
@@ -29,7 +29,7 @@
           <p>
             <%= brochure.description %>
           </p>
-          <%= link_to ("#{brochure.title}", ("/case_studies/" + brochure.id.to_s + "/original_" + brochure.brochure_file_name)) %>
+          <%= link_to("#{brochure.title}", ("/case_studies/" + brochure.id.to_s + "/original_" + brochure.brochure_file_name)) %>
         </li>
         <% end %>
       </ul>
@@ -37,6 +37,21 @@
   </div>
   <div class="show_video content_wrap grid_12">
     <h2 class="bluegreen"><%= s.title %> Tutorial</h2>
-<object id="objVeeplePlayer" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0" width="520" height="426" align="middle"><param name="width" value="520"/><param name="height" value="426"/><param name="allowScriptAccess" value="always"/><param name="movie" value="http://www.veeple.com/swf/VeeplePlayer.swf?siteId=6QWcFsaUyZ8%253D&videoId=219454e9-6f5d-4a58-962c-95cbf0ba9779&userId=&baseUrl=http://www.veeple.com/&showSpots=1&showViewBar=1&showTabBar=1&autoPlay=1&allowAddComments=1&allowShare=1&allowEmbedding=1&allowFullscreen=1&allowRating=1&stopPlayingOnInteractiveClick=1&displayRelatedVideos=1&showWorm=0&showLogo=1&logoIcon=0&whiteLabel=1&showTabClickableObjects=1&showTabDetails=1&showTabComments=1&playerMode=player&playerWidth=520&playerHeight=426&isFlex=0&recordEvents=1&scaleMode=maintainAspectRatio&deploymentUrl=http://www.stage.hcinsight.com"/><param name="quality" value="high"/><param name="bgcolor" value="#ffffff"/><param name="menu" value="false"/><param name="allowFullScreen" value="true"/><embed id="embVeeplePlayer" src="http://www.veeple.com/swf/VeeplePlayer.swf?siteId=6QWcFsaUyZ8%253D&videoId=219454e9-6f5d-4a58-962c-95cbf0ba9779&userId=&baseUrl=http://www.veeple.com/&showSpots=1&showViewBar=1&showTabBar=1&autoPlay=1&allowAddComments=1&allowShare=1&allowEmbedding=1&allowFullscreen=1&allowRating=1&stopPlayingOnInteractiveClick=1&displayRelatedVideos=1&showWorm=0&showLogo=1&logoIcon=0&whiteLabel=1&showTabClickableObjects=1&showTabDetails=1&showTabComments=1&playerMode=player&playerWidth=520&playerHeight=426&isFlex=0&recordEvents=1&scaleMode=maintainAspectRatio&deploymentUrl=http://www.stage.hcinsight.com" quality="high" bgcolor="#ffffff" width="520" height="426" align="middle" allowScriptAccess="always" menu="false" allowFullScreen="true" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer"></embed></object>
+    <div class="big_video">
+      <script type='text/javascript'>
+      	var flashvars = {};
+      	var params = {
+  	      menu: 'false',
+  	      allowfullscreen: 'true',
+  	      wmode: 'transparent',
+  	      bgcolor: 'transparent'
+      	};
+      	var attributes = {};
+      	swfobject.embedSWF('http://www.veeple.com/link/fKdGBFCqPuQ%253D', 'sub_video', '600', '361', '9.0.0', 'http://www.veeple.com/link/fKdGBFCqPuQ%253D', flashvars, params, attributes);
+      </script>
+
+      <div id='sub_video' class='article_image left'>
+      </div>
+    </div>
   </div>
 </div>
