@@ -662,6 +662,9 @@ img.banner_scroll.r {
 .form_section {
   margin-bottom: 20px;
 }
+input[type="select"] {
+  width: 100px;
+}
 /*********************************************/
 /******************BUTTONS********************/
 .btn {
