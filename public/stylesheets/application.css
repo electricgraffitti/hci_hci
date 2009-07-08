@@ -327,7 +327,7 @@ ul.nav_ul li.last {
 ul.nav_ul li span.hover {
   position: relative;
   width: 100px;
-  height: 60px;
+  height: 59px;
   display: block;
 }
 .nav1 {
@@ -397,7 +397,7 @@ ul#main_nav_ul li a {
   color: #ababab;
   text-decoration: none;
   display: block;
-  text-indent: -1000em;
+  text-indent: -3000em;
 }
 ul#main_nav_ul li a.black {
   color: #000;
