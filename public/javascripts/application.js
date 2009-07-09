@@ -69,13 +69,27 @@ $(document).ready(function() {
   });
 });
 // This is the accordion script
-  $(document).ready(function() {
-    $(".accordion").hrzAccordion({
-      eventTrigger:"click",
-      handlePosition: "left",
-      fixedWidth: 350
-    });
+//   $(document).ready(function() {
+//     $(".accordion").hrzAccordion({
+//       eventTrigger:"click",
+//       handlePosition: "left",
+//       fixedWidth: 365,
+//       openOnLoad: 1,
+//       closeEaseAction: "swing"
+//     });
+// });
+$(document).ready(function() {
+  $('.accordion').hSlides({
+  			totalWidth: 800, 
+  			totalHeight: 400, 
+  			minPanelWidth: 30, 
+  			maxPanelWidth: 400,
+  			activeClass: 'active',
+  			speed: 200
+  		});
+  
 });
+
 
 $(document).ready(function() {
   $(".show_wrap img").reflect();

@@ -619,43 +619,35 @@ img.banner_scroll.r {
 /******************ACCORDION******************/
 /* hide container until all is ready */
 .accordion {
-	display: none;
+/*  display: none;*/
 }
 /*Main Container*/
 .container {
-	width:100%;	
+	width:100%;
+	height: 400px;
+	overflow: hidden;
 }
 .container ul{
 	list-style-type: none;
 	margin: 0;
-	padding:0;	
+	padding:0;
+	overflow: hidden;
 }
 .container li{
 	display: inline;
 	margin: 0px;
 	padding:0px;
-	background: #333;
-}
-/*Content Container*/
-.contentContainer {
-	padding-left: 0px;	
-	float: left;
-	width: 0px;
-	height: 500px;	
-	overflow:hidden;
-}
-.contentWrapper{	
+	background: #fff;
 }
 .contentInnerWrapper{
 	text-align: justify;
-	padding: 10px;
+	padding: 10px 10px 0 40px;
 }
 /* Handle*/
 .handle{
 	float: left;
 	width: 30px;
-	height: 500px;
-	margin-right: 1px;
+	height: 400px;
 }
 #accordionHandle0 {
   background: transparent url('../images/haccordion_bars.png') 0px 0px no-repeat;
@@ -690,6 +682,9 @@ img.banner_scroll.r {
 .handleOver{
 }
 .handleSelected{
+}
+.active {
+  background: #fff;
 }
 
 /*********************************************/
