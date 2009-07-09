@@ -68,7 +68,7 @@ $(document).ready(function() {
     }
   });
 });
-// This is the accordion script
+// This is the accordion script v.1
 //   $(document).ready(function() {
 //     $(".accordion").hrzAccordion({
 //       eventTrigger:"click",
@@ -78,12 +78,13 @@ $(document).ready(function() {
 //       closeEaseAction: "swing"
 //     });
 // });
+// This is the accordion script v.2
 $(document).ready(function() {
   $('.accordion').hSlides({
   			totalWidth: 800, 
   			totalHeight: 400, 
   			minPanelWidth: 30, 
-  			maxPanelWidth: 400,
+  			maxPanelWidth: 515,
   			activeClass: 'active',
   			speed: 200
   		});
