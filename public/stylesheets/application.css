@@ -641,7 +641,7 @@ img.banner_scroll.r {
 	padding-left: 0px;	
 	float: left;
 	width: 0px;
-	height: 400px;	
+	height: 500px;	
 	overflow:hidden;
 }
 .contentWrapper{	
@@ -654,15 +654,42 @@ img.banner_scroll.r {
 .handle{
 	float: left;
 	width: 30px;
-	height: 400px;
+	height: 500px;
 	margin-right: 1px;
-	background: #333;
 }
-.handleOver{	
-	background: #ccc;
+#accordionHandle0 {
+  background: transparent url('../images/haccordion_bars.png') 0px 0px no-repeat;
 }
-.handleSelected{	
-	background: #00ff15;
+#accordionHandle0:hover {
+  background: transparent url('../images/haccordion_bars.png') -30px 0px no-repeat;
+}
+#accordionHandle1 {
+  background: transparent url('../images/haccordion_bars.png') -60px 0px no-repeat;
+}
+#accordionHandle1:hover {
+  background: transparent url('../images/haccordion_bars.png') -90px 0px no-repeat;
+}
+#accordionHandle2 {
+  background: transparent url('../images/haccordion_bars.png') -120px 0px no-repeat;
+}
+#accordionHandle2:hover {
+  background: transparent url('../images/haccordion_bars.png') -150px 0px no-repeat;
+}
+#accordionHandle3 {
+  background: transparent url('../images/haccordion_bars.png') -180px 0px no-repeat;
+}
+#accordionHandle3:hover {
+  background: transparent url('../images/haccordion_bars.png') -210px 0px no-repeat;
+}
+#accordionHandle4 {
+  background: transparent url('../images/haccordion_bars.png') -240px 0px no-repeat;
+}
+#accordionHandle4:hover {
+  background: transparent url('../images/haccordion_bars.png') -270px 0px no-repeat;
+}
+.handleOver{
+}
+.handleSelected{
 }
 
 /*********************************************/

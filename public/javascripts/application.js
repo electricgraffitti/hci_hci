@@ -71,7 +71,8 @@ $(document).ready(function() {
 // This is the accordion script
   $(document).ready(function() {
     $(".accordion").hrzAccordion({
-      eventTrigger:"mouseover",
+      eventTrigger:"click",
+      handlePosition: "left",
       fixedWidth: 350
     });
 });
