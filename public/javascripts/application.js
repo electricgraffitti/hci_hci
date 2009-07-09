@@ -68,4 +68,16 @@ $(document).ready(function() {
     }
   });
 });
+// This is the accordion script
+  $(document).ready(function() {
+    $(".accordion").hrzAccordion({
+      eventTrigger:"mouseover",
+      fixedWidth: 350
+    });
+});
+
+$(document).ready(function() {
+  $(".show_wrap img").reflect();
+  
+});
 

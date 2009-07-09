@@ -1,7 +1,7 @@
 class ArticlesController < ApplicationController
   
   before_filter :require_user, :except => [:index, :show]
-  layout "layout4"
+  layout "layout2"
   
   # GET /articles
   # GET /articles.xml

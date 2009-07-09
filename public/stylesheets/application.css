@@ -182,6 +182,9 @@ h2 a.small_text {
 .background_maroon {
   background: #bc1f8c;
 }
+.background_black {
+  background: #000000;
+}
 .white {
   color: #ffffff;
 }
@@ -612,6 +615,56 @@ img.banner_scroll.r {
 .index_list h2 a:hover {
   text-decoration: underline;
 }
+/*********************************************/
+/******************ACCORDION******************/
+/* hide container until all is ready */
+.accordion {
+	display: none;
+}
+/*Main Container*/
+.container {
+	width:100%;	
+}
+.container ul{
+	list-style-type: none;
+	margin: 0;
+	padding:0;	
+}
+.container li{
+	display: inline;
+	margin: 0px;
+	padding:0px;
+	background: #333;
+}
+/*Content Container*/
+.contentContainer {
+	padding-left: 0px;	
+	float: left;
+	width: 0px;
+	height: 400px;	
+	overflow:hidden;
+}
+.contentWrapper{	
+}
+.contentInnerWrapper{
+	text-align: justify;
+	padding: 10px;
+}
+/* Handle*/
+.handle{
+	float: left;
+	width: 30px;
+	height: 400px;
+	margin-right: 1px;
+	background: #333;
+}
+.handleOver{	
+	background: #ccc;
+}
+.handleSelected{	
+	background: #00ff15;
+}
+
 /*********************************************/
 /******************SUBBOXES*******************/
 #sub_boxes {

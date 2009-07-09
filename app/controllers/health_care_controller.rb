@@ -7,7 +7,7 @@ class HealthCareController < ApplicationController
   def about
     
     respond_to do |format|
-      format.html { render :layout => "layout4"}
+      format.html { render :layout => "layout2"}
       format.xml  { render :xml => @events }
     end
     

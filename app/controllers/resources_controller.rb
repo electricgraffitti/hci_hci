@@ -1,7 +1,7 @@
 # This Maps to the Media Lab pages
 class ResourcesController < ApplicationController
   
-  layout "layout4"
+  layout "layout2"
   
   def index
     @documents = Document.small_list(3)

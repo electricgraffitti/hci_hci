@@ -1,6 +1,6 @@
 class CareersController < ApplicationController
   
-  layout "layout4"
+  layout "layout2"
   
   
   def index

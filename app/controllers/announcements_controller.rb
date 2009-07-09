@@ -1,6 +1,6 @@
 class AnnouncementsController < ApplicationController
   
-  layout "layout4"
+  layout "layout2"
   
   def index
     @articles = Article.type("hci_article").small_list(2)

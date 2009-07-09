@@ -1,6 +1,6 @@
 class ContactsController < ApplicationController
   
-  layout "layout4"
+  layout "layout2"
   
   def contacts_mailer
     # raise params.to_yaml
