@@ -81,7 +81,7 @@ $(document).ready(function() {
 // This is the accordion script v.2
 $(document).ready(function() {
   $('.accordion').hSlides({
-  			totalWidth: 800, 
+  			totalWidth: 575, 
   			totalHeight: 400, 
   			minPanelWidth: 30, 
   			maxPanelWidth: 515,
