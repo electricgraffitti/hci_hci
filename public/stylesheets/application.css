@@ -185,6 +185,12 @@ h2 a.small_text {
 .background_black {
   background: #000000;
 }
+.orange {
+  color: #E37F1C;
+}
+.background_orange {
+  background: #E37F1C;
+}
 .white {
   color: #ffffff;
 }
@@ -505,45 +511,46 @@ ul#top_links li a.white {
   width: 960px;
   height: 290px;
 }
+.black_band {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 10px;
+  height: 290px;
+  background: #000;
+  z-index: 10;
+}
 .banner_nav {
   position: relative;
-  left: 40%;
-  width: 200px;
+  background: #000;
+  width: 100%;
   height: 25px;
   bottom: 25px;
   text-align: center;
 }
 .banner_nav .banner_nav_wrap{
-  width: 150px;
+  width: 151px;
   margin: 0 auto;
 }
 .banner_nav .banner_li {
-  background:#000 none repeat scroll 0 0;
-  height: 12px;
-  width: 12px;
-  border: 1px solid #000;
+  height: 16px;
+  width: 16px;
   margin: 5px;
   padding:0;
   text-indent:-3000em;
-}
-.banner_nav .banner_li.first {
-  border-left: none;
-}
-.banner_nav .banner_li.last {
-  border-right: none;
+  border: none;
 }
 .banner_nav .banner_li a {
-  width: 12px;
-  height:12px;
-  color: #fff;
+  width: 16px;
+  height:16px;
+  background: url('../images/banner_discs.png') 0px -16px no-repeat;
   text-decoration: none;
   display: block;
 }
-.banner_nav .banner_li a.selected, .banner_nav .banner_li:hover {
-  width: 12px;
-  height:12px;
-  
-  background: #fff;
+.banner_nav .banner_li a.selected, .banner_nav .banner_li a:hover {
+  width: 16px;
+  height:16px;
+  background: url('../images/banner_discs.png') 0px 0px no-repeat;
 }
 img.banner_scroll {
   float:left;
@@ -553,8 +560,12 @@ img.banner_scroll {
   height: 15px;
 }
 img.banner_scroll.l {
+  position: relative;
+  left: 0px;
 }
 img.banner_scroll.r {
+  position: relative;
+  right: 0px;
 }
 /****Inner Banners****/
 .inner_banner {
