@@ -142,6 +142,12 @@ h2 a.small_text {
 .background_lightblue {
   background: #19c0ec;
 }
+.blue {
+  color: #00467F;
+}
+.background_blue {
+  background: #00467F;
+}
 .bluegrey {
   color: #88d1d0;
 }
@@ -318,7 +324,7 @@ label.error {
   /*border-top: 1px solid #f8f8f8;*/
 }
 ul.nav_ul {
-  margin-left: 5px;
+  margin-left: 10px;
   /*border-right: 1px solid #787878;*/
 }
 ul.nav_ul li {
@@ -450,7 +456,7 @@ ul#admin_nav_ul li a {
   text-indent: -1000em;
   width: 314px;
   height: 45px;
-  margin-left: 6px;
+  margin-left: 8px;
   outline: none;
 }
 /** top Link nav **/
@@ -725,6 +731,11 @@ img.banner_scroll.r {
 .sub_box {
   min-height: 200px;
   margin-left: 10px;
+}
+.cover_flow_sub_box {
+  margin-left: 10px;
+  width: 440px;
+  min-height: 200px;
 }
 .inner_sub_box {
   margin-left: 10px;
