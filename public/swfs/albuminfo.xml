@@ -1,6 +1,6 @@
 <artworkinfo>
 	<albuminfo>
-		<artLocation>album1.jpg</artLocation>
+		<artLocation>/swfs/album1.jpg</artLocation>
 		<artist>The Doors</artist>
 		<albumName>Greatest Hits</albumName>
 		<artistLink>http://www.google.com</artistLink>
@@ -8,7 +8,7 @@
 	</albuminfo>
 
 	<albuminfo>
-		<artLocation>../album2.jpg</artLocation>
+		<artLocation>/swfs/album2.jpg</artLocation>
 		<artist>The White Stripes</artist>
 		<albumName>Elephant</albumName>
 		<artistLink>http://www.weberdesignlabs.com</artistLink>

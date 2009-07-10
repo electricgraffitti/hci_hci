@@ -10,7 +10,7 @@ class DocumentsController < ApplicationController
 
     respond_to do |format|
       format.html # index.html.erb
-      format.xml  { render :xml => @documents }
+      format.xml # index.xml.builder
     end
   end
 
