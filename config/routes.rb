@@ -1,6 +1,7 @@
   # The priority is based upon order of creation: first created -> highest priority.
 ActionController::Routing::Routes.draw do |map|
   map.resources :document_types
+  map.resources :coverflows
   map.resources :documents, :has_many => :assets
   map.resources :links, :has_many => :assets
   map.resources :article_types
@@ -16,6 +17,8 @@ ActionController::Routing::Routes.draw do |map|
   
   # Captcha
   map.simple_captcha '/simple_captcha/:action', :controller => 'simple_captcha'
+  
+  # XML Routes
   
   # Custom Named Routes
   map.contact "contact-healthcare-insight", :controller => "contacts", :action => "contact_us"
