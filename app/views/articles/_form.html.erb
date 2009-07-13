@@ -24,11 +24,9 @@
     <% end %>
   </p>
   <p>
-    <% for cover in @article.coverflows %>
-    <% fields_for "article[covers][]", cover do |cover_form|%>
+    <% f.fields_for :coverflows do |cover_form|%>
     <%= cover_form.label "Add Cover Flow" %><br />
     <%= cover_form.file_field :cover, :size => 16 %>
-    <% end %>
     <% end %>
   </p>
 </div>

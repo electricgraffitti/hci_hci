@@ -15,11 +15,9 @@
       <%= f.file_field :avatar, :size => 16 %>
     </p>
     <p>
-      <% for cover in @service.coverflows %>
-      <% fields_for "service[covers][]", cover do |cover_form|%>
+      <% f.fields_for :coverflows do |cover_form|%>
       <%= cover_form.label "Add Cover Flow" %><br />
       <%= cover_form.file_field :cover, :size => 16 %>
-      <% end %>
       <% end %>
     </p>
   </div>

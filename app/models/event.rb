@@ -15,7 +15,8 @@
 class Event < ActiveRecord::Base
   
   has_many :assets, :as => :attachable
-  has_many :coverflows, :as => :cflow, :dependent => :destroy
+  has_many :coverflows, :as => :cflow, :class_name => "Coverflow"
+  accepts_nested_attributes_for :coverflows, :allow_destroy => true
   
   # Validations
   validates_presence_of :title, :description, :permalink
@@ -40,13 +41,6 @@ class Event < ActiveRecord::Base
   def attachments=(attachments)
     attachments.each do |attachment|
       assets.build(attachment)
-    end
-  end
-  
-  #pulls the assets from the form
-  def covers=(covers)
-    covers.each do |cover|
-      coverflows.build(cover)
     end
   end
   

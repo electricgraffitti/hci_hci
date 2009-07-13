@@ -25,7 +25,8 @@ class Service < ActiveRecord::Base
   has_many :brochures, :class_name => "Brochure"
   accepts_nested_attributes_for :brochures, :allow_destroy => true
   
-  has_many :coverflows, :as => :cflow, :dependent => :destroy
+  has_many :coverflows, :as => :cflow, :class_name => "Coverflow"
+  accepts_nested_attributes_for :coverflows, :allow_destroy => true
   
   # Thinking Sphinx Indexes
   define_index do
@@ -52,13 +53,6 @@ class Service < ActiveRecord::Base
   # Sets Permalink Routes
   def to_param
     "#{id}-#{permalink}"
-  end
-  
-  #pulls the assets from the form
-  def covers=(covers)
-    covers.each do |cover|
-      coverflows.build(cover)
-    end
   end
   
 end
