@@ -2,14 +2,15 @@
 #
 # Table name: articles
 #
-#  id              :integer(4)      not null, primary key
-#  title           :string(255)
-#  description     :text
-#  article_type_id :integer(4)
-#  keywords        :string(255)
-#  permalink       :string(255)
-#  created_at      :datetime
-#  updated_at      :datetime
+#  id               :integer(4)      not null, primary key
+#  title            :string(255)
+#  description      :text
+#  article_type_id  :integer(4)
+#  keywords         :string(255)
+#  meta_description :text
+#  permalink        :string(255)
+#  created_at       :datetime
+#  updated_at       :datetime
 #
 
 class Article < ActiveRecord::Base
@@ -17,6 +18,7 @@ class Article < ActiveRecord::Base
   belongs_to :article_type
   
   has_many :assets, :as => :attachable, :dependent => :destroy
+  has_many :coverflows, :as => :cflow, :dependent => :destroy
   
   # Validations
   validates_presence_of :title, :description, :permalink
@@ -46,6 +48,13 @@ class Article < ActiveRecord::Base
   def attachments=(attachments)
     attachments.each do |attachment|
       assets.build(attachment)
+    end
+  end
+  
+  #pulls the assets from the form
+  def covers=(covers)
+    covers.each do |cover|
+      coverflows.build(cover)
     end
   end
   

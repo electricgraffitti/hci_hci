@@ -426,7 +426,7 @@ ul#main_nav_ul li a.black {
   float: left;
 }
 ul#admin_nav_ul {
- margin-left: 5px; 
+ margin-left: 10px; 
 }
 ul#admin_nav_ul li{
   width: 100px;
@@ -726,7 +726,7 @@ img.banner_scroll.r {
   text-align: left;
 }
 #sub_box1 {
-  margin-left: 5px;
+  margin-left: 10px;
 }
 .sub_box {
   min-height: 200px;

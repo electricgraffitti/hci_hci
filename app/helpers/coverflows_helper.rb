@@ -1,0 +1,2 @@
+module CoverflowsHelper
+end

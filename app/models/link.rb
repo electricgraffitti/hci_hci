@@ -2,19 +2,21 @@
 #
 # Table name: links
 #
-#  id          :integer(4)      not null, primary key
-#  title       :string(255)
-#  description :text
-#  link_url    :string(255)
-#  keywords    :string(255)
-#  permalink   :string(255)
-#  created_at  :datetime
-#  updated_at  :datetime
+#  id               :integer(4)      not null, primary key
+#  title            :string(255)
+#  description      :text
+#  link_url         :string(255)
+#  meta_description :text
+#  keywords         :string(255)
+#  permalink        :string(255)
+#  created_at       :datetime
+#  updated_at       :datetime
 #
 
 class Link < ActiveRecord::Base
   
   has_many :assets, :as => :attachable
+  has_many :coverflows, :as => :cflow, :dependent => :destroy
   
   # Validations
   validates_presence_of :title, :description, :link_url, :permalink
@@ -43,6 +45,13 @@ class Link < ActiveRecord::Base
   def attachments=(attachments)
     attachments.each do |attachment|
       assets.build(attachment)
+    end
+  end
+  
+  #pulls the assets from the form
+  def covers=(covers)
+    covers.each do |cover|
+      coverflows.build(cover)
     end
   end
   

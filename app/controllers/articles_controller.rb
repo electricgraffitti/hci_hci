@@ -1,6 +1,7 @@
 class ArticlesController < ApplicationController
   
   before_filter :require_user, :except => [:index, :show]
+  before_filter :coverflows
   layout "layout2"
   
   # GET /articles
@@ -34,6 +35,7 @@ class ArticlesController < ApplicationController
     @article = Article.new
     @article_types = ArticleType.all
     @article.assets.build
+    @article.coverflows.build
     respond_to do |format|
       format.html { render :layout => "admin" }
       format.xml  { render :xml => @article }
@@ -44,7 +46,12 @@ class ArticlesController < ApplicationController
   def edit
     @article = Article.find(params[:id])
     @article_types = ArticleType.all
-    @article.assets.build
+    if @article.assets.blank?
+      @article.assets.build
+    end
+    if @article.coverflows.blank?
+      @article.coverflows.build
+    end
     respond_to do |format|
       format.html { render :layout => "admin" }
     end

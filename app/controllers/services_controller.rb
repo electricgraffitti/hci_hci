@@ -1,6 +1,7 @@
 class ServicesController < ApplicationController
   
   before_filter :require_user, :except => [:index, :show]
+  before_filter :coverflows
   
   layout "layout2"
   
@@ -32,6 +33,7 @@ class ServicesController < ApplicationController
     @service = Service.new
     @service.case_studies.build
     @service.brochures.build
+    @service.coverflows.build
     respond_to do |format|
       format.html { render :layout => "admin"}
       format.xml  { render :xml => @service }
@@ -44,11 +46,12 @@ class ServicesController < ApplicationController
     if @service.case_studies.blank?
       @service.case_studies.build
     end
-    
     if @service.brochures.blank?
       @service.brochures.build
     end
-    
+    if @service.coverflows.blank?
+      @service.coverflows.build
+    end
     respond_to do |format|
       format.html { render :layout => "admin"}
     end

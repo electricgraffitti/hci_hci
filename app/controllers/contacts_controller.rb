@@ -1,5 +1,7 @@
 class ContactsController < ApplicationController
   
+  before_filter :coverflows
+  
   layout "layout2"
   
   def contacts_mailer

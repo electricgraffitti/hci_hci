@@ -1,5 +1,7 @@
 class HealthCareController < ApplicationController
   
+  before_filter :coverflows
+  
   def index
     @articles = Article.small_list(4)
     @documents = Document.all

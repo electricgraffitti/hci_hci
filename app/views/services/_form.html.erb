@@ -14,6 +14,14 @@
       <%= f.label :avatar, "Avatar" %><br/>
       <%= f.file_field :avatar, :size => 16 %>
     </p>
+    <p>
+      <% for cover in @service.coverflows %>
+      <% fields_for "service[covers][]", cover do |cover_form|%>
+      <%= cover_form.label "Add Cover Flow" %><br />
+      <%= cover_form.file_field :cover, :size => 16 %>
+      <% end %>
+      <% end %>
+    </p>
   </div>
   <%= render :partial => "case_study_form", :locals => {:f => f} %>
   <%= render :partial => "brochure_form", :locals => {:f => f} %>

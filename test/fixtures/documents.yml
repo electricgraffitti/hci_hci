@@ -6,6 +6,7 @@
 #  title            :string(255)
 #  description      :text
 #  document_type_id :integer(4)
+#  meta_description :text
 #  keywords         :string(255)
 #  permalink        :string(255)
 #  created_at       :datetime

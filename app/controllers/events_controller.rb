@@ -1,6 +1,7 @@
 class EventsController < ApplicationController
   
   before_filter :require_user, :except => [:index, :show]
+  before_filter :coverflows
   layout "layout2"
   
   # GET /events
@@ -30,6 +31,7 @@ class EventsController < ApplicationController
   def new
     @event = Event.new
     @event.assets.build
+    @event.coverflows.build
     respond_to do |format|
       format.html { render :layout => "admin"}
       format.xml  { render :xml => @event }
@@ -39,7 +41,12 @@ class EventsController < ApplicationController
   # GET /events/1/edit
   def edit
     @event = Event.find(params[:id])
-    @event.assets.build
+    if @event.assets.blank?
+      @event.assets.build
+    end
+    if @event.coverflows.blank?
+      @event.coverflows.build
+    end
     respond_to do |format|
       format.html { render :layout => "admin"}
     end

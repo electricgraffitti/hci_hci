@@ -1,6 +1,7 @@
 class LinksController < ApplicationController
   
   before_filter :require_user, :except => [:index, :show]
+  before_filter :coverflows
   layout "layout2"
   
   # GET /links
@@ -30,6 +31,7 @@ class LinksController < ApplicationController
   def new
     @link = Link.new
     @link.assets.build
+    @link.coverflows.build
     respond_to do |format|
       format.html { render :layout => "admin"}
       format.xml  { render :xml => @link }
@@ -39,7 +41,12 @@ class LinksController < ApplicationController
   # GET /links/1/edit
   def edit
     @link = Link.find(params[:id])
-    @link.assets.build
+    if @link.assets.blank?
+      @link.assets.build
+    end
+    if @link.coverflows.blank?
+      @link.coverflows.build
+    end
     respond_to do |format|
       format.html { render :layout => "admin"}
     end

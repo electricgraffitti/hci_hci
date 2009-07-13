@@ -6,6 +6,7 @@
 #  title            :string(255)
 #  description      :text
 #  document_type_id :integer(4)
+#  meta_description :text
 #  keywords         :string(255)
 #  permalink        :string(255)
 #  created_at       :datetime
@@ -17,6 +18,7 @@ class Document < ActiveRecord::Base
   belongs_to :document_type
   
   has_many :assets, :as => :attachable
+  has_many :coverflows, :as => :cflow, :dependent => :destroy
   
   # Validations
   validates_presence_of :title, :description, :permalink
@@ -45,6 +47,13 @@ class Document < ActiveRecord::Base
   def attachments=(attachments)
     attachments.each do |attachment|
       assets.build(attachment)
+    end
+  end
+  
+  #pulls the assets from the form
+  def covers=(covers)
+    covers.each do |cover|
+      coverflows.build(cover)
     end
   end
   

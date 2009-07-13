@@ -5,14 +5,15 @@
 #  id                  :integer(4)      not null, primary key
 #  title               :string(255)
 #  description         :text
+#  permalink           :string(255)
+#  meta_description    :text
+#  keywords            :string(255)
 #  created_at          :datetime
 #  updated_at          :datetime
 #  avatar_file_name    :string(255)
 #  avatar_content_type :string(255)
 #  avatar_file_size    :integer(4)
 #  avatar_updated_at   :datetime
-#  keywords            :string(255)
-#  permalink           :string(255)
 #
 
 class Service < ActiveRecord::Base
@@ -23,6 +24,8 @@ class Service < ActiveRecord::Base
   
   has_many :brochures, :class_name => "Brochure"
   accepts_nested_attributes_for :brochures, :allow_destroy => true
+  
+  has_many :coverflows, :as => :cflow, :dependent => :destroy
   
   # Thinking Sphinx Indexes
   define_index do
@@ -49,6 +52,13 @@ class Service < ActiveRecord::Base
   # Sets Permalink Routes
   def to_param
     "#{id}-#{permalink}"
+  end
+  
+  #pulls the assets from the form
+  def covers=(covers)
+    covers.each do |cover|
+      coverflows.build(cover)
+    end
   end
   
 end

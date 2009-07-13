@@ -1,13 +1,13 @@
 class DocumentsController < ApplicationController
   
   before_filter :require_user, :except => [:index, :show]
+  before_filter :coverflows
   layout "layout2"
   
   # GET /documents
   # GET /documents.xml
   def index
     @documents = Document.all
-
     respond_to do |format|
       format.html # index.html.erb
       format.xml # index.xml.builder
@@ -31,6 +31,7 @@ class DocumentsController < ApplicationController
     @document = Document.new
     @document_types = DocumentType.all
     @document.assets.build
+    @document.coverflows.build
     respond_to do |format|
       format.html { render :layout => "admin"}
       format.xml  { render :xml => @document }
@@ -41,7 +42,12 @@ class DocumentsController < ApplicationController
   def edit
     @document = Document.find(params[:id])
     @document_types = DocumentType.all
-    @document.assets.build
+    if @document.assets.blank?
+      @document.assets.build
+    end
+    if @document.coverflows.blank?
+      @document.coverflows.build
+    end
     respond_to do |format|
       format.html { render :layout => "admin"}
     end

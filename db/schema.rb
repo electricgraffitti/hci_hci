@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090706193057) do
+ActiveRecord::Schema.define(:version => 20090710210817) do
 
   create_table "article_types", :force => true do |t|
     t.string   "article_type"
@@ -67,6 +67,17 @@ ActiveRecord::Schema.define(:version => 20090706193057) do
     t.datetime "case_study_updated_at"
   end
 
+  create_table "coverflows", :force => true do |t|
+    t.integer  "cflow_id"
+    t.string   "cflow_type"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "cover_file_name"
+    t.string   "cover_content_type"
+    t.integer  "cover_file_size"
+    t.datetime "cover_updated_at"
+  end
+
   create_table "document_types", :force => true do |t|
     t.string   "document_type"
     t.datetime "created_at"
@@ -99,11 +110,11 @@ ActiveRecord::Schema.define(:version => 20090706193057) do
     t.string   "title"
     t.text     "description"
     t.string   "link_url"
+    t.text     "meta_description"
     t.string   "keywords"
     t.string   "permalink"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.text     "meta_description"
   end
 
   create_table "services", :force => true do |t|

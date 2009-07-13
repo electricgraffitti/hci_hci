@@ -18,6 +18,14 @@
       <% end %>
     <% end %>
   </p>
+  <p>
+    <% for cover in @event.coverflows %>
+    <% fields_for "event[covers][]", cover do |cover_form|%>
+    <%= cover_form.label "Add Cover Flow" %><br />
+    <%= cover_form.file_field :cover, :size => 16 %>
+    <% end %>
+    <% end %>
+  </p>
 </div>
 <div class="grid_5">
   <h4>Event SEO</h4>
