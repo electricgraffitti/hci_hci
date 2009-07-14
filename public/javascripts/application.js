@@ -1,3 +1,9 @@
+// This is the home page video player
+
+$(document).ready(function() {
+  flowplayer("home_player", "/swfs/flowplayer-3.1.1.swf", "/videos/test.f4v"); 
+});
+
 
 // This is the IE6 Js hack for submit button rollovers
 $(document).ready(function() {
@@ -82,7 +88,7 @@ $(document).ready(function() {
 $(document).ready(function() {
   $('.accordion').hSlides({
   			totalWidth: 575, 
-  			totalHeight: 400, 
+  			totalHeight: 300, 
   			minPanelWidth: 30, 
   			maxPanelWidth: 515,
   			activeClass: 'active',

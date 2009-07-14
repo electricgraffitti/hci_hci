@@ -645,7 +645,7 @@ img.banner_scroll.r {
 /*Main Container*/
 .container {
 	width:100%;
-	height: 400px;
+	height: 300px;
 	overflow: hidden;
 }
 .container ul{
@@ -758,6 +758,12 @@ img.banner_scroll.r {
 .go_link {
   margin-top: 10px;
   margin-right: 32px;
+}
+/*********************************************/
+/******************VIDEOS*********************/
+#home_player {
+  width: 320px;
+  height: 300px;
 }
 /*********************************************/
 /******************FORMS**********************/
