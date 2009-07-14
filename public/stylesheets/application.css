@@ -413,6 +413,8 @@ ul#main_nav_ul li a {
   text-decoration: none;
   display: block;
   text-indent: -3000em;
+  width: 100%;
+  height: 100%;
 }
 ul#main_nav_ul li a.black {
   color: #000;
@@ -504,7 +506,7 @@ ul#top_links li a.white {
   height: 290px;
 }
 #banner {
-  /*padding-bottom: 5px;*/
+  background: #fff;
 }
 .scroll {
   height: 290px;
@@ -580,6 +582,10 @@ img.banner_scroll.r {
 }
 .services_inner_banner {
   background: url('../images/banners/inner_banners/health_care_services_banner.png') no-repeat;
+}
+.banner_side_box {
+  background: #fff;
+  min-height: 290px;
 }
 /*********************************************/
 /*****************MAIN CONTENT****************/
@@ -762,8 +768,8 @@ img.banner_scroll.r {
 /*********************************************/
 /******************VIDEOS*********************/
 #home_player {
-  width: 320px;
-  height: 300px;
+  width: 340px;
+  height: 280px;
 }
 /*********************************************/
 /******************FORMS**********************/

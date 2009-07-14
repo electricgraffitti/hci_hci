@@ -1,9 +1,9 @@
 <% @services.each do |serv| %>
-  <div class='show_wrap grid_12 alpha omega'>
+  <div class='show_wrap grid_11 alpha omega'>
     <div class='grid_2 alpha '>
       <%= link_to image_tag(serv.avatar.url(:small), :alt => serv.title, :class => "reflect"), service_path(serv) %>
     </div>
-    <div class='grid_10 omega'>
+    <div class='grid_9 omega'>
       <h3><%= serv.title%>&#8482</h3>
       <p><%= truncate(serv.description, :length => 455) %></p>
     </div>

@@ -1,10 +1,5 @@
 // This is the home page video player
 
-$(document).ready(function() {
-  flowplayer("home_player", "/swfs/flowplayer-3.1.1.swf", "/videos/test.f4v"); 
-});
-
-
 // This is the IE6 Js hack for submit button rollovers
 $(document).ready(function() {
   $('form .submitbtn').hover(function() {
@@ -74,17 +69,8 @@ $(document).ready(function() {
     }
   });
 });
-// This is the accordion script v.1
-//   $(document).ready(function() {
-//     $(".accordion").hrzAccordion({
-//       eventTrigger:"click",
-//       handlePosition: "left",
-//       fixedWidth: 365,
-//       openOnLoad: 1,
-//       closeEaseAction: "swing"
-//     });
-// });
-// This is the accordion script v.2
+
+// This is the accordion script
 $(document).ready(function() {
   $('.accordion').hSlides({
   			totalWidth: 575, 
@@ -97,9 +83,9 @@ $(document).ready(function() {
   
 });
 
-
+// This sets up the reflections for images
 $(document).ready(function() {
   $(".show_wrap img").reflect();
-  
 });
+
 
