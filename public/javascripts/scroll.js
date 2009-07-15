@@ -31,8 +31,8 @@ jQuery(document).ready(function() {
   var $bannerNav = jQuery('.banner_nav ul.navigation');
     
   $bannerNav
-     .before('<img src="" id="banner_scroll_l" class="banner_scroll l" />')
-     .after('<img src="" id="banner_scroll_r" class="banner_scroll r" />');
+     .before('<div id="banner_scroll_l" class="banner_scroll l" />')
+     .after('<div id="banner_scroll_r" class="banner_scroll r" />');
     
     if (horizontal) {
       $panels.css({
@@ -55,8 +55,8 @@ jQuery(document).ready(function() {
     target: $scroll,
     items: $panels,
     navigation: '.navigation a',
-    prev: 'img.banner_scroll.l',
-    next: 'img.banner_scroll.r',
+    prev: 'div.banner_scroll.l',
+    next: 'div.banner_scroll.r',
     axis: 'xy',
     duration: 500,
     easing: 'swing',
