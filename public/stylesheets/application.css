@@ -536,7 +536,7 @@ ul#top_links li a.white {
 }*/
 .banner_nav {
   position: relative;
-  background: #000;
+  /*background: #000;*/
   width: 100%;
   height: 25px;
   bottom: 25px;
