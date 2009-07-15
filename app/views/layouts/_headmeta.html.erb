@@ -5,12 +5,18 @@
 <meta name="copyright" content="Copyright 2009 HCI an Verisk Health Company">
 <meta name="title" CONTENT="HealthCare Insight">
 <link ref="shortcut icon" href="favicon.ico"   type="image/ico" />
-<%= auto_discovery_link_tag(type = :atom, articles_url(:atom)) %>
+<%= auto_discovery_link_tag(type = :atom, services_url(:atom)) %>
 
 <%#= ******** CSS ********** %>
-<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/combo?2.7.0/build/reset-fonts/reset-fonts.css">
 <%= stylesheet_link_tag 'reset-fonts-grids', 'jquiwidgets', '960', 'alerts/jquery.alerts', 'application' %>
+<!--[if lt IE 7]>
+  <link rel="stylesheet" type="text/css" href="stylesheets/IE6.css" />
+<![endif]-->
+
+<!--[if lt IE 7]>
+  <link rel="stylesheet" type="text/css" href="../stylesheets/IE6.css" />
+<![endif]-->
 
 <%#= ******** JAVASCRIPTS ********** %>
-<script type="text/javascript" src="http://yui.yahooapis.com/2.7.0/build/yahoo-dom-event/yahoo-dom-event.js"></script>
+<!-- <script type="text/javascript" src="http://yui.yahooapis.com/2.7.0/build/yahoo-dom-event/yahoo-dom-event.js"></script> -->
 <%= javascript_include_tag 'jquery', 'jquery.livequery', 'jqueryui', 'jquery.easing', 'jQueryTimer', 'jquery.alerts', 'jquery.validate', 'reflection', 'swfobject', 'accordion', 'flowplayer', 'application', 'scroll', 'video_scripts' %>

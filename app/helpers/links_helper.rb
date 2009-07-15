@@ -3,7 +3,7 @@ module LinksHelper
   def index_link(mod)
     a = "<div class='show_wrap grid_11 alpha omega'>"
     mod.assets.each do |asset|
-    a << "<div class='grid_2 alpha '>#{link_to image_tag(asset.attachment.url(:small), :alt => mod.title), mod.link_url}</div>"
+    a << "<div class='grid_2 alpha '>#{link_to image_tag(asset.attachment.url(:thumb), :alt => mod.title), mod.link_url}</div>"
   end
     a << "<div class='grid_9 alpha'>"
     a << "<h3>#{link_to((mod.title), mod.link_url)}</h3>"

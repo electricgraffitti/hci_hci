@@ -1,7 +1,6 @@
 class ServicesController < ApplicationController
   
   before_filter :require_user, :except => [:index, :show]
-  before_filter :coverflows
   
   layout "layout2"
   
@@ -13,6 +12,8 @@ class ServicesController < ApplicationController
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @services }
+      format.rss { render :rss => @services }
+      format.atom
     end
   end
 

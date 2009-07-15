@@ -2,6 +2,7 @@ html {
   background: #fff;
 }
 body {
+  position: relative;
   background: #fff;
   font-family: Arial, "Lucida Grande", Verdana, sans-serif;
   color: #000;
@@ -312,7 +313,7 @@ label.error {
 #hd {
   background: #000 url('../images/headerbgblack.png') repeat-x 0px 14px;
   position: relative;
-  height: 105px;
+  height: 107px;
 }
 /*******Navigation********/
 #main_nav {
@@ -467,6 +468,9 @@ ul#admin_nav_ul li a {
   width: 200px;
   float: right;
 }
+ul.login {
+  width: 150px;
+}
 ul#top_links, ul.login  {
   position: relative;
   float: right;
@@ -476,6 +480,7 @@ ul.login {
   float: right;
 }
 ul#top_links li, ul#top_links li.top_nav_wide {
+  display: block;
   float: left;
   width: 75px;
   text-align: center;
@@ -484,6 +489,7 @@ ul#top_links li.top_nav_wide {
   width: 100px;
 }
 ul#top_links li a {
+  display: block;
   width: 100px;
   height: 20px;
   text-decoration: none;
@@ -496,13 +502,12 @@ ul#top_links li a.white {
   color: white;
 }
 #search_box_wrap {
-  margin: 18px;
+  margin: 18px 18px 0px;
 }
 /********************************/
 /************Banners*************/
 #slider {
   margin: 0 auto;
-  position: relative;
   height: 290px;
 }
 #banner {
@@ -519,7 +524,7 @@ ul#top_links li a.white {
   width: 960px;
   height: 290px;
 }
-.black_band {
+/*.black_band {
   position: absolute;
   top: 0px;
   left: 0px;
@@ -527,7 +532,7 @@ ul#top_links li a.white {
   height: 290px;
   background: #000;
   z-index: 10;
-}
+}*/
 .banner_nav {
   position: relative;
   background: #000;
@@ -537,7 +542,7 @@ ul#top_links li a.white {
   text-align: center;
 }
 .banner_nav .banner_nav_wrap{
-  width: 151px;
+  width: 165px;
   margin: 0 auto;
 }
 .banner_nav .banner_li {
@@ -817,6 +822,7 @@ input[type="select"] {
 /******************FOOTER********************/
 #ft {
   position: relative;
+  float: left;
   /*background: #fff url('../images/banners/health_care_insight_banner2.png') no-repeat;*/
   background: #000;
   min-height: 220px;

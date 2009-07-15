@@ -1,7 +1,7 @@
 <% @services.each do |serv| %>
   <div class='show_wrap grid_11 alpha omega'>
     <div class='grid_2 alpha '>
-      <%= link_to image_tag(serv.avatar.url(:small), :alt => serv.title, :class => "reflect"), service_path(serv) %>
+      <%= link_to image_tag(serv.avatar.url(:thumb), :alt => serv.title, :class => "reflect"), service_path(serv) %>
     </div>
     <div class='grid_9 omega'>
       <h3><%= serv.title%>&#8482</h3>
@@ -13,7 +13,8 @@
     <%= link_to 'New', new_service_path %> |
     <%= link_to 'Edit', edit_service_path(serv) %> |
   <% end %>
+  <%= link_to 'RSS', services_url(:rss) %> |
   <%= link_to 'View More', serv %>
   </div>
   </div>
-<% end %>
+<% end %> 

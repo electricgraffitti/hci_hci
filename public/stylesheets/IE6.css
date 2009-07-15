@@ -1,0 +1,69 @@
+/*********************************************/
+/*******************GLOBAL********************/
+body {
+  font-family: Arial, "Lucida Grande", Verdana, sans-serif;
+  color: #000;
+  font-size: 12px;
+}
+
+/*********************************************/
+/*******************HEADER********************/
+ul#top_links, ul.login  {
+  position: relative;
+  float: right;
+  height: 20px;
+}
+/*********************************************/
+/*****************NAVIGATION******************/
+#main_nav {
+  float: left;
+  position: relative;
+  bottom: 0px;
+  height: 60px;
+}
+#search_box_wrap {
+  margin-left: 10px;
+  float: right;
+}
+#search {
+  float: left;
+}
+.search_btn {
+  display: block;
+  font-size: 0px;
+  line-height: 0px;
+}
+/*********************************************/
+/****************MAIN CONTENT*****************/
+.inner_sub_box {
+  height: 200px;
+}
+
+/***********************/
+/********banners********/
+#slider {
+  margin: 0 auto;
+  position: relative;
+}
+.scroll {
+  width: 940px;
+  height: 290px;
+  overflow: hidden;
+  overflow-x: hidden;
+  position: relative; /* fix for IE to respect overflow */
+  clear: left;
+}
+.scrollContainer {
+  position: relative;
+  width: 940px;
+  height: 290px;
+}
+img.banner_scroll.r, img.banner_scroll.l {
+  visibility: hidden;
+}
+#ft {
+  height: 200px;
+}
+
+
+

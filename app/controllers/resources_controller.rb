@@ -1,8 +1,6 @@
 # This Maps to the Media Lab pages
 class ResourcesController < ApplicationController
   
-  before_filter :coverflows
-  
   layout "layout2"
   
   def index

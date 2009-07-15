@@ -80,12 +80,9 @@ $(document).ready(function() {
   			activeClass: 'active',
   			speed: 200
   		});
-  
 });
 
 // This sets up the reflections for images
 $(document).ready(function() {
   $(".show_wrap img").reflect();
 });
-
-

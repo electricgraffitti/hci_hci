@@ -1,5 +1,5 @@
 <div id="top_link_wrap">
-  <ul id="top_links" class="login">
+  <ul class="login">
     <% if current_user %>
     <li class="top_nav_wide">Welcome <%= (current_user.username).capitalize %></li><li><%= link_to "Logout", logout_path %></li>
     <% else %>
