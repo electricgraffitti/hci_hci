@@ -448,7 +448,7 @@ ul#top_links li a.white {color: white}
 #banner {background: #fff}
 .scroll {height: 290px; overflow: hidden; overflow-x: hidden; position: relative; /* fix for IE to respect overflow */ clear: left}
 .scrollContainer {width: 960px; height: 290px}
-/*.black_band {position: absolute; top: 0px; left: 0px; width: 10px; height: 290px; background: #000; z-index: 10}*/ .banner_nav {position: relative; background: #000; width: 100%; height: 25px; bottom: 25px; text-align: center}
+/*.black_band {position: absolute; top: 0px; left: 0px; width: 10px; height: 290px; background: #000; z-index: 10}*/ .banner_nav {position: relative; /*background: #000;*/ width: 100%; height: 25px; bottom: 25px; text-align: center}
 .banner_nav .banner_nav_wrap{ width: 165px; margin: 0 auto}
 .banner_nav .banner_li {height: 16px; width: 16px; margin: 5px; padding:0; text-indent:-3000em; border: none}
 .banner_nav .banner_li a {width: 16px; height:16px; background: url('../images/banner_discs.png') 0px -16px no-repeat; text-decoration: none; display: block}
