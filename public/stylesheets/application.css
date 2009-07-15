@@ -475,6 +475,7 @@ ul#top_links, ul.login  {
   position: relative;
   float: right;
   height: 20px;
+  margin-right: 10px;
 }
 ul.login {
   float: right;

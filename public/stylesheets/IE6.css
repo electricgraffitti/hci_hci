@@ -44,6 +44,7 @@ ul#top_links, ul.login  {
 #slider {
   margin: 0 auto;
   position: relative;
+  overflow: hidden;
 }
 .scroll {
   width: 940px;
@@ -55,6 +56,7 @@ ul#top_links, ul.login  {
 }
 .scrollContainer {
   position: relative;
+  overflow: hidden;
   width: 940px;
   height: 290px;
 }
