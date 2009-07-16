@@ -370,7 +370,7 @@ ul.nav_ul li span.hover {
 .nav3.highlight:hover, li.nav3 span.hover {
   background: url('../images/main_nav_sprite_black.png') -200px -61px;
 }
-#main_nav ul li a#media_lab.active {
+#main_nav ul li a#free_trial.active {
   background: url('../images/main_nav_sprite_black.png') -200px 0px;
 }
 .nav4 {
@@ -379,7 +379,7 @@ ul.nav_ul li span.hover {
 .nav4.highlight:hover, li.nav4 span.hover {
   background: url('../images/main_nav_sprite_black.png') -300px -61px;
 }
-#main_nav ul li a#press.active {
+#main_nav ul li a#resources.active {
   background: url('../images/main_nav_sprite_black.png') -300px 0px;
 }
 .nav5 {
@@ -388,7 +388,7 @@ ul.nav_ul li span.hover {
 .nav5.highlight:hover, li.nav5 span.hover {
   background: url('../images/main_nav_sprite_black.png') -400px -61px;
 }
-#main_nav ul li a#careers.active {
+#main_nav ul li a#press.active {
   background: url('../images/main_nav_sprite_black.png') -400px 0px;
 }
 .nav6 {
@@ -525,15 +525,6 @@ ul#top_links li a.white {
   width: 960px;
   height: 290px;
 }
-/*.black_band {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 10px;
-  height: 290px;
-  background: #000;
-  z-index: 10;
-}*/
 .banner_nav {
   position: relative;
   /*background: #000;*/
