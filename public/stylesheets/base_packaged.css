@@ -434,15 +434,20 @@ ul#admin_nav_ul li.last{ border-right: 1px solid #666}
 ul#admin_nav_ul li:hover {background: #67ab89}
 ul#admin_nav_ul li a {float: left; color: #fff; padding: 5px 0px; width: 100px; text-decoration: none}
 /********************************/ /************HEADER*************/ #hci_logo {background: url('../images/HCI_Logo_black.png') no-repeat; display: block; float: left; text-indent: -1000em; width: 314px; height: 45px; margin-left: 8px; outline: none}
-/** top Link nav **/ #top_link_wrap {height: 45px; width: 200px; float: right}
+/** top Link nav **/ #top_link_wrap {height: 45px; width: 250px; float: right}
 ul.login {width: 150px}
-ul#top_links, ul.login {position: relative; float: right; height: 20px; margin-right: 10px}
-ul.login {float: right}
-ul#top_links li, ul#top_links li.top_nav_wide {display: block; float: left; width: 75px; text-align: center}
+ul#top_links, ul.login {position: relative; float: right; height: 30px; margin-right: 10px}
+ul.login {float: right; height: 15px}
+ul#top_links li, ul#top_links li.top_nav_wide {display: block; float: left; width: 35px; text-align: center}
 ul#top_links li.top_nav_wide {width: 100px}
-ul#top_links li a {display: block; width: 100px; height: 20px; text-decoration: none; color: #e3e3e3}
+ul#top_links li a {display: block; width: 100px; height: 30px; text-decoration: none; color: #e3e3e3}
 ul#top_links li a.black {color: #000}
 ul#top_links li a.white {color: white}
+ul#top_links a {display: block; float: left; text-indent:-3000em; width: 30px; height: 30px; margin: 0px 5px}
+#facebook_link {background: #000 url('../images/social_icons/facebook.png') no-repeat}
+#twitter_link {background: #000 url('../images/social_icons/twitter.png') no-repeat}
+#youtube_link {background: #000 url('../images/social_icons/youtube.png') no-repeat}
+#linkedin_link {background: #000 url('../images/social_icons/linked_in.png') no-repeat}
 #search_box_wrap {margin: 18px 18px 0px}
 /********************************/ /************Banners*************/ #slider {margin: 0 auto; height: 290px}
 #banner {background: #fff}
