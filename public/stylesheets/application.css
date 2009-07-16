@@ -465,7 +465,7 @@ ul#admin_nav_ul li a {
 /** top Link nav **/
 #top_link_wrap {
   height: 45px;
-  width: 200px;
+  width: 250px;
   float: right;
 }
 ul.login {
@@ -474,16 +474,17 @@ ul.login {
 ul#top_links, ul.login  {
   position: relative;
   float: right;
-  height: 20px;
+  height: 30px;
   margin-right: 10px;
 }
 ul.login {
   float: right;
+  height: 15px;
 }
 ul#top_links li, ul#top_links li.top_nav_wide {
   display: block;
   float: left;
-  width: 75px;
+  width: 35px;
   text-align: center;
 }
 ul#top_links li.top_nav_wide {
@@ -492,7 +493,7 @@ ul#top_links li.top_nav_wide {
 ul#top_links li a {
   display: block;
   width: 100px;
-  height: 20px;
+  height: 30px;
   text-decoration: none;
   color: #e3e3e3;
 }
@@ -501,6 +502,26 @@ ul#top_links li a.black {
 }
 ul#top_links li a.white {
   color: white;
+}
+ul#top_links a {
+  display: block;
+  float: left;
+  text-indent:-3000em;
+  width: 30px;
+  height: 30px;
+  margin: 0px 5px;
+}
+#facebook_link {
+  background: #000 url('../images/social_icons/facebook.png') no-repeat;
+}
+#twitter_link {
+  background: #000 url('../images/social_icons/twitter.png') no-repeat;
+}
+#youtube_link {
+  background: #000 url('../images/social_icons/youtube.png') no-repeat;
+}
+#linkedin_link {
+  background: #000 url('../images/social_icons/linked_in.png') no-repeat;
 }
 #search_box_wrap {
   margin: 18px 18px 0px;
