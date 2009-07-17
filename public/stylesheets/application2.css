@@ -1,6 +1,6 @@
 html, body {
   position: relative;
-  background: #fff url('../images/body_bg1.png') 50% 0 no-repeat;
+  background: #000 url('../images/body_bg2.png') 50% 0 no-repeat;
   font-family: Arial, "Lucida Grande", Verdana, sans-serif;
   color: #000;
   font-size: 85%;
@@ -308,16 +308,9 @@ label.error {
 /*********************************************/
 /*****************HEADER**********************/
 #hd {
-  /*background: #000 url('../images/headerbgblack.png') repeat-x 0px 15px;*/
+/*  background: #000 url('../images/headerbgblack.png') repeat-x 0px 15px;*/
   position: relative;
   height: 111px;
-}
-.header_stripe {
-  width: 100%;
-  background: #000 url('../images/header_stripe.png') repeat-x;
-  height: 111px;
-  position: absolute;
-  top: 0px;
 }
 /*******Navigation********/
 #main_nav {
@@ -329,7 +322,7 @@ label.error {
   /*border-top: 1px solid #f8f8f8;*/
 }
 ul.nav_ul {
-  margin-left: 10px;
+  margin-left: 12px;
   /*border-right: 1px solid #787878;*/
 }
 ul.nav_ul li {

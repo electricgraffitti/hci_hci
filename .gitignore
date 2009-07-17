@@ -5,6 +5,9 @@ db/schema.sql
 .DS_Store
 public/attachments/*
 public/avatars/*
+public/covers/*
+public/case_studies/*
+public/brochures/*
 config/development.sphinx.conf
 db/sphinx/*
 db/sphinx/development/*

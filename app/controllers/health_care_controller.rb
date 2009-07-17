@@ -13,5 +13,14 @@ class HealthCareController < ApplicationController
     end
     
   end
+  
+  def trial
+    @articles = Article.small_list(4)
+    @documents = Document.all
+    respond_to do |format|
+      format.html { render :layout => "layout3"}
+      format.xml  { render :xml => @events }
+    end
+  end
 
 end

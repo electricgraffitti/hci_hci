@@ -22,7 +22,7 @@ ActionController::Routing::Routes.draw do |map|
   
   # Custom Named Routes
   map.contact "contact-healthcare-insight", :controller => "contacts", :action => "contact_us"
-  map.trial "healthcare-insight-free-trial", :controller => "health_care", :action => "index"
+  map.trial "healthcare-insight-free-trial", :controller => "health_care", :action => "trial"
   map.press "health-care-press", :controller => "announcements", :action => "index"
   map.media "health-care-resources", :controller => "resources", :action => "index"
   map.careers "healthcare-insight-careers", :controller => "careers", :action => "index"

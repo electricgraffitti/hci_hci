@@ -3,18 +3,17 @@
 <% page_title("Health Care Media Lab ") %>
 
 <% content_for :banner do %>
-  <%= render :partial => "health_care/inner_banners" %>
-  <%= render :partial => "health_care/banner_side_box" %>
+  <%= render :partial => "health_care/banners" %>
 <% end %>
 
 <% content_for :sub_boxes do %>
   <%= render :partial => 'layouts/sub_boxes' %>
 <% end %>
-<div class="index_list">
+<div class="index_list grid_5 round">
   <h2 class="lightblue">HCI Documents</h2>
 <%= render :partial => "documents/index_document", :locals => {:documents => @documents} %>
 </div>
-<div class="index_list">
+<div class="index_list grid_5 round">
   <h2 class="lightblue">Health Care Links</h2>
   <%= render :partial => "links/index_link", :locals => {:links => @links} %>
 </div>
