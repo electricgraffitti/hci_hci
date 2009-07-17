@@ -855,15 +855,21 @@ input[type="select"] {
 #ft {
   position: relative;
   float: left;
+  width: 938px;
   /*background: #fff url('../images/banners/health_care_insight_banner2.png') no-repeat;*/
-  background: #000;
+  background: #000 url('../images/footer_bg.png') no-repeat;
   min-height: 220px;
+  border-left: 1px solid #222;
+  border-right: 1px solid #222;
 }
 #footer_logo {
   position: absolute;
+  border-color:#111 #222;
+  border-style:solid;
+  border-width:1px;
   bottom: 10px;
   left: 10px;
-  background: #000 url('../images/hci_footer_logo.png') no-repeat;
+  background: #000 url('../images/hci_footer_logo2.png') no-repeat;
   width: 350px;
   height: 60px;
 }
