@@ -63,10 +63,10 @@ h2 {
   font-size: 130.9%;
 }
 h3 {
-  font-size: 118.5%;
+  font-size: 125.5%;
 }
 h4 {
-  font-size: 108%;
+  font-size: 118%;
 }
 h5 {
   
@@ -859,6 +859,28 @@ input[type="select"] {
   /*background: #fff url('../images/banners/health_care_insight_banner2.png') no-repeat;*/
   background: #000 url('../images/footer_bg.png') no-repeat;
   min-height: 220px;
+}
+#footer_links {
+  margin: 10px;
+  width: 50%;
+  height: 100%;
+  float: right;
+}
+#footer_links a {
+  color: #efefef;
+  text-decoration: none;
+}
+#footer_links a:hover {
+  color: #19c0ec;
+  text-decoration: underline;
+}
+#footer_links ul {
+  float: left;
+  margin: 0px 10px;
+}
+#footer_links h4 {
+  margin-bottom: 5px;
+  color: #fff;
 }
 #footer_logo {
   position: absolute;
