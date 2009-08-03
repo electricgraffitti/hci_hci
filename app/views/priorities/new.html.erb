@@ -1,15 +1,3 @@
 <h1>New priority</h1>
-
-<% form_for(@priority) do |f| %>
-  <%= f.error_messages %>
-
-  <p>
-    <%= f.label :priority_type %><br />
-    <%= f.text_field :priority_type %>
-  </p>
-  <p>
-    <%= f.submit 'Create' %>
-  </p>
-<% end %>
-
+<%= render 'form' %>
 <%= link_to 'Back', priorities_path %>
