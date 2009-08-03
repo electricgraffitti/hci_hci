@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090710210817) do
+ActiveRecord::Schema.define(:version => 20090803195557) do
 
   create_table "article_types", :force => true do |t|
     t.string   "article_type"
@@ -27,6 +27,8 @@ ActiveRecord::Schema.define(:version => 20090710210817) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "articles", ["article_type_id"], :name => "index_articles_on_article_type_id"
 
   create_table "assets", :force => true do |t|
     t.integer  "attachable_id"
@@ -53,6 +55,8 @@ ActiveRecord::Schema.define(:version => 20090710210817) do
     t.datetime "brochure_updated_at"
   end
 
+  add_index "brochures", ["service_id"], :name => "index_brochures_on_service_id"
+
   create_table "case_studies", :force => true do |t|
     t.string   "title"
     t.text     "description"
@@ -67,6 +71,8 @@ ActiveRecord::Schema.define(:version => 20090710210817) do
     t.datetime "case_study_updated_at"
   end
 
+  add_index "case_studies", ["service_id"], :name => "index_case_studies_on_service_id"
+
   create_table "coverflows", :force => true do |t|
     t.integer  "cflow_id"
     t.string   "cflow_type"
@@ -76,6 +82,12 @@ ActiveRecord::Schema.define(:version => 20090710210817) do
     t.string   "cover_content_type"
     t.integer  "cover_file_size"
     t.datetime "cover_updated_at"
+  end
+
+  create_table "departments", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "document_types", :force => true do |t|
@@ -96,6 +108,39 @@ ActiveRecord::Schema.define(:version => 20090710210817) do
     t.datetime "updated_at"
   end
 
+  add_index "documents", ["document_type_id"], :name => "index_documents_on_document_type_id"
+
+  create_table "employee_sessions", :force => true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "employees", :force => true do |t|
+    t.string   "username"
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "email"
+    t.datetime "last_login_at"
+    t.integer  "department_id"
+    t.string   "ext"
+    t.string   "home_phone"
+    t.string   "cell_phone"
+    t.string   "home_fax"
+    t.integer  "role_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "crypted_password"
+    t.string   "password_salt"
+    t.string   "persistence_token"
+    t.string   "avatar_file_name"
+    t.string   "avatar_content_type"
+    t.integer  "avatar_file_size"
+    t.datetime "avatar_updated_at"
+  end
+
+  add_index "employees", ["department_id"], :name => "index_employees_on_department_id"
+  add_index "employees", ["role_id"], :name => "index_employees_on_role_id"
+
   create_table "events", :force => true do |t|
     t.string   "title"
     t.text     "description"
@@ -113,6 +158,30 @@ ActiveRecord::Schema.define(:version => 20090710210817) do
     t.text     "meta_description"
     t.string   "keywords"
     t.string   "permalink"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "owners", :force => true do |t|
+    t.integer  "ticket_id"
+    t.string   "employee_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "owners", ["employee_id"], :name => "index_owners_on_employee_id"
+  add_index "owners", ["ticket_id"], :name => "index_owners_on_ticket_id"
+
+  create_table "priorities", :force => true do |t|
+    t.string   "priority_type"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "priority_name"
+  end
+
+  create_table "roles", :force => true do |t|
+    t.string   "name"
+    t.string   "role_type"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -157,6 +226,54 @@ ActiveRecord::Schema.define(:version => 20090710210817) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "ticket_assets", :force => true do |t|
+    t.integer  "attachable_id"
+    t.string   "attachable_type"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "ticket_assignments", :force => true do |t|
+    t.integer  "ticket_id"
+    t.integer  "employee_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "ticket_assignments", ["employee_id"], :name => "index_ticket_assignments_on_employee_id"
+  add_index "ticket_assignments", ["ticket_id"], :name => "index_ticket_assignments_on_ticket_id"
+
+  create_table "ticket_statuses", :force => true do |t|
+    t.string   "status_name"
+    t.string   "status_type"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "ticket_updates", :force => true do |t|
+    t.text     "comment"
+    t.integer  "employee_id"
+    t.integer  "ticket_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "ticket_updates", ["employee_id"], :name => "index_ticket_updates_on_employee_id"
+  add_index "ticket_updates", ["ticket_id"], :name => "index_ticket_updates_on_ticket_id"
+
+  create_table "tickets", :force => true do |t|
+    t.string   "subject"
+    t.text     "description"
+    t.date     "due_date"
+    t.integer  "ticket_status_id"
+    t.integer  "priority_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "tickets", ["priority_id"], :name => "index_tickets_on_priority_id"
+  add_index "tickets", ["ticket_status_id"], :name => "index_tickets_on_ticket_status_id"
 
   create_table "users", :force => true do |t|
     t.string   "username"

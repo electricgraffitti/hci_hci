@@ -1,6 +1,4 @@
-// This is the home page video player
-
-// This is the IE6 Js hack for submit button rollovers
+ // This is the IE6 Js hack for submit button rollovers
 $(document).ready(function() {
   $('form .submitbtn').hover(function() {
     $(this).css({"background": "url('../images/submit_button.png') 0px 0px no-repeat"});
@@ -86,3 +84,23 @@ $(document).ready(function() {
 $(document).ready(function() {
   $(".show_wrap img").reflect();
 });
+
+// This is the script for the employee edit profile hide/show feature
+$(document).ready(function() {
+  var emp_edit_link = $('#employee_profile_slide_link');
+  var emp_edit_box = $('#employee_profile_slide');
+  
+  emp_edit_link.click(function() {
+    emp_edit_box.toggle();
+  });
+});
+// This is the datepicker for the ticket form
+$(document).ready(function() {
+  $('#ticket_date_select').datepicker({
+		showButtonPanel: true
+	});
+});
+
+
+
+

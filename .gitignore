@@ -8,6 +8,7 @@ public/avatars/*
 public/covers/*
 public/case_studies/*
 public/brochures/*
+public/ticket_uploads/*
 config/development.sphinx.conf
 db/sphinx/*
 db/sphinx/development/*

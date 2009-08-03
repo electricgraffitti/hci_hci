@@ -1,0 +1,17 @@
+# == Schema Information
+#
+# Table name: priorities
+#
+#  id            :integer(4)      not null, primary key
+#  priority_type :string(255)
+#  created_at    :datetime
+#  updated_at    :datetime
+#
+
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  priority_type: MyString
+
+two:
+  priority_type: MyString

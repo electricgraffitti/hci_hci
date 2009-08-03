@@ -26,3 +26,8 @@
     <li><%= link_to "LinkedIn", "" %></li>
   </ul>
 </div>
+<div id="employee_login">
+  <% unless current_employee %>
+    <%= link_to "Employee Login", employee_login_path %>
+  <% end %>
+</div>

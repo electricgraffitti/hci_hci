@@ -1,5 +1,14 @@
   # The priority is based upon order of creation: first created -> highest priority.
 ActionController::Routing::Routes.draw do |map|
+  
+  map.resources :tickets, :has_many => :ticket_assets
+  map.resources :ticket_updates
+  map.resources :ticket_statuses
+  map.resources :priorities
+  map.resources :departments
+  map.resources :roles
+  map.resources :employees
+  map.resources :employee_sessions
   map.resources :document_types
   map.resources :coverflows
   map.resources :documents, :has_many => :assets
@@ -30,6 +39,8 @@ ActionController::Routing::Routes.draw do |map|
   map.dashboard "dashboard", :controller => "users", :action => "index"
   map.login "login", :controller => "user_sessions", :action => "new"
   map.logout "logout", :controller => "user_sessions", :action => "destroy"
+  map.employee_login "employee_login", :controller => "employee_sessions", :action => "new"
+  map.employee_logout "employee_logout", :controller => "employee_sessions", :action => "destroy"
   map.about "about-healthcare-insight", :controller => "health_care", :action => "about"
   map.home "health-care", :controller => "health_care", :action => "index"
   map.root :controller => "health_care", :action => "index"

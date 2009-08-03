@@ -1,0 +1,17 @@
+# == Schema Information
+#
+# Table name: ticket_statuses
+#
+#  id          :integer(4)      not null, primary key
+#  status_type :string(255)
+#  created_at  :datetime
+#  updated_at  :datetime
+#
+
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  status_type: MyString
+
+two:
+  status_type: MyString

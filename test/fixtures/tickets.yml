@@ -1,0 +1,29 @@
+# == Schema Information
+#
+# Table name: tickets
+#
+#  id               :integer(4)      not null, primary key
+#  subject          :string(255)
+#  description      :text
+#  due_date         :datetime
+#  ticket_status_id :integer(4)
+#  priority_id      :integer(4)
+#  created_at       :datetime
+#  updated_at       :datetime
+#
+
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  subject: MyString
+  description: MyText
+  due_date: 2009-07-30 08:20:55
+  statud_id: 1
+  priority_id: 1
+
+two:
+  subject: MyString
+  description: MyText
+  due_date: 2009-07-30 08:20:55
+  statud_id: 1
+  priority_id: 1

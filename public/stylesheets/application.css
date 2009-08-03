@@ -1,8 +1,8 @@
 html, body {
   position: relative;
   background: #ECECEC url('../images/body_bg1.png') 50% 0 no-repeat;
-  font-family: Arial, "Lucida Grande", Verdana, sans-serif;
-  color: #000;
+  font-family: "Lucida Grande", Verdana, sans-serif;
+  color: #333;
   font-size: 85%;
   height: 100%;
 }
@@ -54,6 +54,8 @@ a {
 h1, h2, h3, h4, h5 {
   font-weight: bold;
   color: #333333;
+  font-family:"Myriad Pro","Lucida Sans Unicode","Trebuchet MS",sans-serif;
+  margin-top: 5px;
 }
 h1 {
   font-size: 235%;
@@ -131,6 +133,15 @@ h2 a.small_text {
 .top_space {
   margin-top: 10px;
 }
+.margin_top_5 {
+  margin-top: 5px;
+}
+.margin_top_10 {
+  margin-top: 10px;
+}
+.margin_top_20 {
+  margin-top: 20px;
+}
 .important {
   color: red;
 }
@@ -203,6 +214,9 @@ h2 a.small_text {
 }
 .bgwhite {
   background: #ffffff;
+}
+.red {
+  color: #db0404;
 }
 .bgred {
   background: #db0404;
@@ -427,33 +441,48 @@ ul#main_nav_ul li a.black {
 #admin_link {
   float: right;
 }
-.admin_nav {
+.admin_nav, .employee_nav {
   background: #666 url('../images/healthcare_fraud_btn_black.png') bottom left repeat-x;
   position: relative;
   float: left;
 }
-ul#admin_nav_ul {
+ul#admin_nav_ul, ul#employee_nav_ul {
  margin-left: 10px; 
 }
-ul#admin_nav_ul li{
+ul#admin_nav_ul li, ul#employee_nav_ul li{
   width: 100px;
   float: left;
   text-align: center;
   border-left: 1px solid #666;
 }
-ul#admin_nav_ul li.last{
+ul#employee_nav_ul li.employee_welcome {
+  background: #fff;
+  font-size: 125%;
+  padding: 3px 0px; 
+  color: #222;
+  width: 225px;
+  border: none;
+}
+ul#admin_nav_ul li.last, ul#employee_nav_ul li{
   border-right: 1px solid #666;
 }
-ul#admin_nav_ul li:hover {
+ul#admin_nav_ul li a:hover, ul#employee_nav_ul li a:hover, ul#employee_nav_ul li.employee_logout a:hover {
   background: #67ab89;
 }
-ul#admin_nav_ul li a {
+ul#admin_nav_ul li a, ul#employee_nav_ul li a {
   float: left;
   color: #fff;
   padding: 5px 0px;
   width: 100px;
   text-decoration: none;
 }
+ul#employee_nav_ul li.employee_logout {
+  float: right;
+}
+ul#admin_nav_ul li a, ul#employee_nav_ul li.employee_logout a {
+  background: #d00;
+}
+
 /********************************/
 /************HEADER*************/
 #hci_logo {
@@ -655,6 +684,13 @@ img.banner_scroll.r {
   margin-right: 10px;
   float: left;
 }
+.image_wrap {
+  margin-right: 10px;
+  float: left;
+}
+.image_wrap img {
+  float: left;
+}
 .index_list {
   border: 1px solid #dedede;
 }
@@ -667,6 +703,13 @@ img.banner_scroll.r {
 }
 .index_list h2 a:hover {
   text-decoration: underline;
+}
+.directory_header {
+  position: relative;
+}
+.heading_adjacent_link {
+  float: left;
+  margin-top: 9px;
 }
 /*********************************************/
 /******************ACCORDION******************/
@@ -816,6 +859,9 @@ img.banner_scroll.r {
 input[type="select"] {
   width: 100px;
 }
+input#ticket_date_select {
+  width: 85px;
+}
 /*********************************************/
 /******************BUTTONS********************/
 .btn {
@@ -850,6 +896,59 @@ input[type="select"] {
   text-align: right;
   width: 200px;
 }
+.ticket_dashboard {
+  margin-top: 15px;
+}
+/*********************************************/
+/******************TICKETS*******************/
+.ticket_list li {
+  margin: 5px 0px;
+}
+.critical {
+  color: red;
+}
+.urgent {
+  color: #ff5500;
+}
+.high {
+  color: #ffdd33;
+}
+.normal {
+  color: #00b200;
+}
+.low {
+  color: #19c0ec;
+}
+.lowest {
+  color: #00467F;
+}
+.open {
+  padding: 3px;
+  background: #19c0ec;
+  color: #fff;
+}
+.in_progress {
+  padding: 3px;
+  background: #ffff00;
+  color: #000;
+}
+.delayed {
+  padding: 3px;
+  background: #4c7f99;
+  color: #fff;
+}
+.complete {
+  padding: 3px;
+  background: #00b200;
+  color: #fff;
+}
+.closed {
+  padding: 3px;
+  background: #0076b2;
+  color: #fff;
+}
+
+
 /*********************************************/
 /******************FOOTER********************/
 #ft {
@@ -866,11 +965,11 @@ input[type="select"] {
   height: 100%;
   float: right;
 }
-#footer_links a {
+#footer_links a, #employee_login a {
   color: #efefef;
   text-decoration: none;
 }
-#footer_links a:hover {
+#footer_links a:hover, #employee_login a:hover {
   color: #19c0ec;
   text-decoration: underline;
 }
@@ -893,8 +992,11 @@ input[type="select"] {
   width: 350px;
   height: 60px;
 }
-
-
+#employee_login {
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+}
 .video_holder {
   min-height: 200px;
 }

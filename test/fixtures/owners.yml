@@ -1,0 +1,20 @@
+# == Schema Information
+#
+# Table name: owners
+#
+#  id          :integer(4)      not null, primary key
+#  ticket_id   :integer(4)
+#  employee_id :string(255)
+#  created_at  :datetime
+#  updated_at  :datetime
+#
+
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  ticket_id: 1
+  employee_id: MyString
+
+two:
+  ticket_id: 1
+  employee_id: MyString

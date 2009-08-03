@@ -1,0 +1,8 @@
+<h3 class="margin_top_20 grid_10">Ticket Updates</h3>
+<% updates.each do |ticket_update| %>
+  <div class="grid_10">
+    <p>
+      <%= ticket_update.comment %> - <small>Submitted By <%= ticket_update.employee.fullname %> on <%= (ticket_update.created_at).to_s(:long) %></small>
+    </p>
+  </div>
+<% end %>
