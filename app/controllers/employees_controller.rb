@@ -1,5 +1,6 @@
 class EmployeesController < ApplicationController
   
+  before_filter :employee_admin?, :only => [:new, :create]
   before_filter :require_employee, :except => [:new, :create];
   
   layout 'employee2'
