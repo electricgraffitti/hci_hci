@@ -42,11 +42,15 @@ class TicketUpdatesController < ApplicationController
   # POST /ticket_updates
   # POST /ticket_updates.xml
   def create
-    #raise params.to_yaml
+    @form = params
     @ticket_update = TicketUpdate.new(params[:ticket_update])
     @ticket_update.ticket.update_attributes(params[:ticket])
+    
+    update_ticket = ApplicationMailer.create_update_ticket_mailer(params)
+    update_ticket.set_content_type("text/html")
     respond_to do |format|
       if @ticket_update.save
+        ApplicationMailer.deliver(update_ticket)
         flash[:notice] = 'TicketUpdate was successfully created.'
         format.html { redirect_to ticket_path(params[:ticket_update][:ticket_id]) }
         format.xml  { render :xml => @ticket_update, :status => :created, :location => @ticket_update }

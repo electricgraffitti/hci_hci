@@ -55,9 +55,13 @@ class TicketsController < ApplicationController
   # POST /tickets
   # POST /tickets.xml
   def create
+    @form = params
     @ticket = Ticket.new(params[:ticket])
+    new_ticket = ApplicationMailer.create_new_ticket_mailer(params)
+    new_ticket.set_content_type("text/html")
     respond_to do |format|
       if @ticket.save
+        ApplicationMailer.deliver(new_ticket)
         flash[:notice] = 'Ticket was successfully created.'
         format.html { redirect_to(@ticket) }
         format.xml  { render :xml => @ticket, :status => :created, :location => @ticket }
