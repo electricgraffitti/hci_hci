@@ -5,7 +5,7 @@
 #  id               :integer(4)      not null, primary key
 #  subject          :string(255)
 #  description      :text
-#  due_date         :datetime
+#  due_date         :date
 #  ticket_status_id :integer(4)
 #  priority_id      :integer(4)
 #  created_at       :datetime

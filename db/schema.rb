@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090803195557) do
+ActiveRecord::Schema.define(:version => 20090804142142) do
 
   create_table "article_types", :force => true do |t|
     t.string   "article_type"
@@ -173,10 +173,10 @@ ActiveRecord::Schema.define(:version => 20090803195557) do
   add_index "owners", ["ticket_id"], :name => "index_owners_on_ticket_id"
 
   create_table "priorities", :force => true do |t|
+    t.string   "priority_name"
     t.string   "priority_type"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "priority_name"
   end
 
   create_table "roles", :force => true do |t|
@@ -232,6 +232,10 @@ ActiveRecord::Schema.define(:version => 20090803195557) do
     t.string   "attachable_type"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "attachment_file_name"
+    t.string   "attachment_content_type"
+    t.integer  "attachment_file_size"
+    t.datetime "attachment_updated_at"
   end
 
   create_table "ticket_assignments", :force => true do |t|

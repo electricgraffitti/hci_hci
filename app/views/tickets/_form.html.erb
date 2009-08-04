@@ -1,15 +1,15 @@
-<% form_for(@ticket) do |f| %>
+<% form_for(@ticket, :html => { :multipart => true }) do |f| %>
   <%= f.error_messages %>
 <div class="grid_8">
   <h2>Create Ticket</h2>
-  <div class="grid_6 alpha omega">
+  <div class="grid_5 alpha omega">
     <p>
       <%= f.label :subject %><br />
       <%= f.text_field :subject %>
     </p>
     <p>
       <%= f.label :description %><br />
-      <%= f.text_area :description, :rows => 10, :cols => 48 %>
+      <%= f.text_area :description, :rows => 7, :cols => 38 %>
     </p>
   </div>
   <div class="grid_2 alpha omega">
@@ -25,9 +25,11 @@
       <%= f.label :priority_id, "Ticket Priority" %><br />
       <%= collection_select(:ticket, :priority_id, Priority.all, :id, :priority_name)%>
     </p>
+    <%= render :partial => 'tickets/ticket_asset_upload', :locals => {:ticket => @ticket} %>
   </div>
 </div>
-<div class="grid_6">
+<div class="clear"></div>
+<div class="grid_13 margin_top_10">
   <h2>Assign Ticket</h2>
   <%= render :partial => 'employees/listed_employee_form', 
              :locals => {

@@ -24,8 +24,10 @@ class TicketUpdatesController < ApplicationController
   # GET /ticket_updates/new
   # GET /ticket_updates/new.xml
   def new
-    @ticket_update = TicketUpdate.new
+    @ticket = Ticket.find(params[:ticket_id])
     @ticket_update.ticket.build
+    @ticket_update = TicketUpdate.new
+    @ticket_update.ticket_assets.build
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @ticket_update }
@@ -40,6 +42,7 @@ class TicketUpdatesController < ApplicationController
   # POST /ticket_updates
   # POST /ticket_updates.xml
   def create
+    #raise params.to_yaml
     @ticket_update = TicketUpdate.new(params[:ticket_update])
     @ticket_update.ticket.update_attributes(params[:ticket])
     respond_to do |format|

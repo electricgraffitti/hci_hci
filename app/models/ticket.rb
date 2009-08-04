@@ -5,7 +5,7 @@
 #  id               :integer(4)      not null, primary key
 #  subject          :string(255)
 #  description      :text
-#  due_date         :datetime
+#  due_date         :date
 #  ticket_status_id :integer(4)
 #  priority_id      :integer(4)
 #  created_at       :datetime
@@ -58,5 +58,11 @@ class Ticket < ActiveRecord::Base
   
   #============================= Class Methods ==================================#
   
+  #pulls the assets from the form
+  def attachments=(attachments)
+    attachments.each do |attachment|
+      ticket_assets.build(attachment)
+    end
+  end
   
 end

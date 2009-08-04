@@ -16,6 +16,8 @@ class TicketUpdate < ActiveRecord::Base
   belongs_to :ticket, :class_name => 'Ticket'
   accepts_nested_attributes_for :ticket, :allow_destroy => true
   
+  has_many :ticket_assets, :as => :attachable
+  
   # RedCloth (textilize)
   acts_as_textiled  :comment
   
@@ -25,5 +27,14 @@ class TicketUpdate < ActiveRecord::Base
   # Named Scopes
   named_scope :small_list, lambda { |limit| {:limit => limit }}
   named_scope :listed, :order => "created_at DESC"
+  
+  #============================= Class Methods ==================================#
+  
+  #pulls the assets from the form
+  def attachments=(attachments)
+    attachments.each do |attachment|
+      ticket_assets.build(attachment)
+    end
+  end
   
 end

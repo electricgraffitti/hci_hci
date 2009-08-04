@@ -10,6 +10,14 @@
       <%= f.label :comment, "Ticket Update" %><br />
       <%= f.text_area :comment, :rows => 5, :cols => 50 %>
     </p>
+    <p>
+      <% for asset in ticket_update.ticket_assets %>
+        <% fields_for "ticket_update[attachments][]", asset do |asset_form|%>
+          <%= asset_form.label "Attachment" %><br />
+          <%= asset_form.file_field :attachment, :size => 16 %>
+        <% end %>
+      <% end %>
+    </p>
    </div>
   <div class="grid_3 alpha">
     <% f.fields_for ticket do |t|%>
