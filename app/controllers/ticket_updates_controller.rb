@@ -27,7 +27,7 @@ class TicketUpdatesController < ApplicationController
     @ticket = Ticket.find(params[:ticket_id])
     @ticket_update.ticket.build
     @ticket_update = TicketUpdate.new
-    @ticket_update.ticket_assets.build
+    3.times {@ticket_update.ticket_assets.build}
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @ticket_update }

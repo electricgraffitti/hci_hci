@@ -1,6 +1,6 @@
 <% form_for(@ticket, :html => { :multipart => true }) do |f| %>
   <%= f.error_messages %>
-<div class="grid_8">
+<div class="grid_10">
   <h2>Create Ticket</h2>
   <div class="grid_5 alpha omega">
     <p>
@@ -25,6 +25,8 @@
       <%= f.label :priority_id, "Ticket Priority" %><br />
       <%= collection_select(:ticket, :priority_id, Priority.all, :id, :priority_name)%>
     </p>
+  </div>
+  <div class="grid_3 omega">
     <%= render :partial => 'tickets/ticket_asset_upload', :locals => {:ticket => @ticket} %>
   </div>
 </div>

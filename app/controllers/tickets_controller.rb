@@ -19,7 +19,7 @@ class TicketsController < ApplicationController
     @ticket = Ticket.find(params[:id])
     @owner = Owner.find_by_ticket_id(@ticket.id)
     @ticket_update = TicketUpdate.new
-    @ticket_update.ticket_assets.build
+    3.times {@ticket_update.ticket_assets.build}
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @ticket }
@@ -31,7 +31,7 @@ class TicketsController < ApplicationController
   def new
     @ticket = Ticket.new
     @ticket.owner.build
-    @ticket.ticket_assets.build
+    3.times {@ticket.ticket_assets.build}
     @ticket_update = TicketUpdate.new
     @marketing = Employee.department('Marketing')
     @administration = Employee.department('Administration')
