@@ -27,7 +27,9 @@
   </ul>
 </div>
 <div id="employee_login">
-  <% unless current_employee %>
+  <% if current_employee %>
+    <%= link_to "Logout", employee_logout_path %>
+  <% else %>
     <%= link_to "Employee Login", employee_login_path %>
   <% end %>
 </div>
