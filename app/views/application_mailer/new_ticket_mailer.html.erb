@@ -3,37 +3,81 @@
   @ticket_description = @params[:ticket][:description]
   @ticket_duedate = @params[:ticket][:due_date]
 %>
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-   "http://www.w3.org/TR/html4/loose.dtd">
-<html lang="en">
+<html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <style type="text/css" media="screen">
-      h3 { color: #f00; }
-      ul { list-style-type: none; }
-      li { list-style-type: none; }
-      p  { margin: 1px;}
-    </style>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <title><h5>HCInsight.com :: Employee Ticket System</h5></title>
+   <style>
+    div.wrap {
+      font-family: Helvetica, 'MS Trebuchet', sans-serif;
+    }
+   </style>
 </head>
 <body>
-  <h3>HCInsight.com :: Employee Ticket System</h3>
-  <h4>Ticket: <%= @ticket_subject %></h4>
-  <ul>
-    <li>From: <%= @owner.fullname %></li>
-  </ul>
-  <p>
-  <h4>Ticket Goal:</h4>
-    <%= @ticket_description %><br/>
-    <small>Due Date: <%= @ticket_duedate %> - Status: <%= @status.status_name %> - Priority: <%= @priority.priority_name %></small>
-  </p>
-  <p>
-  <h4>Assigned To:</h4>
-    <ul>
-      <% @employees.each do |employee| %>
-        <li><%= employee.fullname %></li>
-      <% end %>
-    <ul>
-  </p>
+<div class="wrap">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="bg1">
+   <tr>
+      <td align="center">
+         
+         <table width="600" border="0" cellspacing="0" cellpadding="0" class="bg2">
+            <tr>
+               <td class="header" align="left">
+                  <h4>HCInsight.com :: Employee Ticket System</h4>
+               </td>
+            </tr>
+            <tr>
+               <td valign="top" class="body">
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                     <tr>
+                        <td width="370" valign="top" class="mainbar" align="left">
+                           <h4>Ticket: <%=h @ticket_subject %></h4>
+                           <br />
+                           <h4>Ticket Goal:</h4>
+                           <%= @ticket_description %>
+                           <ul>
+                             <li>Created by: <%=h @owner.fullname %></li>
+                           </ul>
+
+                        </td>
+                        
+                        <td width="20"></td>
+                        
+                        <td valign="top" width="170" class="sidebar" align="left">
+                           <h5>Due Date:</h5>
+                           <ul>
+                              <li><%=h @ticket_duedate %></li>
+                           </ul>
+                           <br />
+                           <h5>Current Status:</h5>
+                           <ul>
+                              <li><%=h @status.status_name %></li>
+                           </ul>
+                           <h5>Priority Level:</h5>
+                           <ul>
+                              <li><%=h @priority.priority_name %></li>
+                           </ul>
+                           <br />
+                           
+                           <h5>Assigned To:</h5>
+                           <ul>
+                             <% @employees.each do |employee| %>
+                               <li><%=h employee.fullname %></li>
+                             <% end %>
+                           <ul>
+                        </td>
+                     </tr>
+                  </table>
+               </td>
+            </tr>
+            <tr>
+               <td valign="middle" align="left" class="footer" height="61">
+               </td>
+            </tr>
+         </table>
+         
+      </td>
+   </tr>
+</table>
+</div>
 </body>
 </html>
