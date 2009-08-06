@@ -1,5 +1,7 @@
 class ApplicationMailer < ActionMailer::Base
   
+    layout 'ticket_mailer'
+  
   def contact_mailer(contact, sent_at = Time.now)
       recipients    "info@hcinsight.com"
       from          "HealthCare Insight :: Contact Us"

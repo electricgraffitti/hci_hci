@@ -17,12 +17,12 @@ $(document).ready(function() {
         var $span = $('> span.hover', this).css({opacity : 0});
         $(this).hover(function() {
           if ($(this).hasClass('active')) {
-            $span.fadeTo(500, 0);
+            $span.stop().fadeTo(500, 0);
           } else {
-           $span.fadeTo(500, 1); 
+           $span.stop().fadeTo(500, 1); 
           }
         }, function() {
-          $span.fadeTo(500, 0);
+          $span.stop().fadeTo(500, 0);
       });
       $(this).click( function() {
         $span.fadeTo(200, 0);

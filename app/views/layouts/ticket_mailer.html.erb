@@ -1,0 +1,53 @@
+<html>
+  <body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0" bgcolor='#555555' >
+
+  <STYLE>
+   .headerTop { background-color:#222222; border-top:0px solid #000000; border-bottom:1px solid #1cc3ea; text-align:center; }
+   .adminText { font-size:10px; color:#996600; line-height:200%; font-family:verdana; text-decoration:none; }
+   .headerBar { background-color:#FFFFFF; border-top:0px solid #333333; border-bottom:10px solid #FFFFFF; }
+   .title { font-size:20px; font-weight:bold; color:#CC6600; font-family:arial; line-height:110%; }
+   .subTitle { font-size:11px; font-weight:normal; color:#666666; font-style:italic; font-family:arial; }
+   td { font-size:12px; color:#000000; line-height:150%; font-family:trebuchet ms; }
+   .sideColumn { background-color:#FFFFFF; border-left:1px dashed #CCCCCC; text-align:left; }
+   .sideColumnText { font-size:11px; font-weight:normal; color:#999999; font-family:arial; line-height:150%; }
+   .sideColumnTitle { font-size:15px; font-weight:bold; color:#333333; font-family:arial; line-height:150%; }
+   .footerRow { background-color:#FFFFCC; border-top:10px solid #FFFFFF; }
+   .footerText { font-size:10px; color:#996600; line-height:100%; font-family:verdana; }
+   a { color:#FF6600; color:#FF6600; color:#FF6600; }
+   span.critical {color: red; font-weight:bold;}
+   span.urgent {color: #ff5500; font-weight:bold;}
+   span.high {color: #ffdd33; font-weight:bold;}
+   span.normal {color: #00b200;}
+   span.low {color: #19c0ec;}
+   span.lowest {color: #00467F;}
+   span.open {color: blue;}
+   span.in_progress {color: #f5d210;}
+   span.delayed {color: #4c7f99;}
+   span.complete {color: #00b200;}
+   span.closed {color: #0076b2;}
+  </STYLE>
+
+  <table width="100%" cellpadding="10" cellspacing="0" bgcolor='#555555' >
+    <tr>
+      <td valign="top" align="center">
+        <table width="600" cellpadding="0" cellspacing="0">
+          <tr>
+          <td style="background-color:#55389d;border-top:0px solid #000000;border-bottom:1px solid #FFFFFF;text-align:center;" align="center"><span style="font-size:10px;color:#ffffff;line-height:200%;font-family:verdana;text-decoration:none;">HealthCare Insight internal ticket system</span></td>
+          </tr>
+          <tr>
+          <td align="left" valign="middle" style="background-color:#FFFFFF;border-top:0px solid #333333;border-bottom:10px solid #FFFFFF;"><center><a href=""><IMG id=editableImg1 SRC="images/HCI_logo.jpg" BORDER="0" title="Your Company"  alt="Your Company" align="center"></a></center></td>
+          </tr>
+        </table>
+        <table width="600" cellpadding="20" cellspacing="0" bgcolor="#FFFFFF">
+          <tr>
+            <%= yield %>
+          </tr>
+          <tr>
+            <%= yield :mailer_footer %>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+  </body>
+</html>

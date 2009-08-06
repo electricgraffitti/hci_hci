@@ -31,7 +31,7 @@ class TicketsController < ApplicationController
   def new
     @ticket = Ticket.new
     @ticket.owner.build
-    3.times {@ticket.ticket_assets.build}
+    3.times  {@ticket.ticket_assets.build}
     @ticket_update = TicketUpdate.new
     @marketing = Employee.department('Marketing')
     @administration = Employee.department('Administration')
