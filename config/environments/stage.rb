@@ -26,3 +26,6 @@ config.action_view.cache_template_loading            = true
 
 # Enable threaded mode
 # config.threadsafe!
+
+# the url of the site for the specific environment
+SITE_URL = "stage.hcinsight.com"
