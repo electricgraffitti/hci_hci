@@ -14,7 +14,7 @@ class ContactsController < ApplicationController
       respond_to do |format|
         format.html {
           render :partial =>  'contacts/contact_thank_you', 
-                             :layout => "layout4", 
+                             :layout => "layout3", 
                              :locals => {:form => @form} }
         format.js { }
       end
