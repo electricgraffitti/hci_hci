@@ -1,5 +1,6 @@
 class TicketsController < ApplicationController
   
+  before_filter :require_employee
   layout 'employee2'
   
   # GET /tickets
