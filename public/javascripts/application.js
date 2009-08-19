@@ -100,6 +100,21 @@ $(document).ready(function() {
 		showButtonPanel: true
 	});
 });
+// This is the add an attachment field increaser
+$(document).ready(function() {
+  $upload_div = $('.upload_div');
+  $upload_field = $('.upload_field');
+  
+  $upload_div.before('<a id="add_upload" href="#">Add More Attachments<a/>');
+     
+  $add_link = $("#add_upload");
+  
+  $add_link.click(function() {
+    $upload_field.clone().appendTo($upload_div);
+  });
+  
+});
+
 
 
 

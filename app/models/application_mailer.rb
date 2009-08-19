@@ -23,9 +23,13 @@ class ApplicationMailer < ActionMailer::Base
     
     # This is what gets set in the mailer
     recipients    emails
-    from          "#{@owner.fullname}"
+    from          "HCI Internal Ticket - #{@owner.fullname}"
     subject       "New Ticket: #{params[:ticket][:subject]}"
     body          :params => params, :owner => @owner, :employees => @employees, :status => @status, :priority => @priority
+    # content_type  "multipart/alternative"
+    # attachment :content_type => "image/jpeg",  :body => File.read("an-image.jpg")
+    
+    
   end
   
   def update_ticket_mailer(params)
@@ -44,7 +48,7 @@ class ApplicationMailer < ActionMailer::Base
     
     # This is what gets set in the mailer
     recipients    emails
-    from          "#{@owner.fullname}"
+    from          "HCI Internal Ticket Update #{@owner.fullname}"
     subject       "Ticket Update: #{@ticket.subject} - #{@owner.fullname}"
     body          :params => params, :ticket => @ticket, :owner => @owner, :employees => @employees, :status => @status, :priority => @priority, :update => @update
   end

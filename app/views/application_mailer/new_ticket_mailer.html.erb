@@ -10,7 +10,7 @@
    <span style="font-size:11px;font-weight:normal;color:#666666;font-style:italic;font-family:arial;">Updated by: <%=h @owner.fullname %></span><br>
      <%=h @ticket_description %>
  </p>
- <p>Login to view this ticket: <%= link_to "Employee Login", "" %></p>
+ <p>Login to view this ticket: <%= link_to "Employee Login", (SITE_URL + "/employee_login") %></p>
 </td>
  <td width="200" valign="top" style="background-color:#FFFFFF;border-left:1px dashed #CCCCCC;text-align:left;">
    <span style="font-size:11px;font-weight:normal;color:#999999;font-family:arial;line-height:150%;">
