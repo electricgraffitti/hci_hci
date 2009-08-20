@@ -20,7 +20,7 @@ Rails::Initializer.run do |config|
   # config.gem "sqlite3-ruby", :lib => "sqlite3"
   # config.gem "aws-s3", :lib => "aws/s3"
   # config.gem 'RedCloth', :version => ">= 4.1.1", :source => "http://code.whytheluckystiff.net"
-  # config.gem "authlogic"
+  #config.gem "authlogic"
   # config.gem "active_youtube"
 
   # Only load the plugins named here, in the order given (default is alphabetical).
@@ -44,6 +44,7 @@ Rails::Initializer.run do |config|
 end
 # require for pagination
 require 'will_paginate'
+require 'authlogic'
 require 'hpricot'
 require 'RedCloth'
 # require 'lib/connection.rb'
