@@ -1,7 +1,7 @@
 # Be sure to restart your server when you modify this file
 
 # Specifies gem version of Rails to use when vendor/rails is not present
-RAILS_GEM_VERSION = '2.3.2' unless defined? RAILS_GEM_VERSION
+RAILS_GEM_VERSION = '2.3.3' unless defined? RAILS_GEM_VERSION
 
 # Bootstrap the Rails environment, frameworks, and default configuration
 require File.join(File.dirname(__FILE__), 'boot')
@@ -19,8 +19,8 @@ Rails::Initializer.run do |config|
   # config.gem "hpricot", :version => '0.6', :source => "http://code.whytheluckystiff.net"
   # config.gem "sqlite3-ruby", :lib => "sqlite3"
   # config.gem "aws-s3", :lib => "aws/s3"
-  config.gem 'RedCloth', :version => ">= 4.1.1", :source => "http://code.whytheluckystiff.net"
-  config.gem "authlogic"
+  # config.gem 'RedCloth', :version => ">= 4.1.1", :source => "http://code.whytheluckystiff.net"
+  # config.gem "authlogic"
   # config.gem "active_youtube"
 
   # Only load the plugins named here, in the order given (default is alphabetical).
@@ -51,6 +51,11 @@ require 'RedCloth'
 
 # set delivery method to :smtp, :sendmail or :test
 ActionMailer::Base.delivery_method = :sendmail
+ActionMailer::Base.sendmail_settings = {
+  :location       => '/usr/sbin/sendmail',
+  :arguments      => '-i -t -f mailer@hcinsight.com'
+}
+
 
 # set the default email host for the application
 # ActionMailer::Base.default_url_options = { :host => "stophealthcarefraud.com" }
