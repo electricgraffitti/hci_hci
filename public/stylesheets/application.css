@@ -815,14 +815,10 @@ ul.index_sector_links li h2 {
   margin-left: 10px;
 }
 .cover_flow_sub_box {
-  border-color:#111 #666;
-  border-style:solid;
-  border-width:1px;
+  width: 300px;
+  height: 136px;
   margin-left: 10px;
-  margin-top: -2px;
-  padding: 1px;
-  width: 440px;
-  height: 200px;
+  float: left;
 }
 .inner_sub_box {
   margin-left: 10px;
@@ -968,8 +964,8 @@ input#ticket_date_select {
   background: #000;
 }
 #footer_wrap {
-  min-height: 220px;
-  background: url('../images/footer_ribbon.png') 0px 190px no-repeat;
+  min-height: 254px;
+  background: url('../images/footer_ribbon.png') 0px 225px no-repeat;
 }
 #footer_links {
   margin: 10px;
