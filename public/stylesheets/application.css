@@ -1000,7 +1000,7 @@ input#ticket_date_select {
 #footer_logo {
   position: absolute;
   bottom: 45px;
-  background: #000 url('../images/hci_white_footer_logo.png') 10px 0px no-repeat;
+  background: #000 url('../images/HCI_white_footer_logo.png') 10px 0px no-repeat;
   width: 100%;
   height: 40px;
 }
