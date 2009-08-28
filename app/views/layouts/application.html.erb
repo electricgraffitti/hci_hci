@@ -5,7 +5,6 @@
   <%= render :partial => "layouts/headmeta" %>
 </head>
 <body class="yui-skin-sam">
-  <div class="header_stripe"></div>
   <div id="wrapper" class="container_16">
   <% unless flash[:notice].nil? %>
     <div id="flash" class="grid_6 round_bottom" style="display: none">
@@ -28,12 +27,7 @@
       </div>
       <div class="clear"></div>
       <div class="main_content grid_16 alpha omega">
-        <div id="main_right" class="grid_10 alpha relative">
-          <%= yield %>
-        </div>
-        <div class="grid_6 omega relative">
-          <%= yield :sidebar %>
-        </div>
+        <%= yield %>
       </div>
     </div>
     <div id="sub_boxes" class="grid_16 alpha omega">
