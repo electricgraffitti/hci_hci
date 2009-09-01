@@ -16,7 +16,7 @@ xml.instruct! :xml, :version=>"1.0", :encoding=>"UTF-8"
 xml.gallery(:base => "", :background => "#000000", :text => "#ffffff", :link => "#0000ff", :alink => "#ff0000", :vlink => "#800080", :date => Time.now) do
   xml.images do
     @coverflows.each do |coverflow|
-      xml.image(:path => (coverflow.cover.url(:thumb)), :width => 70, :height => 70, :thumbpath => (coverflow.cover.url(:thumb)), :thumbwidth => 70, :thumbheight => 70 ) do
+      xml.image(:path => (coverflow.cover.url(:medium)), :width => 70, :height => 70, :thumbpath => (coverflow.cover.url(:medium)), :thumbwidth => 70, :thumbheight => 70 ) do
         xml.meta(coverflow.cflow.title, :name => "title")
         xml.description(coverflow.cflow.title)
       end
