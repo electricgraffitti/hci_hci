@@ -1017,9 +1017,12 @@ ul#social_links li.top_nav_wide {
 }
 ul#social_links li a {
   display: block;
-  width: 100px;
+  float: left;
+  width: 30px;
   height: 30px;
+  text-indent:-3000em;
   text-decoration: none;
+  margin: 0px 5px;
   color: #e3e3e3;
 }
 ul#social_links li a.black {
@@ -1027,14 +1030,6 @@ ul#social_links li a.black {
 }
 ul#social_links li a.white {
   color: white;
-}
-ul#social_links a {
-  display: block;
-  float: left;
-  text-indent:-3000em;
-  width: 30px;
-  height: 30px;
-  margin: 0px 5px;
 }
 #facebook_link {
   background:  url('../images/social_icons/facebook.png') no-repeat;
