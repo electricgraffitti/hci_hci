@@ -816,8 +816,9 @@ ul.index_sector_links li h2 {
 }
 .cover_flow_sub_box {
   width: 370px;
-  height: 160px;
+  height: 158px;
   margin-left: 10px;
+  margin-top: 12px;
   float: left;
 }
 .inner_sub_box {
