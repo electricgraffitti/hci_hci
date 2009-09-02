@@ -4,10 +4,6 @@
   <%= render :partial => "articles/banner" %>
 <% end %>
 
-<% content_for :sub_boxes do %>
-  <%= render :partial => 'layouts/sub_boxes' %>
-<% end %>
-
 <!-- Render Helper Module Here -->
 <%= render :partial => "articles/index_article", :locals => {:articles => @articles} %>
 <div class="space_left">

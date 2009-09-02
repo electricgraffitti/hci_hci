@@ -4,10 +4,6 @@
   <%= render :partial => "links/banner" %>
 <% end %>
 
-<% content_for :sidebar do %>
-  <%= render :partial => 'layouts/sub_boxes' %>
-<% end %>
-
 <!-- Render Helper Module Here -->
 <%= render :partial => "index_link", :locals => {:links => @links} %>
 <div class="space_left">

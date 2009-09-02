@@ -4,10 +4,6 @@
   <%= render :partial => "documents/banner" %>
 <% end %>
 
-<% content_for :sub_boxes do %>
-  <%= render :partial => 'layouts/sub_boxes' %>
-<% end %>
-
 <%= render :partial => "index_document", :locals => {:documents => @documents}%>
 <div class="space_left">
   <%= link_to "Back", request.env["HTTP_REFERER"], :class => "btn"%>

@@ -1,8 +1,6 @@
 class LinksController < ApplicationController
   
   before_filter :require_user, :except => [:index, :show]
-  before_filter :coverflows
-  layout "layout2"
   
   # GET /links
   # GET /links.xml

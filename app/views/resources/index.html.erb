@@ -6,9 +6,6 @@
   <%= render :partial => "health_care/banners" %>
 <% end %>
 
-<% content_for :sub_boxes do %>
-  <%= render :partial => 'layouts/sub_boxes' %>
-<% end %>
 <div class="index_list grid_5 round">
   <h2 class="lightblue">HCI Documents</h2>
 <%= render :partial => "documents/index_document", :locals => {:documents => @documents} %>

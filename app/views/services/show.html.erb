@@ -10,10 +10,6 @@
   <%= render :partial => "services/banner" %>
 <% end %>
 
-<% content_for :sub_boxes do %>
-  <%= render :partial => 'layouts/sub_boxes' %>
-<% end %>
-
 <%= render :partial => "show_service", :locals => {:service => @service} %>
 <div class="clear"></div>
 <div class="grid_12"><% if current_user %>

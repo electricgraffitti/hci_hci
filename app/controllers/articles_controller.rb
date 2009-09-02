@@ -1,14 +1,11 @@
 class ArticlesController < ApplicationController
   
   before_filter :require_user, :except => [:index, :show]
-  before_filter :coverflows
-  layout "layout2"
   
   # GET /articles
   # GET /articles.xml
   def index
     @articles = Article.type(params[:article_type])
-    fresh_when(:etag => @articles)
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @articles }
@@ -21,7 +18,7 @@ class ArticlesController < ApplicationController
   # GET /articles/1.xml
   def show
     @article = Article.find(params[:id])
-    fresh_when(:etag => @article)
+    #fresh_when(:etag => @article)
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @article }

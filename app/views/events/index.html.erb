@@ -4,10 +4,6 @@
   <%= render :partial => "events/banner" %>
 <% end %>
 
-<% content_for :sidebar do %>
-  <%= render :partial => 'layouts/sub_boxes' %>
-<% end %>
-
 <%#= render :partial => "# Put helper Here" %>
 <%= render :partial => "index_event", :locals => {:events => @events} %>
 <div class="space_left">

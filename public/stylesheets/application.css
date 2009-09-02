@@ -815,7 +815,7 @@ ul.index_sector_links li h2 {
   margin-left: 10px;
 }
 .cover_flow_sub_box {
-  width: 370px;
+  width: 400px;
   height: 158px;
   margin-left: 10px;
   margin-top: 12px;
@@ -970,7 +970,7 @@ input#ticket_date_select {
 }
 #footer_links {
   margin: 10px;
-  width: 55%;
+  width: 54%;
   height: 50%;
   float: right;
 }
@@ -984,7 +984,7 @@ input#ticket_date_select {
 }
 #footer_links ul {
   float: left;
-  margin: 0px 55px 0px 0px;
+  margin: 0px 54px 0px 0px;
 }
 #footer_links li {
   list-style: disc;

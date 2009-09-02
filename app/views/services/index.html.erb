@@ -7,10 +7,6 @@
   <%= render :partial => "health_care/banner_side_box" %>
 <% end %>
 
-<% content_for :sub_boxes do %>
-  <%= render :partial => 'layouts/sub_boxes' %>
-<% end %>
-
 <%= render :partial => "services/index_list" %>
 <div class="space_left">
   <%= link_to "Back", request.env["HTTP_REFERER"], :class => "btn"%>

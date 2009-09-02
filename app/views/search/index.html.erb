@@ -4,10 +4,6 @@
   <%= render :partial => 'search/banner' %>
 <% end %>
 
-<% content_for :sidebar do %>
-<%= render :partial => 'layouts/sub_boxes' %>
-<% end %>
-
 <% unless @services.blank? %>
 <h3>Service Search Results</h3>
 <%= render :partial => "services/index_list", :locals => {:services => @services} %>
