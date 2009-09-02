@@ -27,9 +27,9 @@ xml.gallery(:base => "", :background => "#000000", :text => "#ffffff", :link => 
           }", :name => "link")
         xml.meta("#{
           if coverflow.cflow_type != "Link"
-            _SELF
+            '_SELF'
           else
-            _BLANK
+            '_BLANK'
           end
         }", :name => "linktarget")
         xml.description(coverflow.cflow.title)
