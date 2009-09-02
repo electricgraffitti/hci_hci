@@ -19,10 +19,10 @@ xml.gallery(:base => "", :background => "#000000", :text => "#ffffff", :link => 
       xml.image(:path => (coverflow.cover.url(:medium)), :width => 70, :height => 70, :thumbpath => (coverflow.cover.url(:medium)), :thumbwidth => 70, :thumbheight => 70 ) do
         xml.meta(coverflow.cflow.title, :name => "title")
         xml.meta("#{
-          if coverflow.cflow_type != "link"
+          if coverflow.cflow_type != "Link"
             polymorphic_path(coverflow.cflow)
           else
-            coverflow.cflow.url
+            coverflow.cflow.link_url
           end
           }", :name => "link")
         xml.meta("_SELF", :name => "linktarget")
