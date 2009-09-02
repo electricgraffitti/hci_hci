@@ -25,7 +25,13 @@ xml.gallery(:base => "", :background => "#000000", :text => "#ffffff", :link => 
             coverflow.cflow.link_url
           end
           }", :name => "link")
-        xml.meta("_SELF", :name => "linktarget")
+        xml.meta("#{
+          if coverflow.cflow_type != "Link"
+            _SELF
+          else
+            _BLANK
+          end
+        }", :name => "linktarget")
         xml.description(coverflow.cflow.title)
       end
     end
