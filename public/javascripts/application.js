@@ -68,17 +68,17 @@ $(document).ready(function() {
   });
 });
 
-// This is the accordion script
-$(document).ready(function() {
-  $('.accordion').hSlides({
-  			totalWidth: 575, 
-  			totalHeight: 300, 
-  			minPanelWidth: 30, 
-  			maxPanelWidth: 515,
-  			activeClass: 'active',
-  			speed: 200
-  		});
-});
+// // This is the accordion script
+// $(document).ready(function() {
+//   $('.accordion').hSlides({
+//        totalWidth: 575, 
+//        totalHeight: 300, 
+//        minPanelWidth: 30, 
+//        maxPanelWidth: 515,
+//        activeClass: 'active',
+//        speed: 200
+//      });
+// });
 
 // This sets up the reflections for images
 $(document).ready(function() {
@@ -100,6 +100,7 @@ $(document).ready(function() {
 		showButtonPanel: true
 	});
 });
+
 // This is the add an attachment field increaser
 $(document).ready(function() {
   $upload_div = $('.upload_div');
