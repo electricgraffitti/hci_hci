@@ -1,6 +1,7 @@
 class ServicesController < ApplicationController
   
   before_filter :require_user, :except => [:index, :show]
+  layout "layout2"
   
   # GET /services
   # GET /services.xml

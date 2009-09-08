@@ -970,8 +970,8 @@ input#ticket_date_select {
 }
 #footer_links {
   margin: 10px;
-  width: 54%;
-  height: 50%;
+/*  width: 54%;
+  height: 50%;*/
   float: right;
 }
 #footer_links a, #employee_login a {
@@ -984,7 +984,8 @@ input#ticket_date_select {
 }
 #footer_links ul {
   float: left;
-  margin: 0px 50px 0px 0px;
+  width: 120px;
+/*  margin: 0px 50px 0px 0px;*/
 }
 #footer_links li {
   list-style: disc;

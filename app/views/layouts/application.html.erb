@@ -6,35 +6,35 @@
 </head>
 <body class="yui-skin-sam">
   <!-- Application Layout -->
-  <div id="wrapper" class="container_16">
+  <div id="wrapper" class="container_12">
   <% unless flash[:notice].nil? %>
     <div id="flash" class="grid_6 round_bottom" style="display: none">
       <%= flash[:notice] %>
     </div>
   <% end %>
-	  <div id="hd" class='grid_16 alpha omega'>
+	  <div id="hd" class='grid_12 alpha omega'>
       <%= render :partial => "layouts/header" %>
 	  </div>
 	  <div class="clear"></div>
-    <div id="bd" class="grid_16 alpha omega">
+    <div id="bd" class="grid_12 alpha omega">
       <% if current_user %>
         <%= render :partial => "layouts/admin_nav" %>
       <% end %>
       <% if current_employee %>
         <%= render :partial => "layouts/employee_nav" %>
       <% end %>
-      <div id="banner" class="grid_16 alpha omega">
+      <div id="banner" class="grid_12 alpha omega">
         <%= yield :banner %>
       </div>
       <div class="clear"></div>
-      <div class="main_content grid_16 alpha omega">
+      <div class="main_content grid_12 alpha omega">
         <%= yield %>
       </div>
     </div>
-    <div id="sub_boxes" class="grid_16 alpha omega">
+    <div id="sub_boxes" class="grid_12 alpha omega">
       <%= yield :sub_boxes %>
     </div>
-    <div id="ft" class="grid_16 alpha omega">
+    <div id="ft" class="grid_12 alpha omega">
       <%= render :partial => "layouts/footer" %>
     </div>
     <div class="clear"></div>
