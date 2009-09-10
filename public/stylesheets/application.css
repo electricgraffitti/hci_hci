@@ -68,10 +68,10 @@ h1 {
 }
 h2 {
   /*font-size: 153.9%;*/
-  font-size: 130.9%;
+  font-size: 200.9%;
 }
 h3 {
-  font-size: 125.5%;
+  font-size: 160.5%;
 }
 h4 {
   font-size: 118%;
@@ -699,16 +699,20 @@ ul.index_sector_links li h2 {
 .index_service_wrap {
   margin-top: 20px;
   margin-bottom: 20px;
+  overflow: hidden;
 }
 .index_service_wrap p {
+  margin-left: -20px;
   text-align: right;
   width: 210px;
 }
 .service_header_h3 {
   font-family: Arial, "MS Trebuchet", sans-serif;
   text-align: right;
-  width: 225px;
-  background: url('../images/service_headers_h3.jpg') 0px 0px no-repeat;
+  width: 260px;
+  height: 36px;
+  margin-right: -83px;
+  background: url('../images/service_headers_h3.jpg') -85px 5px no-repeat;
 }
 .index_service_links_wrap {
   margin: 10px 0px 0px 21px;
