@@ -9,6 +9,9 @@ html, body {
 .serif {
   font-family: "Rockwell", Georgia, "Times New Roman", Times, serif;
 }
+.sans_serif {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
 #wrapper {
   text-align: left;
 }
@@ -692,6 +695,22 @@ ul.index_sector_links li h2 {
   height: 40px;
   background: url('../images/check_button.png') no-repeat;
   margin: -5px -35px 0px 0px;
+}
+.index_service_links_wrap {
+  margin: 10px 0px 0px 21px;
+/*  text-align: left;*/
+  float:left;
+}
+.cra_index_box {
+  margin: 7px auto;
+  width: 225px;
+}
+.index_service_link {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  float:left;
+  width: 130px;
+  margin-right: 5px;
+  padding: 2px 0px;
 }
 .inner_header {
   margin: 10px 0px 20px 0px;

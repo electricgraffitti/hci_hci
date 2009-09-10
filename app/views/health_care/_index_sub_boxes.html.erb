@@ -1,8 +1,17 @@
 <div class="grid_4 center">
   <div class="circle_button left"></div><h4>Comprehensive Suite of Service</h4>
+  <div class="index_service_links_wrap">
+    <% @services.each do |s| %>
+    <%= link_to "#{s.title}", service_path(s), :class => "index_service_link" %>
+    <% end %>
+  </div>
 </div>
 <div class="grid_4 alpha omega center">
   <div class="circle_button left"></div><h4>Get a Cost Reduction Analysis</h4>
+  <p class="cra_index_box sans_serif">
+    We can boost your bottom line and we'll prove it free of charge. Get your CRA today!
+  </p>
+  <%= link_to "Get Started", '', :class => "orange_btn" %>
 </div>
 <div class="grid_4 center">
   <div class="circle_button left"></div><h4>Memberships / Affiliations</h4>
