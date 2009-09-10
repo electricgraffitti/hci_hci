@@ -648,6 +648,7 @@ ul.index_sector_links li a {
   display: block;
   width: 100%;
   height: 100%;
+  text-indent: -3000em;
 }
 ul.index_sector_links li h2 {
   margin: 0px;
@@ -655,12 +656,42 @@ ul.index_sector_links li h2 {
 .sector_link {
   background: #666;
 }
-.sector_link:hover {
-  background: #ccc;
+.sector_link_header {
+  text-indent: -1000em;
+  background: url('../images/sector_links.png') 0px 0px no-repeat;
+}
+.sector_link_public {
+  text-indent: -1000em;
+  background: url('../images/sector_links.png') 0px -57px no-repeat;
+}
+.sector_link_public:hover {
+  background: url('../images/sector_links.png') -245px -57px no-repeat;
+}
+.sector_link_private {
+  text-indent: -1000em;
+  background: url('../images/sector_links.png') 0px -114px no-repeat;
+}
+.sector_link_private:hover {
+  background: url('../images/sector_links.png') -245px -114px no-repeat;
+}
+.sector_link_workers_comp {
+  text-indent: -1000em;
+  background: url('../images/sector_links.png') 0px -171px no-repeat;
+}
+.sector_link_workers_comp:hover {
+  background: url('../images/sector_links.png') -245px -171px no-repeat;
 }
 .index_quote {
-  padding: 10px;
-  height: 60px;
+  text-indent: -3000em;
+  background: url('../images/index_quote.png') no-repeat;
+  height: 90px;
+  margin: 15px 0px;
+}
+.circle_button {
+  width: 40px;
+  height: 40px;
+  background: url('../images/check_button.png') no-repeat;
+  margin: -5px -35px 0px 0px;
 }
 .inner_header {
   margin: 10px 0px 20px 0px;
@@ -702,7 +733,7 @@ ul.index_sector_links li h2 {
   float: left;
 }
 .index_list {
-  border: 1px solid #dedede;
+  /*border: 1px solid #dedede;*/
 }
 .index_list h2 {
   margin-left: 10px;
@@ -722,72 +753,26 @@ ul.index_sector_links li h2 {
   margin-top: 9px;
 }
 /*********************************************/
-/******************ACCORDION******************/
-/* hide container until all is ready */
-.accordion {
-/*  display: none;*/
+/******************TRIAL BUTTONS***************/
+.banner_side_box {
 }
-/*Main Container*/
-.container {
-	width:100%;
-	height: 300px;
-	overflow: hidden;
+
+.free_trial_button, .view_demo_button {
+  background: url('../images/free_trial_buttons.png') 0px -135px no-repeat;
+  display: block;
+  width: 220px;
+  height: 135px;
+  text-indent: -3000em;
+  margin-top: 10px;
 }
-.container ul{
-	list-style-type: none;
-	margin: 0;
-	padding:0;
-	overflow: hidden;
+.free_trial_button:hover{
+  background: url('../images/free_trial_buttons.png') 0px 0px no-repeat;
 }
-.container li{
-	display: inline;
-	margin: 0px;
-	padding:0px;
-	background: #fff;
+.view_demo_button {
+  background: url('../images/free_trial_buttons.png') -220px -135px no-repeat;
 }
-.contentInnerWrapper{
-	text-align: justify;
-	padding: 10px 10px 0 40px;
-}
-/* Handle*/
-.handle{
-	float: left;
-	width: 30px;
-	height: 400px;
-}
-#accordionHandle0 {
-  background: #fff url('../images/haccordion_bars3.png') 0px 0px no-repeat;
-}
-#accordionHandle0:hover {
-  background: #fff url('../images/haccordion_bars3.png') 0px -500px no-repeat;
-}
-#accordionHandle0.active {
-  background: #fff url('../images/haccordion_bars3.png') 0px -3000px no-repeat;
-}
-#accordionHandle1 {
-  background: #fff url('../images/haccordion_bars3.png') 0px -1000px no-repeat;
-}
-#accordionHandle1:hover {
-  background: #fff url('../images/haccordion_bars3.png') 0px -1500px no-repeat;
-}
-#accordionHandle1.active {
-  background: #fff url('../images/haccordion_bars3.png') 0px -3000px no-repeat;
-}
-#accordionHandle2 {
-  background: #fff url('../images/haccordion_bars3.png') 0px -2000px no-repeat;
-}
-#accordionHandle2:hover {
-  background: #fff url('../images/haccordion_bars3.png') 0px -2500px no-repeat;
-}
-#accordionHandle2.active {
-  background: #fff url('../images/haccordion_bars3.png') 0px -3000px no-repeat;
-}
-.handleOver{
-}
-.handleSelected{
-}
-.active {
-  background: #fff;
+.view_demo_button:hover {
+  background: url('../images/free_trial_buttons.png') -220px 0px no-repeat;
 }
 
 /*********************************************/
@@ -957,8 +942,6 @@ input#ticket_date_select {
   background: #0076b2;
   color: #fff;
 }
-
-
 /*********************************************/
 /******************FOOTER********************/
 #ft {

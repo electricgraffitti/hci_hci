@@ -1,13 +1,11 @@
 class ServicesController < ApplicationController
   
   before_filter :require_user, :except => [:index, :show]
-  layout "layout2"
   
   # GET /services
   # GET /services.xml
   def index
     @services = Service.find(:all, :order => "created_at DESC")
-
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @services }

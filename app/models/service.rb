@@ -54,5 +54,14 @@ class Service < ActiveRecord::Base
   def to_param
     "#{id}-#{permalink}"
   end
+  # 
+  # def self.calc(inum)
+  #   a = (60*60*24)
+  #   b = inum.to_i
+  #   
+  #   c = a + b
+  #   
+  #   return c
+  # end
   
 end
