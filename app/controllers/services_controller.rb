@@ -5,7 +5,7 @@ class ServicesController < ApplicationController
   # GET /services
   # GET /services.xml
   def index
-    @services = Service.find(:all, :order => "created_at DESC")
+    @services = Service.find(:all, :order => "created_at ASC")
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @services }

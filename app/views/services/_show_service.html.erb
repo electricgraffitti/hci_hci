@@ -9,7 +9,8 @@
     <div class="grid_5">
       <h3>Case Studies</h3>
       <ul>
-        <% s.case_studies.each do |case_study|%>
+        <% if s.case_studies.blank? %>
+        <% s.case_studies.each do |case_study| %>
         <li>
           <h4><%= (case_study.title).capitalize %></h4>
           <p>
@@ -18,12 +19,14 @@
           <%= link_to("#{case_study.title}", ("/case_studies/" + case_study.id.to_s + "/original_" + case_study.case_study_file_name)) %>
         </li>
         <% end %>
+        <% end %>
       </ul>
     </div>
     <div class="grid_5">
       <h3>Brochures</h3>
       <ul>
-        <% s.brochures.each do |brochure|%>
+        <% if s.brochures.blank? %>
+        <% s.brochures.each do |brochure| %>
         <li>
           <h4><%= (brochure.title).capitalize %></h4>
           <p>
@@ -31,6 +34,7 @@
           </p>
           <%= link_to("#{brochure.title}", ("/case_studies/" + brochure.id.to_s + "/original_" + brochure.brochure_file_name)) %>
         </li>
+        <% end %>
         <% end %>
       </ul>
     </div>

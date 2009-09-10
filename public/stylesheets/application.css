@@ -696,6 +696,20 @@ ul.index_sector_links li h2 {
   background: url('../images/check_button.png') no-repeat;
   margin: -5px -35px 0px 0px;
 }
+.index_service_wrap {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.index_service_wrap p {
+  text-align: right;
+  width: 210px;
+}
+.service_header_h3 {
+  font-family: Arial, "MS Trebuchet", sans-serif;
+  text-align: right;
+  width: 225px;
+  background: url('../images/service_headers_h3.jpg') 0px 0px no-repeat;
+}
 .index_service_links_wrap {
   margin: 10px 0px 0px 21px;
 /*  text-align: left;*/
@@ -797,7 +811,6 @@ ul.index_sector_links li h2 {
 /*********************************************/
 /******************SUBBOXES*******************/
 #sub_boxes {
-  height: 125px;
   text-align: left;
   background: #fff;
 }
@@ -815,8 +828,7 @@ ul.index_sector_links li h2 {
   margin-left: 10px;
 }
 .sub_box {
-  min-height: 200px;
-  margin-left: 10px;
+  min-height: 125px;
 }
 .cover_flow_sub_box {
   width: 400px;
@@ -850,10 +862,6 @@ ul.index_sector_links li h2 {
 .sub_box p {
   color: #fff;
   width: 185px;
-}
-.sub_box, .sub_box2 {
-  min-height: 240px;
-  float:left;
 }
 .go_link {
   margin-top: 10px;

@@ -7,6 +7,6 @@
   <%= render :partial => "health_care/banner_side_box" %>
 <% end %>
 
-<div class="space_left">
-  <%= link_to "Back", request.env["HTTP_REFERER"], :class => "btn"%>
-</div>
+<% @services.each do |serv| %>
+  <%= render :partial => "services/index_service", :locals => {:serv => serv } %>
+<% end %>

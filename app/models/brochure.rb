@@ -30,7 +30,7 @@ class Brochure < ActiveRecord::Base
   acts_as_textiled  :description
   
   # Validations
-  validates_presence_of :title, :description, :permalink
+  # validates_presence_of :title, :description, :permalink
   
   # PaperClip
   has_attached_file :brochure, 
