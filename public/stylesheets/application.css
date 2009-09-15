@@ -773,6 +773,14 @@ ul.index_sector_links li h2 {
   list-style-type: decimal;
   margin: 10px;
 }
+ul.service_bullets li {
+  list-style: none;
+  font-size: 135%;
+  font-weight: bold;
+  background: url('../images/small_check.png') no-repeat;
+  padding: 0px 0px 0px 25px;
+  margin: 5px 0px 0px 40px;
+}
 .thumb_wrap {
   width: 70px;
   margin-right: 10px;
