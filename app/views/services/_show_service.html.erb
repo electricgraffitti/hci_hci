@@ -1,61 +1,8 @@
 <% s = @service %>
 <div class="show_wrap grid_12">
-  <div class="overview_wrap grid_12">
-    <h2 class="bluegreen"><%= s.title %> Overview</h2>
-    <p><%= s.description %></p>
-  </div>
-  <div class="service_documents content_wrap grid_12">
-    <h2 class="bluegreen"><%= s.title %> Documents</h2>
-    <div class="grid_5">
-      <h3>Case Studies</h3>
-      <ul>
-        <% if s.case_studies.blank? %>
-        <% s.case_studies.each do |case_study| %>
-        <li>
-          <h4><%= (case_study.title).capitalize %></h4>
-          <p>
-            <%= case_study.description %>
-          </p>
-          <%= link_to("#{case_study.title}", ("/case_studies/" + case_study.id.to_s + "/original_" + case_study.case_study_file_name)) %>
-        </li>
-        <% end %>
-        <% end %>
-      </ul>
-    </div>
-    <div class="grid_5">
-      <h3>Brochures</h3>
-      <ul>
-        <% if s.brochures.blank? %>
-        <% s.brochures.each do |brochure| %>
-        <li>
-          <h4><%= (brochure.title).capitalize %></h4>
-          <p>
-            <%= brochure.description %>
-          </p>
-          <%= link_to("#{brochure.title}", ("/case_studies/" + brochure.id.to_s + "/original_" + brochure.brochure_file_name)) %>
-        </li>
-        <% end %>
-        <% end %>
-      </ul>
-    </div>
-  </div>
-  <div class="show_video content_wrap grid_12">
-    <h2 class="bluegreen"><%= s.title %> Tutorial</h2>
-    <div class="big_video">
-      <script type='text/javascript'>
-      	var flashvars = {};
-      	var params = {
-  	      menu: 'false',
-  	      allowfullscreen: 'true',
-  	      wmode: 'transparent',
-  	      bgcolor: 'transparent'
-      	};
-      	var attributes = {};
-      	swfobject.embedSWF('http://www.veeple.com/link/fKdGBFCqPuQ%253D', 'sub_video', '600', '361', '9.0.0', 'http://www.veeple.com/link/fKdGBFCqPuQ%253D', flashvars, params, attributes);
-      </script>
-
-      <div id='sub_video' class='article_image left'>
-      </div>
+  <div class="service_mid_section grid_12 alpha omega">
+    <div class="overview_wrap grid_7 right">
+      <h3 class="physicianclaim-insight_color jsutify block_font_weight sans-serif"><%= s.description %></h3>
     </div>
   </div>
 </div>

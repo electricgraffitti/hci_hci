@@ -9,8 +9,8 @@ html, body {
 .serif {
   font-family: "Rockwell", Georgia, "Times New Roman", Times, serif;
 }
-.sans_serif {
-  font-family: Georgia, "Times New Roman", Times, serif;
+.sans-serif {
+  font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
 #wrapper {
   text-align: left;
@@ -62,6 +62,9 @@ h1, h2, h3, h4, h5 {
   color: #000;
   font-family: "Rockwell", Georgia, "Times New Roman", Times, serif;
   margin-top: 5px;
+}
+.block_font_weight {
+  font-size: 225%;
 }
 h1 {
   font-size: 235%;
@@ -175,6 +178,9 @@ h2 a.small_text {
 .background_bluegreen {
   background: #60a785;
 }
+.physicianclaim-insight_color {
+  color: #06660b;
+}
 .green {
   color: #73da10;
 /*  color: #7ed96c;*/
@@ -236,6 +242,9 @@ h2 a.small_text {
 }
 .center {
   text-align: center;
+}
+.justify {
+  text-align: justify;
 }
 .margin_left_offset {
   margin-left: -10px;
@@ -526,14 +535,12 @@ ul#admin_nav_ul li a, ul#employee_nav_ul li.employee_logout a {
   text-decoration: none;
   font-size: 85%;
 }
-
 #search_box_wrap {
   margin: 9px 18px 0px;
 }
 /********************************/
 /************Banners*************/
 #slider {
-  margin: 0 auto;
   height: 290px;
 }
 #banner {
@@ -598,17 +605,22 @@ img.banner_scroll.r {
   right: 0px;
 }
 /****Inner Banners****/
-.inner_banner {
-  width: 960px;
-  height: 165px;
+.inner_banners {
+  margin-top: 10px;
+}
+img.inner_banner {
+  position: relative;
+  bottom: 0px;
+  left: 0px;
 }
 .services_inner_banner {
-  background: url('../images/banners/inner_banners/health_care_services_banner.png') no-repeat;
+  background: url('../images/banners/inner_banners/physician_insight_banner.png') no-repeat;
 }
 .banner_side_box {
   background: #fff;
   min-height: 290px;
 }
+
 /*********************************************/
 /*****************MAIN CONTENT****************/
 #bd {
@@ -704,14 +716,14 @@ ul.index_sector_links li h2 {
 .index_service_wrap p {
   margin-left: -20px;
   text-align: right;
-  width: 210px;
+  width: 236px;
 }
 .service_header_h3 {
   font-family: Arial, "MS Trebuchet", sans-serif;
   text-align: right;
   width: 260px;
   height: 36px;
-  margin-right: -83px;
+  margin-right: -82px;
   background: url('../images/service_headers_h3.jpg') -85px 5px no-repeat;
 }
 .index_service_links_wrap {
@@ -740,6 +752,10 @@ ul.index_sector_links li h2 {
   text-align: right;
 }
 /***Show Pages***/
+.service_mid_section {
+  height: 325px;
+  background: transparent url('../images/physicianclaim-insight_service_mid_bg.png') left bottom no-repeat;
+}
 .overview_wrap {
   margin-bottom: 10px;
 }

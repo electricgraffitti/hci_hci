@@ -7,7 +7,7 @@
 <% page_title "#{h(@service.title)}"%>
 
 <% content_for :banner do %>
-  <%= render :partial => "health_care/inner_banners" %>
+  <%= render :partial => "services/banner", :locals => {:service => @service}%>
   <%= render :partial => "health_care/banner_side_box" %>
 <% end %>
 
