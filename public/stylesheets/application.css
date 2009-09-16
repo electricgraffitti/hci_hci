@@ -648,8 +648,28 @@ img.inner_banner {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 .inner_index_box {
+  position: relative;
   border-right: 1px solid #ccc;
   min-height: 200px;
+}
+.who_image {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 210px;
+  height: 100px;
+}
+.box_1 {
+  background: url('../images/hci_index_box_images.png') 0px 0px no-repeat;
+}
+.box_2 {
+  background: url('../images/hci_index_box_images.png') 0px -100px no-repeat;
+}
+.box_3 {
+  background: url('../images/hci_index_box_images.png') 0px -200px no-repeat;
+}
+.z_50 {
+  z-index: 50;
 }
 ul.index_sector_links {
   width: 245px;
