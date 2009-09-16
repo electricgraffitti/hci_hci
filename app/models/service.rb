@@ -54,6 +54,5 @@ class Service < ActiveRecord::Base
   def to_param
     "#{id}-#{permalink}"
   end
-
-  
+   
 end
