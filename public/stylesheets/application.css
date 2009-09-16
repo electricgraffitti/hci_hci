@@ -931,6 +931,42 @@ input#ticket_date_select {
 .btn:hover {
   background: #67ab89;
 }
+.banner_buttons {
+  color: #fff;
+  padding: 5px;
+  background: url('../images/orange_30.png') repeat-x;
+  position: absolute;
+  bottom: 66px;
+  right: 230px;
+  display: block;
+}
+.big_orange {
+  font-size: 140%;
+  font-weight:bold;
+  height: 20px;
+  text-align:center;
+  text-decoration:none;
+  width: 250px;
+}
+.big_orange:hover {
+  background: url('../images/green_buttons.png') repeat-x;
+}
+.small_orange_buttons {
+  margin: 0px auto;
+  color:#FFFFFF;
+  display:block;
+  font-size:100%;
+  font-weight:bold;
+  height:14px;
+  padding:3px;
+  text-align:center;
+  text-decoration:none;
+  width:160px;
+  background: url('../images/orange_20.png') repeat-x;
+}
+.small_orange_buttons:hover {
+  background: url('../images/green_20.png') repeat-x;
+}
 .search_btn {
   text-indent: -1000em;
   width: 25px;
