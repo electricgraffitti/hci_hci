@@ -178,20 +178,51 @@ h2 a.small_text {
 .background_bluegreen {
   background: #60a785;
 }
+.background_orange {
+  display: block;
+  background: #ff7800
+}
 .physicianclaim-insight_color {
   color: #06660b;
+}
+.physicianclaim-insight_bg {
+  display: block;
+  background: #06660b;
 }
 .facilityclaim-insight_color {
   color: #761318;
 }
+.facilityclaim-insight_bg {
+  display: block;
+  background: #761318;
+}
 .dentalclaim-insight_color {
   color: #009dc0;
+}
+.dentalclaim-insight_bg {
+  display: block;
+  background: #009dc0;
 }
 .oncologyclaim-insight_color {
   color: #b78311;
 }
+.oncologyclaim-insight_bg {
+  display: block;
+  background: #b78311;
+}
 .pharmaclaim-insight_color {
   color: #00467f;
+}
+.pharmaclaim-insight_bg {
+  display: block;
+  background: #00467f;
+}
+.visionclaim-insight_color {
+  color: #78496a;
+}
+.visionclaim-insight_bg {
+  display: block;
+  background: #78496a;
 }
 .green {
   color: #73da10;
@@ -227,9 +258,7 @@ h2 a.small_text {
 .orange {
   color: #ff7800;
 }
-.background_orange {
-  background: #ff7800 url('../images/sub_box_inner_orange.png') no-repeat;
-}
+
 .white {
   color: #ffffff;
 }
