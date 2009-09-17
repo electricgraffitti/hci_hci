@@ -181,6 +181,18 @@ h2 a.small_text {
 .physicianclaim-insight_color {
   color: #06660b;
 }
+.facilityclaim-insight_color {
+  color: #761318;
+}
+.dentalclaim-insight_color {
+  color: #009dc0;
+}
+.oncologyclaim-insight_color {
+  color: #b78311;
+}
+.pharmaclaim-insight_color {
+  color: #00467f;
+}
 .green {
   color: #73da10;
 /*  color: #7ed96c;*/
@@ -656,7 +668,7 @@ img.inner_banner {
   position: absolute;
   bottom: 0px;
   right: 0px;
-  width: 210px;
+  width: 112px;
   height: 100px;
 }
 .box_1 {
@@ -773,8 +785,25 @@ ul.index_sector_links li h2 {
 }
 /***Show Pages***/
 .service_mid_section {
-  height: 325px;
-  background: transparent url('../images/physicianclaim-insight_service_mid_bg.png') left bottom no-repeat;
+  height: 315px;
+}
+.physicianclaim-insight_service_bg {
+  background: transparent url('../images/service_mid_bg.jpg') left -1565px no-repeat;
+}
+.facilityclaim-insight_service_bg {
+  background: transparent url('../images/service_mid_bg.jpg') left -1252px no-repeat;
+}
+.dentalclaim-insight_service_bg {
+  background: transparent url('../images/service_mid_bg.jpg') left -940px no-repeat;
+}
+.oncologyclaim-insight_service_bg {
+  background: transparent url('../images/service_mid_bg.jpg') left -626px no-repeat;
+}
+.pharmaclaim-insight_service_bg {
+  background: transparent url('../images/service_mid_bg.jpg') left -313px no-repeat;
+}
+.visionclaim-insight_service_bg {
+  background: transparent url('../images/service_mid_bg.jpg') left 0px no-repeat;
 }
 .overview_wrap {
   margin-bottom: 10px;
