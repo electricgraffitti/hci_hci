@@ -31,6 +31,27 @@ $(document).ready(function() {
       });
   });
 });
+
+// // // Sets up the fade on the Free Trial buttons
+// $(document).ready(function() {
+//   var $btn = $('div.background_orange');
+//   $('div.background_orange a').append('<span class="fb_hover" />').each(function(){
+//         $(this).css({fontSize : 0});
+//         var $span = $('> span.fb_hover', this).css({opacity : 0});
+//         $(this).hover(function() {
+//           if ($(this).hasClass('active')) {
+//             $span.stop().fadeTo(500, 0);
+//           } else {
+//            $span.stop().fadeTo(500, 1);
+//            $(this).parent().removeClass('highlight').fadeTo(500, 1);
+//           }
+//         }, function() {
+//           $span.stop().fadeTo(500, 1);
+//           $(this).parent().addClass('highlight').fadeTo(500, 1);
+//       });
+//   });
+// });
+
 // Sets the Main Nav Current Page Selection Tab
 $(document).ready(function() {
   var url = location.pathname;

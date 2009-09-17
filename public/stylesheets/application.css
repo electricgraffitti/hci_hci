@@ -197,11 +197,11 @@ h2 a.small_text {
   background: #761318;
 }
 .dentalclaim-insight_color {
-  color: #009dc0;
+  color: #038b92;
 }
 .dentalclaim-insight_bg {
   display: block;
-  background: #009dc0;
+  background: #038b92;
 }
 .oncologyclaim-insight_color {
   color: #b78311;
@@ -896,22 +896,49 @@ ul.service_bullets li {
 .banner_side_box {
 }
 
-.free_trial_button, .view_demo_button {
-  background: url('../images/free_trial_buttons.png') 0px -135px no-repeat;
-  display: block;
+.nav1 {
+  background: url('../images/hci_silver_sprite.png') 0px -80px;
+}
+.nav1.highlight:hover, li.nav1 span.hover {
+  background: url('../images/hci_silver_sprite.png') 0px -41px;
+}
+#main_nav ul li a#services.active {
+  background: url('../images/hci_silver_sprite.png') 0px 0px;
+}
+
+
+
+div.free_trial, div.view_demo {
   width: 220px;
   height: 135px;
-  text-indent: -3000em;
   margin-top: 10px;
 }
-.free_trial_button:hover{
-  background: url('../images/free_trial_buttons.png') 0px 0px no-repeat;
+div.free_trial.highlight {
+  background: url('../images/free_trial_buttons.png') 0px -135px no-repeat;
 }
-.view_demo_button {
+div.view_demo.highlight {
   background: url('../images/free_trial_buttons.png') -220px -135px no-repeat;
 }
-.view_demo_button:hover {
+div.free_trial a, div.view_demo a {
+  width: 220px;
+  height: 135px;
+  float: left;
+  text-indent: -3000em;
+}
+/*div.view_demo a span, div.free_trial a span {
+  display: block;
+}*/
+.free_trial.highlight:hover, div.free_trial span.fb_hover{
+  width: 220px;
+  height: 135px;
+  float: left;
+  background: url('../images/free_trial_buttons.png') 0px 0px no-repeat;
+}
+.view_demo.highlight:hover, div.view_demo span.fb_hover {
   background: url('../images/free_trial_buttons.png') -220px 0px no-repeat;
+  width: 220px;
+  height: 135px;
+  float: left;
 }
 
 /*********************************************/

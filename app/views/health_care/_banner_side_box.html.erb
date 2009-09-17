@@ -1,8 +1,8 @@
 <div class="banner_side_box grid_3 alpha omega">
-  <span class="background_orange <%= @service.permalink if @service %>_bg">
+  <div class="background_orange free_trial highlight <%= @service.permalink if @service %>_bg">
     <%= link_to "Free Trial", "", :class => 'free_trial_button' %>
-  </span>
-  <span class="background_orange <%= @service.permalink if @service %>_bg">
+  </div>
+  <div class="background_orange view_demo highlight <%= @service.permalink if @service %>_bg">
   <%= link_to "View Demo", "", :class => 'view_demo_button' %>
-  </span>
+  </div>
 </div>
