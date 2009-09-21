@@ -10,8 +10,8 @@
   <%= render :partial => "services/banner", :locals => {:service => @service}%>
   <%= render :partial => "health_care/banner_side_box", :locals => {:s => @service} %>
 <% end %>
-
 <%= render :partial => "show_service", :locals => {:service => @service} %>
+<%= render :partial => "show_quote", :locals => {:service => @service} %>
 <div class="clear"></div>
 <div class="grid_12"><% if current_user %>
   <%= link_to 'New', new_service_path %> |
