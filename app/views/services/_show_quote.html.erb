@@ -1,5 +1,8 @@
-<div class="grid_12 service_quote <%= service.permalink %>_quote">
-  <p>
+<div class="grid_12 alpha service_quote">
+  <p class="<%= service.permalink %>_quote">
     <%=h service.quote %>
   </p>
+  <div class="quote_brochure">
+    <%= link_to "Brochure", "" %>
+  </div>
 </div>
