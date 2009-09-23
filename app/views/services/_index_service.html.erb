@@ -1,5 +1,5 @@
 <div class="grid_4 alpha omega index_service_wrap">
-  <div class="<%= serv.permalink %>_index_wrap service_avatar"></div>
+  <%= link_to "#{serv.title}", service_path(serv), :class => "#{serv.permalink}_index_wrap service_avatar" %>
   <h2 class="service_header_h3 right bold"><%= serv.title %></h2>
   <p class="<%= serv.permalink %>_index_text right"><%= serv.meta_description %></p>
   <div class="clear"></div>

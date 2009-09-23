@@ -57,10 +57,16 @@ a {
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
 }
+@font-face {
+  font-family: "Easy";
+  src: url(http://localhost:3000/fonts/Easy.ttf) format("truetype");
+}
 h1, h2, h3, h4, h5 {
   font-weight: bold;
   color: #000;
-  font-family: "Rockwell", Georgia, "Times New Roman", Times, serif;
+  /*font-family: "Rockwell", Georgia, "Times New Roman", Times, serif;*/
+  font-family: "Easy", "Arial";
+  
   margin-top: 5px;
 }
 .block_font_weight {
@@ -395,7 +401,7 @@ label.error {
   /*border-top: 1px solid #f8f8f8;*/
 }
 ul.nav_ul {
-  margin-left: 13px;
+  margin-left: 1px;
 }
 ul.nav_ul li {
   width: 100px;
@@ -822,35 +828,38 @@ ul.index_sector_links li h2 {
   float: left;
   margin: 5px 0px 0px 30px;
 }
-.service_avatar {
+a.service_avatar {
+  margin: 0px;
   position: absolute;
   top: 5px;
-  left: 20px;
+  left: 15px;
   width: 75px;
   height: 75px;
   overflow: none;
+  display: block;
+  text-indent: -3000em;
 }
-.physicianclaim-insight_index_wrap {
+a.physicianclaim-insight_index_wrap {
  background: url('../images/service_avatars.png') 0px -75px no-repeat; 
 }
-.facilityclaim-insight_index_wrap {
+a.facilityclaim-insight_index_wrap {
  background: url('../images/service_avatars.png') -75px -75px no-repeat;
  left: 30px;
 }
-.dentalclaim-insight_index_wrap {
+a.dentalclaim-insight_index_wrap {
  background: url('../images/service_avatars.png') -150px -75px no-repeat;
- left: 30px
+ left: 30px;
 }
-.oncologyclaim-insight_index_wrap {
+a.oncologyclaim-insight_index_wrap {
  background: url('../images/service_avatars.png') -375px -75px no-repeat; 
 }
-.pharmaclaim-insight_index_wrap {
+a.pharmaclaim-insight_index_wrap {
  background: url('../images/service_avatars.png') -225px -75px no-repeat;
- left: 30px
+ left: 30px;
 }
-.visionclaim-insight_index_wrap {
+a.visionclaim-insight_index_wrap {
  background: url('../images/service_avatars.png') -300px -75px no-repeat;
- left: 30px
+ left: 30px;
 }
 .physicianclaim-insight_index_text {
   width: 230px;
@@ -932,7 +941,7 @@ ul.index_sector_links li h2 {
   margin-top: 10px;
 }
 .overview_wrap ul, .overview_wrap ol {
-  margin: 5px;
+  margin: 15px 0px 0px 5px;
 }
 .overview_wrap ul li {
   list-style-type: circle;
@@ -1025,7 +1034,7 @@ div.view_demo a:hover, div.view_demo span.fb_hover {
   height: 125px;
 }
 .service_quote p {
-  margin: 10px 0px 10px 50px;
+  margin: 0px 0px 10px 50px;
   width: 460px;
   height: 105px;
   float: left;
