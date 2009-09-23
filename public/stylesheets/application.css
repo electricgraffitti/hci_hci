@@ -57,16 +57,10 @@ a {
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
 }
-@font-face {
-  font-family: "Easy";
-  src: url('../fonts/Easy.ttf') format("truetype");
-}
 h1, h2, h3, h4, h5 {
   font-weight: bold;
   color: #000;
-  /*font-family: "Rockwell", Georgia, "Times New Roman", Times, serif;*/
-  font-family: "Easy", "Arial";
-  
+  font-family: "Rockwell", Georgia, "Times New Roman", Times, serif;
   margin-top: 5px;
 }
 .block_font_weight {
@@ -98,11 +92,9 @@ h3 a:hover, h4 a:hover{
   text-decoration: underline;
 }
 p {
+  font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
   margin: 5px 0px 0px;
 }
-/*img {
-  margin: 0px 10px 10px 10px;
-}*/
 .content_wrap {
   margin: 10px 0px;
 }
@@ -696,7 +688,6 @@ img.inner_banner {
 }
 .index_box p {
   padding: 0px 21px 10px 0px;
-  font-family: Georgia, "Times New Roman", Times, serif;
 }
 .inner_index_box {
   position: relative;
@@ -792,7 +783,6 @@ ul.index_sector_links li h2 {
 }
 .number_steps {
   margin-top: 35px;
-  font-family:"Rockwell",Georgia,"Times New Roman",Times,serif;
   font-weight: bold;
 }
 .big_number {
@@ -820,7 +810,7 @@ ul.index_sector_links li h2 {
   margin-left: 15px;
 }
 .index_service_wrap p {
-  margin-left: -20px;
+  margin: 0px 0px 0px -20px;
   text-align: right;
 }
 .index_service_wrap a {
@@ -865,19 +855,19 @@ a.visionclaim-insight_index_wrap {
   width: 230px;
 }
 .facilityclaim-insight_index_text {
-  width: 225px;
+  width: 215px;
 }
 .dentalclaim-insight_index_text {
-  width: 230px;
+  width: 207px;
 }
 .oncologyclaim-insight_index_text {
-  width: 260px;
+  width: 245px;
 }
 .pharmaclaim-insight_index_text {
-  width: 230px;
+  width: 215px;
 }
 .visionclaim-insight_index_text {
-  width: 220px;
+  width: 200px;
 }
 .service_header_h3 {
   font-family: Arial, "MS Trebuchet", sans-serif;
