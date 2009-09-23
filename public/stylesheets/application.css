@@ -94,6 +94,7 @@ h3 a:hover, h4 a:hover{
 p {
   font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
   margin: 5px 0px 0px;
+  line-height: 16.35px;
 }
 .content_wrap {
   margin: 10px 0px;
@@ -687,7 +688,7 @@ img.inner_banner {
   font-weight: bold;
 }
 .index_box p {
-  padding: 0px 21px 10px 0px;
+  padding: 0px 10px 10px 0px;
 }
 .inner_index_box {
   position: relative;
@@ -812,6 +813,7 @@ ul.index_sector_links li h2 {
 .index_service_wrap p {
   margin: 0px 0px 0px -20px;
   text-align: right;
+  line-height: 16.35px;
 }
 .index_service_wrap a {
   font-size: 85%;
@@ -887,9 +889,8 @@ a.visionclaim-insight_index_wrap {
   width: 225px;
 }
 .index_service_link {
-  font-family: Georgia, "Times New Roman", Times, serif;
   float:left;
-  width: 130px;
+  width: 134px;
   margin-right: 5px;
   padding: 2px 0px;
 }
@@ -1113,7 +1114,6 @@ div.view_demo a:hover, div.view_demo span.fb_hover {
   text-indent: -1000em;
 }
 .sub_box p {
-  color: #fff;
   width: 185px;
 }
 .go_link {
