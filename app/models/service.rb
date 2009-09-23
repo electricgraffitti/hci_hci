@@ -35,7 +35,7 @@ class Service < ActiveRecord::Base
   end
   
   # RedCloth (textilize)
-  acts_as_textiled  :description
+  # acts_as_textiled  :description
   
   # Validations
   validates_presence_of :title, :description, :permalink
