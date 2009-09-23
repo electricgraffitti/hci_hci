@@ -776,13 +776,13 @@ ul.index_sector_links li h2 {
   float: left;
 }
 .index_steps {
-  margin: 20px 20px 10px;
+  margin: 10px 0px 10px 20px;
 }
 .index_steps p {
-  width: 425px;
+  width: 390px;
 }
 .number_steps {
-  margin-top: 35px;
+  margin: 35px 0px 0px 15px;
   font-weight: bold;
 }
 .big_number {
