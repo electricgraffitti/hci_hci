@@ -778,18 +778,97 @@ ul.index_sector_links li h2 {
   background: #efefef;
   float: left;
 }
+.index_steps {
+  margin: 20px 20px 10px;
+}
+.index_steps p {
+  width: 425px;
+}
+.number_steps {
+  margin-top: 35px;
+  font-family:"Rockwell",Georgia,"Times New Roman",Times,serif;
+  font-weight: bold;
+}
+.big_number {
+  width: 30px;
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 325%;
+  margin: 0px 3px 0px 5px;
+  color: #888;
+}
+.number_header {
+  width: 120px;
+  font-size: 145%;
+}
+.number_header_small {
+  width: 110px;
+}
 .index_service_wrap {
+  position: relative;
   margin-top: 20px;
   margin-bottom: 20px;
   overflow: hidden;
 }
+.index_service_wrap img {
+  margin-left: 15px;
+}
 .index_service_wrap p {
   margin-left: -20px;
   text-align: right;
-  width: 236px;
 }
-.index_steps p {
-  width: 425px;
+.index_service_wrap a {
+  font-size: 85%;
+  float: left;
+  margin: 5px 0px 0px 30px;
+}
+.service_avatar {
+  position: absolute;
+  top: 5px;
+  left: 20px;
+  width: 75px;
+  height: 75px;
+  overflow: none;
+}
+.physicianclaim-insight_index_wrap {
+ background: url('../images/service_avatars.png') 0px -75px no-repeat; 
+}
+.facilityclaim-insight_index_wrap {
+ background: url('../images/service_avatars.png') -75px -75px no-repeat;
+ left: 30px;
+}
+.dentalclaim-insight_index_wrap {
+ background: url('../images/service_avatars.png') -150px -75px no-repeat;
+ left: 30px
+}
+.oncologyclaim-insight_index_wrap {
+ background: url('../images/service_avatars.png') -375px -75px no-repeat; 
+}
+.pharmaclaim-insight_index_wrap {
+ background: url('../images/service_avatars.png') -225px -75px no-repeat;
+ left: 30px
+}
+.visionclaim-insight_index_wrap {
+ background: url('../images/service_avatars.png') -300px -75px no-repeat;
+ left: 30px
+}
+.physicianclaim-insight_index_text {
+  width: 230px;
+}
+.facilityclaim-insight_index_text {
+  width: 225px;
+}
+.dentalclaim-insight_index_text {
+  width: 230px;
+}
+.oncologyclaim-insight_index_text {
+  width: 260px;
+}
+.pharmaclaim-insight_index_text {
+  width: 230px;
+}
+.visionclaim-insight_index_text {
+  width: 220px;
 }
 .service_header_h3 {
   font-family: Arial, "MS Trebuchet", sans-serif;

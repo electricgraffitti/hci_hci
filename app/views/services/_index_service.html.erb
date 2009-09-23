@@ -1,7 +1,7 @@
 <div class="grid_4 alpha omega index_service_wrap">
-  <%= link_to image_tag(serv.avatar.url(:thumb), :alt => serv.title), service_path(serv), :class => "left" %>
+  <div class="<%= serv.permalink %>_index_wrap service_avatar"></div>
   <h2 class="service_header_h3 right bold"><%= serv.title %></h2>
-  <p class="right sans_serif"><%= serv.meta_description %></p>
+  <p class="<%= serv.permalink %>_index_text right"><%= serv.meta_description %></p>
   <div class="clear"></div>
   <%= link_to "Learn More >", service_path(serv), :class => "right" %>
 </div>
