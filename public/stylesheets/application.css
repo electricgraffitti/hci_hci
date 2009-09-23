@@ -59,7 +59,7 @@ a {
 }
 @font-face {
   font-family: "Easy";
-  src: url(http://localhost:3000/fonts/Easy.ttf) format("truetype");
+  src: url('../fonts/Easy.ttf') format("truetype");
 }
 h1, h2, h3, h4, h5 {
   font-weight: bold;
