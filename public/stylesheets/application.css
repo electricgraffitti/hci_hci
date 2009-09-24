@@ -1007,6 +1007,24 @@ ul.service_bullets li {
   margin-left: 15px;
   width: 450px;
 }
+.physicianclaim-insight_problem_box_bg {
+  background: #dedede url('../images/graphs.png') right bottom no-repeat;
+}
+.facilityclaim-insight_problem_box_bg {
+  background: #dedede url('../images/graphs.png') right -900px no-repeat;
+}
+.dentalclaim-insight_problem_box_bg {
+  background: #dedede url('../images/graphs.png') right -675px no-repeat;
+}
+.oncologyclaim-insight_problem_box_bg {
+  background: #dedede url('../images/graphs.png') right -450px no-repeat;
+}
+.pharmaclaim-insight_problem_box_bg {
+  background: #dedede url('../images/graphs.png') right -225px no-repeat;
+}
+.visionclaim-insight_problem_box_bg {
+  background: #dedede url('../images/graphs.png') right top no-repeat;
+}
 .solution_box {
   width: 918px;
   border: 1px solid #dedede;
