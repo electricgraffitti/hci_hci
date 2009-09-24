@@ -1019,6 +1019,24 @@ ul.service_bullets li {
   margin-left: 15px;
   width: 600px;
 }
+.physicianclaim-insight_sol_box_bg {
+  background: url('../images/sol_box_bg.png') right bottom no-repeat;
+}
+.facilityclaim-insight_sol_box_bg {
+  background: url('../images/sol_box_bg.png') right -900px no-repeat;
+}
+.dentalclaim-insight_sol_box_bg {
+  background: url('../images/sol_box_bg.png') right -675px no-repeat;
+}
+.oncologyclaim-insight_sol_box_bg {
+  background: url('../images/sol_box_bg.png') right -450px no-repeat;
+}
+.pharmaclaim-insight_sol_box_bg {
+  background: url('../images/sol_box_bg.png') right -225px no-repeat;
+}
+.visionclaim-insight_sol_box_bg {
+  background: url('../images/sol_box_bg.png') right top no-repeat;
+}
 /*********************************************/
 /******************TRIAL BUTTONS***************/
 div.free_trial, div.view_demo {
