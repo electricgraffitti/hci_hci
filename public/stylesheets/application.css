@@ -64,6 +64,7 @@ h1, h2, h3, h4, h5 {
   margin-top: 5px;
 }
 .block_font_weight {
+  width: 520px;
   font-size: 195%;
 }
 h1 {
@@ -981,6 +982,42 @@ ul.service_bullets li {
 .heading_adjacent_link {
   float: left;
   margin-top: 9px;
+}
+.pro_sol_boxes {
+  position: relative;
+  float: left;
+  margin-bottom: 20px;
+  height: 225px;
+}
+.pro_sol_boxes h2 {
+  width: 325px;
+  height: 65px;
+  margin: 10px 0px 10px 10px;
+  text-indent: -3000em;
+}
+.problem_box {
+  background: #dedede;
+  width: 920px;
+}
+.problem_box h2 {
+  background: url('../images/pro_sol_wide.png') 0px 0px no-repeat;
+}
+.problem_box p {
+  position: relative;
+  margin-left: 15px;
+  width: 450px;
+}
+.solution_box {
+  width: 918px;
+  border: 1px solid #dedede;
+}
+.solution_box h2 {
+  background: url('../images/pro_sol_wide.png') 0px -65px no-repeat;
+}
+.solution_box p {
+  position: relative;
+  margin-left: 15px;
+  width: 600px;
 }
 /*********************************************/
 /******************TRIAL BUTTONS***************/
