@@ -32,6 +32,10 @@ class ServicesController < ApplicationController
     @service.case_studies.build
     @service.brochures.build
     @service.coverflows.build
+    
+    3.times do 
+      @service.service_bullets.build
+    end
     respond_to do |format|
       format.html { render :layout => "admin"}
       format.xml  { render :xml => @service }
@@ -49,6 +53,11 @@ class ServicesController < ApplicationController
     end
     if @service.coverflows.blank?
       @service.coverflows.build
+    end
+    if @service.service_bullets.blank?
+      3.times do
+        @service.service_bullets.build
+      end
     end
     respond_to do |format|
       format.html { render :layout => "admin"}

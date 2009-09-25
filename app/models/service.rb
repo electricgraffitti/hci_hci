@@ -28,6 +28,9 @@ class Service < ActiveRecord::Base
   has_many :coverflows, :as => :cflow, :class_name => "Coverflow"
   accepts_nested_attributes_for :coverflows, :allow_destroy => true
   
+  has_many :service_bullets, :class_name => "ServiceBullet"
+  accepts_nested_attributes_for :service_bullets, :allow_destroy => true
+  
   # Thinking Sphinx Indexes
   define_index do
     indexes description
