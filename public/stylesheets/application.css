@@ -1374,11 +1374,23 @@ input#ticket_date_select {
   width: 100%;
   height: 40px;
 }
+div.newsletter_signup {
+  position: relative;
+  left: 450px;
+}
+div.newsletter_form {
+  color: #fff;
+}
+div.newsletter_form input[type='submit'] {
+  margin-top: 17px;
+  margin-left: 10px;
+}
 ul#social_links {
   position: relative;
   float: right;
   height: 30px;
   margin-top: 10px;
+  right: 10px;
 }
 ul#social_links li, ul#social_links li.top_nav_wide {
   display: block;
@@ -1406,16 +1418,19 @@ ul#social_links li a.white {
   color: white;
 }
 #facebook_link {
-  background:  url('../images/social_icons/facebook.png') no-repeat;
-}
-#twitter_link {
-  background:  url('../images/social_icons/twitter.png') no-repeat;
+  background:  url('../images/social_icons/social_icons.png') 0px -30px no-repeat;
 }
 #youtube_link {
-  background:  url('../images/social_icons/youtube.png') no-repeat;
+  background:  url('../images/social_icons/social_icons.png') -30px -30px no-repeat;
 }
 #linkedin_link {
-  background:  url('../images/social_icons/linked_in.png') no-repeat;
+  background:  url('../images/social_icons/social_icons.png') -60px -30px no-repeat;
+}
+#shcf_link {
+  background:  url('../images/social_icons/social_icons.png') -90px -30px no-repeat;
+}
+#twitter_link {
+  background:  url('../images/social_icons/social_icons.png') -120px -30px no-repeat;
 }
 #footer_stripe {
   position: absolute;

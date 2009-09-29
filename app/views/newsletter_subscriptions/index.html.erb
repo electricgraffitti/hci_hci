@@ -1,0 +1,22 @@
+<h1>Listing newsletter_subscriptions</h1>
+
+<table>
+  <tr>
+    <th>Email</th>
+    <th>Active subscription</th>
+  </tr>
+
+<% @newsletter_subscriptions.each do |newsletter_subscription| %>
+  <tr>
+    <td><%=h newsletter_subscription.email %></td>
+    <td><%=h newsletter_subscription.active_subscription %></td>
+    <td><%= link_to 'Show', newsletter_subscription %></td>
+    <td><%= link_to 'Edit', edit_newsletter_subscription_path(newsletter_subscription) %></td>
+    <td><%= link_to 'Destroy', newsletter_subscription, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New newsletter_subscription', new_newsletter_subscription_path %>

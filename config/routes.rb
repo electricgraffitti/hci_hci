@@ -1,5 +1,7 @@
   # The priority is based upon order of creation: first created -> highest priority.
 ActionController::Routing::Routes.draw do |map|
+  map.resources :newsletter_subscriptions
+
   
   map.resources :tickets, :has_many => :ticket_assets
   map.resources :ticket_updates
