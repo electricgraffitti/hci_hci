@@ -2,18 +2,61 @@
 <% meta_description("HealthCare Insight provides many resources to help you combat health care fraud.") %>
 <% page_title("About Us ") %>
 
-<% content_for :banner do %>
-  <%= render :partial => "health_care/inner_banners" %>
-  <%= render :partial => "health_care/banner_side_box" %>
-<% end %>
+<%# content_for :banner do %>
+  <%#= render :partial => "health_care/inner_banners" %>
+  <%#= render :partial => "health_care/banner_side_box" %>
+<%# end %>
 
-<% content_for :sub_boxes do %>
-  <%#= render :partial => 'layouts/sub_boxes' %>
-<% end %>
-<div class="grid_11">
-  <h2>HealthCare Insight&copy</h2>
-  <p>provides health care claims payors with a comprehensive suite of clinically validated fraud and abuse surveillance services designed to maximize claims administration accuracy and minimize payment waste.</p>
-  <p>
-    ISO is the parent company of HCI. ISO supplies data, analytics, and decision-support services for professionals in many fields, including: property/casualty insurance, mortgage lending, healthcare, government, human resources. 
-  </p>
+<div class="grid_12 alpha omega">
+  <h2 class="about_header full_wrap">Say Hello To HealthCare Insight</h2>
+  <div class="half grid_6 omega">  
+    <h3 class="orange">Who We Are</h3>
+    <p class="">We provide private and public sector health care claims payors with a comprehensive suite of clinically validated fraud and abuse prevention services. Let us help you to maximize claims administration accuracy and minimize payment waste.
+    </p>
+  </div>
+  <div class="half grid_6 omega">  
+    <h3 class="orange">About ISO</h3>
+    <p>
+      ISO is the parent company of HCI. ISO supplies data, analytics, and decision-support services for professionals in many fields, including: property/casualty insurance, mortgage lending, healthcare, government, human resources. 
+    </p>
+  </div>
+  <div class="divider"></div>
+</div>
+<div class="grid_12 alpha omega">
+  <div class="half grid_6 omega">
+    <h3 class="orange">We Believe</h3>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br/><br/>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+    <h3 class="orange">Meet Our Management</h3>
+    <% 4.times do %>
+    <%= render :partial => 'management_profile' %>
+    <% end %>
+  </div>
+  <div class="half grid_6 omega">
+    <h3 class="orange">Our History</h3>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+    <div id="milestones" class="grid_5 alpha">
+      <% 5.times do %>
+      <div class="left">
+        <%= image_tag('milestone_placeholder.png', :width => 100, :height => 100) %>
+        <div class="milestone_inner_wrap">        
+          <div class="year">2009</div>
+          <div class="event">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+        </div>
+      </div>
+      <div class="right">
+        <%= image_tag('milestone_placeholder.png', :width => 100, :height => 100) %>
+        <div class="milestone_inner_wrap">        
+          <div class="year">2009</div>
+          <div class="event">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+        </div>
+      </div>
+      <% end %>
+      <div class="clear"></div>
+    </div>
+  </div>
 </div>

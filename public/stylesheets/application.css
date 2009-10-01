@@ -103,6 +103,11 @@ p {
 .full_wrap {
   margin: 10px 10px;
 }
+.divider {
+  clear: both;
+  border-top: 1px solid #666;
+  margin: 25px 10px;
+}
 .relative {
   position: relative;
 }
@@ -497,7 +502,7 @@ ul#main_nav_ul li a.black {
   float: left;
 }
 ul#admin_nav_ul, ul#employee_nav_ul {
- margin-left: 13px; 
+ margin-left: 1px; 
 }
 ul#admin_nav_ul li, ul#employee_nav_ul li{
   width: 100px;
@@ -1055,6 +1060,99 @@ ul.service_bullets li {
 .visionclaim-insight_sol_box_bg {
   background: url('../images/sol_box_bg.png') right top no-repeat;
 }
+div.half p {
+  margin: 5px 50px 30px 0px;
+}
+.about_profile_wrap {
+  width: 460px;
+  float: left;
+  padding: 10px 0px;
+  margin: 5px 0px 20px;
+  
+}
+.about_profile_wrap img {
+  float: left;
+  margin: 0px 10px 10px 0px;
+}
+.about_profile_wrap h4 {
+  margin: 0px;
+}
+.profile {
+  float: right;
+  width: 340px;
+}
+div.profile p {
+  margin-bottom: 0px;
+}
+#milestones {
+  position: relative;
+  background: #dedede url('../images/milestones_bg.png') repeat-y;
+  width: 450px;
+  min-height: 50px;
+}
+#milestones div.left {
+  position: relative;
+  float: left;
+  width: 100%;
+}
+div.left div.milestone_inner_wrap {
+  margin-top: 30px;
+  margin-right: 20px;
+  width: 280px;
+  height: 85px;
+  border-top: 1px solid #cccccc;
+  float: right;
+}
+#milestones div.left img {
+  margin: 10px 10px 10px 20px;
+  float: left;
+}
+#milestones div.left .year {
+  font-size: 200%;
+  width: 45px;
+  margin: 5px;
+  float: left;
+}
+#milestones div.left .event {
+  width: 190px;
+  padding-left: 10px;
+  margin: 5px 0px 0px 5px;
+  float: right;
+}
+#milestones div.right img {
+  margin: 10px 20px 10px 10px;
+  float: right;
+}
+div.right div.milestone_inner_wrap {
+  margin-top: 30px;
+  margin-right: 20px;
+  width: 280px;
+  height: 85px;
+  border-top: 1px solid #cccccc;
+  float: left;
+}
+#milestones div.right .year {
+  font-size: 200%;
+  width: 45px;
+  margin: 5px;
+  float: right;
+}
+#milestones div.right .event {
+  width: 190px;
+  padding-left: 10px;
+  margin: 5px 5px 0px 0px;
+  float: left;
+}
+/*******Special Headers**********/
+
+.about_header {
+  position: relative;
+  width: 335px;
+  height: 75px;
+  text-indent: -3000em;
+  background: url('../images/about_header.png') no-repeat;
+}
+
 /*********************************************/
 /******************TRIAL BUTTONS***************/
 div.free_trial, div.view_demo {
@@ -1380,6 +1478,7 @@ div.newsletter_signup {
 }
 div.newsletter_form {
   color: #fff;
+  margin-top: -5px;
 }
 div.newsletter_form input[type='submit'] {
   margin-top: 17px;

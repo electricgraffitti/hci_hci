@@ -33,7 +33,7 @@ class UsersController < ApplicationController
     @user = User.new
 
     respond_to do |format|
-      format.html # new.html.erb
+      format.html { render :layout => "layout2"}
       format.xml  { render :xml => @user }
     end
   end
