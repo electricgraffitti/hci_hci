@@ -1,0 +1,147 @@
+
+.content_left, .content_left_bg {
+  display: block;
+  position: relative;
+  width: 940px;
+  height: 440px;
+  float: left;
+}
+#share_this_link {
+  position: absolute;
+  bottom: 30px;
+  left: 365px;
+  font-size: 79%;
+}
+#share_this_link a {
+  text-decoration: none;
+  color: #666;
+}
+#share_this_link a:hover {
+  text-decoration: underline;
+  color: #ff9900;
+}
+#free_trial_form {
+  position: absolute;
+  top: 280px;
+  right: 60px;
+  width: 420px;
+}
+.form_element {
+  position: relative;
+  float: left;
+  margin: 0px 10px;
+}
+.form_element label {
+  font-weight: bold;
+  font-size: 77%;
+}
+/***Errors***/
+label.error {
+  position: absolute;
+  top: 0px;
+  left: 100px;
+  float: left;
+  color: red;
+  font-weight: bold;
+}
+input.error {
+  border: 1px solid red;
+  height: 22px;
+}
+.submit_wrap {
+  margin-top: 15px;
+  width: 190px;
+}
+.content_left_bg {
+  background: transparent url('../images/landing_pages/landing_page_1.png') no-repeat;
+}
+.content_left ul li {
+  list-style: none;
+}
+
+.content_right h5 {
+  margin: 0px 0px 10px 35px;
+}
+
+p.select {
+  margin-bottom: 5px;
+}
+p.select select {
+  width: 185px;
+}
+.form_submit_button {
+  position: absolute;
+  bottom: 25px;
+  right: 15px;
+}
+.btn {
+  background: #f59300 url('../images/landing_pages/orange_button_bg.png') bottom left repeat-x;
+  font-family: "Arial Narrow", Helvetica, Geneva, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 10px 25px; 
+  color: #fff;
+  border: 1px solid #fff; 
+  text-decoration: none; 
+  cursor: pointer; 
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+  margin: 10px 10px 10px 0px;
+  min-height: 35px;
+  float: left;
+}
+.btn:hover {
+  background: #36bfff url('../images/landing_pages/orange_button_bg_hover.png') bottom left repeat-x;
+}
+
+div#free_trial_form form.form p.required, div#free_trial_form form.form span.required, div#free_trial_form form.form label.required, div#free_trial_form form.form p label {
+  float:left;
+  font-weight:bold;
+  width:180px;
+}
+div#free_trial_form form.form p {
+  clear: none;
+  float:left;
+  position:relative;
+  width:180px;
+  margin:0 10px;
+  padding:0 0;
+}
+div#free_trial_form form.form p.timeline {
+  clear: left;
+}
+div#free_trial_form form.form p.submit {
+  float: right;
+  position: relative;
+  right: -75px;
+}
+div#free_trial_form form.form input.text {
+  width: 175px;
+}
+div#free_trial_form form.form p label {
+  margin: 0px;
+}
+div#free_trial_form form.form input {
+  padding: 1px;
+}
+div#free_trial_form form.form p input[type="submit"] {
+  background: #f59300 url('../images/landing_pages/orange_button_bg.png') bottom left repeat-x;
+  font-family: "Arial Narrow", Helvetica, Geneva, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 10px 25px; 
+  color: #fff;
+  border: 1px solid #fff; 
+  text-decoration: none; 
+  cursor: pointer; 
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+  margin: 10px 10px 10px 0px;
+  min-height: 35px;
+  float: left;
+}
+div#free_trial_form form.form p input[type="submit"]:hover {
+  background: #36bfff url('../images/landing_pages/orange_button_bg_hover.png') bottom left repeat-x;
+}
