@@ -46,9 +46,9 @@ h2.inner_header {
 }
 #free_trial_form {
   position: absolute;
-  top: 280px;
-  right: 60px;
-  width: 420px;
+  right:20px;
+  top:245px;
+  width:420px;
 }
 .form_element {
   position: relative;
