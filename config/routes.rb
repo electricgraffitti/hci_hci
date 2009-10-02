@@ -2,6 +2,7 @@
 ActionController::Routing::Routes.draw do |map|
 
   map.resources :free_trials
+  map.resources :benefits
   map.resources :newsletter_subscriptions
   map.resources :tickets, :has_many => :ticket_assets
   map.resources :ticket_updates

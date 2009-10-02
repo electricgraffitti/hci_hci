@@ -1,6 +1,6 @@
 <% form_tag(contact_mailer_path, :id => "contact_form") do %>
-<div class="grid_8 form_section">
-  <div class="grid_4 alpha">
+<div class="grid_7 alpha omega form_section">
+  <div class="grid_4 alpha omega">
     <div>
       <%= label :contact, :contact_name, "Contact Name" %><br />
       <%= text_field :contact, :contact_name, :name => "contact_us_contact_name" %>
@@ -18,7 +18,7 @@
       <%= text_field :contact, :phone, :name => "contact_us_phone" %>
     </div>
   </div>
-  <div class="grid_4 alpha">
+  <div class="grid_3 alpha omega">
     <div>
       <%= label :contact, :street, "Street" %><br />
       <%= text_field :contact, :street, :name => "contact_us_street" %>
@@ -37,8 +37,8 @@
     </div>
   </div>
 </div>
-<div class="grid_8 form_section"> 
-  <div class="grid_4 alpha">
+<div class="grid_7 alpha omega form_section"> 
+  <div class="grid_4 alpha omega">
   	<div>
       <%= check_box_tag 'contact[interest][]', "Case Studies", params[:case_studies] %>
       <%= label_tag :case_studies, "Case Studies" %>
@@ -76,14 +76,14 @@
       <%= label_tag :data_analysis, "Data Analysis" %>
     </div>
   </div>
-  <div class="grid_4 alpha">
+  <div class="grid_3 alpha omega">
   	<div>
       <%= label :contact, :body, "Message" %><br />
       <%= text_area :contact, :body, :name => "contact_us_message", :rows => 8, :cols => 47 %>
     </div>
   </div>
 </div>
-	<div class="grid_10">
+	<div class="grid_7 alpha omega">
     <%= submit_tag 'Send Request', :class => "btn", :title => "Submit Your Message to HealthCare Insight" %>
 	</div>
 <% end %>

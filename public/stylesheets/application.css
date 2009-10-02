@@ -1143,16 +1143,50 @@ div.right div.milestone_inner_wrap {
   margin: 5px 5px 0px 0px;
   float: left;
 }
+.contact_sidebar {
+  background: #dedede;
+  position: relative;
+  padding: 10px 0px;
+  width: 290px;
+}
+.letter_box {
+  float:left;
+  height:20px;
+  margin:2px 0;
+  width:20px;
+}
+.contact_block_wrap {
+  float: left;
+}
+.contact_info_block {
+  float:left;
+  width: 250px;
+}
+.contact_sidebar h3, .contact_sidebar span {
+  left:10px;
+  margin:0;
+  position:relative;
+  width:260px;
+}
+.contact_phone_header {
+  background: url('../images/contact_letter_boxes.png') no-repeat;
+}
 /*******Special Headers**********/
-
-.about_header {
+.page_header {
   position: relative;
   width: 335px;
   height: 75px;
   text-indent: -3000em;
+}
+.about_header {
   background: url('../images/about_header.png') no-repeat;
 }
-
+.benefits_header {
+  background: url('../images/benefits_header.png') no-repeat;
+}
+.contact_header {
+  background: url('../images/contact_header.png') no-repeat;
+}
 /*********************************************/
 /******************TRIAL BUTTONS***************/
 div.free_trial, div.view_demo {

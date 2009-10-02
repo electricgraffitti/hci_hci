@@ -2,13 +2,18 @@
 <% meta_description("HealthCare Insight provides many resources to help you combat health care fraud.") %>
 <% page_title("Contact Us ") %>
 
-<% content_for :banner do %>
-  <%= render :partial => "health_care/inner_banners" %>
-  <%= render :partial => "health_care/banner_side_box" %>
-<% end %>
+<%# content_for :banner do %>
+  <%#= render :partial => "health_care/inner_banners" %>
+  <%#= render :partial => "health_care/banner_side_box" %>
+<%# end %>
+<div class="grid_12 alpha omega">
+  <h2 class="page_header contact_header full_wrap">How To Contact Us</h2>
+  <div class="divider"></div>
+  <div class="grid_8 omega">
+    <%= render :partial => 'contacts/contact_form' %>
+  </div>
+  <div class="grid_4 omega">
+    <%= render :partial => 'contacts/sidebar' %>
+  </div>
+</div>
 
-<% content_for :sub_boxes do %>
-  <%#= render :partial => 'layouts/sub_boxes' %>
-<% end %>
-
-<%= render :partial => 'contacts/contact_form' %>
