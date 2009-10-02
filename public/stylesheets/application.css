@@ -1,7 +1,7 @@
 html, body {
   position: relative;
   background: #ddd url('../images/hci_bg.png') repeat-x;
-  font-family: "Lucida Grande", Verdana, sans-serif;
+  font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
   color: #333;
   font-size: 85%;
   height: 100%;
