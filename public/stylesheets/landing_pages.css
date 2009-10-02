@@ -1,3 +1,6 @@
+.hidden {
+  text-indent: -3000em;
+}
 h1.profiler_header {
   position: absolute;
   top: -111px;
