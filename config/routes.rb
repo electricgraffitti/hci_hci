@@ -1,8 +1,8 @@
   # The priority is based upon order of creation: first created -> highest priority.
 ActionController::Routing::Routes.draw do |map|
-  map.resources :newsletter_subscriptions
 
-  
+  map.resources :free_trials
+  map.resources :newsletter_subscriptions
   map.resources :tickets, :has_many => :ticket_assets
   map.resources :ticket_updates
   map.resources :ticket_statuses
@@ -33,7 +33,7 @@ ActionController::Routing::Routes.draw do |map|
   
   # Custom Named Routes
   map.contact "contact-healthcare-insight", :controller => "contacts", :action => "contact_us"
-  map.trial "healthcare-insight-free-trial", :controller => "health_care", :action => "trial"
+  map.trial "healthcare-insight-free-trial", :controller => "free_trials", :action => "show"
   map.press "health-care-press", :controller => "announcements", :action => "index"
   map.media "health-care-resources", :controller => "resources", :action => "index"
   map.careers "healthcare-insight-careers", :controller => "careers", :action => "index"
