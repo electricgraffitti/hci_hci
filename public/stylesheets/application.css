@@ -1195,10 +1195,10 @@ div.free_trial, div.view_demo {
   margin-top: 10px;
 }
 div.free_trial a {
-  background: url('../images/free_trial_buttons.png') 0px -135px no-repeat;
+  background: url('../images/free_trial_buttons.png') -220px -135px no-repeat;
 }
 div.view_demo a {
-  background: url('../images/free_trial_buttons.png') -220px -135px no-repeat;
+  background: url('../images/free_trial_buttons.png') 0px -135px no-repeat;
 }
 div.free_trial a, div.view_demo a {
   width: 220px;
@@ -1213,10 +1213,10 @@ div.free_trial a:hover, div.free_trial span.fb_hover{
   width: 220px;
   height: 135px;
   float: left;
-  background: url('../images/free_trial_buttons.png') 0px 0px no-repeat;
+  background: url('../images/free_trial_buttons.png') -220px 0px no-repeat;
 }
 div.view_demo a:hover, div.view_demo span.fb_hover {
-  background: url('../images/free_trial_buttons.png') -220px 0px no-repeat;
+  background: url('../images/free_trial_buttons.png') 0px 0px no-repeat;
   width: 220px;
   height: 135px;
   float: left;
