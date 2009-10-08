@@ -1172,21 +1172,38 @@ div.right div.milestone_inner_wrap {
 .contact_phone_header {
   background: url('../images/contact_letter_boxes.png') no-repeat;
 }
+p.benefits_sub_text {
+  position: relative;
+  margin-top: 47px;
+  left: 52px;
+  font-weight: bold;
+  font-size: 185%;
+}
+p.works {
+  left: 42px;
+}
 /*******Special Headers**********/
 .page_header {
   position: relative;
   width: 335px;
-  height: 75px;
+  height: 80px;
   text-indent: -3000em;
+  float:left;
 }
 .about_header {
   background: url('../images/about_header.png') no-repeat;
 }
-.benefits_header {
-  background: url('../images/benefits_header.png') no-repeat;
+.benefits_header_like {
+  background: url('../images/headers/like_us.png') no-repeat;
+  width: 490px;
+}
+.benefits_header_works {
+  background: url('../images/headers/works.png') no-repeat;
+  width: 500px;
 }
 .contact_header {
   background: url('../images/contact_header.png') no-repeat;
+  width: 425px;
 }
 /*********************************************/
 /******************TRIAL BUTTONS***************/
