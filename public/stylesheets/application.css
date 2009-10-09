@@ -323,10 +323,11 @@ a:active {
   position: absolute;
   text-align: center;
   color: #fff;
-  left: 42%;
+  left: 38%;
   padding: 20px;
-  width: 250px;
-  background: #db0404;
+  top: 5px;
+  width: 385px;
+  background: #06660b;
   font-size: 175%;
   z-index: 100;
 }

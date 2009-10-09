@@ -8,11 +8,7 @@
 <body class="yui-skin-sam">
     <div class="header_stripe"></div>
   <div id="wrapper" class="container_12">
-  <% unless flash[:notice].nil? %>
-    <div id="flash" class="grid_6 round_bottom" style="display: none">
-      <%= flash[:notice] %>
-    </div>
-  <% end %>
+    <%= render :partial => 'layouts/flash', :locals => {:flash => flash} %>
 	  <div id="hd" class='grid_12 alpha omega'>
       <%= render :partial => "layouts/header" %>
 	  </div>

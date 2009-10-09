@@ -32,26 +32,6 @@ $(document).ready(function() {
   });
 });
 
-// // // Sets up the fade on the Free Trial buttons
-// $(document).ready(function() {
-//   var $btn = $('div.background_orange');
-//   $('div.background_orange a').append('<span class="fb_hover" />').each(function(){
-//         $(this).css({fontSize : 0});
-//         var $span = $('> span.fb_hover', this).css({opacity : 0});
-//         $(this).hover(function() {
-//           if ($(this).hasClass('active')) {
-//             $span.stop().fadeTo(500, 0);
-//           } else {
-//            $span.stop().fadeTo(500, 1);
-//            $(this).parent().removeClass('highlight').fadeTo(500, 1);
-//           }
-//         }, function() {
-//           $span.stop().fadeTo(500, 1);
-//           $(this).parent().addClass('highlight').fadeTo(500, 1);
-//       });
-//   });
-// });
-
 // Sets the Main Nav Current Page Selection Tab
 $(document).ready(function() {
   var url = location.pathname;
@@ -89,18 +69,6 @@ $(document).ready(function() {
   });
 });
 
-// // This is the accordion script
-// $(document).ready(function() {
-//   $('.accordion').hSlides({
-//        totalWidth: 575, 
-//        totalHeight: 300, 
-//        minPanelWidth: 30, 
-//        maxPanelWidth: 515,
-//        activeClass: 'active',
-//        speed: 200
-//      });
-// });
-
 // This sets up the reflections for images
 $(document).ready(function() {
   $(".show_wrap img").reflect();
@@ -126,18 +94,34 @@ $(document).ready(function() {
 $(document).ready(function() {
   $upload_div = $('.upload_div');
   $upload_field = $('.upload_field');
-  
   $upload_div.before('<a id="add_upload" href="#">Add More Attachments<a/>');
-     
   $add_link = $("#add_upload");
-  
   $add_link.click(function() {
     $upload_field.clone().appendTo($upload_div);
   });
-  
 });
 
+function notify(flash_message) {
 
+ var flash_div = $("#flash");
+ flash_div.html(flash_message);
+ flash_div.fadeIn(400);
+
+ setTimeout(function() {
+  flash_div.fadeOut(2000,
+  function() {
+   flash_div.html("");
+   flash_div.hide()})},
+ 1400);
+}
+
+$(document).ready(function() {
+	$("#flash").hide();
+	var flash_message = $("#flash").html().trim();
+ 	if(flash_message != "") {
+		notify(flash_message);
+	}
+});
 
 
 

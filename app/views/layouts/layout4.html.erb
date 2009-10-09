@@ -7,35 +7,31 @@
   <%= stylesheet_link_tag 'layout4' %>
 </head>
 <body class="yui-skin-sam">
-  <div id="wrapper" class="container_16">
-    <% unless flash[:notice].nil? %>
-      <div id="flash" class="grid_6 round_bottom" style="display: none">
-        <%= flash[:notice] %>
-      </div>
-    <% end %>
-	  <div id="hd" class='grid_16 alpha omega'>
+  <div id="wrapper" class="container_12">
+    <%= render :partial => 'layouts/flash', :locals => {:flash => flash} %>
+	  <div id="hd" class='grid_12 alpha omega'>
       <%= render :partial => "layouts/header" %>
 	  </div>
 	  <div class="clear"></div>
-    <div id="bd" class="grid_16 alpha omega">
+    <div id="bd" class="grid_12 alpha omega">
       <% if current_user %>
         <%= render :partial => "layouts/admin_nav" %>
       <% end %>
       <% if current_employee %>
         <%= render :partial => "layouts/employee_nav" %>
       <% end %>
-      <div id="banner" class="grid_16 alpha omega">
+      <div id="banner" class="grid_12 alpha omega">
         <%= yield :banner %>
       </div>
       <div class="clear"></div>
-      <div id="main_content" class="grid_16 alpha omega">
+      <div id="main_content" class="grid_12 alpha omega">
         <div id="layout4main" class="grid_12 alpha omega relative">
           <%= yield  %>
         </div>
       </div>
     </div>
     <div class="clear"></div>
-    <div id="ft" class="grid_16 alpha omega">
+    <div id="ft" class="grid_12 alpha omega">
       <%= render :partial => "layouts/footer" %>
     </div>
 	</div>
