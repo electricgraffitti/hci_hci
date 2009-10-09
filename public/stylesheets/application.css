@@ -1192,6 +1192,7 @@ p.works {
 }
 .about_header {
   background: url('../images/about_header.png') no-repeat;
+  width: 900px;
 }
 .benefits_header_like {
   background: url('../images/headers/like_us.png') no-repeat;
@@ -1202,8 +1203,8 @@ p.works {
   width: 500px;
 }
 .contact_header {
-  background: url('../images/contact_header.png') no-repeat;
-  width: 425px;
+  background: url('../images/headers/contact_us.png') no-repeat;
+  width: 550px;
 }
 /*********************************************/
 /******************TRIAL BUTTONS***************/

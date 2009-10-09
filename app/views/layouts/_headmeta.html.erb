@@ -8,7 +8,7 @@
 <%= auto_discovery_link_tag(type = :atom, services_url(:atom)) %>
 
 <%#= ******** CSS ********** %>
-<%= stylesheet_link_tag 'reset-fonts-grids', 'jquiwidgets', '960', 'alerts/jquery.alerts', 'application' %>
+<%= stylesheet_link_tag 'reset-fonts-grids', 'jquiwidgets', '960', 'alerts/jquery.alerts', 'application', :cache => true %>
 <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/combo?2.7.0/build/datatable/assets/skins/sam/datatable.css">
 <%#= stylesheet_link_merged :base %>
 <!--[if lt IE 7]>
@@ -21,6 +21,6 @@
 
 <%#= ******** JAVASCRIPTS ********** %>
 <script type="text/javascript" src="http://yui.yahooapis.com/combo?2.7.0/build/yahoo-dom-event/yahoo-dom-event.js&2.7.0/build/element/element-min.js&2.7.0/build/datasource/datasource-min.js&2.7.0/build/datatable/datatable-min.js"></script>
-<%= javascript_include_tag 'jquery', 'jquery.livequery', 'jqueryui', 'jquery.easing', 'jQueryTimer', 'jquery.alerts', 'jquery.validate', 'reflection', 'swfobject', 'tools', 'application', 'scroll', 'video_scripts' %>
+<%= javascript_include_tag 'jquery', 'jquery.livequery', 'jqueryui', 'jquery.easing', 'jQueryTimer', 'jquery.alerts', 'jquery.validate', 'reflection', 'swfobject', 'tools', 'application', 'scroll', 'video_scripts', :cache => true %>
 <%#= javascript_include_merged :base %>
 
