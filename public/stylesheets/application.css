@@ -1173,6 +1173,22 @@ div.right div.milestone_inner_wrap {
 .contact_phone_header {
   background: url('../images/contact_letter_boxes.png') no-repeat;
 }
+/******Benefits Page********/
+.benefits_content {
+  position:relative;
+  margin-top: 20px;
+}
+ul.benefits_list {
+  margin:0 0 20px 20px;
+  position:relative;
+  width:850px;
+}
+ul.benefits_list li {
+  background:transparent url(../images/small_check_orange.png) no-repeat scroll 0 0;
+  float:left;
+  font-size:165%;
+  width:338px;
+}
 p.benefits_sub_text {
   position: relative;
   margin-top: 47px;
@@ -1182,6 +1198,66 @@ p.benefits_sub_text {
 }
 p.works {
   left: 42px;
+}
+.benefit_works_section {
+  position: relative;
+  width: 920px;
+  margin: 10px;
+  background: #dedede;
+  border: 1px solid #cdcdcd;
+  float: left;
+}
+.benefit_work_box {
+  position: relative;
+  float:left;
+  height:145px;
+  margin:20px 30px;
+  width:400px;
+}
+.benefit_work_box ul {
+  text-align: right;
+  float: left;
+  width: 270px;
+}
+.benefit_work_box ul li {
+  font-color: #aaaaaa;
+  font-size: 135%;
+}
+.benefit_work_box h3 {
+  width: 270px;
+  height: 60px;
+  text-indent: -3000em;
+}
+.benefit_work_box h3.robust_data {
+  background: url('../images/headers/benefit_headers/benefit_headers.png') 30px -180px no-repeat;
+}
+.benefit_work_box h3.advanced_technology {
+  background: url('../images/headers/benefit_headers/benefit_headers.png') 30px -120px no-repeat;
+}
+.benefit_work_box h3.clinical_review {
+  background: url('../images/headers/benefit_headers/benefit_headers.png') 30px -60px no-repeat;
+}
+.benefit_work_box h3.complete_service {
+  background: url('../images/headers/benefit_headers/benefit_headers.png') 30px 0px no-repeat;
+}
+.benefit_icons {
+  height:130px;
+  position:absolute;
+  right: 30px;
+  top:5px;
+  width:90px;
+}
+.robust_icon {
+  background: url('../images/headers/benefit_headers/benefit_icons.png') 0px 0px no-repeat;
+}
+.advanced_icon {
+  background: url('../images/headers/benefit_headers/benefit_icons.png') -180px 0px no-repeat;
+}
+.clinical_icon {
+  background: url('../images/headers/benefit_headers/benefit_icons.png') -90px 0px no-repeat;
+}
+.complete_icon {
+  background: url('../images/headers/benefit_headers/benefit_icons.png') -270px 0px no-repeat;
 }
 /*******Special Headers**********/
 .page_header {
