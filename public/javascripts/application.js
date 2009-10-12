@@ -17,12 +17,12 @@ $(document).ready(function() {
         var $span = $('> span.hover', this).css({opacity : 0});
         $(this).hover(function() {
           if ($(this).hasClass('active')) {
-            $span.stop().fadeTo(500, 0);
+            $span.stop().fadeTo(400, 0);
           } else {
-           $span.stop().fadeTo(500, 1); 
+           $span.stop().fadeTo(400, 1); 
           }
         }, function() {
-          $span.stop().fadeTo(500, 0);
+          $span.stop().fadeTo(400, 0);
       });
       $(this).click( function() {
         $span.fadeTo(200, 0);
@@ -43,6 +43,53 @@ $(document).ready(function() {
    current_link.addClass('active');
    }
 });
+
+// Sets up the fade on the Big CTA Buttons
+$(document).ready(function() {
+  $('div.big_cta_button').removeClass('highlight');
+  $('div.big_cta_button a').append('<span class="big_button_hover" />').each(function(){
+        $(this).css({fontSize : 0});
+        var $span = $('> span.big_button_hover', this).css({opacity : 0});
+        $(this).hover(function() {
+          if ($(this).hasClass('active')) {
+            $span.stop().fadeTo(400, 0);
+          } else {
+           $span.stop().fadeTo(400, 1); 
+          }
+        }, function() {
+          $span.stop().fadeTo(400, 0);
+      });
+      $(this).click( function() {
+        $span.fadeTo(300, 0);
+        $('div.big_cta_button a').removeClass('active');
+        $(this).addClass('active');
+      });
+  });
+});
+
+// Sets up the fade on the Small CTA Buttons
+$(document).ready(function() {
+  $('div.cta_button').removeClass('highlight');
+  $('div.cta_button a').append('<span class="small_cta_button" />').each(function(){
+        $(this).css({fontSize : 0});
+        var $span = $('> span.small_cta_button', this).css({opacity : 0});
+        $(this).hover(function() {
+          if ($(this).hasClass('active')) {
+            $span.stop().fadeTo(400, 0);
+          } else {
+           $span.stop().fadeTo(400, 1); 
+          }
+        }, function() {
+          $span.stop().fadeTo(400, 0);
+      });
+      $(this).click( function() {
+        $span.fadeTo(300, 0);
+        $('div.small_cta_button a').removeClass('active');
+        $(this).addClass('active');
+      });
+  });
+});
+
 // This is the Timer for the home page banners
 $(document).everyTime(15000, function () {
   $('#banner_scroll_r').trigger('click');

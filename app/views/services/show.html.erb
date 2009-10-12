@@ -17,10 +17,9 @@
 
 
 <div class="clear"></div>
-<div class="grid_12 full_wrap">
   <% if current_user %>
+  <div class="grid_12 full_wrap">
     <%= link_to 'New', new_service_path %> |
-    <%= link_to 'Edit', edit_service_path(@service) %> |
-  <% end %>
-  <%#= link_to 'Back', services_path %>
-</div>
+    <%= link_to 'Edit', edit_service_path(@service) %>
+    </div>
+<% end %>
