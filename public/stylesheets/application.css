@@ -106,8 +106,13 @@ p {
 }
 .divider {
   clear: both;
-  border-top: 1px solid #666;
+  border-top: 1px solid #cccccc;
   margin: 25px 10px;
+}
+.divider2 {
+  clear: both;
+  border-top: 1px solid #cccccc;
+  margin: 10px 10px 0px;
 }
 .relative {
   position: relative;
@@ -402,7 +407,7 @@ label.error {
   /*border-top: 1px solid #f8f8f8;*/
 }
 ul.nav_ul {
-  margin-left: 1px;
+
 }
 ul.nav_ul li {
   width: 100px;
@@ -575,6 +580,9 @@ div.view_demo.highlight a:hover, div.view_demo span.big_button_hover {
 }
 /*********************************************/
 /*************SMALL TRIAL BUTTONS*************/
+#cta_bar {
+  margin: 10px 0px 0px;
+}
 .cta_button {
   position: relative;
   float: right;
@@ -725,7 +733,7 @@ img.banner_scroll.r {
 }
 /****Inner Banners****/
 .inner_banners {
-  margin-top: 10px;
+/*  margin-top: 10px;*/
 }
 img.inner_banner {
   position: relative;

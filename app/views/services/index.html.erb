@@ -3,10 +3,7 @@
 <% page_title "Fraud Prevention Services"%>
 
 <% content_for :banner do %>
-  <div class="inner_banners grid_9 omega">
-  <%= image_tag "banners/inner_banners/service_banner.png", :alt => "Stop Fraud Now" %>
-  </div>
-  <%= render :partial => "health_care/banner_side_box" %>
+<%= render :partial => 'health_care/banners' %>
 <% end %>
 <div class="grid_12 alpha omega">
   <%= render :partial => "services/index_steps" %>
