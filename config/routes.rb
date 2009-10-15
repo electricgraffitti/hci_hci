@@ -33,6 +33,7 @@ ActionController::Routing::Routes.draw do |map|
   # XML Routes
   
   # Custom Named Routes
+  map.issue "health-care-insight-document", :controller => 'health_care', :action => 'issuu'
   map.contact "contact-healthcare-insight", :controller => "contacts", :action => "contact_us"
   map.trial "healthcare-insight-free-trial", :controller => "free_trials", :action => "show"
   map.press "health-care-press", :controller => "announcements", :action => "index"

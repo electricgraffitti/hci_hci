@@ -23,5 +23,9 @@ class HealthCareController < ApplicationController
       format.xml  { render :xml => @events }
     end
   end
+  
+  def issuu
+  
+  end
 
 end

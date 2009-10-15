@@ -5,12 +5,6 @@
 <% content_for :banner do %>
   <%= render :partial => "health_care/banners" %>
 <% end %>
-
-<div class="index_list grid_5 round">
-  <h2 class="lightblue">HCI Documents</h2>
-<%= render :partial => "documents/index_document", :locals => {:documents => @documents} %>
-</div>
-<div class="index_list grid_5 round">
-  <h2 class="lightblue">Health Care Links</h2>
-  <%= render :partial => "links/index_link", :locals => {:links => @links} %>
+<div class="grid_12 alpha omega">
+ <%= link_to "Profiler Magazine", issue_path  %>
 </div>
