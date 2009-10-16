@@ -1,0 +1,26 @@
+
+<!-- 
+<div id="home_video" class="alpha omega">
+  <script type='text/javascript'>
+    var flashvars = {}
+    var params = {
+          menu: 'false',
+          allowfullscreen: 'true',
+          wmode: 'transparent',
+          bgcolor: 'transparent'
+    };
+    var attributes = {
+      id: 'video_home'
+    };
+    swfobject.embedSWF('<%#= @videos.entry[2].group.content[2].url %>', 'sub_video', '500', '400', '9.0.0', '@videos.entry[2].group.content[2].url', flashvars, params, attributes);
+  </script>
+  
+  <%# This is the section that gets swapped out by the Flash Object above, and displays if .js in not enabled%>
+  <p id="sub_video" class="article_image left">
+
+  </p>
+</div> -->
+
+<% @videos.each do |video| %>
+  video.author.uri
+<% end %>

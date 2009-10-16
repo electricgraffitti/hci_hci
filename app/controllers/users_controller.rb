@@ -9,7 +9,6 @@ class UsersController < ApplicationController
   # GET /users.xml
   def index
     @users = User.all
-
     respond_to do |format|
       format.html { render :layout => "admin"}
       format.xml  { render :xml => @users }
