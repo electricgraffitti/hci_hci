@@ -4,12 +4,12 @@ class Issuu < ActiveResource::Base
   self.site = "http://api.issuu.com/1_0"
   
   def self.upload_issuu(params)
-    
+    params[:action] = 'issuu.document.upload'
     base_sig = signature_hash(params)
       values = {
         :signature => base_sig,
         :access => 'public',
-        :action => 'issuu.document.upload',
+        # 'action' => 'issuu.document.upload',
         :apiKey => APP['issuu_key'],
         :description => params[:description],
         :format => "json",
@@ -19,8 +19,10 @@ class Issuu < ActiveResource::Base
       headers = {
         'Content-Type' => "application/atom+xml; charset=UTF-8"
       }
+      url = "http://upload.issuu.com/1_0"
       v = values.map {|k,v| "#{k}=#{v}"}.join("&")
-      self.connection.post("http://upload.issuu.com/1_0?", v, headers)
+      # raise values.to_yaml
+      self.post(url, values, headers)
   end
   
   def self.signature_hash(params)
