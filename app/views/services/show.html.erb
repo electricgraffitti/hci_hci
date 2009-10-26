@@ -7,7 +7,7 @@
 <% page_title "#{h(@service.title)}"%>
 
 <% content_for :banner do %>
-  <%= render :partial => "services/banner", :locals => {:service => @service}%>
+  <%= render :partial => "services/banner", :locals => {:s => @service}%>
   <%#= render :partial => "layouts/cta_bar" %>
   <div class="divider2"></div>
 <% end %>

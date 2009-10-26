@@ -481,10 +481,10 @@ ul.nav_ul li span.hover {
   background: url('../images/hci_silver_sprite.png') -500px 0px;
 }
 .nav7 {
-  background: url('../images/hci_silver_sprite.png') -600px -41px;
+  background: url('../images/hci_silver_sprite.png') -600px -80px;
 }
 .nav7.highlight:hover, li.nav7 span.hover {
-  background: url('../images/hci_silver_sprite.png') -600px -41px;
+  background: url('../images/hci_silver_sprite.png') -600px -40px;
 }
 #main_nav ul li a#free_trial.active {
   background: url('../images/hci_silver_sprite.png') -600px 0px;
@@ -579,42 +579,57 @@ div.view_demo.highlight a:hover, div.view_demo span.big_button_hover {
   float: left;
 }
 /*********************************************/
-/*************SMALL TRIAL BUTTONS*************/
+/*************ARROW TRIAL BUTTONS************/
 #cta_bar {
-  margin: 10px 0px 0px;
+  position: absolute;
+  height: 30px;
+  right: 0px;
+  bottom: 25px;
 }
 .cta_button {
   position: relative;
   float: right;
-  width: 150px;
-  margin: 0px 0px 10px 5px;
-  height: 50px;
-  background: url('../images/cta_bg1.png') repeat-x;
+  width: 165px;
+  height: 30px;
+/*  background: url('../images/banners/inner_banners/CTA_arrow_bar.png') repeat-x;*/
+}
+div.cta_free_trial {
+  width: 195px;
+  border-right: 1px solid #ddd;
 }
 .cta_button a {
   display: block;
-  width: 150px;
-  height: 50px;
+  width: 165px;
+  height: 30px;
   text-indent: -3000em;
 }
 div.cta_free_trial a {
-  background: url('../images/cta_buttons.png') -150px -50px;
+  background: url('../images/banners/inner_banners/CTA_arrow_bar.png') 0px -180px no-repeat;
+  width: 195px;
+  height: 30px;
 }
 div.cta_free_trial.highlight a:hover, div.cta_free_trial span.small_cta_button  {
-  background: url('../images/cta_buttons.png') -150px -0px;
-  width: 150px;
-  height: 50px;
+  background: url('../images/banners/inner_banners/CTA_arrow_bar.png') 0px -150px no-repeat;
+  width: 195px;
+  height: 30px;
   float: left;
 }
 div.cta_view_demo a {
-  background: url('../images/cta_buttons.png') -0px -50px;
+  background: url('../images/banners/inner_banners/CTA_arrow_bar.png') -195px 30px;
 }
 div.cta_view_demo.highlight a:hover, div.cta_view_demo span.small_cta_button {
-  background: url('../images/cta_buttons.png') -0px -0px;
-  width: 150px;
-  height: 50px;
+  background: url('../images/banners/inner_banners/CTA_arrow_bar.png') -195px 60px;
+  width: 165px;
+  height: 30px;
   float: left;
 }
+div.facilityclaim-insight_trial_button span.small_cta_button {
+  background: url('../images/banners/inner_banners/CTA_arrow_bar.png') 0px -90px no-repeat;
+}
+div.facilityclaim-insight_demo_button span.small_cta_button {
+  background: url('../images/banners/inner_banners/CTA_arrow_bar.png') -195px 120px;
+}
+
 /********************************/
 /************HEADER*************/
 #hci_logo {
@@ -733,7 +748,7 @@ img.banner_scroll.r {
 }
 /****Inner Banners****/
 .inner_banners {
-/*  margin-top: 10px;*/
+  position: relative;
 }
 img.inner_banner {
   position: relative;
