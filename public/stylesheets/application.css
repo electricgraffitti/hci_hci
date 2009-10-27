@@ -584,6 +584,9 @@ div.view_demo.highlight a:hover, div.view_demo span.big_button_hover {
   position: absolute;
   height: 30px;
   right: 0px;
+  bottom: 35px;
+}
+.service_cta_bar {
   bottom: 25px;
 }
 .cta_button {
@@ -623,11 +626,41 @@ div.cta_view_demo.highlight a:hover, div.cta_view_demo span.small_cta_button {
   height: 30px;
   float: left;
 }
+div.physicianclaim-insight_trial_button span.small_cta_button {
+  background: url('../images/banners/inner_banners/CTA_arrow_bar.png') 0px -150px no-repeat;
+}
+div.physicianclaim-insight_demo_button span.small_cta_button {
+  background: url('../images/banners/inner_banners/CTA_arrow_bar.png') -195px 60px;
+}
+div.dentalclaim-insight_trial_button span.small_cta_button {
+  background: url('../images/banners/inner_banners/CTA_arrow_bar.png') 0px -120px no-repeat;
+}
+div.dentalclaim-insight_demo_button span.small_cta_button {
+  background: url('../images/banners/inner_banners/CTA_arrow_bar.png') -195px 90px;
+}
 div.facilityclaim-insight_trial_button span.small_cta_button {
   background: url('../images/banners/inner_banners/CTA_arrow_bar.png') 0px -90px no-repeat;
 }
 div.facilityclaim-insight_demo_button span.small_cta_button {
   background: url('../images/banners/inner_banners/CTA_arrow_bar.png') -195px 120px;
+}
+div.pharmaclaim-insight_trial_button span.small_cta_button {
+  background: url('../images/banners/inner_banners/CTA_arrow_bar.png') 0px -60px no-repeat;
+}
+div.pharmaclaim-insight_demo_button span.small_cta_button {
+  background: url('../images/banners/inner_banners/CTA_arrow_bar.png') -195px 150px;
+}
+div.oncologyclaim-insight_trial_button span.small_cta_button {
+  background: url('../images/banners/inner_banners/CTA_arrow_bar.png') 0px -30px no-repeat;
+}
+div.oncologyclaim-insight_demo_button span.small_cta_button {
+  background: url('../images/banners/inner_banners/CTA_arrow_bar.png') -195px 180px;
+}
+div.visionclaim-insight_trial_button span.small_cta_button {
+  background: url('../images/banners/inner_banners/CTA_arrow_bar.png') 0px 0px no-repeat;
+}
+div.visionclaim-insight_demo_button span.small_cta_button {
+  background: url('../images/banners/inner_banners/CTA_arrow_bar.png') -195px 210px;
 }
 
 /********************************/
@@ -684,6 +717,7 @@ div.facilityclaim-insight_demo_button span.small_cta_button {
 /************Banners*************/
 #slider {
   height: 290px;
+  position: relative;
 }
 #banner {
   background: #fff;
