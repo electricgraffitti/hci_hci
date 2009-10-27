@@ -194,35 +194,35 @@ h2 a.small_text {
   background: #ff7800
 }
 .physicianclaim-insight_color {
-  color: #06660b;
+  color: #004914;
 }
 /*.physicianclaim-insight_bg {
   display: block;
   background: #06660b;
 }*/
 .facilityclaim-insight_color {
-  color: #761318;
+  color: #6b0a10;
 }
 /*.facilityclaim-insight_bg {
   display: block;
   background: #761318;
 }*/
 .dentalclaim-insight_color {
-  color: #038b92;
+  color: #007690;
 }
 /*.dentalclaim-insight_bg {
   display: block;
   background: #038b92;
 }*/
 .oncologyclaim-insight_color {
-  color: #b78311;
+  color: #c9a83d;
 }
 /*.oncologyclaim-insight_bg {
   display: block;
   background: #b78311;
 }*/
 .pharmaclaim-insight_color {
-  color: #00467f;
+  color: #002b54;
 }
 /*.pharmaclaim-insight_bg {
   display: block;
@@ -1415,28 +1415,28 @@ p.works {
 }
 .service_quote p {
   margin: 0px 0px 10px 50px;
-  width: 460px;
-  height: 105px;
+  width: 437px;
+  height: 100px;
   float: left;
   text-indent: -3000em;
 }
 .physicianclaim-insight_quote{
-  background: transparent url('../images/quotes/physicianclaim-insight_quote.png') no-repeat;
-}
-.facilityclaim-insight_quote {
-  background: transparent url('../images/quotes/facilityclaim-insight_quote.png') no-repeat;
+  background: transparent url('../images/quotes/service_quotes.png') 0px -500px no-repeat;
 }
 .dentalclaim-insight_quote {
-   background: transparent url('../images/quotes/dentalclaim-insight_quote.png') no-repeat;
+   background: transparent url('../images/quotes/service_quotes.png') 0px -400px no-repeat;
+}
+.facilityclaim-insight_quote {
+  background: transparent url('../images/quotes/service_quotes.png') 0px -300px no-repeat;
 }
 .oncologyclaim-insight_quote {
-  background: transparent url('../images/quotes/oncologyclaim-insight_quote.png') no-repeat;
+  background: transparent url('../images/quotes/service_quotes.png') 0px -200px no-repeat;
 }
 .pharmaclaim-insight_quote {
-  background: transparent url('../images/quotes/pharmaclaim-insight_quote.png') no-repeat;
+  background: transparent url('../images/quotes/service_quotes.png') 0px -100px no-repeat;
 }
 .visionclaim-insight_quote {
-  background: transparent url('../images/quotes/visionclaim-insight_quote.png') no-repeat;
+  background: transparent url('../images/quotes/service_quotes.png') 0px 0px no-repeat;
 }
 .quote_brochure {
   position: relative;
@@ -1444,7 +1444,24 @@ p.works {
   margin: -70px 50px 0px 0px;
   width: 310px;
   height: 200px;
-  background: url('../images/quotes/quote_brochure.png') no-repeat;
+}
+.physicianclaim-insight_quote_brochure {
+  background: url('../images/quotes/quote_brochure.png') 0px -1000px no-repeat;
+}
+.facilityclaim-insight_quote_brochure {
+  background: url('../images/quotes/quote_brochure.png') 0px -800px no-repeat;
+}
+.dentalclaim-insight_quote_brochure {
+  background: url('../images/quotes/quote_brochure.png') 0px -600px no-repeat;
+}
+.oncologyclaim-insight_quote_brochure {
+  background: url('../images/quotes/quote_brochure.png') 0px -400px no-repeat;
+}
+.pharmaclaim-insight_quote_brochure {
+  background: url('../images/quotes/quote_brochure.png') 0px -200px no-repeat;
+}
+.visionclaim-insight_quote_brochure {
+  background: url('../images/quotes/quote_brochure.png') 0px 0px no-repeat;
 }
 .quote_brochure a {
   position: relative;

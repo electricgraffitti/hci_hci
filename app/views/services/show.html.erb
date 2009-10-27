@@ -8,8 +8,6 @@
 
 <% content_for :banner do %>
   <%= render :partial => "services/banner", :locals => {:s => @service}%>
-  <%#= render :partial => "layouts/cta_bar" %>
-  <div class="divider2"></div>
 <% end %>
 <%= render :partial => "show_service", :locals => {:service => @service} %>
 <%= render :partial => "show_quote", :locals => {:service => @service} %>
