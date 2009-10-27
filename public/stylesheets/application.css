@@ -1,7 +1,7 @@
 html, body {
   position: relative;
   background: #ddd url('../images/hci_bg.png') repeat-x;
-  font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+  font-family: "Helvetica Neue", Arial, Helvetica, "Bitstream Vera Sans", sans-serif;
   color: #333;
   font-size: 85%;
   height: 100%;
@@ -10,7 +10,7 @@ html, body {
   font-family: "Rockwell", Georgia, "Times New Roman", Times, serif;
 }
 .sans-serif {
-  font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+  font-family: "Helvetica Neue", Arial, Helvetica, "Bitstream Vera Sans", sans-serif;
 }
 #wrapper {
   text-align: left;
@@ -59,9 +59,8 @@ a {
   border-bottom-left-radius: 5px;
 }
 h1, h2, h3, h4, h5 {
-  font-weight: bold;
   color: #000;
-  font-family: "Rockwell", Georgia, "Times New Roman", Times, serif;
+  font-family: "Helvetica Neue", Arial, Helvetica, "Bitstream Vera Sans", sans-serif;
   margin-top: 5px;
 }
 .block_font_weight {
@@ -153,45 +152,8 @@ h2 a.small_text {
 .top_space {
   margin-top: 10px;
 }
-.margin_top_5 {
-  margin-top: 5px;
-}
-.margin_top_10 {
-  margin-top: 10px;
-}
-.margin_top_20 {
-  margin-top: 20px;
-}
 .important {
   color: red;
-}
-.lightblue {
-  color: #19c0ec;
-}
-.background_lightblue {
-  background: #19c0ec;
-}
-.blue {
-  color: #00467F;
-}
-.background_blue {
-  background: #00467F url('../images/sub_box_inner_blue.png') no-repeat;
-}
-.bluegrey {
-  color: #88d1d0;
-}
-.background_bluegrey {
-  background: #88d1d0;
-}
-.bluegreen {
-  color: #60a785;
-}
-.background_bluegreen {
-  background: #60a785;
-}
-.background_orange {
-  display: block;
-  background: #ff7800
 }
 .physicianclaim-insight_color {
   color: #004914;
@@ -235,37 +197,6 @@ h2 a.small_text {
   display: block;
   background: #78496a;
 }*/
-.green {
-  color: #73da10;
-/*  color: #7ed96c;*/
-}
-.background_green {
-  background: #7eda10 url('../images/sub_box_inner_green.png') no-repeat;
-/*  background: #7ed96c;*/
-}
-.bluepurple {
-  color: #4e3491;
-}
-.background_bluepurple {
-  background: #4e3491;
-}
-.purple {
-  color: #4e3491;
- /* color: #4b479d;*/
-}
-.background_purple {
-  background: #4e3491;
-  /*background: #4b479d;*/
-}
-.maroon {
-  color: #bc1f8c;
-}
-.background_maroon {
-  background: #bc1f8c;
-}
-.background_black {
-  background: #000000;
-}
 .orange {
   color: #f8981c;
 }
