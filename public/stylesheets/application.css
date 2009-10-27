@@ -198,7 +198,7 @@ h2 a.small_text {
   background: #78496a;
 }*/
 .orange {
-  color: #f8981c;
+  color: #F15A29;
 }
 
 .white {
@@ -1257,31 +1257,43 @@ p.works {
 .benefit_works_section {
   position: relative;
   width: 920px;
-  margin: 10px;
-  background: #dedede;
+  margin: 0px 10px 10px;
+  background: #dedede url('../images/headers/benefit_headers/benefit_subboxes_bg.png') repeat-x;
   border: 1px solid #cdcdcd;
   float: left;
 }
 .benefit_work_box {
   position: relative;
   float:left;
-  height:145px;
-  margin:20px 30px;
-  width:400px;
+  margin: 0px;
+  padding: 0px 10px;
+  width:208px;
+  text-align: center;
+  border-left: 1px solid #cdcdcd;
+  border-right: 1px solid #efefef;
+}
+.benefit_work_box.first {
+  border-left: 1px solid #efefef;
 }
 .benefit_work_box ul {
   text-align: right;
   float: left;
-  width: 270px;
+  width: 210px;
+  text-align: center;
+  margin-top: 10px;
 }
 .benefit_work_box ul li {
   font-color: #aaaaaa;
-  font-size: 135%;
+  font-size: 110%;
 }
 .benefit_work_box h3 {
-  width: 270px;
+  width: 210px;
   height: 60px;
-  text-indent: -3000em;
+}
+.benefit_work_box h3 span {
+  font-weight: bold;
+  font-size: 145%;
+  display: block;
 }
 .benefit_work_box h3.robust_data {
   background: url('../images/headers/benefit_headers/benefit_headers.png') 30px -180px no-repeat;
@@ -1296,23 +1308,22 @@ p.works {
   background: url('../images/headers/benefit_headers/benefit_headers.png') 30px 0px no-repeat;
 }
 .benefit_icons {
-  height:130px;
-  position:absolute;
-  right: 30px;
-  top:5px;
+  height:95px;
+  position:relative;
   width:90px;
+  margin: 10px auto 0px;
 }
 .robust_icon {
-  background: url('../images/headers/benefit_headers/benefit_icons.png') 0px 0px no-repeat;
+  background: url('../images/headers/benefit_headers/benefit_icons.png') -25px 0px no-repeat;
 }
 .advanced_icon {
-  background: url('../images/headers/benefit_headers/benefit_icons.png') -180px 0px no-repeat;
+  background: url('../images/headers/benefit_headers/benefit_icons.png') -280px 0px no-repeat;
 }
 .clinical_icon {
-  background: url('../images/headers/benefit_headers/benefit_icons.png') -90px 0px no-repeat;
+  background: url('../images/headers/benefit_headers/benefit_icons.png') -150px 0px no-repeat;
 }
 .complete_icon {
-  background: url('../images/headers/benefit_headers/benefit_icons.png') -270px 0px no-repeat;
+  background: url('../images/headers/benefit_headers/benefit_icons.png') -410px 0px no-repeat;
 }
 /*******Special Headers**********/
 .page_header {
@@ -1333,6 +1344,7 @@ p.works {
 .benefits_header_works {
   background: url('../images/headers/works.png') no-repeat;
   width: 500px;
+  margin: 5px 10px;
 }
 .contact_header {
   background: url('../images/headers/contact_us.png') no-repeat;
