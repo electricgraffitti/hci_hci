@@ -1061,7 +1061,7 @@ ul.service_bullets li {
   position: relative;
   float: left;
 /*  margin-bottom: 20px;*/
-  height: 225px;
+  height: 400px;
 }
 .pro_sol_boxes h2 {
   width: 325px;
@@ -1071,7 +1071,8 @@ ul.service_bullets li {
 }
 .problem_box {
   background: #dedede;
-  width: 920px;
+  width: 350px;
+  border: 1px solid #dedede;
 }
 .problem_box h2 {
   background: url('../images/pro_sol_wide.png') 0px 0px no-repeat;
@@ -1079,7 +1080,14 @@ ul.service_bullets li {
 .problem_box p {
   position: relative;
   margin-left: 15px;
-  width: 450px;
+  width: 333px;
+}
+.graph_box {
+  bottom:0;
+  height:225px;
+  position:absolute;
+  right:0;
+  width:300px;
 }
 .physicianclaim-insight_problem_box_bg {
   background: #dedede url('../images/graphs.png') right bottom no-repeat;
@@ -1100,7 +1108,7 @@ ul.service_bullets li {
   background: #dedede url('../images/graphs.png') right top no-repeat;
 }
 .solution_box {
-  width: 918px;
+  width: 565px;
   border: 1px solid #dedede;
 }
 .solution_box h2 {
@@ -1109,7 +1117,14 @@ ul.service_bullets li {
 .solution_box p {
   position: relative;
   margin-left: 15px;
-  width: 600px;
+  width: 500px;
+}
+.sol_corner_graphic {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 300px;
+  height: 225px;
 }
 .physicianclaim-insight_sol_box_bg {
   background: url('../images/sol_box_bg.png') right bottom no-repeat;
