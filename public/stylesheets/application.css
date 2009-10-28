@@ -7,7 +7,7 @@ html, body {
   height: 100%;
 }
 .serif {
-  font-family: "Rockwell", Georgia, "Times New Roman", Times, serif;
+  font-family: Georgia, "New Century Schoolbook", "Nimbus Roman No9 L", serif;
 }
 .sans-serif {
   font-family: "Helvetica Neue", Arial, Helvetica, "Bitstream Vera Sans", sans-serif;
@@ -838,6 +838,10 @@ ul.index_sector_links li h2 {
   margin: 10px;
   background: #efefef;
   float: left;
+  background: #dedede url('../images/headers/benefit_headers/benefit_subboxes_bg.png') repeat-x;
+  border-color:#CDCDCD #CDCDCD #EFEFEF #EFEFEF;
+  border-style:solid;
+  border-width:1px;
 }
 .index_steps {
   margin: 10px 0px 10px 20px;
@@ -865,56 +869,48 @@ ul.index_sector_links li h2 {
   width: 110px;
 }
 .index_service_wrap {
-  position: relative;
-  margin-top: 10px;
-  margin-bottom: 20px;
-  overflow: hidden;
-}
-.index_service_wrap img {
-  margin-left: 15px;
+  border-color:#EFEFEF #EFEFEF #CDCDCD #CDCDCD;
+  border-style:solid;
+  border-width:1px;
+  float:left;
+  padding:0 10px 10px;
+  position:relative;
+  text-align:center;
+  width: 284px;
 }
 .index_service_wrap p {
-  margin: 0px 0px 0px -20px;
-  text-align: right;
-  line-height: 16.35px;
+  font-size:125%;
+  margin: 0 auto;
 }
 .index_service_wrap a {
   font-size: 85%;
-  float: left;
-  margin: 5px 0px 0px 45px;
 }
 a.service_avatar {
-  margin: 0px;
-  position: absolute;
-  top: 5px;
-  left: 20px;
-  width: 75px;
-  height: 75px;
+  margin: 0px auto;
+  position: relative;
+  width: 100px;
+  height: 110px;
   overflow: none;
   display: block;
   text-indent: -3000em;
 }
 a.physicianclaim-insight_index_wrap {
- background: url('../images/service_avatars.png') 0px -75px no-repeat; 
+ background: url('../images/service_page_sprite.png') 0px 0px no-repeat; 
 }
 a.facilityclaim-insight_index_wrap {
- background: url('../images/service_avatars.png') -75px -75px no-repeat;
- left: 45px;
+ background: url('../images/service_page_sprite.png') 0px -110px no-repeat;
 }
 a.dentalclaim-insight_index_wrap {
- background: url('../images/service_avatars.png') -150px -75px no-repeat;
- left: 45px;
+ background: url('../images/service_page_sprite.png') 0px -220px no-repeat;
 }
 a.oncologyclaim-insight_index_wrap {
- background: url('../images/service_avatars.png') -375px -75px no-repeat; 
+ background: url('../images/service_page_sprite.png') 0px -330px no-repeat; 
 }
 a.pharmaclaim-insight_index_wrap {
- background: url('../images/service_avatars.png') -225px -75px no-repeat;
- left: 45px;
+ background: url('../images/service_page_sprite.png') 0px -440px no-repeat;
 }
 a.visionclaim-insight_index_wrap {
- background: url('../images/service_avatars.png') -300px -75px no-repeat;
- left: 45px;
+ background: url('../images/service_page_sprite.png') 0px -550px no-repeat;
 }
 .physicianclaim-insight_index_text {
   width: 230px;
@@ -934,13 +930,29 @@ a.visionclaim-insight_index_wrap {
 .visionclaim-insight_index_text {
   width: 200px;
 }
-.service_header_h3 {
-  font-family: Arial, "MS Trebuchet", sans-serif;
-  text-align: right;
-  width: 260px;
-  height: 36px;
-  margin-right: -82px;
-  background: url('../images/service_headers_h3.jpg') -85px 5px no-repeat;
+.service_header {
+  text-indent: -3000em;
+  height: 70px;
+  width: 255px;
+  margin: 0px auto;
+}
+.physicianclaim-insight_service_header {
+  background: url('../images/service_page_sprite.png') -100px -25px no-repeat;
+}
+.facilityclaim-insight_service_header {
+  background: url('../images/service_page_sprite.png') -100px -135px no-repeat;
+}
+.dentalclaim-insight_service_header {
+  background: url('../images/service_page_sprite.png') -100px -245px no-repeat;
+}
+.oncologyclaim-insight_service_header {
+  background: url('../images/service_page_sprite.png') -100px -355px no-repeat;
+}
+.pharmaclaim-insight_service_header {
+  background: url('../images/service_page_sprite.png') -100px -465px no-repeat;
+}
+.visionclaim-insight_service_header {
+  background: url('../images/service_page_sprite.png') -100px -575px no-repeat;
 }
 .index_service_links_wrap {
   margin: 10px 0px 0px 21px;
