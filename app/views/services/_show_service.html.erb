@@ -3,11 +3,7 @@
   <div class="service_mid_section <%= s.permalink %>_service_bg grid_12 alpha omega">
     <div class="overview_wrap grid_7 right">
       <h3 class="<%= s.permalink %>_color block_font_weight sans-serif"><%=h s.description %></h3>
-        <ul class="grid_7 service_bullets">
-          <% s.service_bullets.each do |sb|%>
-          <li class="serif"><%= sb.bullet_point %></li>
-          <% end %>
-        </ul>
+<p class="show_service_para"><%= s.solution %></p>
     </div>
   </div>
 </div>

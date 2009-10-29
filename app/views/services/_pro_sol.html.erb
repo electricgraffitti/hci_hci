@@ -1,4 +1,8 @@
 <div class="full_wrap left">
-  <%= render :partial => 'problem_box', :locals => {:service => @service} %>
-  <%= render :partial => 'solution_box', :locals => {:service => @service} %>
+  <%= render :partial => 'problem_box', :locals => {:s => @service} %>
+  <%= render :partial => 'solution_box', :locals => {:s => @service} %>
+  <div class="<%= @service.permalink %>_service_top_stripe"></div>
+  <div class="<%= @service.permalink %>_service_bottom_stripe">
+    <div class="<%= @service.permalink %>_stripe_icon"></div>
+  </div>
 </div>
