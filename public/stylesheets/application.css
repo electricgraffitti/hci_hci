@@ -1260,16 +1260,77 @@ div.right div.milestone_inner_wrap {
   position:relative;
   margin-top: 20px;
 }
-ul.benefits_list {
-  margin:0 0 20px 20px;
-  position:relative;
-  width:850px;
+.benefit_grid {
+  text-align: center;
 }
-ul.benefits_list li {
-  background:transparent url(../images/small_check_orange.png) no-repeat scroll 0 0;
-  float:left;
-  font-size:165%;
-  width:338px;
+.inner_benefit_grid {
+  width: 880px;
+  margin: 0px auto;
+  background: #cdcdcd
+}
+.benefit_grid_box {
+  width: 439px;
+  float: left;
+  height: 180px;
+  margin: 0px 1px 1px 0px;
+  background: #fff;
+}
+div.last_bene_row {
+  margin-bottom: 0px;
+}
+div.right_side_box {
+  width: 440px;
+  margin-right: 0px;
+}
+.benefit_content_wrap {
+  width: 280px;
+  margin-top: 50px;
+  padding-left: 30px;
+  text-align: left;
+}
+div.bene_odd_row .benefit_content_wrap {
+  float: left;
+  padding-left: 0px;
+}
+.benefit_content_wrap h3 {
+  font-size: 155%;
+}
+.benefit_content_wrap p {
+  font-size: 110%;
+}
+.benefit_avatar_wrap {
+  float: left;
+  width: 130px;
+  height: 120px;
+  margin-top: 40px;
+}
+div.bene_even_row .benefit_avatar_wrap {
+  float: right;
+  margin-right: 10px;
+}
+.bene1 {
+  background: url('../images/benefit_grid_images.jpg') 0px 0px no-repeat;
+}
+.bene2 {
+  background: url('../images/benefit_grid_images.jpg') 0px -120px no-repeat;
+}
+.bene3 {
+  background: url('../images/benefit_grid_images.jpg') 0px -240px no-repeat;
+}
+.bene4 {
+  background: url('../images/benefit_grid_images.jpg') 0px -360px no-repeat;
+}
+.bene5 {
+  background: url('../images/benefit_grid_images.jpg') 0px -480px no-repeat;
+}
+.bene6 {
+  background: url('../images/benefit_grid_images.jpg') 0px -600px no-repeat;
+}
+.bene7 {
+  background: url('../images/benefit_grid_images.jpg') 0px -720px no-repeat;
+}
+.bene8 {
+  background: url('../images/benefit_grid_images.jpg') 0px -840px no-repeat;
 }
 p.benefits_sub_text {
   position: relative;
