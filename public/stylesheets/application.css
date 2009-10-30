@@ -736,6 +736,7 @@ img.inner_banner {
 #layout4main, .main_content {
   min-height: 300px;
   background: #fff;
+  padding-bottom: 10px;
 }
 #layout4main {
   min-height: 960px;
@@ -980,7 +981,7 @@ a.visionclaim-insight_index_wrap {
 }
 /***Show Pages***/
 .service_mid_section {
-  height: 315px;
+  height: 300px;
 }
 .physicianclaim-insight_service_bg {
   background: transparent url('../images/service_mid_bg.jpg') left -1565px no-repeat;
@@ -1159,13 +1160,13 @@ ul.service_bullets li {
   float: left;
   height: 10px;
   background: #00853f;
-  width: 100%;
+  width: 919px;
 }
 .physicianclaim-insight_service_bottom_stripe {
   float: left;
   height: 50px;
   background: #004914;
-  width: 100%;
+  width: 919px;
 }
 .facilityclaim-insight_stripe_icon {
   width: 250px;
@@ -1178,13 +1179,13 @@ ul.service_bullets li {
   float: left;
   height: 10px;
   background: #98002e;
-  width: 100%;
+  width: 919px;
 }
 .facilityclaim-insight_service_bottom_stripe {
   float: left;
   height: 50px;
   background: #6b0a10;
-  width: 100%;
+  width: 919px;
 }
 .dentalclaim-insight_stripe_icon {
   width: 250px;
@@ -1197,13 +1198,13 @@ ul.service_bullets li {
   float: left;
   height: 10px;
   background: #009fc2;
-  width: 100%;
+  width: 919px;
 }
 .dentalclaim-insight_service_bottom_stripe {
   float: left;
   height: 50px;
   background: #007690;
-  width: 100%;
+  width: 919px;
 }
 .oncologyclaim-insight_stripe_icon {
   width: 250px;
@@ -1216,13 +1217,13 @@ ul.service_bullets li {
   float: left;
   height: 10px;
   background: #e5b53a;
-  width: 100%;
+  width: 919px;
 }
 .oncologyclaim-insight_service_bottom_stripe {
   float: left;
   height: 50px;
   background: #c9a83d;
-  width: 100%;
+  width: 919px;
 }
 .pharmaclaim-insight_stripe_icon {
   width: 250px;
@@ -1235,13 +1236,13 @@ ul.service_bullets li {
   float: left;
   height: 10px;
   background: #00467f;
-  width: 100%;
+  width: 919px;
 }
 .pharmaclaim-insight_service_bottom_stripe {
   float: left;
   height: 50px;
   background: #002b54;
-  width: 100%;
+  width: 919px;
 }
 .visionclaim-insight_stripe_icon {
   width: 250px;
@@ -1254,13 +1255,13 @@ ul.service_bullets li {
   float: left;
   height: 10px;
   background: #78496a;
-  width: 100%;
+  width: 919px;
 }
 .visionclaim-insight_service_bottom_stripe {
   float: left;
   height: 50px;
   background: #5a2149;
-  width: 100%;
+  width: 919px;
 }
 div.half p {
   margin: 5px 50px 30px 0px;
@@ -1416,7 +1417,7 @@ div.bene_odd_row .benefit_content_wrap {
 .benefit_content_wrap p {
   font-size: 110%;
 }
-.benefit_avatar_wrap {
+.benefit_avatar_wrap, .quote_brochure a, .quote_brochure {
   float: left;
   width: 130px;
   height: 120px;
@@ -1449,6 +1450,15 @@ div.bene_even_row .benefit_avatar_wrap {
 }
 .bene8 {
   background: url('../images/benefit_grid_images.jpg') 0px -840px no-repeat;
+}
+.bene9 {
+  background: url('../images/benefit_grid_images.jpg') 0px -1680px no-repeat;
+}
+.bene10 {
+  background: url('../images/benefit_grid_images.jpg') 0px -1800px no-repeat;
+}
+.bene11 {
+  background: url('../images/benefit_grid_images.jpg') 0px -1920px no-repeat;
 }
 p.benefits_sub_text {
   position: relative;
@@ -1587,36 +1597,26 @@ p.works {
 .visionclaim-insight_quote {
   background: transparent url('../images/quotes/service_quotes.png') 0px 0px no-repeat;
 }
-.quote_brochure {
-  position: relative;
-  float: right;
-  margin: -70px 50px 0px 0px;
-  width: 310px;
-  height: 200px;
-}
 .physicianclaim-insight_quote_brochure {
-  background: url('../images/quotes/quote_brochure.png') 0px -1000px no-repeat;
+  background: url('../images/benefit_grid_images.jpg') 0px -1560px no-repeat;
 }
 .facilityclaim-insight_quote_brochure {
-  background: url('../images/quotes/quote_brochure.png') 0px -800px no-repeat;
+  background: url('../images/benefit_grid_images.jpg') 0px -1440px no-repeat;
 }
 .dentalclaim-insight_quote_brochure {
-  background: url('../images/quotes/quote_brochure.png') 0px -600px no-repeat;
+  background: url('../images/benefit_grid_images.jpg') 0px -1320px no-repeat;
 }
 .oncologyclaim-insight_quote_brochure {
-  background: url('../images/quotes/quote_brochure.png') 0px -400px no-repeat;
+  background: url('../images/benefit_grid_images.jpg') 0px -1200px no-repeat;
 }
 .pharmaclaim-insight_quote_brochure {
-  background: url('../images/quotes/quote_brochure.png') 0px -200px no-repeat;
+  background: url('../images/benefit_grid_images.jpg') 0px -1080px no-repeat;
 }
 .visionclaim-insight_quote_brochure {
-  background: url('../images/quotes/quote_brochure.png') 0px 0px no-repeat;
+  background: url('../images/benefit_grid_images.jpg') 0px -960px no-repeat;
 }
 .quote_brochure a {
-  position: relative;
   display: block;
-  width: 310px;
-  height: 200px;
   text-indent: -3000em;
 }
 /*********************************************/

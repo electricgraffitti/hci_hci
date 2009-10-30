@@ -12,8 +12,7 @@
 <%= render :partial => "show_service", :locals => {:service => @service} %>
 <%= render :partial => "show_quote", :locals => {:service => @service} %>
 <%= render :partial => "pro_sol", :locals => {:service => @service} %>
-
-
+<%= render :partial => "services/service_grid", :locals => {:s => @service} %>
 
 <div class="clear"></div>
   <% if current_user %>
