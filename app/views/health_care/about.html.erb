@@ -2,13 +2,12 @@
 <% meta_description("HealthCare Insight provides many resources to help you combat health care fraud.") %>
 <% page_title("About Us ") %>
 
-<%# content_for :banner do %>
-  <%#= render :partial => "health_care/inner_banners" %>
-  <%#= render :partial => "health_care/banner_side_box" %>
-<%# end %>
+<% content_for :banner do %>
+  <%= render :partial => "health_care/about_banner" %>
+<% end %>
 
 <!-- Top Area -->
-<div class="grid_12 alpha omega">
+<!-- <div class="grid_12 alpha omega">
   <h2 class="page_header about_header full_wrap">Say Hello To HealthCare Insight</h2>
   <div class="half grid_6 omega">  
     <h3 class="orange">Who We Are</h3>
@@ -22,18 +21,21 @@
     </p>
   </div>
   <div class="divider"></div>
-</div>
+</div> -->
 <div class="grid_12 alpha omega">
   
   <!-- Left Side -->
   <div class="half grid_6 omega">
-    <h3 class="orange">We Believe</h3>
+    <!-- <h3 class="orange">We Believe</h3>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br/><br/>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </p>
-    <div class="divider"></div>
-    <h3 class="orange">Meet Our Management</h3>
+    <div class="divider"></div> -->
+    <h3 class="orange">HCI Management</h3>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
     <% 4.times do %>
     <%= render :partial => 'management_profile' %>
     <% end %>
