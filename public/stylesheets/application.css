@@ -823,7 +823,7 @@ ul.index_sector_links li h2 {
 .sector_link_workers_comp:hover {
   background: url('../images/sector_links.png') -245px -171px no-repeat;
 }
-.index_quote {
+.index_quote, .about_quote {
   text-indent: -3000em;
   background: url('../images/index_quote.png') no-repeat;
   height: 90px;
@@ -1384,6 +1384,18 @@ div.right div.milestone_inner_wrap {
 }
 .contact_phone_header {
   background: url('../images/contact_letter_boxes.png') no-repeat;
+}
+/******About Us Page********/
+.about_us_box_image_wrap {
+  margin-top: 10px;
+}
+.about_us_box_header {
+  width: 175px;
+  padding-left: 35px;
+  background: url('../images/about_us_boxes_header_bg.png') no-repeat;
+}
+.about_quote {
+  background: url('../images/about_quote.png') no-repeat;
 }
 /******Benefits Page********/
 .benefits_content {
