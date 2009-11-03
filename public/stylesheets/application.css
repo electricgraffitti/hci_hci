@@ -1089,28 +1089,28 @@ ul.service_bullets li {
 }
 .graph_box {
   bottom: 20px;
-  height:165px;
+  height:185px;
   position:absolute;
   right: 10px;
-  width:230px;
+  width:360px;
 }
 .physicianclaim-insight_problem_box_bg {
   background: url('../images/graphs.png') right bottom no-repeat;
 }
 .facilityclaim-insight_problem_box_bg {
-  background: url('../images/graphs.png') right -698px no-repeat;
+  background: url('../images/graphs.png') right -758px no-repeat;
 }
 .dentalclaim-insight_problem_box_bg {
-  background: url('../images/graphs.png') right -526px no-repeat;
+  background: url('../images/graphs.png') right -570px no-repeat;
 }
 .oncologyclaim-insight_problem_box_bg {
-  background: url('../images/graphs.png') right -353px no-repeat;
+  background: url('../images/graphs.png') right -382px no-repeat;
 }
 .pharmaclaim-insight_problem_box_bg {
-  background: url('../images/graphs.png') right -181px no-repeat;
+  background: url('../images/graphs.png') right -195px no-repeat;
 }
 .visionclaim-insight_problem_box_bg {
-  background: url('../images/graphs.png') right -8px no-repeat;
+  background: url('../images/graphs.png') right -7px no-repeat;
 }
 .solution_box {
   width: 530px;
