@@ -6,6 +6,6 @@ class IssuuUploadsController < ApplicationController
   end
   
   def show
-   
+    
   end
 end
