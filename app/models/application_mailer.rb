@@ -3,7 +3,7 @@ class ApplicationMailer < ActionMailer::Base
     layout 'ticket_mailer'
   
   def contact_mailer(contact, sent_at = Time.now)
-      recipients    "info@hcinsight.com"
+      recipients    "bhanson@hcinsight.com"
       from          "HealthCare Insight :: Contact Us"
       subject       "HCI Contact Us Request"
       body          :contact => contact, :sent_on => sent_at

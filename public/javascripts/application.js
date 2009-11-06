@@ -117,9 +117,9 @@ $(document).ready(function() {
 });
 
 // This sets up the reflections for images
-$(document).ready(function() {
-  $(".show_wrap img").reflect();
-});
+// $(document).ready(function() {
+//   $(".show_wrap img").reflect();
+// });
 
 // This is the script for the employee edit profile hide/show feature
 $(document).ready(function() {

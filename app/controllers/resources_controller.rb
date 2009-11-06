@@ -2,7 +2,7 @@
 class ResourcesController < ApplicationController
   
   def index
-
+    @articles = Article.small_list(9)
   end
 
 end
