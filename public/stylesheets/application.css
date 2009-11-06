@@ -1629,6 +1629,10 @@ p.works {
 }
 .resource_video_wrapper {
   margin: 0px auto;
+  overflow: hidden;
+}
+.resource_video_wrapper embed {
+  margin-top: -40px;
 }
 .resource_article {
   position: relative;
