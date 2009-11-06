@@ -1615,9 +1615,15 @@ p.works {
 .resource_brochure img {
   border: 1px solid #dedede;
   padding: 5px;
-  width: 190px;
-  height: 75px;
-  display: block;
+  margin-right: 5px;
+}
+.resource_brochure h4 {
+  float: left;
+  width: 200px;
+}
+.resource_brochure p {
+  float: left;
+  width: 200px;
 }
 .resource_video_section {
   text-align: center;

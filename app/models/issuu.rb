@@ -31,4 +31,8 @@ class Issuu < ActiveResource::Base
     return sig_hash
   end
   
+  def self.bucket_fetch
+    
+  end
+  
 end

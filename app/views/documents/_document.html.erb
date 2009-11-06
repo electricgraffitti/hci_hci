@@ -1,9 +1,14 @@
 <div class='show_wrap grid_12'>
+  <% if document.issuu_url? %>
+  <div id="issuu_frame">
+   <iframe src="<%= document.issuu_url %>"></iframe>
+  </div>
+  <% end %>
   <div class='grid_10 omega'>
     <h3><%= document.title %></h3>
     <p><%= document.description %></p>
     <p><% document.assets.each do |asset| %>
-      <%= link_to(document.title, ('/attachments/' + document.id.to_s + '/original_' + asset.attachment_file_name)) %>
+      <%= link_to("Download #{document.title}", ('/attachments/' + document.id.to_s + '/original_' + asset.attachment_file_name)) %>
       <% end %>
     </p>
   </div>

@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20091030194346) do
+ActiveRecord::Schema.define(:version => 20091106214355) do
 
   create_table "article_types", :force => true do |t|
     t.string   "article_type"
@@ -106,6 +106,7 @@ ActiveRecord::Schema.define(:version => 20091030194346) do
     t.string   "permalink"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "issuu_url"
   end
 
   add_index "documents", ["document_type_id"], :name => "index_documents_on_document_type_id"
@@ -207,6 +208,7 @@ ActiveRecord::Schema.define(:version => 20091030194346) do
 
   create_table "services", :force => true do |t|
     t.string   "title"
+    t.string   "acronym"
     t.text     "description"
     t.string   "permalink"
     t.text     "meta_description"
@@ -220,7 +222,6 @@ ActiveRecord::Schema.define(:version => 20091030194346) do
     t.string   "quote"
     t.text     "problem"
     t.text     "solution"
-    t.string   "acronym"
   end
 
   create_table "sessions", :force => true do |t|
