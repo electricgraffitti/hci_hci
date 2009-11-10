@@ -40,6 +40,9 @@ ActionController::Routing::Routes.draw do |map|
   map.press "health-care-press", :controller => "announcements", :action => "index"
   map.media "health-care-resources", :controller => "resources", :action => "index"
   map.careers "healthcare-insight-careers", :controller => "careers", :action => "index"
+  map.public_sector "public-sector-claims-payment-software-solutions", :controller => "health_care", :action => "public_sector"
+  map.private_sector "private-sector-claims-payment-software-solutions", :controller => "health_care", :action => "private_sector"
+  map.workers_comp "workers-comp-claims-payment-software-solutions", :controller => "health_care", :action => "workers_comp"
   map.search "health-care-search-results", :controller => 'search', :action => 'index'
   map.dashboard "dashboard", :controller => "users", :action => "index"
   map.login "login", :controller => "user_sessions", :action => "new"

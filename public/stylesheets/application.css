@@ -861,7 +861,7 @@ ul.index_sector_links li h2 {
   background: url('../images/check_button.png') no-repeat;
   margin: -5px -35px 0px 0px;
 }
-.service_wrap {
+.service_wrap, .sector_grids {
   margin: 10px;
   background: #efefef;
   float: left;
@@ -1670,6 +1670,58 @@ p.works {
   width: 210px;
   margin-top: 0px;
 }
+/*********Sector Pages***********/
+.sector_grids {
+  width: 410px;
+  float: right;
+  border: 1px solid #cdcdcd;
+}
+.sector_grid {
+  float:left;
+  padding:10px 10px 0;
+  position:relative;
+  width:185px;
+}
+.sector_grid img {
+  width: 170px;
+  height: 50px;
+  float: left;
+  margin-top: 10px;
+  border: 1px solid #cdcdcd;
+  padding: 5px;
+}
+.sector_grid p {
+  float:left;
+  font-size:85%;
+  margin-top:0;
+  width:170px;
+}
+.sector_sub_header {
+  float:left;
+  font-size:185%;
+  font-weight:bold;
+  margin-left:50px;
+  margin-top:47px;
+  position:relative;
+}
+.sector_content_text {
+  width: 450px;
+  float: left;
+  margin: 10px;
+}
+.sector_content_text p {
+  padding: 10px;
+}
+p.sector_big_text {
+  font-size: 185%;
+  font-weight: bold;
+  line-height:27.5px;
+  padding-top: 0px;
+  margin-top: 0px;
+}
+.service_quote_brochure {
+  background: url('../images/benefit_grid_images.jpg') 0px -2040px no-repeat;
+}
 /*******Special Headers**********/
 .page_header {
   position: relative;
@@ -1694,6 +1746,10 @@ p.works {
 .contact_header {
   background: url('../images/headers/contact_us.png') no-repeat;
   width: 550px;
+}
+.public_header {
+  background: url('../images/headers/public_sector.png') no-repeat;
+  width: 375px;
 }
 /*********************************************/
 /***************QUOTE BOXES*******************/

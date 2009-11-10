@@ -23,5 +23,17 @@ class HealthCareController < ApplicationController
       format.xml  { render :xml => @events }
     end
   end
+  
+  def public_sector
+    
+  end
+  
+  def private_sector
+  
+  end
+  
+  def workers_comp
+    
+  end
 
 end
