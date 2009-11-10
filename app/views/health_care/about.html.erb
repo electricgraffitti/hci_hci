@@ -35,10 +35,7 @@
     <%= render :partial => 'management_profile' %>
     <% end %>
     <div class="divider"></div>
-    <h3 class="orange">Memberships & Accreditations</h3>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
+    <%= render :partial => 'accredidations_links_large' %>
   </div>
   
   <!-- Right Side -->
@@ -48,7 +45,7 @@
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </p>
     <div id="milestones" class="grid_5 alpha">
-      <% 5.times do %>
+      <% 4.times do %>
       <div class="left">
         <%= image_tag('milestone_placeholder.png', :width => 100, :height => 100) %>
         <div class="milestone_inner_wrap">        
@@ -64,7 +61,19 @@
         </div>
       </div>
       <% end %>
+      <div class="left">
+        <%= image_tag('milestone_placeholder.png', :width => 100, :height => 100) %>
+        <div class="milestone_inner_wrap">        
+          <div class="year">2009</div>
+          <div class="event">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+        </div>
+      </div>
       <div class="clear"></div>
     </div>
+  </div>
+  <div class="benefits_content grid_12 alpha omega">
+    <h2 class="page_header apply_here_header full_wrap">Come To Work At HCI</h2>
+    <p class="apply_sub_header orange">Experienced Professionals<br/>Changing the Health Care Industry.</p>
+    <%= render :partial => "health_care/job_board" %>
   </div>
 </div>

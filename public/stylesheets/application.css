@@ -1334,6 +1334,7 @@ div.profile p {
   position: relative;
   float: left;
   width: 100%;
+  padding-bottom:15px;
 }
 div.left div.milestone_inner_wrap {
   margin-top: 30px;
@@ -1431,6 +1432,71 @@ div.right div.milestone_inner_wrap {
 }
 .about_quote {
   background: url('../images/about_quote.png') no-repeat;
+}
+.accredidation_links {
+  width: 460px;
+  position: relative;
+  float: left;
+}
+.accredidation_links li {
+  width: 90px;
+  height: 72px;
+  float: left;
+}
+.accredidation_links li a {
+  display: block;
+  width: 90px;
+  height: 72px;
+  text-indent: -3000em;
+}
+.accredidation_links li a.accredidation_ahip {
+  background: transparent url('../images/accredidations_large_icons.jpg') no-repeat;
+}
+.accredidation_links li a.accredidation_urac1 {
+  background: transparent url('../images/accredidations_large_icons.jpg') 0px -72px no-repeat;
+}
+.accredidation_links li a.accredidation_urac2 {
+  background: transparent url('../images/accredidations_large_icons.jpg') 0px -144px no-repeat;
+}
+.accredidation_links li a.accredidation_nhcaa {
+  background: transparent url('../images/accredidations_large_icons.jpg') 0px -216px no-repeat;
+}
+.accredidation_links li a.accredidation_nadp {
+  background: transparent url('../images/accredidations_large_icons.jpg') 0px -288px no-repeat;
+}
+.apply_sub_header {
+  float:left;
+  font-size:185%;
+  font-weight:bold;
+  margin-top:35px;
+  position:relative;
+  line-height: 24.5px;
+}
+.job_board {
+  border:1px solid #CDCDCD;
+  padding:10px 20px;
+  width:878px;
+  position: relative;
+  height: 115px;
+}
+.job_board h3, .job_board p {
+  width: 500px;
+  float: left;
+}
+.apply_here_link {
+  float:left;
+  height:150px;
+  position:absolute;
+  right:100px;
+  top: 0px;
+  width:200px;
+  background: url('../images/apply_here_clipboard.png') no-repeat;
+}
+.apply_here_link a {
+  display: block;
+  width: 200px;
+  height: 150px;
+  text-indent: -3000em;
 }
 /******Benefits Page********/
 .benefits_content {
@@ -1750,6 +1816,10 @@ p.sector_big_text {
 .public_header {
   background: url('../images/headers/public_sector.png') no-repeat;
   width: 375px;
+}
+.apply_here_header {
+  background: url('../images/headers/apply_here.png') no-repeat;
+  width: 500px;
 }
 /*********************************************/
 /***************QUOTE BOXES*******************/
