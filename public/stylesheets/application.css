@@ -729,19 +729,25 @@ img.inner_banner {
   background: #fff;
   min-height: 290px;
 }
-.contact_banner {
+.contact_banner, .contact_thank_you {
   width: 940px;
   float: left;
   height: 500px;
   position: relative;
   background: url('../images/banners/inner_banners/contact_us_big.png') no-repeat;
 }
-.contact_banner_text_wrap {
+.contact_thank_you {
+  background: url('../images/banners/inner_banners/thank_you_big.jpg') no-repeat;
+}
+.contact_banner_text_wrap, .contact_thank_you_text_wrap {
   position: absolute;
   bottom: 60px;
   left: 60px;
   width: 300px;
   font-size: 130%;
+}
+.contact_thank_you_text_wrap {
+  width:425px;
 }
 .contact_form_wrap {
   float:left;
