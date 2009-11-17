@@ -1817,6 +1817,14 @@ p.sector_big_text {
   background: url('../images/headers/public_sector.png') no-repeat;
   width: 375px;
 }
+.private_header {
+  background: url('../images/headers/private_sector.png') no-repeat;
+  width: 390px;
+}
+.workers_comp_header {
+  background: url('../images/headers/workers_comp.png') no-repeat;
+  width: 420px;
+}
 .apply_here_header {
   background: url('../images/headers/apply_here.png') no-repeat;
   width: 500px;

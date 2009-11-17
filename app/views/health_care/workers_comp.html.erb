@@ -3,8 +3,11 @@
 <% page_title("Workers Comp Health Care Sector Fraud Prevention Services") %>
 
 <% content_for :banner do %>
-  <%= render :partial => "health_care/workers_comp_banner" %>
+  <%#= render :partial => "health_care/workers_comp_banner" %>
+  <%= render :partial => "health_care/public_banner" %>
 <% end %>
-<div class="grid_12 alpha omega">
- Workers Comp
+<div class="benefits_content grid_12 alpha omega">
+  <h2 class="page_header workers_comp_header full_wrap">Workers Compensation</h2>
+  <p class="sector_sub_header orange">We have the tools to help you<br/>stop fraud, abuse and overpayment</p>
+  <%= render :partial => "health_care/public_content" %>
 </div>
