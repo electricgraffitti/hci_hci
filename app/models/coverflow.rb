@@ -19,7 +19,7 @@ class Coverflow < ActiveRecord::Base
   
   # PaperClip
   has_attached_file :cover, 
-                    :styles => { :medium => "200x200>", :small => "100x100>", :thumb => "70x70>" },
+                    :styles => { :brochure => "160x65#"},
                     :url => "/covers/:id/:style_:basename.:extension",
                     :path => ":rails_root/public/covers/:id/:style_:basename.:extension"
   # Attrs

@@ -3,7 +3,7 @@ class ResourcesController < ApplicationController
   
   def index
     @articles = Article.small_list(9)
-    @documents = Document.last_created.small_list(3)
+    @documents = Document.brochures
   end
 
 end

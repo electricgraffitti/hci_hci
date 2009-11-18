@@ -33,6 +33,12 @@
     <%= cover_form.file_field :cover, :size => 16 %>
     <% end %>
   </p>
+  <p>
+    <%= f.check_box :brochure %>
+    <%= f.label :brochure, "Is Brochure?" %>
+  </p>
+  <%= f.label :brochure_order %><br />
+  <%= f.text_field :brochure_order %>
 </div>
 <div class="grid_5">
   <h3>Document SEO</h3>

@@ -24,6 +24,7 @@ class Document < ActiveRecord::Base
   
   # Validations
   validates_presence_of :title, :description, :permalink
+  validates_numericality_of :brochure_order, :on => :create, :message => "is not a number"
   
   # Thinking Sphinx Indexes
   define_index do
@@ -37,6 +38,7 @@ class Document < ActiveRecord::Base
   # Named Scopes
   named_scope :small_list, lambda { |limit| {:limit => limit }}
   named_scope :last_created, :order => "created_at DESC"
+  named_scope :brochures, :conditions => ["brochure = ?", true], :order => "brochure_order ASC"
   
   #============================= Class Methods ==================================#
   

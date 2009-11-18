@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20091106214355) do
+ActiveRecord::Schema.define(:version => 20091118174955) do
 
   create_table "article_types", :force => true do |t|
     t.string   "article_type"
@@ -101,12 +101,14 @@ ActiveRecord::Schema.define(:version => 20091106214355) do
     t.string   "title"
     t.text     "description"
     t.integer  "document_type_id"
+    t.string   "issuu_url"
     t.text     "meta_description"
     t.string   "keywords"
     t.string   "permalink"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "issuu_url"
+    t.boolean  "brochure"
+    t.integer  "brochure_order"
   end
 
   add_index "documents", ["document_type_id"], :name => "index_documents_on_document_type_id"

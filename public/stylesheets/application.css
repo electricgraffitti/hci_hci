@@ -855,12 +855,6 @@ ul.index_sector_links li h2 {
 .sector_link_workers_comp:hover {
   background: url('../images/sector_links.png') -245px -171px no-repeat;
 }
-.index_quote, .about_quote {
-  text-indent: -3000em;
-  background: url('../images/index_quote.png') no-repeat;
-  height: 90px;
-  margin: 15px 0px;
-}
 .circle_button {
   width: 40px;
   height: 40px;
@@ -1436,9 +1430,6 @@ div.right div.milestone_inner_wrap {
   padding-left: 35px;
   background: url('../images/about_us_boxes_header_bg.png') no-repeat;
 }
-.about_quote {
-  background: url('../images/about_quote.png') no-repeat;
-}
 .accredidation_links {
   width: 460px;
   position: relative;
@@ -1679,10 +1670,10 @@ p.works {
   width:900px;
 }
 .resource_brochure {
-  position: relative;
-  float: left;
-  width: 200px;
-  padding: 10px;
+  float:left;
+  padding:5px;
+  position:relative;
+  width:170px;
 }
 .resource_brochure img {
   border: 1px solid #dedede;
@@ -1695,7 +1686,8 @@ p.works {
 }
 .resource_brochure p {
   float: left;
-  width: 200px;
+  width: 170px;
+  margin-top: 0px;
 }
 .resource_video_section {
   text-align: center;
@@ -1837,7 +1829,12 @@ p.sector_big_text {
 }
 /*********************************************/
 /***************QUOTE BOXES*******************/
-
+.index_quote, .about_quote, .private_quote, .public_quote, .workers_comp_quote {
+  text-indent: -3000em;
+  background: url('../images/index_quote.png') no-repeat;
+  height: 90px;
+  margin: 15px 0px;
+}
 .service_quote {
   height: 125px;
 }
@@ -1887,6 +1884,18 @@ p.sector_big_text {
 .quote_brochure a {
   display: block;
   text-indent: -3000em;
+}
+.about_quote {
+  background: url('../images/about_quote.jpg') no-repeat;
+}
+.public_quote {
+  background: url('../images/public_quote.jpg') no-repeat;
+}
+.private_quote {
+  background: url('../images/private_quote.jpg') no-repeat;
+}
+.workers_comp_quote {
+  background: url('../images/workers_comp_quote.jpg') no-repeat;
 }
 /*********************************************/
 /******************SUBBOXES*******************/
