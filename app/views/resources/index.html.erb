@@ -8,7 +8,6 @@
 <div class="grid_12 alpha omega">
   <div class="resource_section full_wrap">
     <h3 class="orange">Brochures & Catalogs</h3>
-    <% 2.times do %>
     <% @documents.each do |doc| %>
       <div class="resource_brochure">
         <% doc.coverflows.each do |coverflow| %>
@@ -19,7 +18,6 @@
           Lorem ipsum dolor sit amet, consectetur adipisicing elit.
         </p>
       </div>
-    <% end %>
     <% end %>
   </div>
   <div class="service_wrap resource_section resource_video_section full_wrap">

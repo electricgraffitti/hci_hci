@@ -795,7 +795,7 @@ img.inner_banner {
   position: absolute;
   bottom: 0px;
   right: 0px;
-  width: 112px;
+  width: 150px;
   height: 100px;
 }
 .box_1 {
@@ -1423,12 +1423,23 @@ div.right div.milestone_inner_wrap {
 }
 /******About Us Page********/
 .about_us_box_image_wrap {
-  margin-top: 10px;
+  border:1px solid #DEDEDE;
+  margin:15px 30px;
+  padding:5px;
 }
 .about_us_box_header {
   width: 175px;
   padding-left: 35px;
   background: url('../images/about_us_boxes_header_bg.png') no-repeat;
+}
+.box_4 {
+  background: url('../images/hci_index_box_images.png') 0px -300px no-repeat;
+}
+.box_5 {
+  background: url('../images/hci_index_box_images.png') 0px -400px no-repeat;
+}
+.box_6 {
+  background: url('../images/hci_index_box_images.png') 0px -500px no-repeat;
 }
 .accredidation_links {
   width: 460px;
