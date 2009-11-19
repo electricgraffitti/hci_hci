@@ -6,32 +6,8 @@
   <%= render :partial => "resources/banner" %>
 <% end %>
 <div class="grid_12 alpha omega">
-  <div class="resource_section full_wrap">
-    <h3 class="orange">Brochures & Catalogs</h3>
-    <% @documents.each do |doc| %>
-      <div class="resource_brochure">
-        <% doc.coverflows.each do |coverflow| %>
-          <%= link_to image_tag(coverflow.cover.url(:brochure), :alt => doc.title), document_path(doc) %>
-        <% end %>
-        <h4><%= link_to "#{doc.title}", document_path(doc)  %></h4>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        </p>
-      </div>
-    <% end %>
-  </div>
-  <div class="service_wrap resource_section resource_video_section full_wrap">
-    <div class="resource_video_header">
-      <h3 class="orange">Videos</h3>
-    </div>
-    <div class="resource_video_wrapper">
-      <%= render :partial => 'video_player' %>
-   </div>
-  </div>
-  <div class="resource_section full_wrap">
-   <h3 class="orange">Fraud News</h3>
-   <% @articles.each do |article| %>
-     <%= render :partial => 'resources/article', :locals => {:article => article} %>
-   <% end %>
-  </div>
+  <%= render :partial => 'resource_brochures', :locals => {:documents => @documents} %>
+  <%= render :partial => 'resource_videos' %>
+  <%= render :partial => 'resource_articles', :locals => {:articles => @articles} %>
+  <%= render :partial => 'resource_press_releases', :locals => {:articles => @press_releases} %>
 </div>

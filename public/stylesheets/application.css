@@ -102,6 +102,12 @@ p {
 .full_wrap {
   margin: 10px 10px;
 }
+.full_1020_wrap {
+  margin: 10px 20px;
+}
+.full_20_wrap {
+  margin: 20px;
+}
 .divider {
   clear: both;
   border-top: 1px solid #cccccc;
@@ -729,7 +735,7 @@ img.inner_banner {
   background: #fff;
   min-height: 290px;
 }
-.contact_banner, .contact_thank_you {
+.contact_banner, .contact_thank_you, .big_banner {
   width: 940px;
   float: left;
   height: 500px;
@@ -738,6 +744,29 @@ img.inner_banner {
 }
 .contact_thank_you {
   background: url('../images/banners/inner_banners/thank_you_big.jpg') no-repeat;
+}
+.career_banner {
+  background: url('../images/banners/inner_banners/careers_big.jpg') no-repeat;
+}
+.social_banner {
+  background: url('../images/banners/inner_banners/social_big.jpg') no-repeat;
+}
+.social_text_wrap {
+  font-size:130%;
+  position: absolute;
+  left: 80px;
+  bottom: 80px;
+  float: left;
+  width: 330px;
+}
+.social_text_wrap ul {
+  margin-top: 10px;
+  float: left;
+  width: 250px;
+}
+.social_text_wrap ul li {
+  width: 125px;
+  float: left;
 }
 .contact_banner_text_wrap, .contact_thank_you_text_wrap {
   position: absolute;
@@ -895,15 +924,45 @@ ul.index_sector_links li h2 {
 .number_header_small {
   width: 110px;
 }
-.index_service_wrap {
+.index_service_wrap, .career_service_wrap {
   border-color:#EFEFEF #EFEFEF #CDCDCD #CDCDCD;
   border-style:solid;
   border-width:1px;
   float:left;
-  padding:0 10px 10px;
+  padding: 0 10px 10px;
   position:relative;
   text-align:center;
   width: 284px;
+}
+.career_action_bar {
+  position: relative;
+  border: 1px solid #cdcdcd;
+  height: 150px;
+}
+.career_address_box {
+  float:left;
+  padding: 10px 10px 10px;
+  position:relative;
+  text-align:center;
+  width: 250px;
+}
+.career_apply_link {
+  float:left;
+  height:150px;
+  position:relative;
+  width: 170px;
+  background: url('../images/apply_here_clipboard.png') -32px 0px no-repeat;
+}
+.career_apply_link a {
+  width: 170px;
+}
+.career_copy {
+  width: 478px;
+  float: left;
+}
+.career_copy p  {
+  margin-top:27px;
+  width: 450px;
 }
 .index_service_wrap p {
   font-size:125%;
@@ -1500,7 +1559,7 @@ div.right div.milestone_inner_wrap {
   width:200px;
   background: url('../images/apply_here_clipboard.png') no-repeat;
 }
-.apply_here_link a {
+.apply_here_link a, .career_apply_link a {
   display: block;
   width: 200px;
   height: 150px;
@@ -1680,6 +1739,19 @@ p.works {
   padding: 0px 10px;
   width:900px;
 }
+.resource_articles {
+  width: 600px;
+}
+.resource_press_releases {
+  width: 260px;
+  float: left;
+}
+.sub_news_box {
+  margin: 10px 0px;
+  width: 235px;
+  padding:10px;
+  border: 1px solid #cdcdcd;
+}
 .resource_brochure {
   float:left;
   padding:5px;
@@ -1744,6 +1816,19 @@ p.works {
   float: left;
   width: 210px;
   margin-top: 0px;
+}
+.article_wrap {
+  float:left;
+  width: 600px;
+}
+.index_article_listing {
+  width: 880px;
+  border: 1px solid #efefef;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+.index_article_listing p {
+  width: 700px;
 }
 /*********Sector Pages***********/
 .sector_grids {

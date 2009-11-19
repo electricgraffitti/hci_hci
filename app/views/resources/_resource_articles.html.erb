@@ -1,0 +1,6 @@
+<div class="resource_section resource_articles full_wrap">
+   <h3 class="orange">Fraud News</h3>
+   <% articles.each do |article| %>
+     <%= render :partial => 'resources/article', :locals => {:article => article} %>
+   <% end %>
+</div>

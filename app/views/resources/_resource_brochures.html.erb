@@ -1,0 +1,14 @@
+  <div class="resource_section full_wrap">
+    <h3 class="orange">Brochures & Catalogs</h3>
+    <% documents.each do |doc| %>
+      <div class="resource_brochure">
+        <% doc.coverflows.each do |coverflow| %>
+          <%= link_to image_tag(coverflow.cover.url(:brochure), :alt => doc.title), document_path(doc) %>
+        <% end %>
+        <h4><%= link_to "#{doc.title}", document_path(doc)  %></h4>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        </p>
+      </div>
+    <% end %>
+  </div>

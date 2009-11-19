@@ -35,5 +35,12 @@ class HealthCareController < ApplicationController
   def workers_comp
     
   end
+  
+  def careers
+    
+  end
+  
+  def social_media
+  end
 
 end

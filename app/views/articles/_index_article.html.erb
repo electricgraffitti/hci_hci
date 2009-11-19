@@ -1,3 +1,18 @@
 <% articles.each do |article| %>
-  <%= index_article(article) %>
+    <div class='index_article_listing full_20_wrap'>
+    <h3><%= article.title %></h3>
+    <p><%= truncate(article.description, :length => 350) %></p>
+    <div class='widget_links grid_5 omega right'>
+    <%= link_to('Read More', article_path(article)) %>
+    <% if current_user %>
+      |
+      <%= link_to('New', new_article_path) %>
+      |
+      <%= link_to('Edit', edit_article_path(article)) %>
+      |
+      <%= link_to('Delete', "#{article}", :confirm => 'Are you sure?', :method => :delete) %>
+    <% end %>
+  </div>
+  <div class='clear'></div>
+  </div>
 <% end %>

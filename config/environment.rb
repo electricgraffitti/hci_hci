@@ -56,7 +56,7 @@ ActionMailer::Base.sendmail_settings = {
   :location       => '/usr/sbin/sendmail',
   :arguments      => '-i -t -f mailer@hcinsight.com'
 }
-
+Time::DATE_FORMATS[:event_time] = "%A %B %d, at %I:%M %p"
 
 # set the default email host for the application
 # ActionMailer::Base.default_url_options = { :host => "stophealthcarefraud.com" }

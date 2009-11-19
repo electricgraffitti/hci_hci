@@ -6,6 +6,6 @@
 
 <!-- Render Helper Module Here -->
 <%= render :partial => "articles/index_article", :locals => {:articles => @articles} %>
-<div class="space_left">
-  <%= link_to "Back", request.env["HTTP_REFERER"], :class => "btn"%>
+<div class="full_1020_wrap right">
+  <%= link_to "Back", request.env["HTTP_REFERER"] %>
 </div>

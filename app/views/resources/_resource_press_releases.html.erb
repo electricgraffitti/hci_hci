@@ -1,0 +1,9 @@
+<div class="resource_section resource_press_releases full_wrap">
+   <h3 class="orange">HCI Press Releases</h3>
+   <div class="service_wrap sub_news_box">
+   <% articles.each do |article| %>
+     <%= render :partial => 'articles/article_list', :locals => {:article => article} %>
+   <% end %>
+   </end>
+   <div class="content_wrap"><%= link_to "View All Articles", articles_path %></div>
+</div>

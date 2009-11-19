@@ -6,12 +6,10 @@
   end %>
 <% page_title "#{@article.title} " %>
 
-<% content_for :banner do %>
-  <%= render :partial => "articles/banner" %>
-<% end %>
-
 <%# This is in the application helper %>
-<%= show_page_listing(@article) %>
+<%= render :partial => 'article', :locals => {:article => @article} %>
+<%= render :partial => 'articles_micro_list', :locals => {:articles => @articles} %>
+
 
 <div class="widget_links grid_3 omega right">
 <% if current_user %>

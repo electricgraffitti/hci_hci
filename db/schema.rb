@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20091118174955) do
+ActiveRecord::Schema.define(:version => 20091119160341) do
 
   create_table "article_types", :force => true do |t|
     t.string   "article_type"
@@ -186,6 +186,15 @@ ActiveRecord::Schema.define(:version => 20091118174955) do
 
   add_index "owners", ["employee_id"], :name => "index_owners_on_employee_id"
   add_index "owners", ["ticket_id"], :name => "index_owners_on_ticket_id"
+
+  create_table "press_releases", :force => true do |t|
+    t.string   "title"
+    t.text     "content"
+    t.string   "tagline"
+    t.datetime "date"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "priorities", :force => true do |t|
     t.string   "priority_name"
