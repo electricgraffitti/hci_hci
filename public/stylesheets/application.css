@@ -81,7 +81,8 @@ h4 {
   font-size: 118%;
 }
 h5 {
-  
+  color:#666666;
+  font-size:110%;
 }
 h3 a, h4 a {
   font-size: 100%;
@@ -769,11 +770,11 @@ img.inner_banner {
   float: left;
 }
 .contact_banner_text_wrap, .contact_thank_you_text_wrap {
-  position: absolute;
-  bottom: 60px;
-  left: 60px;
-  width: 300px;
-  font-size: 130%;
+  bottom:75px;
+  font-size:130%;
+  left:60px;
+  position:absolute;
+  width:335px;
 }
 .contact_thank_you_text_wrap {
   width:425px;
@@ -865,24 +866,24 @@ ul.index_sector_links li h2 {
 }
 .sector_link_public {
   text-indent: -1000em;
-  background: url('../images/sector_links.png') 0px -57px no-repeat;
+  background: url('../images/sector_links.png') -245px -57px no-repeat;
 }
 .sector_link_public:hover {
-  background: url('../images/sector_links.png') -245px -57px no-repeat;
+  background: url('../images/sector_links.png') -0px -57px no-repeat;
 }
 .sector_link_private {
   text-indent: -1000em;
-  background: url('../images/sector_links.png') 0px -114px no-repeat;
+  background: url('../images/sector_links.png') -245px -114px no-repeat;
 }
 .sector_link_private:hover {
-  background: url('../images/sector_links.png') -245px -114px no-repeat;
+  background: url('../images/sector_links.png') -0px -114px no-repeat;
 }
 .sector_link_workers_comp {
   text-indent: -1000em;
-  background: url('../images/sector_links.png') 0px -171px no-repeat;
+  background: url('../images/sector_links.png') -245px -171px no-repeat;
 }
 .sector_link_workers_comp:hover {
-  background: url('../images/sector_links.png') -245px -171px no-repeat;
+  background: url('../images/sector_links.png') -0px -171px no-repeat;
 }
 .circle_button {
   width: 40px;
@@ -1170,7 +1171,7 @@ ul.service_bullets li {
 .problem_box p {
   position: relative;
   margin-left: 15px;
-  width: 250px;
+  width: 260px;
 }
 .graph_box {
   bottom: 20px;
@@ -1455,6 +1456,7 @@ div.right div.milestone_inner_wrap {
   margin:2px 0;
   width:20px;
 }
+/******Contact Us Page********/
 .contact_block_wrap {
   float: left;
 }
@@ -1480,6 +1482,46 @@ div.right div.milestone_inner_wrap {
 .contact_location p {
   font-size: 100%;
 }
+/******Social Media Page********/
+.social_media_big_links_wrap {
+  border: 1px solid #cdcdcd;
+}
+.social_media_big_links {
+  width: 133px;
+  padding: 10px;
+  text-align: center;
+  float: left; 
+}
+.big_social_icon {
+  display: block;
+  margin: 5px auto;
+  width: 90px;
+  height: 90px;
+}
+.big_social_icon a {
+  text-indent: -3000em;
+  width: 90px;
+  height: 90px;
+  display: block;
+}
+.big_social_icon.facebook a {
+  background: url('../images/social_icons/big_social_icons.png') 0px 0px no-repeat;
+}
+.big_social_icon.youtube a {
+  background: url('../images/social_icons/big_social_icons.png') 0px -90px no-repeat;
+}
+.big_social_icon.twitter a {
+  background: url('../images/social_icons/big_social_icons.png') 0px -180px no-repeat;
+}
+.big_social_icon.shcf a {
+  background: url('../images/social_icons/big_social_icons.png') 0px -270px no-repeat;
+}
+.big_social_icon.linkedin a {
+  background: url('../images/social_icons/big_social_icons.png') 0px -360px no-repeat;
+}
+.big_social_icon.profiler a {
+  background: url('../images/social_icons/big_social_icons.png') 0px -450px no-repeat;
+}
 /******About Us Page********/
 .about_us_box_image_wrap {
   border:1px solid #DEDEDE;
@@ -1500,21 +1542,34 @@ div.right div.milestone_inner_wrap {
 .box_6 {
   background: url('../images/hci_index_box_images.png') 0px -500px no-repeat;
 }
-.accredidation_links {
+.accredidation_links, .accredidation_links_small {
   width: 460px;
   position: relative;
   float: left;
 }
-.accredidation_links li {
+.accredidation_links_small {
+  margin-left:12px;
+  margin-top:30px;
+  width:273px;
+}
+.accredidation_links li, .accredidation_links_small li {
   width: 90px;
   height: 72px;
   float: left;
 }
-.accredidation_links li a {
+.accredidation_links_small li {
+  width: 50px;
+  height: 40px;
+}
+.accredidation_links li a, .accredidation_links_small li a {
   display: block;
   width: 90px;
   height: 72px;
   text-indent: -3000em;
+}
+.accredidation_links_small li a {
+  width: 50px;
+  height: 40px;
 }
 .accredidation_links li a.accredidation_ahip {
   background: transparent url('../images/accredidations_large_icons.jpg') no-repeat;
@@ -1530,6 +1585,21 @@ div.right div.milestone_inner_wrap {
 }
 .accredidation_links li a.accredidation_nadp {
   background: transparent url('../images/accredidations_large_icons.jpg') 0px -288px no-repeat;
+}
+.accredidation_links_small li a.accredidation_ahip {
+  background: transparent url('../images/accredidations_small_icons.jpg') no-repeat;
+}
+.accredidation_links_small li a.accredidation_urac1 {
+  background: transparent url('../images/accredidations_small_icons.jpg') 0px -40px no-repeat;
+}
+.accredidation_links_small li a.accredidation_urac2 {
+  background: transparent url('../images/accredidations_small_icons.jpg') 0px -80px no-repeat;
+}
+.accredidation_links_small li a.accredidation_nhcaa {
+  background: transparent url('../images/accredidations_small_icons.jpg') 0px -120px no-repeat;
+}
+.accredidation_links_small li a.accredidation_nadp {
+  background: transparent url('../images/accredidations_small_icons.jpg') 0px -160px no-repeat;
 }
 .apply_sub_header {
   float:left;
@@ -1773,6 +1843,7 @@ p.works {
   margin-top: 0px;
 }
 .resource_video_section {
+  border: 1px solid #cdcdcd;
   text-align: center;
 }
 .resource_video_header {
@@ -1783,9 +1854,10 @@ p.works {
 .resource_video_wrapper {
   margin: 0px auto;
   overflow: hidden;
+  height: 480px;
 }
 .resource_video_wrapper embed {
-  margin-top: -40px;
+  margin-top: -10px;
 }
 .resource_article {
   position: relative;
@@ -1932,29 +2004,31 @@ p.sector_big_text {
   margin: 15px 0px;
 }
 .service_quote {
-  height: 125px;
+  position: relative;
+  height: 90px;
 }
 .service_quote p {
-  margin: 0px 50px 10px 0px;
-  width: 437px;
-  height: 100px;
-  float: right;
+  position: absolute;
+  right: 25px;
+  top: -55px;
+  width: 525px;
+  height: 115px;
   text-indent: -3000em;
 }
 .physicianclaim-insight_quote{
-  background: transparent url('../images/quotes/service_quotes.png') 0px -500px no-repeat;
+  background: transparent url('../images/quotes/service_quotes.png') 0px -572px no-repeat;
 }
 .dentalclaim-insight_quote {
-   background: transparent url('../images/quotes/service_quotes.png') 0px -400px no-repeat;
+   background: transparent url('../images/quotes/service_quotes.png') 0px -457px no-repeat;
 }
 .facilityclaim-insight_quote {
-  background: transparent url('../images/quotes/service_quotes.png') 0px -300px no-repeat;
+  background: transparent url('../images/quotes/service_quotes.png') 0px -340px no-repeat;
 }
 .oncologyclaim-insight_quote {
-  background: transparent url('../images/quotes/service_quotes.png') 0px -200px no-repeat;
+  background: transparent url('../images/quotes/service_quotes.png') 0px -227px no-repeat;
 }
 .pharmaclaim-insight_quote {
-  background: transparent url('../images/quotes/service_quotes.png') 0px -100px no-repeat;
+  background: transparent url('../images/quotes/service_quotes.png') 0px -113px no-repeat;
 }
 .visionclaim-insight_quote {
   background: transparent url('../images/quotes/service_quotes.png') 0px 0px no-repeat;
