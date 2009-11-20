@@ -5,41 +5,4 @@
 <% content_for :banner do %>
   <%= render :partial => "health_care/social_banner" %>
 <% end %>
-<div class="service_wrap social_media_big_links_wrap">
-  <div class="social_media_big_links">
-    <h5>Facebook</h5>
-      <div class="big_social_icon facebook">
-        <%= link_to "Facebook", "#" %>
-      </div>
-  </div>
-  <div class="social_media_big_links">
-    <h5>YouTube</h5>
-      <div class="big_social_icon youtube">
-        <%= link_to "YouTube", "#" %>
-      </div>
-  </div>
-  <div class="social_media_big_links">
-    <h5>Twitter</h5>
-      <div class="big_social_icon twitter">
-        <%= link_to "Twitter", "#" %>
-      </div>
-  </div>
-  <div class="social_media_big_links">
-    <h5>SHCF.com</h5>
-      <div class="big_social_icon shcf">
-        <%= link_to "StopHealthCareFraud", "#" %>
-      </div>
-  </div>
-  <div class="social_media_big_links">
-    <h5>LinkedIn</h5>
-      <div class="big_social_icon linkedin">
-        <%= link_to "LinkedIn", "#" %>
-      </div>
-  </div>
-  <div class="social_media_big_links">
-    <h5>Profiler Magazine</h5>
-      <div class="big_social_icon profiler">
-        <%= link_to "Profiler Magazine", "#" %>
-      </div>
-  </div>
-</div>
+<%= render :partial => 'health_care/social_links_big' %>

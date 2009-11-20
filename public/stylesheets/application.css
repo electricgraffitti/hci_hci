@@ -97,6 +97,9 @@ p {
   margin: 5px 0px 0px;
   line-height: 16.35px;
 }
+.bold {
+  font-weight:bold;
+}
 .content_wrap {
   margin: 10px 0px;
 }

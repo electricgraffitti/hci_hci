@@ -1,5 +1,5 @@
 <div class="sub_box grid_4 center">
-  <div class="circle_button left"></div><h4>Comprehensive Suite of Service</h4>
+  <div class="circle_button left"></div><h4 class="bold">Comprehensive Suite of Service</h4>
   <div class="index_service_links_wrap">
     <% @services.each do |s| %>
     <%= link_to "#{s.title}", service_path(s), :class => "index_service_link" %>
@@ -7,7 +7,7 @@
   </div>
 </div>
 <div class="sub_box grid_4 alpha omega center">
-  <div class="circle_button left"></div><h4>Get a Cost Reduction Analysis</h4>
+  <div class="circle_button left"></div><h4 class="bold">Get a Cost Reduction Analysis</h4>
   <p class="cra_index_box sans_serif">
     We can boost your bottom line and we'll prove it free of charge. Get your CRA today!
   </p>
@@ -16,7 +16,7 @@
   </div>
 </div>
 <div class="sub_box grid_4 center">
-  <div class="circle_button left"></div><h4>Memberships / Accreditations</h4>
+  <div class="circle_button left"></div><h4 class="bold">Memberships / Accreditations</h4>
   <ul class="accredidation_links_small">
     <li>
       <%= link_to "AHIP", "http://www.ahip.org/", :class => "accredidation_link accredidation_ahip" %>
