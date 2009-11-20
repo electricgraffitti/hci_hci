@@ -1165,7 +1165,7 @@ ul.service_bullets li {
 }
 .problem_box {
   background: #dedede url('../images/headers/benefit_headers/benefit_subboxes_bg.png') repeat-x;
-  width: 385px;
+  width: 375px;
   border: 1px solid #dedede;
 }
 .problem_box h2 {
@@ -1180,7 +1180,7 @@ ul.service_bullets li {
   bottom: 20px;
   height:185px;
   position:absolute;
-  right: 10px;
+  right: 0px;
   width:360px;
 }
 .physicianclaim-insight_problem_box_bg {
@@ -2012,7 +2012,7 @@ p.sector_big_text {
 }
 .service_quote p {
   position: absolute;
-  right: 25px;
+  right: 27px;
   top: -55px;
   width: 525px;
   height: 115px;
