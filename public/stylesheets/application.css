@@ -755,6 +755,9 @@ img.inner_banner {
 .social_banner {
   background: url('../images/banners/inner_banners/social_big.jpg') no-repeat;
 }
+.press_kit_banner {
+  background: url('../images/banners/inner_banners/press_kit_big.jpg') no-repeat;
+}
 .social_text_wrap {
   font-size:130%;
   position: absolute;
@@ -769,6 +772,26 @@ img.inner_banner {
   width: 250px;
 }
 .social_text_wrap ul li {
+  width: 125px;
+  float: left;
+}
+.press_kit_text_wrap {
+  font-size:130%;
+  position: absolute;
+  left: 80px;
+  bottom: 80px;
+  float: left;
+  width: 430px;
+}
+.press_kit_text_wrap p {
+  width: 350px;
+}
+.press_kit_text_wrap ul {
+  margin-top: 10px;
+  float: left;
+  width: 375px;
+}
+.press_kit_text_wrap ul li {
   width: 125px;
   float: left;
 }

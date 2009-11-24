@@ -42,5 +42,8 @@ class HealthCareController < ApplicationController
   
   def social_media
   end
+  
+  def press_kit
+  end
 
 end
