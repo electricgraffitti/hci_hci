@@ -35,12 +35,14 @@ ActionController::Routing::Routes.draw do |map|
   # Custom Named Routes
   map.issuu_upload "upload-issuu", :controller => "issuu_uploads", :action => "index"
   map.issue "health-care-insight-document", :controller => 'issuu_uploads', :action => 'show'
+  map.nucleus "nucleus", :controller => "health_care", :action => "nucleus"
   map.press_kit "healthcare-insight-press-kit", :controller => "health_care", :action => "press_kit"
   map.contact "contact-healthcare-insight", :controller => "contacts", :action => "contact_us"
   map.trial "healthcare-insight-free-trial", :controller => "free_trials", :action => "show"
   map.press "health-care-press", :controller => "announcements", :action => "index"
   map.media "health-care-resources", :controller => "resources", :action => "index"
   map.careers "healthcare-insight-careers", :controller => "health_care", :action => "careers"
+  map.partners "healthcare-insight-partners-and-accredidations", :controller => "health_care", :action => "partners"
   map.social "healthcare-insight-social-media-links", :controller => "health_care", :action => "social_media"
   map.public_sector "public-sector-claims-payment-software-solutions", :controller => "health_care", :action => "public_sector"
   map.private_sector "private-sector-claims-payment-software-solutions", :controller => "health_care", :action => "private_sector"

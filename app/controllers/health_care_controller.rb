@@ -45,5 +45,12 @@ class HealthCareController < ApplicationController
   
   def press_kit
   end
+  
+  def partners
+  end
+  
+  def nucleus
+    
+  end
 
 end

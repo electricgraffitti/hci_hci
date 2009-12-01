@@ -338,7 +338,6 @@ label.error {
 #hd {
   position: relative;
   height: 90px;
-  background: url('../images/hd_smoke.png') right top no-repeat;
 }
 /*******Navigation********/
 #main_nav {
@@ -402,7 +401,7 @@ ul.nav_ul li span.hover {
 .nav4.highlight:hover, li.nav4 span.hover {
   background: url('../images/hci_silver_sprite.png') -300px -41px;
 }
-#main_nav ul li a#news.active {
+#main_nav ul li a#nucleus.active {
   background: url('../images/hci_silver_sprite.png') -300px 0px;
 }
 .nav5 {
@@ -638,20 +637,20 @@ div.visionclaim-insight_demo_button span.small_cta_button {
 #top_links ul li {
   position: relative;
   float: left;
-  border-left: 1px solid #fff;
+  border-left: 1px solid #222;
 }
 #top_links ul li.first {
   border: none;
 }
 #top_links ul li a {
-  color: #fff;
+  color: #000;
   display: block;
   padding: 0px 5px;
   text-decoration: none;
   font-size: 85%;
 }
 #top_links ul li a:hover {
-  color: #333;
+  color: #555;
 }
 #search_box_wrap {
   margin: 9px 18px 0px;
@@ -659,22 +658,42 @@ div.visionclaim-insight_demo_button span.small_cta_button {
 /********************************/
 /************Banners*************/
 #slider {
-  height: 290px;
+  height: 500px;
   position: relative;
 }
 #banner {
   background: #fff;
 }
 .scroll {
-  height: 290px;
+  margin: 0px 0px 0px 14px;
+  height: 483px;
   overflow: hidden;
   overflow-x: hidden;
   position: relative; /* fix for IE to respect overflow */
   clear: left;
 }
+.panel {
+  position: relative;
+  width: 926px;
+  height: 483px;
+}
+.nucleus_header {
+  width: 400px;
+  height: 94px;
+  text-indent: -3000em;
+}
+.meet_nucleus {
+  background: url('../images/banners/inner_banners/meet_nucleus.png') no-repeat;
+}
+.real_time_processing {
+  background: url('../images/banners/inner_banners/real_time_processing.png') no-repeat;
+}
+.nucleus_player {
+
+}
 .scrollContainer {
-  width: 960px;
-  height: 290px;
+  width: 940px;
+  height: 480px;
 }
 .banner_nav {
   position: relative;
@@ -724,6 +743,10 @@ img.banner_scroll.r {
   right: 0px;
 }
 /****Inner Banners****/
+#inner_banner_short {
+  height: 290px;
+  position: relative;
+}
 .inner_banners {
   position: relative;
 }
@@ -739,12 +762,15 @@ img.inner_banner {
   background: #fff;
   min-height: 290px;
 }
-.contact_banner, .contact_thank_you, .big_banner {
+.contact_banner, .contact_thank_you, .big_banner, .nucleus_banner {
   width: 940px;
   float: left;
   height: 500px;
   position: relative;
   background: url('../images/banners/inner_banners/contact_us_big.png') no-repeat;
+}
+.nucleus_banner {
+  background: url('../images/banners/inner_banners/nucleus_banner_bg.jpg') no-repeat;
 }
 .contact_thank_you {
   background: url('../images/banners/inner_banners/thank_you_big.jpg') no-repeat;
@@ -1747,12 +1773,20 @@ div.bene_even_row .benefit_avatar_wrap {
 .bene11 {
   background: url('../images/benefit_grid_images.jpg') 0px -1920px no-repeat;
 }
-p.benefits_sub_text {
+p.benefits_sub_text, p.partners_sub_text, p.industry_sub_text {
   position: relative;
   margin-top: 47px;
   left: 52px;
   font-weight: bold;
   font-size: 185%;
+}
+p.partners_sub_text {
+  margin-top: 64px;
+  left: 173px;
+}
+p.industry_sub_text {
+  left:124px;
+  margin-top:60px;
 }
 p.works {
   left: 42px;
@@ -1996,6 +2030,16 @@ p.sector_big_text {
   background: url('../images/headers/like_us.png') no-repeat;
   width: 490px;
 }
+.partners_header {
+  background: url('../images/headers/partners_header.png') no-repeat;
+  margin-left:27px;
+  width:535px;
+}
+.industry_standards {
+  background: url('../images/headers/industry_standards.png') no-repeat;
+  margin-left:27px;
+  width:535px;
+}
 .benefits_header_works {
   background: url('../images/headers/works.png') no-repeat;
   width: 500px;
@@ -2162,6 +2206,13 @@ p.sector_big_text {
 #home_player {
   width: 340px;
   height: 300px;
+}
+#nucleus_main_video {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 900px;
+  height: 483px;
 }
 /*********************************************/
 /******************FORMS**********************/

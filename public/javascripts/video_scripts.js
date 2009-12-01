@@ -1,8 +1,8 @@
 // This sets up the videos using FlowPlayer
 $(document).ready(function() {
-    flowplayer("home_player", "/swfs/flowplayer-3.1.1.swf", {
+    flowplayer("nucleus_main_video", "/swfs/flowplayer.commercial-3.1.5.swf", {
       clip: {
-        url: "/videos/test.f4v",
+        url: "/videos/meet_nucleus.f4v",
         autoPlay: false
         }
     });
