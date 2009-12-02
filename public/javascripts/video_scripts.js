@@ -5,7 +5,10 @@ $(document).ready(function() {
       clip: {
         url: "/videos/meet_nucleus.f4v",
         autoPlay: false
-        }
+      },
+      plugins:  { 
+        controls: null 
+      }
     });
 });
 

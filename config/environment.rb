@@ -22,7 +22,12 @@ Rails::Initializer.run do |config|
   # config.gem 'RedCloth', :version => ">= 4.1.1", :source => "http://code.whytheluckystiff.net"
     config.gem "authlogic"
   # config.gem "active_youtube"
-
+    config.gem(
+      'thinking-sphinx',
+      :lib     => 'thinking_sphinx',
+      :version => '1.3.8'
+    )
+    
   # Only load the plugins named here, in the order given (default is alphabetical).
   # :all can be used as a placeholder for all plugins not explicitly named
   # config.plugins = [ :exception_notification, :ssl_requirement, :all ]
