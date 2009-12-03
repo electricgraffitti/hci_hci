@@ -346,7 +346,6 @@ label.error {
   left: 0px;
   height: 40px;
   background: url('../images/nav_bg.png') repeat-x;
-  /*border-top: 1px solid #f8f8f8;*/
 }
 ul.nav_ul {
 
@@ -372,54 +371,54 @@ ul.nav_ul li span.hover {
   background: url('../images/hci_silver_sprite.png') 0px -80px;
 }
 .nav1.highlight:hover, li.nav1 span.hover {
-  background: url('../images/hci_silver_sprite.png') 0px -41px;
+  background: url('../images/hci_silver_sprite.png') 0px -40px;
 }
-#main_nav ul li a#services.active {
+#main_nav ul li a#home.active {
   background: url('../images/hci_silver_sprite.png') 0px 0px;
 }
 .nav2 {
   background: url('../images/hci_silver_sprite.png') -100px -80px;
 }
 .nav2.highlight:hover, li.nav2 span.hover {
-  background: url('../images/hci_silver_sprite.png') -100px -41px;
+  background: url('../images/hci_silver_sprite.png') -100px -40px;
 }
-#main_nav ul li a#benefits.active {
+#main_nav ul li a#services.active {
   background: url('../images/hci_silver_sprite.png') -100px 0px;
 }
 .nav3 {
   background: url('../images/hci_silver_sprite.png') -200px -80px;
 }
 .nav3.highlight:hover, li.nav3 span.hover {
-  background: url('../images/hci_silver_sprite.png') -200px -41px;
+  background: url('../images/hci_silver_sprite.png') -200px -40px;
 }
-#main_nav ul li a#resources.active {
+#main_nav ul li a#benefits.active {
   background: url('../images/hci_silver_sprite.png') -200px 0px;
 }
 .nav4 {
   background: url('../images/hci_silver_sprite.png') -300px -80px;
 }
 .nav4.highlight:hover, li.nav4 span.hover {
-  background: url('../images/hci_silver_sprite.png') -300px -41px;
+  background: url('../images/hci_silver_sprite.png') -300px -40px;
 }
-#main_nav ul li a#nucleus.active {
+#main_nav ul li a#markets.active {
   background: url('../images/hci_silver_sprite.png') -300px 0px;
 }
 .nav5 {
   background: url('../images/hci_silver_sprite.png') -400px -80px;
 }
 .nav5.highlight:hover, li.nav5 span.hover {
-  background: url('../images/hci_silver_sprite.png') -400px -41px;
+  background: url('../images/hci_silver_sprite.png') -400px -40px;
 }
-#main_nav ul li a#about_us.active {
+#main_nav ul li a#resources.active {
   background: url('../images/hci_silver_sprite.png') -400px 0px;
 }
 .nav6 {
   background: url('../images/hci_silver_sprite.png') -500px -80px;
 }
 .nav6.highlight:hover, li.nav6 span.hover {
-  background: url('../images/hci_silver_sprite.png') -500px -41px;
+  background: url('../images/hci_silver_sprite.png') -500px -40px;
 }
-#main_nav ul li a#contact.active {
+#main_nav ul li a#nucleus.active {
   background: url('../images/hci_silver_sprite.png') -500px 0px;
 }
 .nav7 {
@@ -430,6 +429,24 @@ ul.nav_ul li span.hover {
 }
 #main_nav ul li a#free_trial.active {
   background: url('../images/hci_silver_sprite.png') -600px 0px;
+}
+.nav8 {
+  background: url('../images/hci_silver_sprite.png') -700px -80px;
+}
+.nav8.highlight:hover, li.nav8 span.hover {
+  background: url('../images/hci_silver_sprite.png') -700px -40px;
+}
+#main_nav ul li a#about_us.active {
+  background: url('../images/hci_silver_sprite.png') -700px 0px;
+}
+.nav9 {
+  background: url('../images/hci_silver_sprite.png') -800px -80px;
+}
+.nav9.highlight:hover, li.nav9 span.hover {
+  background: url('../images/hci_silver_sprite.png') -800px -40px;
+}
+#main_nav ul li a#contact.active {
+  background: url('../images/hci_silver_sprite.png') -800px 0px;
 }
 ul#main_nav_ul li a {
   color: #ababab;
@@ -621,7 +638,7 @@ div.visionclaim-insight_demo_button span.small_cta_button {
 /** top Link nav **/
 #top_link_wrap {
   height: 57px;
-  width: 250px;
+  width: 325px;
   float: right;
   position: relative;
 }
@@ -633,6 +650,7 @@ div.visionclaim-insight_demo_button span.small_cta_button {
 #top_links ul {
   position: relative;
   float: left;
+  height: 15px;
 }
 #top_links ul li {
   position: relative;
@@ -653,7 +671,7 @@ div.visionclaim-insight_demo_button span.small_cta_button {
   color: #555;
 }
 #search_box_wrap {
-  margin: 9px 18px 0px;
+  margin: -5px 5px
 }
 /********************************/
 /************Banners*************/
@@ -700,7 +718,7 @@ div.visionclaim-insight_demo_button span.small_cta_button {
   /*background: #000;*/
   width: 100%;
   height: 25px;
-  bottom: 25px;
+  bottom: 5px;
   text-align: center;
 }
 .banner_nav .banner_nav_wrap{
@@ -2408,23 +2426,23 @@ input#ticket_date_select {
   height: 40px;
 }
 div.newsletter_signup {
-  position: relative;
-  left: 450px;
+  float:right;
+  margin-right:20px;
+  position:relative;
 }
 div.newsletter_form {
   color: #fff;
   margin-top: -5px;
 }
 div.newsletter_form input[type='submit'] {
-  margin-top: 17px;
+  margin-top: 12px;
   margin-left: 10px;
 }
 ul#social_links {
   position: relative;
-  float: right;
+  float: left;
   height: 30px;
   margin-top: 10px;
-  right: 10px;
 }
 ul#social_links li, ul#social_links li.top_nav_wide {
   display: block;
@@ -2490,4 +2508,14 @@ ul.login a {
   text-indent: -3000em;
   width: 30px;
   height: 30px;
+}
+#verisk_footer {
+  position: relative;
+  height: 50px;
+  background: #dddddd;
+}
+#verisk_footer img#verisk_logo {
+  position: relative;
+  float: right;
+  margin: 16px;
 }

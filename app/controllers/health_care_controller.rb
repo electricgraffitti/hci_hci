@@ -52,5 +52,9 @@ class HealthCareController < ApplicationController
   def nucleus
     
   end
+  
+  def privacy_policy
+    
+  end
 
 end

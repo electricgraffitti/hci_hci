@@ -65,7 +65,7 @@ ul#top_links, ul.login  {
 }
 .scroll {
   width: 940px;
-  height: 290px;
+  height: 483px;
   overflow: hidden;
   overflow-x: hidden;
   position: relative; /* fix for IE to respect overflow */
@@ -75,7 +75,7 @@ ul#top_links, ul.login  {
   position: relative;
   overflow: hidden;
   width: 940px;
-  height: 290px;
+  height: 483px;
 }
 img.banner_scroll.r, img.banner_scroll.l {
   visibility: hidden;

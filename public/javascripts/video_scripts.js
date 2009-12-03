@@ -1,7 +1,7 @@
 // This sets up the videos using FlowPlayer
 $(document).ready(function() {
     flowplayer("nucleus_main_video", "/swfs/flowplayer.commercial-3.1.5.swf", {
-      key: '$45a5242c3cfddf0c3cb',
+      key: '#$45a5242c3cfddf0c3cb',
       clip: {
         url: "/videos/meet_nucleus.f4v",
         autoPlay: false
