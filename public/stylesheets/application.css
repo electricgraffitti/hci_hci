@@ -1728,6 +1728,9 @@ div.right div.milestone_inner_wrap {
 .partner_grid_box {
   height: 160px;
 }
+.accredidation_grid_box {
+  height: 175px;
+}
 div.last_bene_row {
   margin-bottom: 0px;
 }
@@ -1745,6 +1748,9 @@ div.right_side_box {
   width: 390px;
   margin-top: 33px;
 }
+.accredidation_content_wrap {
+  margin-top: 16px;
+}
 .partner_grid_box img {
   float: left;
   width: 180px;
@@ -1757,6 +1763,9 @@ div.partner_grid_box img.even_row {
   float: right;
   margin-right: 0px;
   margin-left: 20px;
+}
+.accredidation_grid_box img {
+  margin-top: 27px;
 }
 div.bene_odd_row .benefit_content_wrap {
   float: left;
@@ -1846,6 +1855,9 @@ p.works {
   text-align: center;
   border-left: 1px solid #cdcdcd;
   border-right: 1px solid #efefef;
+}
+.accredidation_sub_box {
+  min-height: 140px;
 }
 .benefit_work_box.first {
   border-left: 1px solid #efefef;
@@ -2091,6 +2103,16 @@ p.sector_big_text {
   background: url('../images/headers/industry_standards.png') no-repeat;
   margin-left:27px;
   width:535px;
+}
+.memberships_header {
+  background: url('../images/headers/memberships.png') no-repeat;
+  margin-left:27px;
+  width:800px;
+}
+.accredidations_header {
+  background: url('../images/headers/accredidations_header.png') no-repeat;
+  margin-left:27px;
+  width:800px;
 }
 .service_partners {
   background: url('../images/headers/service_tech_partners.png') no-repeat;

@@ -1,0 +1,52 @@
+<% meta_keywords("healthcare insight accredidations, fraud fighting organizations")%>
+<% meta_description("HCI provides public sector claims payors (Medicaid, Medicare Advantage, SCHIP, etc.) with a comprehensive suite of clinically validated fraud and abuse surveillance services designed to maximize claims administration accuracy and minimize payment waste.") %>
+<% page_title("HealthCare Insight Accredidations") %>
+
+<% content_for :banner do %>
+  <%= render :partial => "health_care/accredidations_banner" %>
+<% end %>
+<div class="benefits_content grid_12 alpha omega">
+  <h2 class="page_header memberships_header full_wrap">Memberships & Associations</h2>
+  <%= render :partial => "health_care/accredidations_grid" %>
+</div>
+<div class="benefits_content grid_12 alpha omega">
+  <h2 class="page_header accredidations_header">Accredidations & Certifications</h2>
+  <div class="benefit_works_section">
+    <div class="benefit_work_box first">
+      <%= link_to(image_tag("partner_logos/urac1.png", :alt => "URAC Certification"), "http://www.urac.org") %>
+      <div class="accredidation_sub_box">
+      <p>
+        URAC standards ensure that only appropriately trained, qualified clinical personnel conduct and oversee the utilization review process, that a reasonable and timely appeals process is in place, and that medical decisions are based on valid clinical criteria.
+      </p>
+      <%= link_to "www.urac.org", "http://www.urac.org" %>
+      </div>
+    </div>
+    <div class="benefit_work_box">
+      <%= link_to(image_tag("partner_logos/urac2.png", :alt => "URAC Certification"), "http://www.urac.org") %>
+      <div class="accredidation_sub_box">
+      <p>
+        URAC’s HIPAA Privacy and HIPAA Security accreditation programs outline a framework of best practices that describe the operational policies and procedures necessary for an effective compliance program.
+      </p>
+      <%= link_to "www.urac.org", "http://www.urac.org" %>
+      </div>
+    </div>
+    <div class="benefit_work_box">
+      <%= link_to(image_tag("partner_logos/sas.png", :alt => "SAS 70 Certified"), "http://www.aicpa.org") %>
+      <div class="accredidation_sub_box">
+      <p>
+        SAS 70 is an internationally recognized auditing standard developed by the American Institute of Certified Public Accountants (AICPA). SAS 70 is an acronym for 'Statement of Auditing Standards.'
+      </p>
+      <%= link_to "www.aicpa.org", "http://www.aicpa.org" %>
+      </div>
+    </div>
+    <div class="benefit_work_box">
+      <%= link_to(image_tag("partner_logos/hippa.png", :alt => "HIPAA Certified"), "http://www.hhs.org") %>
+      <div class="accredidation_sub_box">
+        <p>
+        HIPAA protects the privacy of individually identifiable health information, and the confidentiality provisions of the Patient Safety Rule, which protect identifiable information being used to analyze patient safety events and improve patient safety.
+      </p>
+      <%= link_to "www.hhs.gov", "http://www.hhs.org" %>
+      </div>
+    </div>
+  </div>
+</div>
