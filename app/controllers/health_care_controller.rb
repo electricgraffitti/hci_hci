@@ -56,5 +56,9 @@ class HealthCareController < ApplicationController
   def privacy_policy
     
   end
+  
+  def markets
+    
+  end
 
 end

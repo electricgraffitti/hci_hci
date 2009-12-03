@@ -36,6 +36,7 @@ ActionController::Routing::Routes.draw do |map|
   map.issuu_upload "upload-issuu", :controller => "issuu_uploads", :action => "index"
   map.issue "health-care-insight-document", :controller => 'issuu_uploads', :action => 'show'
   map.nucleus "nucleus", :controller => "health_care", :action => "nucleus"
+  map.markets "markets", :controller => "health_care", :action => "markets"
   map.press_kit "healthcare-insight-press-kit", :controller => "health_care", :action => "press_kit"
   map.contact "contact-healthcare-insight", :controller => "contacts", :action => "contact_us"
   map.trial "healthcare-insight-free-trial", :controller => "free_trials", :action => "show"
