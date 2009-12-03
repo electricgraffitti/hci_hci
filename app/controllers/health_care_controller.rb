@@ -47,6 +47,11 @@ class HealthCareController < ApplicationController
   end
   
   def partners
+    
+  end
+  
+  def accredidations
+    
   end
   
   def nucleus

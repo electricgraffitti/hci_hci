@@ -1718,12 +1718,15 @@ div.right div.milestone_inner_wrap {
   margin: 0px auto;
   background: #cdcdcd
 }
-.benefit_grid_box {
+.benefit_grid_box, .partner_grid_box {
   width: 439px;
   float: left;
   height: 180px;
   margin: 0px 1px 1px 0px;
   background: #fff;
+}
+.partner_grid_box {
+  height: 160px;
 }
 div.last_bene_row {
   margin-bottom: 0px;
@@ -1732,11 +1735,28 @@ div.right_side_box {
   width: 440px;
   margin-right: 0px;
 }
-.benefit_content_wrap {
+.benefit_content_wrap, .partner_content_wrap {
   width: 280px;
   margin-top: 50px;
   padding-left: 30px;
   text-align: left;
+}
+.partner_content_wrap {
+  width: 390px;
+  margin-top: 33px;
+}
+.partner_grid_box img {
+  float: left;
+  width: 180px;
+  height: 120px;
+  margin-top: 13px;
+  margin-right: 20px;
+  margin-left: 10px;
+}
+div.partner_grid_box img.even_row {
+  float: right;
+  margin-right: 0px;
+  margin-left: 20px;
 }
 div.bene_odd_row .benefit_content_wrap {
   float: left;
@@ -1981,10 +2001,22 @@ p.works {
   width: 700px;
 }
 /*********Sector Pages***********/
-.sector_grids {
+.sector_grids, .partner_grids {
   width: 410px;
   float: right;
   border: 1px solid #cdcdcd;
+}
+.partner_grids {
+  width: 900px;
+  float:left;
+  width:900px;
+}
+.partner_grid {
+  float:left;
+  margin-left:10px;
+  padding:10px 10px 0;
+  position:relative;
+  width:195px;
 }
 .sector_grid {
   float:left;
@@ -1992,7 +2024,7 @@ p.works {
   position:relative;
   width:185px;
 }
-.sector_grid img {
+.sector_grid img, .partner_grid img {
   width: 170px;
   height: 50px;
   float: left;
@@ -2000,7 +2032,10 @@ p.works {
   border: 1px solid #cdcdcd;
   padding: 5px;
 }
-.sector_grid p {
+.partner_grid img {
+  background: #ffffff;
+}
+.sector_grid p, .partner_grid p {
   float:left;
   font-size:85%;
   margin-top:0;
@@ -2057,6 +2092,11 @@ p.sector_big_text {
   background: url('../images/headers/industry_standards.png') no-repeat;
   margin-left:27px;
   width:535px;
+}
+.service_partners {
+  background: url('../images/headers/service_tech_partners.png') no-repeat;
+  margin-left:27px;
+  width:800px;
 }
 .benefits_header_works {
   background: url('../images/headers/works.png') no-repeat;
