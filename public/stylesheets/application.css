@@ -2007,13 +2007,12 @@ p.works {
   border: 1px solid #cdcdcd;
 }
 .partner_grids {
-  width: 900px;
+  width: 917px;
   float:left;
-  width:900px;
 }
 .partner_grid {
   float:left;
-  margin-left:10px;
+  margin-left:14px;
   padding:10px 10px 0;
   position:relative;
   width:195px;
