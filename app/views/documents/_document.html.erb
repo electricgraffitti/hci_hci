@@ -1,15 +1,23 @@
-<div class='show_wrap grid_12'>
+<div class="nucleus_banner">
   <% if document.issuu_url? %>
   <div id="issuu_frame">
    <iframe src="<%= document.issuu_url %>"></iframe>
   </div>
   <% end %>
-  <div class='grid_10 omega'>
-    <h3><%= document.title %></h3>
-    <p><%= document.description %></p>
-    <p><% document.assets.each do |asset| %>
-      <%= link_to("Download #{document.title}", ('/attachments/' + document.id.to_s + '/original_' + asset.attachment_file_name)) %>
-      <% end %>
-    </p>
+</div>
+<div class="grid_12 alpha omega">
+  <div class="resource_section full_wrap">
+    <h3 class="orange">Brochures & Catalogs</h3>
+    <% documents.each do |doc| %>
+      <div class="resource_brochure">
+        <% doc.coverflows.each do |coverflow| %>
+          <%= link_to image_tag(coverflow.cover.url(:brochure), :alt => doc.title), document_path(doc) %>
+        <% end %>
+        <h4><%= link_to "#{doc.title}", document_path(doc)  %></h4>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        </p>
+      </div>
+    <% end %>
   </div>
 </div>

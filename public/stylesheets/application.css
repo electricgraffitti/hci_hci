@@ -1857,7 +1857,7 @@ p.works {
   border-right: 1px solid #efefef;
 }
 .accredidation_sub_box {
-  min-height: 140px;
+  min-height: 14e0px;
 }
 .benefit_work_box.first {
   border-left: 1px solid #efefef;
@@ -2277,8 +2277,9 @@ p.sector_big_text {
 /*********************************************/
 /******************ISSUU*********************/
 #issuu_frame, #issuu_frame iframe {
-  width: 936px;
-  height: 500px;
+  height:480px;
+  margin-left:7px;
+  width:922px;
 }
 /*********************************************/
 /******************VIDEOS*********************/
