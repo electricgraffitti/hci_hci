@@ -45,6 +45,7 @@ ActionController::Routing::Routes.draw do |map|
   map.careers "healthcare-insight-careers", :controller => "health_care", :action => "careers"
   map.partners "healthcare-insight-partners", :controller => "health_care", :action => "partners"
   map.accredidations "healthcare-insight-accredidations", :controller => "health_care", :action => "accredidations"
+  map.privacy "healthcare-insight-privacy-policy-and-disclaimers", :controller => "health_care", :action => "privacy_policy"
   map.social "healthcare-insight-social-media-links", :controller => "health_care", :action => "social_media"
   map.public_sector "public-sector-claims-payment-software-solutions", :controller => "health_care", :action => "public_sector"
   map.private_sector "private-sector-claims-payment-software-solutions", :controller => "health_care", :action => "private_sector"

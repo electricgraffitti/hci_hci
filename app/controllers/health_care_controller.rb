@@ -59,7 +59,7 @@ class HealthCareController < ApplicationController
   end
   
   def privacy_policy
-    
+    @articles = Article.all
   end
   
   def markets
