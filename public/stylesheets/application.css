@@ -363,6 +363,7 @@ ul.nav_ul li.last {
 }
 ul.nav_ul li span.hover {
   position: relative;
+  bottom: 0px;
   width: 100px;
   height: 40px;
   display: block;
@@ -449,12 +450,14 @@ ul.nav_ul li span.hover {
   background: url('../images/hci_silver_sprite.png') -800px 0px;
 }
 ul#main_nav_ul li a {
-  color: #ababab;
-  text-decoration: none;
-  display: block;
-  text-indent: -3000em;
-  width: 100%;
-  height: 100%;
+  color:#ABABAB;
+  display:block;
+  height:40px;
+  padding:0;
+  text-decoration:none;
+  text-indent:-3000em;
+  width:100px;
+  position: relative;
 }
 ul#main_nav_ul li a.black {
   color: #000;

@@ -1,13 +1,22 @@
 // This sets up the videos using FlowPlayer
+
+// Nucleus Banner1 Video
+
 $(document).ready(function() {
-    flowplayer("nucleus_main_video", {
+    flowplayer("nucleus_main_video", 
+    // Flash Configs
+    {
       src: "/swfs/flowplayer.commercial-3.1.5.swf",
-      wmode: "transparent"
-    }, {
+      wmode: "transparent",
+      bgcolor: "none"
+    }, 
+    //  Player Configs
+    {
       key: '#$45a5242c3cfddf0c3cb',
       clip: {
         url: "/videos/meet_nucleus.f4v",
-        autoPlay: true
+        autoPlay: true,
+        backgroundColor: 'transparent'
       },
       plugins:  { 
         controls: null 
@@ -15,35 +24,29 @@ $(document).ready(function() {
     });
 });
 
+// Nucleus Banner2 Video
+
 $(document).ready(function() {
-    flowplayer("nucleus_video_real_time", {
+    flowplayer("nucleus_video_real_time", 
+    // Flash Configs
+    {
        src: "/swfs/flowplayer.commercial-3.1.5.swf",
-       wmode: "transparent"
-    }, {
+       wmode: "transparent",
+       bgcolor: "#ffffff"
+    }, 
+    // Player Configs
+    {
       key: '#$45a5242c3cfddf0c3cb',
       canvas: {
         background: '#ff0000'
       },
       clip: {
-        url: "/videos/test_from_outsource.flv",
-        autoPlay: true
+        url: "/videos/test_from_outsource2.flv",
+        autoPlay: true,
+        backgroundColor: 'transparent'
       },
       plugins:  { 
         controls: null 
       }
     });
 });
-
-// $f("player1", "flowplayer.swf", { 
-//     clip: { 
-//         url: 'KimAronson-TwentySeconds59483.flv', 
-//         autoPlay: true, 
-//         autoBuffering: true 
-//     }, 
-//     plugins: { 
-//         controls: null 
-//     }, 
-//     onLoad: function(){ 
-//         alert("player loaded"); 
-//     } 
-// });
