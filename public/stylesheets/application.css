@@ -2294,6 +2294,13 @@ p.sector_big_text {
   width: 927px;
   height: 483px;
 }
+#nucleus_video_real_time {
+  height:208px;
+  position:absolute;
+  right:32px;
+  top:90px;
+  width:352px;
+}
 /*********************************************/
 /******************FORMS**********************/
 .form_section {

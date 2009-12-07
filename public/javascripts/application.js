@@ -164,7 +164,7 @@ function notify(flash_message) {
 
 $(document).ready(function() {
 	$("#flash").hide();
-	var flash_message = $("#flash").html().trim();
+	var flash_message = $.trim($("#flash").html());
  	if(flash_message != "") {
 		notify(flash_message);
 	}
