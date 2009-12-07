@@ -13,10 +13,15 @@ $(document).ready(function() {
     //  Player Configs
     {
       key: '#$45a5242c3cfddf0c3cb',
+      play: {opacity: 0},
       clip: {
         url: "/videos/meet_nucleus.f4v",
         autoPlay: true,
         backgroundColor: 'transparent'
+      },
+      play: { 
+          label: null, 
+          replayLabel: "Get Nucleus" 
       },
       plugins:  { 
         controls: null 
@@ -32,21 +37,27 @@ $(document).ready(function() {
     {
        src: "/swfs/flowplayer.commercial-3.1.5.swf",
        wmode: "transparent",
-       bgcolor: "#ffffff"
+       bgcolor: "none"
     }, 
     // Player Configs
     {
       key: '#$45a5242c3cfddf0c3cb',
+      play: {opacity: 0},
       canvas: {
-        background: '#ff0000'
+        backgroundColor: 'transparent'
       },
       clip: {
         url: "/videos/test_from_outsource2.flv",
         autoPlay: true,
-        backgroundColor: 'transparent'
+        backgroundColor: 'transparent',
+        backgroundGradient: 'none'
       },
       plugins:  { 
-        controls: null 
+        controls: {
+          backgroundGradient: 'none', 
+          backgroundColor: 'transparent', 
+          all:false
+        }
       }
     });
 });
