@@ -272,7 +272,7 @@ a:active {
   text-align: center;
   color: #fff;
   left: 38%;
-  padding: 20px;
+  padding: 2px;
   top: 5px;
   width: 385px;
   background: #06660b;
@@ -351,7 +351,7 @@ ul.nav_ul {
 
 }
 ul.nav_ul li {
-  width: 100px;
+  width:100px;
   height: 40px;
   float: left;
   text-align: center;
