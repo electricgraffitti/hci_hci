@@ -53,11 +53,7 @@ $(document).ready(function() {
         backgroundGradient: 'none'
       },
       plugins:  { 
-        controls: {
-          backgroundGradient: 'none', 
-          backgroundColor: 'transparent', 
-          all:false
-        }
+        controls: null
       }
     });
 });
@@ -86,11 +82,7 @@ $(document).ready(function() {
         backgroundGradient: 'none'
       },
       plugins:  { 
-        controls: {
-          backgroundGradient: 'none', 
-          backgroundColor: 'transparent', 
-          all:false
-        }
+        controls: null
       }
     });
 });
