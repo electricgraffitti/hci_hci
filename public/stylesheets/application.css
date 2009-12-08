@@ -2297,7 +2297,7 @@ p.sector_big_text {
   width: 927px;
   height: 483px;
 }
-#nucleus_video_real_time {
+#nucleus_video_real_time, #nucleus_video_next_gen {
   height:208px;
   position:absolute;
   right:32px;

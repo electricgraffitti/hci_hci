@@ -61,3 +61,36 @@ $(document).ready(function() {
       }
     });
 });
+
+// Nucleus Banner3 Video
+
+$(document).ready(function() {
+    flowplayer("nucleus_video_next_gen", 
+    // Flash Configs
+    {
+       src: "/swfs/flowplayer.commercial-3.1.5.swf",
+       wmode: "transparent",
+       bgcolor: "none"
+    }, 
+    // Player Configs
+    {
+      key: '#$45a5242c3cfddf0c3cb',
+      play: {opacity: 0},
+      canvas: {
+        backgroundColor: 'transparent'
+      },
+      clip: {
+        url: "/videos/test_from_outsource3.f4v",
+        autoPlay: true,
+        backgroundColor: 'transparent',
+        backgroundGradient: 'none'
+      },
+      plugins:  { 
+        controls: {
+          backgroundGradient: 'none', 
+          backgroundColor: 'transparent', 
+          all:false
+        }
+      }
+    });
+});
