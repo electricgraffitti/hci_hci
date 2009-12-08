@@ -2568,12 +2568,12 @@ ul#social_links li a.white {
   right: 25px;
 }
 ul.login {
-  position: absolute;
-  bottom: 0px;
-  right: 0px;
-  width: 30px;
-  height: 30px;
-  background: url('../images/login_keyhole.png');
+  background:transparent url(../images/login_keyhole.png) no-repeat scroll 0 0;
+  bottom:-7px;
+  height:30px;
+  position:absolute;
+  right:-5px;
+  width:30px;
 }
 ul.login a {
   display: block;
