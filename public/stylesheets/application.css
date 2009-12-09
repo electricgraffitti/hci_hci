@@ -2225,6 +2225,66 @@ p.sector_big_text {
   text-align: left;
   background: #fff;
 }
+.apple_sub_boxes {
+  position: relative;
+  float: left;
+  width: 916px;
+  padding: 0px 12px;
+  height: 127px;
+  margin: 0px 0px 20px;
+}
+.apple_sub_box {
+  position: relative;
+  width: 280px;
+  height: 116px;
+  float: left;
+  border: 1px solid #d1d1d1;
+  margin: 0px 11px;
+  padding: 12px 0px 0px;
+  background: url('../images/apple_index_box_bg.png') repeat-x;
+}
+.apple_box_headers {
+  margin-top: 0px;
+  margin-left: 12px;
+  float: left;
+  width: 216px;
+  height: 40px;
+  text-indent: -3000em;
+}
+h4.apple_box_headers.news {
+  background: url('../images/apple_box_headers.png') 0px 0px;
+}
+h4.apple_box_headers.nucleus {
+  background: url('../images/apple_box_headers.png') 0px -40px;
+}
+h4.apple_box_headers.partners {
+  background: url('../images/apple_box_headers.png') 0px -80px;
+}
+.apple_icons {
+  margin-top: -4px;
+  margin-right: 12px;
+  float:left;
+  width: 40px;
+  height: 40px;
+}
+.apple_icons.rss {
+  background: url('../images/apple_box_icons.png') 0px 0px;
+}
+.apple_icons.rss:hover {
+  background: url('../images/apple_box_icons.png') 0px -40px;
+}
+.apple_icons.nucleus {
+  background: url('../images/apple_box_icons.png') -40px 0px;
+}
+.apple_icons.nucleus:hover {
+  background: url('../images/apple_box_icons.png') -40px -40px;
+}
+.apple_icons.partners {
+  background: url('../images/apple_box_icons.png') -80px 0px;
+}
+.apple_icons.partners:hover {
+  background: url('../images/apple_box_icons.png') -80px -40px;
+}
 .sub_box3, .middle{
   width: 300px;
   margin: 10px;
