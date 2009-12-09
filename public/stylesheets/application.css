@@ -1142,6 +1142,10 @@ a.visionclaim-insight_index_wrap {
 .service_mid_section {
   height: 300px;
 }
+.service_bg {
+  background: transparent url('../images/service_mid_bg2.jpg') left top no-repeat;
+}
+/* These are the old bgs with smoke */
 .physicianclaim-insight_service_bg {
   background: transparent url('../images/service_mid_bg.jpg') left -1565px no-repeat;
 }
