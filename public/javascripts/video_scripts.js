@@ -44,13 +44,13 @@ $(document).ready(function() {
       key: '#$45a5242c3cfddf0c3cb',
       play: {opacity: 0},
       canvas: {
-        backgroundColor: 'transparent'
+        backgroundColor: 'transparent',
+        backgroundGradient: 'none'
       },
       clip: {
         url: "/videos/test_from_outsource2.flv",
         autoPlay: true,
-        backgroundColor: 'transparent',
-        backgroundGradient: 'none'
+        backgroundColor: 'transparent'
       },
       plugins:  { 
         controls: null
@@ -73,13 +73,13 @@ $(document).ready(function() {
       key: '#$45a5242c3cfddf0c3cb',
       play: {opacity: 0},
       canvas: {
-        backgroundColor: 'transparent'
-      },
-      clip: {
-        url: "/videos/test_from_outsource3.f4v",
-        autoPlay: true,
         backgroundColor: 'transparent',
         backgroundGradient: 'none'
+      },
+      clip: {
+        url: "/videos/test_from_outsource4.flv",
+        autoPlay: true,
+        backgroundColor: 'transparent'
       },
       plugins:  { 
         controls: null

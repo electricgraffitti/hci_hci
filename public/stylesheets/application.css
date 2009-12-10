@@ -1042,6 +1042,10 @@ ul.index_sector_links li h2 {
   font-size:125%;
   margin: 0 auto;
 }
+.market_box p {
+  font-size: 100%;
+  width: 220px;
+}
 .index_service_wrap a {
   font-size: 85%;
 }
@@ -2365,7 +2369,7 @@ h4.apple_box_headers.partners {
   height:288px;
   position:absolute;
   right:32px;
-  top:90px;
+  top: 360px;
   width:512px;
 }
 /*********************************************/
