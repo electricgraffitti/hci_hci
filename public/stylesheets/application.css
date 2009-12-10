@@ -348,10 +348,10 @@ label.error {
   background: url('../images/nav_bg.png') repeat-x;
 }
 ul.nav_ul {
-
+ margin-left:1px;
 }
 ul.nav_ul li {
-  width:100px;
+  width:103px;
   height: 40px;
   float: left;
   text-align: center;
@@ -362,9 +362,10 @@ ul.nav_ul li.last {
   border-right: 1px solid #444444;
 }
 ul.nav_ul li span.hover {
-  position: relative;
-  bottom: 0px;
-  width: 100px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 103px;
   height: 40px;
   display: block;
 }
@@ -378,76 +379,76 @@ ul.nav_ul li span.hover {
   background: url('../images/hci_silver_sprite.png') 0px 0px;
 }
 .nav2 {
-  background: url('../images/hci_silver_sprite.png') -100px -80px;
+  background: url('../images/hci_silver_sprite.png') -104px -80px;
 }
 .nav2.highlight:hover, li.nav2 span.hover {
-  background: url('../images/hci_silver_sprite.png') -100px -40px;
+  background: url('../images/hci_silver_sprite.png') -104px -40px;
 }
 #main_nav ul li a#services.active {
-  background: url('../images/hci_silver_sprite.png') -100px 0px;
+  background: url('../images/hci_silver_sprite.png') -104px 0px;
 }
 .nav3 {
-  background: url('../images/hci_silver_sprite.png') -200px -80px;
+  background: url('../images/hci_silver_sprite.png') -208px -80px;
 }
 .nav3.highlight:hover, li.nav3 span.hover {
-  background: url('../images/hci_silver_sprite.png') -200px -40px;
+  background: url('../images/hci_silver_sprite.png') -208px -40px;
 }
 #main_nav ul li a#benefits.active {
-  background: url('../images/hci_silver_sprite.png') -200px 0px;
+  background: url('../images/hci_silver_sprite.png') -208px 0px;
 }
 .nav4 {
-  background: url('../images/hci_silver_sprite.png') -300px -80px;
+  background: url('../images/hci_silver_sprite.png') -312px -80px;
 }
 .nav4.highlight:hover, li.nav4 span.hover {
-  background: url('../images/hci_silver_sprite.png') -300px -40px;
+  background: url('../images/hci_silver_sprite.png') -312px -40px;
 }
 #main_nav ul li a#markets.active {
-  background: url('../images/hci_silver_sprite.png') -300px 0px;
+  background: url('../images/hci_silver_sprite.png') -312px 0px;
 }
 .nav5 {
-  background: url('../images/hci_silver_sprite.png') -400px -80px;
+  background: url('../images/hci_silver_sprite.png') -416px -80px;
 }
 .nav5.highlight:hover, li.nav5 span.hover {
-  background: url('../images/hci_silver_sprite.png') -400px -40px;
+  background: url('../images/hci_silver_sprite.png') -416px -40px;
 }
 #main_nav ul li a#resources.active {
-  background: url('../images/hci_silver_sprite.png') -400px 0px;
+  background: url('../images/hci_silver_sprite.png') -416px 0px;
 }
 .nav6 {
-  background: url('../images/hci_silver_sprite.png') -500px -80px;
+  background: url('../images/hci_silver_sprite.png') -520px -80px;
 }
 .nav6.highlight:hover, li.nav6 span.hover {
-  background: url('../images/hci_silver_sprite.png') -500px -40px;
+  background: url('../images/hci_silver_sprite.png') -520px -40px;
 }
 #main_nav ul li a#nucleus.active {
-  background: url('../images/hci_silver_sprite.png') -500px 0px;
+  background: url('../images/hci_silver_sprite.png') -520px 0px;
 }
 .nav7 {
-  background: url('../images/hci_silver_sprite.png') -600px -80px;
+  background: url('../images/hci_silver_sprite.png') -624px -80px;
 }
 .nav7.highlight:hover, li.nav7 span.hover {
-  background: url('../images/hci_silver_sprite.png') -600px -40px;
+  background: url('../images/hci_silver_sprite.png') -624px -40px;
 }
 #main_nav ul li a#free_trial.active {
-  background: url('../images/hci_silver_sprite.png') -600px 0px;
+  background: url('../images/hci_silver_sprite.png') -624px 0px;
 }
 .nav8 {
-  background: url('../images/hci_silver_sprite.png') -700px -80px;
+  background: url('../images/hci_silver_sprite.png') -728px -80px;
 }
 .nav8.highlight:hover, li.nav8 span.hover {
-  background: url('../images/hci_silver_sprite.png') -700px -40px;
+  background: url('../images/hci_silver_sprite.png') -728px -40px;
 }
 #main_nav ul li a#about_us.active {
-  background: url('../images/hci_silver_sprite.png') -700px 0px;
+  background: url('../images/hci_silver_sprite.png') -728px 0px;
 }
 .nav9 {
-  background: url('../images/hci_silver_sprite.png') -800px -80px;
+  background: url('../images/hci_silver_sprite.png') -832px -80px;
 }
 .nav9.highlight:hover, li.nav9 span.hover {
-  background: url('../images/hci_silver_sprite.png') -800px -40px;
+  background: url('../images/hci_silver_sprite.png') -832px -40px;
 }
 #main_nav ul li a#contact.active {
-  background: url('../images/hci_silver_sprite.png') -800px 0px;
+  background: url('../images/hci_silver_sprite.png') -832px 0px;
 }
 ul#main_nav_ul li a {
   color:#ABABAB;
@@ -456,7 +457,7 @@ ul#main_nav_ul li a {
   padding:0;
   text-decoration:none;
   text-indent:-3000em;
-  width:100px;
+  width:103px;
   position: relative;
 }
 ul#main_nav_ul li a.black {
@@ -640,7 +641,7 @@ div.visionclaim-insight_demo_button span.small_cta_button {
 }
 /** top Link nav **/
 #top_link_wrap {
-  height: 57px;
+  height: 50px;
   width: 325px;
   float: right;
   position: relative;
