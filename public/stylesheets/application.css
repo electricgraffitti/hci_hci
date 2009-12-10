@@ -1044,8 +1044,8 @@ ul.index_sector_links li h2 {
   margin: 0 auto;
 }
 .market_box p {
-  font-size: 100%;
   width: 220px;
+  margin:0 auto 30px;
 }
 .index_service_wrap a {
   font-size: 85%;
@@ -1076,6 +1076,15 @@ a.pharmaclaim-insight_index_wrap {
 }
 a.visionclaim-insight_index_wrap {
  background: url('../images/service_page_sprite.png') 0px -550px no-repeat;
+}
+a.public_index_wrap {
+  background: url('../images/service_page_sprite.png') 0px -660px no-repeat;
+}
+a.private_index_wrap {
+  background: url('../images/service_page_sprite.png') 0px -770px no-repeat;
+}
+a.property_index_wrap {
+  background: url('../images/service_page_sprite.png') 0px -880px no-repeat;
 }
 .physicianclaim-insight_index_text {
   width: 230px;
@@ -1118,6 +1127,15 @@ a.visionclaim-insight_index_wrap {
 }
 .visionclaim-insight_service_header {
   background: url('../images/service_page_sprite.png') -100px -575px no-repeat;
+}
+.public_service_header {
+  background: url('../images/service_page_sprite.png') -100px -685px no-repeat;
+}
+.private_service_header {
+  background: url('../images/service_page_sprite.png') -100px -795px no-repeat;
+}
+.property_service_header {
+  background: url('../images/service_page_sprite.png') -100px -905px no-repeat;
 }
 .index_service_links_wrap {
   margin: 10px 0px 0px 21px;
