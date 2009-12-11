@@ -3,9 +3,17 @@
 body {
   font-size: 80%;
 }
-
+#wrapper {
+  width: 940px;
+}
 /*********************************************/
 /*******************HEADER********************/
+#hci_logo {
+  background: none;
+  width: 245px;
+  height: 45px;
+  filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src='../images/HCI_logo_silver2.png');
+}
 ul#top_links, ul.login  {
   position: relative;
   float: right;
@@ -75,7 +83,7 @@ ul#top_links, ul.login  {
   position: relative;
   overflow: hidden;
   width: 940px;
-  height: 483px;
+  height: 290px;
 }
 img.banner_scroll.r, img.banner_scroll.l {
   visibility: hidden;
