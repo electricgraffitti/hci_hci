@@ -6,10 +6,6 @@
   end %>
 <% page_title "#{@document.title} " %>
 
-<% content_for :banner do %>
-  <%= render :partial => "articles/banner" %>
-<% end %>
-
 <%# This is in the application helper %>
 <%= render :partial => 'documents/document', :locals => {:document => @document, :documents => @documents} %>
 

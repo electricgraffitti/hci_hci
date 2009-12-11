@@ -17,10 +17,13 @@
   </p>
   <p>
     <% for asset in @article.assets %>
-    <% fields_for "article[attachments][]", asset do |asset_form|%>
-    <%= asset_form.label "Add Attachment" %><br />
-    <%= asset_form.file_field :attachment, :size => 16 %>
-    <% end %>
+      <% fields_for "article[attachments][]", asset do |asset_form|%>
+      <%= asset_form.label "Add Attachment" %><br />
+      <%= asset_form.file_field :attachment, :size => 16, :index => nil %>
+        <% unless asset.new_record? %>
+          <%= asset_form.hidden_field :id, :index => nil %>
+        <% end %>
+      <% end %>
     <% end %>
   </p>
   <p>

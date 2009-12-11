@@ -1887,7 +1887,7 @@ p.works {
   border-right: 1px solid #efefef;
 }
 .accredidation_sub_box {
-  min-height: 14e0px;
+  min-height: 150px;
 }
 .benefit_work_box.first {
   border-left: 1px solid #efefef;
@@ -2010,10 +2010,10 @@ p.works {
   width: 50px;
   height: 50px;
   float: left;
-  margin-top: 10px;
-  margin-right: 5px;
+  margin-right:8px;
+  margin-top:7px;
   border: 1px solid #dedede;
-  padding: 5px;
+  padding: 2px;
 }
 .resource_article_wrapper {
   float: left;
@@ -2040,7 +2040,18 @@ p.works {
   margin-bottom: 5px;
 }
 .index_article_listing p {
-  width: 700px;
+  margin-top: 0px;
+  width: 620px;
+  float:left;
+}
+.index_article_listing a.index_article_image {
+  float: left; 
+  margin-right: 20px;
+}
+.index_article_listing h3 {
+  float:left;
+  margin-top:-3px;
+  width: 600px;
 }
 /*********Sector Pages***********/
 .sector_grids, .partner_grids {

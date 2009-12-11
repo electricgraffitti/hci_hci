@@ -1,9 +1,9 @@
 class HealthCareController < ApplicationController
   
   def index
-    @articles = Article.small_list(4)
-    @documents = Document.all
-    @services = Service.all
+    # @articles = Article.small_list(4)
+    # @documents = Document.all
+    # @services = Service.all
   end
   
   def about

@@ -1,14 +1,14 @@
 xml.instruct! :xml, :version => "1.0"
 xml.rss :version => "2.0" do 
   xml.channel do
-    xml.title "Stop Health Care Fraud"
-    xml.description "Find out about Health Care Fraud"
+    xml.title "HealthCare Insight"
+    xml.content "Current Health Care Fraud news feeds"
     xml.link articles_url(:rss)
     
     for article in @articles
       xml.item do
         xml.title article.title
-        xml.description article.content
+        xml.description article.description
         xml.link article_url(article.id)
       end
     end

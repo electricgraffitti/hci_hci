@@ -16,6 +16,7 @@
 class Article < ActiveRecord::Base
   
   belongs_to :article_type
+  after_update :save_assets
   
   has_many :assets, :as => :attachable, :dependent => :destroy
   has_many :coverflows, :as => :cflow, :class_name => "Coverflow"
@@ -46,9 +47,20 @@ class Article < ActiveRecord::Base
   end
   
   #pulls the assets from the form
-  def attachments=(attachments)
-    attachments.each do |attachment|
-      assets.build(attachment)
+  def attachments=(atts)
+    atts.each do |attachment|
+      if attachment[:id].blank?
+        assets.build(attachment)
+      else
+        asset = assets.detect { |a| a.id == attachment[:id].to_i }
+        asset.attributes = attachment
+      end
+    end
+  end
+  
+  def save_assets
+    assets.each do |a|
+      a.save(false)
     end
   end
   

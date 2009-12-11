@@ -1,7 +1,10 @@
 <% articles.each do |article| %>
     <div class='index_article_listing full_20_wrap'>
+      <% article.assets.each do |asset| %>
+        <%= link_to image_tag(asset.attachment.url(:thumb), :alt => article.title), article_path(article), :class => "index_article_image" %>
+      <% end %>
     <h3><%= article.title %></h3>
-    <p><%= truncate(article.description, :length => 350) %></p>
+    <%= truncate(article.description, :length => 350) %>
     <div class='widget_links grid_5 omega right'>
     <%= link_to('Read More', article_path(article)) %>
     <% if current_user %>
