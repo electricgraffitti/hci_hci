@@ -47,6 +47,7 @@ jQuery(document).ready(function() {
     }
   
   jQuery('#slider .navigation a').bind('mouseover, click', selectNav);
+  
   function selectNav() {
     jQuery(this).parents('ul:first').find('a').removeClass('selected').end().end().addClass('selected');
   }
@@ -69,6 +70,7 @@ jQuery(document).ready(function() {
   }
   
   jQuery('#slider').serialScroll(scrollOptions);
+  $.localScroll(scrollOptions);
   
 });
 

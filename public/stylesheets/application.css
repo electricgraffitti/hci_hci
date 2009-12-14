@@ -700,15 +700,27 @@ div.visionclaim-insight_demo_button span.small_cta_button {
   height: 290px;
 }
 .nucleus_header {
-  width: 400px;
-  height: 94px;
+  position: relative;
+  top: 25px;
+  left: 15px;
+  width: 309px;
+  height: 50px;
   text-indent: -3000em;
 }
 .meet_nucleus {
   background: url('../images/banners/inner_banners/meet_nucleus.png') no-repeat;
 }
-.real_time_processing {
-  background: url('../images/banners/inner_banners/real_time_processing.png') no-repeat;
+.real_time {
+  background: url('../images/banners/inner_banners/real_time.png') no-repeat;
+}
+.next_gen {
+  background: url('../images/banners/inner_banners/next_gen.png') no-repeat;
+}
+.ult_user {
+  background: url('../images/banners/inner_banners/ult_user.png') no-repeat;
+}
+.go_atomic {
+  background: url('../images/banners/inner_banners/go_atomic.png') no-repeat;
 }
 .nucleus_player {
 
