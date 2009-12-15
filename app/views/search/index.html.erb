@@ -24,11 +24,6 @@
 <%= render :partial => "events/index_event", :locals => {:events => @events} %>
 <% end %>
 
-<% unless @links.blank? %>
-<h3>Link Search Results</h3>
-<%= render :partial => "links/index_link", :locals => {:links => @links} %>
-<% end %>
-
 <div class="space_left">
   <%= link_to "Back", request.env["HTTP_REFERER"], :class => "btn"%>
 </div>

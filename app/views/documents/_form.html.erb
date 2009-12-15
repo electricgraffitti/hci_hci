@@ -37,8 +37,14 @@
     <%= f.check_box :brochure %>
     <%= f.label :brochure, "Is Brochure?" %>
   </p>
-  <%= f.label :brochure_order %><br />
-  <%= f.text_field :brochure_order %>
+  <p>
+    <%= f.label :brochure_order %><br />
+    <%= f.text_field :brochure_order %>
+  </p>
+  <p>
+    <%= f.label "Service for Brochure" %><br />
+    <%= collection_select(:document, :service_id, Service.all, :id, :title) %>
+  </p>
 </div>
 <div class="grid_5">
   <h3>Document SEO</h3>

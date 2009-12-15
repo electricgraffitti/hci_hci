@@ -2,7 +2,7 @@
   <div class="inner_benefit_grid">
     <div class="benefit_grid_box left_side_box bene_odd_row">
       <div class="<%= s.permalink %>_quote_brochure quote_brochure">
-        <%= link_to "Brochure", "", :alt => "Download #{s.title} Brochure", :title => "Download #{s.title} Brochure"  %>
+        <%= link_to "Brochure", document_path(s.document), :alt => "Download #{s.title} Brochure", :title => "Download #{s.title} Brochure"  %>
       </div>
       <div class="benefit_content_wrap">      
         <h3><%= s.acronym %> Service Brochure</h3>

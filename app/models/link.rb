@@ -23,10 +23,10 @@ class Link < ActiveRecord::Base
   validates_presence_of :title, :description, :link_url, :permalink
   
   # Thinking Sphinx Indexes
-  define_index do
-    indexes description
-    indexes title
-  end
+  # define_index do
+  #   indexes description
+  #   indexes title
+  # end
   
   # RedCloth (textilize)
   acts_as_textiled  :description

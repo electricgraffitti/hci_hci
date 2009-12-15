@@ -16,7 +16,7 @@
 class Document < ActiveRecord::Base
   
   belongs_to :document_type
-  #belongs_to :issuu
+  belongs_to :service
   
   has_many :assets, :as => :attachable
   has_many :coverflows, :as => :cflow, :class_name => "Coverflow"
