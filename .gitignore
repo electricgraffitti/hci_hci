@@ -9,6 +9,7 @@ public/covers/*
 public/case_studies/*
 public/brochures/*
 public/videos/*
+public/video_thumbs/*
 public/ticket_uploads/*
 config/development.sphinx.conf
 db/sphinx/*
