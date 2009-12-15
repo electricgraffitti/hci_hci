@@ -6,11 +6,15 @@
 #  title            :string(255)
 #  description      :text
 #  document_type_id :integer(4)
+#  issuu_url        :string(255)
 #  meta_description :text
 #  keywords         :string(255)
 #  permalink        :string(255)
 #  created_at       :datetime
 #  updated_at       :datetime
+#  brochure         :boolean(1)
+#  brochure_order   :integer(4)
+#  service_id       :integer(4)
 #
 
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html

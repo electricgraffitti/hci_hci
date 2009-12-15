@@ -4,6 +4,7 @@
 #
 #  id                  :integer(4)      not null, primary key
 #  title               :string(255)
+#  acronym             :string(255)
 #  description         :text
 #  permalink           :string(255)
 #  meta_description    :text
@@ -14,6 +15,9 @@
 #  avatar_content_type :string(255)
 #  avatar_file_size    :integer(4)
 #  avatar_updated_at   :datetime
+#  quote               :string(255)
+#  problem             :text
+#  solution            :text
 #
 
 class Service < ActiveRecord::Base

@@ -1,4 +1,30 @@
-<h1><%= @video.title %></h1>
-by <%= link_to @video.author.name, "http://youtube.com/#{@video.author.name}" %>
-<%= youtube_embed @video %>
+<div class="grid_12 alpha omega full_wrap">
+<p>
+  <b>Title:</b>
+  <%=h @video.title %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @video.description %>
+</p>
+
+<p>
+  <b>Video type:</b>
+  <%=h @video.video_type_id %>
+</p>
+
+<p>
+  <b>Third party:</b>
+  <%=h @video.third_party %>
+</p>
+
+<p>
+  <b>Third party url:</b>
+  <%=h @video.third_party_url %>
+</p>
+
+
+<%= link_to 'Edit', edit_video_path(@video) %> |
 <%= link_to 'Back', videos_path %>
+</div>

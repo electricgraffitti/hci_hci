@@ -1,6 +1,7 @@
   # The priority is based upon order of creation: first created -> highest priority.
 ActionController::Routing::Routes.draw do |map|
-
+  
+  map.resources :videos
   map.resources :free_trials
   map.resources :benefits
   map.resources :newsletter_subscriptions
@@ -22,7 +23,6 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :services, :has_many => :assets
   map.resources :users
   map.resources :user_sessions
-  map.resources :videos, :new => {:upload => :post}
   
   # Mail Route Paths
   map.contact_mailer 'contacts_mailer', :controller => "contacts", :action => "contacts_mailer"

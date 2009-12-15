@@ -1,8 +1,16 @@
-  <div class="service_wrap resource_section resource_video_section full_wrap">
-    <div class="resource_video_header">
-      <h3 class="orange">Videos</h3>
-    </div>
-    <div class="resource_video_wrapper">
-      <%= render :partial => 'video_player' %>
-   </div>
+<%= javascript_include_tag 'resource_player' %>
+<div class="service_wrap resource_section resource_video_section full_wrap">
+  <div class="resource_video_header">
+    <h3 class="orange">Videos</h3>
   </div>
+  <div class="resource_video_wrapper">
+    <div id="resource_video_player"></div>
+    <div id="playlist"> 
+      <% 4.times do %>
+      <% @videos.each do |video| %>
+        <%= link_to "<strong>#{video.title}</strong><br /><br />#{video.description}", video.video.url %>
+      <% end %>
+      <% end %>
+    </div>
+  </div>
+</div>

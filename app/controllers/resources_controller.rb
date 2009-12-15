@@ -5,6 +5,7 @@ class ResourcesController < ApplicationController
     @articles = Article.small_list(6)
     @documents = Document.brochures
     @press_releases = Article.type('press_release').small_list(5)
+    @videos = Video.all
   end
 
 end

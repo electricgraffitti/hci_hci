@@ -17,11 +17,18 @@
 #  permalink          :string(255)
 #
 
-require 'test_helper'
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
-class VideoTest < ActiveSupport::TestCase
-  # Replace this with your real tests.
-  test "the truth" do
-    assert true
-  end
-end
+one:
+  title: MyString
+  description: MyText
+  video_type_id: 1
+  third_party: false
+  third_party_url: MyString
+
+two:
+  title: MyString
+  description: MyText
+  video_type_id: 1
+  third_party: false
+  third_party_url: MyString

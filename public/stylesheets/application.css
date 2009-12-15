@@ -2006,7 +2006,7 @@ p.works {
 .resource_video_wrapper {
   margin: 0px auto;
   overflow: hidden;
-  height: 480px;
+  height: 300px;
 }
 .resource_video_wrapper embed {
   margin-top: -10px;
@@ -2413,6 +2413,26 @@ h4.apple_box_headers.partners {
   right:32px;
   top: 90px;
   width:512px;
+}
+#resource_video_player {
+  background: #fff;
+  position: relative;
+  width: 512px;
+  height: 288px;
+  float: left;
+}
+#playlist {
+  position: relative;
+  width: 300px;
+  height: 288px;
+  float: left;
+}
+#playlist a {
+  display: block;
+  width: 385px;
+  height: 72px;
+  margin: 0px 10px 1px;
+  background: #ffffff;
 }
 /*********************************************/
 /******************FORMS**********************/

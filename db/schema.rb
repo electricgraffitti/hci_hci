@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20091214175615) do
+ActiveRecord::Schema.define(:version => 20091215173628) do
 
   create_table "article_types", :force => true do |t|
     t.string   "article_type"
@@ -314,6 +314,27 @@ ActiveRecord::Schema.define(:version => 20091214175615) do
     t.string   "persistence_token"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "video_types", :force => true do |t|
+    t.string   "video_type"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "videos", :force => true do |t|
+    t.string   "title"
+    t.text     "description"
+    t.integer  "video_type_id"
+    t.boolean  "third_party"
+    t.string   "third_party_url"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "video_file_name"
+    t.string   "video_content_type"
+    t.integer  "video_file_size"
+    t.datetime "video_updated_at"
+    t.string   "permalink"
   end
 
 end

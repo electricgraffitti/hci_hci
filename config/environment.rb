@@ -21,6 +21,7 @@ Rails::Initializer.run do |config|
   # config.gem "aws-s3", :lib => "aws/s3"
   # config.gem 'RedCloth', :version => ">= 4.1.1", :source => "http://code.whytheluckystiff.net"
     config.gem "authlogic"
+    config.gem 'bullet', :source => 'http://gemcutter.org'
   # config.gem "active_youtube"
     # config.gem(
     #   'thinking-sphinx',

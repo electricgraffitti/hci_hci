@@ -1,26 +1,28 @@
+<div class="grid_12 alpha omega full_wrap"><h1>Listing videos</h1>
 
-<!-- 
-<div id="home_video" class="alpha omega">
-  <script type='text/javascript'>
-    var flashvars = {}
-    var params = {
-          menu: 'false',
-          allowfullscreen: 'true',
-          wmode: 'transparent',
-          bgcolor: 'transparent'
-    };
-    var attributes = {
-      id: 'video_home'
-    };
-    swfobject.embedSWF('<%#= @videos.entry[2].group.content[2].url %>', 'sub_video', '500', '400', '9.0.0', '@videos.entry[2].group.content[2].url', flashvars, params, attributes);
-  </script>
-  
-  <%# This is the section that gets swapped out by the Flash Object above, and displays if .js in not enabled%>
-  <p id="sub_video" class="article_image left">
-
-  </p>
-</div> -->
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Description</th>
+    <th>Video type</th>
+    <th>Third party</th>
+    <th>Third party url</th>
+  </tr>
 
 <% @videos.each do |video| %>
-  video.author.uri
+  <tr>
+    <td><%=h video.title %></td>
+    <td><%=h video.description %></td>
+    <td><%=h video.video_type_id %></td>
+    <td><%=h video.third_party %></td>
+    <td><%=h video.third_party_url %></td>
+    <td><%= link_to 'Show', video %></td>
+    <td><%= link_to 'Edit', edit_video_path(video) %></td>
+    <td><%= link_to 'Destroy', video, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
 <% end %>
+</table>
+
+<br />
+
+<%= link_to 'New video', new_video_path %></div>

@@ -6,11 +6,15 @@
 #  title            :string(255)
 #  description      :text
 #  document_type_id :integer(4)
+#  issuu_url        :string(255)
 #  meta_description :text
 #  keywords         :string(255)
 #  permalink        :string(255)
 #  created_at       :datetime
 #  updated_at       :datetime
+#  brochure         :boolean(1)
+#  brochure_order   :integer(4)
+#  service_id       :integer(4)
 #
 
 class Document < ActiveRecord::Base
@@ -38,7 +42,7 @@ class Document < ActiveRecord::Base
   # Named Scopes
   named_scope :small_list, lambda { |limit| {:limit => limit }}
   named_scope :last_created, :order => "created_at DESC"
-  named_scope :brochures, :conditions => ["brochure = ?", true], :order => "brochure_order ASC"
+  named_scope :brochures, :include => [:coverflows], :conditions => ["brochure = ?", true], :order => "brochure_order ASC"
   
   #============================= Class Methods ==================================#
   
