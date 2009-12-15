@@ -2005,8 +2005,6 @@ p.works {
 }
 .resource_video_wrapper {
   margin: 0px auto;
-  overflow: hidden;
-  height: 300px;
 }
 .resource_video_wrapper embed {
   margin-top: -10px;
@@ -2415,24 +2413,51 @@ h4.apple_box_headers.partners {
   width:512px;
 }
 #resource_video_player {
-  background: #fff;
   position: relative;
   width: 512px;
-  height: 288px;
+  height: 321px;
   float: left;
+  padding: 0px 0px 17px;
 }
 #playlist {
   position: relative;
   width: 300px;
-  height: 288px;
   float: left;
 }
-#playlist a {
-  display: block;
-  width: 385px;
-  height: 72px;
+#playlist .video_playlist_item {
+  position: relative;
+  float: left;
+  width: 370px;
   margin: 0px 10px 1px;
-  background: #ffffff;
+  background: #d3d3d3;
+  padding: 3px;
+  border: 1px solid #efefef;
+}
+#playlist a {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  display: block;
+  width: 338px;
+  height: 72px;
+}
+#playlist .video_playlist_item img {
+  width: 128px;
+  height: 72px;
+  float: left;
+}
+#playlist .video_playlist_item .video_title {
+  float:left;
+  font-weight:bold;
+  padding:0px 6px;
+  text-align:left;
+  width:230px;
+}
+#playlist .video_playlist_item .video_description {
+  float:left;
+  padding: 3px 6px 0px;
+  text-align:left;
+  width:230px;
 }
 /*********************************************/
 /******************FORMS**********************/

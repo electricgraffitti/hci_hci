@@ -40,6 +40,11 @@ class Video < ActiveRecord::Base
                      :url => "/videos/:id/:style/:basename.:extension",
                      :path => ":rails_root/public/videos/:id/:style/:basename.:extension"
                      
+   has_attached_file :video_thumb,
+                     :styles => { :full => "512x288>", :thumb => "128x72>" },
+                     :url => "/video_thumbs/:id/:style/:basename.:extension",
+                     :path => ":rails_root/public/video_thumbs/:id/:style/:basename.:extension"
+                     
    # # Paperclip Validations
    # validates_attachment_presence :video
    # validates_attachment_content_type :video, :content_type => ['video/x-msvideo','video/avi','video/quicktime','video/3gpp','video/x-ms-wmv','video/mp4','video/mpeg']

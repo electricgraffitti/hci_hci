@@ -5,14 +5,50 @@ $(document).ready(function() {
   flowplayer("resource_video_player",
   // Flash Configs
   {
-     src: "/swfs/flowplayer.commercial-3.1.5.swf"
+     src: "/swfs/flowplayer.commercial-3.1.5.swf",
+     wmode: 'opaque'
   },
   // Player Configs
-  {
+  { 
     key: '#$45a5242c3cfddf0c3cb',
+    play: {opacity: 0},
     plugins:  { 
-      controls: null
+      controls: {
+            sliderGradient: 'none',
+            tooltipColor: '#5F747C',
+            borderRadius: '0px',
+            volumeSliderGradient: 'none',
+            bufferColor: '#ffffff',
+            progressColor: '#0b471d',
+            progressGradient: 'medium',
+            timeBgColor: '#555555',
+            durationColor: '#ffffff',
+            buttonOverColor: '#728B94',
+            sliderColor: '#000000',
+            volumeSliderColor: '#000000',
+            buttonColor: '#3d4c43',
+            bufferGradient: 'none',
+            timeColor: '#051a0b',
+            backgroundColor: '#000000',
+            tooltipTextColor: '#ffffff',
+            backgroundGradient: 'low',
+            height: 20,
+            opacity: 1.0
+         }
+    },
+    onMouseOver: function() { 
+      this.getControls().fadeIn(600); 
+    }, 
+
+    // you can specify milliseconds how long the fading lasts 
+    onMouseOut: function() { 
+      this.getControls().fadeOut(600); 
+    },  
+
+    // make screen take all available space 
+    screen: { 
+      bottom: 0 
     }
   }
-  ).playlist("#playlist");
+  ).playlist("#playlist .video_playlist_item");
 });

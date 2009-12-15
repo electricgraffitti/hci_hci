@@ -18,8 +18,12 @@
     <%= collection_select(:video, :video_type_id, VideoType.all, :id, :video_type) %>
   </p>
   <p>
-    <%= f.label :video %><br />
+    <%= f.label :video, "Video File (flv or f4v)" %><br />
     <%= f.file_field :video %>
+  </p>
+  <p>
+    <%= f.label :video_thumb, "Video Thumbnail (512x288)" %><br />
+    <%= f.file_field :video_thumb %>
   </p>
   <p>
     <%= f.label :third_party, "Third Party Video?" %><br />

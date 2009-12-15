@@ -6,10 +6,13 @@
   <div class="resource_video_wrapper">
     <div id="resource_video_player"></div>
     <div id="playlist"> 
-      <% 4.times do %>
       <% @videos.each do |video| %>
-        <%= link_to "<strong>#{video.title}</strong><br /><br />#{video.description}", video.video.url %>
-      <% end %>
+      <div class="video_playlist_item">
+        <%= image_tag("#{video.video_thumb.url(:thumb)}") %>
+        <%= link_to "", video.video.url %>
+        <div class='video_title'><%= video.title %></div>
+        <div class='video_description'><%= video.description %></div>
+      </div>
       <% end %>
     </div>
   </div>
