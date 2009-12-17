@@ -11,6 +11,7 @@ public/brochures/*
 public/videos/*
 public/video_thumbs/*
 public/ticket_uploads/*
+public/stylesheets/landing.css
 config/development.sphinx.conf
 db/sphinx/*
 db/sphinx/development/*
