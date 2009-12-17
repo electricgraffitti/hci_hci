@@ -8,6 +8,7 @@
   float: left;
   margin-right: 10px;
   margin-bottom: 10px;
+  clear: none;
 }
 .service_mid_section form.form p select {
   width: 180px;
