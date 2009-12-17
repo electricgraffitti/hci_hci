@@ -34,6 +34,7 @@ ActionController::Routing::Routes.draw do |map|
   
   # Custom Named Routes
   map.issuu_upload "upload-issuu", :controller => "issuu_uploads", :action => "index"
+  map.landing "landing_page_test", :controller => "health_care", :action => "landing_page"
   map.issue "healthcare-insight-document", :controller => 'issuu_uploads', :action => 'show'
   map.nucleus "nucleus", :controller => "health_care", :action => "nucleus"
   map.markets "heatlhcare-insight-markets", :controller => "health_care", :action => "markets"

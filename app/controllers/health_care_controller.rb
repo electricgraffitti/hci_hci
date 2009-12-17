@@ -15,6 +15,13 @@ class HealthCareController < ApplicationController
     
   end
   
+  def landing_page
+    respond_to do |format|
+      format.html { render :layout => "landing"}
+      format.xml  { render :xml => @events }
+    end
+  end
+  
   def trial
     @articles = Article.small_list(4)
     @documents = Document.all

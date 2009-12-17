@@ -1,0 +1,14 @@
+.service_mid_section form {
+  position: relative;
+  width: 500px;
+  float: left;
+}
+.service_mid_section form.form p {
+  width: 200px;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.service_mid_section form.form p select {
+  width: 180px;
+}
