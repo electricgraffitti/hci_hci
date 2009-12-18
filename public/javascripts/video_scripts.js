@@ -15,7 +15,7 @@ $(document).ready(function() {
       key: '#$45a5242c3cfddf0c3cb',
       play: {opacity: 0},
       clip: {
-        url: "/videos/meet_nucleus.f4v",
+        url: "/videos/meet_nucleus_1.f4v",
         autoPlay: true,
         backgroundColor: 'transparent'
       },
