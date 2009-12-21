@@ -22,6 +22,7 @@ class ContactsController < ApplicationController
   
   def thank_you
     @form = params
+    raise params.to_yaml
   end
   
 end
