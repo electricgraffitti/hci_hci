@@ -40,6 +40,7 @@ ActionController::Routing::Routes.draw do |map|
   map.markets "heatlhcare-insight-markets", :controller => "health_care", :action => "markets"
   map.press_kit "healthcare-insight-press-kit", :controller => "health_care", :action => "press_kit"
   map.contact "contact-healthcare-insight", :controller => "contacts", :action => "contact_us"
+  map.contact_thank_you "thank-you", :controller => "contacts", :action => "thank_you"
   map.trial "healthcare-insight-free-trial", :controller => "free_trials", :action => "show"
   map.press "health-care-press", :controller => "announcements", :action => "index"
   map.media "health-care-resources", :controller => "resources", :action => "index"

@@ -1,5 +1,5 @@
 <div class="contact_form_wrap">
-  <% form_tag(contact_mailer_path, :id => "contact_form") do %>
+  <% form_tag("http://www2.hcinsight.com/l/1492/2009-12-21/G1YG9", :method => "post", :id => "contact_form") do %>
     <div>
       <%= label :contact, :contact_name, "Contact Name" %><br />
       <%= text_field :contact, :contact_name, :name => "contact_us_contact_name" %>

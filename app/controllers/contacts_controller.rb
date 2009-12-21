@@ -20,4 +20,8 @@ class ContactsController < ApplicationController
       end
   end
   
+  def thank_you
+    @form = params
+  end
+  
 end
