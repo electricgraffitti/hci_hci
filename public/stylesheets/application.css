@@ -1021,6 +1021,23 @@ ul.index_sector_links li h2 {
   text-align:center;
   width: 284px;
 }
+div.hover_bg {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 304px;
+  height: 268px;
+}
+.index_service_wrap span.hover {
+  position: absolute;
+  width: 294px;
+  height: 268px;
+  top: -5px;
+  left: -5px;
+  padding: 0 10px 10px;
+  background: url('../images/service_panel_active.png') no-repeat;
+  z-index:20;
+}
 .career_action_bar {
   position: relative;
   border: 1px solid #cdcdcd;
@@ -1072,22 +1089,22 @@ a.service_avatar {
   text-indent: -3000em;
 }
 a.physicianclaim-insight_index_wrap {
- background: url('../images/service_page_sprite.png') 0px 0px no-repeat; 
+ background: url('../images/service_page_sprite2.png') 0px 0px no-repeat; 
 }
 a.facilityclaim-insight_index_wrap {
- background: url('../images/service_page_sprite.png') 0px -110px no-repeat;
+ background: url('../images/service_page_sprite2.png') 0px -110px no-repeat;
 }
 a.dentalclaim-insight_index_wrap {
- background: url('../images/service_page_sprite.png') 0px -220px no-repeat;
+ background: url('../images/service_page_sprite2.png') 0px -220px no-repeat;
 }
 a.oncologyclaim-insight_index_wrap {
- background: url('../images/service_page_sprite.png') 0px -330px no-repeat; 
+ background: url('../images/service_page_sprite2.png') 0px -330px no-repeat; 
 }
 a.pharmaclaim-insight_index_wrap {
- background: url('../images/service_page_sprite.png') 0px -440px no-repeat;
+ background: url('../images/service_page_sprite2.png') 0px -440px no-repeat;
 }
 a.visionclaim-insight_index_wrap {
- background: url('../images/service_page_sprite.png') 0px -550px no-repeat;
+ background: url('../images/service_page_sprite2.png') 0px -550px no-repeat;
 }
 a.public_index_wrap {
   background: url('../images/service_page_sprite.png') 0px -660px no-repeat;

@@ -9,7 +9,7 @@
   <%= render :partial => "services/index_steps" %>
 </div>
 <div class="grid_12 alpha omega">
-  <div class="service_wrap">
+  <div id="service_boxes" class="service_wrap">
     <% @services.each do |serv| %>
       <%= render :partial => "services/index_service", :locals => {:serv => serv } %>
     <% end %>

@@ -44,29 +44,6 @@ $(document).ready(function() {
    }
 });
 
-// Sets up the fade on the Big CTA Buttons
-$(document).ready(function() {
-  $('div.big_cta_button').removeClass('highlight');
-  $('div.big_cta_button a').append('<span class="big_button_hover" />').each(function(){
-        $(this).css({fontSize : 0});
-        var $span = $('> span.big_button_hover', this).css({opacity : 0});
-        $(this).hover(function() {
-          if ($(this).hasClass('active')) {
-            $span.stop().fadeTo(400, 0);
-          } else {
-           $span.stop().fadeTo(400, 1); 
-          }
-        }, function() {
-          $span.stop().fadeTo(400, 0);
-      });
-      $(this).click( function() {
-        $span.fadeTo(300, 0);
-        $('div.big_cta_button a').removeClass('active');
-        $(this).addClass('active');
-      });
-  });
-});
-
 // Sets up the fade on the Small CTA Buttons
 $(document).ready(function() {
   $('div.cta_button').removeClass('highlight');
@@ -87,6 +64,30 @@ $(document).ready(function() {
         $('div.small_cta_button a').removeClass('active');
         $(this).addClass('active');
       });
+  });
+});
+
+// Sets up the active state for the service panels
+$(document).ready(function() {
+  $('div#service_boxes div.index_service_wrap').append('<span class="hover" />').each(function(){
+        var $service_span = $('> span.hover', this).css({opacity : 0});
+        $(this).hover(function() {
+          if ($(this).hasClass('active')) {
+            $service_span.stop().fadeTo(400, 0);
+             $(this).attr('class', 'white').animate(400);
+          } else {
+           $service_span.stop().fadeTo(400, 1);
+           $(this).animate({ backgroundColor: "#efefef", top : "-2px" }, 400);
+          }
+        }, function() {
+          $service_span.stop().fadeTo(400, 0);
+          $(this).animate({ backgroundColor: "#dedede", top : "0px" }, 400);
+      });
+      // $(this).click( function() {
+      //   $span.fadeTo(200, 0);
+      //   $('ul#main_nav_ul a').removeClass('active');
+      //   $(this).addClass('active');
+      // });
   });
 });
 
