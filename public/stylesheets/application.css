@@ -1654,64 +1654,64 @@ div.right div.milestone_inner_wrap {
 .box_6 {
   background: url('../images/hci_index_box_images.png') 0px -500px no-repeat;
 }
-.accredidation_links, .accredidation_links_small {
+.accreditation_links, .accreditation_links_small {
   width: 460px;
   position: relative;
   float: left;
 }
-.accredidation_links_small {
+.accreditation_links_small {
   margin-left:12px;
   margin-top:30px;
   width:273px;
 }
-.accredidation_links li, .accredidation_links_small li {
+.accreditation_links li, .accreditation_links_small li {
   width: 90px;
   height: 72px;
   float: left;
 }
-.accredidation_links_small li {
+.accreditation_links_small li {
   width: 50px;
   height: 40px;
 }
-.accredidation_links li a, .accredidation_links_small li a {
+.accreditation_links li a, .accreditation_links_small li a {
   display: block;
   width: 90px;
   height: 72px;
   text-indent: -3000em;
 }
-.accredidation_links_small li a {
+.accreditation_links_small li a {
   width: 50px;
   height: 40px;
 }
-.accredidation_links li a.accredidation_ahip {
-  background: transparent url('../images/accredidations_large_icons.jpg') no-repeat;
+.accreditation_links li a.accreditation_ahip {
+  background: transparent url('../images/accreditations_large_icons.jpg') no-repeat;
 }
-.accredidation_links li a.accredidation_urac1 {
-  background: transparent url('../images/accredidations_large_icons.jpg') 0px -72px no-repeat;
+.accreditation_links li a.accreditation_urac1 {
+  background: transparent url('../images/accreditations_large_icons.jpg') 0px -72px no-repeat;
 }
-.accredidation_links li a.accredidation_urac2 {
-  background: transparent url('../images/accredidations_large_icons.jpg') 0px -144px no-repeat;
+.accreditation_links li a.accreditation_urac2 {
+  background: transparent url('../images/accreditations_large_icons.jpg') 0px -144px no-repeat;
 }
-.accredidation_links li a.accredidation_nhcaa {
-  background: transparent url('../images/accredidations_large_icons.jpg') 0px -216px no-repeat;
+.accreditation_links li a.accreditation_nhcaa {
+  background: transparent url('../images/accreditations_large_icons.jpg') 0px -216px no-repeat;
 }
-.accredidation_links li a.accredidation_nadp {
-  background: transparent url('../images/accredidations_large_icons.jpg') 0px -288px no-repeat;
+.accreditation_links li a.accreditation_nadp {
+  background: transparent url('../images/accreditations_large_icons.jpg') 0px -288px no-repeat;
 }
-.accredidation_links_small li a.accredidation_ahip {
-  background: transparent url('../images/accredidations_small_icons.jpg') no-repeat;
+.accreditation_links_small li a.accreditation_ahip {
+  background: transparent url('../images/accreditations_small_icons.jpg') no-repeat;
 }
-.accredidation_links_small li a.accredidation_urac1 {
-  background: transparent url('../images/accredidations_small_icons.jpg') 0px -40px no-repeat;
+.accreditation_links_small li a.accreditation_urac1 {
+  background: transparent url('../images/accreditations_small_icons.jpg') 0px -40px no-repeat;
 }
-.accredidation_links_small li a.accredidation_urac2 {
-  background: transparent url('../images/accredidations_small_icons.jpg') 0px -80px no-repeat;
+.accreditation_links_small li a.accreditation_urac2 {
+  background: transparent url('../images/accreditations_small_icons.jpg') 0px -80px no-repeat;
 }
-.accredidation_links_small li a.accredidation_nhcaa {
-  background: transparent url('../images/accredidations_small_icons.jpg') 0px -120px no-repeat;
+.accreditation_links_small li a.accreditation_nhcaa {
+  background: transparent url('../images/accreditations_small_icons.jpg') 0px -120px no-repeat;
 }
-.accredidation_links_small li a.accredidation_nadp {
-  background: transparent url('../images/accredidations_small_icons.jpg') 0px -160px no-repeat;
+.accreditation_links_small li a.accreditation_nadp {
+  background: transparent url('../images/accreditations_small_icons.jpg') 0px -160px no-repeat;
 }
 .apply_sub_header {
   float:left;
@@ -1790,7 +1790,7 @@ div.right_side_box {
   width: 390px;
   margin-top: 33px;
 }
-.accredidation_content_wrap {
+.accreditation_content_wrap {
   margin-top: 16px;
 }
 .partner_grid_box img {
@@ -1806,7 +1806,7 @@ div.partner_grid_box img.even_row {
   margin-right: 0px;
   margin-left: 20px;
 }
-.accredidation_grid_box img {
+.accreditation_grid_box img {
   margin-top: 27px;
 }
 div.bene_odd_row .benefit_content_wrap {
@@ -1892,7 +1892,7 @@ p.works {
   position: relative;
   float:left;
   margin: 0px;
-  padding: 0px 10px;
+  padding: 0px 10px 15px;
   width:208px;
   text-align: center;
   border-left: 1px solid #cdcdcd;
@@ -2160,8 +2160,8 @@ p.sector_big_text {
   margin-left:27px;
   width:800px;
 }
-.accredidations_header {
-  background: url('../images/headers/accredidations_header.png') no-repeat;
+.accreditations_header {
+  background: url('../images/headers/accreditations_header.png') no-repeat;
   margin-left:27px;
   width:800px;
 }
@@ -2515,7 +2515,7 @@ input#ticket_date_select {
   padding: 0px;
   font-size: 140%;
   font-weight:bold;
-  height: 37px;
+  height: 30px;
   width: 135px;
   border: none;
   background: url('../images/orange_button_bg.png') repeat-x;
