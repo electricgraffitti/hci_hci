@@ -911,17 +911,17 @@ img.inner_banner {
   position: absolute;
   bottom: 0px;
   right: 0px;
-  width: 150px;
-  height: 100px;
+  width: 113px;
+  height: 74px;
 }
 .box_1 {
-  background: url('../images/hci_index_box_images.png') 0px 0px no-repeat;
+  background: url('../images/hci_index_box_images2.png') 0px 0px no-repeat;
 }
 .box_2 {
-  background: url('../images/hci_index_box_images.png') 0px -100px no-repeat;
+  background: url('../images/hci_index_box_images2.png') 0px -76px no-repeat;
 }
 .box_3 {
-  background: url('../images/hci_index_box_images.png') 0px -200px no-repeat;
+  background: url('../images/hci_index_box_images2.png') 0px -151px no-repeat;
 }
 .z_50 {
   z-index: 50;

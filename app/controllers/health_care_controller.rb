@@ -57,7 +57,7 @@ class HealthCareController < ApplicationController
     
   end
   
-  def accredidations
+  def accreditations
     
   end
   
