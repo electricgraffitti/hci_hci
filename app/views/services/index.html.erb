@@ -6,7 +6,7 @@
 <%= render :partial => 'services/index_banner' %>
 <% end %>
 <div class="grid_12 alpha omega">
-  <%= render :partial => "services/index_steps" %>
+  <%= render :partial => "services/index_steps", :locals => {:service_inquiry => @service_inquiry} %>
 </div>
 <div class="grid_12 alpha omega">
   <div id="service_boxes" class="service_wrap">

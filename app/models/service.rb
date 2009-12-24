@@ -37,6 +37,8 @@ class Service < ActiveRecord::Base
   
   has_one :document
   
+  belongs_to :claim_type
+  
   # Thinking Sphinx Indexes
   define_index do
     indexes description
@@ -56,6 +58,9 @@ class Service < ActiveRecord::Base
                     :path => ":rails_root/public/avatars/:id/:style_:basename.:extension"
   # Attrs
   attr_protected :avatar_file_name, :avatar_content_type, :avatar_file_size
+  
+  # Named Scopes
+  named_scope :select_service, lambda { |type| { :include => :claim_type, :conditions => ['claim_type_id = ?', type]}}
   
   #============================= Class Methods ==================================#
   

@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  business_type_id: 1
+  claim_type_id: 1
+  goal_type_id: 1
+
+two:
+  business_type_id: 1
+  claim_type_id: 1
+  goal_type_id: 1

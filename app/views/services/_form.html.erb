@@ -27,6 +27,10 @@
       <%= f.text_field :landing_link %>
     </p>
     <p>
+      <%= f.label :claim_type_id, "Claim Type" %><br />
+      <%= collection_select(:service, :claim_type_id, ClaimType.all, :id, :claim_type) %>
+    </p>
+    <p>
       <%= f.label :avatar, "Avatar" %><br/>
       <%= f.file_field :avatar, :size => 16 %>
     </p>

@@ -989,6 +989,11 @@ ul.index_sector_links li h2 {
 .index_steps {
   margin: 10px 0px 10px 20px;
 }
+.index_steps_description {
+  float: left;
+  width: 325px;
+  margin: 0px 0px 0px 13px;
+}
 .index_steps p {
   width: 390px;
 }
@@ -1004,9 +1009,30 @@ ul.index_sector_links li h2 {
   margin: 0px 3px 0px 5px;
   color: #888;
 }
+#new_service_inquiry {
+  float:left;
+  height:105px;
+  position:relative;
+}
+#new_service_inquiry input[type="submit"] {
+  bottom: 0px;
+  right: 5px;
+}
+#new_service_inquiry .big_number {
+  font-size: 450%;
+  margin: 0px 15px 0px 5px;
+}
+#new_service_inquiry .number_steps {
+  margin: 3px 0px 0px 0px;
+}
 .number_header {
   width: 115px;
   font-size: 145%;
+}
+#new_service_inquiry .number_header {
+  width: 140px;
+  font-size: 145%;
+  margin: 6px 0px;
 }
 .number_header_small {
   width: 110px;
@@ -1036,7 +1062,6 @@ div.hover_bg {
   left: -5px;
   padding: 0 10px 10px;
   background: url('../images/service_panel_active.png') no-repeat;
-  z-index:20;
 }
 .career_action_bar {
   position: relative;
@@ -1081,7 +1106,6 @@ div.hover_bg {
 }
 a.service_avatar {
   margin: 0px auto;
-  position: relative;
   width: 100px;
   height: 110px;
   overflow: none;
@@ -2540,6 +2564,7 @@ input#ticket_date_select {
   bottom: 0px;
   right: 50px;
   display: block;
+  cursor: pointer;
 }
 .big_orange_submit:hover {
   background: url('../images/orange_button_bg_hover.png') repeat-x;

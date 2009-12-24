@@ -69,58 +69,54 @@ $(document).ready(function() {
 
 // Sets up the active state for the service panels
 $(document).ready(function() {
-  $('div#service_boxes div.index_service_wrap').append('<span class="hover" />').each(function(){
+  $('div#service_boxes div.index_service_wrap a.service_avatar').append('<span class="hover" />').each(function(){
         var $service_span = $('> span.hover', this).css({opacity : 0});
         $(this).hover(function() {
           if ($(this).hasClass('active')) {
             $service_span.stop().fadeTo(400, 0);
-             $(this).attr('class', 'white').animate(400);
           } else {
            $service_span.stop().fadeTo(400, 1);
-           $(this).animate({ backgroundColor: "#efefef", top : "-2px" }, 400);
+           $(this).parent().stop().animate({ backgroundColor: "#efefef", top : "-2px" }, 400);
           }
         }, function() {
           $service_span.stop().fadeTo(400, 0);
-          $(this).animate({ backgroundColor: "#dedede", top : "0px" }, 400);
+          $(this).parent().stop().animate({ backgroundColor: "#dedede", top : "0px" }, 400);
       });
-      // $(this).click( function() {
-      //   $span.fadeTo(200, 0);
-      //   $('ul#main_nav_ul a').removeClass('active');
-      //   $(this).addClass('active');
-      // });
   });
 });
 
-// This is the Timer for the home page banners
-// $(document).everyTime(15000, function () {
-//   $('#banner_scroll_r').trigger('click');
-// });
+jQuery.service_hover = function(classval) {
+  var $block = $("." + classval);
+  $block.parent().nextAll().find('span.hover').fadeTo(400, 0);
+  $block.parent().nextAll().animate({ backgroundColor: "#dedede", top : "0px" }, 400);
+  var $service_span = $('> span.hover', $block).css({opacity : 0});
+    $service_span.stop().fadeTo(400, 1);
+    $block.parent().stop().animate({ backgroundColor: "#efefef", top : "-2px" }, 400);
+};
+// This is the Service Inquiry Ajax post
 
-// This is the calculator method
+jQuery.ajaxSetup({
+ "beforeSend": function(xhr) {xhr.setRequestHeader("Accept", "text/javascript")}
+});
 $(document).ready(function() {
-  var my_calc_input = $('#calc_input');
-  var member_count = 0;
-  my_calc_input.bind('keyup', function() {
-    member_count = parseInt(my_calc_input.val());
-    return member_count;
-  });
-  
-  var my_calc_button = $('#calc_button');
-  my_calc_button.bind('click', function() {
-    if (member_count <= 0) {
-      jAlert('You need to enter the member lives count', 'Calculator Error');
+  $('#new_service_inquiry').submit(function() {
+    var $business_type = $('#service_inquiry_business_type_id :selected');
+    var $claim_type = $('#service_inquiry_claim_type_id :selected');
+    var $goal_type = $('#service_inquiry_goal_type_id :selected');
+    
+    if ( $business_type.text() === "Choose Option" || $claim_type.text() === "Choose Option" || $goal_type.text() === "Choose Option" ) {
+      jAlert('All 3 options must be selected', 'Selection Error');
     } else {
-      var calculation = (parseInt(member_count) * 127);
-      $('#calc_return_value').html('Your Annual Losses to Fraud <b>$' + calculation + '.00</b>');
-      return false;
-    }
+      $params = $(this).serializeArray();
+      
+      $.service_hover($claim_type.text());
+
+      $.post($(this).attr("action"), $params, null, "script");
+    };
+    
+    return false;
   });
 });
-
-// This sets up the reflections for images
-// $(document).ready(function() {
-//   $(".show_wrap img").reflect();
-// });
 
 // This is the script for the employee edit profile hide/show feature
 $(document).ready(function() {

@@ -1,0 +1,2 @@
+module ServiceInquiriesHelper
+end

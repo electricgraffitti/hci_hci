@@ -1,5 +1,13 @@
   # The priority is based upon order of creation: first created -> highest priority.
 ActionController::Routing::Routes.draw do |map|
+  map.resources :goal_types
+
+  map.resources :claim_types
+
+  map.resources :business_types
+
+  map.resources :service_inquiries
+
   
   map.resources :videos
   map.resources :free_trials

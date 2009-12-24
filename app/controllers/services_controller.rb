@@ -5,7 +5,8 @@ class ServicesController < ApplicationController
   # GET /services
   # GET /services.xml
   def index
-    @services = Service.find(:all, :order => "created_at ASC")
+    @services = Service.find(:all, :include => :claim_type, :order => "created_at ASC")
+    @service_inquiry = ServiceInquiry.new
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @services }

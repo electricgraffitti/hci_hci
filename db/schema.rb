@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20091217160012) do
+ActiveRecord::Schema.define(:version => 20091223203225) do
 
   create_table "article_types", :force => true do |t|
     t.string   "article_type"
@@ -57,6 +57,12 @@ ActiveRecord::Schema.define(:version => 20091217160012) do
 
   add_index "brochures", ["service_id"], :name => "index_brochures_on_service_id"
 
+  create_table "business_types", :force => true do |t|
+    t.string   "business_type"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "case_studies", :force => true do |t|
     t.string   "title"
     t.text     "description"
@@ -72,6 +78,12 @@ ActiveRecord::Schema.define(:version => 20091217160012) do
   end
 
   add_index "case_studies", ["service_id"], :name => "index_case_studies_on_service_id"
+
+  create_table "claim_types", :force => true do |t|
+    t.string   "claim_type"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "coverflows", :force => true do |t|
     t.integer  "cflow_id"
@@ -155,6 +167,12 @@ ActiveRecord::Schema.define(:version => 20091217160012) do
     t.datetime "updated_at"
   end
 
+  create_table "goal_types", :force => true do |t|
+    t.string   "goal_type"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "issuus", :force => true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -209,6 +227,14 @@ ActiveRecord::Schema.define(:version => 20091217160012) do
     t.datetime "updated_at"
   end
 
+  create_table "service_inquiries", :force => true do |t|
+    t.integer  "business_type_id"
+    t.integer  "claim_type_id"
+    t.integer  "goal_type_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "services", :force => true do |t|
     t.string   "title"
     t.string   "acronym"
@@ -226,6 +252,7 @@ ActiveRecord::Schema.define(:version => 20091217160012) do
     t.text     "problem"
     t.text     "solution"
     t.string   "landing_link"
+    t.integer  "claim_type_id"
   end
 
   create_table "sessions", :force => true do |t|

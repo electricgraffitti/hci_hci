@@ -1,20 +1,28 @@
-<div class="full_wrap index_steps left">
-  <div class="left">  
+<div class="grid_12 content_wrap">
+  <div class="index_steps_description">  
     <h2 class="orange">The Wasted Buck Stops Here.</h2>
     <p>
-      Need someone to stop fraud and waste before your money flies out the door? You’re in the right place. Each of our services ensure claims are paid right, every time. Find your service now.  It’s easy as 1, 2, 3. 
+      Need someone to stop fraud and waste before your money flies out the door? You’re in the right place. Each of our services ensure claims are paid right, every time. Find your service now.  It’s easy as 1, 2, 3.
     </p>
   </div>
+  
+  <% form_for(service_inquiry) do |f| %>
+    <%= f.error_messages %>
   <div class="number_steps left">
     <div class="big_number left">1.</div>
-    <div class="number_header number_header_small orange left">What Kind Of Payor?</div>
+    <div class="number_header number_header_small orange left">Your Business.</div><br/>
+    <%= collection_select(:service_inquiry, :business_type_id, BusinessType.all, :id, :business_type, {:prompt => "Choose Option"})%>
   </div>
   <div class="number_steps left">
     <div class="big_number left">2.</div>
-    <div class="number_header orange left">What Are Your Needs?</div>
+    <div class="number_header orange left">Your Claims.</div><br/>
+     <%= collection_select(:service_inquiry, :claim_type_id, ClaimType.all, :id, :claim_type, {:prompt => "Choose Option"})%>
   </div>
   <div class="number_steps left">
     <div class="big_number left">3.</div>
-    <div class="number_header orange left">Customize Your Service?</div>
+    <div class="number_header orange left">Your Goals</div><br/>
+    <%= collection_select(:service_inquiry, :goal_type_id, GoalType.all, :id, :goal_type, {:prompt => "Choose Option"})%>
   </div>
+    <%= f.submit 'Find Solution', :class => "big_orange_submit" %>
+  <% end %>
 </div>
