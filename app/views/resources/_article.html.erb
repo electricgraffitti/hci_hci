@@ -1,9 +1,5 @@
- <div class="resource_article">
-  <% article.assets.each do |asset| %>
-    <%= link_to image_tag(asset.attachment.url(:thumb), :alt => article.title), article_path(article) %>
-  <% end %>
-  <div class="resource_article_wrapper">        
-    <h4><%= link_to "#{ article.title}", article_path(article)  %></h4>
-    <%= truncate(article.description, :length => 100) %>
-  </div>
-</div>
+<% if article.third_party? %>
+  <%= render :partial => 'resources/third_party_article', :locals => {:article => article} %>
+<% else %>
+  <%= render :partial => 'resources/hci_article', :locals => {:article => article} %>
+<% end %>
