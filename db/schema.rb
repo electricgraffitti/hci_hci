@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20091223203225) do
+ActiveRecord::Schema.define(:version => 20091229211637) do
 
   create_table "article_types", :force => true do |t|
     t.string   "article_type"
@@ -26,6 +26,8 @@ ActiveRecord::Schema.define(:version => 20091223203225) do
     t.string   "permalink"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.boolean  "third_party"
+    t.string   "third_party_url"
   end
 
   add_index "articles", ["article_type_id"], :name => "index_articles_on_article_type_id"

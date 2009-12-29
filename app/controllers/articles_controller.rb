@@ -63,7 +63,7 @@ class ArticlesController < ApplicationController
     respond_to do |format|
       if @article.save
         flash[:notice] = 'Article was successfully created.'
-        format.html { redirect_to(@article) }
+        format.html { redirect_to new_article_path }
         format.xml  { render :xml => @article, :status => :created, :location => @article }
       else
         format.html { render :action => "new" }
