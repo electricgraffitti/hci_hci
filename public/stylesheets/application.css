@@ -1683,8 +1683,8 @@ div.right div.milestone_inner_wrap {
 }
 .about_us_box_header {
   width: 175px;
-  padding-left: 35px;
-  background: url('../images/about_us_boxes_header_bg.png') no-repeat;
+  /*padding-left: 35px;*/
+  /*background: url('../images/about_us_boxes_header_bg.png') no-repeat;*/
 }
 .box_4 {
   background: url('../images/hci_index_box_images.png') 0px -300px no-repeat;
