@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20091229211637) do
+ActiveRecord::Schema.define(:version => 20091229230907) do
 
   create_table "article_types", :force => true do |t|
     t.string   "article_type"
@@ -124,6 +124,7 @@ ActiveRecord::Schema.define(:version => 20091229211637) do
     t.boolean  "brochure"
     t.integer  "brochure_order"
     t.integer  "service_id"
+    t.text     "brochure_sub_heading"
   end
 
   add_index "documents", ["document_type_id"], :name => "index_documents_on_document_type_id"

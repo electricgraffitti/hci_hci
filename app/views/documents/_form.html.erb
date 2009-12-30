@@ -42,6 +42,10 @@
     <%= f.text_field :brochure_order %>
   </p>
   <p>
+    <%= f.label :brochure_sub_heading, "Sub Heading" %><br />
+    <%= f.text_area :brochure_sub_heading, :rows => 5, :cols => 28 %>
+  </p>
+  <p>
     <%= f.label "Service for Brochure" %><br />
     <%= collection_select(:document, :service_id, Service.all, :id, :title) %>
   </p>
