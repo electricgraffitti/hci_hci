@@ -1356,7 +1356,7 @@ ul.service_bullets li {
   background: url('../images/graphs.png') right -7px no-repeat;
 }
 .solution_box {
-  width: 530px;
+  width: 540px;
   border: 1px solid #dedede;
 }
 .solution_box h2 {
@@ -1862,7 +1862,7 @@ div.bene_odd_row .benefit_content_wrap {
   padding-left: 0px;
 }
 .benefit_content_wrap h3 {
-  font-size: 155%;
+  font-size: 140%;
   font-weight: bold;
 }
 .benefit_content_wrap p {
@@ -2318,6 +2318,15 @@ p.sector_big_text {
 }
 .workers_comp_quote {
   background: url('../images/workers_comp_quote.jpg') no-repeat;
+}
+.market_quote {
+   background:transparent url(../images/market_quote.png) no-repeat scroll 0 0;
+   float:left;
+   height:102px;
+   position:relative;
+   text-indent:-3000em;
+   width:450px;
+   margin-left: 40px;
 }
 /*********************************************/
 /******************SUBBOXES*******************/
