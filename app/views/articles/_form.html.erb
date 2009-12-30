@@ -9,7 +9,7 @@
   </p>
   <p>
     <%= f.label :description %><br />
-    <%= f.text_area :description, :rows => 5, :cols => 28 %>
+    <%= f.text_area :description, :rows => 10, :cols => 48 %>
   </p>
   <p>
     <%= f.label "Choose Article Type" %><br />
@@ -19,7 +19,7 @@
     <%= f.label :third_party, "Third Party Article?" %><br />
     <%= f.check_box :third_party %>
   </p>
-  <p>
+  <p id="third_party_url_field">
     <%= f.label :third_party_url, "Third Party URL" %><br />
     <%= f.text_field :third_party_url %>
   </p>
@@ -34,25 +34,25 @@
       <% end %>
     <% end %>
   </p>
-  <p>
+  <!-- <p>
     <% f.fields_for :coverflows do |cover_form|%>
     <%= cover_form.label "Add Cover Flow" %><br />
     <%= cover_form.file_field :cover, :size => 16 %>
     <% end %>
-  </p>
+  </p> -->
 </div>
 <div class="grid_5">
   <h4>Article SEO</h4>
   <p>
-    <%= f.label :meta_description %><br />
-    <%= f.text_area :meta_description, :rows => 5, :cols => 28 %>
+    <%= f.label :meta_description, "Meta Description (usually the first paragraph)" %><br />
+    <%= f.text_area :meta_description, :rows => 10, :cols => 48 %>
   </p>
   <p>
-    <%= f.label :keywords %><br />
+    <%= f.label :keywords, "Keywords (2-3 phrases relevant to the description)" %><br />
     <%= f.text_field :keywords %>
   </p>
   <p>
-    <%= f.label :permalink %><br />
+    <%= f.label :permalink, "Permalink (all-lowercase-no-spaces)" %><br />
     <%= f.text_field :permalink %>
   </p>
 </div>

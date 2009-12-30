@@ -134,6 +134,20 @@ $(document).ready(function() {
 	});
 });
 
+$(document).ready(function() {
+  $tpurl = $('#third_party_url_field').hide();
+  $tpcb = $('#article_third_party');
+  
+  $tpcb.click( function() {
+   if ($(this).is(':checked')) {
+    $tpurl.show(); 
+   } else {
+    $tpurl.hide();
+   }
+  });
+});
+
+
 // This is the add an attachment field increaser
 $(document).ready(function() {
   $upload_div = $('.upload_div');

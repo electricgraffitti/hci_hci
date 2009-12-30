@@ -96,7 +96,7 @@ class ArticlesController < ApplicationController
     @article.destroy
 
     respond_to do |format|
-      format.html { redirect_to(articles_url) }
+      format.html { redirect_to(articles_path) }
       format.xml  { head :ok }
     end
   end
