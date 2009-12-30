@@ -35,7 +35,7 @@ class Article < ActiveRecord::Base
   acts_as_textiled  :description
   
   # Named Scopes
-  named_scope :small_list, lambda { |limit| {:include => [:assets], :limit => limit }}
+  named_scope :small_list, lambda { |limit| {:include => [:assets], :limit => limit}}
   named_scope :type, lambda { |type| { :include => :article_type, :conditions => ['article_types.article_type = ?', type]}}
   named_scope :last_created, :order => "created_at DESC"
   

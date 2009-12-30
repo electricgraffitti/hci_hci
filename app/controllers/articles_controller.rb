@@ -6,7 +6,7 @@ class ArticlesController < ApplicationController
   # GET /articles.xml
   def index
     # @articles = Article.type(params[:article_type])
-    @articles = Article.all :include => :assets
+    @articles = Article.all :include => :assets, :order => "created_at DESC"
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @articles }
