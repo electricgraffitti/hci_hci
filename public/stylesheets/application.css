@@ -856,7 +856,7 @@ img.inner_banner {
   float: left;
 }
 .contact_banner_text_wrap, .contact_thank_you_text_wrap {
-  bottom:75px;
+  bottom: 55px;
   font-size:130%;
   left:78px;
   position:absolute;
@@ -2032,7 +2032,7 @@ p.works {
 }
 .resource_brochure p {
   float: left;
-  width: 165px;
+  width: 150px;
   margin-top: 0px;
 }
 .resource_video_section {
