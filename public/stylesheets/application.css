@@ -1100,7 +1100,7 @@ div.hover_bg {
 }
 .market_box p {
   width: 220px;
-  margin:0 auto 30px;
+  margin: 20px auto 11px;
 }
 .index_service_wrap a {
   font-size: 85%;
@@ -1184,12 +1184,15 @@ a.property_index_wrap {
 }
 .public_service_header {
   background: url('../images/service_page_sprite.png') -100px -685px no-repeat;
+  height: 40px;
 }
 .private_service_header {
   background: url('../images/service_page_sprite.png') -100px -795px no-repeat;
+  height: 40px;
 }
 .property_service_header {
   background: url('../images/service_page_sprite.png') -100px -905px no-repeat;
+  height: 40px;
 }
 .index_service_links_wrap {
   margin: 10px 0px 0px 21px;
