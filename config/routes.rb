@@ -41,7 +41,7 @@ ActionController::Routing::Routes.draw do |map|
   map.landing "landing_page_test", :controller => "health_care", :action => "landing_page"
   map.issue "healthcare-insight-document", :controller => 'issuu_uploads', :action => 'show'
   map.nucleus "nucleus", :controller => "health_care", :action => "nucleus"
-  map.markets "heatlhcare-insight-markets", :controller => "health_care", :action => "markets"
+  map.markets "healthcare-insight-markets", :controller => "health_care", :action => "markets"
   map.press_kit "healthcare-insight-press-kit", :controller => "health_care", :action => "press_kit"
   map.contact "contact-healthcare-insight", :controller => "contacts", :action => "contact_us"
   map.contact_thank_you "thank-you", :controller => "contacts", :action => "thank_you"
