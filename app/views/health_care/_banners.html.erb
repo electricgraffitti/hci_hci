@@ -1,6 +1,45 @@
-<div id="inner_banner_short" class="grid_12 alpha omega">
-  <div id="banner1" class="panel">
-    <%= image_tag "banners/health_care_insight_banner1.jpg", :alt => "Stop Fraud Now" %>
+<div id="slider" class="nucleus_banner">
+  <div class="scroll">
+    <div class="scrollContainer">
+      <div id="panel1" class="panel">
+        <!-- <h2 class="nucleus_header meet_nucleus">Meet Nucleus</h2> -->
+        <div id="nucleus_main_video" class="nucleus_player">
+         <%= image_tag "banners/home_banner_big.jpg", :alt => "Stop Fraud Now" %>
+        </div>
+      </div>
+      <div id="panel2" class="panel">
+        <h2 class="nucleus_header index_who_header">Who We Are.</h2>
+        <div id="" class="nucleus_player">
+        <%= image_tag("banners/who_banner_big.jpg") %>
+        </div>
+      </div>
+      <div id="panel3" class="panel">
+        <h2 class="nucleus_header index_what_header">What We Do.</h2>
+        <div id="" class="nucleus_player">
+        <%= image_tag("banners/what_banner_big.jpg") %>
+        </div>
+      </div>
+      <div id="panel4" class="panel">
+        <h2 class="nucleus_header index_why_header">Why Choose Us.</h2>
+        <%= image_tag("banners/why_banner_big.jpg") %>
+      </div>
+    </div>
   </div>
-  <%= render :partial => "layouts/cta_bar" %>
+  <div class="index_banner_nav">
+    <ul id="index_banner_nav_ul" class="nav_ul navigation">
+      <li class="b_nav1 index_banner_li first"><%= link_to "1", '#panel1', :class => 'selected' %></li>
+      <li class="b_nav2 index_banner_li">
+        <div class="nav_header">Who We Are.</div>
+        <%= link_to "2", '#panel2'%>
+      </li>
+      <li class="b_nav3 index_banner_li">
+        <div class="nav_header">What We Do.</div>
+        <%= link_to "3", '#panel3'%>
+      </li>
+      <li class="b_nav4 index_banner_li">
+        <div class="nav_header">Why Choose Us.</div>
+        <%= link_to "4", '#panel4'%>
+      </li>
+    </ul>
+  </div>
 </div>

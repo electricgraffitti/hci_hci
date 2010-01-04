@@ -72,5 +72,9 @@ class HealthCareController < ApplicationController
   def markets
     
   end
+  
+  def resources
+    
+  end
 
 end

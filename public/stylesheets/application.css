@@ -701,7 +701,7 @@ div.visionclaim-insight_demo_button span.small_cta_button {
   height: 290px;
 }
 .nucleus_header {
-  position: relative;
+  position: absolute;
   top: 25px;
   left: 15px;
   width: 309px;
@@ -729,6 +729,62 @@ div.visionclaim-insight_demo_button span.small_cta_button {
 .scrollContainer {
   width: 940px;
   height: 483px;
+}
+.index_banner_nav {
+  position: absolute;
+  width: 409px;
+  height: 134px;
+  right: 75px;
+  bottom: 60px;
+}
+.index_banner_nav ul li {
+  position: relative;
+  float: left;
+  width: 136px;
+  height: 134px;
+  border: none;
+}
+.index_banner_nav ul li.index_banner_li {
+  background: url('../images/banners/index_banner_nav/li_bg.png') no-repeat;
+}
+.nav_header {
+  font-size: 1.1em;
+}
+.index_banner_nav ul li a {
+  position: relative;
+  width: 52px;
+  height: 50px;
+  left: 42px;
+  top: 27px;
+  background: url('../images/banners/index_banner_nav/nav_a.png') 0px 0px no-repeat;
+  text-indent: -3000em;
+  display: block;
+}
+.index_banner_nav ul li a span.hover {
+  position: absolute;
+  width: 52px;
+  height: 50px;
+  left: 0px;
+  top: 0px;
+  display: block;
+}
+.b_nav2.highlight:hover, li.b_nav2 a span.hover {
+  background: url('../images/banners/index_banner_nav/nav_a.png') 0px -50px no-repeat;
+}
+.index_banner_nav ul li.b_nav2 a.active {
+  background: url('../images/banners/index_banner_nav/nav_a.png') 0px -50px no-repeat;
+}
+.b_nav3.highlight:hover, li.b_nav3 a span.hover {
+  background: url('../images/banners/index_banner_nav/nav_a.png') 0px -50px no-repeat;
+}
+.index_banner_nav ul li.b_nav3 a.active {
+  background: url('../images/banners/index_banner_nav/nav_a.png') 0px -50px no-repeat;
+}
+.b_nav4.highlight:hover, li.b_nav4 a span.hover {
+  background: url('../images/banners/index_banner_nav/nav_a.png') 0px -50px no-repeat;
+}
+.index_banner_nav ul li.b_nav4 a.active {
+  background: url('../images/banners/index_banner_nav/nav_a.png') 0px -50px no-repeat;
 }
 .banner_nav {
   position: relative;
@@ -2188,6 +2244,11 @@ p.sector_big_text {
   text-indent: -3000em;
   float:left;
 }
+.home_header {
+  background: url('../images/headers/home_header.png') no-repeat;
+  width: 900px;
+  height: 60px;
+}
 .about_header {
   background: url('../images/about_header.png') no-repeat;
   width: 900px;
@@ -2200,7 +2261,8 @@ p.sector_big_text {
 .partners_header {
   background: url('../images/headers/partners_header.png') no-repeat;
   margin-left:27px;
-  width:535px;
+  width:400px;
+  height: 60px;
 }
 .industry_standards {
   background: url('../images/headers/industry_standards.png') no-repeat;
@@ -2219,8 +2281,9 @@ p.sector_big_text {
 }
 .service_partners {
   background: url('../images/headers/service_tech_partners.png') no-repeat;
-  margin-left:27px;
+  margin-left: 27px;
   width:800px;
+  height: 60px;
 }
 .benefits_header_works {
   background: url('../images/headers/works.png') no-repeat;
@@ -2246,6 +2309,7 @@ p.sector_big_text {
 .apply_here_header {
   background: url('../images/headers/apply_here.png') no-repeat;
   width: 500px;
+  height: 60px;
 }
 /*********************************************/
 /***************QUOTE BOXES*******************/
@@ -2360,13 +2424,13 @@ p.sector_big_text {
   height: 40px;
   text-indent: -3000em;
 }
-h4.apple_box_headers.news {
+h4.apple_box_headers.resources {
   background: url('../images/apple_box_headers.png') 0px 0px;
 }
-h4.apple_box_headers.nucleus {
+h4.apple_box_headers.services {
   background: url('../images/apple_box_headers.png') 0px -40px;
 }
-h4.apple_box_headers.partners {
+h4.apple_box_headers.nucleus {
   background: url('../images/apple_box_headers.png') 0px -80px;
 }
 .apple_icons {

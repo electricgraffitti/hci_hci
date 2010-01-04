@@ -30,9 +30,9 @@ jQuery(document).ready(function() {
   var $scroll = jQuery('#slider .scroll').css('overflow', 'hidden');
   var $bannerNav = jQuery('.banner_nav ul.navigation');
     
-  $bannerNav
-     .before('<div id="banner_scroll_l" class="banner_scroll l" />')
-     .after('<div id="banner_scroll_r" class="banner_scroll r" />');
+  // $bannerNav
+  //    .before('<div id="banner_scroll_l" class="banner_scroll l" />')
+  //    .after('<div id="banner_scroll_r" class="banner_scroll r" />');
     
     if (horizontal) {
       $panels.css({

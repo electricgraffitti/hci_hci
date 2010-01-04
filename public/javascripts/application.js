@@ -1,4 +1,4 @@
- // This is the IE6 Js hack for submit button rollovers
+// This is the IE6 Js hack for submit button rollovers
 $(document).ready(function() {
   $('form .submitbtn').hover(function() {
     $(this).css({"background": "url('../images/submit_button.png') 0px 0px no-repeat"});
@@ -9,6 +9,13 @@ $(document).ready(function() {
     $(this).css({"background": "url('../images/submit_button.png') 0px 0px no-repeat"});
   });
 });
+
+// setup some hidden elements
+$(document).ready(function() {
+  $(".index_banner_nav .first").hide();
+});
+
+
 // Sets up the fade on the Main nav buttons
 $(document).ready(function() {
   $('ul#main_nav_ul li').removeClass('highlight');
@@ -43,7 +50,28 @@ $(document).ready(function() {
    current_link.addClass('active');
    }
 });
-
+// Sets up the index cross buttons 
+$(document).ready(function() {
+  $('ul#index_banner_nav_ul li').removeClass('highlight');
+  $('ul#index_banner_nav_ul a').append('<span class="hover" />').each(function(){
+        $(this).css({fontSize : 0});
+        var $span = $('> span.hover', this).css({opacity : 0});
+        $(this).hover(function() {
+          if ($(this).hasClass('active')) {
+            $span.stop().fadeTo(400, 0);
+          } else {
+           $span.stop().fadeTo(400, 1); 
+          }
+        }, function() {
+          $span.stop().fadeTo(400, 0);
+      });
+      $(this).click( function() {
+        $span.fadeTo(200, 0);
+        $('ul#index_banner_nav_ul a').removeClass('active');
+        $(this).addClass('active');
+      });
+  });
+});
 // Sets up the fade on the Small CTA Buttons
 $(document).ready(function() {
   $('div.cta_button').removeClass('highlight');
