@@ -732,9 +732,9 @@ div.visionclaim-insight_demo_button span.small_cta_button {
 }
 .index_banner_nav {
   position: absolute;
-  width: 409px;
+  width: 469px;
   height: 134px;
-  right: 75px;
+  right: 10px;
   bottom: 60px;
 }
 .index_banner_nav ul li {
@@ -743,6 +743,7 @@ div.visionclaim-insight_demo_button span.small_cta_button {
   width: 136px;
   height: 134px;
   border: none;
+  margin-right: 20px;
 }
 .index_banner_nav ul li.index_banner_li {
   background: url('../images/banners/index_banner_nav/li_bg.png') no-repeat;
