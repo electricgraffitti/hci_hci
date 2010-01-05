@@ -341,7 +341,7 @@ label.error {
 /*****************HEADER**********************/
 #hd {
   position: relative;
-  height: 90px;
+  height: 95px;
 }
 /*******Navigation********/
 #main_nav {
@@ -640,15 +640,16 @@ div.visionclaim-insight_demo_button span.small_cta_button {
   width: 314px;
   height: 45px;
   margin-left: 8px;
-  margin-top: 5px;
+  margin-top: 9px;
   outline: none;
 }
 /** top Link nav **/
 #top_link_wrap {
-  height: 50px;
-  width: 325px;
-  float: right;
-  position: relative;
+  bottom:40px;
+  height:30px;
+  position:absolute;
+  right:0;
+  width:325px;
 }
 #top_links {
   position: absolute;
@@ -679,10 +680,21 @@ div.visionclaim-insight_demo_button span.small_cta_button {
   color: #555;
 }
 #search_box_wrap {
-  margin: -5px 5px
+  margin: -5px -4px
 }
 /********************************/
 /************Banners*************/
+.service_icon_banner_link {
+  /*border:1px solid #000000;*/
+  bottom:56px;
+  display:block;
+  height:200px;
+  left:65px;
+  position:absolute;
+  text-indent:-3000em;
+  width:190px;
+  z-index:10;
+}
 #slider {
   height: 500px;
   position: relative;
@@ -1340,6 +1352,7 @@ ul.service_bullets li {
 .show_service_para {
   font-size:111%;
   width:495px;
+  margin-top:17px;
 }
 .thumb_wrap {
   width: 70px;
@@ -2243,6 +2256,19 @@ p.works {
 .sector_content_text p {
   padding: 5px 10px;
 }
+.sector_content_text h4 {
+  margin: 10px 10px 0px;
+}
+.sector_content_text ul {
+  margin: 10px 20px;
+  width: 450px;
+  float: left;
+}
+.sector_content_text ul li {
+  width: 150px;
+  float: left;
+  margin-bottom: 10px;
+}
 p.sector_big_text {
   font-size: 160%;
   font-weight: bold;
@@ -2649,6 +2675,17 @@ input#ticket_date_select {
 .big_orange:hover {
   background: url('../images/green_buttons.png') repeat-x;
 }
+.search_btn_green {
+  text-align:center;
+  color: #fff;
+  font-size: 12px;
+  font-weight:bold;
+  height: 24px;
+  width: 65px;
+  border: 1px solid #004914;
+  background: url('../images/green_button.jpg') 0px 0px repeat-x;
+  cursor: pointer;
+}
 .big_orange_submit {
   text-align:center;
   color: #fff;
@@ -2665,10 +2702,13 @@ input#ticket_date_select {
   display: block;
   cursor: pointer;
 }
-.big_orange_submit:hover {
+.big_orange_submit:hover, .search_btn_green:hover {
   background: url('../images/green_button.jpg') 0px -32px repeat-x;
   color: #333;
   border: 1px solid #666;
+}
+.contact_submit {
+  right: 53px;
 }
 .small_orange_buttons {
   margin: 0px auto;
@@ -2856,7 +2896,7 @@ ul#social_links li a.white {
 }
 #footer_stripe {
   position: absolute;
-  bottom: 30px;
+  bottom: -15px;
   min-height: 7px;
   background: #fff;
 }
@@ -2867,7 +2907,7 @@ ul#social_links li a.white {
 }
 ul.login {
   background:transparent url(../images/login_keyhole.png) no-repeat scroll 0 0;
-  bottom:-7px;
+  bottom:-52px;
   height:30px;
   position:absolute;
   right:-5px;

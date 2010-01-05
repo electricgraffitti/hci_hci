@@ -32,7 +32,7 @@ class HealthCareController < ApplicationController
   end
   
   def public_sector
-    
+    @services = Service.all
   end
   
   def private_sector
