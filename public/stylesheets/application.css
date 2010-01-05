@@ -3,7 +3,7 @@ html, body {
   background: #ddd url('../images/hci_bg.png') repeat-x;
   font-family: "Helvetica Neue", Arial, Helvetica, "Bitstream Vera Sans", sans-serif;
   color: #333;
-  font-size: 85%;
+  font-size: 84%;
   height: 100%;
 }
 .serif {
@@ -1412,7 +1412,7 @@ ul.service_bullets li {
   width:345px;
 }
 .graph_box {
-  bottom: 20px;
+  bottom: 5px;
   height:250px;
   position:absolute;
   right: 0px;
@@ -1959,6 +1959,7 @@ div.bene_odd_row .benefit_content_wrap {
   width: 130px;
   height: 120px;
   margin-top: 40px;
+  margin-left: 15px;
 }
 div.bene_even_row .benefit_avatar_wrap {
   float: right;
