@@ -2,8 +2,19 @@
 <div class="show_wrap grid_12">
   <div class="service_mid_section service_bg grid_12 alpha omega">
     <div class="overview_wrap grid_7 right">
-      <h3 class="<%= s.permalink %>_color block_font_weight sans-serif"><%=h s.description %></h3>
-<p class="show_service_para"><%= s.solution %></p>
+      <% if s.acronym === "PCI" %>
+        <%= render :partial => 'services/pci_service_block', :locals => {:s => s} %>
+      <% elsif s.acronym === "FCI" %>
+        <%= render :partial => 'services/fci_service_block', :locals => {:s => s} %>
+      <% elsif s.acronym === "DCI" %>
+        <%= render :partial => 'services/dci_service_block', :locals => {:s => s} %>
+      <% elsif s.acronym === "OCI" %>
+        <%= render :partial => 'services/oci_service_block', :locals => {:s => s} %>
+      <% elsif s.acronym === "RxI" %>
+        <%= render :partial => 'services/rxi_service_block', :locals => {:s => s} %>
+      <% else s.acronym === "VCI" %>
+        <%= render :partial => 'services/vci_service_block', :locals => {:s => s} %>
+      <% end %>
     </div>
   </div>
 </div>

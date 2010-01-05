@@ -97,6 +97,9 @@ p {
   margin: 5px 0px 0px;
   line-height: 18.35px;
 }
+sup {
+  vertical-align: top;
+}
 .bold {
   font-weight:bold;
 }
@@ -1900,6 +1903,7 @@ div.right_side_box {
   text-align: left;
 }
 .service_content_wrap {
+  margin-left: 15px;
   width: 245px;
 } 
 
