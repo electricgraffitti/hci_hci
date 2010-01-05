@@ -2,32 +2,36 @@
   <div class="inner_benefit_grid">
     <div class="benefit_grid_box left_side_box bene_odd_row">
       <div class="<%= s.permalink %>_quote_brochure quote_brochure">
-        <%= link_to "Brochure", document_path(s.document), :alt => "Download #{s.title} Brochure", :title => "Download #{s.title} Brochure"  %>
+        <%= link_to "Brochure", document_path(s.document), :alt => "View #{s.title} Brochure", :title => "View #{s.title} Brochure"  %>
       </div>
-      <div class="benefit_content_wrap">      
-        <h3><%= s.acronym %> Service Brochure</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nisl justo, volutpat non sodales in, malesuada sit amet tellus</p>
+      <div class="benefit_content_wrap service_content_wrap">      
+        <h3>View <%= s.acronym %> Brochure</h3>
+        <p>Want more information? View and
+        download the <%= s.acronym %> service brochure.</p>
       </div>
     </div>
     <div class="benefit_grid_box right_side_box bene_odd_row">
       <div class="benefit_avatar_wrap bene9"></div>
-      <div class="benefit_content_wrap">      
-        <h3>Client Success Stories</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nisl justo, volutpat non sodales in, malesuada sit amet tellus</p>
+      <div class="benefit_content_wrap service_content_wrap">      
+        <h3>Read Success Stories</h3>
+        <p>Still need convincing? Read and download 
+        customer case studies and testimonials.</p>
       </div>
     </div>
     <div class="benefit_grid_box left_side_box bene_even_row last_bene_row">
       <div class="benefit_avatar_wrap bene10"></div>
-      <div class="benefit_content_wrap">      
-        <h3>Customer Testimonials</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nisl justo, volutpat non sodales in, malesuada sit amet tellus</p>
+      <div class="benefit_content_wrap service_content_wrap">      
+        <h3>Watch Videos</h3>
+        <p>Rather watch a video? Check out our latest 
+        webinars, tutorials and commercials.</p>
       </div>
     </div>
     <div class="benefit_grid_box right_side_box bene_even_row last_bene_row">
       <div class="benefit_avatar_wrap bene11"></div>
-      <div class="benefit_content_wrap">      
-        <h3>Call Today For A Free Trial</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nisl justo, volutpat non sodales in, malesuada sit amet tellus</p>
+      <div class="benefit_content_wrap service_content_wrap">      
+        <h3>Request Free Trial</h3>
+        <p>Ready to take the next step? Request a 
+        free <%= s.acronym %> trial and Cost Reduction Analysis.</p>
       </div>
     </div>
     <div class="clear"></div>

@@ -1893,12 +1893,16 @@ div.right_side_box {
   width: 440px;
   margin-right: 0px;
 }
-.benefit_content_wrap, .partner_content_wrap {
+.benefit_content_wrap, .partner_content_wrap, .service_content_wrap {
   width: 280px;
   margin-top: 50px;
   padding-left: 20px;
   text-align: left;
 }
+.service_content_wrap {
+  width: 245px;
+} 
+
 .partner_content_wrap {
   width: 390px;
   margin-top: 33px;
