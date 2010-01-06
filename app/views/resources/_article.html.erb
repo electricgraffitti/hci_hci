@@ -1,5 +1,5 @@
-<% if article.third_party? %>
-  <%= render :partial => 'resources/third_party_article', :locals => {:article => article} %>
+<% if obj.third_party? %>
+  <%= render :partial => 'resources/third_party_article', :locals => {:obj => obj} %>
 <% else %>
-  <%= render :partial => 'resources/hci_article', :locals => {:article => article} %>
+  <%= render :partial => 'resources/hci_article', :locals => {:obj => obj} %>
 <% end %>

@@ -6,7 +6,9 @@ class ArticlesController < ApplicationController
   # GET /articles.xml
   def index
     # @articles = Article.type(params[:article_type])
-    @articles = Article.all :include => :assets, :order => "created_at DESC"
+    @articles = Article.list(4, params[:page], "hci_article", "third_party")
+    @press_releases = Article.type('press_release').small_list(5)
+    @events = Event.small_list(5)
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @articles }
@@ -18,7 +20,7 @@ class ArticlesController < ApplicationController
   # GET /articles/1
   # GET /articles/1.xml
   def show
-    @article = Article.find(params[:id])
+    @article = Article.find(params[:id], :include => [:assets])
     @articles = Article.small_list(6)
     #fresh_when(:etag => @article)
     respond_to do |format|
@@ -96,7 +98,7 @@ class ArticlesController < ApplicationController
     @article.destroy
 
     respond_to do |format|
-      format.html { redirect_to(articles_path) }
+      format.html { redirect_to(admin_articles_path) }
       format.xml  { head :ok }
     end
   end

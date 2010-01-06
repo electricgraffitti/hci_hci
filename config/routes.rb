@@ -36,6 +36,15 @@ ActionController::Routing::Routes.draw do |map|
   
   # XML Routes
   
+  # Admin Paths
+  map.login "login", :controller => "user_sessions", :action => "new"
+  map.logout "logout", :controller => "user_sessions", :action => "destroy"
+  map.admin_services "hci-services", :controller => "users", :action => "admin_services"
+  map.admin_articles "hci-articles", :controller => "users", :action => "admin_articles"
+  map.admin_events "hci-events", :controller => "users", :action => "admin_events"
+  map.admin_videos "hci-videos", :controller => "users", :action => "admin_videos"
+  map.admin_documents "hci-documents", :controller => "users", :action => "admin_documents"
+  
   # Custom Named Routes
   map.issuu_upload "upload-issuu", :controller => "issuu_uploads", :action => "index"
   map.landing "landing_page_test", :controller => "health_care", :action => "landing_page"
@@ -57,9 +66,7 @@ ActionController::Routing::Routes.draw do |map|
   map.private_sector "private-sector-claims-payment-software-solutions", :controller => "health_care", :action => "private_sector"
   map.workers_comp "workers-comp-claims-payment-software-solutions", :controller => "health_care", :action => "workers_comp"
   map.search "health-care-search-results", :controller => 'search', :action => 'index'
-  map.dashboard "dashboard", :controller => "users", :action => "index"
-  map.login "login", :controller => "user_sessions", :action => "new"
-  map.logout "logout", :controller => "user_sessions", :action => "destroy"
+
   map.employee_login "employee_login", :controller => "employee_sessions", :action => "new"
   map.employee_logout "employee_logout", :controller => "employee_sessions", :action => "destroy"
   map.about "about-healthcare-insight", :controller => "health_care", :action => "about"

@@ -18,6 +18,8 @@
 #  quote               :string(255)
 #  problem             :text
 #  solution            :text
+#  landing_link        :string(255)
+#  claim_type_id       :integer(4)
 #
 
 class Service < ActiveRecord::Base

@@ -8,10 +8,10 @@
 
 <%# This is in the application helper %>
 <%= render :partial => 'article', :locals => {:article => @article} %>
-<%= render :partial => 'articles_micro_list', :locals => {:articles => @articles} %>
+<%= render :partial => 'articles_micro_list', :locals => {:objects => @articles} %>
 
 
-<div class="widget_links grid_3 omega right">
+<div class="full_20_wrap widget_links grid_3 omega right">
 <% if current_user %>
   <%= link_to 'Edit', edit_article_path(@article) %> |
   <%= link_to 'New', new_article_path %> |

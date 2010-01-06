@@ -87,4 +87,24 @@ class UsersController < ApplicationController
       format.xml  { head :ok }
     end
   end
+  
+  def admin_services
+    @services = Service.all
+  end
+  
+  def admin_articles
+    @articles = Article.all :include => [:article_type]
+  end
+  
+  def admin_events
+    @events = Event.all
+  end
+  
+  def admin_videos
+    @videos = Video.all :include => [:video_type]
+  end
+  
+  def admin_documents
+    @documents = Document.all :include => [:document_type]
+  end
 end

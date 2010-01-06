@@ -1,9 +1,9 @@
 <div class="resource_article">
-  <% article.assets.each do |asset| %>
-    <%= link_to image_tag(asset.attachment.url(:thumb), :alt => article.title), article_path(article) %>
+  <% obj.assets.each do |asset| %>
+    <%= link_to image_tag(asset.attachment.url(:thumb), :alt => obj.title), article_path(obj) %>
   <% end %>
   <div class="resource_article_wrapper">        
-    <h4><%= link_to "#{ article.title}", article_path(article)  %></h4>
-    <%= truncate(article.description, :length => 100) %>
+    <h4><%= link_to "#{ obj.title}", article_path(obj)  %></h4>
+    <%= truncate(obj.description, :length => 100) %>
   </div>
 </div>

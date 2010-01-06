@@ -22,6 +22,7 @@ Rails::Initializer.run do |config|
   # config.gem 'RedCloth', :version => ">= 4.1.1", :source => "http://code.whytheluckystiff.net"
     config.gem "authlogic"
     config.gem 'bullet', :source => 'http://gemcutter.org'
+    config.gem 'will_paginate', :version => '~> 2.3.11', :source => 'http://gemcutter.org'
   # config.gem "active_youtube"
     # config.gem(
     #   'thinking-sphinx',

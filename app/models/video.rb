@@ -2,19 +2,23 @@
 #
 # Table name: videos
 #
-#  id                 :integer(4)      not null, primary key
-#  title              :string(255)
-#  description        :text
-#  video_type_id      :integer(4)
-#  third_party        :boolean(1)
-#  third_party_url    :string(255)
-#  created_at         :datetime
-#  updated_at         :datetime
-#  video_file_name    :string(255)
-#  video_content_type :string(255)
-#  video_file_size    :integer(4)
-#  video_updated_at   :datetime
-#  permalink          :string(255)
+#  id                       :integer(4)      not null, primary key
+#  title                    :string(255)
+#  description              :text
+#  permalink                :string(255)
+#  video_type_id            :integer(4)
+#  third_party              :boolean(1)
+#  third_party_url          :string(255)
+#  created_at               :datetime
+#  updated_at               :datetime
+#  video_file_name          :string(255)
+#  video_content_type       :string(255)
+#  video_file_size          :integer(4)
+#  video_updated_at         :datetime
+#  video_thumb_file_name    :string(255)
+#  video_thumb_content_type :string(255)
+#  video_thumb_file_size    :integer(4)
+#  video_thumb_updated_at   :datetime
 #
 
 class Video < ActiveRecord::Base
@@ -22,6 +26,8 @@ class Video < ActiveRecord::Base
   # has_many :assets, :as => :attachable
    # has_many :case_studies, :class_name => 'CaseStudy'
    # accepts_nested_attributes_for :case_studies, :allow_destroy => true
+   
+   belongs_to :video_type
 
    # Thinking Sphinx Indexes
    define_index do

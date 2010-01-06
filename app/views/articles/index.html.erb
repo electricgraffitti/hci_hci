@@ -5,7 +5,13 @@
 <% end %>
 
 <!-- Render Helper Module Here -->
-<%= render :partial => "articles/index_article", :locals => {:articles => @articles} %>
-<div class="full_1020_wrap right">
-  <%= link_to "Back", request.env["HTTP_REFERER"] %>
+<div class="grid_8 top_10_wrap">
+  <h3 class="orange">Fraud Articles</h3>
+  <%= render :partial => "articles/index_article", :locals => {:articles => @articles} %>
+
+  <%#= link_to "Back", request.env["HTTP_REFERER"] %>
+</div>
+<div class="grid_4 alpha omega right top_10_wrap">
+  <%= render :partial => 'resources/resource_press_releases', :locals => {:objects => @press_releases} %>
+  <%= render :partial => 'events/events_list', :locals => {:objects => @events} %>
 </div>

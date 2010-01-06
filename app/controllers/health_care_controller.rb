@@ -66,7 +66,7 @@ class HealthCareController < ApplicationController
   end
   
   def privacy_policy
-    @articles = Article.all
+    @articles = Article.all :limit => 10, :order => "created_at DESC"
   end
   
   def markets

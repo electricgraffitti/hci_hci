@@ -18,12 +18,12 @@
       <% end %>
     <% end %>
   </p>
-  <p>
+  <!-- <p>
     <% f.fields_for :coverflows do |cover_form|%>
     <%= cover_form.label "Add Cover Flow" %><br />
     <%= cover_form.file_field :cover, :size => 16 %>
     <% end %>
-  </p>
+  </p> -->
 </div>
 <div class="grid_5">
   <h4>Event SEO</h4>
@@ -43,8 +43,8 @@
 <div class="clear"></div>
 <div class="grid_5"
   <p>
-    <%= f.submit 'Submit', :class => "btn" %>
-    <%= link_to "Back", request.env["HTTP_REFERER"], :class => "btn" %>
+    <%= f.submit 'Submit'%>
+    <%= link_to "Back", request.env["HTTP_REFERER"] %>
   </p>
 </div>
 <% end %>

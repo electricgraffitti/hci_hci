@@ -1,3 +1,2 @@
-<% events.each do |event| %>
-  <%= index_event(event) %>
-<% end %>
+<h4><%= link_to "#{obj.title}", event_path(obj) %></h4>
+<p><%= (obj.created_at).to_s(:event_time) %></p>

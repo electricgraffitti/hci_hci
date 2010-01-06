@@ -1,13 +1,12 @@
 <div class="admin_nav grid_12 alpha omega">
   <ul id="admin_nav_ul">
-    <li><%= link_to "Dashboard", dashboard_path %></li>
-    <li><%= link_to "Services", new_service_path %></li>
-    <li><%= link_to "Events", new_event_path %></li>
-    <li><%= link_to "Articles", new_article_path %></li>
-    <li><%= link_to "Videos", new_video_path %></li>
-    <li><%= link_to "Documents", new_document_path %></li>
-    <li><%= link_to "Links", new_link_path %></li>
-    <li><%= link_to "Mailing List", newsletter_subscriptions_path %></li>
-    <li class="last"><%= link_to "Logout", logout_path %></li>
+    <li><%= link_to "Logout", logout_path %></li>
+    <li><%= link_to "Articles", admin_articles_path %></li>
+    <li><%= link_to "Events", admin_events_path %></li>
+    <li><%= link_to "Services", admin_services_path %></li>
+    <li><%= link_to "Videos", admin_videos_path %></li>
+    <li class="last"><%= link_to "Documents", admin_documents_path %></li>
+    <!-- <li><%#= link_to "Edit Links", new_link_path %></li> -->
+    <!-- <li ><%= link_to "Mailing List", newsletter_subscriptions_path %></li> -->
   </ul>
 </div>

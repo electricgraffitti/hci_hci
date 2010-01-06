@@ -180,6 +180,31 @@ $(document).ready(function() {
 	});
 });
 
+// Data Tables
+$(document).ready(function() {
+ servicesTable = $('#services_table').dataTable({
+   "bJQueryUI": true,
+   "sPaginationType": "full_numbers"
+ });
+ articlesTable = $('#articles_table').dataTable({
+   "bJQueryUI": true,
+   "sPaginationType": "full_numbers"
+ });
+ eventsTable = $('#events_table').dataTable({
+   "bJQueryUI": true,
+   "sPaginationType": "full_numbers"
+ });
+ videosTable = $('#videos_table').dataTable({
+   "bJQueryUI": true,
+   "sPaginationType": "full_numbers"
+ });
+ documentsTable = $('#documents_table').dataTable({
+   "bJQueryUI": true,
+   "sPaginationType": "full_numbers"
+ });
+});
+
+// hides third party url
 $(document).ready(function() {
   $tpurl = $('#third_party_url_field').hide();
   $tpcb = $('#article_third_party');

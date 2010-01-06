@@ -11,6 +11,8 @@
 #  permalink        :string(255)
 #  created_at       :datetime
 #  updated_at       :datetime
+#  third_party      :boolean(1)
+#  third_party_url  :string(255)
 #
 
 class Article < ActiveRecord::Base
@@ -36,7 +38,7 @@ class Article < ActiveRecord::Base
   
   # Named Scopes
   named_scope :small_list, lambda { |limit| {:include => [:assets], :limit => limit}}
-  named_scope :type, lambda { |type| { :include => :article_type, :conditions => ['article_types.article_type = ?', type]}}
+  named_scope :type, lambda { |typea| { :include => [:article_type, :assets], :conditions => ['article_types.article_type = ?', typea], :order => "articles.created_at DESC"}}
   named_scope :last_created, :order => "created_at DESC"
   
   #============================= Class Methods ==================================#
@@ -44,6 +46,12 @@ class Article < ActiveRecord::Base
   # Sets Permalink Routes
   def to_param
     "#{id}-#{permalink}"
+  end
+  
+  # Sets up the Pagination call Article.list(number, params[:page])
+  def self.list(count, page, typea, typeb = nil)
+    find(:all, :include => [:article_type, :assets], :conditions => ['article_types.article_type = ? OR article_types.article_type = ?', typea, typeb])
+    paginate :per_page => count, :page => page, :order => "created_at DESC"
   end
   
   #pulls the assets from the form

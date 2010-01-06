@@ -11,6 +11,8 @@
 #  permalink        :string(255)
 #  created_at       :datetime
 #  updated_at       :datetime
+#  third_party      :boolean(1)
+#  third_party_url  :string(255)
 #
 
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html

@@ -8,6 +8,7 @@
 <div class="grid_12 alpha omega">
   <%= render :partial => 'resource_brochures', :locals => {:documents => @documents} %>
   <%= render :partial => 'resource_videos' %>
-  <%= render :partial => 'resource_articles', :locals => {:articles => @articles} %>
-  <%= render :partial => 'resource_press_releases', :locals => {:articles => @press_releases} %>
+  <%= render :partial => 'resource_articles', :locals => {:objects => @articles} %>
+  <%= render :partial => 'resource_press_releases', :locals => {:objects => @press_releases} %>
+  <%= render :partial => 'events/events_list', :locals => {:objects => @events} %>
 </div>
