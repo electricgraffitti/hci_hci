@@ -4,6 +4,6 @@
   <% end %>
   <div class="resource_article_wrapper">        
     <h4><%= link_to "#{ obj.title}", article_path(obj)  %></h4>
-    <%= truncate(obj.description, :length => 100) %>
+    <%= truncate(obj.description, :length => 140) %>
   </div>
 </div>
