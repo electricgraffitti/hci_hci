@@ -21,7 +21,7 @@ class ArticlesController < ApplicationController
   # GET /articles/1.xml
   def show
     @article = Article.find(params[:id], :include => [:assets])
-    @articles = Article.small_list(6)
+    @articles = Article.small_list(6).last_created
     #fresh_when(:etag => @article)
     respond_to do |format|
       format.html # show.html.erb
