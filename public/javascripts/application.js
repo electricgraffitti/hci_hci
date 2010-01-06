@@ -193,6 +193,9 @@ $(document).ready(function() {
   });
 });
 
+$(document).everyTime(15000, function () {
+  $('.b_nav1 a').trigger('click');
+});
 
 // This is the add an attachment field increaser
 $(document).ready(function() {

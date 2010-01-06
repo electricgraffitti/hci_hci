@@ -5,12 +5,22 @@
 <% content_for :banner do %>
   <%= render :partial => "health_care/accreditations_banner" %>
 <% end %>
-<div class="benefits_content grid_12 alpha omega">
-  <h2 class="page_header memberships_header full_wrap">Memberships & Associations</h2>
-  <%= render :partial => "health_care/accreditations_grid" %>
-</div>
-<div class="benefits_content grid_12 alpha omega">
-  <h2 class="page_header accreditations_header">accreditations & Certifications</h2>
+<div class="grid_12 alpha omega">
+  <div class="full_wrap index_steps left">
+    <div class="left">  
+      <h2 class="orange">Start Paying Right. Start Saving Money.</h2>
+      <p>
+        Unique markets provide unique challenges. That’s why we 
+        tailor our payment integrity solutions and services to fit
+        your needs and goals. Learn more about our customized 
+        services and how clinical validation delivers better results.
+      </p>
+    </div>
+    <div class="left">
+      <h2 class="market_quote">Each market and client is unique. One size never fits all. We customtize every solution for every customer.</h2>
+    </div>
+  </div>
+  <!-- <h2 class="page_header accreditations_header">accreditations & Certifications</h2> -->
   <div class="benefit_works_section">
     <div class="benefit_work_box first">
       <%= link_to(image_tag("partner_logos/urac1.png", :alt => "URAC Certification"), "http://www.urac.org") %>
@@ -49,4 +59,8 @@
       </div>
     </div>
   </div>
+</div>
+<div class="benefits_content grid_12 alpha omega">
+  <h2 class="page_header memberships_header full_wrap">Memberships & Associations</h2>
+  <%= render :partial => "health_care/accreditations_grid" %>
 </div>

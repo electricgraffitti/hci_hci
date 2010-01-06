@@ -695,6 +695,16 @@ div.visionclaim-insight_demo_button span.small_cta_button {
   width:190px;
   z-index:10;
 }
+.home_panel_icon_link {
+  bottom:80px;
+  display:block;
+  height:300px;
+  left:65px;
+  position:absolute;
+  text-indent:-3000em;
+  width:322px;
+  z-index:10;
+}
 #slider {
   height: 500px;
   position: relative;
@@ -757,7 +767,7 @@ div.visionclaim-insight_demo_button span.small_cta_button {
   position: absolute;
   width: 469px;
   height: 134px;
-  right: 10px;
+  right: 17px;
   bottom: 60px;
 }
 .index_banner_nav ul li {
@@ -2471,10 +2481,10 @@ h4.apple_box_headers.resources {
   background: url('../images/apple_box_headers.png') 0px 0px;
 }
 h4.apple_box_headers.services {
-  background: url('../images/apple_box_headers.png') 0px -40px;
+  background: url('../images/apple_box_headers.png') 0px -80px;
 }
 h4.apple_box_headers.nucleus {
-  background: url('../images/apple_box_headers.png') 0px -80px;
+  background: url('../images/apple_box_headers.png') 0px -40px;
 }
 .apple_icons {
   margin-top: -4px;
