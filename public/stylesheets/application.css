@@ -1931,8 +1931,9 @@ div.right_side_box {
 } 
 
 .partner_content_wrap {
-  width: 390px;
-  margin-top: 33px;
+  float:left;
+  margin-top:20px;
+  width:200px;
 }
 .accreditation_content_wrap {
   margin-top: 16px;
@@ -2044,6 +2045,12 @@ p.works {
   text-align: right;
   border-left: 1px solid #cdcdcd;
   border-right: 1px solid #efefef;
+}
+.accreditation_work_box {
+  text-align: center;
+}
+.accreditation_work_box p {
+  text-align: left;
 }
 .accredidation_sub_box {
   min-height: 150px;
@@ -2224,7 +2231,7 @@ p.works {
 .partner_grid {
   float:left;
   margin-left:14px;
-  padding:10px 10px 0;
+  padding:5px 10px;
   position:relative;
   width:195px;
 }
@@ -2244,12 +2251,16 @@ p.works {
 }
 .partner_grid img {
   background: #ffffff;
+  margin-bottom:5px;
 }
 .sector_grid p, .partner_grid p {
   float:left;
   font-size:85%;
   margin-top:0;
   width:170px;
+}
+.partner_grid p {
+  font-size:100%;
 }
 .sector_sub_header {
   float:left;

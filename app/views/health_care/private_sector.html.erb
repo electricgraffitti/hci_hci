@@ -7,6 +7,10 @@
 <% end %>
 <div class="benefits_content grid_12 alpha omega">
   <h2 class="page_header private_header full_wrap">Private Sector</h2>
-  <p class="sector_sub_header orange">We have the tools to help you<br/>stop fraud, abuse and overpayment</p>
-  <%= render :partial => "health_care/private_content" %>
+  <p class="benefits_sub_text orange">
+      We aren't just another vendor with just another product.<br/>
+      We're changing the private sector with better technology,<br/>
+      better clinicians, better service and better savings results.
+    </p>
+  <%= render :partial => "health_care/private_content", :locals => {:services => @services} %>
 </div>

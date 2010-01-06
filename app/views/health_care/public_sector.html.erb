@@ -11,7 +11,13 @@
       We aren't just another vendor with just another product.<br/>
       We're changing the public sector with better technology,<br/>
       better clinicians, better service and better savings results.
-    </p>
+  </p>
+  <h4 class="left">Find out more</h4>
+  <ul>
+    <% services.each do |s| %>
+    <li><%= link_to "#{s.acronym} Brochure", service_path(s) %></li>
+    <% end %>
+  </ul>
   </p>
   <%= render :partial => "health_care/public_content", :locals => {:services => @services} %>
 </div>

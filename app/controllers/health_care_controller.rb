@@ -36,11 +36,11 @@ class HealthCareController < ApplicationController
   end
   
   def private_sector
-  
+    @services = Service.all
   end
   
   def workers_comp
-    
+    @services = Service.all
   end
   
   def careers
