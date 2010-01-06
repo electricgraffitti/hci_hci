@@ -14,17 +14,24 @@
     <li><%= link_to "Free Trial", APP['free_trial_landing_page'] %></li>
   </ul>
   <ul>
-    <h4>Legal</h4>
-    <li><%= link_to "Privacy Policy", privacy_path %></li>
-    <li><%= link_to "Disclaimers", privacy_path %></li>
-    <li><%= link_to "Copyrights", privacy_path %></li>
-    <li><%= link_to "Notices", privacy_path %></li>
-  </ul>
-  <ul>
     <h4>Media</h4>
     <li><%= link_to "Social Media", social_path %></li>
     <li><%= link_to "News", articles_path %></li>
     <li><%= link_to "Videos", media_path %></li>
     <li><%= link_to "Press Kit", press_kit_path %></li>
   </ul>
+  <ul>
+    <h4>Other</h4>
+    <li><%= link_to "WebEx", "https://hcinsight.webex.com/mw0305l/mywebex/default.do?siteurl=hcinsight" %></li>
+    <li>
+      <% if current_employee %>
+        <%= link_to "HCI Logout", employee_logout_path %>
+      <% else %>
+        <%= link_to "HCI Login", employee_login_path %>
+      <% end %>
+    </li>
+    <li><%= link_to "Verisk Health", "http://www.veriskhealth.com", :target => "_blank" %></li>
+    <li><%= link_to "Privacy Policy", privacy_path %></li>
+  </ul>
+
 </div>
