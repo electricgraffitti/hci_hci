@@ -3,9 +3,10 @@
   <div class="scroll">
     <div class="scrollContainer">
       <div id="panel1" class="panel">
-        <!-- <h2 class="nucleus_header meet_nucleus">Meet Nucleus</h2> -->
+        <%= image_tag("/images/banners/inner_banners/meet_nucleus_splash_image.jpg") %>
+        <%= link_to "Play Again", "#", :class => "play_again_link" %>
         <div id="nucleus_main_video" class="nucleus_player">
-         <%= image_tag("/images/banners/inner_banners/meet_nucleus_splash_image.jpg") %>
+         
         </div>
       </div>
       <div id="panel2" class="panel">
@@ -31,11 +32,11 @@
   <div class="banner_nav">
     <div class="banner_nav_wrap">
     <ul class="nav_ul navigation">
-      <li class="banner_li"><%= link_to "1", '#panel1', :class => 'selected' %></li>
-      <li class="banner_li"><%= link_to "2", '#panel2'%></li>
-      <li class="banner_li"><%= link_to "3", '#panel3'%></li>
-      <li class="banner_li"><%= link_to "4", '#panel4'%></li>
-      <li class="banner_li"><%= link_to "5", '#panel5'%></li>
+      <li class="banner_li"><%= link_to "1", '#panel1', :class => 'li_1 selected' %></li>
+      <li class="banner_li"><%= link_to "2", '#panel2', :class => 'li_2'%></li>
+      <li class="banner_li"><%= link_to "3", '#panel3', :class => 'li_3'%></li>
+      <li class="banner_li"><%= link_to "4", '#panel4', :class => 'li_4'%></li>
+      <li class="banner_li"><%= link_to "5", '#panel5', :class => 'li_5'%></li>
     </ul>
     </div>
   </div>
