@@ -2054,6 +2054,12 @@ div.bene_even_row .benefit_avatar_wrap {
 .bene11 {
   background: url('../images/benefit_grid_images.jpg') 0px -1920px no-repeat;
 }
+.bene12 {
+  background: url('../images/benefit_grid_images.jpg') 0px -2160px no-repeat;
+}
+.bene13 {
+  background: url('../images/benefit_grid_images.jpg') 0px -2280px no-repeat;
+}
 p.benefits_sub_text, p.partners_sub_text, p.industry_sub_text {
   float:left;
   font-size:145%;
