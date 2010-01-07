@@ -2365,6 +2365,7 @@ p.sector_big_text {
   float: left;
 }
 #nucleus_form {
+  position: relative;
   float: left;
 }
 .nucleus_form_wrap div {
@@ -2374,7 +2375,9 @@ p.sector_big_text {
 }
 div.nucleus_form_wrap .nucleus_submit {
   position: relative;
+  float: left;
   left: 0px;
+  bottom: 0px;
 }
 .play_again_link {
   position: absolute;
