@@ -809,25 +809,25 @@ div.visionclaim-insight_demo_button span.small_cta_button {
   display: block;
 }
 .b_nav2 {
-  background: url('../images/banners/index_banner_nav/black_cross_nav.png') 0px -360px no-repeat;
+  background: url('../images/banners/index_banner_nav/black_cross_nav.png') 0px -120px no-repeat;
 }
 .b_nav2.highlight:hover, li.b_nav2 a span.hover {
-  background: url('../images/banners/index_banner_nav/black_cross_nav.png') 0px -240px no-repeat;
+  background: url('../images/banners/index_banner_nav/black_cross_nav.png') 0px 0px no-repeat;
 }
 .index_banner_nav ul li.b_nav2 a.active {
-  background: url('../images/banners/index_banner_nav/black_cross_nav.png') 0px -242px no-repeat;
+  background: url('../images/banners/index_banner_nav/black_cross_nav.png') 0px -2px no-repeat;
 }
 .b_nav3 {
-  background: url('../images/banners/index_banner_nav/black_cross_nav.png') -120px -360px no-repeat;
-}
-.b_nav3.highlight:hover, li.b_nav3 a span.hover {
   background: url('../images/banners/index_banner_nav/black_cross_nav.png') -120px -120px no-repeat;
 }
+.b_nav3.highlight:hover, li.b_nav3 a span.hover {
+  background: url('../images/banners/index_banner_nav/black_cross_nav.png') -120px -0px no-repeat;
+}
 .index_banner_nav ul li.b_nav3 a.active {
-  background: url('../images/banners/index_banner_nav/black_cross_nav.png') -120px -122px no-repeat;
+  background: url('../images/banners/index_banner_nav/black_cross_nav.png') -120px -2px no-repeat;
 }
 .b_nav4 {
-  background: url('../images/banners/index_banner_nav/black_cross_nav.png') -240px -360px no-repeat;
+  background: url('../images/banners/index_banner_nav/black_cross_nav.png') -240px -120px no-repeat;
 }
 .b_nav4.highlight:hover, li.b_nav4 a span.hover {
   background: url('../images/banners/index_banner_nav/black_cross_nav.png') -240px 0px no-repeat;
