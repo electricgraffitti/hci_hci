@@ -836,7 +836,7 @@ div.visionclaim-insight_demo_button span.small_cta_button {
   text-align: center;
 }
 .banner_nav .banner_nav_wrap{
-  width: 165px;
+  width: 120px;
   margin: 0 auto;
 }
 .banner_nav .banner_li {
@@ -1625,13 +1625,15 @@ ul.service_bullets li {
 .nucleus_service_top_stripe {
   float: left;
   height: 10px;
-  background: #DEED74;
+/*  background: #DEED74;*/
+  background: #00853f;
   width: 940px;
 }
 .nucleus_service_bottom_stripe {
   float: left;
   height: 50px;
-  background: #BED63A;
+/*  background: #BED63A;*/
+  background: #004914;
   width: 940px;
 }
 div.half p {
