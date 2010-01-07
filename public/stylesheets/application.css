@@ -780,52 +780,60 @@ div.visionclaim-insight_demo_button span.small_cta_button {
 .index_banner_nav ul li {
   position: relative;
   float: left;
-  width: 136px;
-  height: 134px;
+  width: 135px;
+  height: 135px;
   border: none;
   margin-right: 20px;
 }
 .index_banner_nav ul li.index_banner_li {
-  background: url('../images/banners/index_banner_nav/li_bg.png') no-repeat;
+
 }
 .nav_header {
-  font-size: 1.1em;
+  font-size:1.3em;
+  margin-top:-16px;
+  width:120px;
 }
 .index_banner_nav ul li a {
   position: relative;
-  width: 52px;
-  height: 50px;
-  left: 42px;
-  top: 27px;
-  background: url('../images/banners/index_banner_nav/nav_a.png') 0px 0px no-repeat;
+  width: 135px;
+  height: 130px;
   text-indent: -3000em;
   display: block;
 }
 .index_banner_nav ul li a span.hover {
   position: absolute;
-  width: 52px;
-  height: 50px;
+  width: 135px;
+  height: 130px;
   left: 0px;
-  top: 0px;
+  top: -2px;
   display: block;
 }
+.b_nav2 {
+  background: url('../images/banners/index_banner_nav/black_cross_nav.png') 0px -360px no-repeat;
+}
 .b_nav2.highlight:hover, li.b_nav2 a span.hover {
-  background: url('../images/banners/index_banner_nav/nav_a.png') 0px -50px no-repeat;
+  background: url('../images/banners/index_banner_nav/black_cross_nav.png') 0px -240px no-repeat;
 }
 .index_banner_nav ul li.b_nav2 a.active {
-  background: url('../images/banners/index_banner_nav/nav_a.png') 0px -50px no-repeat;
+  background: url('../images/banners/index_banner_nav/black_cross_nav.png') 0px -242px no-repeat;
+}
+.b_nav3 {
+  background: url('../images/banners/index_banner_nav/black_cross_nav.png') -120px -360px no-repeat;
 }
 .b_nav3.highlight:hover, li.b_nav3 a span.hover {
-  background: url('../images/banners/index_banner_nav/nav_a.png') 0px -50px no-repeat;
+  background: url('../images/banners/index_banner_nav/black_cross_nav.png') -120px -120px no-repeat;
 }
 .index_banner_nav ul li.b_nav3 a.active {
-  background: url('../images/banners/index_banner_nav/nav_a.png') 0px -50px no-repeat;
+  background: url('../images/banners/index_banner_nav/black_cross_nav.png') -120px -122px no-repeat;
+}
+.b_nav4 {
+  background: url('../images/banners/index_banner_nav/black_cross_nav.png') -240px -360px no-repeat;
 }
 .b_nav4.highlight:hover, li.b_nav4 a span.hover {
-  background: url('../images/banners/index_banner_nav/nav_a.png') 0px -50px no-repeat;
+  background: url('../images/banners/index_banner_nav/black_cross_nav.png') -240px 0px no-repeat;
 }
 .index_banner_nav ul li.b_nav4 a.active {
-  background: url('../images/banners/index_banner_nav/nav_a.png') 0px -50px no-repeat;
+  background: url('../images/banners/index_banner_nav/black_cross_nav.png') -240px -2px no-repeat;
 }
 .banner_nav {
   position: relative;
