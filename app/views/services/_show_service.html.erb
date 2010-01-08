@@ -1,6 +1,6 @@
 <% s = @service %>
 <div class="show_wrap grid_12">
-  <div class="service_mid_section service_bg grid_12 alpha omega">
+  <div class="service_mid_section service_bg <%= s.permalink %>_service_bg grid_12 alpha omega">
     <div class="overview_wrap grid_7 right">
       <% if s.acronym === "PCI" %>
         <%= render :partial => 'services/pci_service_block', :locals => {:s => s} %>
