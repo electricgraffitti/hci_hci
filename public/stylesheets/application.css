@@ -2767,6 +2767,10 @@ h4.apple_box_headers.nucleus {
   text-align:left;
   width:230px;
 }
+a.resource_video_link {
+  float: right;
+  padding:10px 1px;
+}
 /*********************************************/
 /******************FORMS**********************/
 .form_section {
@@ -3403,4 +3407,51 @@ table.display tr.odd.row_selected td {
 
 .ex_highlight #example tbody tr.odd:hover, #example tbody tr.odd td.highlighted {
 	background-color: #E6FF99;
+}
+
+/****************************************/
+/**************VIDEO OVERLAY*************/
+/* the overlayed element */ 
+div.overlay { 
+     
+    /* growing background image */ 
+    background-image:url("../flowplayer_images/transparent2.png"); 
+     
+    /* dimensions after the growing animation finishes  */ 
+    width:600px;
+    height:470px;
+     
+    /* initially overlay is hidden */ 
+    display:none; 
+     
+    /* some padding to layout nested elements nicely  */ 
+    padding:30px;
+}
+ 
+/* default close button positioned on upper right corner */ 
+div.overlay div.close { 
+    background-image:url("../flowplayer_images/apple-close.png"); 
+    position:absolute; 
+    right:10px; 
+    top:10px; 
+    cursor:pointer; 
+    height:28px; 
+    width:28px; 
+} 
+ 
+ 
+/* black */ 
+div.overlay.black { 
+    background:url("../flowplayer_images/transparent.png") no-repeat !important; 
+    color:#fff; 
+} 
+ 
+/* petrol */ 
+div.overlay.petrol { 
+    background:url("../flowplayer_images/petrol.png") no-repeat !important; 
+    color:#fff; 
+} 
+ 
+div.black h2, div.petrol h2 { 
+    color:#ddd;         
 }

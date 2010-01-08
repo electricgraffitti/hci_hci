@@ -1,5 +1,5 @@
 <% page_title "Health Care Videos "%>
-
+<%= javascript_include_tag 'index_videos' %>
 <% content_for :banner do %>
   <%= render :partial => "videos/banner" %>
 <% end %>
@@ -7,11 +7,17 @@
 <!-- Render Helper Module Here -->
 <div class="grid_8 top_10_wrap">
   <h3 class="orange">Fraud Videos</h3>
+  <div id="video_playlist"> 
   <%= render :partial => "videos/index_video", :locals => {:videos => @videos} %>
-
-  <%#= link_to "Back", request.env["HTTP_REFERER"] %>
+  </div>
 </div>
 <div class="grid_4 alpha omega right top_10_wrap">
   <%= render :partial => 'resources/resource_press_releases', :locals => {:objects => @press_releases} %>
   <%= render :partial => 'events/events_list', :locals => {:objects => @events} %>
+</div>
+
+<!-- element that is overlayed, visuals are done with external CSS --> 
+<div class="overlay">
+    <!-- flowplayer container --> 
+    <div id="video_index_player"></div>
 </div>

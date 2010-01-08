@@ -5,7 +5,7 @@ class VideosController < ApplicationController
   # GET /videos
   # GET /videos.xml
   def index
-    @videos = Video.list(5, params[:page])
+    @videos = Video.list(4, params[:page])
     @press_releases = Article.type('press_release').small_list(5)
     @events = Event.small_list(5)
     respond_to do |format|

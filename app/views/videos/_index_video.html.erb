@@ -1,9 +1,9 @@
 <% videos.each do |video| %>
-<div class='index_article_listing top_10_wrap'>
+<div class='video_playlist_item index_article_listing top_10_wrap'>
     <% if video.third_party? %>
       <%= link_to image_tag(video.video_thumb.url(:thumb), :alt => video.title), video.third_party_url, :target => "_blank", :class => "index_article_image" %>
     <% else %>
-      <%= link_to image_tag(video.video_thumb.url(:thumb), :alt => video.title), video_path(video), :class => "index_article_image" %>
+      <%= link_to image_tag(video.video_thumb.url(:thumb), :alt => video.title), video.video.url, :class => "index_article_image overlay_link", :rel => "div.overlay" %>
     <% end %>
   <h3><%= video.title %></h3>
   <%= truncate(video.description, :length => 350) %>
@@ -11,7 +11,7 @@
     <% if video.third_party? %>
       <%= link_to('Go To Site', video.third_party_url, :target => "_blank") %>
     <% else %>
-      <%= link_to('Watch Video', video_path(video)) %>
+      <%= link_to('Watch Video', video.video.url, :class => "overlay_link", :rel => "div.overlay") %>
     <% end %>
     <% if current_user %>
     |
@@ -25,6 +25,8 @@
 <div class='clear'></div>
 </div>
 <% end %>
+<% if videos.size > 4 %>
 <div class='index_article_listing top_10_wrap'>
   <%= will_paginate videos %>
 </div>
+<% end %>
