@@ -1,28 +1,17 @@
-<div class="grid_12 alpha omega full_wrap"><h1>Listing videos</h1>
+<% page_title "Health Care Videos "%>
 
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Description</th>
-    <th>Video type</th>
-    <th>Third party</th>
-    <th>Third party url</th>
-  </tr>
-
-<% @videos.each do |video| %>
-  <tr>
-    <td><%=h video.title %></td>
-    <td><%=h video.description %></td>
-    <td><%=h video.video_type_id %></td>
-    <td><%=h video.third_party %></td>
-    <td><%=h video.third_party_url %></td>
-    <td><%= link_to 'Show', video %></td>
-    <td><%= link_to 'Edit', edit_video_path(video) %></td>
-    <td><%= link_to 'Destroy', video, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
+<% content_for :banner do %>
+  <%= render :partial => "videos/banner" %>
 <% end %>
-</table>
 
-<br />
+<!-- Render Helper Module Here -->
+<div class="grid_8 top_10_wrap">
+  <h3 class="orange">Fraud Videos</h3>
+  <%= render :partial => "videos/index_video", :locals => {:videos => @videos} %>
 
-<%= link_to 'New video', new_video_path %></div>
+  <%#= link_to "Back", request.env["HTTP_REFERER"] %>
+</div>
+<div class="grid_4 alpha omega right top_10_wrap">
+  <%= render :partial => 'resources/resource_press_releases', :locals => {:objects => @press_releases} %>
+  <%= render :partial => 'events/events_list', :locals => {:objects => @events} %>
+</div>

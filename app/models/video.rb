@@ -64,5 +64,9 @@ class Video < ActiveRecord::Base
    def to_param
      "#{id}-#{permalink}"
    end
+   
+   def self.list(count, page)
+     paginate :per_page => count, :page => page, :order => "created_at DESC"
+   end
   
 end
