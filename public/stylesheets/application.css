@@ -918,6 +918,22 @@ img.inner_banner {
 .career_banner {
   background: url('../images/banners/inner_banners/careers_big.jpg') no-repeat;
 }
+div.career_banner_image_link {
+  bottom:169px;
+  height:203px;
+  position:absolute;
+  right:63px;
+  width:303px;
+}
+div.career_banner_image_link a {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  display: block;
+  text-indent: -3000em;
+}
 .social_banner {
   background: url('../images/banners/inner_banners/social_big.jpg') no-repeat;
 }
@@ -1634,14 +1650,14 @@ ul.service_bullets li {
   float: left;
   height: 10px;
 /*  background: #DEED74;*/
-  background: #00853f;
+  background: #58AE46;
   width: 940px;
 }
 .nucleus_service_bottom_stripe {
   float: left;
   height: 50px;
 /*  background: #BED63A;*/
-  background: #004914;
+  background: #309846;
   width: 940px;
 }
 div.half p {
@@ -1881,6 +1897,9 @@ div.right div.milestone_inner_wrap {
 }
 .accreditation_links li a.accreditation_nadp {
   background: transparent url('../images/accreditations_large_icons.jpg') 0px -288px no-repeat;
+}
+.accreditation_links li a.accreditation_sas70 {
+  background: transparent url('../images/accreditations_large_icons.jpg') 0px -285px no-repeat;
 }
 .accreditation_links_small li a.accreditation_ahip {
   background: transparent url('../images/accreditations_small_icons.jpg') no-repeat;
