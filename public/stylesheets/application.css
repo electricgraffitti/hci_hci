@@ -2771,6 +2771,34 @@ a.resource_video_link {
   float: right;
   padding:10px 1px;
 }
+.index_video_listing a.index_video_image {
+  float: left; 
+  margin-right: 20px;
+}
+.index_video_listing {
+  width: 600px;
+  border: 1px solid #efefef;
+  padding: 10px;
+}
+.index_video_listing p {
+  margin-top: 0px;
+  width: 450px;
+  float:left;
+}
+.index_video_listing a.index_video_image {
+  float: left; 
+  margin-right: 20px;
+}
+.index_video_listing a img {
+  padding: 2px;
+  border: 1px solid #333;
+  background: #dedede;
+}
+.index_video_listing h3 {
+  float:left;
+  margin-top:-3px;
+  width: 445px;
+}
 /*********************************************/
 /******************FORMS**********************/
 .form_section {
@@ -3409,49 +3437,61 @@ table.display tr.odd.row_selected td {
 	background-color: #E6FF99;
 }
 
-/****************************************/
-/**************VIDEO OVERLAY*************/
-/* the overlayed element */ 
+/********************************************/
+/**************OVERLAY STYLES****************/
+
+/*/* overlay size and background image */ 
 div.overlay { 
-     
-    /* growing background image */ 
-    background-image:url("../flowplayer_images/transparent2.png"); 
-     
-    /* dimensions after the growing animation finishes  */ 
-    width:600px;
-    height:470px;
-     
-    /* initially overlay is hidden */ 
+    position: relative;
+    width:512px; 
+    height:288px; 
+ 
+    background-image:url(../images/overlay/apple.png); 
     display:none; 
-     
-    /* some padding to layout nested elements nicely  */ 
-    padding:30px;
+    padding: 0 !important; 
+} 
+ 
+/* close button for overlay */ 
+div.overlay div.close { 
+    background:url(../images/overlay/apple-close.png) no-repeat; 
+    position:absolute; 
+    right:-21px;
+    top:-11px;
+    width:35px;
+    z-index:11000;
+    height: 35px; 
+    cursor:pointer; 
 }
  
-/* default close button positioned on upper right corner */ 
-div.overlay div.close { 
-    background-image:url("../flowplayer_images/apple-close.png"); 
+/* original size of the player */ 
+#player, #player embed, #player object { 
+  height:288px;
+  left:0px;
+  position:absolute;
+  top:0px;
+  width:512px;
+} 
+ 
+/* absolute positioning of the player */ 
+#player embed, #player object { 
+    position:relative; 
+ 
+    /* layer as the topmost element */ 
+    z-index:10000; 
+}*/
+
+/* styling for elements inside overlay */ 
+.details { 
     position:absolute; 
-    right:10px; 
-    top:10px; 
-    cursor:pointer; 
-    height:28px; 
-    width:28px; 
-} 
- 
- 
-/* black */ 
-div.overlay.black { 
-    background:url("../flowplayer_images/transparent.png") no-repeat !important; 
+    top:15px; 
+    right:15px; 
+    font-size:11px; 
     color:#fff; 
+    width:150px; 
 } 
  
-/* petrol */ 
-div.overlay.petrol { 
-    background:url("../flowplayer_images/petrol.png") no-repeat !important; 
-    color:#fff; 
-} 
- 
-div.black h2, div.petrol h2 { 
-    color:#ddd;         
+.details h3 { 
+    color:#aba; 
+    font-size:15px; 
+    margin:0 0 -10px 0; 
 }

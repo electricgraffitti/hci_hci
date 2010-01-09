@@ -30,7 +30,7 @@ class Event < ActiveRecord::Base
   # RedCloth (textilize)
   acts_as_textiled  :description
   
-  named_scope :small_list, lambda { |limit| {:include => [:assets], :limit => limit, :order => "events.created_at DESC"}}
+  named_scope :small_list, lambda { |limit| { :limit => limit, :order => "events.created_at DESC"}}
   named_scope :last_created, :order => "created_at DESC"
   
   #============================= Class Methods ==================================#

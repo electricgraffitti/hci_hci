@@ -1,5 +1,5 @@
 <% page_title "Health Care Videos "%>
-<%= javascript_include_tag 'index_videos' %>
+
 <% content_for :banner do %>
   <%= render :partial => "videos/banner" %>
 <% end %>
@@ -10,14 +10,14 @@
   <div id="video_playlist"> 
   <%= render :partial => "videos/index_video", :locals => {:videos => @videos} %>
   </div>
+  <!-- element that is overlayed, visuals are done with external CSS --> 
 </div>
 <div class="grid_4 alpha omega right top_10_wrap">
   <%= render :partial => 'resources/resource_press_releases', :locals => {:objects => @press_releases} %>
   <%= render :partial => 'events/events_list', :locals => {:objects => @events} %>
 </div>
-
-<!-- element that is overlayed, visuals are done with external CSS --> 
-<div class="overlay">
+<div id="video_div" class="overlay">
     <!-- flowplayer container --> 
-    <div id="video_index_player"></div>
+    <div id="player"></div>
 </div>
+<%= javascript_include_tag 'index_videos' %>
