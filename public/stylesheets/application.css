@@ -946,6 +946,33 @@ div.visionclaim-insight_demo_button span.small_cta_button {
   right: 0px;
   background: url('../images/banners/inner_banners/banner_arrows.png') -25px 0px no-repeat;
 }
+div.nucleus_bullet_points {
+  position: absolute;
+  top: 200px;
+  left: 75px;
+}
+.nucleus_bullet_points ul {
+  float: left;
+}
+.nucleus_bullet_points ul li {
+  position: relative;
+  float: left;
+  width: 150px;
+  height: 38px;
+  text-align:center;
+  background: url('../images/banners/nucleus_banner_nav/nucleus_bullet.png') no-repeat;
+}
+.nucleus_bullet_points ul li h3 {
+  width: 99px;
+  font-size: 1.3em;
+  margin: 2px 0px 0px 33px;
+}
+.nucleus_bullet_points.bp3 ul li h3 {
+  margin: 2px 0px 0px 40px;
+}
+.nucleus_bullet_points.bp4 ul li h3 {
+  margin: 2px 0px 0px 25px;
+}
 /****Inner Banners****/
 #inner_banner_short {
   height: 290px;
