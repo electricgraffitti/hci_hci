@@ -964,6 +964,7 @@ div.nucleus_bullet_points {
 }
 .nucleus_bullet_points ul li h3 {
   width: 99px;
+  height: 38px;
   font-size: 1.3em;
   margin: 2px 0px 0px 33px;
 }
@@ -972,6 +973,51 @@ div.nucleus_bullet_points {
 }
 .nucleus_bullet_points.bp4 ul li h3 {
   margin: 2px 0px 0px 25px;
+}
+.popup {
+  position: relative;
+  width: 346px;
+  height: 123px;
+  text-indent: -3000em;
+  z-index: 50;
+  top:-150px;
+  display: none;
+}
+#real_time_popup {
+  left:-18px;
+  background: url('../images/banners/nucleus_bullet_hovers/real_time.png') no-repeat;
+}
+#next_gen_popup {
+  left:-18px;
+  background: url('../images/banners/nucleus_bullet_hovers/next_gen.png') no-repeat;
+}
+#saas_app_popup {
+  left:-18px;
+  background: url('../images/banners/nucleus_bullet_hovers/saas_app.png') no-repeat;
+}
+#single_click_popup {
+  left:-18px;
+  background: url('../images/banners/nucleus_bullet_hovers/single_click.png') no-repeat;
+}
+#custom_dash_popup {
+  left:-18px;
+  background: url('../images/banners/nucleus_bullet_hovers/custom_dash.png') no-repeat;
+}
+#user_interface_popup {
+  left:-18px;
+  background: url('../images/banners/nucleus_bullet_hovers/user_interface.png') no-repeat;
+}
+#workflow_popup {
+  left:-18px;
+  background: url('../images/banners/nucleus_bullet_hovers/workflow.png') no-repeat;
+}
+#technology_popup {
+  left:-18px;
+  background: url('../images/banners/nucleus_bullet_hovers/technology.png') no-repeat;
+}
+#results_popup {
+  left:-18px;
+  background: url('../images/banners/nucleus_bullet_hovers/results.png') no-repeat;
 }
 /****Inner Banners****/
 #inner_banner_short {
