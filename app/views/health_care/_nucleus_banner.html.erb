@@ -4,13 +4,10 @@
     <div class="scrollContainer">
       <div id="panel1" class="panel">
         <%= image_tag("/images/banners/inner_banners/nucleus_banner1.jpg") %>
-        <%= link_to "Play Again", "#", :class => "play_again_link" %>
+        
         <h2 class="hidden">
           Meet the Industry's Most Advanced Payment Integrity Platform
         </h2>
-        <div id="nucleus_main_video" class="nucleus_player">
-         
-        </div>
       </div>
       <div id="panel2" class="panel">
         <h2 class="nucleus_header">Real Time Processing</h2>
@@ -26,14 +23,27 @@
       </div>
     </div>
   </div>
+  <%= link_to "Play Again", "#", :class => "play_again_link" %>
   <div id="nucleus_banner_nav" class="banner_nav">
-    <div class="banner_nav_wrap">
-    <ul class="nav_ul navigation">
-      <li class="banner_li"><%= link_to "1", '#panel1', :class => 'li_1 selected' %></li>
-      <li class="banner_li"><%= link_to "2", '#panel2', :class => 'li_2'%></li>
-      <li class="banner_li"><%= link_to "3", '#panel3', :class => 'li_3'%></li>
-      <li class="banner_li"><%= link_to "4", '#panel4', :class => 'li_4'%></li>
+    <div class="nucleus_banner_nav">
+    <ul id="nucleus_banner_nav_ul" class="nav_ul navigation">
+      <li class="b_nav1 index_banner_li first"><%= link_to "1", '#panel1', :class => 'selected' %></li>
+      <li class="b_nav2 index_banner_li">
+        <div class="nav_header">The Technology</div>
+        <%= link_to "2", '#panel2'%>
+      </li>
+      <li class="b_nav3 index_banner_li">
+        <div class="nav_header">The Experience</div>
+        <%= link_to "3", '#panel3'%>
+      </li>
+      <li class="b_nav4 index_banner_li">
+        <div class="nav_header">The Difference</div>
+        <%= link_to "4", '#panel4'%>
+      </li>
     </ul>
     </div>
+  </div>
+  <div id="nucleus_main_video" class="nucleus_player">
+
   </div>
 </div>

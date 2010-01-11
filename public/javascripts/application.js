@@ -13,6 +13,7 @@ $(document).ready(function() {
 // setup some hidden elements
 $(document).ready(function() {
   $(".index_banner_nav .first").hide();
+  $(".nucleus_banner_nav .first").hide();
 });
 
 
@@ -68,6 +69,28 @@ $(document).ready(function() {
       $(this).click( function() {
         $span.fadeTo(200, 0);
         $('ul#index_banner_nav_ul a').removeClass('active selected');
+        $(this).addClass('active selected');
+      });
+  });
+});
+// Sets up the nucleus nav buttons 
+$(document).ready(function() {
+  $('ul#nucleus_banner_nav_ul li').removeClass('highlight');
+  $('ul#nucleus_banner_nav_ul a').append('<span class="hover" />').each(function(){
+        $(this).css({fontSize : 0});
+        var $span = $('> span.hover', this).css({opacity : 0});
+        $(this).hover(function() {
+          if ($(this).hasClass('active')) {
+            $span.stop().fadeTo(400, 0);
+          } else {
+           $span.stop().fadeTo(400, 1); 
+          }
+        }, function() {
+          $span.stop().fadeTo(400, 0);
+      });
+      $(this).click( function() {
+        $span.fadeTo(200, 0);
+        $('ul#nucleus_banner_nav_ul a').removeClass('active selected');
         $(this).addClass('active selected');
       });
   });
