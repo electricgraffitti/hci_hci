@@ -28,11 +28,11 @@ jQuery(document).ready(function() {
   var $panels = jQuery('#slider .panel');
   var $container = jQuery('#slider .scrollContainer');
   var $scroll = jQuery('#slider .scroll').css('overflow', 'hidden');
-  var $bannerNav = jQuery('.banner_nav ul.navigation');
+  var $bannerNav = jQuery('.scroll');
     
-  // $bannerNav
-  //    .before('<div id="banner_scroll_l" class="banner_scroll l" />')
-  //    .after('<div id="banner_scroll_r" class="banner_scroll r" />');
+  $bannerNav
+     .after('<div id="banner_nav"><div id="banner_scroll_l" class="banner_scroll l" /><div id="banner_scroll_r" class="banner_scroll r" /></div>');
+     // .after('<div id="banner_scroll_r" class="banner_scroll r" />');
     
     if (horizontal) {
       $panels.css({
@@ -49,7 +49,7 @@ jQuery(document).ready(function() {
   jQuery('#slider .navigation a').bind('mouseover, click', selectNav);
   
   function selectNav() {
-    jQuery(this).parents('ul:first').find('a').removeClass('selected').end().end().addClass('selected');
+    jQuery(this).parents('ul:first').find('a').removeClass('selected active').end().end().addClass('active selected');
   }
   
   var scrollOptions = {

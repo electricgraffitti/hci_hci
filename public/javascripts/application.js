@@ -67,8 +67,8 @@ $(document).ready(function() {
       });
       $(this).click( function() {
         $span.fadeTo(200, 0);
-        $('ul#index_banner_nav_ul a').removeClass('active');
-        $(this).addClass('active');
+        $('ul#index_banner_nav_ul a').removeClass('active selected');
+        $(this).addClass('active selected');
       });
   });
 });
@@ -145,7 +145,7 @@ $(document).ready(function() {
     return false;
   });
 });
-
+// These are the Market box hovers
 $(document).ready(function() {
   $('div.market_box a.market_link').append('<span class="hover" />').each(function(){
         var $service_span = $('> span.hover', this).css({opacity : 0});
@@ -218,9 +218,10 @@ $(document).ready(function() {
   });
 });
 
-$(document).everyTime(15000, function () {
-  $('.b_nav1 a').trigger('click');
-});
+// This is a scroll timer trigger
+// $(document).everyTime(15000, function () {
+//   $('.b_nav1 a').trigger('click');
+// });
 
 // This is the add an attachment field increaser
 $(document).ready(function() {

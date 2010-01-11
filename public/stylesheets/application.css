@@ -814,7 +814,7 @@ div.visionclaim-insight_demo_button span.small_cta_button {
 .b_nav2.highlight:hover, li.b_nav2 a span.hover {
   background: url('../images/banners/index_banner_nav/black_cross_nav.png') 0px 0px no-repeat;
 }
-.index_banner_nav ul li.b_nav2 a.active {
+.index_banner_nav ul li.b_nav2 a.active, .index_banner_nav ul li.b_nav2 a.selected {
   background: url('../images/banners/index_banner_nav/black_cross_nav.png') 0px -2px no-repeat;
 }
 .b_nav3 {
@@ -823,7 +823,7 @@ div.visionclaim-insight_demo_button span.small_cta_button {
 .b_nav3.highlight:hover, li.b_nav3 a span.hover {
   background: url('../images/banners/index_banner_nav/black_cross_nav.png') -120px -0px no-repeat;
 }
-.index_banner_nav ul li.b_nav3 a.active {
+.index_banner_nav ul li.b_nav3 a.active, .index_banner_nav ul li.b_nav3 a.selected {
   background: url('../images/banners/index_banner_nav/black_cross_nav.png') -120px -2px no-repeat;
 }
 .b_nav4 {
@@ -832,10 +832,10 @@ div.visionclaim-insight_demo_button span.small_cta_button {
 .b_nav4.highlight:hover, li.b_nav4 a span.hover {
   background: url('../images/banners/index_banner_nav/black_cross_nav.png') -240px 0px no-repeat;
 }
-.index_banner_nav ul li.b_nav4 a.active {
+.index_banner_nav ul li.b_nav4 a.active, .index_banner_nav ul li.b_nav4 a.selected {
   background: url('../images/banners/index_banner_nav/black_cross_nav.png') -240px -2px no-repeat;
 }
-.banner_nav {
+#nucleus_banner_nav.banner_nav {
   position: relative;
   /*background: #000;*/
   width: 100%;
@@ -843,11 +843,11 @@ div.visionclaim-insight_demo_button span.small_cta_button {
   bottom: 5px;
   text-align: center;
 }
-.banner_nav .banner_nav_wrap{
+#nucleus_banner_nav.banner_nav .banner_nav_wrap{
   width: 120px;
   margin: 0 auto;
 }
-.banner_nav .banner_li {
+#nucleus_banner_nav.banner_nav .banner_li {
   height: 16px;
   width: 16px;
   margin: 5px;
@@ -855,32 +855,39 @@ div.visionclaim-insight_demo_button span.small_cta_button {
   text-indent:-3000em;
   border: none;
 }
-.banner_nav .banner_li a {
+#nucleus_banner_nav.banner_nav .banner_li a {
   width: 16px;
   height:16px;
   background: url('../images/banner_discs.png') 0px -16px no-repeat;
   text-decoration: none;
   display: block;
 }
-.banner_nav .banner_li a.selected, .banner_nav .banner_li a:hover {
+#nucleus_banner_nav.banner_nav .banner_li a.selected, .banner_nav .banner_li a:hover {
   width: 16px;
   height:16px;
   background: url('../images/banner_discs.png') 0px 0px no-repeat;
 }
-img.banner_scroll {
-  float:left;
-  margin-top: 5px;
+#banner_nav {
+  position: absolute;
+  bottom: 20px;
+  left: 454px;
+  height: 15px;
+  width: 40px;
+}
+#banner_nav div.banner_scroll {
+  position: relative;
   cursor: pointer;
   width: 15px;
   height: 15px;
+  float: left;
 }
-img.banner_scroll.l {
-  position: relative;
+#banner_nav div#banner_scroll_l {
   left: 0px;
+  background: url('../images/banners/inner_banners/banner_arrows.png') 0px 0px no-repeat;
 }
-img.banner_scroll.r {
-  position: relative;
+#banner_nav div#banner_scroll_r {
   right: 0px;
+  background: url('../images/banners/inner_banners/banner_arrows.png') -25px 0px no-repeat;
 }
 /****Inner Banners****/
 #inner_banner_short {
