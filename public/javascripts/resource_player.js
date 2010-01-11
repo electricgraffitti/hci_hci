@@ -5,13 +5,21 @@ $(document).ready(function() {
   flowplayer("resource_video_player",
   // Flash Configs
   {
-     src: "/swfs/flowplayer.commercial-3.1.5.swf",
-     wmode: 'opaque'
+    src: "/swfs/flowplayer.commercial-3.1.5.swf",
+    wmode: 'transparent',
+    bgcolor: "none"
   },
   // Player Configs
   { 
     key: '#$45a5242c3cfddf0c3cb',
     play: {opacity: 0},
+    clip: {
+      fadeInSpeed: 3000
+    },
+    canvas: {
+      backgroundColor: "transparent",
+      backgroundGradient: "none"
+    },
     plugins:  { 
       controls: {
             sliderGradient: 'none',
@@ -23,10 +31,10 @@ $(document).ready(function() {
             progressGradient: 'medium',
             timeBgColor: '#555555',
             durationColor: '#ffffff',
-            buttonOverColor: '#728B94',
+            buttonOverColor: '#00853f',
             sliderColor: '#000000',
             volumeSliderColor: '#000000',
-            buttonColor: '#3d4c43',
+            buttonColor: '#555555',
             bufferGradient: 'none',
             timeColor: '#051a0b',
             backgroundColor: '#000000',

@@ -2863,6 +2863,8 @@ h4.apple_box_headers.nucleus {
   height: 321px;
   float: left;
   padding: 0px 0px 17px;
+  background: url('../images/video_splash.png') no-repeat;
+  display: block;
 }
 #playlist {
   position: relative;
