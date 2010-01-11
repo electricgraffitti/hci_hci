@@ -900,7 +900,7 @@ div.visionclaim-insight_demo_button span.small_cta_button {
 #nucleus_banner_nav_ul .b_nav2 {
   background: url('../images/banners/nucleus_banner_nav/nucleus_nav.png') 0px -120px no-repeat;
 }
-#nucleus_banner_nav_ul .b_nav2.highlight:hover, li.b_nav2 a span.hover {
+#nucleus_banner_nav_ul .b_nav2.highlight:hover, #nucleus_banner_nav_ul li.b_nav2 a span.hover {
   background: url('../images/banners/nucleus_banner_nav/nucleus_nav.png') 0px 0px no-repeat;
 }
 #nucleus_banner_nav_ul .nucleus_banner_nav ul li.b_nav2 a.active, .nucleus_banner_nav ul li.b_nav2 a.selected {
@@ -909,7 +909,7 @@ div.visionclaim-insight_demo_button span.small_cta_button {
 #nucleus_banner_nav_ul .b_nav3 {
   background: url('../images/banners/nucleus_banner_nav/nucleus_nav.png') -120px -120px no-repeat;
 }
-#nucleus_banner_nav_ul .b_nav3.highlight:hover, li.b_nav3 a span.hover {
+#nucleus_banner_nav_ul .b_nav3.highlight:hover, #nucleus_banner_nav_ul li.b_nav3 a span.hover {
   background: url('../images/banners/nucleus_banner_nav/nucleus_nav.png') -120px -0px no-repeat;
 }
 #nucleus_banner_nav_ul .nucleus_banner_nav ul li.b_nav3 a.active, .nucleus_banner_nav ul li.b_nav3 a.selected {
@@ -918,7 +918,7 @@ div.visionclaim-insight_demo_button span.small_cta_button {
 #nucleus_banner_nav_ul .b_nav4 {
   background: url('../images/banners/nucleus_banner_nav/nucleus_nav.png') -240px -120px no-repeat;
 }
-#nucleus_banner_nav_ul .b_nav4.highlight:hover, li.b_nav4 a span.hover {
+#nucleus_banner_nav_ul .b_nav4.highlight:hover, #nucleus_banner_nav_ul li.b_nav4 a span.hover {
   background: url('../images/banners/nucleus_banner_nav/nucleus_nav.png') -240px 0px no-repeat;
 }
 #nucleus_banner_nav_ul .nucleus_banner_nav ul li.b_nav4 a.active, .nucleus_banner_nav ul li.b_nav4 a.selected {
