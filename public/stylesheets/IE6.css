@@ -1,7 +1,7 @@
 /*********************************************/
 /*******************GLOBAL********************/
 body {
-  font-size: 80%;
+  font-size: 11px;
 }
 #wrapper {
   width: 940px;
@@ -29,6 +29,9 @@ ul#top_links, ul.login  {
   position: relative;
   bottom: 0px;
   height: 40px;
+}
+.index_banner_nav {
+  width: 500px;
 }
 #search_box_wrap {
   margin-top: 13px;
@@ -64,6 +67,60 @@ ul#top_links, ul.login  {
 .circle_button {
   margin-top: 0px;
 }
+  {
+  width: 645px;
+  height: 120px;
+}
+.dentalclaim-insight_index_text {
+  width: 215px;
+}
+.pharmaclaim-insight_index_text, .oncologyclaim-insight_index_text {
+  width: 255px;
+}
+.index_steps_description {
+  width: 295px;
+}
+.number_steps {
+  width: 205px;
+}
+#new_service_inquiry div.big_number {
+  margin-right: 10px;
+}
+#new_service_inquiry div.number_header {
+  width: 120px;
+}
+#service_inquiry_business_type_id {
+  float: left;
+}
+#service_inquiry_submit {
+  right: 20px;
+}
+#service_boxes, .service_wrap {
+  width: 920px;
+  margin: 0px 5px;
+}
+.benefit_avatar_wrap {
+  margin: 40px 0px 0px 5px;
+}
+.benefit_content_wrap {
+  width: 260px;
+  padding-left: 10px;
+}
+div.index_steps {
+  margin-left: 10px;
+}
+h2.market_quote {
+  margin-left: 20px;
+}
+.resource_brochure {
+  width: 150px;
+}
+#playlist {
+  width: 280px;
+}
+div#playlist div.video_playlist_item {
+  margin: 0px 0px 1px;
+}
 /***********************/
 /********banners********/
 #slider {
@@ -83,18 +140,35 @@ ul#top_links, ul.login  {
   position: relative;
   overflow: hidden;
   width: 940px;
-  height: 290px;
+    height: 483px;
 }
 img.banner_scroll.r, img.banner_scroll.l {
   visibility: hidden;
 }
+#ft {
+  float: left;
+}
+#footer_links {
+  position: relative;
+  float: right;
+  height: 125px;
+}
+#footer_wrap {
+  height: 195px;
+}
 #footer_logo {
   position: relative;
-  bottom: 0px;
+  float: left;
 }
 #footer_stripe {
   position: relative;
-  bottom: 0px;
+  float: left;
+  top: 50px;
+}
+#footer_logo ul.login {
+  position: relative;
+  right: -3px;
+  bottom: -59px;
 }
 .newsletter_signup {
   position: relative;

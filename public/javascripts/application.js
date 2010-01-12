@@ -236,11 +236,9 @@ $(document).ready(function() {
         hideDelayTimer = null;
         popup.animate({
           top: '-=' + distance + 'px',
-          opacity: 0,
+          opacity: 0
         }, time, 'swing', function () {
-          // once the animate is complete, set the tracker variables
           shown = false;
-          // hide the popup entirely after the effect (opacity alone doesn't do the job)
           popup.css({'display':'none', 'top':'-150px'});
         });
       }, hideDelay);
