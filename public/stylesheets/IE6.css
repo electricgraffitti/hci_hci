@@ -150,6 +150,15 @@ div.index_video_listing {
 div.index_video_listing h3 {
   width: 425px;
 }
+div.main_content div.about_us_box_image_wrap {
+  margin: 15px 15px;
+}
+div.main_content div.half {
+  width: 440px;
+}
+div.milestones {
+  margin: 0px;
+}
 /***********************/
 /********banners********/
 #slider {
