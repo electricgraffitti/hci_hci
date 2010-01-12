@@ -1928,6 +1928,9 @@ div.right div.milestone_inner_wrap {
 .contact_location p {
   font-size: 100%;
 }
+#contact_form textarea, #contact_form input[type="text"] {
+  width: 175px;
+}
 /******Social Media Page********/
 .social_media_big_links_wrap {
   border: 1px solid #cdcdcd;
@@ -3020,7 +3023,9 @@ input#ticket_date_select {
   border: 1px solid #666;
 }
 .contact_submit {
-  right: 53px;
+  position: relative;
+  float: right;
+  margin: 10px 20px 0px 0px;
 }
 .small_orange_buttons {
   margin: 0px auto;
