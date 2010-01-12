@@ -115,11 +115,22 @@ h2.market_quote {
 .resource_brochure {
   width: 150px;
 }
+.resource_video_section {
+  width: 900px;
+}
 #playlist {
   width: 280px;
 }
 div#playlist div.video_playlist_item {
-  margin: 0px 0px 1px;
+  margin: 0px 5px 1px;
+}
+.resource_video_link {
+  position: relative;
+  right: 20px;
+}
+div.sub_news_box {
+  width: 215px;
+  margin-bottom: 20px;
 }
 /***********************/
 /********banners********/
