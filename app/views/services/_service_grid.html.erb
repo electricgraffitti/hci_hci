@@ -5,7 +5,7 @@
         <%= link_to "Brochure", document_path(s.document), :alt => "View #{s.title} Brochure", :title => "View #{s.title} Brochure"  %>
       </div>
       <div class="benefit_content_wrap service_content_wrap">      
-        <h3>View <%= s.acronym %> Brochure</h3>
+        <h3><%= link_to "View #{s.acronym} Brochure", document_path(s.document), :alt => "View #{s.title} Brochure", :title => "View #{s.title} Brochure"  %></h3>
         <p>Want more information? View and
         download the <%= s.acronym %> service brochure.</p>
       </div>
@@ -19,17 +19,17 @@
       </div>
     </div>
     <div class="benefit_grid_box left_side_box bene_even_row last_bene_row">
-      <div class="benefit_avatar_wrap bene10"></div>
+      <%= link_to "<div class='benefit_avatar_wrap bene10'></div>", videos_path, :alt => "HealthCare Insight Videos" %>
       <div class="benefit_content_wrap service_content_wrap">      
-        <h3>Watch Videos</h3>
+        <h3><%= link_to "Watch Videos", videos_path, :alt => "HealthCare Insight Videos" %></h3>
         <p>Rather watch a video? Check out our latest 
         webinars, tutorials and commercials.</p>
       </div>
     </div>
     <div class="benefit_grid_box right_side_box bene_even_row last_bene_row">
-      <div class="benefit_avatar_wrap bene11"></div>
+      <%= link_to "<div class='benefit_avatar_wrap bene11'></div>", APP['free_trial_landing_page'], :alt => "Free Cost Reduction Analysis" %>
       <div class="benefit_content_wrap service_content_wrap">      
-        <h3>Request Free Trial</h3>
+        <h3><%= link_to "Request Free Trial", APP['free_trial_landing_page'], :alt => "Free Cost Reduction Analysis" %></h3>
         <p>Ready to take the next step? Request a 
         free <%= s.acronym %> trial and Cost Reduction Analysis.</p>
       </div>
