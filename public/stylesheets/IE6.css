@@ -33,6 +33,13 @@ ul#top_links, ul.login  {
 .index_banner_nav {
   width: 500px;
 }
+#top_link_wrap, #top_links {
+  position: relative;
+  top: 6px;
+  float: right;
+  width: 325px;
+  height: 30px;
+}
 #search_box_wrap {
   margin-top: 13px;
   float: right;
@@ -40,11 +47,15 @@ ul#top_links, ul.login  {
 #search {
   float: left;
 }
-.search_btn {
-  display: block;
-  font-size: 0px;
-  line-height: 0px;
+.search_btn_green {
+  font-size: 10px;
+  border: none;
+  width: 75px;
+  padding-bottom: 5px;
   height: 25px;
+}
+.nav_header {
+  color: #333333;
 }
 /*********************************************/
 /****************MAIN CONTENT*****************/
@@ -95,7 +106,7 @@ ul#top_links, ul.login  {
 #service_inquiry_submit {
   right: 20px;
 }
-#service_boxes, .service_wrap {
+#service_boxes, .service_wrap, .benefit_works_section {
   width: 920px;
   margin: 0px 5px;
 }
@@ -112,8 +123,9 @@ div.index_steps {
 h2.market_quote {
   margin-left: 20px;
 }
-.resource_brochure {
-  width: 150px;
+div.resource_section div.resource_brochure, div.resource_section div.resource_brochure h4 {
+  width: 145px;
+  padding: 0px;
 }
 .resource_video_section {
   width: 900px;
@@ -131,6 +143,12 @@ div#playlist div.video_playlist_item {
 div.sub_news_box {
   width: 215px;
   margin-bottom: 20px;
+}
+div.index_video_listing {
+  width: 590px;
+}
+div.index_video_listing h3 {
+  width: 425px;
 }
 /***********************/
 /********banners********/
