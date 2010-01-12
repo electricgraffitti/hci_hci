@@ -154,10 +154,16 @@ div.main_content div.about_us_box_image_wrap {
   margin: 15px 15px;
 }
 div.main_content div.half {
-  width: 440px;
+  width: 450px;
 }
-div.milestones {
-  margin: 0px;
+div.about_profile_wrap {
+  width: 450px;
+}
+div.about_profile_wrap img {
+  margin-right: 5px;
+}
+div.profile p {
+  margin-right: 0px;
 }
 /***********************/
 /********banners********/
