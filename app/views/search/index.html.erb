@@ -4,22 +4,22 @@
   <%= render :partial => 'search/banner' %>
 <% end %>
 
-<% unless @services.blank? %>
+<% if @services %>
 <h3>Service Search Results</h3>
 <%= render :partial => "services/index_list", :locals => {:services => @services} %>
 <% end %>
 
-<% unless @articles.blank? %>
+<% if @articles %>
 <h3>Article Search Results</h3>
 <%= render :partial => "articles/index_article", :locals => {:articles => @articles} %>
 <% end %>
 
-<% unless @documents.blank? %>
+<% if @documents %>
 <h3>Document Search Results</h3>
 <%= render :partial => "documents/index_document", :locals => {:documents => @documents} %>
 <% end %>
 
-<% unless @events.blank? %>
+<% if @events %>
 <h3>Event Search Results</h3>
 <%= render :partial => "events/index_event", :locals => {:events => @events} %>
 <% end %>
