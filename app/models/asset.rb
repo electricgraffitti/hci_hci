@@ -23,6 +23,6 @@ class Asset < ActiveRecord::Base
                     :url => "/attachments/:id/:style_:basename.:extension",
                     :path => ":rails_root/public/attachments/:id/:style_:basename.:extension"
   # Attrs
-  attr_protected :attachment_file_name, :attachment_content_type, :attachment_file_size
+  # attr_protected :attachment_file_name, :attachment_content_type, :attachment_file_size
   
 end
