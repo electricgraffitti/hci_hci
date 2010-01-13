@@ -1,4 +1,5 @@
 <% articles.each do |article| %>
+<% unless article.article_type == "press_release"%>
 <div class='index_article_listing top_10_wrap'>
   <% article.assets.each do |asset| %>
     <% if article.third_party? %>
@@ -24,8 +25,9 @@
     <%= link_to('Delete', article, :confirm => 'Are you sure?', :method => :delete) %>
     <% end %>
   </div>
-<div class='clear'></div>
+  <div class='clear'></div>
 </div>
+<% end %>
 <% end %>
 <div class='index_article_listing top_10_wrap'>
   <%= will_paginate articles %>
