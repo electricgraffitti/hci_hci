@@ -1,8 +1,8 @@
 <div class="grid_12 alpha omega benefit_grid">
-  <div class="inner_benefit_grid">
+  <div id="service_grids" class="inner_benefit_grid">
     <div class="benefit_grid_box left_side_box bene_odd_row">
       <div class="<%= s.permalink %>_quote_brochure quote_brochure">
-        <%= link_to "Brochure", document_path(s.document), :alt => "View #{s.title} Brochure", :title => "View #{s.title} Brochure"  %>
+        <%= link_to "Brochure", document_path(s.document), :alt => "View #{s.title} Brochure", :title => "View #{s.title} Brochure", :id => 'brochure_link'  %>
       </div>
       <div class="benefit_content_wrap service_content_wrap">      
         <h3><%= link_to "View #{s.acronym} Brochure", document_path(s.document), :alt => "View #{s.title} Brochure", :title => "View #{s.title} Brochure"  %></h3>

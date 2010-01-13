@@ -2169,12 +2169,22 @@ div.bene_odd_row .benefit_content_wrap {
 .benefit_content_wrap p {
   font-size: 110%;
 }
-.benefit_avatar_wrap, .quote_brochure a, .quote_brochure {
+.benefit_avatar_wrap, .quote_brochure {
   float: left;
   width: 130px;
   height: 120px;
   margin-top: 40px;
   margin-left: 15px;
+}
+.quote_brochure a {
+  display: block;
+  text-indent: -3000em;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  margin: 0px;
+  width: 130px;
+  height: 120px;
 }
 div.bene_even_row .benefit_avatar_wrap {
   float: right;
@@ -2690,10 +2700,6 @@ div.nucleus_form_wrap .nucleus_submit {
 }
 .visionclaim-insight_quote_brochure {
   background: url('../images/benefit_grid_images.jpg') 0px -960px no-repeat;
-}
-.quote_brochure a {
-  display: block;
-  text-indent: -3000em;
 }
 .about_quote {
   background: url('../images/about_quote.jpg') no-repeat;

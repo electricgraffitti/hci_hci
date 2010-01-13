@@ -10,8 +10,12 @@
 <%#= ******** CSS ********** %>
 <%= stylesheet_link_tag 'reset-fonts-grids', 'jquiwidgets', '960', 'alerts/jquery.alerts', 'application', :cache => true %>
 
+<!--[if IE ]>
+  <link rel="stylesheet" type="text/css" href="/stylesheets/IE6.css" />
+<![endif]-->
+
 <!--[if lt IE 7]>
-  <link rel="stylesheet" type="text/css" href="stylesheets/IE6.css" />
+  <link rel="stylesheet" type="text/css" href="/stylesheets/IE6.css" />
 <![endif]-->
 
 <%#= ******** JAVASCRIPTS ********** %>
