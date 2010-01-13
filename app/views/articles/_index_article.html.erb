@@ -1,5 +1,5 @@
 <% articles.each do |article| %>
-<% unless article.article_type == "press_release"%>
+<% unless article.article_type.article_type == "press_release"%>
 <div class='index_article_listing top_10_wrap'>
   <% article.assets.each do |asset| %>
     <% if article.third_party? %>
