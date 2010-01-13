@@ -106,9 +106,16 @@ ul#top_links, ul.login  {
 #service_inquiry_submit {
   right: 20px;
 }
-#service_boxes, .service_wrap, .benefit_works_section {
+#service_boxes, .service_wrap, .benefit_works_section, .job_board {
   width: 920px;
   margin: 0px 5px;
+}
+.job_board {
+  width: 880px;
+}
+.apply_here_link {
+  height: 115px;
+  overflow: hidden;
 }
 .benefit_avatar_wrap {
   margin: 40px 0px 0px 5px;
@@ -164,6 +171,19 @@ div.about_profile_wrap img {
 }
 div.profile p {
   margin-right: 0px;
+}
+#contact_form {
+  position: relative;
+  float: left;
+}
+#contact_form div {
+  position: absolute;
+  width: 0px;
+}
+#contact_form div.visible_field {
+  position: relative;
+  float: left;
+  width: 250px;
 }
 /***********************/
 /********banners********/
