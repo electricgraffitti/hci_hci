@@ -20,7 +20,7 @@ class Article < ActiveRecord::Base
   belongs_to :article_type
   after_update :save_assets
   
-  has_many :assets, :as => :attachable, :dependent => :destroy
+  has_many :assets, :as => :attachable
   has_many :coverflows, :as => :cflow, :class_name => "Coverflow"
   accepts_nested_attributes_for :coverflows, :allow_destroy => true
   
