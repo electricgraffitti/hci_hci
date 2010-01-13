@@ -1,9 +1,9 @@
 development:
-  port: 3302
+  port: 3312
 test:
-  port: 3302
+  port: 3312
 production:
-  port: 3302
+  port: 3312
 
 
 
