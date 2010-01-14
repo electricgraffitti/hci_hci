@@ -1,4 +1,7 @@
 class DepartmentsController < ApplicationController
+  
+  before_filter :require_employee
+  
   # GET /departments
   # GET /departments.xml
   def index

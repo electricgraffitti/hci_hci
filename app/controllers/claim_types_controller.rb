@@ -1,5 +1,7 @@
 class ClaimTypesController < ApplicationController
   
+  before_filter :require_user
+  
   layout "admin"
   
   # GET /claim_types
