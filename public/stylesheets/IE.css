@@ -185,6 +185,9 @@ div.profile p {
   float: left;
   width: 250px;
 }
+.popup {
+  background: #e4e2e5;
+}
 /***********************/
 /********banners********/
 #slider {
