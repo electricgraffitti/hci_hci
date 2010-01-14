@@ -1,6 +1,6 @@
 class DocumentsController < ApplicationController
   
-  before_filter :require_user, :except => [:index, :show]
+  before_filter :require_user, :except => [:show]
   
   # GET /documents
   # GET /documents.xml
