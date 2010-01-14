@@ -2,9 +2,9 @@
 class ResourcesController < ApplicationController
   
   def index
-    @articles = Article.small_list(6).last_created
+    @articles = Article.all.paginate :per_page => 6, :page => params[:page], :order => 'created_at DESC'
     @documents = Document.brochures
-    @press_releases = Article.type('press_release').small_list(5)
+    @press_releases = Article.type('press_release').small_list(3)
     @videos = Video.all
     @events = Event.all
   end

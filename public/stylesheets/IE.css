@@ -8,6 +8,9 @@ body {
 }
 /*********************************************/
 /*******************HEADER********************/
+#hd {
+	height: 94px;
+}
 #hci_logo {
   background: none;
   width: 245px;
@@ -51,8 +54,9 @@ ul#top_links, ul.login  {
   font-size: 10px;
   border: none;
   width: 75px;
-  padding-bottom: 5px;
   height: 25px;
+	margin-left: 5px;
+	margin-top: -3px;
 }
 .nav_header {
   color: #333333;
@@ -78,10 +82,6 @@ ul#top_links, ul.login  {
 .circle_button {
   margin-top: 0px;
 }
-  {
-  width: 645px;
-  height: 120px;
-}
 .dentalclaim-insight_index_text {
   width: 215px;
 }
@@ -95,7 +95,7 @@ ul#top_links, ul.login  {
   width: 205px;
 }
 #new_service_inquiry div.big_number {
-  margin-right: 10px;
+  width: 45px;
 }
 #new_service_inquiry div.number_header {
   width: 120px;
@@ -103,25 +103,18 @@ ul#top_links, ul.login  {
 #service_inquiry_business_type_id {
   float: left;
 }
-#service_inquiry_submit {
+input#service_inquiry_submit {
   right: 20px;
 }
-#service_boxes, .service_wrap, .benefit_works_section, .job_board {
-  width: 920px;
-  margin: 5px 5px;
+.who_image {
+	right: 0px;
 }
 .job_board {
   width: 880px;
 }
 .apply_here_link {
-  height: 115px;
+  height: 120px;
   overflow: hidden;
-}
-.career_copy {
-  width: 450px;
-}
-.partner_grid {
-  padding: 5px 7px;
 }
 .benefit_avatar_wrap, .quote_brochure {
   margin: 40px 0px 0px 5px;
@@ -152,10 +145,6 @@ div.index_steps {
 h2.market_quote {
   margin-left: 20px;
 }
-div.resource_section div.resource_brochure, div.resource_section div.resource_brochure h4 {
-  width: 145px;
-  padding: 0px;
-}
 .resource_video_section {
   width: 900px;
 }
@@ -179,23 +168,9 @@ div.index_video_listing {
 div.index_video_listing h3 {
   width: 425px;
 }
-div.main_content div.about_us_box_image_wrap {
-  margin: 15px 15px;
-}
-div.main_content div.half {
-  width: 450px;
-}
-div.about_profile_wrap {
-  width: 450px;
-}
-div.about_profile_wrap img {
-  margin-right: 5px;
-}
+
 div.profile p {
   margin-right: 0px;
-}
-#sub_boxes {
-  width: 0%;
 }
 #contact_form {
   position: relative;
@@ -275,6 +250,9 @@ img.banner_scroll.r, img.banner_scroll.l {
 }
 #social_links {
   float: left;
+}
+span {
+	filter:alpha(opacity=50)
 }
 
 

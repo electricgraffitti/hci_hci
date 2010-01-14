@@ -49,8 +49,8 @@ class Article < ActiveRecord::Base
   end
   
   # Sets up the Pagination call Article.list(number, params[:page])
-  def self.list(count, page, typea, typeb = nil)
-    find(:all, :include => [:article_type, :assets], :conditions => ['article_types.article_type = ? OR article_types.article_type = ?', typea, typeb])
+  def self.list(count, page, typea)
+    find(:all, :include => [:article_type, :assets], :conditions => ['article_types.article_type != ?', typea])
     paginate :per_page => count, :page => page, :order => "created_at DESC"
   end
   

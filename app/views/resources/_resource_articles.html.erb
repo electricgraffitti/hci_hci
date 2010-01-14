@@ -1,7 +1,9 @@
 <div class="resource_section resource_articles full_wrap">
    <h3 class="orange">Fraud News</h3>
    <% objects.each do |obj| %>
+   <% unless obj.article_type == "press_release" %>
      <%= render :partial => 'resources/article', :locals => {:obj => obj} %>
+     <% end %>
    <% end %>
    <%= link_to "View All Articles", articles_path, :class => "right" %>
 </div>

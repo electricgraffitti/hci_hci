@@ -6,7 +6,7 @@ class ArticlesController < ApplicationController
   # GET /articles.xml
   def index
     # @articles = Article.type(params[:article_type])
-    @articles = Article.list(5, params[:page], "hci_article", "third_party")
+    @articles = Article.all.paginate :per_page => 5, :page => params[:page], :order => 'created_at DESC'
     @press_releases = Article.type('press_release').small_list(5)
     @events = Event.small_list(5)
     respond_to do |format|

@@ -18,7 +18,7 @@ class DocumentsController < ApplicationController
     @document = Document.find(params[:id])
     @documents = Document.brochures
     respond_to do |format|
-      format.html # show.html.erb
+      format.html { render :layout => "issuu"}
       format.xml  { render :xml => @document }
     end
   end
