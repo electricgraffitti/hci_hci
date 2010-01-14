@@ -980,14 +980,14 @@ div.nucleus_bullet_points {
   top:-150px;
   left: -18px;
   display: none;
-  width: 329px;
-  height: 110px;
+  width: 335px;
+  height: 112px;
   z-index: 50;
 }
 .inner_popup_container {
   position: absolute;
   top: -6px;
-  left: -8px;
+  left: -6px;
   width: 338px;
   height: 123px;
   z-index: 51;
