@@ -974,14 +974,20 @@ div.nucleus_bullet_points {
 .nucleus_bullet_points.bp4 ul li h3 {
   margin: 2px 0px 0px 25px;
 }
+/** This is the stack to make the transparent fade work in IE**/
 .popup {
   position: relative;
-  width: 346px;
-  height: 123px;
-  text-indent: -3000em;
-  z-index: 50;
   top:-150px;
   display: none;
+}
+.inner_popup_container {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 346px;
+  height: 123px;
+  z-index: 50;
+  text-indent: -3000em;
 }
 #real_time_popup {
   left:-18px;

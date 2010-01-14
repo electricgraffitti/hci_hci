@@ -251,8 +251,5 @@ img.banner_scroll.r, img.banner_scroll.l {
 #social_links {
   float: left;
 }
-span {
-	filter:alpha(opacity=50)
-}
 
 
