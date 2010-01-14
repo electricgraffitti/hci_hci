@@ -979,6 +979,9 @@ div.nucleus_bullet_points {
   position: relative;
   top:-150px;
   display: none;
+  width: 346px;
+  height: 123px;
+  z-index: 50;
 }
 .inner_popup_container {
   position: absolute;
@@ -986,7 +989,7 @@ div.nucleus_bullet_points {
   left: 0px;
   width: 346px;
   height: 123px;
-  z-index: 50;
+  z-index: 51;
   text-indent: -3000em;
 }
 #real_time_popup {
