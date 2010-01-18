@@ -20,6 +20,10 @@
     <%= f.text_field :issuu_url %>
   </p>
   <p>
+    <%= f.label :download_link, "Pardot Download Link" %><br />
+    <%= f.text_field :download_link %>
+  </p>
+  <p>
     <% for asset in @document.assets %>
     <% fields_for "document[attachments][]", asset do |asset_form|%>
     <%= asset_form.label "Upload Documents" %><br />

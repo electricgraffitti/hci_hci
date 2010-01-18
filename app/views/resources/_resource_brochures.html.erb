@@ -9,6 +9,7 @@
         <p>
           <%= doc.brochure_sub_heading %>
         </p>
+        <%= link_to "Download Brochure", " #{doc.download_link}", :alt => "Download #{doc.title} Brochure" %>
       </div>
     <% end %>
   </div>
