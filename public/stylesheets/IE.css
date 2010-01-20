@@ -43,6 +43,9 @@ ul#top_links, ul.login  {
   width: 325px;
   height: 30px;
 }
+#top_links ul {
+  float: right;
+}
 #search_box_wrap {
   margin-top: 13px;
   float: right;
