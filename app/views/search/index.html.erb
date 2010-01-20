@@ -4,24 +4,8 @@
   <%= render :partial => 'search/banner' %>
 <% end %>
 
-<% if @services %>
-<h3>Service Search Results</h3>
-<%= render :partial => "services/index_list", :locals => {:services => @services} %>
-<% end %>
-
-<% if @articles %>
-<h3>Article Search Results</h3>
-<%= render :partial => "articles/index_article", :locals => {:articles => @articles} %>
-<% end %>
-
-<% if @documents %>
-<h3>Document Search Results</h3>
-<%= render :partial => "documents/index_document", :locals => {:documents => @documents} %>
-<% end %>
-
-<% if @events %>
-<h3>Event Search Results</h3>
-<%= render :partial => "events/index_event", :locals => {:events => @events} %>
+<% @articles.each do |a| %>
+<%= a.title %>
 <% end %>
 
 <div class="space_left">
