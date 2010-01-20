@@ -4,26 +4,45 @@
   <%= render :partial => 'search/banner' %>
 <% end %>
 
-<% if @services %>
-<h3>Service Search Results</h3>
-<%= render :partial => "services/index_list", :locals => {:services => @services} %>
+<% unless @services.empty? %>
+
+<div class=" full_20_wrap">
+  <h3>Service Search Results</h3>
+  <%= render :partial => "services/index_list", :locals => {:services => @services} %>
+</div>
+
 <% end %>
 
-<% if @articles %>
+
+
+<% unless @articles.empty? %>
+
+<div class=" full_20_wrap">
 <h3>Article Search Results</h3>
 <%= render :partial => "articles/index_article", :locals => {:articles => @articles} %>
+</div>
 <% end %>
 
-<% if @documents %>
+
+
+<% unless @documents.empty? %>
+
+<div class=" full_20_wrap">
 <h3>Document Search Results</h3>
 <%= render :partial => "documents/index_document", :locals => {:documents => @documents} %>
+</div>
 <% end %>
 
-<% if @events %>
+
+
+<% unless @events.empty? %>
+
+<div class=" full_20_wrap">
 <h3>Event Search Results</h3>
-<%= render :partial => "events/index_event", :locals => {:events => @events} %>
+<%= render :partial => "events/index_event", :locals => {:obj => @events} %>
+</div>
 <% end %>
-
-<div class="space_left">
+<div class="clear"></div>
+<div class="full_20_wrap">
   <%= link_to "Back", request.env["HTTP_REFERER"], :class => "btn"%>
 </div>

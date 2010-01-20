@@ -94,7 +94,7 @@ h3 a:hover, h4 a:hover{
 }
 p {
   font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-  margin: 5px 0px 0px;
+  margin: 5px 0px 5px;
   line-height: 18.35px;
 }
 sup {
@@ -2570,6 +2570,18 @@ div.nucleus_form_wrap .nucleus_submit {
 }
 #nucleus_main_video object {
   z-index: 20;
+}
+/*******Policy Page**********/
+#policy_page h4 {
+	font-weight: bold;
+}
+#policy_page ol li ul {
+	margin-left: 15px;
+}
+#policy_page ul li {
+	line-height:18.35px;
+	margin-bottom: 10px;
+	list-style-type: disc;
 }
 /*******Special Headers**********/
 .page_header {
