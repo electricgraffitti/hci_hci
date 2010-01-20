@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <%= render :partial => "layouts/headmeta" %>
+</head>
+<body class="yui-skin-sam">
+    <div class="header_stripe"></div>
+  <div id="wrapper" class="container_12">
+    <%= render :partial => 'layouts/flash', :locals => {:flash => flash} %>
+	  <div id="hd" class='grid_12 alpha omega'>
+      <%= render :partial => "layouts/header" %>
+	  </div>
+	  <div class="clear"></div>
+    <div id="bd" class="grid_12 alpha omega">
+      <% if current_user %>
+        <%= render :partial => "layouts/admin_nav" %>
+      <% end %>
+      <% if current_employee %>
+        <%= render :partial => "layouts/employee_nav" %>
+      <% end %>
+      <div class="clear"></div>
+      <div class="main_content grid_12 alpha omega">
+        <%= yield %>
+      </div>
+    </div>
+    <div id="ft" class="grid_12 alpha omega">
+      <%= render :partial => "layouts/footer" %>
+    </div>
+    <div class="clear"></div>
+    <div id="verisk_footer" class="grid_12 alpha omega">
+      <%= link_to(image_tag("verisk_logo.png", :id => "verisk_logo"), "http://www.verisk.com/") %>
+    </div>
+	</div>
+	<%= render :partial => "layouts/scripts" %>
+</body>
+</html>

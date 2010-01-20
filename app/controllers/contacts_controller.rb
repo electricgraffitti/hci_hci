@@ -22,6 +22,9 @@ class ContactsController < ApplicationController
   
   def thank_you
     @form = params
+    respond_to do |format|
+      format.html { render :layout => "layout5"}
+    end
   end
   
 end
