@@ -1,5 +1,7 @@
 class GoalTypesController < ApplicationController
   
+  before_filter :require_user
+  
   layout "admin"
   
   # GET /goal_types

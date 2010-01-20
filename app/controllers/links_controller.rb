@@ -1,6 +1,6 @@
 class LinksController < ApplicationController
   
-  before_filter :require_user, :except => [:index, :show]
+  before_filter :require_user, :except => [:show]
   
   # GET /links
   # GET /links.xml

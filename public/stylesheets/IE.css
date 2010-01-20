@@ -185,6 +185,37 @@ div.profile p {
   float: left;
   width: 250px;
 }
+/* Use 8bit PNG's in IE to remove the sharpie border */
+#real_time_popup {
+  background: url('../images/banners/nucleus_bullet_hovers/real_time_IE.png') no-repeat;
+}
+#next_gen_popup {
+  background: url('../images/banners/nucleus_bullet_hovers/next_gen_IE.png') no-repeat;
+}
+#saas_app_popup {
+  background: url('../images/banners/nucleus_bullet_hovers/saas_app_IE.png') no-repeat;
+}
+#single_click_popup {
+  background: url('../images/banners/nucleus_bullet_hovers/single_click_IE.png') no-repeat;
+}
+#custom_dash_popup {
+  background: url('../images/banners/nucleus_bullet_hovers/custom_dash_IE.png') no-repeat;
+}
+#user_interface_popup {
+  background: url('../images/banners/nucleus_bullet_hovers/user_interface_IE.png') no-repeat;
+}
+#workflow_popup {
+  background: url('../images/banners/nucleus_bullet_hovers/workflow_IE.png') no-repeat;
+}
+#technology_popup {
+  background: url('../images/banners/nucleus_bullet_hovers/technology_IE.png') no-repeat;
+}
+#results_popup {
+  background: url('../images/banners/nucleus_bullet_hovers/results_IE.png') no-repeat;
+}
+.index_service_wrap span.hover {
+  background: url('../images/service_panel_active_IE.png') no-repeat;
+}
 /***********************/
 /********banners********/
 #slider {
@@ -250,9 +281,6 @@ img.banner_scroll.r, img.banner_scroll.l {
 }
 #social_links {
   float: left;
-}
-span {
-	filter:alpha(opacity=50)
 }
 
 

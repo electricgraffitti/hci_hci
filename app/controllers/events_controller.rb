@@ -1,6 +1,6 @@
 class EventsController < ApplicationController
   
-  before_filter :require_user, :except => [:index, :show]
+  before_filter :require_user, :except => [:show]
   
   # GET /events
   # GET /events.xml

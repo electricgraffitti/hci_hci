@@ -1,5 +1,7 @@
 class BusinessTypesController < ApplicationController
   
+  before_filter :require_user
+  
   layout "admin"
   
   # GET /business_types

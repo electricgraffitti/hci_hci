@@ -1,4 +1,7 @@
 class TicketUpdatesController < ApplicationController
+  
+  before_filter :require_employee
+  
   # GET /ticket_updates
   # GET /ticket_updates.xml
   def index

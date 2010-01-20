@@ -1,2 +1,3 @@
-<h4><%= link_to "#{obj.title}", event_path(obj) %></h4>
+<h4><%= obj.title %></h4>
+<%# <h4> link_to "#{obj.title}", event_path(obj) </h4> %>
 <p><%= (obj.created_at).to_s(:event_time) %></p>
