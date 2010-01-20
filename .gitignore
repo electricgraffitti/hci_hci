@@ -1,4 +1,4 @@
-log/developement.log
+log/development.log
 log/*.log
 log/*.pid
 db/schema.sql
