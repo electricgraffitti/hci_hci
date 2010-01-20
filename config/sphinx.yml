@@ -1,8 +1,3 @@
-development:
-  port: 3312 
-test:
-  port: 3312
-
 production:
   config_file: /var/www/apps/stage_hci/shared/config/production.sphinx.conf
   searchd_file_path: /var/www/apps/stage_hci/shared/db/sphinx/production
