@@ -238,10 +238,13 @@ div.profile p {
   position: relative;
   overflow: hidden;
   width: 940px;
-    height: 483px;
+  height: 483px;
 }
 img.banner_scroll.r, img.banner_scroll.l {
   visibility: hidden;
+}
+.index_banner_nav {
+  right: -10px;
 }
 #ft {
   float: left;
