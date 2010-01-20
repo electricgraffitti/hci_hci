@@ -7,7 +7,7 @@ class SearchController < ApplicationController
     @events = Event.search params[:search]
     # add more sources as needed
     
-    raise @articles.to_yaml
+    # raise @events.to_yaml
     
   end
 
