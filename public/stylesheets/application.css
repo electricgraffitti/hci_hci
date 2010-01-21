@@ -2350,10 +2350,10 @@ p.works {
   padding:10px;
   border: 1px solid #cdcdcd;
 }
-.sub_ad_box {
+div.sub_ad_box {
   margin: 10px 0px;
-  width: 235px;
-  border: none;
+  padding-top: 10px;
+  width: 255px;
 }
 .sub_news_box p {
   border-bottom: 1px solid #CDCDCD;
