@@ -6,7 +6,7 @@ class ResourcesController < ApplicationController
     @documents = Document.brochures
     @press_releases = Article.type('press_release').small_list(3)
     @videos = Video.list(4, params[:page])
-    @events = Event.upcoming_events.small_list(2)
+    @events = Event.upcoming_events.small_list(2).last_created
   end
 
 end
