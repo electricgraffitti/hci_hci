@@ -57,7 +57,7 @@ ActionController::Routing::Routes.draw do |map|
   map.contact_thank_you "thank-you", :controller => "contacts", :action => "thank_you"
   map.press "health-care-press", :controller => "announcements", :action => "index"
   map.media "health-care-resources", :controller => "resources", :action => "index"
-  map.careers "healthcare-insight-careers", :controller => "health_care", :action => "careers"
+  map.careers "careers", :controller => "health_care", :action => "careers"
   map.partners "healthcare-insight-partners", :controller => "health_care", :action => "partners"
   map.accreditations "healthcare-insight-accreditations", :controller => "health_care", :action => "accreditations"
   map.privacy "healthcare-insight-privacy-policy-and-disclaimers", :controller => "health_care", :action => "privacy_policy"
