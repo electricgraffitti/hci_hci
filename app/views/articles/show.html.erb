@@ -6,7 +6,15 @@
   end %>
 <% page_title "#{@article.title} " %>
 
-<%# This is in the application helper %>
+<% content_for :banner do %>
+  <% if @article.article_type.article_type == "hci_article" %>
+    <%= render :partial => "articles/ind_article_banner" %>
+  <% else %>
+    <%= render :partial => "articles/press_release_banner" %>
+  <% end %>
+<% end %>
+
+
 <%= render :partial => 'article', :locals => {:article => @article} %>
 <%= render :partial => 'articles_micro_list', :locals => {:objects => @articles} %>
 
