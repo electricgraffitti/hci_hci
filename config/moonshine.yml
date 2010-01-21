@@ -1,15 +1,15 @@
 :ruby: ree
 
 # Stage Env
-:application: stage_hci
-:user: rails
-:deploy_to: /var/www/apps/stage_hci
-:domain: stage.hcinsight.com
-:domain_aliases:
-  - stage.hcinsight.com
-
-:repository: git@github.com:electricgraffitti/hci_hci.git
-:branch: stage
+# :application: stage_hci
+# :user: rails
+# :deploy_to: /var/www/apps/stage_hci
+# :domain: stage.hcinsight.com
+# :domain_aliases:
+#   - stage.hcinsight.com
+# 
+# :repository: git@github.com:electricgraffitti/hci_hci.git
+# :branch: stage
 
 # Production Env
 # :application: hci
