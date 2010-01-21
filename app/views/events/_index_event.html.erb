@@ -1,3 +1,7 @@
 <h4><%= obj.title %></h4>
-<%# <h4> link_to "#{obj.title}", event_path(obj) </h4> %>
-<p><%= (obj.created_at).to_s(:event_time) %></p>
+<ul>
+  <li><span class="orange">Place: </span><%=h obj.place %></li>
+  <li><span class="orange">Start Date: </span> <%=h obj.start_date.to_s(:nice_date) %></li>
+  <li><span class="orange">End Date: </span> <%=h obj.end_date.to_s(:nice_date) %></li>
+  <li><span class="orange">Event Website:</span> <%= link_to "#{obj.title}", "#{obj.website_url}", :target => "_blank" %></li>
+</ul>

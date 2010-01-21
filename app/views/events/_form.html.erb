@@ -11,6 +11,22 @@
     <%= f.text_area :description, :rows => 5, :cols => 28 %>
   </p>
   <p>
+    <%= f.label :place %><br />
+    <%= f.text_field :place %>
+  </p>
+  <p>
+   <%= f.label :start_date, "Event Start Date" %><br />
+   <%= f.text_field :start_date, :id => "event_start_date" %>
+  </p>
+  <p>
+   <%= f.label :end_date, "Event End Date" %><br />
+   <%= f.text_field :end_date, :id => "event_end_date" %>
+  </p>
+  <p>
+   <%= f.label :website_url %><br />
+   <%= f.text_field :website_url %>
+  </p>
+  <p>
     <% for asset in @event.assets %>
       <% fields_for "event[attachments][]", asset do |asset_form|%>
         <%= asset_form.label "Add Attachment" %><br />
@@ -44,7 +60,6 @@
 <div class="grid_5"
   <p>
     <%= f.submit 'Submit'%>
-    <%= link_to "Back", request.env["HTTP_REFERER"] %>
   </p>
 </div>
 <% end %>

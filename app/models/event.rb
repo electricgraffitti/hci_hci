@@ -23,15 +23,15 @@ class Event < ActiveRecord::Base
   
   # Thinking Sphinx Indexes
   define_index do
-    indexes description
     indexes title
   end
   
   # RedCloth (textilize)
   acts_as_textiled  :description
   
-  named_scope :small_list, lambda { |limit| { :limit => limit, :order => "events.created_at DESC"}}
-  named_scope :last_created, :order => "created_at DESC"
+  named_scope :upcoming_events, :conditions => ["start_date > ?", Date.today]
+  named_scope :small_list, lambda { |limit| {:limit => limit }}
+  named_scope :last_created,  :order => "start_date ASC"
   
   #============================= Class Methods ==================================#
   

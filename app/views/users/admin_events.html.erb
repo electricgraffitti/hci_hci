@@ -1,4 +1,5 @@
 <div class="full_20_wrap">
+  <% unless @events.empty? %>
   <table id="events_table" class="display">
     <thead>  
       <tr>
@@ -12,6 +13,7 @@
 
     <tbody>
       <% @events.each do |s| %>
+      <% if s %>
         <tr>
           <td><%=h s.title %></td>
           <td><%= truncate(s.description, :length => 250) %></td>
@@ -19,8 +21,12 @@
           <td><%= link_to 'Update Event', edit_event_path(s) %></td>
           <td><%= link_to 'Delete Event', s, :confirm => 'Are you sure?', :method => :delete %></td>
         </tr>
+        <% end %>
       <% end %>
     </tbody>
   </table>
+  <% else %>
+  No Events<br/>
+  <% end %>
   <%= link_to 'New Event', new_event_path %>
 </div>

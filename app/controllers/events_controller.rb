@@ -58,7 +58,7 @@ class EventsController < ApplicationController
     respond_to do |format|
       if @event.save
         flash[:notice] = 'Event was successfully created.'
-        format.html { redirect_to(@event) }
+        format.html { redirect_to admin_events_path }
         format.xml  { render :xml => @event, :status => :created, :location => @event }
       else
         format.html { render :action => "new" }
@@ -75,7 +75,7 @@ class EventsController < ApplicationController
     respond_to do |format|
       if @event.update_attributes(params[:event])
         flash[:notice] = 'Event was successfully updated.'
-        format.html { redirect_to(@event) }
+        format.html { redirect_to admin_events_path }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
@@ -91,7 +91,7 @@ class EventsController < ApplicationController
     @event.destroy
 
     respond_to do |format|
-      format.html { redirect_to(events_url) }
+      format.html { redirect_to admin_events_path }
       format.xml  { head :ok }
     end
   end

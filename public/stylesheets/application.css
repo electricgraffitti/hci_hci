@@ -2350,6 +2350,19 @@ p.works {
   padding:10px;
   border: 1px solid #cdcdcd;
 }
+.sub_news_box p {
+  border-bottom: 1px solid #CDCDCD;
+}
+.event_box h4 {
+  margin-bottom: 5px;
+}
+.event_box ul {
+  border-bottom: 1px solid #CDCDCD;
+  margin-bottom: 10px;
+}
+.event_box ul li {
+  margin-bottom: 5px;
+}
 .resource_brochure {
   float:left;
   padding:5px;

@@ -256,9 +256,16 @@ $(document).ready(function() {
     emp_edit_box.toggle();
   });
 });
-// This is the datepicker for the ticket form
+// Date Pickers
 $(document).ready(function() {
   $('#ticket_date_select').datepicker({
+		showButtonPanel: true
+	});
+	$('#event_start_date').datepicker({
+		showButtonPanel: true
+	});
+	
+	$('#event_end_date').datepicker({
 		showButtonPanel: true
 	});
 });
