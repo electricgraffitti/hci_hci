@@ -158,8 +158,9 @@ div#playlist div.video_playlist_item {
   margin: 0px 5px 1px;
 }
 .resource_video_link {
-  position: relative;
+  position: absolute;
   right: 20px;
+  bottom: -8px;
 }
 div.sub_news_box {
   width: 215px;
