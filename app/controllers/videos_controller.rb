@@ -7,7 +7,7 @@ class VideosController < ApplicationController
   def index
     @videos = Video.list(5, params[:page])
     @press_releases = Article.type('press_release').small_list(5)
-    @events = Event.small_list(5)
+    @events = Event.upcoming_events.small_list(2).last_created
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @videos }
