@@ -18,6 +18,7 @@
 :domain: hcinsight.com
 :domain_aliases:
   - www.hcinsight.com
+  - www.egm-test.com
 
 :repository: git@github.com:electricgraffitti/hci_hci.git
 :branch: master
