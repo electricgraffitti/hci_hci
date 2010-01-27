@@ -5,6 +5,13 @@
 <% content_for :banner do %>
   <%= render :partial => "health_care/partners_banner" %>
 <% end %>
+
+<div class="benefits_content grid_12 alpha omega">
+  <h2 class="page_header service_partners">Service and Technology Partners</h2>
+  <div class="partner_grids service_wrap">
+    <%= render :partial => 'health_care/partner_grids' %>
+  </div>
+</div>
 <div class="benefits_content grid_12 alpha omega">
   <h2 class="page_header partners_header full_wrap">Strength in Numbers</h2>
   <p class="benefits_sub_text orange">
@@ -14,10 +21,4 @@
     
   </p>
   <%= render :partial => "health_care/partners_grid" %>
-</div>
-<div class="benefits_content grid_12 alpha omega">
-  <h2 class="page_header service_partners">Service and Technology Partners</h2>
-  <div class="partner_grids service_wrap">
-    <%= render :partial => 'health_care/partner_grids' %>
-  </div>
 </div>
