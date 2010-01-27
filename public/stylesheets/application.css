@@ -1040,7 +1040,7 @@ img.inner_banner {
   background: #fff;
   min-height: 290px;
 }
-.contact_banner, .contact_thank_you, .big_banner, .nucleus_banner {
+.contact_banner, .contact_thank_you, .big_banner, .nucleus_banner, .executive_summit_banner {
   width: 940px;
   float: left;
   height: 500px;
@@ -1055,6 +1055,12 @@ img.inner_banner {
 }
 .career_banner {
   background: url('../images/banners/inner_banners/careers_big.jpg') no-repeat;
+}
+.executive_summit_banner {
+  background: url('../images/banners/inner_banners/executive_summit_banner.jpg') no-repeat;
+}
+.leavitt_partners {
+  margin-left: 78px;
 }
 div.career_banner_image_link {
   bottom:169px;
@@ -1115,7 +1121,7 @@ div.career_banner_image_link a {
   width: 125px;
   float: left;
 }
-.contact_banner_text_wrap, .contact_thank_you_text_wrap {
+.contact_banner_text_wrap, .contact_thank_you_text_wrap, .executive_banner_text_wrap {
   bottom: 115px;
   font-size:130%;
   left:78px;
@@ -1125,7 +1131,14 @@ div.career_banner_image_link a {
 .contact_thank_you_text_wrap {
   width:425px;
 }
-.contact_form_wrap {
+.executive_banner_text_wrap {
+  bottom: 58px;
+}
+.executive_banner_text_wrap p {
+  font-size: 95%;
+  margin-bottom: 25px;
+}
+.contact_form_wrap, .executive_summit_form_wrap {
   float:left;
   width: 500px;
   position: absolute;
@@ -1134,6 +1147,14 @@ div.career_banner_image_link a {
 }
 .contact_form_wrap div {
   width: 250px;
+  float: left;
+}
+.executive_summit_form_wrap {
+  width: 460px;
+  bottom: 58px; 
+}
+.executive_summit_form_wrap div {
+  width: 215px;
   float: left;
 }
 /*********************************************/
@@ -1306,6 +1327,7 @@ ul.index_sector_links li h2 {
   position:relative;
   text-align:center;
   width: 284px;
+  min-height: 96px;
 }
 div.hover_bg {
   position: absolute;
@@ -2989,6 +3011,11 @@ input[type="select"] {
 input#ticket_date_select {
   width: 85px;
 }
+input#search {
+  padding:2px;
+  position:relative;
+  top:-1px;
+}
 /*********************************************/
 /******************BUTTONS********************/
 .btn {
@@ -3027,7 +3054,7 @@ input#ticket_date_select {
 .big_orange:hover {
   background: url('../images/green_buttons.png') repeat-x;
 }
-.search_btn_green {
+.search_btn_green, .search_btn_black {
   text-align:center;
   color: #fff;
   font-size: 12px;
@@ -3038,7 +3065,10 @@ input#ticket_date_select {
   background: url('../images/green_button.jpg') 0px 0px repeat-x;
   cursor: pointer;
 }
-.big_orange_submit {
+.search_btn_black {
+  background: url('../images/black_button.png') 0px 0px repeat-x;
+}
+.big_orange_submit, .big_black_submit {
   text-align:center;
   color: #fff;
   padding: 0px;
@@ -3054,8 +3084,16 @@ input#ticket_date_select {
   display: block;
   cursor: pointer;
 }
+.big_black_submit {
+  background: url('../images/black_button.png') 0px 0px repeat-x;
+}
 .big_orange_submit:hover, .search_btn_green:hover {
   background: url('../images/green_button.jpg') 0px -32px repeat-x;
+  color: #333;
+  border: 1px solid #666;
+}
+.big_black_submit:hover, .search_btn_black:hover {
+  background: url('../images/black_button.png') 0px -32px repeat-x;
   color: #333;
   border: 1px solid #666;
 }
@@ -3063,6 +3101,11 @@ input#ticket_date_select {
   position: relative;
   float: right;
   margin: 10px 19px 0px 0px;
+}
+.executive_submit {
+  position: relative;
+  float: right;
+  margin: 10px 14px 0px 0px;
 }
 .small_orange_buttons {
   margin: 0px auto;

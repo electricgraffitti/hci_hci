@@ -45,9 +45,12 @@ ActionController::Routing::Routes.draw do |map|
   map.admin_videos "hci-videos", :controller => "users", :action => "admin_videos"
   map.admin_documents "hci-documents", :controller => "users", :action => "admin_documents"
   
+  # Landing Pages
+  map.landing "landing_page_test", :controller => "health_care", :action => "landing_page"
+  map.executive_summit "healthcare-insight-executive-summit", :controller => "free_trials", :action => "executive_summit"
+  
   # Custom Named Routes
   map.issuu_upload "upload-issuu", :controller => "issuu_uploads", :action => "index"
-  map.landing "landing_page_test", :controller => "health_care", :action => "landing_page"
   map.issue "healthcare-insight-document", :controller => 'issuu_uploads', :action => 'show'
   map.nucleus "nucleus", :controller => "health_care", :action => "nucleus"
   map.markets "healthcare-insight-markets", :controller => "health_care", :action => "markets"
