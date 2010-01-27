@@ -66,7 +66,7 @@ $(document).ready(function() {
 // Nucleus Banner2 Video
 
 $(document).ready(function() {
-    flowplayer("nucleus_video_real_time", 
+    $f("nucleus_video_real_time",
     // Flash Configs
     {
        src: "/swfs/flowplayer.commercial-3.1.5.swf",
