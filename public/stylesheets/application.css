@@ -650,6 +650,13 @@ div.visionclaim-insight_demo_button span.small_cta_button {
   margin-top: 9px;
   outline: none;
 }
+#top_verisk_logo {
+  position: absolute;
+  top: 3px;
+  right: 0px;
+  width: 114px;
+  height: 15px;
+}
 /** top Link nav **/
 #top_link_wrap {
   bottom:40px;
