@@ -2677,8 +2677,11 @@ div.nucleus_form_wrap .nucleus_submit {
 .service_partners {
   background: url('../images/headers/service_tech_partners.png') no-repeat;
   margin-left: 27px;
-  width:800px;
+  width:400px;
   height: 60px;
+}
+.service_blurb {
+  padding-top: 43px;
 }
 .benefits_header_works {
   background: url('../images/headers/works.png') no-repeat;
