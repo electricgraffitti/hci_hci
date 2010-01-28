@@ -1331,7 +1331,7 @@ ul.index_sector_links li h2 {
   border-style:solid;
   border-width:1px;
   float:left;
-  padding: 0 10px 19px;
+  padding: 0 10px 13px;
   position:relative;
   text-align:center;
   width: 284px;
@@ -1449,7 +1449,7 @@ a.property_index_wrap {
 }
 .service_header {
   text-indent: -3000em;
-  height: 70px;
+  height: 76px;
   width: 255px;
   margin: 0px auto;
 }
