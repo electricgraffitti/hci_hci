@@ -1,0 +1,26 @@
+<% meta_keywords("leavitt partners, healthcare insight executive summit")%>
+<% meta_description("Healthcare Insight Executive Summit 2010 at the Grand America presented by Leavitt Partners") %>
+<% page_title("Executive Summit ") %>
+
+<% content_for :banner do %>
+  <%= render :partial => "free_trials/executive_summit_banner" %>
+<% end %>
+<div class="service_wrap">
+  <div class="index_service_wrap contact_location">
+    <h2 class="orange">What's Included</h2>
+    <p>
+      Program Registration<br/>
+      Overnight Accommodations<br/>
+      Reception & Meals<br/>
+    </p>
+  </div>
+  <div class="index_service_wrap contact_location">
+    <%= link_to(image_tag("grand_america_landing.png", :alt => "Grand America Hotel Salt Lake City"), "http://www.grandamerica.com", :target => "_blank")%>
+  </div>
+  <div class="index_service_wrap contact_location">
+    <div id="pay_right_landing">
+      <%= link_to(image_tag("pay_right_landing.png", :alt => "HealthCare Insight Pay Right Save Money"), "http://www.hcinsight.com", :target => "_blank")%>
+    </div>
+  </div>
+</div>
+<%= render :partial => "health_care/index_quote" %>

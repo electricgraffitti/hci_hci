@@ -10,6 +10,10 @@
 #  permalink        :string(255)
 #  created_at       :datetime
 #  updated_at       :datetime
+#  start_date       :date
+#  end_date         :date
+#  website_url      :string(255)
+#  place            :string(255)
 #
 
 class Event < ActiveRecord::Base

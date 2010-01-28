@@ -10,12 +10,17 @@
     <!-- <div class="newsletter_signup"><%= render :partial => "newsletter_subscriptions/newsletter_signup", :locals => {:newsletter_subscription => @newsletter_subscription} %></div>
     
   </div> -->
-  <div id="footer_stripe" class="grid_12 alpha omega"></div>
+    <div id="footer_stripe" class="grid_12 alpha omega"></div>
     <ul class="login">
       <% if current_user %>
-      <li><%= link_to "Logout", logout_path, :class => "black" %></li>
+        <li><%= link_to "Logout", logout_path, :class => "black" %></li>
       <% else %>
-      <li><%= link_to "Login", login_path, :class => "black" %></li>
+        <li><%= link_to "Login", login_path, :class => "black" %></li>
       <% end %>
     </ul>
+  </div>
+  <div id="footer_tags">
+    <%= link_to(image_tag("verisk_footer_link.png", :alt => "Verisk Health"), "http://www.veriskhealth.com") %>
+    <%= image_tag("pay_right_footer.png", :class => "pay_right_footer") %>
+  </div>
 </div>

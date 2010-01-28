@@ -5,19 +5,22 @@
 <% content_for :banner do %>
   <%= render :partial => "health_care/partners_banner" %>
 <% end %>
+
 <div class="benefits_content grid_12 alpha omega">
-  <h2 class="page_header partners_header full_wrap">Strength in Numbers</h2>
-  <p class="benefits_sub_text orange">
-    We aren't just another vendor with just another product.<br/>
-    We're changing the P&C sector with better technology,<br/>
-    better clinicians, better service and better savings results. 
-    
+  <h2 class="page_header service_partners full_wrap">Service and Technology Partners</h2>
+  <p class="benefits_sub_text service_blurb orange">
+    They say you’re only as good as the company you keep.
   </p>
-  <%= render :partial => "health_care/partners_grid" %>
-</div>
-<div class="benefits_content grid_12 alpha omega">
-  <h2 class="page_header service_partners">Service and Technology Partners</h2>
   <div class="partner_grids service_wrap">
     <%= render :partial => 'health_care/partner_grids' %>
   </div>
+</div>
+<div class="benefits_content grid_12 alpha omega">
+  <h2 class="page_header partners_header full_wrap">Strength in Numbers</h2>
+  <p class="benefits_sub_text orange">
+    From fraud detection to decision support analytics, our<br/>
+    family is here to serve your business needs. We help you<br/>
+    define and mitigate risk. End result? You save money.
+  </p>
+  <%= render :partial => "health_care/partners_grid" %>
 </div>

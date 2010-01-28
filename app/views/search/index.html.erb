@@ -23,6 +23,19 @@
 </div>
 <% end %>
 
+<% unless @videos.empty? %>
+
+<div class=" full_20_wrap">
+<h3>Videos Search Results</h3>
+<%= render :partial => "videos/index_video", :locals => {:videos => @videos} %>
+</div>
+<div id="video_div" class="overlay">
+    <!-- flowplayer container --> 
+    <div id="player"></div>
+</div>
+<%= javascript_include_tag 'index_videos' %>
+<% end %>
+
 
 
 <% unless @documents.empty? %>
@@ -39,7 +52,9 @@
 
 <div class=" full_20_wrap">
 <h3>Event Search Results</h3>
-<%= render :partial => "events/index_event", :locals => {:obj => @events} %>
+<% @events.each do |obj| %>
+<%= render :partial => "events/index_event", :locals => {:obj => obj} %>
+<% end %>
 </div>
 <% end %>
 <div class="clear"></div>
