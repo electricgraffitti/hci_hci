@@ -6,6 +6,7 @@
 #  title                :string(255)
 #  description          :text
 #  document_type_id     :integer(4)
+#  download_link        :string(255)
 #  issuu_url            :string(255)
 #  meta_description     :text
 #  keywords             :string(255)

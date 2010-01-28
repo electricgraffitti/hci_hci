@@ -1,3 +1,4 @@
+<% events.each do |obj| %>
 <h4><%= obj.title %></h4>
 <ul>
   <li><span class="orange">Place: </span><%=h obj.place %></li>
@@ -5,3 +6,4 @@
   <li><span class="orange">End Date: </span> <%=h obj.end_date.to_s(:nice_date) %></li>
   <li><span class="orange">Event Website:</span> <%= link_to "#{obj.title}", "#{obj.website_url}", :target => "_blank" %></li>
 </ul>
+<% end %>
