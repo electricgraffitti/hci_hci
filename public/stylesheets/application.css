@@ -3204,7 +3204,20 @@ input#search {
 }
 #footer_wrap {
   min-height: 195px;
-  background: url('../images/footer_ribbon.png') 0px 165px no-repeat;
+}
+#footer_tags {
+  position: absolute;
+  width: 900px;
+  bottom: 0px;
+  left: 0px;
+}
+#footer_tags a {
+  position: relative;
+  left: 0px;
+}
+.pay_right_footer {
+  position: relative;
+  float: right;
 }
 #footer_links {
   margin: 10px;
