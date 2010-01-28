@@ -52,7 +52,9 @@
 
 <div class=" full_20_wrap">
 <h3>Event Search Results</h3>
-<%= render :partial => "events/index_event", :locals => {:events => @events} %>
+<% @events.each do |obj| %>
+<%= render :partial => "events/index_event", :locals => {:obj => obj} %>
+<% end %>
 </div>
 <% end %>
 <div class="clear"></div>
