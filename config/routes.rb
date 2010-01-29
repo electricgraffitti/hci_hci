@@ -69,11 +69,11 @@ ActionController::Routing::Routes.draw do |map|
   map.private_sector "private-sector-claims-payment-software-solutions", :controller => "health_care", :action => "private_sector"
   map.workers_comp "workers-comp-claims-payment-software-solutions", :controller => "health_care", :action => "workers_comp"
   map.search "health-care-search-results", :controller => 'search', :action => 'index'
+  map.sitemap "healthcare-insight-sitemap", :controller => 'sitemap', :action => 'sitemap'
 
   map.employee_login "employee_login", :controller => "employee_sessions", :action => "new"
   map.employee_logout "employee_logout", :controller => "employee_sessions", :action => "destroy"
   map.about "about-healthcare-insight", :controller => "health_care", :action => "about"
   map.home "health-care", :controller => "health_care", :action => "index"
   map.root :controller => "health_care", :action => "index"
-  
 end

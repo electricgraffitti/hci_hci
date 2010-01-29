@@ -1,0 +1,3 @@
+module SitemapHelper
+  
+end
