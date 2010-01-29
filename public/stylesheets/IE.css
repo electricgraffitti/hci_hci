@@ -220,6 +220,9 @@ div.profile p {
 .index_service_wrap span.hover {
   background: url('../images/service_panel_active_IE.png') no-repeat;
 }
+.accreditation_work_box span.hover {
+  background: url('../images/accred_panel_active_IE.png') no-repeat;
+}
 /***********************/
 /********banners********/
 #slider {
@@ -289,5 +292,22 @@ img.banner_scroll.r, img.banner_scroll.l {
 #social_links {
   float: left;
 }
-
+.search_btn_green, .search_btn_black {
+  text-align:center;
+  color: #fff;
+  font-size: 12px;
+  font-weight:bold;
+  height: 24px;
+  width: 65px;
+  border: none;
+  background: url('../images/green_button.jpg') 0px 0px repeat-x;
+  cursor: pointer;
+  margin-left: 5px;
+}
+.search_btn_black {
+  background: url('../images/black_button.png') 0px 0px repeat-x;
+}
+input#search {
+  padding: 4px 4px;
+}
 

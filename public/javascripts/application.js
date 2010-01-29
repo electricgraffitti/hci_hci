@@ -185,6 +185,23 @@ $(document).ready(function() {
       });
   });
 });
+// These are the Accreditations box hovers
+$(document).ready(function() {
+  $('div.accreditation_work_box a.accreditation_link').append('<span class="hover" />').each(function(){
+        var $service_span = $('> span.hover', this).css({opacity : 0});
+        $(this).hover(function() {
+          if ($(this).hasClass('active')) {
+            $service_span.stop().fadeTo(400, 0);
+          } else {
+           $service_span.stop().fadeTo(400, 1);
+           $(this).parent().stop().animate({ backgroundColor: "#efefef", top : "-2px" }, 400);
+          }
+        }, function() {
+          $service_span.stop().fadeTo(400, 0);
+          $(this).parent().stop().animate({ backgroundColor: "#dedede", top : "0px" }, 400);
+      });
+  });
+});
 // These are the nucleus banner popups
 $(document).ready(function() {
   $('.popup_trigger').each(function () {

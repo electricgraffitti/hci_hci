@@ -2299,6 +2299,16 @@ p.works {
 }
 .accreditation_work_box {
   text-align: center;
+  min-height: 234px;
+}
+.accreditation_work_box span.hover {
+  position: absolute;
+  width: 218px;
+  height: 244px;
+  top: -2px;
+  left: -4px;
+  padding: 0 10px 10px;
+  background: url('../images/accred_panel_active.png') no-repeat;
 }
 .accreditation_work_box p {
   text-align: left;
