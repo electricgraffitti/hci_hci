@@ -1,5 +1,7 @@
   # The priority is based upon order of creation: first created -> highest priority.
 ActionController::Routing::Routes.draw do |map|
+  map.resources :advertisements
+
   
   map.resources :goal_types
   map.resources :claim_types
@@ -44,6 +46,7 @@ ActionController::Routing::Routes.draw do |map|
   map.admin_events "hci-events", :controller => "users", :action => "admin_events"
   map.admin_videos "hci-videos", :controller => "users", :action => "admin_videos"
   map.admin_documents "hci-documents", :controller => "users", :action => "admin_documents"
+  map.admin_ads "hci-advertisements", :controller => "users", :action => "admin_ads"
   
   # Landing Pages
   map.landing "landing_page_test", :controller => "health_care", :action => "landing_page"

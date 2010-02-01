@@ -281,9 +281,24 @@ $(document).ready(function() {
 	$('#event_start_date').datepicker({
 		showButtonPanel: true
 	});
-	
 	$('#event_end_date').datepicker({
 		showButtonPanel: true
+	});
+	$('#ad_expiration_date').datepicker({
+		showButtonPanel: true
+	});
+});
+// Sets Up the Crossfade on the index page
+$(document).ready(function() {
+	
+	var $list = $('ul.cube_crossfade');
+	var $first_li = $list.children("li:first");
+	var $i_width = $first_li.width();
+	var $i_height = $first_li.height();
+	
+	$list.cube_crossfade({
+		speed : 2000,
+		pause : 8000
 	});
 });
 
@@ -306,6 +321,10 @@ $(document).ready(function() {
    "sPaginationType": "full_numbers"
  });
  documentsTable = $('#documents_table').dataTable({
+   "bJQueryUI": true,
+   "sPaginationType": "full_numbers"
+ });
+ advertisementsTable = $('#advertisements_table').dataTable({
    "bJQueryUI": true,
    "sPaginationType": "full_numbers"
  });

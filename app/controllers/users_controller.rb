@@ -107,4 +107,8 @@ class UsersController < ApplicationController
   def admin_documents
     @documents = Document.all :include => [:document_type]
   end
+  
+  def admin_ads
+    @advertisements = Advertisement.all
+  end
 end

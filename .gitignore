@@ -13,6 +13,7 @@ public/video_thumbs/*
 public/ticket_uploads/*
 public/landing_page_stylesheets/*
 public/landing_page_images/*
+public/ad_images/*
 config/development.sphinx.conf
 db/sphinx/*
 db/sphinx/development/*

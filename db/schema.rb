@@ -9,7 +9,23 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100121173445) do
+ActiveRecord::Schema.define(:version => 20100201174746) do
+
+  create_table "advertisements", :force => true do |t|
+    t.string   "title"
+    t.text     "description"
+    t.string   "ad_type"
+    t.boolean  "active"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "ad_image_file_name"
+    t.string   "ad_image_content_type"
+    t.integer  "ad_image_file_size"
+    t.datetime "ad_image_updated_at"
+    t.string   "link_url"
+    t.integer  "listed_order"
+    t.date     "expiration_date"
+  end
 
   create_table "article_types", :force => true do |t|
     t.string   "article_type"

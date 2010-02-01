@@ -2913,6 +2913,28 @@ h4.apple_box_headers.nucleus {
   margin-top: 10px;
   margin-right: 32px;
 }
+.ad_image {
+  position: relative;
+  float: left;
+  width: 280px;
+}
+.ad_content {
+  position: relative;
+  float: left;
+  width: 480px;
+  height: 180px; 
+}
+.ad_content h3, .ad_content .ad_description {
+  float: left;
+  margin-bottom: 5px;
+}
+div.cube_crossfade_wrap, ul.cube_crossfade, ul.cube_crossfade li {
+	z-index: 0;
+}
+ul.cube_crossfade, ul.cube_crossfade li {
+	width:280px;
+	height:116px;
+}
 /*********************************************/
 /******************ISSUU*********************/
 #issuu_frame, #issuu_frame iframe {

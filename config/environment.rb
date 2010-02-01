@@ -67,6 +67,7 @@ ActionMailer::Base.sendmail_settings = {
 # Custom Time View
 Time::DATE_FORMATS[:event_time] = "%A %B %d, at %I:%M %p"
 Date::DATE_FORMATS[:nice_date] = "%A, %B %d, %Y"
+Date::DATE_FORMATS[:short_date] = "%A, %B %d"
 Time::DATE_FORMATS[:table_date] = "%B %d %Y, at %I:%M %p"
 
 # set the default email host for the application
