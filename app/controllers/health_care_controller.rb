@@ -4,7 +4,7 @@ class HealthCareController < ApplicationController
     # @articles = Article.small_list(4)
     # @documents = Document.all
     # @services = Service.all
-    @advertisements = Advertisement.current_list.small_list(3).order_list
+    @advertisements = Advertisement.current_list.small_list(1).order_list
   end
   
   def about
