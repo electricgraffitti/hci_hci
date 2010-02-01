@@ -1658,7 +1658,7 @@ ul.service_bullets li {
   width: 500px;
 }
 .solution_bene {
-  width: 240px;
+  width: 245px;
   padding: 14px 0 0 19px;;
 }
 .solution_bene h3 {
@@ -2801,6 +2801,7 @@ div.nucleus_form_wrap .nucleus_submit {
 #sub_boxes {
   text-align: left;
   background: #fff;
+  padding-bottom: 20px;
 }
 .apple_sub_boxes {
   position: relative;
@@ -2928,12 +2929,20 @@ h4.apple_box_headers.nucleus {
   float: left;
   margin-bottom: 5px;
 }
+div.cube_crossfade_wrap, ul.cube_crossfade {
+  position: relative;
+}
 div.cube_crossfade_wrap, ul.cube_crossfade, ul.cube_crossfade li {
 	z-index: 0;
 }
 ul.cube_crossfade, ul.cube_crossfade li {
 	width:280px;
 	height:116px;
+}
+ul.cube_crossfade li {
+  position: absolute;
+  top: 0px;
+  left: 0px;
 }
 /*********************************************/
 /******************ISSUU*********************/
@@ -3248,7 +3257,7 @@ input#search {
 }
 #footer_tags a {
   position: relative;
-  left: 0px;
+  float: left;
 }
 .pay_right_footer {
   position: relative;
