@@ -163,7 +163,7 @@ div#playlist div.video_playlist_item {
   bottom: -8px;
 }
 div.sub_news_box {
-  width: 215px;
+  width: 260px;
   margin-bottom: 20px;
 }
 div.index_video_listing {
@@ -188,6 +188,9 @@ div.profile p {
   position: relative;
   float: left;
   width: 250px;
+}
+#contact_form input {
+  float: left;
 }
 /* Use 8bit PNG's in IE to remove the sharpie border */
 #real_time_popup {
@@ -222,6 +225,12 @@ div.profile p {
 }
 .accreditation_work_box span.hover {
   background: url('../images/accred_panel_active_IE.png') no-repeat;
+}
+.diamond_1 {
+  background: url('../images/banners/banner_diamonds/diamond_sprites_IE.png') 0px 0px no-repeat;
+}
+#banner_diamonds .diamond_1.highlight:hover, #banner_diamonds li a span.hover {
+  background: url('../images/banners/banner_diamonds/diamond_sprites_IE.png') 0px -110px no-repeat;
 }
 /***********************/
 /********banners********/
