@@ -38,6 +38,7 @@ class Article < ActiveRecord::Base
   
   # Named Scopes
   named_scope :small_list, lambda { |limit| {:include => [:assets], :limit => limit}}
+  named_scope :no_press, :include => [:article_type, :assets], :conditions => ['article_types.article_type != ?', 'press_release'], :order => "articles.created_at DESC"
   named_scope :type, lambda { |typea| { :include => [:article_type, :assets], :conditions => ['article_types.article_type = ?', typea], :order => "articles.created_at DESC"}}
   named_scope :last_created, :order => "created_at DESC"
   
