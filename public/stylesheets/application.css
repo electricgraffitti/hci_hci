@@ -1047,7 +1047,7 @@ img.inner_banner {
   background: #fff;
   min-height: 290px;
 }
-.contact_banner, .contact_thank_you, .big_banner, .nucleus_banner, .executive_summit_banner {
+.contact_banner, .contact_thank_you, .big_banner, .nucleus_banner, .executive_summit_banner, .free_webinar_banner {
   width: 940px;
   float: left;
   height: 500px;
@@ -1065,6 +1065,9 @@ img.inner_banner {
 }
 .executive_summit_banner {
   background: url('../images/banners/inner_banners/executive_summit_banner.jpg') no-repeat;
+}
+.free_webinar_banner {
+  background: url('../images/banners/inner_banners/free_webinar_banner.jpg') no-repeat;
 }
 .leavitt_partners {
   margin-left: 78px;
@@ -2955,6 +2958,11 @@ h4.apple_box_headers.nucleus {
 .go_link {
   margin-top: 10px;
   margin-right: 32px;
+}
+.featured_speaker_wrap {
+  width: 190px;
+  float: left;
+  text-align: left;
 }
 .ad_image {
   position: relative;
