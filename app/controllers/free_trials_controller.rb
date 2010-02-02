@@ -12,5 +12,9 @@ class FreeTrialsController < ApplicationController
   def executive_summit
     
   end
+  
+  def free_webinar
+    
+  end
 
 end

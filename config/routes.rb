@@ -51,6 +51,7 @@ ActionController::Routing::Routes.draw do |map|
   # Landing Pages
   map.landing "landing_page_test", :controller => "health_care", :action => "landing_page"
   map.executive_summit "healthcare-insight-executive-summit", :controller => "free_trials", :action => "executive_summit"
+  map.free_webinar "healthcare-insight-free-webinar", :controller => "free_trials", :action => "free_webinar"
   
   # Custom Named Routes
   map.issuu_upload "upload-issuu", :controller => "issuu_uploads", :action => "index"
