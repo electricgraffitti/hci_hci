@@ -710,14 +710,14 @@ div.visionclaim-insight_demo_button span.small_cta_button {
   z-index:10;
 }
 .home_panel_icon_link {
-  bottom:80px;
+  bottom:190px;
   display:block;
-  height:300px;
-  left:65px;
+  height:180px;
+  left:72px;
   position:absolute;
   text-indent:-3000em;
   width:322px;
-  z-index:10;
+  z-index:5;
 }
 #slider {
   height: 500px;
@@ -1164,6 +1164,38 @@ div.career_banner_image_link a {
 .executive_summit_form_wrap div {
   width: 215px;
   float: left;
+}
+/*** Index Banner Links****/
+#banner_diamonds {
+  z-index: 10;
+}
+#banner_diamonds ul li a {
+  position: absolute;
+  display:block;
+  text-indent:-3000em;
+  width: 110px;
+  height: 113px;
+  top: 0px;
+  left: 0px;
+}
+#banner_diamonds ul li a span {
+  position: absolute;
+  display:block;
+  width: 110px;
+  height: 113px;
+  top: 0px;
+  left: 0px;
+}
+.diamond_1 {
+  position:relative;
+  width:110px;
+  height:113px;
+  bottom:188px;
+  left:43px;
+  background: url('../images/banners/banner_diamonds/diamond_sprites.png') 0px -113px no-repeat;
+}
+#banner_diamonds .diamond_1.highlight:hover, #banner_diamonds li a span.hover {
+  background: url('../images/banners/banner_diamonds/diamond_sprites.png') 0px 0px no-repeat;
 }
 /*********************************************/
 /*****************MAIN CONTENT****************/

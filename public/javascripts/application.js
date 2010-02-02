@@ -73,6 +73,28 @@ $(document).ready(function() {
       });
   });
 });
+// Sets up the Index Diamonds
+$(document).ready(function() {
+  $('#banner_diamonds ul li').removeClass('highlight');
+  $('#banner_diamonds ul li a').append('<span class="hover" />').each(function(){
+        $(this).css({fontSize : 0});
+        var $span = $('> span.hover', this).css({opacity : 0});
+        $(this).hover(function() {
+          if ($(this).hasClass('active')) {
+            $span.stop().fadeTo(400, 0);
+          } else {
+           $span.stop().fadeTo(400, 1); 
+          }
+        }, function() {
+          $span.stop().fadeTo(400, 0);
+      });
+      $(this).click( function() {
+        $span.fadeTo(200, 0);
+        $('#banner_diamonds a').removeClass('active selected');
+        $(this).addClass('active selected');
+      });
+  });
+});
 // Sets up the nucleus nav buttons 
 $(document).ready(function() {
   $('ul#nucleus_banner_nav_ul li').removeClass('highlight');
@@ -289,18 +311,18 @@ $(document).ready(function() {
 	});
 });
 // Sets Up the Crossfade on the index page
-$(document).ready(function() {
-	
-	var $list = $('ul.cube_crossfade');
-	var $first_li = $list.children("li:first");
-	var $i_width = $first_li.width();
-	var $i_height = $first_li.height();
-	
-	$list.cube_crossfade({
-		speed : 2000,
-		pause : 8000
-	});
-});
+// $(document).ready(function() {
+//  
+//  var $list = $('ul.cube_crossfade');
+//  var $first_li = $list.children("li:first");
+//  var $i_width = $first_li.width();
+//  var $i_height = $first_li.height();
+//  
+//  $list.cube_crossfade({
+//    speed : 2000,
+//    pause : 8000
+//  });
+// });
 
 // Data Tables
 $(document).ready(function() {
