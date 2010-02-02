@@ -189,7 +189,7 @@ div.profile p {
   float: left;
   width: 250px;
 }
-#contact_form input {
+#contact_form input[type="text"], #contact_form textarea {
   float: left;
 }
 /* Use 8bit PNG's in IE to remove the sharpie border */
