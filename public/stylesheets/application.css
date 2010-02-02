@@ -1369,6 +1369,9 @@ ul.index_sector_links li h2 {
   width: 284px;
   min-height: 96px;
 }
+.market_box {
+  min-height: 253px;
+}
 div.hover_bg {
   position: absolute;
   top: 0px;
@@ -2413,12 +2416,12 @@ p.works {
   width: 600px;
 }
 .resource_press_releases {
-  width: 260px;
+  width: 280px;
   float: left;
 }
 .sub_news_box {
   margin: 10px 0px;
-  width: 235px;
+  width: 260px;
   padding:10px;
   border: 1px solid #cdcdcd;
 }
@@ -2507,7 +2510,7 @@ div.sub_ad_box {
 }
 .article_wrap {
   float:left;
-  width: 600px;
+  width: 580px;
 }
 .index_article_listing {
   width: 600px;
@@ -2843,7 +2846,7 @@ div.nucleus_form_wrap .nucleus_submit {
   height: 127px;
   margin: 0px 0px 20px;
 }
-.apple_sub_box {
+.apple_sub_box, .ad_box {
   position: relative;
   width: 280px;
   height: 116px;
@@ -2853,6 +2856,13 @@ div.nucleus_form_wrap .nucleus_submit {
   padding: 10px 0px 0px;
   text-align: center;
   background: url('../images/apple_index_box_bg.png') repeat-x;
+}
+.ad_box {
+  margin:20px 0 0;
+}
+.show_ad {
+  float: left;
+  padding-left: 20px;
 }
 .apple_box_headers {
   margin: 0 auto;

@@ -8,7 +8,8 @@ class ArticlesController < ApplicationController
     # @articles = Article.type(params[:article_type])
     @articles = Article.all.paginate :per_page => 5, :page => params[:page], :order => 'created_at DESC'
     @press_releases = Article.type('press_release').small_list(5)
-    @events = Event.upcoming_events.small_list(2).last_created
+    @events = Event.upcoming_events.small_list(1).last_created
+    @advertisements = Advertisement.current_list.small_list(2).order_list
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @articles }
@@ -22,6 +23,7 @@ class ArticlesController < ApplicationController
   def show
     @article = Article.find(params[:id], :include => [:assets])
     @articles = Article.small_list(6).last_created
+    @advertisements = Advertisement.current_list.small_list(2).order_list
     #fresh_when(:etag => @article)
     respond_to do |format|
       format.html # show.html.erb

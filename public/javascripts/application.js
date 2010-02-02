@@ -311,18 +311,18 @@ $(document).ready(function() {
 	});
 });
 // Sets Up the Crossfade on the index page
-// $(document).ready(function() {
-//  
-//  var $list = $('ul.cube_crossfade');
-//  var $first_li = $list.children("li:first");
-//  var $i_width = $first_li.width();
-//  var $i_height = $first_li.height();
-//  
-//  $list.cube_crossfade({
-//    speed : 2000,
-//    pause : 8000
-//  });
-// });
+$(document).ready(function() {
+ 
+ var $list = $('ul.cube_crossfade');
+ var $first_li = $list.children("li:first");
+ var $i_width = $first_li.width();
+ var $i_height = $first_li.height();
+ 
+ $list.cube_crossfade({
+   speed : 2000,
+   pause : 8000
+ });
+});
 
 // Data Tables
 $(document).ready(function() {

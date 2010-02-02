@@ -1,5 +1,7 @@
-<div class="resource_section resource_press_releases full_wrap">
-  <div class="apple_sub_box sub_ad_box">
-    <%= image_tag("ads/hci_sidebar_ad1.png") %>
-  </div>
+<div class="ad_box">
+  <ul class="cube_crossfade">
+    <% ads.each do |adv| %>
+    <li><%= link_to(image_tag(adv.ad_image(:reg), :alt => adv.title), "#{adv.link_url}") %></li>
+    <% end %>
+  </ul>
 </div>

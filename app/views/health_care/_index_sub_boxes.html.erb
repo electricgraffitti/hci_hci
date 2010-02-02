@@ -10,7 +10,7 @@
     <%= link_to(image_tag("apple_box_services.png", :alt => "Health Care Fraud Latest News"), services_path) %>
   </div>
   <div class="apple_sub_box ad_image_box">
-    <ul class="cube_crossfade">
+    <ul class="">
       <% @advertisements.each do |adv| %>
       <li><%= link_to(image_tag(adv.ad_image(:reg), :alt => adv.title), "#{adv.link_url}") %></li>
       <% end %>

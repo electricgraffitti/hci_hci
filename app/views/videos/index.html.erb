@@ -17,6 +17,7 @@
 <div class="grid_4 alpha omega right top_10_wrap">
   <%= render :partial => 'resources/resource_press_releases', :locals => {:objects => @press_releases} %>
   <%= render :partial => 'events/events_list', :locals => {:objects => @events} %>
+  <%= render :partial => 'articles/current_ad', :locals => {:ads => @advertisements} %>
 </div>
 <div id="video_div" class="overlay">
     <!-- flowplayer container --> 
