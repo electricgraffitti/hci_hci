@@ -224,7 +224,9 @@ h2 a.small_text {
   /*color: #F15A29;*/ 
   color: #00853f; /* Actually Green */
 }
-
+.no_display {
+  display: none;
+}
 .white {
   color: #ffffff;
 }
@@ -280,7 +282,6 @@ a:active {
 /******************************************/
 /*******************ERRORS*****************/
 #flash {
-  display: hidden;
   position: absolute;
   text-align: center;
   color: #fff;
