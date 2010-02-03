@@ -58,6 +58,12 @@
 </div>
 <% end %>
 <div class="clear"></div>
+<% if @services.empty? && @articles.empty? && @videos.empty? && @documents.empty? && @events.empty? %>
+  <div class="full_20_wrap">
+    <% flash[:notice] = "No results found" %>
+    <h2 class="orange">No Results Found. Please try again</h2>
+  </div>
+<% end %>
 <div class="full_20_wrap">
   <%= link_to "Back", request.env["HTTP_REFERER"], :class => "btn"%>
 </div>
