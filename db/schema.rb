@@ -9,22 +9,22 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100201174746) do
+ActiveRecord::Schema.define(:version => 20100203195435) do
 
   create_table "advertisements", :force => true do |t|
     t.string   "title"
     t.text     "description"
     t.string   "ad_type"
+    t.integer  "listed_order"
+    t.date     "expiration_date"
     t.boolean  "active"
+    t.string   "link_url"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "ad_image_file_name"
     t.string   "ad_image_content_type"
     t.integer  "ad_image_file_size"
     t.datetime "ad_image_updated_at"
-    t.string   "link_url"
-    t.integer  "listed_order"
-    t.date     "expiration_date"
   end
 
   create_table "article_types", :force => true do |t|
@@ -292,6 +292,37 @@ ActiveRecord::Schema.define(:version => 20100201174746) do
   create_table "simple_captcha_data", :force => true do |t|
     t.string   "key",        :limit => 40
     t.string   "value",      :limit => 6
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "sitemap_settings", :force => true do |t|
+    t.string   "name"
+    t.string   "description"
+    t.string   "xml_location"
+    t.string   "username"
+    t.string   "password"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "sitemap_static_links", :force => true do |t|
+    t.string   "url"
+    t.string   "name"
+    t.float    "priority"
+    t.string   "frequency"
+    t.string   "section"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "sitemap_widgets", :force => true do |t|
+    t.string   "widget_model"
+    t.string   "index_named_route"
+    t.string   "frequency_index"
+    t.string   "frequency_show"
+    t.float    "priority"
+    t.string   "custom_finder"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
