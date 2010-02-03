@@ -280,6 +280,7 @@ a:active {
 /******************************************/
 /*******************ERRORS*****************/
 #flash {
+  display: hidden;
   position: absolute;
   text-align: center;
   color: #fff;
