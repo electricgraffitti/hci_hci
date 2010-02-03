@@ -15,7 +15,7 @@ body {
   background: none;
   width: 245px;
   height: 45px;
-  filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src='../images/HCI_logo_silver2.png');
+  /*filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src='../images/HCI_logo_silver2.png');*/
 }
 ul#top_links, ul.login  {
   position: relative;
@@ -187,7 +187,7 @@ div.profile p {
 #contact_form div.visible_field, #nucleus_form div.visible_field {
   position: relative;
   float: left;
-  width: 250px;
+  width: 215px;
 }
 #contact_form input[type="text"], #contact_form textarea {
   float: left;
