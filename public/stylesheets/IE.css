@@ -12,7 +12,6 @@ body {
 	height: 94px;
 }
 #hci_logo {
-  background: none;
   width: 245px;
   height: 45px;
   /*filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src='../images/HCI_logo_silver2.png');*/
@@ -179,6 +178,7 @@ div.profile p {
 #contact_form {
   position: relative;
   float: left;
+  width: 463px;
 }
 #contact_form div, #nucleus_form div {
   position: absolute;
