@@ -1,27 +1,27 @@
 <div class="nucleus_form_wrap">
   <% form_tag("http://www2.hcinsight.com/l/1492/2010-01-07/G5EGP", :method => "post", :id => "nucleus_form") do %>
     <div class="visible_field">
-      <%= label :nucleus, :nucleus_first_name, "First Name", :class => "orange" %><br />
+      <%= label :nucleus, :nucleus_first_name, "First Name *", :class => "orange" %><br />
       <%= text_field :nucleus, :nucleus_first_name, :name => "nucleus_first_name" %>
     </div> 
     <div class="visible_field">
-      <%= label :nucleus, :nucleus_last_name, "Last Name", :class => "orange" %><br />
+      <%= label :nucleus, :nucleus_last_name, "Last Name *", :class => "orange" %><br />
       <%= text_field :nucleus, :nucleus_last_name, :name => "nucleus_last_name" %>
     </div>
     <div class="visible_field">
-      <%= label :nucleus, :email, "Email", :class => "orange" %><br />
+      <%= label :nucleus, :email, "Email *", :class => "orange" %><br />
       <%= text_field :nucleus, :email, :name => "nucleus_email" %>
     </div>
     <div class="visible_field">
-      <%= label :nucleus, :business_phone, "Phone", :class => "orange" %><br />
+      <%= label :nucleus, :business_phone, "Phone *", :class => "orange" %><br />
       <%= text_field :nucleus, :business_phone, :name => "nucleus_phone" %>
     </div>
     <div class="visible_field">
-      <%= label :nucleus, :business_name, "Company", :class => "orange" %><br />
+      <%= label :nucleus, :business_name, "Company *", :class => "orange" %><br />
       <%= text_field :nucleus, :business_name, :name => "nucleus_company" %>
     </div>
     <div class="visible_field">
-      <%= label :nucleus, :position, "Job Title", :class => "orange" %><br />
+      <%= label :nucleus, :position, "Job Title *", :class => "orange" %><br />
       <%= text_field :nucleus, :position, :name => "nucleus_position" %>
     </div>
     <%= submit_tag 'Submit', :class => "big_orange_submit nucleus_submit", :title => "Submit Your Message to HealthCare Insight" %>
