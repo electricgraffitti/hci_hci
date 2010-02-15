@@ -80,5 +80,21 @@ class HealthCareController < ApplicationController
   def resources
     
   end
+  
+  def PCI
+    redirect_to service_path(:id => 1)
+  end
+  
+  def FCI
+    redirect_to service_path(:id => 3)
+  end
+  
+  def DCI
+    redirect_to service_path(:id => 2)
+  end
+  
+  def OCI
+    redirect_to service_path(:id => 7)
+  end
 
 end

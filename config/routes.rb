@@ -78,6 +78,13 @@ ActionController::Routing::Routes.draw do |map|
   map.employee_login "employee_login", :controller => "employee_sessions", :action => "new"
   map.employee_logout "employee_logout", :controller => "employee_sessions", :action => "destroy"
   map.about "about-healthcare-insight", :controller => "health_care", :action => "about"
+  
+  # Custom Redirects
+  map.pci "PCI.html", :controller => "health_care", :action => "PCI"
+  map.fci "FCI.html", :controller => "health_care", :action => "FCI"
+  map.dci "DCI.html", :controller => "health_care", :action => "DCI"
+  map.oci "OCI.html", :controller => "health_care", :action => "OCI"
+  
   map.home "health-care", :controller => "health_care", :action => "index"
   map.root :controller => "health_care", :action => "index"
 end
