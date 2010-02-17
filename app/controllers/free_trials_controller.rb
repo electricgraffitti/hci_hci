@@ -2,6 +2,8 @@ class FreeTrialsController < ApplicationController
   
   before_filter :require_user, :only => [:index]
   
+  layout "new_landing_page"
+  
   def index
   end
 
@@ -14,6 +16,10 @@ class FreeTrialsController < ApplicationController
   end
   
   def free_webinar
+    
+  end
+  
+  def fci_webinar
     
   end
 
