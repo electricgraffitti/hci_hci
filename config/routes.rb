@@ -49,6 +49,7 @@ ActionController::Routing::Routes.draw do |map|
   map.admin_ads "hci-advertisements", :controller => "users", :action => "admin_ads"
   
   # Landing Pages
+  map.webinar_thank_you "thank-you-for-registering", :controller => "free_trials", :action => "webinar_thank_you"
   map.landing "landing_page_test", :controller => "health_care", :action => "landing_page"
   map.executive_summit "healthcare-insight-executive-summit", :controller => "free_trials", :action => "executive_summit"
   map.free_webinar "healthcare-insight-free-webinar", :controller => "free_trials", :action => "free_webinar"

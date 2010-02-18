@@ -22,5 +22,12 @@ class FreeTrialsController < ApplicationController
   def fci_webinar
     
   end
+  
+  def webinar_thank_you
+    
+    respond_to do |format|
+    format.html {render :layout => "layout5"}
+  end
+  end
 
 end
