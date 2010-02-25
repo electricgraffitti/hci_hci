@@ -6,15 +6,13 @@ var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "htt
 document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
 </script>
 <script type="text/javascript">
-var pageTracker = _gat._getTracker("UA-3353556-1");
-pageTracker._initData();
-pageTracker._trackPageview(); </script>
+var OSpageTracker = _gat._getTracker("UA-3353556-1");
+OSpageTracker._initData();
+OSpageTracker._trackPageview(); </script>
+
+<%# You can pass params and vars into the _trackPageview() method. you can also call _trackPageviews() more than once%>
 
 <%# This is the NEW GOOGLE account with SHCF, Profiler and HCI on it %>
-<script type="text/javascript">
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
 <script type="text/javascript">
 try {
 var pageTracker = _gat._getTracker("UA-10134512-3");
@@ -38,11 +36,7 @@ document.write(unescape("%3Cscript src='" + piProtocol + "pi.pardot.com/pi.js' t
 
 <%# c2 Tracker %>
 <script type="text/javascript">
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script type="text/javascript">
 try {
-var pageTracker = _gat._getTracker("UA-12818029-1");
-pageTracker._trackPageview();
+var C2pageTracker = _gat._getTracker("UA-12818029-1");
+C2pageTracker._trackPageview();
 } catch(err) {}</script>
