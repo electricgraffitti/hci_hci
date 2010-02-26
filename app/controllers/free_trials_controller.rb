@@ -29,5 +29,15 @@ class FreeTrialsController < ApplicationController
     format.html {render :layout => "layout5"}
   end
   end
+  
+  def ahip_march
+    
+  end
+  
+  def ahip_nano_thank_you
+    respond_to do |format|
+    format.html {render :layout => "layout5"}
+  end
+  end
 
 end

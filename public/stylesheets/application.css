@@ -1049,7 +1049,7 @@ img.inner_banner {
   background: #fff;
   min-height: 290px;
 }
-.contact_banner, .contact_thank_you, .big_banner, .nucleus_banner, .executive_summit_banner, .free_webinar_banner {
+.contact_banner, .contact_thank_you, .big_banner, .nucleus_banner, .executive_summit_banner, .free_webinar_banner, .free_ipod_nano {
   width: 940px;
   float: left;
   height: 500px;
@@ -1070,6 +1070,9 @@ img.inner_banner {
 }
 .free_webinar_banner {
   background: url('../images/banners/inner_banners/free_webinar_banner.jpg') no-repeat;
+}
+.free_ipod_nano {
+	background: url('../images/banners/inner_banners/free_ipod_big.jpg') no-repeat;
 }
 .leavitt_partners {
   margin-left: 78px;

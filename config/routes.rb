@@ -50,10 +50,12 @@ ActionController::Routing::Routes.draw do |map|
   
   # Landing Pages
   map.webinar_thank_you "thank-you-for-registering", :controller => "free_trials", :action => "webinar_thank_you"
+  map.ahip_ipod "thank-you-for-registering-for-your-free-ipod", :controller => "free_trials", :action => "ahip_nano_thank_you"
   map.landing "landing_page_test", :controller => "health_care", :action => "landing_page"
   map.executive_summit "healthcare-insight-executive-summit", :controller => "free_trials", :action => "executive_summit"
   map.free_webinar "healthcare-insight-free-webinar", :controller => "free_trials", :action => "free_webinar"
   map.fci_webinar "healthcare-insight-webinar-series-fci", :controller => "free_trials", :action => "fci_webinar"
+  map.ahip_march "ahip-win-a-free-ipod-nano", :controller => "free_trials", :action => "ahip_march"
   
   # Custom Named Routes
   map.issuu_upload "upload-issuu", :controller => "issuu_uploads", :action => "index"
