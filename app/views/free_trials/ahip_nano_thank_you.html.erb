@@ -1,12 +1,14 @@
-<div class="contact_thank_you">
+<div class="big_banner ahip_thank_you">
   <h2 class="text_indent">Thank You</h2>
-  <div class="webinar_thank_you_text_wrap">
-    <p>
-      Thank you for registering with HealthCare Insight for the Free iPod Nano we have received your information and you are now in the drawing. HealthCare Insight provides many different services that may help your organization. Please take a moment to browse our website.      
-    </p>
-    <p>
-      Enjoy your free <%= link_to "Thought Paper", "http://www2.hcinsight.com/l/1492/2010-03-01/GI9BH/1492/72361/ThoughtPaper_CEO_up_at_Night_FINAL.pdf" %> 
-    </p>
+  <div class="big_banner_content_wrap ahip_thank_you_wrap">
+    <h2>
+      Enjoy your free <br/><%= link_to "Thought Paper", "http://www2.hcinsight.com/l/1492/2010-03-01/GI9BH/1492/72361/ThoughtPaper_CEO_up_at_Night_FINAL.pdf" %> 
+    </h2>
   </div>
-   <%= render :partial => "layouts/cta_bar" %>
+      <%= link_to "", "http://www2.hcinsight.com/l/1492/2010-03-01/GI9BH/1492/72361/ThoughtPaper_CEO_up_at_Night_FINAL.pdf", :class => "big_banner_right_image_link" %> 
 </div>
+
+<% content_for :sub_boxes do %>
+<h2 class="page_header thank_you_header full_wrap">Check out our other great resources.</h2>
+  <%= render :partial => 'health_care/index_sub_boxes' %>
+<% end %>

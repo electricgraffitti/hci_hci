@@ -35,8 +35,9 @@ class FreeTrialsController < ApplicationController
   end
   
   def ahip_nano_thank_you
+    @advertisements = Advertisement.current_list.small_list(1).order_list
     respond_to do |format|
-    format.html {render :layout => "layout5"}
+    format.html {render :layout => "application"}
   end
   end
 

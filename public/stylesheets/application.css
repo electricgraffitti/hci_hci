@@ -1037,6 +1037,14 @@ div.nucleus_bullet_points {
 .inner_banners {
   position: relative;
 }
+.big_banner_right_image_link {
+  display:block;
+  height:307px;
+  position:absolute;
+  right:125px;
+  top:56px;
+  width:254px;
+}
 img.inner_banner {
   position: relative;
   bottom: 0px;
@@ -1061,6 +1069,9 @@ img.inner_banner {
 }
 .contact_thank_you {
   background: url('../images/banners/inner_banners/thank_you_big.jpg') no-repeat;
+}
+.ahip_thank_you {
+  background: url('../images/banners/inner_banners/thank_you_ahip.jpg') no-repeat;
 }
 .career_banner {
   background: url('../images/banners/inner_banners/careers_big.jpg') no-repeat;
@@ -1136,7 +1147,7 @@ div.career_banner_image_link a {
   width: 125px;
   float: left;
 }
-.contact_banner_text_wrap, .contact_thank_you_text_wrap, .executive_banner_text_wrap, .webinar_thank_you_text_wrap {
+.big_banner_content_wrap, .contact_banner_text_wrap, .contact_thank_you_text_wrap, .executive_banner_text_wrap, .webinar_thank_you_text_wrap {
   bottom: 60px;
   font-size:130%;
   left:78px;
@@ -1149,6 +1160,11 @@ div.career_banner_image_link a {
 .executive_banner_text_wrap {
   width: 340px;
   bottom: 58px;
+}
+.ahip_thank_you_wrap {
+  bottom:190px;
+  left:120px;
+  width:360px;
 }
 .webinar_thank_you_text_wrap {
   bottom:130px;
@@ -2699,6 +2715,11 @@ div.nucleus_form_wrap .nucleus_submit {
 }
 .home_header {
   background: url('../images/headers/home_header.png') no-repeat;
+  width: 900px;
+  height: 60px;
+}
+.thank_you_header {
+  background: url('../images/headers/check_out.png') no-repeat;
   width: 900px;
   height: 60px;
 }
