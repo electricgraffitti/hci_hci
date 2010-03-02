@@ -1162,9 +1162,12 @@ div.career_banner_image_link a {
   bottom: 58px;
 }
 .ahip_thank_you_wrap {
-  bottom:190px;
+  bottom:110px;
   left:86px;
   width:360px;
+}
+.ahip_thank_you_wrap .signature {
+  margin-top: 30px;
 }
 .webinar_thank_you_text_wrap {
   bottom:130px;
