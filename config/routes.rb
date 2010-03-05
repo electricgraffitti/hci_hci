@@ -88,6 +88,8 @@ ActionController::Routing::Routes.draw do |map|
   map.fci "FCI.html", :controller => "health_care", :action => "FCI"
   map.dci "DCI.html", :controller => "health_care", :action => "DCI"
   map.oci "OCI.html", :controller => "health_care", :action => "OCI"
+  map.rcost_reduction "cost-reduction", :controller => "redirects", :action => "cost_reduction"
+  map.rfraud_prevention "fraud-prevention", :controller => "redirects", :action => "fraud_software"
   
   map.home "health-care", :controller => "health_care", :action => "index"
   map.root :controller => "health_care", :action => "index"
