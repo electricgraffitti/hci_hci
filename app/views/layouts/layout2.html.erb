@@ -2,6 +2,7 @@
        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<%= render :partial => "layouts/scripts" %>
 <head>
   <%= render :partial => "layouts/headmeta" %>
 </head>
@@ -39,6 +40,6 @@
       <%= link_to(image_tag("verisk_logo.png", :id => "verisk_logo"), "http://www.verisk.com/") %>
     </div>
 	</div>
-	<%= render :partial => "layouts/scripts" %>
+	<%= javascript_include_tag 'scroll' %>
 </body>
 </html>
