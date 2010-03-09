@@ -1,5 +1,9 @@
   # The priority is based upon order of creation: first created -> highest priority.
 ActionController::Routing::Routes.draw do |map|
+  map.resources :students
+
+  map.resources :student_sessions
+
   map.resources :advertisements
 
   
@@ -61,6 +65,7 @@ ActionController::Routing::Routes.draw do |map|
   map.issuu_upload "upload-issuu", :controller => "issuu_uploads", :action => "index"
   map.issue "healthcare-insight-document", :controller => 'issuu_uploads', :action => 'show'
   map.nucleus "nucleus", :controller => "health_care", :action => "nucleus"
+  map.university "insight-university", :controller => "university", :action => "index"
   map.markets "healthcare-insight-markets", :controller => "health_care", :action => "markets"
   map.res "healthcare-insight-resources", :controller => "health_care", :action => "resources"
   map.press_kit "healthcare-insight-press-kit", :controller => "health_care", :action => "press_kit"
