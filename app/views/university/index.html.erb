@@ -1,18 +1,18 @@
-<% page_title "Health Care Fraud Fighting Articles "%>
-<% meta_keywords("health care fraud prevention articles, health care fraud articles, health care fraud news")%>
-<% meta_description("Health Care fraud is a huge problem in America. HealthCare Insight provides articles and tools to keep you informed and educated") %>
+<% page_title "HealthCare Insight University "%>
+<%# meta_keywords("Health care w")%>
+<% meta_description("HealthCare Insight provides education on the tools and fraud prevention software to keep you informed and educated.") %>
 
 <% content_for :banner do %>
   <%= render :partial => "university/banner" %>
 <% end %>
 
-<!-- Render Helper Module Here -->
-<div class="grid_8 top_10_wrap">
-  <h3 class="orange">Insight University</h3>
-  <%= render :partial => "university/icourse" %>
+<%# This is the main content area  %>
+<div class="grid_6">
+  <%= render :partial => 'university/index_center_list' %>
 </div>
-<div class="grid_4 alpha omega right top_10_wrap">
-  <%= render :partial => 'resources/resource_press_releases', :locals => {:objects => @press_releases} %>
-  <%= render :partial => 'university/webinar_list', :locals => {:objects => @events} %>
-  <%= render :partial => 'articles/current_ad', :locals => {:ads => @advertisements} %>
-</div>
+<%= render :partial => 'university/index_scroller' %>
+
+<% content_for :sub_boxes do %>
+  <h2 class="page_header index_header full_wrap">Do you have a fraud problem? We have a Fraud Solution.</h2>
+  <%= render :partial => 'health_care/index_sub_boxes' %>
+<% end %>

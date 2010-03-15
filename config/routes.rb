@@ -1,12 +1,8 @@
   # The priority is based upon order of creation: first created -> highest priority.
 ActionController::Routing::Routes.draw do |map|
   map.resources :students
-
   map.resources :student_sessions
-
   map.resources :advertisements
-
-  
   map.resources :goal_types
   map.resources :claim_types
   map.resources :business_type
@@ -65,7 +61,6 @@ ActionController::Routing::Routes.draw do |map|
   map.issuu_upload "upload-issuu", :controller => "issuu_uploads", :action => "index"
   map.issue "healthcare-insight-document", :controller => 'issuu_uploads', :action => 'show'
   map.nucleus "nucleus", :controller => "health_care", :action => "nucleus"
-  map.university "insight-university", :controller => "university", :action => "index"
   map.markets "healthcare-insight-markets", :controller => "health_care", :action => "markets"
   map.res "healthcare-insight-resources", :controller => "health_care", :action => "resources"
   map.press_kit "healthcare-insight-press-kit", :controller => "health_care", :action => "press_kit"
@@ -87,6 +82,13 @@ ActionController::Routing::Routes.draw do |map|
   map.employee_login "employee_login", :controller => "employee_sessions", :action => "new"
   map.employee_logout "employee_logout", :controller => "employee_sessions", :action => "destroy"
   map.about "about-healthcare-insight", :controller => "health_care", :action => "about"
+  
+  # Insight U Routes
+  map.university "insight-university", :controller => "university", :action => "index"
+  map.iuservices "insight-university", :controller => "university", :action => "iu_services"
+  map.iuresources "insight-university-resources", :controller => "university", :action => "iu_resources"
+  map.student_login "insight-university-login", :controller => "student_sessions", :action => "new"
+  map.student_logout "insight-university-logout", :controller => "student_sessions", :action => "destroy"
   
   # Custom Redirects
   map.pci "PCI.html", :controller => "health_care", :action => "PCI"

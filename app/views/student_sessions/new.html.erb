@@ -1,11 +1,11 @@
-<h1>New student_session</h1>
+<div class="student_login_wrap">
+  <h2>Insight University Client Center</h2>
+  <%= render :partial => 'student_sessions/form', :locals => {:student_session => @student_session} %>
+  <%= link_to 'Back', student_sessions_path %>
+</div>
 
-<% form_for(@student_session) do |f| %>
-  <%= f.error_messages %>
-
-  <p>
-    <%= f.submit 'Create' %>
-  </p>
+<% content_for :sub_boxes do %>
+  <div id="not_registered_sub_box" ass="grid_12 alpha omega">
+    Not registered with HealthCare Insight University? <%= link_to "Get Registered Today", "#" %>
+  </div>
 <% end %>
-
-<%= link_to 'Back', student_sessions_path %>

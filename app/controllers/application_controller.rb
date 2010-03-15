@@ -7,7 +7,7 @@ class ApplicationController < ActionController::Base
 
   # Scrub sensitive parameters from your log
   filter_parameter_logging :password, :password_confirmation
-  helper_method :current_user_session, :current_user, :super?, :current_employee_session, :current_employee, :employee_admin?, :super_user?
+  helper_method :current_user_session, :current_user, :current_student_session, :current_student, :super?, :current_employee_session, :current_employee, :employee_admin?, :super_user?
   
   private
   
@@ -38,6 +38,7 @@ class ApplicationController < ActionController::Base
       return false
     end
   end
+  
   def current_user_session
     return @current_user_session if defined?(@current_user_session)
     @current_user_session = UserSession.find
@@ -59,6 +60,34 @@ class ApplicationController < ActionController::Base
 
   def require_no_user
     if current_user
+      store_location
+      flash[:notice] = "You must be logged out to access this page"
+      redirect_to account_url
+      return false
+    end
+  end
+  
+  def current_student_session
+    return @current_student_session if defined?(@current_student_session)
+    @current_student_session = StudentSession.find
+  end
+
+  def current_student
+    return @current_student if defined?(@current_student)
+    @current_student = current_student_session && current_student_session.record
+  end
+  
+  def require_student
+    unless current_student
+      store_location
+      flash[:notice] = "You must be logged in to access this page"
+      redirect_to new_student_session_url
+      return false
+    end
+  end
+
+  def require_no_student
+    if current_student
       store_location
       flash[:notice] = "You must be logged out to access this page"
       redirect_to account_url
