@@ -5,6 +5,7 @@ db/schema.sql
 .DS_Store
 public/attachments/*
 public/avatars/*
+public/student_pics/*
 public/covers/*
 public/case_studies/*
 public/brochures/*

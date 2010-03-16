@@ -75,6 +75,57 @@ jQuery(document).ready(function() {
 });
 
 
+// HCI U Scroller
+jQuery(document).ready(function() {
+  var horizontal = true;
+  var $iuPanels = jQuery('#iu_slider .panels');
+  var $iucontainer = jQuery('#iu_slider #iu_scrollContainer');
+  var $iuscroll = jQuery('#iu_slider #iu_scroll').css('overflow', 'hidden');
+  // var $iuscrollerNav = jQuery('#scroller_nav');
+    
+  // $iuscrollerNav
+  //    .append('<div id="iu_banner_nav"><div id="iu_banner_scroll_l" class="iu_banner_scroll l" /><div id="iu_banner_scroll_r" class="iu_banner_scroll r" /></div>');
+     // .after('<div id="banner_scroll_r" class="banner_scroll r" />');
+    
+    if (horizontal) {
+      $iuPanels.css({
+        'float' : 'left',
+        'position' : 'relative'
+      });
+      if (typeof $iuPanels[0] == 'undefined') {
+      
+     } else {
+       $iucontainer.css('width', $iuPanels[0].offsetWidth * $iuPanels.length);
+     }
+    }
+  
+  jQuery('#iu_slider .iu_navigation a').bind('mouseover, click', selectNav);
+  
+  function selectNav() {
+    jQuery(this).parents('ul:first').find('a').removeClass('selected active').end().end().addClass('active selected');
+  }
+  
+  var $iu_scrollOptions = {
+    target: $iuscroll,
+    items: $iuPanels,
+    navigation: '.navigation a',
+    prev: 'div.iu_banner_scroll.l',
+    next: 'div.iu_banner_scroll.r',
+    axis: 'xy',
+    duration: 500,
+    easing: 'swing',
+    onAfter: trigger
+  };
+  
+  function trigger(data) {
+    var el = jQuery('#iu_slider .iu_navigation').find('a[href$="' + data.id + '"]').get(0);
+    selectNav.call(el);
+  }
+  
+  jQuery('#iu_slider').serialScroll($iu_scrollOptions);
+  $.localScroll($iu_scrollOptions);
+  
+});
 
 
 
