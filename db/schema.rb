@@ -15,16 +15,16 @@ ActiveRecord::Schema.define(:version => 20100203195435) do
     t.string   "title"
     t.text     "description"
     t.string   "ad_type"
-    t.integer  "listed_order"
-    t.date     "expiration_date"
     t.boolean  "active"
-    t.string   "link_url"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "ad_image_file_name"
     t.string   "ad_image_content_type"
     t.integer  "ad_image_file_size"
     t.datetime "ad_image_updated_at"
+    t.string   "link_url"
+    t.integer  "listed_order"
+    t.date     "expiration_date"
   end
 
   create_table "article_types", :force => true do |t|
