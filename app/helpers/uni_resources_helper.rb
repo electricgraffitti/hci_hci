@@ -1,0 +1,2 @@
+module UniResourcesHelper
+end

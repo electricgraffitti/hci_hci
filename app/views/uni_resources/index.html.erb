@@ -12,7 +12,7 @@
 <div class="bd_fade_seperator"></div>
 <%# This is the main content area  %>
 <div class="grid_8">
-<%= render :partial => 'university/resource_list' %>
+<%= render :partial => 'university/resource_list', :locals => {:iuresources => @iuresources} %>
 </div>
 <div class="iu_sidebar">
   <ul>

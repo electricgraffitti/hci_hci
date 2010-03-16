@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<%= render :partial => "layouts/scripts" %>
+<head>
+  <%= render :partial => "hciu/iuheadmeta" %>
+</head>
+<body class="yui-skin-sam">
+  <!-- Application Layout -->
+  <div id="wrapper" class="container_12">
+    <%= render :partial => 'layouts/flash', :locals => {:flash => flash} %>
+	  <div id="hd" class='grid_12 alpha omega'>
+      <%= render :partial => "hciu/iuheader" %>
+	  </div>
+	  <div class="clear"></div>
+	  <div id="banner_3" class="grid_12 alpha omega">
+      <%= yield :banner %>
+    </div>
+    <div class="clear"></div>
+    <div id="bd3" class="grid_12 alpha omega round2">
+      <div id="main_show" class="grid_9 alpha">
+        <%= yield %>
+      </div>
+      <div id="side_show" class="grid_3 omega">
+        <%= yield :sidebar %>
+      </div>
+    </div>
+    <div class="clear"></div>
+    <div id="sub_boxes2" class="grid_12 alpha omega">
+      <%= yield :sub_boxes %>
+    </div>
+    <div id="ft" class="grid_12 omega">
+      <%= render :partial => "layouts/footer" %>
+    </div>
+    <div class="clear"></div>
+	</div>
+</body>
+</html>

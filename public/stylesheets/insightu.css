@@ -357,7 +357,7 @@ label.error {
   height: 55px;
 }
 #hci_logo {
-  background: url('../images/icu_header_logo.png') no-repeat;
+  background: url('../images/insight_university/hciu_top_logo.png') no-repeat;
   display: block;
   float: left;
   text-indent: -1000em;
@@ -398,16 +398,26 @@ label.error {
 }
 /*********************************************/
 /*****************BANNER**********************/
-#bd {
+#bd, #bd3 {
   position: relative;
   width: 940px;
   padding: 0px 10px;
   background: #fff url('../images/insight_university/shadow_bg.jpg') repeat-y;
   margin-bottom: 40px;
 }
+#bd3 {
+  background: none;
+}
 #banner {
   border-top: 1px solid #d0d0d0;
   max-height:270px;
+}
+#banner_3 {
+  position: relative;
+  width: 940px;
+  height: 90px;
+  padding: 0px 10px;
+  background: url('../images/insight_university/show_page_black_bar.jpg') no-repeat;
 }
 #inner_banner_short h2 {
   padding: 10px;
@@ -431,6 +441,21 @@ label.error {
   height: 25px;
   border-bottom: 1px solid #d0d0d0;
 }
+h2#iu_res_show_header {
+  position: relative;
+  color: #fff;
+  font-size: 225.9%;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-left: 140px;
+}
+#banner_3 img {
+  position: absolute;
+  left: 50px;
+  top: -10px;
+  width: 90px;
+  height: 90px;
+}
 /*********************************************/
 /*****************MAIN CONTENT****************/
 #iu_index_list li a h3:hover {
@@ -450,12 +475,22 @@ ul#iu_index_list li.last a {
   padding: 10px;
   color: #0088cc;
 }
+ul#iu_index_list li a {
+  float:left;
+  text-decoration: none;
+}
 ul#iu_index_list li img {
   margin-right: 10px;
 }
 ul#iu_index_list li h3 {
   padding-top: 10px;
   font-weight: bold;
+  float: left;
+  width:325px;
+}
+ul#iu_index_list li p {
+  float: left;
+  width:325px;
 }
 /*******Index Panels**********/
 div.small_scroller_box {
@@ -554,6 +589,13 @@ ul#iu_banner_nav_ul li a.selected, ul#iu_banner_nav_ul li a.active {
   width:280px;
   min-height: 500px;
 }
+.iu_sidebar ul li {
+  position: relative;
+  width: 280px;
+  height: 123px;
+  border-top: 1px solid #e4e4e4;
+  border-bottom: 1px solid #f6f6f6;
+}
 /**********Login*********/
 #not_registered_sub_box {
   height: 30px;
@@ -563,12 +605,95 @@ ul#iu_banner_nav_ul li a.selected, ul#iu_banner_nav_ul li a.active {
 .student_login_wrap {
   padding: 40px;
 }
+#student_login {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  width: 245px;
+  height: 25px;
+}
+#student_login ul {
+  position: relative;
+  float: left;
+  width: 300px;
+  height: 25px;
+}
+#student_login ul li {
+  position: relative;
+  float: left;
+  text-align: center;
+  padding: 0px 15px;
+  height: 25px;
+}
+/*******Show Pages********/
+#main_show, #side_show {
+  min-height: 500px;
+  -webkit-border-bottom-left-radius: 4px 4px;
+  -webkit-border-bottom-right-radius: 4px 4px;
+  -webkit-border-top-left-radius: 4px 4px;
+  -webkit-border-top-right-radius: 4px 4px;
+  -webkit-box-shadow: rgb(204, 204, 204) 0px 1px 2px;
+  -moz-border-radius:4px 4px 4px 4px;
+  -moz-box-shadow:0 1px 2px #CCCCCC;
+  background: #fff url('../images/apple_index_box_bg.png') 0 50px repeat-x;
+}
+.show_head {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 60px;
+}
+.show_head h3 {
+  color:#FFFFFF;
+  margin-left:24px;
+  margin-top:10px;
+  text-shadow:0 2px 2px #333333;
+}
+#main_show .left_column {
+  position: relative;
+  float: left;
+  width: 360px;
+  padding: 20px;
+}
+#main_show .right_column {
+  position: relative;
+  float: left;
+  width: 260px;
+  padding: 20px;
+}
+#main_show .right_column h4, #main_show .left_column h4 {
+  border-bottom:1px solid #D0D0D0;
+  padding-bottom:10px;
+}
 /*********************************************/
 /******************SUBBOXES*******************/
+.iu_sub_box {
+  position: relative;
+  float: left;
+  border-top: 1px solid #d0d0d0;
+  border-right: 1px solid #d0d0d0;
+  border-bottom: 1px solid #efefef;
+  border-left: 1px solid #efefef;
+  text-align: center;
+  background: #fff url('../images/apple_index_box_bg.png') repeat-x;
+  -moz-box-shadow:0 1px 2px #aaaaaa;
+  -webkit-box-shadow: rgb(170, 170, 170) 0px 1px 2px;
+}
+#iusub4 .iu_sub_box {
+  width: 233px;
+  height: 200px;
+  padding: 10px 0px 0px;
+}
 #sub_boxes {
   text-align: left;
   background: #fff;
   padding-bottom: 20px;
+}
+#sub_boxes2 {
+  position: relative;
+  width: 940px;
+  padding: 0px 10px;
+  margin-bottom: 40px;
 }
 .apple_sub_boxes {
   position: relative;
@@ -883,4 +1008,105 @@ ul.login a {
   position: relative;
   float: right;
   margin: 16px;
+}
+/********************Service Stripes*****************/
+.physicianclaim-insight_service_top_stripe {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 10px;
+  background: #00853f;
+}
+.physicianclaim-insight_service_bottom_stripe {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 50px;
+  background: #004914;
+}
+.facilityclaim-insight_service_top_stripe {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 10px;
+  background: #98002e;
+}
+.facilityclaim-insight_service_bottom_stripe {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 50px;
+  background: #6b0a10;
+}
+.dentalclaim-insight_service_top_stripe {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 10px;
+  background: #009fc2;
+}
+.dentalclaim-insight_service_bottom_stripe {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 50px;
+  background: #007690;
+}
+.oncologyclaim-insight_service_top_stripe {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 10px;
+  background: #e5b53a;
+}
+.oncologyclaim-insight_service_bottom_stripe {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 50px;
+  background: #c9a83d;
+}
+.pharmaclaim-insight_service_top_stripe {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 10px;
+  background: #00467f;
+}
+.pharmaclaim-insight_service_bottom_stripe {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 50px;
+  background: #002b54;
+}
+.visionclaim-insight_service_top_stripe {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 10px;
+  background: #78496a;
+}
+.visionclaim-insight_service_bottom_stripe {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 50px;
+  background: #5a2149;
+}
+.nucleus_service_top_stripe {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 10px;
+/*  background: #DEED74;*/
+  background: #58AE46;
+}
+.nucleus_service_bottom_stripe {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 50px;
+/*  background: #BED63A;*/
+  background: #309846;
 }
