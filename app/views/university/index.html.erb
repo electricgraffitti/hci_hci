@@ -8,7 +8,7 @@
 
 <%# This is the main content area  %>
 <div class="grid_6">
-  <%= render :partial => 'university/index_center_list' %>
+  <%= render :partial => 'university/index_center_list', :locals => {:iuresources => @iuresources} %>
 </div>
 <%= render :partial => 'university/index_scroller' %>
 

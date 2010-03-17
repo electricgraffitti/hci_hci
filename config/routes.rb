@@ -1,5 +1,6 @@
   # The priority is based upon order of creation: first created -> highest priority.
 ActionController::Routing::Routes.draw do |map|
+
   map.resources :students
   map.resources :student_sessions
   map.resources :advertisements
@@ -29,6 +30,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :services, :has_many => :assets
   map.resources :users
   map.resources :user_sessions
+  map.resources :uni_resources
   
   # Mail Route Paths
   map.contact_mailer 'contacts_mailer', :controller => "contacts", :action => "contacts_mailer"
@@ -51,11 +53,13 @@ ActionController::Routing::Routes.draw do |map|
   # Landing Pages
   map.webinar_thank_you "thank-you-for-registering", :controller => "free_trials", :action => "webinar_thank_you"
   map.ahip_ipod "thank-you-for-registering-for-your-free-ipod", :controller => "free_trials", :action => "ahip_nano_thank_you"
+  map.ahip_ipod2 "thank-you-for-registering-for-your-free-ipod2", :controller => "free_trials", :action => "ahip_nano_thank_you2"
   map.landing "landing_page_test", :controller => "health_care", :action => "landing_page"
   map.executive_summit "healthcare-insight-executive-summit", :controller => "free_trials", :action => "executive_summit"
   map.free_webinar "healthcare-insight-free-webinar", :controller => "free_trials", :action => "free_webinar"
   map.fci_webinar "healthcare-insight-webinar-series-fci", :controller => "free_trials", :action => "fci_webinar"
   map.ahip_march "ahip-win-a-free-ipod-nano", :controller => "free_trials", :action => "ahip_march"
+  map.ahip_march22 "ahip-win-a-free-ipod-nano-2", :controller => "free_trials", :action => "ahip_march22"
   
   # Custom Named Routes
   map.issuu_upload "upload-issuu", :controller => "issuu_uploads", :action => "index"

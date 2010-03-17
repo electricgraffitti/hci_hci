@@ -1,20 +1,12 @@
   <ul id="iu_index_list" class="side_20_wrap">
+    <% iuresources.each do |iur| %>
     <li>
-      <%= image_tag('insight_university/tiles/pci_tile.jpg', :class => "iu_service_tile_small left") %>
-      <%= link_to "<h3>PhysicianClaim Insight Center</h3>", "#", :class => "index_center_header_link"%>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <%= link_to image_tag(iur.uni_res_avatar.url(:thumb), :alt => iur.title), uni_resource_path(iur) %>
+      <%= link_to "<h3>#{iur.title} Center</h3>", uni_resource_path(iur), :class => "index_center_header_link"%>
+      <p><%= iur.description %></p>
     </li>
-    <li>
-      <%= image_tag('insight_university/tiles/dci_tile.jpg', :class => "iu_service_tile_small left") %>
-      <%= link_to "<h3>DentalClaim Insight Center</h3>", "#", :class => "index_center_header_link"%>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    </li>
-    <li>
-      <%= image_tag('insight_university/tiles/fci_tile.jpg', :class => "iu_service_tile_small left") %>
-      <%= link_to "<h3>FacilityClaim Insight Center</h3>", "#", :class => "index_center_header_link"%>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    </li>
+    <% end %>
     <li class="last">
-      <%= link_to "More Fraud Resources", "#", :class => "right"  %>
+      <%= link_to "More Fraud Resources", uni_resources_path, :class => "right"  %>
     </li>
   </ul>
