@@ -45,4 +45,22 @@ $(document).ready(function() {
   				"contact_us_position": "Job Title Required"
         }
       });
+      
+      // Validates The Free Webinar Form
+        $('#free_webinar').validate({
+          rules: {
+            "contact_us_first_name": "required",
+    				"contact_us_last_name": "required",
+            "contact_us_email": {required: true, email: true},
+    				"contact_us_business_name": "required",
+    				"contact_us_position": "required"
+          },
+          messages: {
+            "contact_us_first_name": "First Name Required",
+    				"contact_us_last_name": "Last Name Required",
+            "contact_us_email": {required: "Email Required", email: "Not a Valid Email"},
+    				"contact_us_business_name": "Company Required",
+    				"contact_us_position": "Job Title Required"
+          }
+        });
 });
