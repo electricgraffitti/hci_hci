@@ -2259,7 +2259,7 @@ div.partner_grid_box img.even_row {
 }
 div.bene_odd_row .benefit_content_wrap {
   float: left;
-  padding-left: 0px;
+  padding-left: 10px;
 }
 .benefit_content_wrap h3 {
   font-size: 140%;
