@@ -16,7 +16,9 @@ class FreeTrialsController < ApplicationController
   end
   
   def free_webinar
-    
+    respond_to do |format|
+      format.html {render :layout => "application"}
+    end
   end
   
   def fci_webinar
@@ -26,8 +28,8 @@ class FreeTrialsController < ApplicationController
   def webinar_thank_you
     
     respond_to do |format|
-    format.html {render :layout => "layout5"}
-  end
+      format.html {render :layout => "layout5"}
+    end
   end
   
   def ahip_march
