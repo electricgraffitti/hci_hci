@@ -1073,6 +1073,9 @@ img.inner_banner {
 .ahip_thank_you {
   background: url('../images/banners/inner_banners/thank_you_ahip.jpg') no-repeat;
 }
+.ahip_thank_you2 {
+  background: url('../images/banners/inner_banners/thank_you_ahip2.jpg') no-repeat;
+}
 .career_banner {
   background: url('../images/banners/inner_banners/careers_big.jpg') no-repeat;
 }
