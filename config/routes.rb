@@ -104,6 +104,7 @@ ActionController::Routing::Routes.draw do |map|
   map.pncsec "PandC.html", :controller => "health_care", :action => "OldPandC"
   map.oldabout "AboutUs.html", :controller => "health_care", :action => "OldAboutUs"
   map.oldcareers "Careers.html", :controller => "health_care", :action => "OldCareers"
+  map.oldservices "Services.html", :controller => "health_care", :action => "OldServices"
   map.rcost_reduction "cost-reduction", :controller => "redirects", :action => "cost_reduction"
   map.rfraud_prevention "fraud-prevention", :controller => "redirects", :action => "fraud_software"
   

@@ -116,5 +116,9 @@ class HealthCareController < ApplicationController
   def OldCareers
     redirect_to careers_path
   end
+  
+  def OldServices
+    redirect_to services_path
+  end
 
 end
