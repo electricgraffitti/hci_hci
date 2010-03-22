@@ -97,8 +97,24 @@ class HealthCareController < ApplicationController
     redirect_to service_path(:id => 7)
   end
   
-  def PublicSector
+  def OldPublicSector
     redirect_to public_sector_path
+  end
+  
+  def OldPrivateSector
+    redirect_to private_sector_path
+  end
+  
+  def OldPandC
+    redirect_to workers_comp_path
+  end
+  
+  def OldAboutUs
+    redirect_to about_path
+  end
+  
+  def OldCareers
+    redirect_to careers_path
   end
 
 end
