@@ -58,6 +58,10 @@ a {
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
 }
+.shadow_light {
+  -webkit-box-shadow: rgb(204, 204, 204) 0px 1px 2px;
+  -moz-box-shadow:0 1px 2px #CCCCCC;
+}
 h1, h2, h3, h4, h5 {
   color: #000;
   font-family: "Helvetica Neue", Arial, Helvetica, "Bitstream Vera Sans", sans-serif;
