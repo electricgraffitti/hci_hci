@@ -96,5 +96,9 @@ class HealthCareController < ApplicationController
   def OCI
     redirect_to service_path(:id => 7)
   end
+  
+  def PublicSector
+    redirect_to public_sector_path
+  end
 
 end
