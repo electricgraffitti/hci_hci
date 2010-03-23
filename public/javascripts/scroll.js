@@ -29,9 +29,10 @@ jQuery(document).ready(function() {
   var $container = jQuery('#slider .scrollContainer');
   var $scroll = jQuery('#slider .scroll').css('overflow', 'hidden');
   var $bannerNav = jQuery('.scroll');
+  var $smallBanners = jQuery('#banner_nav');
     
-  $bannerNav
-     .after('<div id="banner_nav"><div id="banner_scroll_l" class="banner_scroll l" /><div id="banner_scroll_r" class="banner_scroll r" /></div>');
+  $smallBanners
+     .append('<div id="banner_scroll_l" class="banner_scroll l" /><div id="banner_scroll_r" class="banner_scroll r" />');
      // .after('<div id="banner_scroll_r" class="banner_scroll r" />');
     
     if (horizontal) {

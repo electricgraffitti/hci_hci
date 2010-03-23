@@ -5,6 +5,7 @@ class HealthCareController < ApplicationController
     # @documents = Document.all
     # @services = Service.all
     @advertisements = Advertisement.current_list.small_list(1).order_list
+    @banner = Banner.random
   end
   
   def about

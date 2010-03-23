@@ -31,6 +31,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :users
   map.resources :user_sessions
   map.resources :uni_resources
+  map.resources :banners
   
   # Mail Route Paths
   map.contact_mailer 'contacts_mailer', :controller => "contacts", :action => "contacts_mailer"
@@ -48,6 +49,7 @@ ActionController::Routing::Routes.draw do |map|
   map.admin_events "hci-events", :controller => "users", :action => "admin_events"
   map.admin_videos "hci-videos", :controller => "users", :action => "admin_videos"
   map.admin_documents "hci-documents", :controller => "users", :action => "admin_documents"
+  map.admin_banners "hci-banners", :controller => "users", :action => "admin_banners"
   map.admin_ads "hci-advertisements", :controller => "users", :action => "admin_ads"
   
   # Landing Pages

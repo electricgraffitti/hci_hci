@@ -2,7 +2,7 @@
 <% meta_description("HealthCare Insight provides private and public sector claims payors with a comprehensive suite of clinically validated fraud prevention services") %> 
 
 <% content_for :banner do %>
-  <%= render :partial => 'health_care/banners' %>
+  <%= render :partial => 'health_care/banners', :locals => {:banner => @banner} %>
 <% end %>
 
 <% content_for :sub_boxes do %>

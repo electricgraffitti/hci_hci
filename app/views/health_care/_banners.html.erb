@@ -2,16 +2,24 @@
   <div class="scroll">
     <div class="scrollContainer">
       <div id="panel1" class="panel">
-        <%= link_to "Experience Nucleus", nucleus_path, :class => "home_panel_icon_link" %>
-        <!-- <h2 class="nucleus_header meet_nucleus">Meet Nucleus</h2> -->
-         <%= image_tag "banners/home_banner_big.jpg", :alt => "Stop Fraud Now" %>
-         <div id="banner_diamonds">
+        <% if banner.secondary_banners %>
+          <%= link_to "Experience Nucleus", nucleus_path, :class => "home_panel_icon_link" %>
+        <% end %>
+        <h2 class="hide_text"><%= h banner.headline %></h2>
+         <%= image_tag(banner.banner.url(:main), :alt => "#{banner.headline}", :class => "home_banner")%>
+         
+         <% unless banner.secondary_banners %>
+           <div class="banner_button button_<%=banner.button_position %> <%=banner.button_color%>_banner_button">
+            <%= link_to "#{banner.button_text}", "#{banner.button_url}", :class => "banner_button_text" %>
+           </div>
+         <% end %>
+         <!-- <div id="banner_diamonds">
           <ul>
             <li class="diamond_1 highlight">
             <%= link_to "Free Webinar", "http://www2.hcinsight.com/l/1492/2010-02-02/GDE2L", :class => "index_banner_1_link" %>
             </li>
           </ul>
-         </div>
+         </div> -->
       </div>
       <div id="panel2" class="panel">
         <%= link_to "Experience Nucleus", about_path, :class => "home_panel_icon_link" %>
@@ -30,6 +38,7 @@
       </div>
     </div>
   </div>
+  <% if banner.secondary_banners %>
   <div class="index_banner_nav banner_nav">
     <ul id="index_banner_nav_ul" class="nav_ul navigation">
       <li class="b_nav1 index_banner_li first no_display"><%= link_to "1", '#panel1', :class => 'selected' %></li>
@@ -47,5 +56,7 @@
       </li>
     </ul>
   </div>
+  <div id="banner_nav"></div>
+  <% end %>
   <div class="corner_image"></div>
 </div>
