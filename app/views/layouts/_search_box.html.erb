@@ -1,5 +1,5 @@
 <div id="search_box_wrap" class="content_wrap right">
-  <% form_tag search_path, :method => :get do %>
+  <% form_tag 'http://www2.hcinsight.com/s/1492/ecd49b6c89fda642946b7a6c5de4198c', :method => :get do %>
   <%= text_field_tag :search, params[:search] %>
   <%= submit_tag "Search", :name => nil, :title => "Search HealthCare Insight", :class => "search_btn_black" %>
   <% end %>
