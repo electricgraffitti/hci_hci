@@ -5,6 +5,8 @@ class HealthCareController < ApplicationController
     # @documents = Document.all
     # @services = Service.all
     @advertisements = Advertisement.current_list.small_list(1).order_list
+    banners = Banner.active_banners
+    @banner = Banner.random(banners)
   end
   
   def about
@@ -95,6 +97,30 @@ class HealthCareController < ApplicationController
   
   def OCI
     redirect_to service_path(:id => 7)
+  end
+  
+  def OldPublicSector
+    redirect_to public_sector_path
+  end
+  
+  def OldPrivateSector
+    redirect_to private_sector_path
+  end
+  
+  def OldPandC
+    redirect_to workers_comp_path
+  end
+  
+  def OldAboutUs
+    redirect_to about_path
+  end
+  
+  def OldCareers
+    redirect_to careers_path
+  end
+  
+  def OldServices
+    redirect_to services_path
   end
 
 end

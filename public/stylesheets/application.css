@@ -58,6 +58,10 @@ a {
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
 }
+.shadow_light {
+  -webkit-box-shadow: rgb(204, 204, 204) 0px 1px 2px;
+  -moz-box-shadow:0 1px 2px #CCCCCC;
+}
 h1, h2, h3, h4, h5 {
   color: #000;
   font-family: "Helvetica Neue", Arial, Helvetica, "Bitstream Vera Sans", sans-serif;
@@ -174,6 +178,14 @@ h2 a.small_text {
 }
 .important {
   color: red;
+}
+.active {
+  color: green;
+  font-weight: bold;
+}
+.inactive {
+  color: red;
+  font-weight: bold;
 }
 .text_indent {
   text-indent: -3000em;
@@ -700,6 +712,13 @@ div.visionclaim-insight_demo_button span.small_cta_button {
 }
 /********************************/
 /************Banners*************/
+img.home_banner {
+  position: absolute;
+  width: 928px;
+  height: 483px;
+  top: 0px;
+  left: 0px;
+}
 .service_icon_banner_link {
   /*border:1px solid #000000;*/
   bottom:56px;
@@ -1073,6 +1092,9 @@ img.inner_banner {
 .ahip_thank_you {
   background: url('../images/banners/inner_banners/thank_you_ahip.jpg') no-repeat;
 }
+.ahip_thank_you2 {
+  background: url('../images/banners/inner_banners/thank_you_ahip2.jpg') no-repeat;
+}
 .career_banner {
   background: url('../images/banners/inner_banners/careers_big.jpg') no-repeat;
 }
@@ -1229,6 +1251,57 @@ div.career_banner_image_link a {
 }
 #banner_diamonds .diamond_1.highlight:hover, #banner_diamonds li a span.hover {
   background: url('../images/banners/banner_diamonds/diamond_sprites.png') 0px -110px no-repeat;
+}
+.banner_button {
+  position: absolute;
+  width: 370px;
+  height: 85px;
+  top: 326px;
+  text-align: center;
+}
+.banner_button.button_left {
+  left: 63px;
+}
+.banner_button.button_right {
+  left: 490px;
+}
+.green_banner_button {
+  background: url('../images/banners/banner_buttons/green_banner_buttons.jpg') 0px -85px no-repeat;
+}
+.green_banner_button:hover {
+  background: url('../images/banners/banner_buttons/green_banner_buttons.jpg') 0px 0px no-repeat;
+}
+.pink_banner_button {
+  background: url('../images/banners/banner_buttons/pink_banner_buttons.jpg') 0px -85px no-repeat;
+}
+.pink_banner_button:hover {
+  background: url('../images/banners/banner_buttons/pink_banner_buttons.jpg') 0px 0px no-repeat;
+}
+.maroon_banner_button {
+  background: url('../images/banners/banner_buttons/maroon_banner_buttons.jpg') 0px -85px no-repeat;
+}
+.maroon_banner_button:hover {
+  background: url('../images/banners/banner_buttons/maroon_banner_buttons.jpg') 0px 0px no-repeat;
+}
+a.banner_button_text {
+  color:#FFFFFF;
+  display:block;
+  font-size:180%;
+  font-weight:bold;
+  height:42px;
+  margin:18px 0 0 73px;
+  padding-top:12px;
+  position:relative;
+  text-shadow:0 1px 0 #999999;
+  width:224px;
+  text-decoration: none;
+}
+.banner_form_radios p {
+  margin-right: 10px;
+  float: left;
+}
+.banner_form_radios p b {
+  margin-left: 5px;
 }
 /*********************************************/
 /*****************MAIN CONTENT****************/

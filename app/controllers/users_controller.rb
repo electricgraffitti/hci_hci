@@ -108,6 +108,10 @@ class UsersController < ApplicationController
     @documents = Document.all :include => [:document_type]
   end
   
+  def admin_banners
+    @banners = Banner.all
+  end
+  
   def admin_ads
     @advertisements = Advertisement.all
   end

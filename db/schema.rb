@@ -9,22 +9,22 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100316145701) do
+ActiveRecord::Schema.define(:version => 20100324193232) do
 
   create_table "advertisements", :force => true do |t|
     t.string   "title"
     t.text     "description"
     t.string   "ad_type"
-    t.integer  "listed_order"
-    t.date     "expiration_date"
     t.boolean  "active"
-    t.string   "link_url"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "ad_image_file_name"
     t.string   "ad_image_content_type"
     t.integer  "ad_image_file_size"
     t.datetime "ad_image_updated_at"
+    t.string   "link_url"
+    t.integer  "listed_order"
+    t.date     "expiration_date"
   end
 
   create_table "article_types", :force => true do |t|
@@ -57,6 +57,24 @@ ActiveRecord::Schema.define(:version => 20100316145701) do
     t.string   "attachment_content_type"
     t.integer  "attachment_file_size"
     t.datetime "attachment_updated_at"
+  end
+
+  create_table "banners", :force => true do |t|
+    t.string   "headline"
+    t.text     "content"
+    t.boolean  "secondary_banners"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "banner_file_name"
+    t.string   "banner_content_type"
+    t.integer  "banner_file_size"
+    t.datetime "banner_updated_at"
+    t.string   "button_color"
+    t.string   "button_position"
+    t.string   "button_text"
+    t.string   "button_url"
+    t.integer  "banner_count"
+    t.boolean  "active_banner"
   end
 
   create_table "brochures", :force => true do |t|
