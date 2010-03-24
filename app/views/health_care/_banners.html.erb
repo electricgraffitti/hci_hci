@@ -6,10 +6,11 @@
           <%= link_to "Experience Nucleus", nucleus_path, :class => "home_panel_icon_link" %>
         <% end %>
         <h2 class="hide_text"><%= h banner.headline %></h2>
+        <p class="hide_text"><%= h banner.content %></p>
          <%= image_tag(banner.banner.url(:main), :alt => "#{banner.headline}", :class => "home_banner")%>
          
          <% unless banner.secondary_banners %>
-           <div class="banner_button button_<%=banner.button_position %> <%=banner.button_color%>_banner_button">
+           <div class="banner_button button_<%=banner.button_position %> <%=banner.button_color %>_banner_button">
             <%= link_to "#{banner.button_text}", "#{banner.button_url}", :class => "banner_button_text" %>
            </div>
          <% end %>

@@ -16,6 +16,8 @@
 #  button_position     :string(255)
 #  button_text         :string(255)
 #  button_url          :string(255)
+#  banner_count        :integer(4)
+#  active_banner       :boolean(1)
 #
 
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html

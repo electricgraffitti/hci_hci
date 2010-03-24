@@ -179,6 +179,14 @@ h2 a.small_text {
 .important {
   color: red;
 }
+.active {
+  color: green;
+  font-weight: bold;
+}
+.inactive {
+  color: red;
+  font-weight: bold;
+}
 .text_indent {
   text-indent: -3000em;
 }
@@ -1268,6 +1276,12 @@ div.career_banner_image_link a {
 }
 .pink_banner_button:hover {
   background: url('../images/banners/banner_buttons/pink_banner_buttons.jpg') 0px 0px no-repeat;
+}
+.maroon_banner_button {
+  background: url('../images/banners/banner_buttons/maroon_banner_buttons.jpg') 0px -85px no-repeat;
+}
+.maroon_banner_button:hover {
+  background: url('../images/banners/banner_buttons/maroon_banner_buttons.jpg') 0px 0px no-repeat;
 }
 a.banner_button_text {
   color:#FFFFFF;

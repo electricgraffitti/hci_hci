@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100323220455) do
+ActiveRecord::Schema.define(:version => 20100324193232) do
 
   create_table "advertisements", :force => true do |t|
     t.string   "title"
@@ -73,6 +73,8 @@ ActiveRecord::Schema.define(:version => 20100323220455) do
     t.string   "button_position"
     t.string   "button_text"
     t.string   "button_url"
+    t.integer  "banner_count"
+    t.boolean  "active_banner"
   end
 
   create_table "brochures", :force => true do |t|
