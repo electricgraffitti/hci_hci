@@ -56,6 +56,7 @@ ActionController::Routing::Routes.draw do |map|
   map.webinar_thank_you "thank-you-for-registering", :controller => "free_trials", :action => "webinar_thank_you"
   map.ahip_ipod "thank-you-for-registering-for-your-free-ipod", :controller => "free_trials", :action => "ahip_nano_thank_you"
   map.ahip_ipod2 "thank-you-for-registering-for-your-free-ipod2", :controller => "free_trials", :action => "ahip_nano_thank_you2"
+  map.ahip_ceo "ceo-up-at-night-thank-you", :controller => "free_trials", :action => "ceo_up_at_night"
   map.landing "landing_page_test", :controller => "health_care", :action => "landing_page"
   map.executive_summit "healthcare-insight-executive-summit", :controller => "free_trials", :action => "executive_summit"
   map.free_webinar "healthcare-insight-free-webinar", :controller => "free_trials", :action => "free_webinar"
