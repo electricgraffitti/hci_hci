@@ -55,7 +55,10 @@ class FreeTrialsController < ApplicationController
   end
   
   def ceo_up_at_night
-    
+      @advertisements = Advertisement.current_list.small_list(1).order_list
+      respond_to do |format|
+      format.html {render :layout => "application"}
+    end
   end
 
 end
