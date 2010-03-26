@@ -31,6 +31,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :users
   map.resources :user_sessions
   map.resources :uni_resources
+  map.resources :banners
   
   # Mail Route Paths
   map.contact_mailer 'contacts_mailer', :controller => "contacts", :action => "contacts_mailer"
@@ -48,6 +49,7 @@ ActionController::Routing::Routes.draw do |map|
   map.admin_events "hci-events", :controller => "users", :action => "admin_events"
   map.admin_videos "hci-videos", :controller => "users", :action => "admin_videos"
   map.admin_documents "hci-documents", :controller => "users", :action => "admin_documents"
+  map.admin_banners "hci-banners", :controller => "users", :action => "admin_banners"
   map.admin_ads "hci-advertisements", :controller => "users", :action => "admin_ads"
   
   # Landing Pages
@@ -79,7 +81,7 @@ ActionController::Routing::Routes.draw do |map|
   map.social "healthcare-insight-social-media-links", :controller => "health_care", :action => "social_media"
   map.public_sector "public-sector-claims-payment-software-solutions", :controller => "health_care", :action => "public_sector"
   map.private_sector "private-sector-claims-payment-software-solutions", :controller => "health_care", :action => "private_sector"
-  map.workers_comp "workers-comp-claims-payment-software-solutions", :controller => "health_care", :action => "workers_comp"
+  map.workers_comp "property-and-casualty", :controller => "health_care", :action => "workers_comp"
   map.search "health-care-search-results", :controller => 'search', :action => 'index'
   map.sitemap "healthcare-insight-sitemap", :controller => 'sitemap', :action => 'sitemap'
 
@@ -99,6 +101,12 @@ ActionController::Routing::Routes.draw do |map|
   map.fci "FCI.html", :controller => "health_care", :action => "FCI"
   map.dci "DCI.html", :controller => "health_care", :action => "DCI"
   map.oci "OCI.html", :controller => "health_care", :action => "OCI"
+  map.pubsec "PublicSector.html", :controller => "health_care", :action => "OldPublicSector"
+  map.prisec "PrivateSector.html", :controller => "health_care", :action => "OldPrivateSector"
+  map.pncsec "PandC.html", :controller => "health_care", :action => "OldPandC"
+  map.oldabout "AboutUs.html", :controller => "health_care", :action => "OldAboutUs"
+  map.oldcareers "Careers.html", :controller => "health_care", :action => "OldCareers"
+  map.oldservices "Services.html", :controller => "health_care", :action => "OldServices"
   map.rcost_reduction "cost-reduction", :controller => "redirects", :action => "cost_reduction"
   map.rfraud_prevention "fraud-prevention", :controller => "redirects", :action => "fraud_software"
   
