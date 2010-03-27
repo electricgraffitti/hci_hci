@@ -1,0 +1,29 @@
+  <div class="landing_form_wrap">
+    <% form_tag("http://www2.hcinsight.com/l/1492/2010-02-02/GDD9P", :method => "post", :id => "free_webinar") do %>
+      <div class="visible_field">
+        <%= label :contact, :contact_first_name, "First Name" %><br />
+        <%= text_field :contact, :contact_first_name, :name => "free_webinar_first_name" %>
+      </div>
+      <div class="visible_field">
+        <%= label :contact, :contact_last_name, "Last Name" %><br />
+        <%= text_field :contact, :contact_last_name, :name => "free_webinar_last_name" %>
+      </div>
+      <div class="visible_field">
+        <%= label :contact, :email, "Email Address" %><br />
+        <%= text_field :contact, :email, :name => "free_webinar_email" %>
+      </div>
+      <div class="visible_field">
+        <%= label :contact, :business_name, "Company" %><br />
+        <%= text_field :contact, :business_name, :name => "free_webinar_business_name" %>
+      </div>
+      <div class="visible_field">
+        <%= label :contact, :comment, "Comments" %><br />
+        <%= text_area :contact, :comment, :name => "free_webinar_comment", :rows => 3, :cols => 28   %>
+      </div>
+      <div class="visible_field">
+        <%= label :contact, :position, "Position" %><br />
+        <%= text_field :contact, :position, :name => "free_webinar_position" %>
+      </div>
+      <%= submit_tag 'Register', :class => "big_black_submit landing_submit", :title => "Submit Your Message to HealthCare Insight" %>
+    <% end %>
+  </div>

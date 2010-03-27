@@ -1,171 +1,1549 @@
-.hidden {
-  text-indent: -3000em;
-}
-h1.profiler_header {
-  position: absolute;
-  top: -111px;
-  margin-bottom: 22px;
-  margin-left: 7px;
-  width: 488px;
-  height: 120px;
-  text-indent: -3000em;
-}
-h3.sub_header {
-  position: absolute;
-  right: 10px;
-  top: -35px;
-  width: 229px;
-  height: 16px;
-  text-indent: -3000em;
-}
-h2.inner_header {
-  width: 100%;
-  height: 65px;
-  text-indent: -3000em;
-}
-.content_left, .content_left_bg {
-  display: block;
+html, body {
   position: relative;
-  width: 940px;
-  height: 440px;
-  float: left;
+  background: #ddd url('../images/hci_bg.png') repeat-x;
+  font-family: "Helvetica Neue", Arial, Helvetica, "Bitstream Vera Sans", sans-serif;
+  color: #333;
+  font-size: 84%;
+  height: 100%;
 }
-#share_this_link {
-  position: absolute;
-  bottom: 30px;
-  left: 365px;
-  font-size: 79%;
+.serif {
+  font-family: Georgia, "New Century Schoolbook", "Nimbus Roman No9 L", serif;
 }
-#share_this_link a {
+.sans-serif {
+  font-family: "Helvetica Neue", Arial, Helvetica, "Bitstream Vera Sans", sans-serif;
+}
+#wrapper {
+  text-align: left;
+  overflow: hidden;
+}
+a {
+  color: #0000ff;
+}
+.hide_text {
+  text-indent: -1000em;
+}
+.round {
+  -webkit-border-radius: 3px; 
+ 	-moz-border-radius: 3px;
+ 	-opera-border-radius: 3px;
+ 	border-radius: 3px;
+}
+.round2 {
+  -webkit-border-radius: 10px; 
+ 	-moz-border-radius: 10px;
+ 	-opera-border-radius: 10px;
+ 	border-radius: 10px;
+}
+.round_top {
+  -moz-border-radius-topleft: 5px;
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+  -moz-border-radius-topright: 5px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.round_top2 {
+  -moz-border-radius-topleft: 10px;
+  -webkit-border-top-left-radius: 10px;
+  -webkit-border-top-right-radius: 10px;
+  -moz-border-radius-topright: 10px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.round_bottom {
+  -moz-border-radius-bottomleft: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  -moz-border-radius-bottomright: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+h1, h2, h3, h4, h5 {
+  color: #000;
+  font-family: "Helvetica Neue", Arial, Helvetica, "Bitstream Vera Sans", sans-serif;
+  margin-top: 5px;
+}
+.block_font_weight {
+  width: 520px;
+  font-size: 195%;
+}
+h1 {
+  font-size: 235%;
+}
+h2 {
+  /*font-size: 153.9%;*/
+  font-size: 200.9%;
+}
+h3 {
+  font-size: 160.5%;
+}
+h4 {
+  font-size: 118%;
+}
+h5 {
+  color:#666666;
+  font-size:110%;
+}
+h3 a, h4 a {
+  font-size: 100%;
   text-decoration: none;
-  color: #666;
 }
-#share_this_link a:hover {
+h3 a:hover, h4 a:hover{
+  color: #00467f; /* DK BLUE */
   text-decoration: underline;
-  color: #ff9900;
 }
-#free_trial_form {
-  position: absolute;
-  right:20px;
-  top:245px;
-  width:420px;
-}
-.form_element {
-  position: relative;
-  float: left;
-  margin: 0px 10px;
-}
-.form_element label {
+.sub_title {
   font-weight: bold;
+  margin: 5px 0px 0px;
+}
+p {
+  font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+  margin: 5px 0px 5px;
+  line-height: 18.35px;
+}
+sup {
+  vertical-align: top;
+}
+.bold {
+  font-weight:bold;
+}
+.content_wrap {
+  margin: 10px 0px;
+}
+.full_wrap {
+  margin: 10px 10px;
+}
+.full_1020_wrap {
+  margin: 10px 20px;
+}
+.full_20_wrap {
+  margin: 20px;
+}
+.top_20_wrap {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.top_10_wrap {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.divider {
+  clear: both;
+  border-top: 1px solid #cccccc;
+  margin: 25px 10px;
+}
+.divider2 {
+  clear: both;
+  border-top: 1px solid #cccccc;
+  margin: 10px 10px 0px;
+}
+.relative {
+  position: relative;
+}
+.small_text {
   font-size: 77%;
 }
-/***Errors***/
-label.error {
-  position: absolute;
-  top: 0px;
-  left: 100px;
-  float: left;
-  color: red;
-  font-weight: bold;
+h2 a.small_text {
+  font-size: 55%;
 }
-input.error {
-  border: 1px solid red;
-  height: 22px;
+.clear {
+  clear: both;
 }
-.submit_wrap {
-  margin-top: 15px;
-  width: 190px;
-}
-.content_left_bg {
-  background: transparent url('../images/landing_pages/landing_page_1.png') no-repeat;
-}
-.content_left ul li {
-  list-style: none;
-}
-
-.content_right h5 {
-  margin: 0px 0px 10px 35px;
-}
-
-p.select {
-  margin-bottom: 5px;
-}
-p.select select {
-  width: 185px;
-}
-.form_submit_button {
-  position: absolute;
-  bottom: 25px;
-  right: 15px;
-}
-.btn {
-  background: #f59300 url('../images/landing_pages/orange_button_bg.png') bottom left repeat-x;
-  font-family: "Arial Narrow", Helvetica, Geneva, sans-serif;
-  font-weight: bold;
-  font-size: 16px;
-  padding: 10px 25px; 
-  color: #fff;
-  border: 1px solid #fff; 
-  text-decoration: none; 
-  cursor: pointer; 
-  -webkit-border-radius: 7px;
-  -moz-border-radius: 7px;
-  border-radius: 7px;
-  margin: 10px 10px 10px 0px;
-  min-height: 35px;
-  float: left;
-}
-.btn:hover {
-  background: #36bfff url('../images/landing_pages/orange_button_bg_hover.png') bottom left repeat-x;
-}
-
-div#free_trial_form form.form p.required, div#free_trial_form form.form span.required, div#free_trial_form form.form label.required, div#free_trial_form form.form p label {
-  float:left;
-  font-weight:bold;
-  width:180px;
-}
-div#free_trial_form form.form p {
-  clear: none;
-  float:left;
-  position:relative;
-  width:180px;
-  margin:0 10px;
-  padding:0 0;
-}
-div#free_trial_form form.form p.timeline {
+.clear_left {
   clear: left;
 }
-div#free_trial_form form.form p.submit {
+.clear_right {
+  clear: right;
+}
+.right {
   float: right;
-  position: relative;
-  right: -75px;
 }
-div#free_trial_form form.form input.text {
-  width: 175px;
-}
-div#free_trial_form form.form p label {
-  margin: 0px;
-}
-div#free_trial_form form.form input {
-  padding: 1px;
-}
-div#free_trial_form form.form p input[type="submit"] {
-  background: #f59300 url('../images/landing_pages/orange_button_bg.png') bottom left repeat-x;
-  font-family: "Arial Narrow", Helvetica, Geneva, sans-serif;
-  font-weight: bold;
-  font-size: 16px;
-  padding: 10px 25px; 
-  color: #fff;
-  border: 1px solid #fff; 
-  text-decoration: none; 
-  cursor: pointer; 
-  -webkit-border-radius: 7px;
-  -moz-border-radius: 7px;
-  border-radius: 7px;
-  margin: 10px 10px 10px 0px;
-  min-height: 35px;
+.left {
   float: left;
 }
-div#free_trial_form form.form p input[type="submit"]:hover {
-  background: #36bfff url('../images/landing_pages/orange_button_bg_hover.png') bottom left repeat-x;
+.space_left {
+  margin-left: 10px;
+}
+.space_right {
+  margin-right: 10px;
+}
+.padding_top {
+  padding-top: 20px;
+}
+.inline {
+  display: inline;
+}
+.top_space {
+  margin-top: 10px;
+}
+.important {
+  color: red;
+}
+.text_indent {
+  text-indent: -3000em;
+}
+.physicianclaim-insight_color {
+  color: #004914;
+}
+/*.physicianclaim-insight_bg {
+  display: block;
+  background: #06660b;
+}*/
+.facilityclaim-insight_color {
+  color: #6b0a10;
+}
+/*.facilityclaim-insight_bg {
+  display: block;
+  background: #761318;
+}*/
+.dentalclaim-insight_color {
+  color: #007690;
+}
+/*.dentalclaim-insight_bg {
+  display: block;
+  background: #038b92;
+}*/
+.oncologyclaim-insight_color {
+  color: #c9a83d;
+}
+/*.oncologyclaim-insight_bg {
+  display: block;
+  background: #b78311;
+}*/
+.pharmaclaim-insight_color {
+  color: #002b54;
+}
+/*.pharmaclaim-insight_bg {
+  display: block;
+  background: #00467f;
+}*/
+.visionclaim-insight_color {
+  color: #5a2149;
+}
+/*.visionclaim-insight_bg {
+  display: block;
+  background: #78496a;
+}*/
+.green {
+  color: #00853f; /* Actually Green */
+}
+.white {
+  color: #ffffff;
+}
+.black {
+  color: #000;
+}
+.background_black {
+  background: #000;
+}
+.bgwhite {
+  background: #ffffff;
+}
+.red {
+  color: #db0404;
+}
+.bgred {
+  background: #db0404;
+}
+.dark_grey {
+  background: #000000;
+}
+.center {
+  text-align: center;
+}
+.justify {
+  text-align: justify;
+}
+.margin_left_offset {
+  margin-left: -10px;
+}
+.border_top {
+  border-top: 1px solid #efefef;
+}
+.border_bottom {
+  border-bottom: 1px solid #666;
+}
+.dotted_bottom {
+  padding-bottom: 10px;
+  border-bottom: 1px dotted #999999;
+}
+/***Firefox dotted line tweak***/
+a {
+  outline: none;
+}
+:focus {
+  -moz-outline-style: none;
+}
+a:active {
+  outline: none;
+}
+/******************************************/
+/*******************ERRORS*****************/
+#flash {
+  position: absolute;
+  text-align: center;
+  color: #fff;
+  left: 38%;
+  padding: 2px;
+  top: 5px;
+  width: 385px;
+  background: #00853f;
+  font-size: 175%;
+  z-index: 100;
+}
+.fieldWithErrors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+#errorExplanation {
+  position: absolute;
+  top: -55px;
+  left: 0%;
+  width: 100%;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+#errorExplanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 125%;
+  margin: -7px;
+  background-color: #c00;
+  color: #fff;
+}
+#errorExplanation p {
+  color: #333;
+  margin-bottom: 0;
+  padding: 5px;
+}
+#errorExplanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+/******JS Form Errors********/
+input.error, textarea.error {
+  border:2px solid #DB0404;
+  margin:0px;
+  padding:1px;
+}
+label.error {
+  background:#FFFFFF none repeat scroll 0 0;
+  color:#DB0404;
+  font-size:85%;
+  font-weight:bold;
+  margin-left:35px;
+  margin-top:3px;
+  padding:0;
+  position:absolute;
+}
+/*********************************************/
+/*****************HEADER**********************/
+#hd {
+  position: relative;
+  height: 95px;
+}
+/*******Navigation********/
+#main_nav {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  height: 40px;
+  background: url('../images/nav_bg.png') repeat-x;
+}
+ul.nav_ul {
+ margin-left:1px;
+}
+ul.nav_ul li {
+  width:103px;
+  height: 40px;
+  float: left;
+  text-align: center;
+  border-left: 1px solid #444444;
+}
+ul.nav_ul li.last {
+  /*border-right: 1px solid #e1e1e1;*/
+  border-right: 1px solid #444444;
+}
+ul.nav_ul li span.hover {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 103px;
+  height: 40px;
+  display: block;
+}
+.nav1 {
+  background: url('../images/hci_silver_sprite.png') 0px -80px;
+}
+.nav1.highlight:hover, li.nav1 span.hover {
+  background: url('../images/hci_silver_sprite.png') 0px -40px;
+}
+#main_nav ul li a#home.active {
+  background: url('../images/hci_silver_sprite.png') 0px 0px;
+}
+.nav2 {
+  background: url('../images/hci_silver_sprite.png') -104px -80px;
+}
+.nav2.highlight:hover, li.nav2 span.hover {
+  background: url('../images/hci_silver_sprite.png') -104px -40px;
+}
+#main_nav ul li a#services.active {
+  background: url('../images/hci_silver_sprite.png') -104px 0px;
+}
+.nav3 {
+  background: url('../images/hci_silver_sprite.png') -208px -80px;
+}
+.nav3.highlight:hover, li.nav3 span.hover {
+  background: url('../images/hci_silver_sprite.png') -208px -40px;
+}
+#main_nav ul li a#benefits.active {
+  background: url('../images/hci_silver_sprite.png') -208px 0px;
+}
+.nav4 {
+  background: url('../images/hci_silver_sprite.png') -312px -80px;
+}
+.nav4.highlight:hover, li.nav4 span.hover {
+  background: url('../images/hci_silver_sprite.png') -312px -40px;
+}
+#main_nav ul li a#markets.active {
+  background: url('../images/hci_silver_sprite.png') -312px 0px;
+}
+.nav5 {
+  background: url('../images/hci_silver_sprite.png') -416px -80px;
+}
+.nav5.highlight:hover, li.nav5 span.hover {
+  background: url('../images/hci_silver_sprite.png') -416px -40px;
+}
+#main_nav ul li a#resources.active {
+  background: url('../images/hci_silver_sprite.png') -416px 0px;
+}
+.nav6 {
+  background: url('../images/hci_silver_sprite.png') -520px -80px;
+}
+.nav6.highlight:hover, li.nav6 span.hover {
+  background: url('../images/hci_silver_sprite.png') -520px -40px;
+}
+#main_nav ul li a#nucleus.active {
+  background: url('../images/hci_silver_sprite.png') -520px 0px;
+}
+.nav7 {
+  background: url('../images/hci_silver_sprite.png') -624px -80px;
+}
+.nav7.highlight:hover, li.nav7 span.hover {
+  background: url('../images/hci_silver_sprite.png') -624px -40px;
+}
+#main_nav ul li a#free_trial.active {
+  background: url('../images/hci_silver_sprite.png') -624px 0px;
+}
+.nav8 {
+  background: url('../images/hci_silver_sprite.png') -728px -80px;
+}
+.nav8.highlight:hover, li.nav8 span.hover {
+  background: url('../images/hci_silver_sprite.png') -728px -40px;
+}
+#main_nav ul li a#about_us.active {
+  background: url('../images/hci_silver_sprite.png') -728px 0px;
+}
+.nav9 {
+  background: url('../images/hci_silver_sprite.png') -832px -80px;
+}
+.nav9.highlight:hover, li.nav9 span.hover {
+  background: url('../images/hci_silver_sprite.png') -832px -40px;
+}
+#main_nav ul li a#contact.active {
+  background: url('../images/hci_silver_sprite.png') -832px 0px;
+}
+ul#main_nav_ul li a {
+  color:#ABABAB;
+  display:block;
+  height:40px;
+  padding:0;
+  text-decoration:none;
+  text-indent:-3000em;
+  width:103px;
+  position: relative;
+}
+ul#main_nav_ul li a.black {
+  color: #000;
+}
+#admin_link {
+  float: right;
+}
+.admin_nav, .employee_nav {
+  background: #666 url('../images/green_button.jpg') top left repeat-x;
+  position: relative;
+  float: left;
+}
+ul#admin_nav_ul, ul#employee_nav_ul {
+ margin-left: 1px; 
+}
+ul#admin_nav_ul li, ul#employee_nav_ul li{
+  width: 103px;
+  float: left;
+  text-align: center;
+  border-left: 1px solid #666;
+}
+ul#employee_nav_ul li.employee_welcome {
+  background: #fff;
+  font-size: 125%;
+  padding: 3px 0px; 
+  color: #222;
+  width: 225px;
+  border: none;
+}
+ul#admin_nav_ul li.last, ul#employee_nav_ul li{
+  border-right: 1px solid #666;
+}
+ul#admin_nav_ul li a:hover, ul#employee_nav_ul li a:hover, ul#employee_nav_ul li.employee_logout a:hover {
+  background: #67ab89;
+}
+ul#admin_nav_ul li a, ul#employee_nav_ul li a {
+  float: left;
+  color: #fff;
+  padding: 5px 0px;
+  width: 103px;
+  text-decoration: none;
+}
+ul#employee_nav_ul li.employee_logout {
+  float: right;
+}
+ul#admin_nav_ul li a, ul#employee_nav_ul li.employee_logout a {
+}
+/*********************************************/
+/******************TRIAL BUTTONS***************/
+div.free_trial, div.view_demo {
+  width: 220px;
+  height: 135px;
+  margin-top: 10px;
+}
+div.free_trial a {
+  background: url('../images/free_trial_buttons.png') -220px -135px no-repeat;
+}
+div.view_demo a {
+  background: url('../images/free_trial_buttons.png') 0px -135px no-repeat;
+}
+div.free_trial a, div.view_demo a {
+  width: 220px;
+  height: 135px;
+  float: left;
+  text-indent: -3000em;
+}
+div.free_trial.highlight a:hover, div.free_trial span.big_button_hover{
+  width: 220px;
+  height: 135px;
+  float: left;
+  background: url('../images/free_trial_buttons.png') -220px 0px no-repeat;
+}
+div.view_demo.highlight a:hover, div.view_demo span.big_button_hover {
+  background: url('../images/free_trial_buttons.png') 0px 0px no-repeat;
+  width: 220px;
+  height: 135px;
+  float: left;
+}
+/*********************************************/
+/*************ARROW TRIAL BUTTONS************/
+#cta_bar {
+  position: absolute;
+  height: 30px;
+  right: 0px;
+  bottom: 35px;
+}
+.service_cta_bar {
+  bottom: 25px;
+}
+.cta_button {
+  position: relative;
+  float: right;
+  width: 165px;
+  height: 30px;
+}
+div.cta_free_trial {
+  width: 195px;
+  border-right: 1px solid #ddd;
+}
+.cta_button a {
+  display: block;
+  width: 165px;
+  height: 30px;
+  text-indent: -3000em;
+}
+div.cta_free_trial a {
+  background: url('../images/banners/inner_banners/CTA_arrow_bar.png') 0px -180px no-repeat;
+  width: 195px;
+  height: 30px;
+}
+div.cta_free_trial.highlight a:hover, div.cta_free_trial span.small_cta_button  {
+  background: url('../images/banners/inner_banners/CTA_arrow_bar.png') 0px -150px no-repeat;
+  width: 195px;
+  height: 30px;
+  float: left;
+}
+div.cta_view_demo a {
+  background: url('../images/banners/inner_banners/CTA_arrow_bar.png') -195px 30px;
+}
+div.cta_view_demo.highlight a:hover, div.cta_view_demo span.small_cta_button {
+  background: url('../images/banners/inner_banners/CTA_arrow_bar.png') -195px 60px;
+  width: 165px;
+  height: 30px;
+  float: left;
+}
+div.physicianclaim-insight_trial_button span.small_cta_button {
+  background: url('../images/banners/inner_banners/CTA_arrow_bar.png') 0px -150px no-repeat;
+}
+div.physicianclaim-insight_demo_button span.small_cta_button {
+  background: url('../images/banners/inner_banners/CTA_arrow_bar.png') -195px 60px;
+}
+div.dentalclaim-insight_trial_button span.small_cta_button {
+  background: url('../images/banners/inner_banners/CTA_arrow_bar.png') 0px -120px no-repeat;
+}
+div.dentalclaim-insight_demo_button span.small_cta_button {
+  background: url('../images/banners/inner_banners/CTA_arrow_bar.png') -195px 90px;
+}
+div.facilityclaim-insight_trial_button span.small_cta_button {
+  background: url('../images/banners/inner_banners/CTA_arrow_bar.png') 0px -90px no-repeat;
+}
+div.facilityclaim-insight_demo_button span.small_cta_button {
+  background: url('../images/banners/inner_banners/CTA_arrow_bar.png') -195px 120px;
+}
+div.pharmaclaim-insight_trial_button span.small_cta_button {
+  background: url('../images/banners/inner_banners/CTA_arrow_bar.png') 0px -60px no-repeat;
+}
+div.pharmaclaim-insight_demo_button span.small_cta_button {
+  background: url('../images/banners/inner_banners/CTA_arrow_bar.png') -195px 150px;
+}
+div.oncologyclaim-insight_trial_button span.small_cta_button {
+  background: url('../images/banners/inner_banners/CTA_arrow_bar.png') 0px -30px no-repeat;
+}
+div.oncologyclaim-insight_demo_button span.small_cta_button {
+  background: url('../images/banners/inner_banners/CTA_arrow_bar.png') -195px 180px;
+}
+div.visionclaim-insight_trial_button span.small_cta_button {
+  background: url('../images/banners/inner_banners/CTA_arrow_bar.png') 0px 0px no-repeat;
+}
+div.visionclaim-insight_demo_button span.small_cta_button {
+  background: url('../images/banners/inner_banners/CTA_arrow_bar.png') -195px 210px;
+}
+
+/********************************/
+/************HEADER*************/
+#hci_logo {
+  background: url('../images/HCI_logo_silver2.png') no-repeat;
+  display: block;
+  float: left;
+  text-indent: -1000em;
+  width: 314px;
+  height: 45px;
+  margin-left: 8px;
+  margin-top: 9px;
+  outline: none;
+}
+/** top Link nav **/
+#top_link_wrap {
+  bottom:40px;
+  height:30px;
+  position:absolute;
+  right:0;
+  width:325px;
+}
+#top_links {
+  position: absolute;
+  bottom: 10px;
+  right: 5px;
+}
+#top_links ul {
+  position: relative;
+  float: left;
+  height: 15px;
+}
+#top_links ul li {
+  position: relative;
+  float: left;
+  border-left: 1px solid #222;
+}
+#top_links ul li.first {
+  border: none;
+}
+#top_links ul li a {
+  color: #000;
+  display: block;
+  padding: 0px 5px;
+  text-decoration: none;
+  font-size: 85%;
+}
+#top_links ul li a:hover {
+  color: #555;
+}
+#search_box_wrap {
+  margin: -5px -4px
+}
+#top_verisk_logo {
+  height:15px;
+  position:absolute;
+  right: 0px;
+  top:5px;
+  width:114px;
+}
+
+/********************************/
+/************Banners*************/
+#banner {
+  background: #fff;
+}
+.corner_image {
+  position: absolute;
+  left: 14px;
+  bottom: 17px;
+  width: 14px;
+  height: 13px;
+  background: url('../images/banners/corner_bg.jpg') no-repeat;
+}
+.panel {
+  position: relative;
+  width: 928px;
+  height: 483px;
+}
+/** This is the stack to make the transparent fade work in IE**/
+.popup {
+  position: relative;
+  top:-150px;
+  left: -18px;
+  display: none;
+  width: 335px;
+  height: 112px;
+  z-index: 50;
+}
+.inner_popup_container {
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  width: 338px;
+  height: 123px;
+  z-index: 51;
+  text-indent: -3000em;
+}
+.big_banner {
+  width: 940px;
+  float: left;
+  height: 500px;
+  position: relative;
+	background: url('../images/banners/landing_banners/base_banner.jpg') no-repeat;
+}
+.landing_form_text_wrap {
+  bottom: 115px;
+  font-size:130%;
+  left:78px;
+  position:absolute;
+  width:335px;
+}
+.landing_form_text_wrap {
+  width: 340px;
+  bottom: 80px;
+}
+.landing_form_text_wrap p {
+  font-size: 95%;
+}
+.landing_form_text_wrap h3 {
+	font-size: 150%;
+}
+.landing_form_wrap {
+  float:left;
+  width: 460px;
+  bottom: 56px;
+  position: absolute;
+  right: 0px;
+}
+.landing_form_wrap div {
+  width: 215px;
+  float: left;
+}
+.presenter_wrap h2 {
+  margin-bottom: 3px;
+}
+.presenter_creds {
+  float: left;
+  font-size:14px;
+  width:185px;
+}
+.presenter_wrap img {
+  margin-right: 15px;
+}
+.banner_download_link {
+  float: left;
+  width: 310px;
+}
+/*********************************************/
+/*****************MAIN CONTENT****************/
+#bd {
+}
+/********Stripes**********/
+.cra_stripe_icon {
+  width: 250px;
+  height: 50px;
+  float: right;
+  background: url('../images/service_stripe_icons.png') 0px -300px no-repeat;
+  margin-right: 10px;
+}
+.cra_service_top_stripe {
+  float: left;
+  height: 10px;
+  background: #f8981c;
+  width: 940px;
+}
+.cra_service_bottom_stripe {
+  float: left;
+  height: 50px;
+  background: #e37f1c;
+  width: 940px;
+}
+.physicianclaim-insight_free_trial_book {
+  position: relative;
+  margin-top: 15px;
+  float: left;
+  width: 422px;
+  height: 270px;
+  background: url('../landing_page_images/free_trial_pages/pci_book_bg.png') no-repeat;
+}
+.physicianclaim-insight_stripe_icon {
+  width: 250px;
+  height: 50px;
+  float: right;
+  background: url('../images/service_stripe_icons.png') 0px 0px no-repeat;
+  margin-right: 10px;
+}
+.physicianclaim-insight_service_top_stripe {
+  float: left;
+  height: 10px;
+  background: #00853f;
+  width: 940px;
+}
+.physicianclaim-insight_service_bottom_stripe {
+  float: left;
+  height: 50px;
+  background: #004914;
+  width: 940px;
+}
+.facilityclaim-insight_free_trial_book {
+  position: relative;
+  margin-top: 15px;
+  float: left;
+  width: 422px;
+  height: 270px;
+  background: url('../landing_page_images/free_trial_pages/fci_book_bg.png') no-repeat;
+}
+.facilityclaim-insight_stripe_icon {
+  width: 250px;
+  height: 50px;
+  float: right;
+  background: url('../images/service_stripe_icons.png') 0px -100px no-repeat;
+  margin-right: 10px;
+}
+.facilityclaim-insight_service_top_stripe {
+  float: left;
+  height: 10px;
+  background: #98002e;
+  width: 940px;
+}
+.facilityclaim-insight_service_bottom_stripe {
+  float: left;
+  height: 50px;
+  background: #6b0a10;
+  width: 940px;
+}
+.dentalclaim-insight_free_trial_book {
+  position: relative;
+  margin-top: 15px;
+  float: left;
+  width: 422px;
+  height: 270px;
+  background: url('../landing_page_images/free_trial_pages/dci_book_bg.png') no-repeat;
+}
+.dentalclaim-insight_stripe_icon {
+  width: 250px;
+  height: 50px;
+  float: right;
+  background: url('../images/service_stripe_icons.png') 0px -50px no-repeat;
+  margin-right: 10px;
+}
+.dentalclaim-insight_service_top_stripe {
+  float: left;
+  height: 10px;
+  background: #009fc2;
+  width: 940px;
+}
+.dentalclaim-insight_service_bottom_stripe {
+  float: left;
+  height: 50px;
+  background: #007690;
+  width: 940px;
+}
+.oncologyclaim-insight_free_trial_book {
+  position: relative;
+  margin-top: 15px;
+  float: left;
+  width: 422px;
+  height: 270px;
+  background: url('../landing_page_images/free_trial_pages/oci_book_bg.png') no-repeat;
+}
+.oncologyclaim-insight_stripe_icon {
+  width: 250px;
+  height: 50px;
+  float: right;
+  background: url('../images/service_stripe_icons.png') 0px -150px no-repeat;
+  margin-right: 10px;
+}
+.oncologyclaim-insight_service_top_stripe {
+  float: left;
+  height: 10px;
+  background: #e5b53a;
+  width: 940px;
+}
+.oncologyclaim-insight_service_bottom_stripe {
+  float: left;
+  height: 50px;
+  background: #c9a83d;
+  width: 940px;
+}
+.pharmaclaim-insight_free_trial_book {
+  position: relative;
+  margin-top: 15px;
+  float: left;
+  width: 422px;
+  height: 270px;
+  background: url('../landing_page_images/free_trial_pages/rxi_book_bg.png') no-repeat;
+}
+.pharmaclaim-insight_stripe_icon {
+  width: 250px;
+  height: 50px;
+  float: right;
+  background: url('../images/service_stripe_icons.png') 0px -200px no-repeat;
+  margin-right: 10px;
+}
+.pharmaclaim-insight_service_top_stripe {
+  float: left;
+  height: 10px;
+  background: #00467f;
+  width: 940px;
+}
+.pharmaclaim-insight_service_bottom_stripe {
+  float: left;
+  height: 50px;
+  background: #002b54;
+  width: 940px;
+}
+.visionclaim-insight_free_trial_book {
+  position: relative;
+  margin-top: 15px;
+  float: left;
+  width: 422px;
+  height: 270px;
+  background: url('../landing_page_images/free_trial_pages/vci_book_bg.png') no-repeat;
+}
+.visionclaim-insight_stripe_icon {
+  width: 250px;
+  height: 50px;
+  float: right;
+  background: url('../images/service_stripe_icons.png') 0px -250px no-repeat;
+  margin-right: 10px;
+}
+.visionclaim-insight_service_top_stripe {
+  float: left;
+  height: 10px;
+  background: #78496a;
+  width: 940px;
+}
+.visionclaim-insight_service_bottom_stripe {
+  float: left;
+  height: 50px;
+  background: #5a2149;
+  width: 940px;
+}
+.nucleus_stripe_icon {
+  width: 250px;
+  height: 50px;
+  float: right;
+  background: url('../images/service_stripe_icons.png') 0px -350px no-repeat;
+  margin-right: 10px;
+}
+.nucleus_service_top_stripe {
+  float: left;
+  height: 10px;
+/*  background: #DEED74;*/
+  background: #58AE46;
+  width: 940px;
+}
+.nucleus_service_bottom_stripe {
+  float: left;
+  height: 50px;
+/*  background: #BED63A;*/
+  background: #309846;
+  width: 940px;
+}
+/******Accreditation Links********/
+#accreditations_p {
+  margin-bottom: 0px;
+}
+.accreditation_links, .accreditation_links_small {
+  width: 460px;
+  position: relative;
+  float: left;
+}
+.accreditation_links_small {
+  margin-left:12px;
+  margin-top:30px;
+  width:273px;
+}
+.accreditation_links li, .accreditation_links_small li {
+  width: 90px;
+  height: 72px;
+  float: left;
+}
+.accreditation_links_small li {
+  width: 50px;
+  height: 40px;
+}
+.accreditation_links li a, .accreditation_links_small li a {
+  display: block;
+  width: 90px;
+  height: 72px;
+  text-indent: -3000em;
+}
+.accreditation_links_small li a {
+  width: 50px;
+  height: 40px;
+}
+.accreditation_links li a.accreditation_ahip {
+  background: transparent url('../images/accreditations_large_icons.jpg') no-repeat;
+}
+.accreditation_links li a.accreditation_urac1 {
+  background: transparent url('../images/accreditations_large_icons.jpg') 0px -72px no-repeat;
+}
+.accreditation_links li a.accreditation_urac2 {
+  background: transparent url('../images/accreditations_large_icons.jpg') 0px -144px no-repeat;
+}
+.accreditation_links li a.accreditation_nhcaa {
+  background: transparent url('../images/accreditations_large_icons.jpg') 0px -216px no-repeat;
+}
+.accreditation_links li a.accreditation_nadp {
+  background: transparent url('../images/accreditations_large_icons.jpg') 0px -288px no-repeat;
+}
+.accreditation_links li a.accreditation_sas70 {
+  background: transparent url('../images/accreditations_large_icons.jpg') 0px -285px no-repeat;
+}
+.accreditation_links_small li a.accreditation_ahip {
+  background: transparent url('../images/accreditations_small_icons.jpg') no-repeat;
+}
+.accreditation_links_small li a.accreditation_urac1 {
+  background: transparent url('../images/accreditations_small_icons.jpg') 0px -40px no-repeat;
+}
+.accreditation_links_small li a.accreditation_urac2 {
+  background: transparent url('../images/accreditations_small_icons.jpg') 0px -80px no-repeat;
+}
+.accreditation_links_small li a.accreditation_nhcaa {
+  background: transparent url('../images/accreditations_small_icons.jpg') 0px -120px no-repeat;
+}
+.accreditation_links_small li a.accreditation_nadp {
+  background: transparent url('../images/accreditations_small_icons.jpg') 0px -160px no-repeat;
+}
+/*******Special Headers**********/
+.page_header {
+  position: relative;
+  width: 335px;
+  height: 60px;
+  text-indent: -3000em;
+  float:left;
+}
+/*********************************************/
+/***************QUOTE BOXES*******************/
+.index_quote, .webinar_quote {
+  text-indent: -3000em;
+  background: url('../images/index_quote.png') no-repeat;
+  height: 90px;
+  margin: 15px 0px;
+}
+.service_quote {
+  position: relative;
+  height: 90px;
+}
+.service_quote p {
+  position: absolute;
+  right: 27px;
+  top: -55px;
+  width: 525px;
+  height: 115px;
+  text-indent: -3000em;
+}
+.physicianclaim-insight_quote{
+  background: transparent url('../images/quotes/service_quotes.png') 0px -572px no-repeat;
+}
+.dentalclaim-insight_quote {
+   background: transparent url('../images/quotes/service_quotes.png') 0px -457px no-repeat;
+}
+.facilityclaim-insight_quote {
+  background: transparent url('../images/quotes/service_quotes.png') 0px -340px no-repeat;
+}
+.fci_quote {
+  background: url('../landing_page_images/fci_big_quote.png') no-repeat;
+}
+.oncologyclaim-insight_quote {
+  background: transparent url('../images/quotes/service_quotes.png') 0px -227px no-repeat;
+}
+.pharmaclaim-insight_quote {
+  background: transparent url('../images/quotes/service_quotes.png') 0px -113px no-repeat;
+}
+.visionclaim-insight_quote {
+  background: transparent url('../images/quotes/service_quotes.png') 0px 0px no-repeat;
+}
+.physicianclaim-insight_quote_brochure {
+  background: url('../images/benefit_grid_images.jpg') 0px -1560px no-repeat;
+}
+.facilityclaim-insight_quote_brochure {
+  background: url('../images/benefit_grid_images.jpg') 0px -1440px no-repeat;
+}
+.dentalclaim-insight_quote_brochure {
+  background: url('../images/benefit_grid_images.jpg') 0px -1320px no-repeat;
+}
+.oncologyclaim-insight_quote_brochure {
+  background: url('../images/benefit_grid_images.jpg') 0px -1200px no-repeat;
+}
+.pharmaclaim-insight_quote_brochure {
+  background: url('../images/benefit_grid_images.jpg') 0px -1080px no-repeat;
+}
+.visionclaim-insight_quote_brochure {
+  background: url('../images/benefit_grid_images.jpg') 0px -960px no-repeat;
+}
+.about_quote {
+  background: url('../images/about_quote.jpg') no-repeat;
+}
+.public_quote {
+  background: url('../images/public_quote.jpg') no-repeat;
+}
+.private_quote {
+  background: url('../images/private_quote.jpg') no-repeat;
+}
+.workers_comp_quote {
+  background: url('../images/workers_comp_quote.jpg') no-repeat;
+}
+.webinar_quote_fci {
+  background: url('http://stage.hcinsight.com/landing_page_images/webinar_landing_quote_fci.png') no-repeat;
+}
+.market_quote {
+   background:transparent url("../images/market_quote.png") no-repeat scroll 0 0;
+   float:left;
+   height:102px;
+   position:relative;
+   text-indent:-3000em;
+   width:450px;
+   margin-left: 40px;
+}
+/*********************************************/
+/******************SUBBOXES*******************/
+#sub_boxes {
+	float: left;
+  text-align: left;
+  background: #fff;
+}
+.landing_sub_box {
+  position: relative;
+  float: left;
+	margin: 10px 0px;
+  border-top: 1px solid #d0d0d0;
+  border-right: 1px solid #d0d0d0;
+  border-bottom: 1px solid #efefef;
+  border-left: 1px solid #efefef;
+  text-align: center;
+  background: #fff url('../images/apple_index_box_bg.png') repeat-x;
+  -moz-box-shadow:0 1px 2px #aaaaaa;
+  -webkit-box-shadow: rgb(170, 170, 170) 0px 1px 2px;
+}
+#landing4 .landing_sub_box {
+  width: 233px;
+  height: 200px;
+  padding: 10px 0px 0px;
+}
+.apple_sub_boxes {
+  position: relative;
+  float: left;
+  width: 916px;
+  padding: 0px 12px;
+  height: 127px;
+  margin: 0px 0px 20px;
+}
+.apple_sub_box {
+  position: relative;
+  width: 280px;
+  height: 116px;
+  float: left;
+  border: 1px solid #d1d1d1;
+  margin: 0px 11px;
+  padding: 10px 0px 0px;
+  text-align: center;
+  background: url('../images/apple_index_box_bg.png') repeat-x;
+}
+.apple_box_headers {
+  margin: 0 auto;
+  width: 216px;
+  height: 40px;
+  text-indent: -3000em;
+}
+h4.apple_box_headers.resources {
+  background: url('../images/apple_box_headers.png') 0px 0px;
+}
+h4.apple_box_headers.services {
+  background: url('../images/apple_box_headers.png') 0px -80px;
+}
+h4.apple_box_headers.nucleus {
+  background: url('../images/apple_box_headers.png') 0px -40px;
+}
+.apple_icons {
+  margin-top: -4px;
+  margin-right: 12px;
+  float:left;
+  width: 40px;
+  height: 40px;
+}
+.apple_icons.rss {
+  background: url('../images/apple_box_icons.png') 0px 0px;
+}
+.apple_icons.rss:hover {
+  background: url('../images/apple_box_icons.png') 0px -40px;
+}
+.apple_icons.nucleus {
+  background: url('../images/apple_box_icons.png') -40px 0px;
+}
+.apple_icons.nucleus:hover {
+  background: url('../images/apple_box_icons.png') -40px -40px;
+}
+.apple_icons.partners {
+  background: url('../images/apple_box_icons.png') -80px 0px;
+}
+.apple_icons.partners:hover {
+  background: url('../images/apple_box_icons.png') -80px -40px;
+}
+.sub_box3, .middle{
+  width: 300px;
+  margin: 10px;
+  float: left;
+  text-align: center;
+}
+.middle {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+#sub_box1 {
+  margin-left: 10px;
+}
+.sub_box {
+  min-height: 125px;
+}
+.cover_flow_sub_box {
+  width: 400px;
+  height: 158px;
+  margin-left: 10px;
+  margin-top: 12px;
+  float: left;
+}
+.inner_sub_box {
+  margin-left: 10px;
+  width: 200px;
+  min-height: 200px;
+}
+.inner_sub_box p {
+  position: relative;
+  margin: 5px;
+}
+.sub_box_header {
+  margin: 10px;
+}
+.sub_box_wrap {
+  width: 200px;
+  margin-left: 32px;
+  float: left;
+  display: inline;
+}
+.sub_box a.social_icon {
+  display: block;
+  text-indent: -1000em;
+}
+.sub_box p {
+  width: 185px;
+}
+/*********************************************/
+/******************FORMS**********************/
+.form_section {
+  margin-bottom: 20px;
+}
+input[type="select"] {
+  width: 100px;
+}
+input#ticket_date_select {
+  width: 85px;
+}
+input#search {
+  padding:2px;
+  position:relative;
+  top:-1px;
+}
+/*********************************************/
+/******************BUTTONS********************/
+.btn {
+  text-align:center;
+  color: #fff;
+  padding: 0px;
+  font-size: 120%;
+  font-weight:bold;
+  height: 30px;
+  padding: 0px 5px 2px;
+  border: 1px solid #004914;
+  background: url('../images/green_button.jpg') 0px 0px repeat-x;
+}
+.btn:hover {
+  background: url('../images/green_button.jpg') 0px -32px repeat-x;
+  color: #333;
+  border: 1px solid #666;
+}
+.banner_buttons {
+  color: #fff;
+  padding: 5px;
+  background: url('../images/orange_30.png') repeat-x;
+  position: absolute;
+  bottom: 66px;
+  right: 230px;
+  display: block;
+}
+.big_orange {
+  font-size: 140%;
+  font-weight:bold;
+  height: 20px;
+  text-align:center;
+  text-decoration:none;
+  width: 250px;
+}
+.big_orange:hover {
+  background: url('../images/green_buttons.png') repeat-x;
+}
+.search_btn_green, .search_btn_black {
+  text-align:center;
+  color: #fff;
+  font-size: 12px;
+  font-weight:bold;
+  height: 24px;
+  width: 65px;
+  border: 1px solid #004914;
+  background: url('../images/green_button.jpg') 0px 0px repeat-x;
+  cursor: pointer;
+}
+.search_btn_black {
+  background: url('../images/black_button.png') 0px 0px repeat-x;
+}
+.big_orange_submit, .big_black_submit {
+  text-align:center;
+  color: #fff;
+  padding: 0px;
+  font-size: 120%;
+  font-weight:bold;
+  height: 30px;
+  width: 135px;
+  border: 1px solid #004914;
+  background: url('../images/green_button.jpg') 0px 0px repeat-x;
+  position: absolute;
+  bottom: 0px;
+  right: 50px;
+  display: block;
+  cursor: pointer;
+}
+.big_black_submit {
+  background: url('../images/black_button.png') 0px 0px repeat-x;
+}
+.big_orange_submit:hover, .search_btn_green:hover {
+  background: url('../images/green_button.jpg') 0px -32px repeat-x;
+  color: #333;
+  border: 1px solid #666;
+}
+.big_black_submit:hover, .search_btn_black:hover {
+  background: url('../images/black_button.png') 0px -32px repeat-x;
+  color: #333;
+  border: 1px solid #666;
+}
+.contact_submit {
+  position: relative;
+  float: right;
+  margin: 10px 19px 0px 0px;
+}
+.landing_submit {
+  position: relative;
+  float: right;
+  margin: 10px 4px 0px 0px;
+}
+.small_orange_buttons {
+  margin: 0px auto;
+  color:#FFFFFF;
+  display:block;
+  font-size:100%;
+  font-weight:bold;
+  height:14px;
+  padding:3px;
+  text-align:center;
+  text-decoration:none;
+  width:160px;
+  background: url('../images/orange_20.png') repeat-x;
+}
+.small_orange_buttons:hover {
+  background: url('../images/green_20.png') repeat-x;
+}
+.search_btn {
+  text-indent: -1000em;
+  width: 25px;
+  height: 30px;
+  background: url('../images/search_icon_black.png') no-repeat;
+  border: none;
+  cursor: pointer;
+  font-size: 0px;
+  display: inline-block;
+}
+.buttons_right {
+  float: right;
+  text-align: right;
+  width: 200px;
+}
+/*********************************************/
+/******************FOOTER********************/
+#ft {
+  background: #000;
+}
+#footer_wrap {
+  min-height: 195px;
+  background: url('../images/footer_ribbon.png') 0px 165px no-repeat;
+}
+#footer_links {
+  margin: 10px;
+/*  width: 54%;
+  height: 50%;*/
+  float: right;
+}
+#footer_links a, #employee_login a {
+  color: #777;
+  text-decoration: none;
+}
+#footer_links a:hover, #employee_login a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+#footer_links ul {
+  float: left;
+  width: 130px;
+/*  margin: 0px 50px 0px 0px;*/
+}
+#footer_links li {
+  list-style: disc;
+}
+#footer_links h4 {
+  margin-left: -12px;
+  margin-bottom: 5px;
+  color: #fff;
+}
+#footer_logo {
+  position: absolute;
+  bottom: 45px;
+  background: #000 url('../images/HCI_white_footer_logo.png') 10px 0px no-repeat;
+  width: 100%;
+  height: 50px;
+}
+div.newsletter_signup {
+  float:right;
+  margin-right:20px;
+  position:relative;
+}
+div.newsletter_form {
+  color: #fff;
+  margin-top: 5px;
+}
+div.newsletter_form input[type='submit'] {
+  margin-top: 12px;
+  margin-left: 10px;
+}
+ul#social_links {
+  position: relative;
+  float: left;
+  height: 30px;
+  margin-top: 10px;
+}
+ul#social_links li, ul#social_links li.top_nav_wide {
+  display: block;
+  float: left;
+  width: 35px;
+  text-align: center;
+}
+ul#social_links li.top_nav_wide {
+  width: 100px;
+}
+ul#social_links li a {
+  display: block;
+  float: left;
+  width: 30px;
+  height: 30px;
+  text-indent:-3000em;
+  text-decoration: none;
+  margin: 0px 5px;
+  color: #e3e3e3;
+}
+ul#social_links li a.black {
+  color: #000;
+}
+ul#social_links li a.white {
+  color: white;
+}
+#facebook_link {
+  background:  url('../images/social_icons/social_icons.png') 0px -30px no-repeat;
+}
+#youtube_link {
+  background:  url('../images/social_icons/social_icons.png') -30px -30px no-repeat;
+}
+#linkedin_link {
+  background:  url('../images/social_icons/social_icons.png') -60px -30px no-repeat;
+}
+#shcf_link {
+  background:  url('../images/social_icons/social_icons.png') -90px -30px no-repeat;
+}
+#twitter_link {
+  background:  url('../images/social_icons/social_icons.png') -120px -30px no-repeat;
+}
+#footer_stripe {
+  position: absolute;
+  bottom: -15px;
+  min-height: 7px;
+  background: #fff;
+}
+#employee_login {
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+}
+ul.login {
+  background:transparent url("../images/login_keyhole.png") no-repeat scroll 0 0;
+  bottom:-52px;
+  height:30px;
+  position:absolute;
+  right:-5px;
+  width:30px;
+}
+ul.login a {
+  display: block;
+  text-indent: -3000em;
+  width: 30px;
+  height: 30px;
+}
+#verisk_footer {
+  position: relative;
+  height: 50px;
+  background: #dddddd;
+}
+#verisk_footer img#verisk_logo {
+  position: relative;
+  float: right;
+  margin: 16px;
 }
