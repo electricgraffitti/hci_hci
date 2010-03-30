@@ -1423,13 +1423,28 @@ input#search {
 }
 #footer_wrap {
   min-height: 195px;
-  background: url('../images/footer_ribbon.png') 0px 165px no-repeat;
+}
+#footer_tags {
+  position: absolute;
+  width: 900px;
+  bottom: 0px;
+  left: 0px;
+}
+#footer_tags a {
+  position: relative;
+  left: 0px;
+}
+.pay_right_footer {
+  position: relative;
+  float: right;
 }
 #footer_links {
+  position: relative;
+  float: left;
+  width: 520px;
+  height: 85px;
   margin: 10px;
-/*  width: 54%;
-  height: 50%;*/
-  float: right;
+  padding-left: 30px;
 }
 #footer_links a, #employee_login a {
   color: #777;
@@ -1445,38 +1460,37 @@ input#search {
 /*  margin: 0px 50px 0px 0px;*/
 }
 #footer_links li {
-  list-style: disc;
+  list-style: disc inside none;
 }
 #footer_links h4 {
-  margin-left: -12px;
   margin-bottom: 5px;
   color: #fff;
 }
 #footer_logo {
-  position: absolute;
-  bottom: 45px;
+  position: relative;
+  float: left;
   background: #000 url('../images/HCI_white_footer_logo.png') 10px 0px no-repeat;
   width: 100%;
   height: 50px;
 }
-div.newsletter_signup {
-  float:right;
-  margin-right:20px;
-  position:relative;
+#footer_stripe {
+  position: relative;
+  float:left;
+  height: 7px;
+  background: #fff;
+  margin-bottom: 2px;
 }
-div.newsletter_form {
-  color: #fff;
-  margin-top: 5px;
-}
-div.newsletter_form input[type='submit'] {
-  margin-top: 12px;
-  margin-left: 10px;
+div#social_links_wrap {
+  position: relative;
+  float: left;
+  width: 350px;
+  height: 85px;
+  margin: 10px;
 }
 ul#social_links {
   position: relative;
   float: left;
   height: 30px;
-  margin-top: 10px;
 }
 ul#social_links li, ul#social_links li.top_nav_wide {
   display: block;
@@ -1518,30 +1532,22 @@ ul#social_links li a.white {
 #twitter_link {
   background:  url('../images/social_icons/social_icons.png') -120px -30px no-repeat;
 }
-#footer_stripe {
-  position: absolute;
-  bottom: -15px;
-  min-height: 7px;
-  background: #fff;
-}
-#employee_login {
-  position: absolute;
-  bottom: 25px;
-  right: 25px;
-}
-ul.login {
-  background:transparent url("../images/login_keyhole.png") no-repeat scroll 0 0;
-  bottom:-52px;
-  height:30px;
-  position:absolute;
-  right:-5px;
-  width:30px;
-}
-ul.login a {
-  display: block;
-  text-indent: -3000em;
-  width: 30px;
+#footer_tags {
+  position: relative;
+  float: left;
+  width: 100%;
   height: 30px;
+}
+#footer_tags a {
+  position: relative;
+  float: left;
+}
+.pay_right_footer {
+  position: relative;
+  float: right;
+  width: 139px;
+  height: 30px;
+  margin-right: 5px;
 }
 #verisk_footer {
   position: relative;
