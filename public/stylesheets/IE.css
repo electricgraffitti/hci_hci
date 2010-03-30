@@ -168,7 +168,16 @@ div.index_video_listing {
 div.index_video_listing h3 {
   width: 425px;
 }
-
+#landing4 .landing_sub_box {
+  width: 235px;
+  height: 255px;
+  padding: 10px 15px 0px;
+}
+.landing_submit {
+  position: relative;
+  float: right;
+  margin: 10px 15px 0px 0px;
+}
 div.profile p {
   margin-right: 0px;
 }

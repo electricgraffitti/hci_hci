@@ -757,7 +757,7 @@ div.visionclaim-insight_demo_button span.small_cta_button {
   position: absolute;
   right: 0px;
 }
-.landing_form_wrap div {
+.landing_form_wrap div.visible_field {
   width: 215px;
   float: left;
 }
@@ -1059,7 +1059,7 @@ div.visionclaim-insight_demo_button span.small_cta_button {
 }
 /*********************************************/
 /***************QUOTE BOXES*******************/
-.landing_pages .index_quote, .landing_pages .webinar_quote {
+.index_quote, .landing_pages .webinar_quote {
   text-indent: -3000em;
   background: #fff url('../images/index_quote.png') no-repeat;
   height: 90px;
@@ -1422,7 +1422,7 @@ input#search {
   background: #000;
 }
 #footer_wrap {
-  min-height: 195px;
+  float:left;
 }
 #footer_tags {
   position: absolute;
@@ -1558,4 +1558,235 @@ ul#social_links li a.white {
   position: relative;
   float: right;
   margin: 16px;
+}
+#employee_login {
+  position: relative;
+  float: left;
+  margin-left: 10px;
+}
+ul.login {
+  background:transparent url("../images/login_keyhole.png") 3px 6px no-repeat;
+  height:30px;
+  position:relative;
+  float:right;
+  width:30px;
+  text-align: center;
+}
+ul.login li {
+  position: relative;
+  float: right;
+  width: 30px;
+  height: 30px;
+}
+ul.login a#login_link {
+  display: block;
+  text-indent: -3000em;
+  width: 30px;
+  height: 30px;
+}
+/**** Pardot Forms ******/
+.service_mid_section form {
+  position: relative;
+  width: 500px;
+  float: left;
+}
+.service_mid_section form.form p {
+  width: 200px;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  clear: none;
+}
+.service_mid_section form.form p select {
+  width: 180px;
+}
+.free_trial_inner {
+  position: relative;
+  width: 430px;
+  float: left;
+}
+h3.free_trial_header {
+  position: relative;
+  width: 420px;
+  height:70px;
+  margin-left:7px;
+  text-indent: -3000em;
+}
+.free_trial_para {
+  color:#f8fcfa;
+  float:left;
+  font-size:136%;
+  font-weight:bold;
+  margin:27px 0 10px 160px;
+  position:relative;
+  width:240px;
+}
+.landing_tile {
+  position: relative;
+  float: left;
+  width: 145px;
+  height: 160px;
+  background: url('../images/landing_pages/tiles_headers.png') no-repeat;
+}
+.brochure_link {
+  position: relative;
+  float: left;
+  width: 420px;
+  height: 30px;
+  text-align: center;
+}
+.brochure_link a {
+  position: relative;
+  display: block;
+  padding: 6px;
+  width: 165px;
+  height: 17px;
+  color: #fff;
+  margin: 0px auto;
+  border: 1px solid #333;
+  text-decoration: none;
+  background: url('../images/landing_pages/landing_brochure_button.png') 0px -180px repeat-x;
+}
+a.physicianclaim-insight_link:hover {
+  background: url('../images/landing_pages/landing_brochure_button.png') 0px -150px repeat-x;
+  border: 1px solid #004914;
+}
+.physicianclaim-insight_free_trial_header {
+  background: url('../images/landing_pages/tiles_headers.png') -145px -63px no-repeat;
+}
+.physicianclaim-insight_landing_tile {
+  background: url('../images/landing_pages/tiles_headers.png') 0px 0px no-repeat;
+}
+a.facilityclaim-insight_link:hover {
+  background: url('../images/landing_pages/landing_brochure_button.png') 0px -90px repeat-x;
+  border: 1px solid #6b0a10;
+}
+.facilityclaim-insight_free_trial_header {
+  background: url('../images/landing_pages/tiles_headers.png') -145px -219px no-repeat;
+}
+.facilityclaim-insight_landing_tile {
+  background: url('../images/landing_pages/tiles_headers.png') 0px -163px no-repeat;
+}
+a.dentalclaim-insight_link:hover {
+  background: url('../images/landing_pages/landing_brochure_button.png') 0px -120px repeat-x;
+  border: 1px solid #007690;
+}
+.dentalclaim-insight_free_trial_header {
+  background: url('../images/landing_pages/tiles_headers.png') -145px -377px no-repeat;
+}
+.dentalclaim-insight_landing_tile {
+  background: url('../images/landing_pages/tiles_headers.png') 0px -323px no-repeat;
+}
+a.pharmaclaim-insight_link:hover {
+  background: url('../images/landing_pages/landing_brochure_button.png') 0px -60px repeat-x;
+  border: 1px solid #002b54;
+}
+.pharmaclaim-insight_free_trial_header {
+  background: url('../images/landing_pages/tiles_headers.png') -145px -695px no-repeat;
+}
+.pharmaclaim-insight_landing_tile {
+  background: url('../images/landing_pages/tiles_headers.png') 0px -640px no-repeat;
+}
+a.visionclaim-insight_link:hover {
+  background: url('../images/landing_pages/landing_brochure_button.png') 0px 0px repeat-x;
+  border: 1px solid #5a2149;
+}
+.visionclaim-insight_free_trial_header {
+  background: url('../images/landing_pages/tiles_headers.png') -145px -851px no-repeat;
+}
+.visionclaim-insight_landing_tile {
+  background: url('../images/landing_pages/tiles_headers.png') 0px -799px no-repeat;
+}
+a.oncologyclaim-insight_link:hover {
+  background: url('../images/landing_pages/landing_brochure_button.png') 0px -30px repeat-x;
+  border: 1px solid #C9A83D;
+}
+.oncologyclaim-insight_free_trial_header {
+  background: url('../images/landing_pages/tiles_headers.png') -145px -534px no-repeat;
+}
+.oncologyclaim-insight_landing_tile {
+  background: url('../images/landing_pages/tiles_headers.png') 0px -481px no-repeat;
+}
+a.cra_link:hover {
+  background: url('../images/landing_pages/landing_brochure_button.png') 0px -211px repeat-x;
+  border: 1px solid #E37F1C;
+}
+.cra_free_trial_header {
+  background: url('../images/landing_pages/tiles_headers.png') -145px -1486px no-repeat;
+}
+.cra_landing_tile {
+  background: url('../images/landing_pages/tiles_headers.png') 0px -1433px no-repeat;
+}
+/******Landing_buttons******/
+div.landing_button form.form p {
+  margin-top: 0px;
+}
+div.landing_button form p input[type="submit"] {
+  width: 111px;
+  height: 30px;
+}
+div.landing_button form p  input[type="submit"] {
+  background: url('../images/service_colors_button_bg.png') 0px -180px no-repeat;
+  color: #fff;
+  border: 1px solid #222;
+}
+div.cra_landing_button form p input[type="submit"]:hover {
+  border: 1px solid #777;
+  background: url('../images/service_colors_button_bg.png') 0px -211px no-repeat;
+  color: #fff;
+}
+div.pci_landing_button form p input[type="submit"]:hover {
+  border: 1px solid #777;
+  background: url('../images/service_colors_button_bg.png') 0px -150px no-repeat;
+  color: #fff;
+}
+div.fci_landing_button form p input[type="submit"]:hover {
+  border: 1px solid #777;
+  background: url('../images/service_colors_button_bg.png') 0px -90px no-repeat;
+  color: #fff;
+}
+div.dci_landing_button form p input[type="submit"]:hover {
+  border: 1px solid #777;
+  background: url('../images/service_colors_button_bg.png') 0px -120px no-repeat;
+  color: #fff;
+}
+div.oci_landing_button form p input[type="submit"]:hover {
+  border: 1px solid #777;
+  background: url('../images/service_colors_button_bg.png') 0px -30px no-repeat;
+  color: #fff;
+}
+div.rxi_landing_button form p input[type="submit"]:hover {
+  border: 1px solid #777;
+  background: url('../images/service_colors_button_bg.png') 0px -60px no-repeat;
+  color: #fff;
+}
+div.vci_landing_button form p input[type="submit"]:hover {
+  border: 1px solid #777;
+  background: url('../images/service_colors_button_bg.png') 0px -0px no-repeat;
+  color: #fff;
+}
+/**** Pardot Forms ******/
+.service_mid_section form.form {
+  position: relative;
+  width: 500px;
+  float: left;
+  padding: 0px;
+}
+.service_mid_section form.form p {
+  width: 200px;
+  float: left;
+  margin: 0px 10px 10px 0px;
+  clear: none;
+}
+.service_mid_section form.form p select {
+  width: 180px;
+}
+.service_mid_section form.form p span.description {
+  bottom:0;
+  display:block;
+  position:absolute;
+  right:70px;
+}
+.executive_summit_form_wrap {
+  height:175px;
 }
