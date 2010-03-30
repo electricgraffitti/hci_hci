@@ -111,9 +111,10 @@ input#service_inquiry_submit {
 .who_image {
 	right: 0px;
 }
-.job_board {
-  width: 880px;
-}
+/*.job_board {
+  width: 920px;
+  height: 140px;
+}*/
 .apply_here_link {
   height: 120px;
   overflow: hidden;

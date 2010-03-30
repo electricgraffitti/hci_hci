@@ -3108,9 +3108,10 @@ ul.cube_crossfade li {
 /*********************************************/
 /******************ISSUU*********************/
 #issuu_frame, #issuu_frame iframe {
-  height:480px;
+  border:medium none;
+  height:483px;
   margin-left:7px;
-  width:922px;
+  width:926px;
 }
 /*********************************************/
 /******************VIDEOS*********************/
