@@ -1059,11 +1059,14 @@ div.visionclaim-insight_demo_button span.small_cta_button {
 }
 /*********************************************/
 /***************QUOTE BOXES*******************/
-.index_quote, .webinar_quote {
+.landing_pages .index_quote, .landing_pages .webinar_quote {
   text-indent: -3000em;
-  background: url('../images/index_quote.png') no-repeat;
+  background: #fff url('../images/index_quote.png') no-repeat;
   height: 90px;
   margin: 15px 0px;
+  padding-bottom: 4px;
+  -moz-box-shadow:0 1px 2px #aaaaaa;
+  -webkit-box-shadow: rgb(170, 170, 170) 0px 1px 2px;
 }
 .service_quote {
   position: relative;
@@ -1145,7 +1148,7 @@ div.visionclaim-insight_demo_button span.small_cta_button {
 #sub_boxes {
 	float: left;
   text-align: left;
-  background: #fff;
+  background: transparent;
 }
 .landing_sub_box {
   position: relative;
@@ -1161,9 +1164,12 @@ div.visionclaim-insight_demo_button span.small_cta_button {
   -webkit-box-shadow: rgb(170, 170, 170) 0px 1px 2px;
 }
 #landing4 .landing_sub_box {
-  width: 233px;
-  height: 200px;
-  padding: 10px 0px 0px;
+  width: 203px;
+  height: 250px;
+  padding: 10px 15px 0px;
+}
+.landing_sub_box p {
+  text-align: left;
 }
 .apple_sub_boxes {
   position: relative;
