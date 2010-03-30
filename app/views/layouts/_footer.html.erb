@@ -1,26 +1,20 @@
-<% 
-  @newsletter_subscription = NewsletterSubscription.new
-%>
 <div id="footer_wrap" class="grid_12 alpha omega relative">
   <%= render :partial => "layouts/social_links" %>
-  <%#= render :partial => "health_care/cover_flow" %>
   <%= render :partial => "health_care/footer_links" %>
-  <div class="clear"></div>
-  <div id="footer_logo">
-    <!-- <div class="newsletter_signup"><%= render :partial => "newsletter_subscriptions/newsletter_signup", :locals => {:newsletter_subscription => @newsletter_subscription} %></div>
-    
-  </div> -->
-    <div id="footer_stripe" class="grid_12 alpha omega"></div>
-    <ul class="login">
-      <% if current_user %>
-        <li><%= link_to "Logout", logout_path, :class => "black" %></li>
-      <% else %>
-        <li><%= link_to "Login", login_path, :class => "black" %></li>
-      <% end %>
-    </ul>
-  </div>
+  <div id="footer_logo"></div>
+  <div id="footer_stripe" class="grid_12 alpha omega"></div>
   <div id="footer_tags">
     <%= link_to(image_tag("verisk_footer_link.png", :alt => "Verisk Health"), "http://www.veriskhealth.com") %>
+    <ul class="login">
+      <% if current_user %>
+        <li><%= link_to "Logout", logout_path, :class => "black", :id => "login_link" %></li>
+      <% else %>
+        <li><%= link_to "Login", login_path, :class => "black", :id => "login_link" %></li>
+      <% end %>
+    </ul>
     <%= image_tag("pay_right_footer.png", :class => "pay_right_footer") %>
   </div>
+</div>
+<div id="verisk_footer" class="grid_12 alpha omega">
+  <%= link_to(image_tag("verisk_logo.png", :id => "verisk_logo"), "http://www.verisk.com/") %>
 </div>

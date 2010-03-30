@@ -259,47 +259,8 @@ img.banner_scroll.r, img.banner_scroll.l {
 .index_banner_nav {
   right: -10px;
 }
-#ft {
-  float: left;
-}
-#footer_links {
-  position: relative;
-  float: right;
-  height: 125px;
-}
-#footer_wrap {
-  height: 195px;
-}
-#footer_logo {
-  position: relative;
-  float: left;
-}
-#footer_stripe {
-  position: relative;
-  float: left;
-  top: 50px;
-}
-#footer_logo ul.login {
-  position: relative;
-  right: -3px;
-  bottom: -59px;
-}
-.newsletter_signup {
-  position: relative;
-  margin-right: 20px;
-}
-.newsletter_form {
-  position: relative;
-}
-#footer_links ul h4{
- margin-left: 0px;
-}
-#newsletter_subscription_submit {
-  margin-top: 15px;
-  margin-left: 5px;
-}
-#social_links {
-  float: left;
+a.banner_button_text {
+  margin:18px 0 0 0px;
 }
 .search_btn_green, .search_btn_black {
   text-align:center;
