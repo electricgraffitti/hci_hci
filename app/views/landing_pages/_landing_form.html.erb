@@ -10,19 +10,19 @@
       </div>
       <div class="visible_field">
         <%= label :contact, :email, "Email Address" %><br />
-        <%= text_field :contact, :email, :name => "free_webinar_email" %>
+        <%= text_field :contact, :email, :name => "cra_last_email" %>
       </div>
       <div class="visible_field">
         <%= label :contact, :business_name, "Company" %><br />
-        <%= text_field :contact, :business_name, :name => "free_webinar_business_name" %>
+        <%= text_field :contact, :business_name, :name => "cra_last_business_name" %>
       </div>
       <div class="visible_field">
         <%= label :contact, :comment, "Comments" %><br />
-        <%= text_area :contact, :comment, :name => "free_webinar_comment", :rows => 3, :cols => 28   %>
+        <%= text_area :contact, :comment, :name => "cra_last_comment", :rows => 3, :cols => 28   %>
       </div>
       <div class="visible_field">
         <%= label :contact, :position, "Position" %><br />
-        <%= text_field :contact, :position, :name => "free_webinar_position" %>
+        <%= text_field :contact, :position, :name => "cra_last_position" %>
       </div>
       <%= submit_tag 'Get a Free Trial', :class => "big_black_submit landing_submit", :title => "Submit Your Message to HealthCare Insight" %>
     <% end %>
