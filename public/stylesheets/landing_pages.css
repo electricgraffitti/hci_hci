@@ -688,6 +688,7 @@ div.view_demo.highlight a:hover, div.view_demo span.big_button_hover {
 /*********************************************/
 /*****************MAIN CONTENT****************/
 #bd {
+  background: #fff;
 }
 /********Stripes**********/
 .cra_stripe_icon {
@@ -974,8 +975,8 @@ div.view_demo.highlight a:hover, div.view_demo span.big_button_hover {
   height: 90px;
   margin: 15px 0px;
   padding-bottom: 4px;
-  -moz-box-shadow:0 1px 2px #aaaaaa;
-  -webkit-box-shadow: rgb(170, 170, 170) 0px 1px 2px;
+/*  -moz-box-shadow:0 1px 2px #aaaaaa;
+  -webkit-box-shadow: rgb(170, 170, 170) 0px 1px 2px;*/
 }
 .service_quote {
   position: relative;

@@ -1,3 +1,4 @@
 <% content_for :banner do %>
-  <%= render :partial => "landing_pages/ceo_banner" %>
+  <%= render :partial => "landing_pages/ceo_banner", :locals => {:button_text => @button_text} %>
 <% end %>
+<%= render :partial => "health_care/index_quote" %>

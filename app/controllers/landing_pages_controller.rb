@@ -5,7 +5,7 @@ class LandingPagesController < ApplicationController
   end
   
   def ceo_up_landing
-    
+    @button_text = "Get Thought Paper"
   end
   
 end
