@@ -4,4 +4,8 @@ class LandingPagesController < ApplicationController
     
   end
   
+  def ceo_up_landing
+    
+  end
+  
 end

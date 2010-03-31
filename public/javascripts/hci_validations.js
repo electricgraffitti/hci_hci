@@ -64,7 +64,7 @@ $(document).ready(function() {
       }
     });
         
-  // Validates The Contact Form
+  // Validates The CRA Landing Page
     $('#free_cra').validate({
       rules: {
         "cra_first_name": "required",
@@ -81,4 +81,22 @@ $(document).ready(function() {
   			"cra_position": "Job Title Required"
       }
     });
+    
+    // Validates Landing Page Forms Proper
+      $('#landing_form').validate({
+        rules: {
+          "landing_first_name": "required",
+    			"landing_last_name": "required",
+          "landing_email": {required: true, email: true},
+    			"landing_business_name": "required",
+    			"landing_position": "required"
+        },
+        messages: {
+          "landing_first_name": "First Name Required",
+    			"landing_last_name": "Last Name Required",
+          "landing_email": {required: "Email Required", email: "Not a Valid Email"},
+    			"landing_business_name": "Company Required",
+    			"landing_position": "Job Title Required"
+        }
+      });
 });

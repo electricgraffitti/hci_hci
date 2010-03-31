@@ -545,90 +545,6 @@ div.view_demo.highlight a:hover, div.view_demo span.big_button_hover {
   height: 135px;
   float: left;
 }
-/*********************************************/
-/*************ARROW TRIAL BUTTONS************/
-#cta_bar {
-  position: absolute;
-  height: 30px;
-  right: 0px;
-  bottom: 35px;
-}
-.service_cta_bar {
-  bottom: 25px;
-}
-.cta_button {
-  position: relative;
-  float: right;
-  width: 165px;
-  height: 30px;
-}
-div.cta_free_trial {
-  width: 195px;
-  border-right: 1px solid #ddd;
-}
-.cta_button a {
-  display: block;
-  width: 165px;
-  height: 30px;
-  text-indent: -3000em;
-}
-div.cta_free_trial a {
-  background: url('../images/banners/inner_banners/CTA_arrow_bar.png') 0px -180px no-repeat;
-  width: 195px;
-  height: 30px;
-}
-div.cta_free_trial.highlight a:hover, div.cta_free_trial span.small_cta_button  {
-  background: url('../images/banners/inner_banners/CTA_arrow_bar.png') 0px -150px no-repeat;
-  width: 195px;
-  height: 30px;
-  float: left;
-}
-div.cta_view_demo a {
-  background: url('../images/banners/inner_banners/CTA_arrow_bar.png') -195px 30px;
-}
-div.cta_view_demo.highlight a:hover, div.cta_view_demo span.small_cta_button {
-  background: url('../images/banners/inner_banners/CTA_arrow_bar.png') -195px 60px;
-  width: 165px;
-  height: 30px;
-  float: left;
-}
-div.physicianclaim-insight_trial_button span.small_cta_button {
-  background: url('../images/banners/inner_banners/CTA_arrow_bar.png') 0px -150px no-repeat;
-}
-div.physicianclaim-insight_demo_button span.small_cta_button {
-  background: url('../images/banners/inner_banners/CTA_arrow_bar.png') -195px 60px;
-}
-div.dentalclaim-insight_trial_button span.small_cta_button {
-  background: url('../images/banners/inner_banners/CTA_arrow_bar.png') 0px -120px no-repeat;
-}
-div.dentalclaim-insight_demo_button span.small_cta_button {
-  background: url('../images/banners/inner_banners/CTA_arrow_bar.png') -195px 90px;
-}
-div.facilityclaim-insight_trial_button span.small_cta_button {
-  background: url('../images/banners/inner_banners/CTA_arrow_bar.png') 0px -90px no-repeat;
-}
-div.facilityclaim-insight_demo_button span.small_cta_button {
-  background: url('../images/banners/inner_banners/CTA_arrow_bar.png') -195px 120px;
-}
-div.pharmaclaim-insight_trial_button span.small_cta_button {
-  background: url('../images/banners/inner_banners/CTA_arrow_bar.png') 0px -60px no-repeat;
-}
-div.pharmaclaim-insight_demo_button span.small_cta_button {
-  background: url('../images/banners/inner_banners/CTA_arrow_bar.png') -195px 150px;
-}
-div.oncologyclaim-insight_trial_button span.small_cta_button {
-  background: url('../images/banners/inner_banners/CTA_arrow_bar.png') 0px -30px no-repeat;
-}
-div.oncologyclaim-insight_demo_button span.small_cta_button {
-  background: url('../images/banners/inner_banners/CTA_arrow_bar.png') -195px 180px;
-}
-div.visionclaim-insight_trial_button span.small_cta_button {
-  background: url('../images/banners/inner_banners/CTA_arrow_bar.png') 0px 0px no-repeat;
-}
-div.visionclaim-insight_demo_button span.small_cta_button {
-  background: url('../images/banners/inner_banners/CTA_arrow_bar.png') -195px 210px;
-}
-
 /********************************/
 /************HEADER*************/
 #hci_logo {
@@ -733,6 +649,10 @@ div.visionclaim-insight_demo_button span.small_cta_button {
   position: relative;
 	background: url('../images/banners/landing_banners/base_banner.jpg') no-repeat;
 }
+/*****Banner Inserts (all Inherit from Big Banner) *********/
+.ceo_up_banner {
+  background: url('http://stage.hcinsight.com/landing_page_images/ceo_up_at_night_landing_banner.jpg') no-repeat;
+}
 .landing_form_text_wrap {
   bottom: 115px;
   font-size:130%;
@@ -760,17 +680,6 @@ div.visionclaim-insight_demo_button span.small_cta_button {
 .landing_form_wrap div.visible_field {
   width: 215px;
   float: left;
-}
-.presenter_wrap h2 {
-  margin-bottom: 3px;
-}
-.presenter_creds {
-  float: left;
-  font-size:14px;
-  width:185px;
-}
-.presenter_wrap img {
-  margin-right: 15px;
 }
 .banner_download_link {
   float: left;

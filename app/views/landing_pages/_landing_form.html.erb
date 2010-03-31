@@ -1,29 +1,29 @@
 <div class="landing_form_wrap">
-  <% form_tag("http://www2.hcinsight.com/l/1492/2010-02-02/GDD9P", :method => "post", :id => "free_cra") do %>
+  <% form_tag("http://www2.hcinsight.com/l/1492/2010-02-02/GDD9P", :method => "post", :id => "landing_form") do %>
     <div class="visible_field">
       <%= label :contact, :contact_first_name, "First Name" %><br />
-      <%= text_field :contact, :contact_first_name, :name => "cra_first_name" %>
+      <%= text_field :contact, :contact_first_name, :name => "landing_first_name" %>
     </div>
     <div class="visible_field">
       <%= label :contact, :contact_last_name, "Last Name" %><br />
-      <%= text_field :contact, :contact_last_name, :name => "cra_last_name" %>
+      <%= text_field :contact, :contact_last_name, :name => "landing_last_name" %>
     </div>
     <div class="visible_field">
       <%= label :contact, :email, "Email Address" %><br />
-      <%= text_field :contact, :email, :name => "cra_email" %>
+      <%= text_field :contact, :email, :name => "landing_email" %>
     </div>
     <div class="visible_field">
       <%= label :contact, :business_name, "Company" %><br />
-      <%= text_field :contact, :business_name, :name => "cra_business_name" %>
+      <%= text_field :contact, :business_name, :name => "landing_business_name" %>
     </div>
     <div class="visible_field">
       <%= label :contact, :comment, "Comments" %><br />
-      <%= text_area :contact, :comment, :name => "cra_comment", :rows => 3, :cols => 28   %>
+      <%= text_area :contact, :comment, :name => "landing_comment", :rows => 3, :cols => 28   %>
     </div>
     <div class="visible_field">
       <%= label :contact, :position, "Position" %><br />
-      <%= text_field :contact, :position, :name => "cra_position" %>
+      <%= text_field :contact, :position, :name => "landing_position" %>
     </div>
-    <%= submit_tag 'Get a Free Trial', :class => "big_black_submit landing_submit", :title => "Submit Your Message to HealthCare Insight" %>
+    <%= submit_tag 'Get White Paper', :class => "big_black_submit landing_submit", :title => "Submit Your Message to HealthCare Insight" %>
   <% end %>
 </div>

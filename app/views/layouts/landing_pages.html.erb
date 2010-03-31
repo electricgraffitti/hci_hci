@@ -2,7 +2,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-	<%= render :partial => "layouts/scripts" %>
 <head>
   <%= render :partial => "layouts/landing_pages_headmeta" %>
 </head>
@@ -14,12 +13,6 @@
       <%= render :partial => "layouts/header" %>
 	  </div>
     <div id="bd" class="grid_12 alpha omega">
-      <% if current_user %>
-        <%= render :partial => "layouts/admin_nav" %>
-      <% end %>
-      <% if current_employee %>
-        <%= render :partial => "layouts/employee_nav" %>
-      <% end %>
       <div id="banner" class="grid_12 alpha omega">
         <%= yield :banner %>
       </div>
