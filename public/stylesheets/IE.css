@@ -279,6 +279,7 @@ a.banner_button_text {
   background: url('../images/green_button.jpg') 0px 0px repeat-x;
   cursor: pointer;
   margin-left: 5px;
+  padding: 4px 4px;
 }
 .search_btn_black {
   background: url('../images/black_button.png') 0px 0px repeat-x;
@@ -286,4 +287,6 @@ a.banner_button_text {
 input#search {
   padding: 4px 4px;
 }
-
+#footer_links {
+  width: 550px;
+}

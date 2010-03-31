@@ -1,4 +1,10 @@
-<% content_for :banner do %>
-  <%= render :partial => "landing_pages/ceo_banner", :locals => {:button_text => @button_text} %>
+<% content_for :title do %>
+  What's Keeping Your CEO Up At Night?
 <% end %>
+
+<% content_for :banner do %>
+  <%= render :partial => "landing_pages/ceo_banner", :locals => {:button_text => @button_text}%>
+<% end %>
+
 <%= render :partial => "health_care/index_quote" %>
+
