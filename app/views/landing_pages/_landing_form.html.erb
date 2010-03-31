@@ -24,6 +24,8 @@
       <%= label :landing_page, :landing_position, "Position" %><br />
       <%= text_field :landing_page, :landing_position, :name => "landing_position" %>
     </div>
-    <%= submit_tag "#{button_text}", :class => "big_black_submit landing_submit", :title => "Submit Your Message to HealthCare Insight" %>
+    <div class="visible_field">
+       <%= submit_tag "#{button_text}", :class => "big_black_submit landing_submit", :title => "Submit Your Message to HealthCare Insight" %>
+    </div>
   <% end %>
 </div>
