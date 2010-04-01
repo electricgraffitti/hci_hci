@@ -1,31 +1,29 @@
-<div class="landing_form_wrap">
-  <% form_tag("http://www2.hcinsight.com/l/1492/2010-02-02/GDD9P", :method => "post", :id => "landing_form") do %>
-    <div class="visible_field">
-      <%= label :landing_page, :landing_first_name, "First Name" %><br />
-      <%= text_field :landing_page, :landing_first_name, :name => "landing_first_name" %>
-    </div>
-    <div class="visible_field">
-      <%= label :landing_page, :contact_last_name, "Last Name" %><br />
-      <%= text_field :landing_page, :contact_last_name, :name => "landing_last_name" %>
-    </div>
-    <div class="visible_field">
-      <%= label :landing_page, :landing_email, "Email Address" %><br />
-      <%= text_field :landing_page, :landing_email, :name => "landing_email" %>
-    </div>
-    <div class="visible_field">
-      <%= label :landing_page, :landing_business_name, "Company" %><br />
-      <%= text_field :landing_page, :landing_business_name, :name => "landing_business_name" %>
-    </div>
-    <div class="visible_field">
-      <%= label :landing_page, :landing_comment, "Comments" %><br />
-      <%= text_area :landing_page, :landing_comment, :name => "landing_comment", :rows => 3, :cols => 28   %>
-    </div>
-    <div class="visible_field">
-      <%= label :landing_page, :landing_position, "Position" %><br />
-      <%= text_field :landing_page, :landing_position, :name => "landing_position" %>
-    </div>
-    <div class="visible_field">
-       <%= submit_tag "#{button_text}", :class => "big_black_submit landing_submit", :title => "Submit Your Message to HealthCare Insight" %>
-    </div>
-  <% end %>
-</div>
+<% form_tag("http://www2.hcinsight.com/l/1492/2010-02-02/GDD9P", :method => "post", :id => "landing_form") do %>
+  <div class="visible_field">
+    <%= label :landing_page, :landing_first_name, "First Name" %><br />
+    <%= text_field :landing_page, :landing_first_name, :name => "landing_first_name" %>
+  </div>
+  <div class="visible_field">
+    <%= label :landing_page, :contact_last_name, "Last Name" %><br />
+    <%= text_field :landing_page, :contact_last_name, :name => "landing_last_name" %>
+  </div>
+  <div class="visible_field">
+    <%= label :landing_page, :landing_email, "Email Address" %><br />
+    <%= text_field :landing_page, :landing_email, :name => "landing_email" %>
+  </div>
+  <div class="visible_field">
+    <%= label :landing_page, :landing_business_name, "Company" %><br />
+    <%= text_field :landing_page, :landing_business_name, :name => "landing_business_name" %>
+  </div>
+  <div class="visible_field">
+    <%= label :landing_page, :landing_comment, "Comments" %><br />
+    <%= text_area :landing_page, :landing_comment, :name => "landing_comment", :rows => 3, :cols => 28   %>
+  </div>
+  <div class="visible_field">
+    <%= label :landing_page, :landing_position, "Position" %><br />
+    <%= text_field :landing_page, :landing_position, :name => "landing_position" %>
+  </div>
+  <div class="visible_field">
+     <%= submit_tag "#{button_text}", :class => "big_black_submit landing_submit", :title => "Submit Your Message to HealthCare Insight" %>
+  </div>
+<% end %>
