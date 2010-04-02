@@ -27,7 +27,7 @@
       <div id="panel2" class="panel">
         <%= link_to "Experience Nucleus", about_path, :class => "home_panel_icon_link" %>
         <h2 class="nucleus_header index_who_header">Who We Are.</h2>
-        <%= image_tag("banners/who_banner_big.jpg") %>
+        <%= image_tag("banners/who_banner_big2.jpg") %>
       </div>
       <div id="panel3" class="panel">
         <h2 class="nucleus_header index_what_header">What We Do.</h2>
@@ -41,6 +41,25 @@
       </div>
     </div>
   </div>
-
+  <% if banner.secondary_banners %>
+  <div class="index_banner_nav banner_nav">
+    <ul id="index_banner_nav_ul" class="nav_ul navigation">
+      <li class="b_nav1 index_banner_li first no_display"><%= link_to "1", '#panel1', :class => 'selected' %></li>
+      <li class="b_nav2 index_banner_li">
+        <div class="nav_header">Who We Are.</div>
+        <%= link_to "2", '#panel2'%>
+      </li>
+      <li class="b_nav3 index_banner_li">
+        <div class="nav_header">What We Do.</div>
+        <%= link_to "3", '#panel3'%>
+      </li>
+      <li class="b_nav4 index_banner_li">
+        <div class="nav_header">Why Choose Us.</div>
+        <%= link_to "4", '#panel4'%>
+      </li>
+    </ul>
+  </div>
+  <div id="banner_nav"></div>
+  <% end %>
   <div class="corner_image"></div>
 </div>

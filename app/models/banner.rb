@@ -34,7 +34,7 @@ class Banner < ActiveRecord::Base
    
    # PaperClip
    has_attached_file :banner,
-                     :styles => { :main => "928x483#", :micro => "429x223#"},
+                     :styles => { :main => "928x483#", :micro => "429x223#", :nav => "77x40#"},
                      :url => "/banners/:id/:style/:basename.:extension",
                      :path => ":rails_root/public/banners/:id/:style/:basename.:extension"
                      

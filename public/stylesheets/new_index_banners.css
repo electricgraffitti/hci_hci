@@ -1,0 +1,84 @@
+/*** Index Banner Links****/
+#banner_diamonds {
+  z-index: 10;
+}
+#banner_diamonds ul li a {
+  position: absolute;
+  display:block;
+  text-indent:-3000em;
+  width: 110px;
+  height: 110px;
+  top: 0px;
+  left: 0px;
+  background: green;
+}
+#banner_diamonds ul li a span {
+  position: absolute;
+  display:block;
+  width: 110px;
+  height: 110px;
+  top: 0px;
+  left: 0px;
+}
+.diamond_1 {
+  position:absolute;
+  width:110px;
+  height:110px;
+  bottom:74px;
+  left:43px;
+  background: url('../images/banners/banner_diamonds/diamond_sprites.png') 0px 0px no-repeat;
+}
+#banner_diamonds .diamond_1.highlight:hover, #banner_diamonds li a span.hover {
+  background: url('../images/banners/banner_diamonds/diamond_sprites.png') 0px -110px no-repeat;
+}
+.banner_button {
+  position: absolute;
+  width: 370px;
+  height: 85px;
+  top: 326px;
+  text-align: center;
+}
+.banner_button.button_left {
+  left: 63px;
+}
+.banner_button.button_right {
+  left: 490px;
+}
+.green_banner_button {
+  background: url('../images/banners/banner_buttons/green_banner_buttons.jpg') 0px -85px no-repeat;
+}
+.green_banner_button:hover {
+  background: url('../images/banners/banner_buttons/green_banner_buttons.jpg') 0px 0px no-repeat;
+}
+.pink_banner_button {
+  background: url('../images/banners/banner_buttons/pink_banner_buttons.jpg') 0px -85px no-repeat;
+}
+.pink_banner_button:hover {
+  background: url('../images/banners/banner_buttons/pink_banner_buttons.jpg') 0px 0px no-repeat;
+}
+.maroon_banner_button {
+  background: url('../images/banners/banner_buttons/maroon_banner_buttons.jpg') 0px -85px no-repeat;
+}
+.maroon_banner_button:hover {
+  background: url('../images/banners/banner_buttons/maroon_banner_buttons.jpg') 0px 0px no-repeat;
+}
+a.banner_button_text {
+  color:#FFFFFF;
+  display:block;
+  font-size:180%;
+  font-weight:bold;
+  height:42px;
+  margin:18px 0 0 73px;
+  padding-top:12px;
+  position:relative;
+  text-shadow:0 1px 0 #999999;
+  width:224px;
+  text-decoration: none;
+}
+.banner_form_radios p {
+  margin-right: 10px;
+  float: left;
+}
+.banner_form_radios p b {
+  margin-left: 5px;
+}
