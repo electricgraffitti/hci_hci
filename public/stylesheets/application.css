@@ -799,13 +799,12 @@ img.home_banner {
   height: 483px;
 }
 .index_banner_nav {
-  background: transparent url('../images/banners/index_banner_nav/new/banner_nav_bg.png') no-repeat;
+  background: transparent url('../images/banners/index_banner_nav/new/banner_nav_bg2.png') no-repeat;
   bottom:17px;
   height:40px;
-  left:14px;
+  left: 14px;
   position:absolute;
   width:926px;
-  border-top: 1px solid #ccc;
 }
 .index_banner_nav ul {
   margin-left: 185px;
@@ -815,9 +814,8 @@ img.home_banner {
   float: left;
   width: 77px;
   height: 40px;
-  border-left: 1px solid #ccc;
-  border-right: 1px solid #efefef;
-
+  border: none;
+  background: url('../images/banners/index_banner_nav/new/index_banner_reg_border.png') no-repeat;
 }
 .index_banner_nav ul li.index_banner_li {
 
@@ -836,38 +834,47 @@ img.home_banner {
 }
 .index_banner_nav ul li a span.hover {
   position: absolute;
-  width: 135px;
-  height: 130px;
+  width: 77px;
+  height: 40px;
   left: 0px;
-  top: -2px;
+  top: 0px;
   display: block;
 }
-#index_banner_nav_ul .b_nav2 {
+/*#index_banner_nav_ul .b_nav1 a {
   background: url('../images/banners/index_banner_nav/new/who_small.png') 0px 0px no-repeat;
+}*/
+#index_banner_nav_ul .b_nav1.highlight:hover, li.b_nav1 a span.hover {
+  background: url('../images/banners/index_banner_nav/new/index_banner_hover.png') 0px 0px no-repeat;
 }
+#index_banner_nav_ul .index_banner_nav ul li.b_nav1 a.active, .index_banner_nav ul li.b_nav1 a.selected {
+  background: url('../images/banners/index_banner_nav/new/index_banner_active.png') 0px 0px no-repeat;
+}
+/*#index_banner_nav_ul .b_nav2 a {
+  background: url('../images/banners/index_banner_nav/new/who_small.png') 0px 0px no-repeat;
+}*/
 #index_banner_nav_ul .b_nav2.highlight:hover, li.b_nav2 a span.hover {
-  background: url('../images/banners/index_banner_nav/black_cross_nav.png') 0px 0px no-repeat;
+  background: url('../images/banners/index_banner_nav/new/index_banner_hover.png') 0px 0px no-repeat;
 }
 #index_banner_nav_ul .index_banner_nav ul li.b_nav2 a.active, .index_banner_nav ul li.b_nav2 a.selected {
-  background: url('../images/banners/index_banner_nav/black_cross_nav.png') 0px -2px no-repeat;
+  background: url('../images/banners/index_banner_nav/new/index_banner_active.png') 0px 0px no-repeat;
 }
-#index_banner_nav_ul .b_nav3 {
+/*#index_banner_nav_ul .b_nav3 a {
   background: url('../images/banners/index_banner_nav/new/what_small.png') 0px 0px no-repeat;
-}
+}*/
 #index_banner_nav_ul .b_nav3.highlight:hover, li.b_nav3 a span.hover {
-  background: url('../images/banners/index_banner_nav/black_cross_nav.png') -120px -0px no-repeat;
+  background: url('../images/banners/index_banner_nav/new/index_banner_hover.png') 0px 0px no-repeat;
 }
 #index_banner_nav_ul .index_banner_nav ul li.b_nav3 a.active, .index_banner_nav ul li.b_nav3 a.selected {
-  background: url('../images/banners/index_banner_nav/black_cross_nav.png') -120px -2px no-repeat;
+    background: url('../images/banners/index_banner_nav/new/index_banner_active.png') 0px 0px no-repeat;
 }
-#index_banner_nav_ul .b_nav4 {
+/*#index_banner_nav_ul .b_nav4 a {
   background: url('../images/banners/index_banner_nav/new/why_small.png') 0px 0px no-repeat;
-}
+}*/
 #index_banner_nav_ul .b_nav4.highlight:hover, li.b_nav4 a span.hover {
-  background: url('../images/banners/index_banner_nav/black_cross_nav.png') -240px 0px no-repeat;
+  background: url('../images/banners/index_banner_nav/new/index_banner_hover.png') 0px 0px no-repeat;
 }
 #index_banner_nav_ul .index_banner_nav ul li.b_nav4 a.active, .index_banner_nav ul li.b_nav4 a.selected {
-  background: url('../images/banners/index_banner_nav/black_cross_nav.png') -240px -2px no-repeat;
+    background: url('../images/banners/index_banner_nav/new/index_banner_active.png') 0px 0px no-repeat;
 }
 #nucleus_banner_nav.banner_nav .banner_nav_wrap{
   width: 120px;

@@ -31,8 +31,8 @@ jQuery(document).ready(function() {
   var $bannerNav = jQuery('.scroll');
   var $smallBanners = jQuery('#banner_nav');
     
-  $smallBanners
-     .append('<div id="banner_scroll_l" class="banner_scroll l" /><div id="banner_scroll_r" class="banner_scroll r" />');
+  // $smallBanners
+  //    .append('<div id="banner_scroll_l" class="banner_scroll l" /><div id="banner_scroll_r" class="banner_scroll r" />');
      // .after('<div id="banner_scroll_r" class="banner_scroll r" />');
     
     if (horizontal) {
@@ -51,14 +51,15 @@ jQuery(document).ready(function() {
   
   function selectNav() {
     jQuery(this).parents('ul:first').find('a').removeClass('selected active').end().end().addClass('active selected');
+    jQuery(this).parents('ul:first').find('li').removeClass('selected active').end().end().addClass('active selected');
   }
   
   var scrollOptions = {
     target: $scroll,
     items: $panels,
     navigation: '.navigation a',
-    prev: 'div.banner_scroll.l',
-    next: 'div.banner_scroll.r',
+    // prev: 'div.banner_scroll.l',
+    // next: 'div.banner_scroll.r',
     axis: 'xy',
     duration: 500,
     easing: 'swing',

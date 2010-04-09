@@ -2,13 +2,12 @@
   <div class="scroll">
     <div class="scrollContainer">
       <div id="panel1" class="panel">
-        <% if banner.secondary_banners %>
+        <!-- <% if banner.secondary_banners %>
           <%= link_to "Experience Nucleus", nucleus_path, :class => "home_panel_icon_link" %>
-        <% end %>
+        <% end %> -->
         <h2 class="hide_text"><%= h banner.headline %></h2>
         <p class="hide_text"><%= h banner.content %></p>
          <%= image_tag(banner.banner.url(:main), :alt => "#{banner.headline}", :class => "home_banner")%>
-         
          <% unless banner.secondary_banners %>
            <div class="banner_button button_<%=banner.button_position %> <%=banner.button_color %>_banner_button">
             <%= link_to "#{banner.button_text}", "#{banner.button_url}", :class => "banner_button_text" %>
@@ -27,39 +26,36 @@
       <div id="panel2" class="panel">
         <%= link_to "Experience Nucleus", about_path, :class => "home_panel_icon_link" %>
         <h2 class="nucleus_header index_who_header">Who We Are.</h2>
-        <%= image_tag("banners/who_banner_big2.jpg") %>
+        <%= image_tag("/images/banners/inner_banners/who_banner.png") %>
       </div>
       <div id="panel3" class="panel">
         <h2 class="nucleus_header index_what_header">What We Do.</h2>
         <%= link_to "Experience Nucleus", services_path, :class => "home_panel_icon_link" %>
-        <%= image_tag("banners/what_banner_big.jpg") %>
+        <%= image_tag("/images/banners/inner_banners/what_banner.png") %>
       </div>
       <div id="panel4" class="panel">
         <h2 class="nucleus_header index_why_header">Why Choose Us.</h2>
         <%= link_to "Experience Nucleus", benefits_path, :class => "home_panel_icon_link" %>
-        <%= image_tag("banners/why_banner_big.jpg") %>
+        <%= image_tag("/images/banners/inner_banners/why_banner.png") %>
       </div>
     </div>
   </div>
-  <% if banner.secondary_banners %>
   <div class="index_banner_nav banner_nav">
     <ul id="index_banner_nav_ul" class="nav_ul navigation">
-      <li class="b_nav1 index_banner_li first no_display"><%= link_to "1", '#panel1', :class => 'selected' %></li>
+      <li class="b_nav1 index_banner_li">
+        <%= link_to(image_tag(banner.banner.url(:nav), :alt => "#{banner.headline}"), '#panel1', :class => "selected active")%>
+      </li>
       <li class="b_nav2 index_banner_li">
-        <div class="nav_header">Who We Are.</div>
-        <%= link_to "2", '#panel2'%>
+        <%= link_to(image_tag("../images/banners/index_banner_nav/new/who_small.png"), '#panel2')%>
       </li>
       <li class="b_nav3 index_banner_li">
-        <div class="nav_header">What We Do.</div>
-        <%= link_to "3", '#panel3'%>
+        <%= link_to(image_tag("../images/banners/index_banner_nav/new/what_small.png"), '#panel3')%>
       </li>
       <li class="b_nav4 index_banner_li">
-        <div class="nav_header">Why Choose Us.</div>
-        <%= link_to "4", '#panel4'%>
+        <%= link_to(image_tag("../images/banners/index_banner_nav/new/why_small.png"), '#panel4')%>
       </li>
     </ul>
   </div>
   <div id="banner_nav"></div>
-  <% end %>
-  <div class="corner_image"></div>
+  <!-- <div class="corner_image"></div> -->
 </div>

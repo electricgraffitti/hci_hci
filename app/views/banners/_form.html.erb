@@ -22,7 +22,10 @@
     <%= f.check_box :active_banner %>
   </p>
 <div class="grid_12 alpha omega">  <%= f.label :button_color, "Button Color" %><br />
-  <div class="banner_form_radios">  
+  <div class="banner_form_radios">
+    <p>
+      <%= f.radio_button :button_color, 'none' %><b>None</b>
+    </p>
     <p>
       <%= f.radio_button :button_color, 'green' %><b>Green</b>
     </p>
