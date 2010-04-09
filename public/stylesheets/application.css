@@ -747,6 +747,9 @@ img.home_banner {
 #banner {
   background: #fff;
 }
+.index_banner {
+  background: url('../images/banners/inner_banners/index_banner_bg.jpg') no-repeat;
+}
 .corner_image {
   position: absolute;
   left: 14px;
@@ -808,11 +811,15 @@ img.home_banner {
 }
 .index_banner_nav {
   background: transparent url('../images/banners/index_banner_nav/new/banner_nav_bg2.png') no-repeat;
-  bottom:17px;
+  bottom:16px;
   height:40px;
-  left: 14px;
+  left: 15px;
   position:absolute;
-  width:926px;
+  width:925px;
+  border-top: 1px solid #fff;
+}
+.index_banner_nav img {
+  padding-top: 3px;
 }
 .index_banner_nav ul {
   margin-left: 185px;
