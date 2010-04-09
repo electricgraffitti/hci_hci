@@ -798,6 +798,14 @@ img.home_banner {
   width: 940px;
   height: 483px;
 }
+.index_banner_headline {
+  float: left;
+  height: 27px;
+  padding-top: 13px;
+  color: #666;
+  text-align: right;
+  margin-left: 100px;
+}
 .index_banner_nav {
   background: transparent url('../images/banners/index_banner_nav/new/banner_nav_bg2.png') no-repeat;
   bottom:17px;

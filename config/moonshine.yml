@@ -9,7 +9,7 @@
   - stage.hcinsight.com
 
 :repository: git@github.com:electricgraffitti/hci_hci.git
-:branch: stage
+:branch: new_index_banners
 
 # Production Env - **************MAKE SURE TO SWAP THE SPHINX FILE TOO!!!!!
 # :application: hci
