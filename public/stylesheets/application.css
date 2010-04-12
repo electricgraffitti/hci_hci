@@ -17,7 +17,7 @@ html, body {
   overflow: hidden;
 }
 a {
-  color: #0000ff;
+  color: #0088CC;
 }
 .hide_text {
   text-indent: -3000em;
@@ -801,13 +801,17 @@ img.home_banner {
   width: 940px;
   height: 483px;
 }
-.index_banner_headline {
+.index_banner_headline, .index_banner_headline2 {
   float: left;
   height: 27px;
   padding-top: 13px;
   color: #666;
   text-align: right;
   margin-left: 100px;
+}
+.index_banner_headline2 {
+  margin-left: 60px;
+  margin-right: 20px;
 }
 .index_banner_nav {
   background: transparent url('../images/banners/index_banner_nav/new/banner_nav_bg2.png') no-repeat;
@@ -834,6 +838,9 @@ img.home_banner {
 }
 .index_banner_nav ul li.index_banner_li {
 
+}
+.index_nav_solo {
+  margin-left: 200px;
 }
 .nav_header {
   font-size:1.3em;
@@ -1282,6 +1289,41 @@ div.career_banner_image_link a {
 }
 #banner_diamonds .diamond_1.highlight:hover, #banner_diamonds li a span.hover {
   background: url('../images/banners/banner_diamonds/diamond_sprites.png') 0px -110px no-repeat;
+}
+.banner_cta_wrap {
+  position: relative;
+  width: 380px;
+  height: 95px;
+  top: 230px;
+  left: 452px;
+}
+.banner_cta_wrap h3, .banner_cta_wrap p, .banner_cta_wrap .text_link  {
+  float: left;
+  width: 226px;
+  margin-left: 5px;
+}
+.main_link {
+  border:medium none;
+  display:block;
+  float:left;
+  height:95px;
+  margin-right:10px;
+  width:139px;
+}
+.banner_cta_wrap .text_link {
+  text-decoration: none;
+}
+.banner_cta_wrap .text_link:hover {
+  text-decoration: underline;
+}
+.banner_cta_wrap img {
+  -moz-box-shadow:0 1px 2px #666666;
+  -webkit-box-shadow: rgb(102, 102, 102) 0px 1px 2px;
+  background:none repeat scroll 0 0 #EFEFEF;
+  float:left;
+  margin:6px;
+  padding:4px;
+  border:1px solid #DEDEDE;
 }
 .banner_button {
   position: absolute;

@@ -1,17 +1,22 @@
-  <div class="index_banner_nav banner_nav">
-    <div class="index_banner_headline">All About HCI</div>
-    <ul id="index_banner_nav_ul" class="nav_ul navigation">
-      <li class="b_nav1 index_banner_li">
-        <%= link_to(image_tag(banner.banner.url(:nav), :alt => "#{banner.headline}"), '#panel1', :class => "selected active")%>
-      </li>
-      <li class="b_nav2 index_banner_li">
-        <%= link_to(image_tag("../images/banners/index_banner_nav/new/who_small.png"), '#panel2')%>
-      </li>
-      <li class="b_nav3 index_banner_li">
-        <%= link_to(image_tag("../images/banners/index_banner_nav/new/what_small.png"), '#panel3')%>
-      </li>
-      <li class="b_nav4 index_banner_li">
-        <%= link_to(image_tag("../images/banners/index_banner_nav/new/why_small.png"), '#panel4')%>
-      </li>
-    </ul>
-  </div>
+<div class="index_banner_nav banner_nav">
+  <div class="index_banner_headline">All About HCI</div>
+  <ul id="index_banner_nav_ul" class="nav_ul navigation">
+    <li class="b_nav1 index_banner_li">
+      <%= link_to(image_tag(banner.banner.url(:nav), :alt => "#{banner.headline}"), '#panel1', :class => "selected active")%>
+    </li>
+    <li class="b_nav2 index_banner_li">
+      <%= link_to(image_tag("../images/banners/index_banner_nav/new/who_small.png"), '#panel2')%>
+    </li>
+    <li class="b_nav3 index_banner_li">
+      <%= link_to(image_tag("../images/banners/index_banner_nav/new/what_small.png"), '#panel3')%>
+    </li>
+    <li class="b_nav4 index_banner_li">
+      <%= link_to(image_tag("../images/banners/index_banner_nav/new/why_small.png"), '#panel4')%>
+    </li>  
+    <div class="index_banner_headline2">Go Atomic. Get Nucleus</div>
+    <li class="index_banner_li">
+      <%= link_to(image_tag("ads/index_nucleus_nav.png", :alt => "Go Atomic. Get Nucleus"), nucleus_path, :class => "")%>
+    </li>
+  </ul>
+</div>
+

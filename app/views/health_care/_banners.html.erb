@@ -2,26 +2,18 @@
   <div class="scroll">
     <div class="scrollContainer">
       <div id="panel1" class="panel">
-        <!-- <% if banner.secondary_banners %>
-          <%= link_to "Experience Nucleus", nucleus_path, :class => "home_panel_icon_link" %>
-        <% end %> -->
+        <%= link_to "Experience Nucleus", "http://www2.hcinsight.com/l/1492/2010-02-02/GDE2L", :class => "home_panel_icon_link" %>
         <h2 class="hide_text"><%= h banner.headline %></h2>
         <p class="hide_text"><%= h banner.content %></p>
-         <%= image_tag(banner.banner.url(:main), :alt => "#{banner.headline}", :class => "home_banner")%>
-         <% unless banner.secondary_banners %>
-           <div class="banner_button button_<%=banner.button_position %> <%=banner.button_color %>_banner_button">
-            <%= link_to "#{banner.button_text}", "#{banner.button_url}", :class => "banner_button_text" %>
-           </div>
-         <% end %>
-         <% if banner.secondary_banners %>
-         <div id="banner_diamonds">
-          <ul>
-            <li class="diamond_1 highlight">
-            <%= link_to "Free Webinar", "http://www2.hcinsight.com/l/1492/2010-02-02/GDE2L", :class => "index_banner_1_link" %>
-            </li>
-          </ul>
-         </div>
-         <% end %>
+        <%= image_tag(banner.banner.url(:main), :alt => "#{banner.headline}", :class => "home_banner")%>
+        
+        <div class="banner_cta_wrap">
+          <%= link_to(image_tag('ads/apple.jpg'), "http://www2.hcinsight.com/l/1492/2010-02-02/GDE2L", :class => "main_link") %>
+          <h3><b>Get Educated.</b></h3>
+          <p>Attend our &quot;Showcase Webinars&quot; to learn about our new and innovative services.</p>
+          <%= link_to "Learn More", "http://www2.hcinsight.com/l/1492/2010-02-02/GDE2L", :class => "text_link" %>
+        </div>
+        
       </div>
       <div id="panel2" class="panel">
         <%= link_to "Experience Nucleus", about_path, :class => "home_panel_icon_link" %>
