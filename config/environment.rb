@@ -20,15 +20,15 @@ Rails::Initializer.run do |config|
   # config.gem "sqlite3-ruby", :lib => "sqlite3"
   # config.gem "aws-s3", :lib => "aws/s3"
   # config.gem 'RedCloth', :version => ">= 4.1.1", :source => "http://code.whytheluckystiff.net"
-    config.gem "authlogic"
+    # config.gem "authlogic"
   # config.gem 'bullet', :source => 'http://gemcutter.org'
-    config.gem 'will_paginate', :version => '~> 2.3.11', :source => 'http://gemcutter.org'
+    # config.gem 'will_paginate', :version => '~> 2.3.11', :source => 'http://gemcutter.org'
   # config.gem "active_youtube"
-    config.gem(
-      'thinking-sphinx',
-      :lib     => 'thinking_sphinx',
-      :version => '1.3.14'
-    )
+    # config.gem(
+    #   'thinking-sphinx',
+    #   :lib     => 'thinking_sphinx',
+    #   :version => '1.3.14'
+    # )
     
   # Only load the plugins named here, in the order given (default is alphabetical).
   # :all can be used as a placeholder for all plugins not explicitly named
@@ -52,7 +52,7 @@ end
 # require for pagination
 require 'will_paginate'
 require 'authlogic'
-require 'hpricot'
+# require 'hpricot'
 require 'RedCloth'
 # require 'lib/connection.rb'
 # require 'youtube_g'

@@ -28,4 +28,4 @@ config.action_view.cache_template_loading            = true
 # config.threadsafe!
 
 # the url of the site for the specific environment
-SITE_URL = "stage.hcinsight.com"
+SITE_URL = "www.hcinsight.com"
