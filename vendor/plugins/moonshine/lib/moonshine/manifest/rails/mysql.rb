@@ -10,8 +10,10 @@ module Moonshine::Manifest::Rails::Mysql
       package('mysql-server'),
       package('mysql')
     ]
-    #ensure the mysql key is present on the configuration hash
+
+    # ensure the mysql key is present on the configuration hash
     configure(:mysql => {})
+
     file '/etc/mysql', :ensure => :directory
     file '/etc/mysql/conf.d', :ensure => :directory
     file '/etc/mysql/conf.d/innodb.cnf',
@@ -38,7 +40,7 @@ module Moonshine::Manifest::Rails::Mysql
 GRANT ALL PRIVILEGES 
 ON #{database_environment[:database]}.*
 TO #{database_environment[:username]}@localhost
-IDENTIFIED BY '#{database_environment[:password]}';
+IDENTIFIED BY \\"#{database_environment[:password]}\\";
 FLUSH PRIVILEGES;
 EOF
 
@@ -73,7 +75,7 @@ private
 
   # Internal helper to shell out and run a query. Doesn't select a database.
   def mysql_query(sql)
-    "/usr/bin/mysql -u root -p -e \"#{sql}\""
+    "su -c \'/usr/bin/mysql -u root -e \"#{sql}\"\'"
   end
 
 end
