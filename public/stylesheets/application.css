@@ -851,7 +851,7 @@ img.home_banner {
   position: relative;
   width: 77px;
   height: 40px;
-  text-indent: -3000em;
+ /* text-indent: -3000em;*/
   display: block;
 }
 .index_banner_nav ul li a span.hover {
