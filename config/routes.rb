@@ -1,5 +1,7 @@
   # The priority is based upon order of creation: first created -> highest priority.
 ActionController::Routing::Routes.draw do |map|
+  map.resources :tutorial_videos
+
 
   map.resources :students
   map.resources :student_sessions
@@ -112,6 +114,7 @@ ActionController::Routing::Routes.draw do |map|
   map.oldservices "Services.html", :controller => "health_care", :action => "OldServices"
   map.rcost_reduction "cost-reduction", :controller => "redirects", :action => "cost_reduction"
   map.rfraud_prevention "fraud-prevention", :controller => "redirects", :action => "fraud_software"
+  map.ahip_postcard "AHIP", :controller => "redirects", :action => "ahip_postcard"
   
   map.home "health-care", :controller => "health_care", :action => "index"
   map.root :controller => "health_care", :action => "index"

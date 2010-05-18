@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100324193232) do
+ActiveRecord::Schema.define(:version => 20100518194806) do
 
   create_table "advertisements", :force => true do |t|
     t.string   "title"
@@ -428,6 +428,22 @@ ActiveRecord::Schema.define(:version => 20100324193232) do
 
   add_index "tickets", ["priority_id"], :name => "index_tickets_on_priority_id"
   add_index "tickets", ["ticket_status_id"], :name => "index_tickets_on_ticket_status_id"
+
+  create_table "tutorial_videos", :force => true do |t|
+    t.string   "title"
+    t.text     "description"
+    t.string   "permalink"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "tutorial_video_file_name"
+    t.string   "tutorial_video_content_type"
+    t.integer  "tutorial_video_file_size"
+    t.datetime "tutorial_video_updated_at"
+    t.string   "tutorial_video_thumb_file_name"
+    t.string   "tutorial_video_thumb_content_type"
+    t.integer  "tutorial_video_thumb_file_size"
+    t.datetime "tutorial_video_thumb_updated_at"
+  end
 
   create_table "uni_resources", :force => true do |t|
     t.string   "title"

@@ -1,0 +1,24 @@
+<h1>Listing tutorial_videos</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Description</th>
+    <th>Permalink</th>
+  </tr>
+
+<% @tutorial_videos.each do |tutorial_video| %>
+  <tr>
+    <td><%=h tutorial_video.title %></td>
+    <td><%=h tutorial_video.description %></td>
+    <td><%=h tutorial_video.permalink %></td>
+    <td><%= link_to 'Show', tutorial_video %></td>
+    <td><%= link_to 'Edit', edit_tutorial_video_path(tutorial_video) %></td>
+    <td><%= link_to 'Destroy', tutorial_video, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New tutorial_video', new_tutorial_video_path %>
