@@ -52,7 +52,7 @@ end
 # require for pagination
 require 'will_paginate'
 require 'authlogic'
-require 'hpricot'
+# require 'hpricot'
 require 'RedCloth'
 # require 'lib/connection.rb'
 # require 'youtube_g'
