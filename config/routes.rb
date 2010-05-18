@@ -1,8 +1,8 @@
   # The priority is based upon order of creation: first created -> highest priority.
 ActionController::Routing::Routes.draw do |map|
+
+
   map.resources :tutorial_videos
-
-
   map.resources :students
   map.resources :student_sessions
   map.resources :advertisements

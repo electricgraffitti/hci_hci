@@ -1,26 +1,26 @@
 :ruby: ree
 
 # Stage Env
-:application: stage_hci
+# :application: stage_hci
+# :user: rails
+# :deploy_to: /var/www/apps/stage_hci
+# :domain: stage.hcinsight.com
+# :domain_aliases:
+#   - stage.hcinsight.com
+# 
+# :repository: git@github.com:electricgraffitti/hci_hci.git
+# :branch: new_index_banners
+
+# Production Env - **************MAKE SURE TO SWAP THE SPHINX FILE TOO!!!!!
+:application: hci
 :user: rails
-:deploy_to: /var/www/apps/stage_hci
-:domain: stage.hcinsight.com
+:deploy_to: /var/www/apps/hci
+:domain: hcinsight.com
 :domain_aliases:
-  - stage.hcinsight.com
+  - www.hcinsight.com
 
 :repository: git@github.com:electricgraffitti/hci_hci.git
 :branch: new_index_banners
-
-# Production Env - **************MAKE SURE TO SWAP THE SPHINX FILE TOO!!!!!
-# :application: hci
-# :user: rails
-# :deploy_to: /var/www/apps/hci
-# :domain: hcinsight.com
-# :domain_aliases:
-#   - www.hcinsight.com
-# 
-# :repository: git@github.com:electricgraffitti/hci_hci.git
-# :branch: master
 
 # Use :app_symlinks to setup directories under public/ that you want to persist
 # across deployments. They'll be symlinked to the shared directory.
