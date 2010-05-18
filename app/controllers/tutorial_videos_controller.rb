@@ -1,12 +1,17 @@
 class TutorialVideosController < ApplicationController
+  
+  before_filter :require_user, :except => [:index, :show]
+  
   # GET /tutorial_videos
   # GET /tutorial_videos.xml
   def index
-    @tutorial_videos = TutorialVideo.all
-
+    @tutorial_videos = TutorialVideo.list(5, params[:page])
+    @press_releases = Article.type('press_release').small_list(5)
+    @events = Event.upcoming_events.small_list(1).last_created
+    @advertisements = Advertisement.current_list.small_list(2).order_list
     respond_to do |format|
       format.html # index.html.erb
-      format.xml  { render :xml => @tutorial_videos }
+      format.xml  { render :xml => @videos }
     end
   end
 
@@ -27,7 +32,7 @@ class TutorialVideosController < ApplicationController
     @tutorial_video = TutorialVideo.new
 
     respond_to do |format|
-      format.html # new.html.erb
+      format.html { render :layout => "admin" }
       format.xml  { render :xml => @tutorial_video }
     end
   end
@@ -35,6 +40,10 @@ class TutorialVideosController < ApplicationController
   # GET /tutorial_videos/1/edit
   def edit
     @tutorial_video = TutorialVideo.find(params[:id])
+    
+    respond_to do |format|
+      format.html { render :layout => "admin" }
+    end
   end
 
   # POST /tutorial_videos
@@ -45,7 +54,7 @@ class TutorialVideosController < ApplicationController
     respond_to do |format|
       if @tutorial_video.save
         flash[:notice] = 'TutorialVideo was successfully created.'
-        format.html { redirect_to(@tutorial_video) }
+        format.html { redirect_to admin_tutorial_videos_path }
         format.xml  { render :xml => @tutorial_video, :status => :created, :location => @tutorial_video }
       else
         format.html { render :action => "new" }
@@ -62,7 +71,7 @@ class TutorialVideosController < ApplicationController
     respond_to do |format|
       if @tutorial_video.update_attributes(params[:tutorial_video])
         flash[:notice] = 'TutorialVideo was successfully updated.'
-        format.html { redirect_to(@tutorial_video) }
+        format.html { redirect_to admin_tutorial_videos_path }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }

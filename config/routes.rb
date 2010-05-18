@@ -50,6 +50,7 @@ ActionController::Routing::Routes.draw do |map|
   map.admin_articles "hci-articles", :controller => "users", :action => "admin_articles"
   map.admin_events "hci-events", :controller => "users", :action => "admin_events"
   map.admin_videos "hci-videos", :controller => "users", :action => "admin_videos"
+  map.admin_tutorial_videos "hci-tutorial-videos", :controller => "users", :action => "admin_tutorial_videos"
   map.admin_documents "hci-documents", :controller => "users", :action => "admin_documents"
   map.admin_banners "hci-banners", :controller => "users", :action => "admin_banners"
   map.admin_ads "hci-advertisements", :controller => "users", :action => "admin_ads"
@@ -116,6 +117,9 @@ ActionController::Routing::Routes.draw do |map|
   map.rfraud_prevention "fraud-prevention", :controller => "redirects", :action => "fraud_software"
   map.ahip_postcard "AHIP", :controller => "redirects", :action => "ahip_postcard"
   map.ahip_postcard_2 "ahip", :controller => "redirects", :action => "ahip_postcard"
+  map.release_49 "49_Release_Tutorial.html", :controller => "tutorial_videos", :action => "index"
+  map.release_51 "51_Release_Tutorial.html", :controller => "tutorial_videos", :action => "index"
+  map.release_52 "52_Release_Tutorial.html", :controller => "tutorial_videos", :action => "index"
   
   map.home "health-care", :controller => "health_care", :action => "index"
   map.root :controller => "health_care", :action => "index"

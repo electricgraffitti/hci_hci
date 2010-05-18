@@ -104,6 +104,10 @@ class UsersController < ApplicationController
     @videos = Video.all :include => [:video_type]
   end
   
+  def admin_tutorial_videos
+    @tutorial_videos = TutorialVideo.all
+  end
+  
   def admin_documents
     @documents = Document.all :include => [:document_type]
   end

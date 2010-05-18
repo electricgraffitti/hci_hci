@@ -9,7 +9,7 @@ class RedirectsController < ApplicationController
   end
   
   def ahip_postcard
-    redirect_to "http://www2.hcinsight.com/l/1492/2010-05-12/H0SJ7"
+    redirect_to "http://www2.hcinsight.com/l/1492/2010-05-18/H4NLB"
   end
   
 end

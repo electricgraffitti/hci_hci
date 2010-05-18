@@ -1,24 +1,26 @@
-<h1>Listing tutorial_videos</h1>
+<% page_title "Health Care Tutorial Videos "%>
+<% meta_keywords("health care fraud prevention videos, health care fraud videos, fraud awareness videos")%>
+<% meta_description("Health Care tutorial videos for HealthCare Insight Fraud Detection Software Systems") %>
 
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Description</th>
-    <th>Permalink</th>
-  </tr>
-
-<% @tutorial_videos.each do |tutorial_video| %>
-  <tr>
-    <td><%=h tutorial_video.title %></td>
-    <td><%=h tutorial_video.description %></td>
-    <td><%=h tutorial_video.permalink %></td>
-    <td><%= link_to 'Show', tutorial_video %></td>
-    <td><%= link_to 'Edit', edit_tutorial_video_path(tutorial_video) %></td>
-    <td><%= link_to 'Destroy', tutorial_video, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
+<% content_for :banner do %>
+  <%= render :partial => "tutorial_videos/banner" %>
 <% end %>
-</table>
 
-<br />
-
-<%= link_to 'New tutorial_video', new_tutorial_video_path %>
+<!-- Render Helper Module Here -->
+<div class="grid_8 top_10_wrap">
+  <h3 class="orange">Tutorial Videos</h3>
+  <div id="video_playlist"> 
+  <%= render :partial => "tutorial_videos/index_video", :locals => {:videos => @tutorial_videos} %>
+  </div>
+  <!-- element that is overlayed, visuals are done with external CSS --> 
+</div>
+<div class="grid_4 alpha omega right top_10_wrap">
+  <%= render :partial => 'resources/resource_press_releases', :locals => {:objects => @press_releases} %>
+  <%= render :partial => 'events/events_list', :locals => {:objects => @events} %>
+  <%= render :partial => 'articles/current_ad', :locals => {:ads => @advertisements} %>
+</div>
+<div id="video_div" class="overlay">
+    <!-- flowplayer container --> 
+    <div id="player"></div>
+</div>
+<%= javascript_include_tag 'index_videos' %>
