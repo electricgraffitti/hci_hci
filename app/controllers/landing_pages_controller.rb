@@ -8,4 +8,8 @@ class LandingPagesController < ApplicationController
     @button_text = "Get Thought Paper"
   end
   
+  def ahip_25_thank_you
+    
+  end
+  
 end

@@ -68,6 +68,7 @@ ActionController::Routing::Routes.draw do |map|
   map.ahip_march22 "ahip-win-a-free-ipod-nano-2", :controller => "free_trials", :action => "ahip_march22"
   map.cra_landing "cra_landing", :controller => "landing_pages", :action => "cra_landing"
   map.ahip_0406 "what-keeps-your-ceo-up-at-night", :controller => "landing_pages", :action => "ceo_up_landing"
+  map.ahip_0525 "thank-you-for-registering-for-our-10-for-10", :controller => "landing_pages", :action => "ahip_25_thank_you"
   
   # Custom Named Routes
   map.issuu_upload "upload-issuu", :controller => "issuu_uploads", :action => "index"

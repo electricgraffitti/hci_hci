@@ -1118,6 +1118,9 @@ img.inner_banner {
   position: relative;
   background: url('../images/banners/inner_banners/contact_us_big.png') no-repeat;
 }
+.ahip25_thank_you {
+  background: url('../images/banners/inner_banners/ahip25_thank_you.jpg') no-repeat;
+}
 .nucleus_banner {
   background: url('../images/banners/inner_banners/nucleus_banner_bg.jpg') no-repeat;
 }
@@ -2474,6 +2477,11 @@ div.bene_even_row .benefit_avatar_wrap {
 .bene13 {
   background: url('../images/benefit_grid_images.jpg') 0px -2280px no-repeat;
 }
+#landing4 .benefit_avatar_wrap {
+  width: 183px;
+  height: 120px;
+  margin: 0px 20px;
+}
 p.benefits_sub_text, p.partners_sub_text, p.industry_sub_text {
   float:left;
   font-size:145%;
@@ -3047,6 +3055,31 @@ div.nucleus_form_wrap .nucleus_submit {
 .show_ad {
   float: left;
   padding-left: 20px;
+}
+.landing_sub_box {
+  position: relative;
+  float: left;
+	margin: 0px;
+  border-top: 1px solid #d0d0d0;
+  border-right: 1px solid #f0f0f0;
+  border-bottom: 1px solid #d0d0d0;
+  border-left: 1px solid #d0d0d0;
+  background: #fff url('../images/apple_index_box_bg.png') repeat-x;
+}
+#landing4 .landing_sub_box {
+  width: 203px;
+  height: 250px;
+  padding: 10px 15px 0px;
+}
+.landing_sub_box h3 {
+  font-size: 155%;
+}
+.landing_sub_box p {
+  
+}
+.landing_sub_content {
+  float: left;
+  padding: 20px;
 }
 .apple_box_headers {
   margin: 0 auto;
