@@ -56,12 +56,15 @@ ActionController::Routing::Routes.draw do |map|
   map.webinar_thank_you "thank-you-for-registering", :controller => "free_trials", :action => "webinar_thank_you"
   map.ahip_ipod "thank-you-for-registering-for-your-free-ipod", :controller => "free_trials", :action => "ahip_nano_thank_you"
   map.ahip_ipod2 "thank-you-for-registering-for-your-free-ipod2", :controller => "free_trials", :action => "ahip_nano_thank_you2"
+  map.ahip_ceo "ceo-up-at-night-thank-you", :controller => "free_trials", :action => "ceo_up_at_night"
   map.landing "landing_page_test", :controller => "health_care", :action => "landing_page"
   map.executive_summit "healthcare-insight-executive-summit", :controller => "free_trials", :action => "executive_summit"
   map.free_webinar "healthcare-insight-free-webinar", :controller => "free_trials", :action => "free_webinar"
   map.fci_webinar "healthcare-insight-webinar-series-fci", :controller => "free_trials", :action => "fci_webinar"
   map.ahip_march "ahip-win-a-free-ipod-nano", :controller => "free_trials", :action => "ahip_march"
   map.ahip_march22 "ahip-win-a-free-ipod-nano-2", :controller => "free_trials", :action => "ahip_march22"
+  map.cra_landing "cra_landing", :controller => "landing_pages", :action => "cra_landing"
+  map.ahip_0406 "what-keeps-your-ceo-up-at-night", :controller => "landing_pages", :action => "ceo_up_landing"
   
   # Custom Named Routes
   map.issuu_upload "upload-issuu", :controller => "issuu_uploads", :action => "index"

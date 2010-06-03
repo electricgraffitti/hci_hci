@@ -1089,6 +1089,9 @@ img.inner_banner {
 .contact_thank_you {
   background: url('../images/banners/inner_banners/thank_you_big.jpg') no-repeat;
 }
+.ceo_up_at_night {
+  background: url('../images/banners/inner_banners/ceo_up_at_night_thank_you_banner.jpg') no-repeat;
+}
 .ahip_thank_you {
   background: url('../images/banners/inner_banners/thank_you_ahip.jpg') no-repeat;
 }
@@ -1242,10 +1245,10 @@ div.career_banner_image_link a {
   left: 0px;
 }
 .diamond_1 {
-  position:relative;
+  position:absolute;
   width:110px;
   height:110px;
-  bottom:188px;
+  bottom:74px;
   left:43px;
   background: url('../images/banners/banner_diamonds/diamond_sprites.png') 0px 0px no-repeat;
 }
@@ -3105,9 +3108,10 @@ ul.cube_crossfade li {
 /*********************************************/
 /******************ISSUU*********************/
 #issuu_frame, #issuu_frame iframe {
-  height:480px;
+  border:medium none;
+  height:483px;
   margin-left:7px;
-  width:922px;
+  width:926px;
 }
 /*********************************************/
 /******************VIDEOS*********************/
@@ -3405,7 +3409,7 @@ input#search {
   background: #000;
 }
 #footer_wrap {
-  min-height: 195px;
+  float:left;
 }
 #footer_tags {
   position: absolute;
@@ -3415,17 +3419,19 @@ input#search {
 }
 #footer_tags a {
   position: relative;
-  float: left;
+  left: 0px;
 }
 .pay_right_footer {
   position: relative;
   float: right;
 }
 #footer_links {
+  position: relative;
+  float: left;
+  width: 520px;
+  height: 85px;
   margin: 10px;
-/*  width: 54%;
-  height: 50%;*/
-  float: right;
+  padding-left: 30px;
 }
 #footer_links a, #employee_login a {
   color: #777;
@@ -3441,38 +3447,37 @@ input#search {
 /*  margin: 0px 50px 0px 0px;*/
 }
 #footer_links li {
-  list-style: disc;
+  list-style: disc inside none;
 }
 #footer_links h4 {
-  margin-left: -12px;
   margin-bottom: 5px;
   color: #fff;
 }
 #footer_logo {
-  position: absolute;
-  bottom: 45px;
+  position: relative;
+  float: left;
   background: #000 url('../images/HCI_white_footer_logo.png') 10px 0px no-repeat;
   width: 100%;
   height: 50px;
 }
-div.newsletter_signup {
-  float:right;
-  margin-right:20px;
-  position:relative;
+#footer_stripe {
+  position: relative;
+  float:left;
+  height: 7px;
+  background: #fff;
+  margin-bottom: 2px;
 }
-div.newsletter_form {
-  color: #fff;
-  margin-top: 5px;
-}
-div.newsletter_form input[type='submit'] {
-  margin-top: 12px;
-  margin-left: 10px;
+div#social_links_wrap {
+  position: relative;
+  float: left;
+  width: 350px;
+  height: 85px;
+  margin: 10px;
 }
 ul#social_links {
   position: relative;
   float: left;
   height: 30px;
-  margin-top: 10px;
 }
 ul#social_links li, ul#social_links li.top_nav_wide {
   display: block;
@@ -3514,30 +3519,22 @@ ul#social_links li a.white {
 #twitter_link {
   background:  url('../images/social_icons/social_icons.png') -120px -30px no-repeat;
 }
-#footer_stripe {
-  position: absolute;
-  bottom: -15px;
-  min-height: 7px;
-  background: #fff;
-}
-#employee_login {
-  position: absolute;
-  bottom: 25px;
-  right: 25px;
-}
-ul.login {
-  background:transparent url(../images/login_keyhole.png) no-repeat scroll 0 0;
-  bottom:-52px;
-  height:30px;
-  position:absolute;
-  right:-5px;
-  width:30px;
-}
-ul.login a {
-  display: block;
-  text-indent: -3000em;
-  width: 30px;
+#footer_tags {
+  position: relative;
+  float: left;
+  width: 100%;
   height: 30px;
+}
+#footer_tags a {
+  position: relative;
+  float: left;
+}
+.pay_right_footer {
+  position: relative;
+  float: right;
+  width: 139px;
+  height: 30px;
+  margin-right: 5px;
 }
 #verisk_footer {
   position: relative;
@@ -3548,6 +3545,31 @@ ul.login a {
   position: relative;
   float: right;
   margin: 16px;
+}
+#employee_login {
+  position: relative;
+  float: left;
+  margin-left: 10px;
+}
+ul.login {
+  background:transparent url("../images/login_keyhole.png") 3px 6px no-repeat;
+  height:30px;
+  position:relative;
+  float:right;
+  width:30px;
+  text-align: center;
+}
+ul.login li {
+  position: relative;
+  float: right;
+  width: 30px;
+  height: 30px;
+}
+ul.login a#login_link {
+  display: block;
+  text-indent: -3000em;
+  width: 30px;
+  height: 30px;
 }
 /****************************************/
 /**************DATATABLES****************/

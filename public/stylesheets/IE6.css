@@ -234,7 +234,10 @@ div.profile p {
 img.banner_scroll.r, img.banner_scroll.l {
   visibility: hidden;
 }
-#ft {
+a.banner_button_text {
+  margin:18px 0 0 0px;
+}
+/*#ft {
   float: left;
 }
 #footer_links {
@@ -259,6 +262,11 @@ img.banner_scroll.r, img.banner_scroll.l {
   right: -3px;
   bottom: -59px;
 }
+#footer_tags {
+  position: absolute;
+  float: left;
+  bottom: -2px;
+}
 .newsletter_signup {
   position: relative;
   margin-right: 20px;
@@ -276,5 +284,5 @@ img.banner_scroll.r, img.banner_scroll.l {
 #social_links {
   float: left;
 }
-
+*/
 

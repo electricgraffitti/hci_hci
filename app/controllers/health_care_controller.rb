@@ -21,7 +21,12 @@ class HealthCareController < ApplicationController
   def landing_page
     respond_to do |format|
       format.html { render :layout => "landing"}
-      format.xml  { render :xml => @events }
+    end
+  end
+  
+  def landing_page2
+    respond_to do |format|
+      format.html { render :layout => "landing_pages"}
     end
   end
   

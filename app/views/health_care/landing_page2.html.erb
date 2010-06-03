@@ -1,0 +1,42 @@
+<% content_for :banner do %>
+  <div class="big_banner">
+    <h2 class="text_indent">Join us for a free webinar.</h2>
+    <div class="executive_banner_text_wrap">
+      <h3>Get a Free Trial and Data Analysis.</h3>
+      <p>
+       Take the first step towards claims payment harmony. Just submit the form below to test drive Nucleus and get a no strings attached Cost Reduction Analysis (CRA) report.
+      </p>
+    </div>
+    <%= render :partial => 'free_trials/free_webinar_form' %>
+  </div>
+<% end %>
+<div class="service_wrap">
+  <div class="index_service_wrap contact_location">
+    <h2 class="orange">Upcoming Webinars</h2>
+    <p>
+      FacilityClaim Insight<sup>&reg;</sup><br/>
+      DentalClaim Insight<sup>&reg;</sup><br/>
+      PhysicianClaim Insight<sup>&reg;</sup><br/>
+    </p>
+  </div>
+  <div class="index_service_wrap contact_location">
+    <%= image_tag("landing_pages/darin_speaker.png", :class => "left", :alt => "Darin Johnson - Speaker")%>
+    <div class="featured_speaker_wrap">
+      <h2 class="orange">Webinar Host</h2>
+      <p>
+        Darin Johnson will be touching on some of the newest services available to you from HCI.
+      </p>
+    </div>
+  </div>
+  <div class="index_service_wrap contact_location">
+    <div id="pay_right_landing">
+      <%= link_to(image_tag("pay_right_landing.png", :alt => "HealthCare Insight Pay Right Save Money"), "http://www.hcinsight.com", :target => "_blank")%>
+    </div>
+  </div>
+</div>
+<%= render :partial => "health_care/index_quote" %>
+<div class="grid_12 alpha omega top_20_wrap">
+  <div class="physicianclaim-insight_service_top_stripe"></div>
+  <div class="physicianclaim-insight_service_bottom_stripe">
+    <div class="physicianclaim-insight_stripe_icon"></div>
+  </div>

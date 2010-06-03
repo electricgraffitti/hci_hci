@@ -111,9 +111,6 @@ input#service_inquiry_submit {
 .who_image {
 	right: 0px;
 }
-.job_board {
-  width: 880px;
-}
 .apply_here_link {
   height: 120px;
   overflow: hidden;
@@ -171,7 +168,16 @@ div.index_video_listing {
 div.index_video_listing h3 {
   width: 425px;
 }
-
+#landing4 .landing_sub_box {
+  width: 235px;
+  height: 255px;
+  padding: 10px 15px 0px;
+}
+/*.landing_submit {
+  position: relative;
+  float: right;
+  margin: 10px 15px 0px 0px;
+}*/
 div.profile p {
   margin-right: 0px;
 }
@@ -259,47 +265,8 @@ img.banner_scroll.r, img.banner_scroll.l {
 .index_banner_nav {
   right: -10px;
 }
-#ft {
-  float: left;
-}
-#footer_links {
-  position: relative;
-  float: right;
-  height: 125px;
-}
-#footer_wrap {
-  height: 195px;
-}
-#footer_logo {
-  position: relative;
-  float: left;
-}
-#footer_stripe {
-  position: relative;
-  float: left;
-  top: 50px;
-}
-#footer_logo ul.login {
-  position: relative;
-  right: -3px;
-  bottom: -59px;
-}
-.newsletter_signup {
-  position: relative;
-  margin-right: 20px;
-}
-.newsletter_form {
-  position: relative;
-}
-#footer_links ul h4{
- margin-left: 0px;
-}
-#newsletter_subscription_submit {
-  margin-top: 15px;
-  margin-left: 5px;
-}
-#social_links {
-  float: left;
+a.banner_button_text {
+  margin:18px 0 0 0px;
 }
 .search_btn_green, .search_btn_black {
   text-align:center;
@@ -312,6 +279,7 @@ img.banner_scroll.r, img.banner_scroll.l {
   background: url('../images/green_button.jpg') 0px 0px repeat-x;
   cursor: pointer;
   margin-left: 5px;
+  padding: 4px 4px;
 }
 .search_btn_black {
   background: url('../images/black_button.png') 0px 0px repeat-x;
@@ -319,4 +287,6 @@ img.banner_scroll.r, img.banner_scroll.l {
 input#search {
   padding: 4px 4px;
 }
-
+#footer_links {
+  width: 550px;
+}

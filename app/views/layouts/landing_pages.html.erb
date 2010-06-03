@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title><%= h(yield(:title) || "Welcome") %> | HealthCare Insight</title>
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta name="description" content="Elevate your claims payment accuracy, identify fraudulent providers and decrease your claims costs with out free Cost Reduction Analysis.
+">
+<meta name="keywords" content="health care claims fradulent reduction, health care fraud cost reduction analysis">
+<meta name="copyright" content="Copyright 2009 HCI an Verisk Health Company">
+<meta name="title" CONTENT="HealthCare Insight">
+<link ref="shortcut icon" href="http://stage.hcinsight.com/services/favicon.ico"   type="image/ico" />
+<link href="http://stage.hcinsight.com/landing_page_stylesheets/landing.css" media="screen" rel="stylesheet" type="text/css" />
+<%#= stylesheet_link_tag "/landing_page_stylesheets/landing" %>
+
+<!--[if IE ]>
+  <link rel="stylesheet" type="text/css" href="http://stage.hcinsight.com/landing_page_stylesheets/IE_landing.css" />
+<![endif]-->
+
+<script src="http://stage.hcinsight.com/landing_page_stylesheets/all.js" type="text/javascript"></script>
+
+</head>
+<body class="yui-skin-sam">
+  <!-- Application Layout -->
+  <div id="wrapper" class="container_12">
+	  <div id="hd" class='grid_12 alpha omega'>
+      <a href="http://www.hcinsight.com/"><h1 id='hci_logo'>Health Care Insight</h1></a>
+      <a id="top_verisk_logo" href="http://www.veriskhealth.com">
+        <img id="search_button" alt="Verisk Logo" src="http://stage.hcinsight.com/images/verisk_logo_top.png" />
+      </a>
+      <div id="top_link_wrap">
+        <div id="top_links">
+          <ul>
+            <li class="first">
+              <div id="search_box_wrap" class="content_wrap right">
+                <form action="http://www2.hcinsight.com/s/1492/ecd49b6c89fda642946b7a6c5de4198c" method="get">
+                  <input id="search" name="search" type="text" />
+                  <input title="Search HealthCare Insight" type="submit" value="Search" class="search_btn_black" />
+                </form>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="main_nav" class="grid_12 alpha omega">
+        <ul id="main_nav_ul" class="nav_ul">
+          <li class="main_nav_li nav1 highlight"><a href="http://www.hcinsight.com/health-care" class="main_nav_a" id="home">Home</a></li>
+          <li class="main_nav_li nav2 highlight"><a href="http://www.hcinsight.com/services" class="main_nav_a" id="services">Services</a></li>
+          <li class="main_nav_li nav3 highlight"><a href="http://www.hcinsight.com/benefits" class="main_nav_a" id="benefits">Benefits</a></li>
+          <li class="main_nav_li nav4 highlight"><a href="http://www.hcinsight.com/heatlhcare-insight-markets" class="main_nav_a" id="markets">Markets</a></li>
+          <li class="main_nav_li nav5 highlight"><a href="http://www.hcinsight.com/health-care-resources" class="main_nav_a" id="resources">Resources</a></li>
+          <li class="main_nav_li nav6 highlight"><a href="http://www.hcinsight.com/nucleus" class="main_nav_a" id="nucleus">Meet Nucleus</a></li>
+          <li class="main_nav_li nav7 highlight"><a href="#" class="main_nav_a" id="free_trial">Free Trial</a></li>
+          <li class="main_nav_li nav8 highlight"><a href="http://www.hcinsight.com/about-healthcare-insight" class="main_nav_a" id="about_us">About Us</a></li>
+          <li class="main_nav_li nav9 highlight last"><a href="http://www.hcinsight.com/contact-healthcare-insight" class="main_nav_a" id="contact">Contact</a></li>
+        </ul>
+      </div>
+	  </div>
+    <!-- End Header -->
+    
+    <!-- Start Main Area -->
+    
+    <!-- banner -->
+    <div id="bd" class="grid_12 alpha omega">
+      <div id="banner" class="grid_12 alpha omega">
+        <%= yield :banner %>
+      </div>
+    </div>
+    <!-- end banner -->
+    
+    <!-- Main Content -->
+    <div class="main_content grid_12 alpha omega">
+      <%= yield %>
+    </div>
+    <!-- end Main -->
+    
+    <!-- Footer -->
+    <div id="ft" class="grid_12 alpha omega">
+      <div id="footer_wrap" class="grid_12 alpha omega relative">
+        
+        <div id="social_links_wrap">
+          <ul id="social_links">
+            <li><a href="http://www.facebook.com/pages/Stop-Health-Care-Fraud/105583130933" id="facebook_link">Facebook</a></li>
+            <li><a href="http://www.youtube.com/user/HCInsight" id="youtube_link">YouTube</a></li>
+            <li><a href="http://www.linkedin.com/groups?gid=1426647" id="linkedin_link">LinkedIn</a></li>
+            <li><a href="http://www.stophealthcarefraud.com" id="shcf_link">StopHealthCareFraud</a></li>
+            <li><a href="http://twitter.com/StopHealthFraud" id="twitter_link">Twitter</a></li>
+          </ul>
+        </div>
+        
+        <div id="footer_links">
+          <ul>
+            <h4>Company</h4>
+            <li><a href="http://www.hcinsight.com/about-healthcare-insight">About Us</a></li>
+            <li><a href="http://www.hcinsight.com/healthcare-insight-careers">Careers</a></li>
+            <li><a href="http://www.hcinsight.com/healthcare-insight-partners">Partners</a></li>
+            <li><a href="http://www.hcinsight.com/healthcare-insight-accreditations">Accreditations</a></li>
+          </ul>
+          <ul>
+            <h4>Learn More</h4>
+            <li><a href="http://www.hcinsight.com/services">Services</a></li>
+            <li><a href="http://www.hcinsight.com/health-care-resources">Resources</a></li>
+            <li><a href="http://www.hcinsight.com/nucleus">Meet Nucleus</a></li>
+            <li><a href="">Free Trial</a></li>
+          </ul>
+          <ul>
+            <h4>Legal</h4>
+            <li><a href="http://www.hcinsight.com/healthcare-insight-privacy-policy-and-disclaimers">Privacy Policy</a></li>
+            <li><a href="http://www.hcinsight.com/healthcare-insight-privacy-policy-and-disclaimers">Disclaimers</a></li>
+            <li><a href="http://www.hcinsight.com/healthcare-insight-privacy-policy-and-disclaimers">Copyrights</a></li>
+            <li><a href="http://www.hcinsight.com/healthcare-insight-privacy-policy-and-disclaimers">Notices</a></li>
+          </ul>
+          <ul>
+            <h4>Media</h4>
+            <li><a href="http://www.hcinsight.com/healthcare-insight-social-media-links">Social Media</a></li>
+            <li><a href="http://www.hcinsight.com/articles">News</a></li>
+            <li><a href="http://www.hcinsight.com/health-care-resources">Videos</a></li>
+            <li><a href="http://www.hcinsight.com/healthcare-insight-press-kit">Press Kit</a></li>
+          </ul>
+        </div>
+        <div id="footer_logo" class="grid_12 alpha omega"></div>
+        <div id="footer_stripe" class="grid_12 alpha omega"></div>
+        <div id="footer_tags">
+          <%= link_to(image_tag("verisk_footer_link.png", :alt => "Verisk Health"), "http://www.veriskhealth.com") %>
+          <%= image_tag("pay_right_footer.png", :class => "pay_right_footer") %>
+        </div>
+      </div>
+    </div>
+    <div id="verisk_footer" class="grid_12 alpha omega">
+      <a href="http://www.verisk.com/"><img alt="Verisk_logo" id="verisk_logo" src="http://stage.hcinsight.com/images/verisk_logo.png?1260987532" /></a>
+    </div>
+	</div>
+</body>
+</html>
