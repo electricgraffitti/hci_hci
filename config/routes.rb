@@ -69,6 +69,7 @@ ActionController::Routing::Routes.draw do |map|
   map.cra_landing "cra_landing", :controller => "landing_pages", :action => "cra_landing"
   map.ahip_0406 "what-keeps-your-ceo-up-at-night", :controller => "landing_pages", :action => "ceo_up_landing"
   map.ahip_0525 "thank-you-for-registering-for-our-10-for-10", :controller => "landing_pages", :action => "ahip_25_thank_you"
+  map.nadp_0624 "preventing-dental-fraud-download", :controller => "landing_pages", :action => "nadp_0624"
   
   # Custom Named Routes
   map.issuu_upload "upload-issuu", :controller => "issuu_uploads", :action => "index"

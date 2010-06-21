@@ -12,4 +12,8 @@ class LandingPagesController < ApplicationController
     
   end
   
+  def nadp_0624
+    
+  end
+  
 end
