@@ -12,4 +12,8 @@ class RedirectsController < ApplicationController
     redirect_to "http://www2.hcinsight.com/l/1492/2010-05-18/H4NLB"
   end
   
+  def linkedin_webinars
+    redirect_to "http://www2.hcinsight.com/l/1492/2010-06-22/HGH2J"
+  end
+  
 end

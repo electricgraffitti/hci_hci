@@ -70,6 +70,7 @@ ActionController::Routing::Routes.draw do |map|
   map.ahip_0406 "what-keeps-your-ceo-up-at-night", :controller => "landing_pages", :action => "ceo_up_landing"
   map.ahip_0525 "thank-you-for-registering-for-our-10-for-10", :controller => "landing_pages", :action => "ahip_25_thank_you"
   map.nadp_0624 "preventing-dental-fraud-download", :controller => "landing_pages", :action => "nadp_0624"
+  map.claim_saver_thank_you "claim-saver-webinar-thank-you", :controller => "landing_pages", :action => "claim_saver_thank_you"
   
   # Custom Named Routes
   map.issuu_upload "upload-issuu", :controller => "issuu_uploads", :action => "index"
@@ -122,6 +123,7 @@ ActionController::Routing::Routes.draw do |map|
   map.release_49 "49_Release_Tutorial.html", :controller => "tutorial_videos", :action => "index"
   map.release_51 "51_Release_Tutorial.html", :controller => "tutorial_videos", :action => "index"
   map.release_52 "52_Release_Tutorial.html", :controller => "tutorial_videos", :action => "index"
+  map.li_webinars "webinars", :controller => "redirects", :action => "linkedin_webinars"
   
   map.home "health-care", :controller => "health_care", :action => "index"
   map.root :controller => "health_care", :action => "index"

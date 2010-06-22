@@ -13,11 +13,17 @@ class LandingPagesController < ApplicationController
   end
   
   def nadp_0624
-      @advertisements = Advertisement.current_list.small_list(1).order_list
-      respond_to do |format|
+    @advertisements = Advertisement.current_list.small_list(1).order_list
+    respond_to do |format|
       format.html {render :layout => "application"}
     end
-    
+  end
+  
+  def claim_saver_thank_you
+    @advertisements = Advertisement.current_list.small_list(1).order_list
+    respond_to do |format|
+      format.html {render :layout => "application"}
+    end
   end
   
 end
