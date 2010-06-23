@@ -69,6 +69,7 @@ ActionController::Routing::Routes.draw do |map|
   map.cra_landing "cra_landing", :controller => "landing_pages", :action => "cra_landing"
   map.ahip_0406 "what-keeps-your-ceo-up-at-night", :controller => "landing_pages", :action => "ceo_up_landing"
   map.ahip_0525 "thank-you-for-registering-for-our-10-for-10", :controller => "landing_pages", :action => "ahip_25_thank_you"
+  map.ahip_0624 "claim-saver-webinar-thank-you0624", :controller => "landing_pages", :action => "ahip_0624"
   map.nadp_0624 "preventing-dental-fraud-download", :controller => "landing_pages", :action => "nadp_0624"
   map.claim_saver_thank_you "claim-saver-webinar-thank-you", :controller => "landing_pages", :action => "claim_saver_thank_you"
   
