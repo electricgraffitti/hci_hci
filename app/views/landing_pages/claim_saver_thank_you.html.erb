@@ -1,8 +1,3 @@
-<% if params %>
-  <% if params[:campaign] = "ahip0624" %>
-    <%= render :partial => "langing_pages/ahip0624", :locals => {:campaign => params[:campaign] } %>
-  <% end %>
-<% else %>
 <div class="big_banner claim_saver_thank_you">
   <h2 class="text_indent">Thank You</h2>
   <div class="big_banner_content_wrap ahip_thank_you_wrap">
@@ -19,7 +14,7 @@
   </div>
       <%= link_to "", "http://www2.hcinsight.com/l/1492/2010-01-18/G9CRR/1492/66311/HealthCare_Insight__HCI__Service_Brochure.pdf", :class => "big_banner_right_image_link" %> 
 </div>
-<% end %>
+
 <% content_for :sub_boxes do %>
 <h2 class="page_header thank_you_header full_wrap">Check out our other great resources.</h2>
   <%= render :partial => 'health_care/index_sub_boxes' %>
