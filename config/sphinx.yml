@@ -1,18 +1,18 @@
 # Stage
-# production:
-#   config_file: /var/www/apps/stage_hci/shared/config/production.sphinx.conf
-#   searchd_file_path: /var/www/apps/stage_hci/shared/db/sphinx/production
-#   searchd_log_file: /var/www/apps/stage_hci/shared/log/searchd.log
-#   query_log_file: /var/www/apps/stage_hci/shared/log/searchd.query.log
-#   pid_file: /var/www/apps/stage_hci/pids/searchd.production.pid
-#   port: 9312
+production:
+  config_file: /var/www/apps/stage_hci/shared/config/production.sphinx.conf
+  searchd_file_path: /var/www/apps/stage_hci/shared/db/sphinx/production
+  searchd_log_file: /var/www/apps/stage_hci/shared/log/searchd.log
+  query_log_file: /var/www/apps/stage_hci/shared/log/searchd.query.log
+  pid_file: /var/www/apps/stage_hci/pids/searchd.production.pid
+  port: 9312
   
 # Production
-production:
-  config_file: /var/www/apps/hci/shared/config/production.sphinx.conf
-  searchd_file_path: /var/www/apps/hci/shared/db/sphinx/production
-  searchd_log_file: /var/www/apps/hci/shared/log/searchd.log
-  query_log_file: /var/www/apps/hci/shared/log/searchd.query.log
-  pid_file: /var/www/apps/hci/pids/searchd.production.pid
-  port: 9312
- 
+# production:
+#   config_file: /var/www/apps/hci/shared/config/production.sphinx.conf
+#   searchd_file_path: /var/www/apps/hci/shared/db/sphinx/production
+#   searchd_log_file: /var/www/apps/hci/shared/log/searchd.log
+#   query_log_file: /var/www/apps/hci/shared/log/searchd.query.log
+#   pid_file: /var/www/apps/hci/pids/searchd.production.pid
+#   port: 9312
+#  
