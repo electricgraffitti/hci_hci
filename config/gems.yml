@@ -8,5 +8,7 @@
   :name: will_paginate
 - :version: = 1.3.16
   :name: thinking-sphinx
+- :version: 2.3.5
+  :name: rails
 - :version: 2.3.8
   :name: rails
