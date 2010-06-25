@@ -20,7 +20,7 @@
   - www.hcinsight.com
 
 :repository: git@github.com:electricgraffitti/hci_hci.git
-:branch: new_index_banners
+:branch: silverrack_deploy_stage
 
 # Use :app_symlinks to setup directories under public/ that you want to persist
 # across deployments. They'll be symlinked to the shared directory.
@@ -43,6 +43,7 @@
 # to the server: these are files that you don't have/want in scm.
 :local_config:
  - config/database.yml
+ - config/app_config.yml
 #
 # The entries in shared_children are created in #{application}/shared
 :shared_children:
