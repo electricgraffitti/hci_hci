@@ -1,12 +1,12 @@
 --- 
-- :version: ">= 4.1.1"
-  :source: http://code.whytheluckystiff.net
+- :source: http://code.whytheluckystiff.net
+  :version: ">= 4.1.1"
   :name: RedCloth
 - :name: authlogic
-- :version: ~> 2.3.11
-  :source: http://gemcutter.org
+- :source: http://gemcutter.org
+  :version: ~> 2.3.11
   :name: will_paginate
 - :version: = 1.3.16
   :name: thinking-sphinx
-- :version: 2.3.5
+- :version: 2.3.8
   :name: rails
