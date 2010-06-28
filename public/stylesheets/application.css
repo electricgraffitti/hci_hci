@@ -1305,6 +1305,29 @@ div.career_banner_image_link a {
 #banner_diamonds .diamond_1.highlight:hover, #banner_diamonds li a span.hover {
   background: url('../images/banners/banner_diamonds/diamond_sprites.png') 0px -110px no-repeat;
 }
+.claim_saver_button {
+	height:95px;
+	position:absolute;
+	right:-29px;
+	top:361px;
+	width:380px;
+}
+.claim_saver_button a {
+	background:url("../images/black_button.png") repeat-x scroll 0 0 transparent;
+	color:#FFFFFF;
+	display:block;
+	font-size:120%;
+	height:21px;
+	padding:5px;
+	position:relative;
+	text-align:center;
+	text-decoration:none;
+	width:195px;
+}
+.claim_saver_button a:hover {
+	background: url('../images/black_button.png') 0px -30px repeat-x;
+	color: #222;
+}
 .banner_cta_wrap {
   position: relative;
   width: 380px;
