@@ -33,4 +33,11 @@ class LandingPagesController < ApplicationController
     end
   end
   
+  def ahip_survey_follow_up
+    @advertisements = Advertisement.current_list.small_list(1).order_list
+    respond_to do |format|
+      format.html {render :layout => "application"}
+    end
+  end
+  
 end
