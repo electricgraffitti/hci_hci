@@ -1318,25 +1318,23 @@ div.career_banner_image_link a {
 .claim_saver_button {
 	height:95px;
 	position:absolute;
-	right:-29px;
-	top:361px;
+	right:40px;
+	top:350px;
 	width:380px;
 }
 .claim_saver_button a {
-	background:url("../images/black_button.png") repeat-x scroll 0 0 transparent;
-	color:#FFFFFF;
+	background:url("../images/claimsaver_fci_button.png") repeat-x scroll 0 0 transparent;
 	display:block;
 	font-size:120%;
-	height:21px;
-	padding:5px;
+	height:34px;
 	position:relative;
 	text-align:center;
 	text-decoration:none;
-	width:195px;
+	text-indent:-3000em;
+	width:230px;
 }
 .claim_saver_button a:hover {
-	background: url('../images/black_button.png') 0px -30px repeat-x;
-	color: #222;
+	background:url("../images/claimsaver_fci_button.png") repeat-x scroll 0 -35.5px transparent;
 }
 .banner_cta_wrap {
   position: relative;
