@@ -1229,6 +1229,9 @@ div.career_banner_image_link a {
   position:absolute;
   width:335px;
 }
+div.career_banner_text_wrap {
+  bottom: 125px;
+}
 .contact_thank_you_text_wrap {
   width:425px;
 }
