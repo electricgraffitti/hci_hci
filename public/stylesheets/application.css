@@ -1124,6 +1124,9 @@ img.inner_banner {
 .ahip0624_thank_you {
 	background: url('../images/banners/inner_banners/ahip0624_thank_you.jpg') no-repeat;
 }
+.ahip_survey_thank_you {
+	background: url('../images/banners/inner_banners/ahip_survey_thank_you.jpg') no-repeat;
+}
 .nadp0624_thank_you {
   background: url('../images/banners/inner_banners/nadp0624_thank_you.jpg') no-repeat;
 }
@@ -1240,9 +1243,16 @@ div.career_banner_text_wrap {
   bottom: 58px;
 }
 .ahip_thank_you_wrap {
-  bottom:110px;
+  bottom:160px;
   left:86px;
   width:360px;
+}
+.ahip_survey_thank_you_wrap  {
+	font-size:110%;
+	bottom:145px;
+	left:83px;
+	position:absolute;
+	width:335px;
 }
 .ahip_thank_you_wrap .signature {
   width: 250px;
@@ -1307,6 +1317,27 @@ div.career_banner_text_wrap {
 }
 #banner_diamonds .diamond_1.highlight:hover, #banner_diamonds li a span.hover {
   background: url('../images/banners/banner_diamonds/diamond_sprites.png') 0px -110px no-repeat;
+}
+.claim_saver_button {
+	height:95px;
+	position:absolute;
+	right:40px;
+	top:350px;
+	width:380px;
+}
+.claim_saver_button a {
+	background:url("../images/claimsaver_fci_button.png") repeat-x scroll 0 0 transparent;
+	display:block;
+	font-size:120%;
+	height:34px;
+	position:relative;
+	text-align:center;
+	text-decoration:none;
+	text-indent:-3000em;
+	width:230px;
+}
+.claim_saver_button a:hover {
+	background:url("../images/claimsaver_fci_button.png") repeat-x scroll 0 -35.5px transparent;
 }
 .banner_cta_wrap {
   position: relative;
