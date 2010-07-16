@@ -1,0 +1,11 @@
+<div class="big_banner fci_invite_banner">
+  <h2 class="text_indent">ClaimSaver Webinars</h2>
+  <div id="invite_form">
+    <%= render :partial => 'friend_invites/form', :locals => {:button_text => "Send Invite"} %>
+  </div>
+</div>
+
+<% content_for :sub_boxes do %>
+<h2 class="page_header thank_you_header full_wrap">Check out our other great resources.</h2>
+  <%= render :partial => 'health_care/index_sub_boxes' %>
+<% end %>

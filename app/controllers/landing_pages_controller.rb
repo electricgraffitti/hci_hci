@@ -40,4 +40,22 @@ class LandingPagesController < ApplicationController
     end
   end
   
+  def invite_friend
+    @friend_invite = FriendInvite.new
+    @advertisements = Advertisement.current_list.small_list(1).order_list
+    respond_to do |format|
+      format.html {render :layout => "application"}
+    end
+  end
+  
+  def invite_thank_you
+     if params[:id]
+       @friend_invite = FriendInvite.find(params[:id])
+     end
+     @advertisements = Advertisement.current_list.small_list(1).order_list
+     respond_to do |format|
+       format.html {render :layout => "application"}
+    end
+  end
+  
 end

@@ -1430,6 +1430,27 @@ a.banner_button_text {
 .banner_form_radios p b {
   margin-left: 5px;
 }
+/*****Invite Banners********/
+#invite_form {
+  position:absolute;
+  right:136px;
+  top:145px;
+  width:254px;
+  font-size:14px;
+}
+#invite_form input[type="text"] {
+  padding: 2px;
+  margin-bottom: 10px;
+  width: 205px;
+}
+.fci_invite_banner {
+  background: url("../images/banners/invite_banners/fci_invite_banner.jpg") 0 0 no-repeat;
+}
+#invite_form div.button_field .big_black_submit {
+  bottom:-35px;
+  position:absolute;
+  right:39px;
+}
 /*********************************************/
 /*****************MAIN CONTENT****************/
 #bd {

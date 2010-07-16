@@ -1,7 +1,6 @@
   # The priority is based upon order of creation: first created -> highest priority.
 ActionController::Routing::Routes.draw do |map|
-
-
+  map.resources :friend_invites
   map.resources :tutorial_videos
   map.resources :students
   map.resources :student_sessions
@@ -75,6 +74,8 @@ ActionController::Routing::Routes.draw do |map|
   map.ahip_survey_follow_up "ahip-survey-follow-up", :controller => "landing_pages", :action => "ahip_survey_follow_up" 
   
   # Custom Named Routes
+  map.invite_friend "invite-a-friend", :controller => "landing_pages", :action => "invite_friend"
+  map.invite_thank_you "thank-you-for-inviting-a-friend", :controller => "landing_pages", :action => "invite_thank_you"
   map.issuu_upload "upload-issuu", :controller => "issuu_uploads", :action => "index"
   map.issue "healthcare-insight-document", :controller => 'issuu_uploads', :action => 'show'
   map.nucleus "nucleus", :controller => "health_care", :action => "nucleus"
