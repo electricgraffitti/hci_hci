@@ -27,7 +27,7 @@ Rails::Initializer.run do |config|
     config.gem(
       'thinking-sphinx',
       :lib     => 'thinking_sphinx',
-      :version => '1.3.14'
+      :version => '1.3.18'
     )
     
   # Only load the plugins named here, in the order given (default is alphabetical).
