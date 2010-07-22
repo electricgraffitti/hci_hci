@@ -27,7 +27,7 @@ Rails::Initializer.run do |config|
   config.gem(
     'thinking-sphinx',
     :lib     => 'thinking_sphinx',
-    :version => '1.3.16'
+    :version => '1.3.18'
     )
     # 
     # ENV["MAGICK_CODER_MODULE_PATH"]="<installdir>/common/lib/ImageMagick-6.6.10-0/modules-Q16/coders"
