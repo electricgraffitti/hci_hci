@@ -57,6 +57,11 @@ class Video < ActiveRecord::Base
    # 
    # # Attrs
    # attr_protected :video_file_name, :video_content_type, :video_file_size
+   
+   # Named Scopes
+   named_scope :small_list, lambda { |limit| {:limit => limit}}
+   named_scope :type, lambda { |typea| { :include => [:video_type], :conditions => ['video_types.video_type = ?', typea]}}
+   named_scope :last_created, :order => "created_at DESC"
 
    #============================= Class Methods ==================================#
 

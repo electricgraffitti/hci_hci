@@ -33,6 +33,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :user_sessions
   map.resources :uni_resources
   map.resources :banners
+  map.resources :claim_savers
   
   # Mail Route Paths
   map.contact_mailer 'contacts_mailer', :controller => "contacts", :action => "contacts_mailer"
