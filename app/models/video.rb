@@ -47,7 +47,7 @@ class Video < ActiveRecord::Base
                      :path => ":rails_root/public/videos/:id/:style/:basename.:extension"
                      
    has_attached_file :video_thumb,
-                     :styles => { :full => "512x288>", :thumb => "128x72>" },
+                     :styles => { :full => "512x288>", :small => "283x159>", :thumb => "128x72>" },
                      :url => "/video_thumbs/:id/:style/:basename.:extension",
                      :path => ":rails_root/public/video_thumbs/:id/:style/:basename.:extension"
                      
