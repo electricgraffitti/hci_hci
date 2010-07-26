@@ -1612,7 +1612,7 @@ ul.index_sector_links li h2 {
 .number_header_small {
   width: 110px;
 }
-.index_service_wrap, .career_service_wrap, .claim_saver_wrap {
+.index_service_wrap, .career_service_wrap {
   border-color:#EFEFEF #EFEFEF #CDCDCD #CDCDCD;
   border-style:solid;
   border-width:1px;
@@ -1627,13 +1627,21 @@ ul.index_sector_links li h2 {
   border: 1px solid #CDCDCD;
 }
 .claim_saver_wrap {
+  position:relative;
+  float:left;
   width: 283px;
   height: 159px;
-  border: none;
+}
+.claim_saver_video_box {
+  background: transparent url(../images/claim_saver_video_bg.png) no-repeat;
+  border: 1px solid #ccc;
+  margin-right:20px;
+  margin-top:10px;
 }
 .claim_saver_content {
   text-align: left;
   width: 573px;
+  margin-top: 10px;
 }
 .market_box {
   min-height: 253px;
