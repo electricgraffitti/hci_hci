@@ -1638,6 +1638,9 @@ ul.index_sector_links li h2 {
   margin-right:20px;
   margin-top:10px;
 }
+.webinar_date {
+  color: #999;
+}
 .claim_saver_content {
   text-align: left;
   width: 573px;
