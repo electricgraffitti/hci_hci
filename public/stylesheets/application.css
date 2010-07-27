@@ -813,6 +813,41 @@ img.home_banner {
   margin-left: 60px;
   margin-right: 20px;
 }
+.index_banner_cta {
+  height:45px;
+  position:absolute;
+  right:77px;
+  top:319px;
+  width:401px;
+  box-shadow: 0px 2px 3px #666666;
+  -moz-box-shadow:0 2px 3px #666666;
+  -webkit-box-shadow: rgb(102, 102, 102) 0px 2px 3px;
+}
+.index_cta_button {
+  width: 200px;
+  height: 46px;
+  float: left;
+}
+.index_cta_button a {
+  display: block;
+  width: 200px;
+  height: 46px;
+  text-indent: -3000em;
+}
+.index_cta_more_info {
+  border-right: 1px solid #444;
+  background: transparent url('../images/banners/big_cta_banner_buttons.png') 0 0 no-repeat;
+}
+.index_cta_more_info:hover {
+  background: transparent url('../images/banners/big_cta_banner_buttons.png') 0 -46px no-repeat;
+}
+.index_cta_meet_nucleus {
+  border-left: 1px #555;
+  background: transparent url('../images/banners/big_cta_banner_buttons.png') -200px 0 no-repeat;
+}
+.index_cta_meet_nucleus:hover {
+  background: transparent url('../images/banners/big_cta_banner_buttons.png') -200px -46px no-repeat;
+}
 .index_banner_nav {
   background: transparent url('../images/banners/index_banner_nav/new/banner_nav_bg2.png') no-repeat;
   bottom:16px;
@@ -1371,6 +1406,7 @@ div.career_banner_text_wrap {
   text-decoration: underline;
 }
 .banner_cta_wrap img {
+  box-shadow: 0px 1px 2px #666666;
   -moz-box-shadow:0 1px 2px #666666;
   -webkit-box-shadow: rgb(102, 102, 102) 0px 1px 2px;
   background:none repeat scroll 0 0 #EFEFEF;
