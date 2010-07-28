@@ -3,12 +3,15 @@
 <% meta_description("Health Care fraud is a huge problem in America. HealthCare Insight provides videos to keep you informed and educated about the growing problem") %>
 
 <% content_for :banner do %>
-  <%= render :partial => "videos/banner" %>
+  <%= render :partial => "claim_savers/banner" %>
 <% end %>
 
 <!-- Render Helper Module Here -->
 <div class="grid_8 top_10_wrap">
-  <h3 class="orange">ClaimSaver Webinar Series Videos</h3>
+  <h3 class="orange">The ClaimSaver Webinar Series</h3>
+  <p>
+    Here you’ll find our most recent and upcoming webinars posted for the benefit our clients, prospective clients, and friends. They’re complimentary. Please indulge our brief registration procedure for attending or viewing these webinars—it helps us understand and serve you better.
+  </p>
   <div id="video_playlist"> 
   <%= render :partial => "videos/index_video", :locals => {:videos => @videos} %>
   </div>
