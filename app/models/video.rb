@@ -61,7 +61,8 @@ class Video < ActiveRecord::Base
    # Named Scopes
    named_scope :small_list, lambda { |limit| {:limit => limit}}
    named_scope :type, lambda { |typea| { :include => [:video_type], :conditions => ['video_types.video_type = ?', typea]}}
-   named_scope :last_created, :order => "created_at DESC"
+   named_scope :filtered_type, lambda { |typea| { :include => [:video_type], :conditions => ['video_types.video_type != ?', typea]}}
+   named_scope :last_created, :order => "videos.created_at DESC"
 
    #============================= Class Methods ==================================#
 
@@ -71,7 +72,7 @@ class Video < ActiveRecord::Base
    end
    
    def self.list(count, page)
-     paginate :per_page => count, :page => page, :order => "created_at DESC"
+     paginate :per_page => count, :page => page, :order => "videos.created_at DESC"
    end
   
 end

@@ -3,12 +3,12 @@
     <h3 class="orange">ClaimSaver Webinar Series</h3>
   </div>
   <div class="claim_saver_wrap claim_saver_video_box">
+    <%= image_tag(webinar.video_thumb.url(:small)) %>
   </div>
   <div class="claim_saver_wrap claim_saver_content">
-    <div class="webinar_date">July 29, 2010 2pm est</div>
-    <h2 class="facilityclaim-insight_color">Humor and the American Hospital Bill</h2>
+    <h2 class="facilityclaim-insight_color"><%= webinar.title %></h2>
     <p>
-      As a payor, you may not share the humor that springs from overcharges that bloat 99 percent of hospital bills. But there’s something you can do about it, and that’s the focus of this thirty-minute edition of our ClaimSaver Webinar Series. Without changing your existing facility claim review program, you can take one small additional step an reap significant savings off your payable charges.
+      <%= webinar.description %>
     </p>
 		<p>
 			<%= link_to "Register Here", "http://www2.hcinsight.com/l/1492/2010-07-02/HJ31V" %>

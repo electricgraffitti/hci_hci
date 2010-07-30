@@ -5,7 +5,9 @@ class ResourcesController < ApplicationController
     @articles = Article.no_press.paginate :per_page => 6, :page => params[:page]
     @documents = Document.brochures
     @press_releases = Article.type('press_release').small_list(3)
-    @videos = Video.list(4, params[:page])
+    
+    @videos = Video.filtered_type('Webinar').list(4, params[:page])
+    @webinar = Video.type('Webinar').last
     @events = Event.upcoming_events.small_list(1).last_created
     # @advertisements = Advertisement.current_list.small_list(2).order_list
   end
