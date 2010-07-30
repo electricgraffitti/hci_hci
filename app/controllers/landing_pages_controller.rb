@@ -48,6 +48,13 @@ class LandingPagesController < ApplicationController
     end
   end
   
+  def profiler_article_unveiled
+    @advertisements = Advertisement.current_list.small_list(1).order_list
+    respond_to do |format|
+      format.html {render :layout => "application"}
+    end
+  end
+  
   def invite_thank_you
      if params[:id]
        @friend_invite = FriendInvite.find(params[:id])
