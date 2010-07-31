@@ -1297,7 +1297,10 @@ div.career_banner_text_wrap {
 	position:absolute;
 	width:335px;
 }
-.ahip_thank_you_wrap .signature {
+.download_link {
+	margin-bottom: 50px;
+}
+.ahip_thank_you_wrap .signature, .ahip_thank_you_wrap2 .signature {
   width: 250px;
   margin-top: 30px;
 }
