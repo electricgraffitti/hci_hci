@@ -30,7 +30,7 @@ class FriendInvitesController < ApplicationController
     @friend_invite = FriendInvite.new
 
     respond_to do |format|
-      format.html redirect_to invite_thank_you_path
+      format.html {redirect_to invite_thank_you_path}
       format.xml  { render :xml => @friend_invite }
     end
   end

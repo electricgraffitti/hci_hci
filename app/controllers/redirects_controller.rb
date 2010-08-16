@@ -12,6 +12,10 @@ class RedirectsController < ApplicationController
     redirect_to "http://www2.hcinsight.com/l/1492/2010-05-18/H4NLB"
   end
   
+  def nadp_postcard
+    redirect_to "http://www2.hcinsight.com/l/1492/2010-08-16/I3Q09"
+  end
+  
   def linkedin_webinars
     redirect_to "http://www2.hcinsight.com/l/1492/2010-07-02/HIZB5"
   end
