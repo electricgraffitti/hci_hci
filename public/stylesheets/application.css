@@ -1367,12 +1367,12 @@ div.career_banner_text_wrap {
 .claim_saver_button {
 	height:95px;
 	position:absolute;
-	right:40px;
+	right:0px;
 	top:350px;
 	width:380px;
 }
 .claim_saver_button a {
-	background:url("../images/claimsaver_dci_button.png") repeat-x scroll 0 0 transparent;
+	background:url("../images/claimsaver_pci_button.png") repeat-x scroll 0 0 transparent;
 	display:block;
 	font-size:120%;
 	height:36px;
@@ -1380,10 +1380,10 @@ div.career_banner_text_wrap {
 	text-align:center;
 	text-decoration:none;
 	text-indent:-3000em;
-	width:230px;
+	width:225px;
 }
 .claim_saver_button a:hover {
-	background:url("../images/claimsaver_dci_button.png") repeat-x scroll 0 -35.5px transparent;
+	background:url("../images/claimsaver_pci_button.png") repeat-x scroll 0 -36px transparent;
 }
 .banner_cta_wrap {
   position: relative;
