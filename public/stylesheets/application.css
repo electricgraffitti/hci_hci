@@ -1372,7 +1372,7 @@ div.career_banner_text_wrap {
 	width:380px;
 }
 .claim_saver_button a {
-	background:url("../images/claimsaver_pci_button.png") repeat-x scroll 0 0 transparent;
+	background:url("../images/claimsaver_oci_button.png") repeat-x scroll 0 0 transparent;
 	display:block;
 	font-size:120%;
 	height:36px;
@@ -1383,7 +1383,7 @@ div.career_banner_text_wrap {
 	width:225px;
 }
 .claim_saver_button a:hover {
-	background:url("../images/claimsaver_pci_button.png") repeat-x scroll 0 -36px transparent;
+	background:url("../images/claimsaver_oci_button.png") repeat-x scroll 0 -36px transparent;
 }
 .banner_cta_wrap {
   position: relative;
