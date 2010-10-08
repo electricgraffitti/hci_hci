@@ -131,6 +131,7 @@ ActionController::Routing::Routes.draw do |map|
   map.release_52 "52_Release_Tutorial.html", :controller => "tutorial_videos", :action => "index"
   map.li_webinars "webinars", :controller => "redirects", :action => "linkedin_webinars"
   map.nadp_postcard "NADP", :controller => "redirects", :action => "nadp_postcard"
+  map.lounge_vip "vip", :controller => "redirects", :action => "lounge_vip"
   
   map.home "health-care", :controller => "health_care", :action => "index"
   map.root :controller => "health_care", :action => "index"

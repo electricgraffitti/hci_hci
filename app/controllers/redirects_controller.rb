@@ -20,4 +20,8 @@ class RedirectsController < ApplicationController
     redirect_to "http://www2.hcinsight.com/l/1492/2010-09-17/ID0Q9"
   end
   
+  def lounge_vip
+    redirect_to "http://www2.hcinsight.com/l/1492/2010-09-29/INNTX"
+  end
+  
 end
