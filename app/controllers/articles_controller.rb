@@ -7,7 +7,7 @@ class ArticlesController < ApplicationController
   def index
     # @articles = Article.type(params[:article_type])
     @articles = Article.no_press.paginate :per_page => 6, :page => params[:page]
-    @articlesrss = Article.all
+    @articlesrss = Article.last_created
     @press_releases = Article.type('press_release').small_list(5)
     @events = Event.upcoming_events.small_list(1).last_created
     @advertisements = Advertisement.current_list.small_list(2).order_list
