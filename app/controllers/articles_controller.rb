@@ -15,6 +15,7 @@ class ArticlesController < ApplicationController
       format.html # index.html.erb
       format.xml  { render :xml => @articles }
       format.rss { render :rss => @articlesrss }
+      format.js { render :json => @articlesrss }
       format.atom
     end
   end
