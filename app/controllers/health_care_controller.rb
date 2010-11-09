@@ -70,10 +70,11 @@ class HealthCareController < ApplicationController
   end
   
   def nucleus
-    respond_to do |format|
-      format.html { render :layout => "nucleus"}
-      format.xml  { render :xml => @events }
-    end
+    redirect_to "http://www.get-nucleus.com"
+    # respond_to do |format|
+    #   format.html { render :layout => "nucleus"}
+    #   format.xml  { render :xml => @events }
+    # end
   end
   
   def privacy_policy
