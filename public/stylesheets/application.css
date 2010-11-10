@@ -963,6 +963,9 @@ img.home_banner {
     border-left:1px solid #222222;
     border-right:1px solid #444444;
 }
+#index_banner_nav_ul .b_nav5.highlight:hover, li.b_nav5 a span.hover {
+  background: url('../images/banners/index_banner_nav/new/index_banner_hover.png') 0px 0px no-repeat;
+}
 #index_banner_nav_ul .index_banner_nav ul li.b_nav5 a.active, .index_banner_nav ul li.b_nav5 a.selected {
 /*    background: url('../images/banners/index_banner_nav/new/index_banner_active.png') 0px 0px no-repeat;*/
     background:none repeat scroll 0 0 #101010;
