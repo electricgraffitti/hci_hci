@@ -1844,7 +1844,7 @@ a.property_index_wrap {
   width: 215px;
 }
 .casetracker-insight_index_text {
-  width: 200px;
+  width: 215px;
 }
 .service_header {
   text-indent: -3000em;
@@ -2041,7 +2041,7 @@ ul.service_bullets li {
 .pharmaclaim-insight_problem_box_bg {
   background: url('../images/graphs2.png') right -250px no-repeat;
 }
-.vcasetracker-insight_problem_box_bg {
+.casetracker-insight_problem_box_bg {
   background: url('../images/graphs2.png') right 0px no-repeat;
 }
 .solution_box {
