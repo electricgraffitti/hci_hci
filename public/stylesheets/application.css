@@ -225,10 +225,10 @@ h2 a.small_text {
   display: block;
   background: #00467f;
 }*/
-.visionclaim-insight_color {
+.casetracker-insight_color {
   color: #5a2149;
 }
-/*.visionclaim-insight_bg {
+/*.casetracker-insight_bg {
   display: block;
   background: #78496a;
 }*/
@@ -644,10 +644,10 @@ div.oncologyclaim-insight_trial_button span.small_cta_button {
 div.oncologyclaim-insight_demo_button span.small_cta_button {
   background: url('../images/banners/inner_banners/CTA_arrow_bar.png') -195px 180px;
 }
-div.visionclaim-insight_trial_button span.small_cta_button {
+div.casetracker-insight_trial_button span.small_cta_button {
   background: url('../images/banners/inner_banners/CTA_arrow_bar.png') 0px 0px no-repeat;
 }
-div.visionclaim-insight_demo_button span.small_cta_button {
+div.casetracker-insight_demo_button span.small_cta_button {
   background: url('../images/banners/inner_banners/CTA_arrow_bar.png') -195px 210px;
 }
 
@@ -1816,7 +1816,7 @@ a.oncologyclaim-insight_index_wrap {
 a.pharmaclaim-insight_index_wrap {
  background: url('../images/service_page_sprite2.png') 0px -440px no-repeat;
 }
-a.visionclaim-insight_index_wrap {
+a.casetracker-insight_index_wrap {
  background: url('../images/service_page_sprite2.png') 0px -550px no-repeat;
 }
 a.public_index_wrap {
@@ -1843,7 +1843,7 @@ a.property_index_wrap {
 .pharmaclaim-insight_index_text {
   width: 215px;
 }
-.visionclaim-insight_index_text {
+.casetracker-insight_index_text {
   width: 200px;
 }
 .service_header {
@@ -1867,7 +1867,7 @@ a.property_index_wrap {
 .pharmaclaim-insight_service_header {
   background: url('../images/service_page_sprite.png') -100px -465px no-repeat;
 }
-.visionclaim-insight_service_header {
+.casetracker-insight_service_header {
   background: url('../images/service_page_sprite.png') -100px -575px no-repeat;
 }
 .public_service_header {
@@ -1929,7 +1929,7 @@ a.property_index_wrap {
 .pharmaclaim-insight_service_bg {
   background: transparent url('../images/service_mid_bg.jpg') left -313px no-repeat;
 }
-.visionclaim-insight_service_bg {
+.casetracker-insight_service_bg {
   background: transparent url('../images/service_mid_bg.jpg') left 0px no-repeat;
 }
 .overview_wrap {
@@ -2041,7 +2041,7 @@ ul.service_bullets li {
 .pharmaclaim-insight_problem_box_bg {
   background: url('../images/graphs2.png') right -250px no-repeat;
 }
-.visionclaim-insight_problem_box_bg {
+.vcasetracker-insight_problem_box_bg {
   background: url('../images/graphs2.png') right 0px no-repeat;
 }
 .solution_box {
@@ -2089,7 +2089,7 @@ ul.service_bullets li {
 .pharmaclaim-insight_sol_box_bg {
   background: url('../images/sol_box_bg.jpg') right -361px no-repeat;
 }
-.visionclaim-insight_sol_box_bg {
+..casetracker-insight_sol_box_bg {
   background: url('../images/sol_box_bg.jpg') right 50px no-repeat;
 }
 .physicianclaim-insight_stripe_icon {
@@ -2187,20 +2187,20 @@ ul.service_bullets li {
   background: #002b54;
   width: 919px;
 }
-.visionclaim-insight_stripe_icon {
+.casetracker-insight_stripe_icon {
   width: 250px;
   height: 50px;
   float: right;
   background: url('../images/service_stripe_icons.png') 0px -250px no-repeat;
   margin-right: 10px;
 }
-.visionclaim-insight_service_top_stripe {
+.casetracker-insight_service_top_stripe {
   float: left;
   height: 10px;
   background: #78496a;
   width: 919px;
 }
-.visionclaim-insight_service_bottom_stripe {
+.casetracker-insight_service_bottom_stripe {
   float: left;
   height: 50px;
   background: #5a2149;
@@ -3163,7 +3163,7 @@ div.nucleus_form_wrap .nucleus_submit {
 .pharmaclaim-insight_quote {
   background: transparent url('../images/quotes/service_quotes.png') 0px -113px no-repeat;
 }
-.visionclaim-insight_quote {
+.casetracker-insight_quote {
   background: transparent url('../images/quotes/service_quotes.png') 0px 0px no-repeat;
 }
 .physicianclaim-insight_quote_brochure {
@@ -3181,7 +3181,7 @@ div.nucleus_form_wrap .nucleus_submit {
 .pharmaclaim-insight_quote_brochure {
   background: url('../images/benefit_grid_images.jpg') 0px -1080px no-repeat;
 }
-.visionclaim-insight_quote_brochure {
+.casetracker-insight_quote_brochure {
   background: url('../images/benefit_grid_images.jpg') 0px -960px no-repeat;
 }
 .about_quote {
