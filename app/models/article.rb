@@ -17,6 +17,8 @@
 
 class Article < ActiveRecord::Base
   
+  include ActionView::Helpers::UrlHelper
+  
   belongs_to :article_type
   after_update :save_assets
   
