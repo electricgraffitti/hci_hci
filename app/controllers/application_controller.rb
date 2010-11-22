@@ -7,7 +7,7 @@ class ApplicationController < ActionController::Base
 
   # Scrub sensitive parameters from your log
   filter_parameter_logging :password, :password_confirmation
-  helper_method :current_user_session, :current_user, :current_student_session, :current_student, :super?, :current_employee_session, :current_employee, :employee_admin?, :super_user?
+  helper_method :current_user_session, :current_user, :current_student_session, :current_student, :box_video, :ipad, :super?, :current_employee_session, :current_employee, :employee_admin?, :super_user?
   
   private
   
@@ -102,6 +102,66 @@ class ApplicationController < ActionController::Base
   def redirect_back_or_default(default)
     redirect_to(session[:return_to] || default)
     session[:return_to] = nil
+  end
+  
+  def box_video(box_type)
+    case box_type
+      when "green_video"
+        green_video
+      when "red_video"
+        red_video
+      when "blue_video"
+        blue_video
+      when "yellow_video"
+        yellow_video
+      else
+        main_video
+    end
+  end
+  
+  def main_video
+    if ipad
+      video = "/banner_videos/nucleus_teaser_ipad.mp4"
+    else
+      video = "/banner_videos/nucleus_teaser.f4v"
+    end
+  end
+  
+  def red_video
+    if ipad
+      video = "/banner_videos/nucleus_1_ipad.mp4"
+    else
+      video = "/banner_videos/nucleus_1.f4v"
+    end
+  end
+  
+  def blue_video
+    if ipad
+      video = "/banner_videos/nucleus_2_ipad.mp4"
+    else
+      video = "/banner_videos/nucleus_2.f4v"
+    end
+  end
+  
+  def yellow_video
+    if ipad
+      video = "/banner_videos/nucleus_3_ipad.mp4"
+    else
+      video = "/banner_videos/nucleus_3.f4v"
+    end
+  end
+  
+  def green_video
+    if ipad
+      video = "/banner_videos/nucleus_4_ipad.mp4"
+    else
+      video = "/banner_videos/nucleus_4.f4v"
+    end
+  end
+  
+  def ipad
+    request.user_agent =~ /iPad/i || request.user_agent =~ /iPhone/i
+    # request.user_agent =~ /(Mobile\/.+Safari)/      
   end
   
   protected

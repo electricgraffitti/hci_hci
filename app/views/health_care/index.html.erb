@@ -10,5 +10,9 @@
   <%= render :partial => 'health_care/index_sub_boxes' %>
   <%= render :partial => "health_care/index_quote" %>
 <% end %>
-
+<div id="video_div" class="overlay">
+    <!-- flowplayer container --> 
+    <div id="player"></div>
+</div>
+<%= javascript_include_tag 'index_videos' %>
 <%#= render :partial => "health_care/index_boxes" %>
