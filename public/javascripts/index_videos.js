@@ -92,20 +92,21 @@ $(document).ready(function() {
   
   $("a.overlay_link").overlay({ 
 		// custom expose settings
-	 expose: {
-	  color: '#000',
-	  opacity: 0.85,
-	  closeSpeed: 700
-	 },
+	  top: 'center',
+	  expose: {
+	    color: '#000',
+	    opacity: 0.85,
+	    closeSpeed: 700
+	  },
 	
-	 onLoad: function() {
+	  onLoad: function() {
 	   var v = this.getTrigger().attr("href");
-	 	player.load().play(v);
-	 },
+	 	 player.load().play(v);
+	  },
 	
-	 onClose: function() {
-	  player.unload();
-	 }
-	});
+	  onClose: function() {
+	    player.unload();
+	  }
+	  });
 
 });
