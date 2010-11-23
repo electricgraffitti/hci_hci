@@ -467,7 +467,7 @@ h2#iu_res_show_header {
 }
 ul#iu_index_list li {
   width: 100%;
-  height: 90px;
+  height: 110px;
   border-bottom: 1px solid #d0d0d0;
 }
 ul#iu_index_list li.last {
@@ -546,7 +546,7 @@ div.small_scroller_box .panels p {
   height:158px;
   padding:10px;
   position:relative;
-  width:245px;
+  width:225px;
 }
 .iu_banner_nav {
   margin: 13px auto;
