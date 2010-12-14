@@ -856,12 +856,12 @@ img.home_banner {
   position:absolute;
   width:925px;
   border-top: 1px solid #fff;*/
-  background:none repeat scroll 0 0 #000000;
-  bottom:9px;
-  height:45px;
-  left:18px;
-  position:absolute;
-  width:922px;
+  background: none repeat scroll 0 0 #000000;
+  bottom: 2px;
+  height: 45px;
+  left: 13px;
+  position: absolute;
+  width: 927px;
 }
 .index_banner_nav img {
   padding-top: 3px;
