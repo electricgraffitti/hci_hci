@@ -804,8 +804,8 @@ img.home_banner {
 .index_banner_headline, .index_banner_headline2 {
   float: left;
   height: 27px;
-  padding-top: 13px;
-  color: #fff;
+  padding-top: 16px;
+  color: #6d6e71;
   text-align: right;
   margin-left: 100px;
 }
@@ -849,19 +849,20 @@ img.home_banner {
   background: transparent url('../images/banners/big_cta_banner_buttons.png') -200px -46px no-repeat;
 }
 .index_banner_nav {
-/*  background: transparent url('../images/banners/index_banner_nav/new/banner_nav_bg2.png') no-repeat;
+  background: transparent url('../images/banners/index_banner_nav/new/banner_nav_bg2.png') no-repeat;
   bottom:16px;
-  height:40px;
+  height:44px;
   left: 15px;
   position:absolute;
   width:925px;
-  border-top: 1px solid #fff;*/
-  background: none repeat scroll 0 0 #000000;
+  border-top: 1px solid #fff;
+  
+/*  background: none repeat scroll 0 0 #000000;
   bottom: 2px;
   height: 45px;
   left: 13px;
   position: absolute;
-  width: 927px;
+  width: 927px;*/
 }
 .index_banner_nav img {
   padding-top: 3px;
@@ -875,7 +876,7 @@ img.home_banner {
   width: 78px;
   height: 45px;
   border: none;
-  background: url('../images/banners/index_banner_nav/new/index_banner_reg_border.png') no-repeat;
+/*  background: url('../images/banners/index_banner_nav/new/index_banner_reg_border.png') no-repeat;*/
 }
 .index_banner_nav ul li.index_banner_li {
 
@@ -894,10 +895,10 @@ img.home_banner {
   height: 45px;
  /* text-indent: -3000em;*/
   display: block;
-  border-bottom:1px solid #000;
+/*  border-bottom:1px solid #000;
   border-left:1px solid #000;
   border-right:1px solid #000;
-  border-top: 1px solid #111;
+  border-top: 1px solid #111;*/
 }
 .index_banner_nav ul li a span.hover {
   position: absolute;
@@ -914,12 +915,19 @@ img.home_banner {
   background: url('../images/banners/index_banner_nav/new/index_banner_hover.png') 0px 0px no-repeat;
 }
 #index_banner_nav_ul .index_banner_nav ul li.b_nav1 a.active, .index_banner_nav ul li.b_nav1 a.selected {
-  /*background: url('../images/banners/index_banner_nav/new/index_banner_active.png') 0px 0px no-repeat;*/
-  background:none repeat scroll 0 0 #101010;
-  border-top: 1px solid #fff;
-  border-bottom:1px solid #333333;
-  border-left:1px solid #222222;
-  border-right:1px solid #444444;
+  /* hover graphic */
+  background: url('../images/banners/index_banner_nav/new/index_banner_active.png') 0px 0px no-repeat;
+  /* Black Nav */
+  /*  border-top: 1px solid #5bab46;
+      background:none repeat scroll 0 0 #101010;
+      border-bottom:1px solid #333333;
+      border-left:1px solid #222222;
+      border-right:1px solid #444444;*/
+      
+  /* Light Nav*/
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0.05);
+  border-left: 1px solid #CFCFCF;
+  border-right: 1px solid #BEBEBE;
 }
 /*#index_banner_nav_ul .b_nav2 a {
   background: url('../images/banners/index_banner_nav/new/who_small.png') 0px 0px no-repeat;
@@ -928,12 +936,19 @@ img.home_banner {
   background: url('../images/banners/index_banner_nav/new/index_banner_hover.png') 0px 0px no-repeat;
 }
 #index_banner_nav_ul .index_banner_nav ul li.b_nav2 a.active, .index_banner_nav ul li.b_nav2 a.selected {
-/*  background: url('../images/banners/index_banner_nav/new/index_banner_active.png') 0px 0px no-repeat;*/
-  border-top: 1px solid #5bab46;
-  background:none repeat scroll 0 0 #101010;
-  border-bottom:1px solid #333333;
-  border-left:1px solid #222222;
-  border-right:1px solid #444444;
+  /* hover graphic */
+  background: url('../images/banners/index_banner_nav/new/index_banner_active.png') 0px 0px no-repeat;
+  /* Black Nav */
+  /*  border-top: 1px solid #5bab46;
+      background:none repeat scroll 0 0 #101010;
+      border-bottom:1px solid #333333;
+      border-left:1px solid #222222;
+      border-right:1px solid #444444;*/
+      
+  /* Light Nav*/
+  background: none repeat scroll 0 0 rgba(91, 171, 70, 0.2);
+  border-left: 1px solid #CFCFCF;
+  border-right: 1px solid #BEBEBE;
 }
 /*#index_banner_nav_ul .b_nav3 a {
   background: url('../images/banners/index_banner_nav/new/what_small.png') 0px 0px no-repeat;
@@ -942,12 +957,19 @@ img.home_banner {
   background: url('../images/banners/index_banner_nav/new/index_banner_hover.png') 0px 0px no-repeat;
 }
 #index_banner_nav_ul .index_banner_nav ul li.b_nav3 a.active, .index_banner_nav ul li.b_nav3 a.selected {
-/*    background: url('../images/banners/index_banner_nav/new/index_banner_active.png') 0px 0px no-repeat;*/
-    background:none repeat scroll 0 0 #101010;
-    border-top: 1px solid #d93b27;
-    border-bottom:1px solid #333333;
-    border-left:1px solid #222222;
-    border-right:1px solid #444444;
+  /* hover graphic */
+  background: url('../images/banners/index_banner_nav/new/index_banner_active.png') 0px 0px no-repeat;
+  /* Black Nav */
+  /*  border-top: 1px solid #5bab46;
+      background:none repeat scroll 0 0 #101010;
+      border-bottom:1px solid #333333;
+      border-left:1px solid #222222;
+      border-right:1px solid #444444;*/
+      
+  /* Light Nav*/
+  background: none repeat scroll 0 0 rgba(217, 59, 39, 0.2);
+  border-left: 1px solid #CFCFCF;
+  border-right: 1px solid #BEBEBE;
 }
 /*#index_banner_nav_ul .b_nav4 a {
   background: url('../images/banners/index_banner_nav/new/why_small.png') 0px 0px no-repeat;
@@ -956,23 +978,37 @@ img.home_banner {
   background: url('../images/banners/index_banner_nav/new/index_banner_hover.png') 0px 0px no-repeat;
 }
 #index_banner_nav_ul .index_banner_nav ul li.b_nav4 a.active, .index_banner_nav ul li.b_nav4 a.selected {
-/*    background: url('../images/banners/index_banner_nav/new/index_banner_active.png') 0px 0px no-repeat;*/
-    background:none repeat scroll 0 0 #101010;
-    border-top: 1px solid #398dcc;
-    border-bottom:1px solid #333333;
-    border-left:1px solid #222222;
-    border-right:1px solid #444444;
+  /* hover graphic */
+  background: url('../images/banners/index_banner_nav/new/index_banner_active.png') 0px 0px no-repeat;
+  /* Black Nav */
+  /*  border-top: 1px solid #5bab46;
+      background:none repeat scroll 0 0 #101010;
+      border-bottom:1px solid #333333;
+      border-left:1px solid #222222;
+      border-right:1px solid #444444;*/
+      
+  /* Light Nav*/
+  background: none repeat scroll 0 0 rgba(57, 141, 204, 0.2);
+  border-left: 1px solid #CFCFCF;
+  border-right: 1px solid #BEBEBE;
 }
 #index_banner_nav_ul .b_nav5.highlight:hover, li.b_nav5 a span.hover {
   background: url('../images/banners/index_banner_nav/new/index_banner_hover.png') 0px 0px no-repeat;
 }
 #index_banner_nav_ul .index_banner_nav ul li.b_nav5 a.active, .index_banner_nav ul li.b_nav5 a.selected {
-/*    background: url('../images/banners/index_banner_nav/new/index_banner_active.png') 0px 0px no-repeat;*/
-    background:none repeat scroll 0 0 #101010;
-    border-top: 1px solid #f7b219;
-    border-bottom:1px solid #333333;
-    border-left:1px solid #222222;
-    border-right:1px solid #444444;
+  /* hover graphic */
+  background: url('../images/banners/index_banner_nav/new/index_banner_active.png') 0px 0px no-repeat;
+  /* Black Nav */
+  /*  border-top: 1px solid #5bab46;
+      background:none repeat scroll 0 0 #101010;
+      border-bottom:1px solid #333333;
+      border-left:1px solid #222222;
+      border-right:1px solid #444444;*/
+      
+  /* Light Nav*/
+  background: none repeat scroll 0 0 rgba(247, 178, 25, 0.2);
+  border-left: 1px solid #CFCFCF;
+  border-right: 1px solid #BEBEBE;
 }
 #nucleus_banner_nav.banner_nav .banner_nav_wrap{
   width: 120px;
