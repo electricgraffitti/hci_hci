@@ -103,6 +103,7 @@ p {
 }
 sup {
   vertical-align: top;
+  font-size: 45%;
 }
 .bold {
   font-weight:bold;
@@ -232,9 +233,12 @@ h2 a.small_text {
   display: block;
   background: #78496a;
 }*/
-.orange {
-  /*color: #F15A29;*/ 
-  color: #00853f; /* Actually Green */
+.orange {  
+  /* Old PCI Green */
+/*  color: #00853f; */
+  
+  /* New Nucleus Green */
+  color: #5aaa46; 
 }
 .no_display {
   display: none;
@@ -600,7 +604,7 @@ div.cta_free_trial a {
   height: 30px;
 }
 div.cta_free_trial.highlight a:hover, div.cta_free_trial span.small_cta_button  {
-  background: url('../images/banners/inner_banners/CTA_arrow_bar.png') 0px -150px no-repeat;
+  background: url('../images/banners/inner_banners/CTA_arrow_bar-nucleus.png') 0px -150px no-repeat;
   width: 195px;
   height: 30px;
   float: left;
@@ -609,46 +613,46 @@ div.cta_view_demo a {
   background: url('../images/banners/inner_banners/CTA_arrow_bar.png') -195px 30px;
 }
 div.cta_view_demo.highlight a:hover, div.cta_view_demo span.small_cta_button {
-  background: url('../images/banners/inner_banners/CTA_arrow_bar.png') -195px 60px;
+  background: url('../images/banners/inner_banners/CTA_arrow_bar-nucleus.png') -195px 60px;
   width: 165px;
   height: 30px;
   float: left;
 }
 div.physicianclaim-insight_trial_button span.small_cta_button {
-  background: url('../images/banners/inner_banners/CTA_arrow_bar.png') 0px -150px no-repeat;
+  background: url('../images/banners/inner_banners/CTA_arrow_bar-nucleus.png') 0px -150px no-repeat;
 }
 div.physicianclaim-insight_demo_button span.small_cta_button {
-  background: url('../images/banners/inner_banners/CTA_arrow_bar.png') -195px 60px;
+  background: url('../images/banners/inner_banners/CTA_arrow_bar-nucleus.png') -195px 60px;
 }
 div.dentalclaim-insight_trial_button span.small_cta_button {
-  background: url('../images/banners/inner_banners/CTA_arrow_bar.png') 0px -120px no-repeat;
+  background: url('../images/banners/inner_banners/CTA_arrow_bar-nucleus.png') 0px -120px no-repeat;
 }
 div.dentalclaim-insight_demo_button span.small_cta_button {
-  background: url('../images/banners/inner_banners/CTA_arrow_bar.png') -195px 90px;
+  background: url('../images/banners/inner_banners/CTA_arrow_bar-nucleus.png') -195px 90px;
 }
 div.facilityclaim-insight_trial_button span.small_cta_button {
-  background: url('../images/banners/inner_banners/CTA_arrow_bar.png') 0px -90px no-repeat;
+  background: url('../images/banners/inner_banners/CTA_arrow_bar-nucleus.png') 0px -90px no-repeat;
 }
 div.facilityclaim-insight_demo_button span.small_cta_button {
-  background: url('../images/banners/inner_banners/CTA_arrow_bar.png') -195px 120px;
+  background: url('../images/banners/inner_banners/CTA_arrow_bar-nucleus.png') -195px 120px;
 }
 div.pharmaclaim-insight_trial_button span.small_cta_button {
-  background: url('../images/banners/inner_banners/CTA_arrow_bar.png') 0px -60px no-repeat;
+  background: url('../images/banners/inner_banners/CTA_arrow_bar-nucleus.png') 0px -60px no-repeat;
 }
 div.pharmaclaim-insight_demo_button span.small_cta_button {
-  background: url('../images/banners/inner_banners/CTA_arrow_bar.png') -195px 150px;
+  background: url('../images/banners/inner_banners/CTA_arrow_bar-nucleus.png') -195px 150px;
 }
 div.oncologyclaim-insight_trial_button span.small_cta_button {
-  background: url('../images/banners/inner_banners/CTA_arrow_bar.png') 0px -30px no-repeat;
+  background: url('../images/banners/inner_banners/CTA_arrow_bar-nucleus.png') 0px -30px no-repeat;
 }
 div.oncologyclaim-insight_demo_button span.small_cta_button {
-  background: url('../images/banners/inner_banners/CTA_arrow_bar.png') -195px 180px;
+  background: url('../images/banners/inner_banners/CTA_arrow_bar-nucleus.png') -195px 180px;
 }
 div.casetracker-insight_trial_button span.small_cta_button {
-  background: url('../images/banners/inner_banners/CTA_arrow_bar.png') 0px 0px no-repeat;
+  background: url('../images/banners/inner_banners/CTA_arrow_bar-nucleus.png') 0px 0px no-repeat;
 }
 div.casetracker-insight_demo_button span.small_cta_button {
-  background: url('../images/banners/inner_banners/CTA_arrow_bar.png') -195px 210px;
+  background: url('../images/banners/inner_banners/CTA_arrow_bar-nucleus.png') -195px 210px;
 }
 
 /********************************/
@@ -3186,7 +3190,7 @@ div.nucleus_form_wrap .nucleus_submit {
   text-indent: -3000em;
 }
 .physicianclaim-insight_quote{
-  background: transparent url('../images/quotes/service_quotes.png') 0px -572px no-repeat;
+  background: transparent url('../images/quotes/service_quotes.png') 0px -571px no-repeat;
 }
 .dentalclaim-insight_quote {
    background: transparent url('../images/quotes/service_quotes.png') 0px -457px no-repeat;
@@ -3247,7 +3251,7 @@ div.nucleus_form_wrap .nucleus_submit {
 #sub_boxes {
   text-align: left;
   background: #fff;
-  padding-bottom: 20px;
+/*  padding-bottom: 20px;*/
 }
 .apple_sub_boxes {
   position: relative;

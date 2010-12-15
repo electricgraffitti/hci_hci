@@ -18,12 +18,6 @@
       </div>
   </div>
   <div class="social_media_big_links">
-    <h5>SHCF.com</h5>
-      <div class="big_social_icon shcf">
-        <%= link_to "StopHealthCareFraud", "http://www.stophealthcarefraud.com" %>
-      </div>
-  </div>
-  <div class="social_media_big_links">
     <h5>LinkedIn</h5>
       <div class="big_social_icon linkedin">
         <%= link_to "LinkedIn", "http://www.linkedin.com/groups?gid=1426647" %>
@@ -33,6 +27,12 @@
     <h5>Profiler Magazine</h5>
       <div class="big_social_icon profiler">
         <%= link_to "Profiler Magazine", "http://www.profilermag.com" %>
+      </div>
+  </div>
+  <div class="social_media_big_links">
+    <h5>RSS Feed</h5>
+      <div class="big_social_icon shcf">
+        <%= link_to "HCI RSS", articles_path(:format => :rss) %>
       </div>
   </div>
 </div>
