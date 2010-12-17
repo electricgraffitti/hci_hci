@@ -14,3 +14,12 @@
   <%= render :partial => 'events/events_list', :locals => {:objects => @events} %>
   <%#= render :partial => 'articles/current_ad', :locals => {:ads => @advertisements} %>
 </div>
+
+<% content_for :javascripts do %>
+  <%= javascript_include_tag 'resource_player' %>
+  <script type="text/javascript" charset="utf-8">
+    $(document).ready(function() {
+      app.hideElement($(".index_banner_nav .first"));
+    });
+  </script>
+<% end %>

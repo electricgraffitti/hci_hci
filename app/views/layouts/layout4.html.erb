@@ -36,5 +36,18 @@
       <%= render :partial => "layouts/footer" %>
     </div>
 	</div>
+	<%= render :partial => "layouts/scripts" %>
+	<% content_for :javascripts do %>
+    <script type="text/javascript" charset="utf-8">
+      $(document).ready(function() {
+        admin.employeeEdit();
+        admin.datepickers();
+        admin.datePickers();
+        admin.thirdPartyUrlToggle();
+        admin.multipleUploads();
+      });
+    </script>
+  <% end %>
+
 </body>
 </html>

@@ -21,3 +21,12 @@
     <%= link_to 'Edit', edit_service_path(@service) %>
     </div>
 <% end %>
+
+
+<% content_for :javascripts do %>
+  <script type="text/javascript" charset="utf-8">
+    $(document).ready(function() {
+      app.ctaArrows();
+    });
+  </script>
+<% end %>

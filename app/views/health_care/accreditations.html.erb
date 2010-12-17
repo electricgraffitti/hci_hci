@@ -64,3 +64,12 @@
   <h2 class="page_header memberships_header full_wrap">Memberships & Associations</h2>
   <%= render :partial => "health_care/accreditations_grid" %>
 </div>
+
+<% content_for :javascripts do %>
+  <script type="text/javascript" charset="utf-8">
+    $(document).ready(function() {
+      app.ctaArrows();
+      accreds.accredsPopup();
+    });
+  </script>
+<% end %>

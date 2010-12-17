@@ -18,3 +18,11 @@
   <%= render :partial => 'events/events_list', :locals => {:objects => @events} %>
   <%= render :partial => 'articles/current_ad', :locals => {:ads => @advertisements} %>
 </div>
+
+<% content_for :javascripts do %>
+  <script type="text/javascript" charset="utf-8">
+    $(document).ready(function() {
+      app.ctaArrows();
+    });
+  </script>
+<% end %>

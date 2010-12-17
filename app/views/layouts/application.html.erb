@@ -35,5 +35,13 @@
     </div>
 	</div>
 	<%= render :partial => "layouts/scripts" %>
+	<% content_for :javascripts do %>
+    <%= javascript_include_tag 'index_videos', "scroll" %>
+    <script type="text/javascript" charset="utf-8">
+      $(document).ready(function() {
+        app.hideElement($(".index_banner_nav .first"));
+      });
+    </script>
+  <% end %>
 </body>
 </html>

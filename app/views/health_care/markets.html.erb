@@ -14,3 +14,12 @@
   </div>
 </div>
 <%= render :partial => "health_care/markets_grid" %>
+
+<% content_for :javascripts do %>
+  <script type="text/javascript" charset="utf-8">
+    $(document).ready(function() {
+      app.ctaArrows();
+      markets.marketPopup();
+    });
+  </script>
+<% end %>
