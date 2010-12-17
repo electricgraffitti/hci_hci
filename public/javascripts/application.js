@@ -115,6 +115,31 @@ var app = {
   
 };
 
+var panels = {
+  
+  setFlipTriggers: function(triggers) {
+    triggers.click(function() {
+      panels.flipPanel($(this));
+    });
+  },
+	
+	flipPanel: function(el) {
+	  
+	  if (el.hasClass('flipped')) {
+	    el.revertFlip();
+	    el.removeClass('flipped');
+	  } else {
+	    el.flip({
+        direction:'lr',
+        speed:350,
+        color:'#000'
+      });
+      el.addClass('flipped');
+	  }
+	},
+  
+};
+
 var nucleus = {
   
   nucleusNav: function() {

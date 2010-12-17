@@ -3069,14 +3069,26 @@ p.sector_big_text {
 .inner_element_box.yellow {
   background: url(../images/nucleus_content_blocks-yellow.png) 0px 0px no-repeat;
 }
+.flipped .inner_element_box.yellow {
+  background: url(../images/nucleus_content_blocks-yellow-flip.png) 0px 0px no-repeat;
+}
 .inner_element_box.green {
   background: url(../images/nucleus_content_blocks-green.png) 0px 0px no-repeat;
+}
+.flipped .inner_element_box.green {
+  background: url(../images/nucleus_content_blocks-green-flip.png) 0px 0px no-repeat;
 }
 .inner_element_box.blue {
   background: url(../images/nucleus_content_blocks-blue.png) 0px 0px no-repeat;
 }
+.flipped .inner_element_box.blue {
+  background: url(../images/nucleus_content_blocks-blue-flip.png) 0px 0px no-repeat;
+}
 .inner_element_box.red {
   background: url(../images/nucleus_content_blocks-red.png) 0px 0px no-repeat;
+}
+.flipped .inner_element_box.red {
+  background: url(../images/nucleus_content_blocks-red-flip.png) 0px 0px no-repeat;
 }
 .nucleus_content_footer {
   width: 920px;
