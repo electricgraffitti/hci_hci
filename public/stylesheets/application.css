@@ -783,6 +783,23 @@ img.home_banner {
   height: 50px;
   text-indent: -3000em;
 }
+.nucleus_banner .banner_copy {
+  position: absolute;
+  /*  float: left;
+  top: 30px;
+  left: 30px;
+  width: 350px;*/
+  text-indent: -999em;
+}
+.nucleus_banner_link {
+  bottom: 194px;
+  display: block;
+  height: 35px;
+  left: 250px;
+  position: absolute;
+  text-indent: -999em;
+  width: 150px;
+}
 .meet_nucleus {
   background: url('../images/banners/inner_banners/meet_nucleus.png') no-repeat;
 }
@@ -3025,8 +3042,55 @@ p.sector_big_text {
   background: url('../images/benefit_grid_images.jpg') 0px -2040px no-repeat;
 }
 /*******Nucleus Pages**********/
-.nucleus_content_wrap {
+.main_content .nucleus_content_wrap.grid_12 {
+  background: #1A1A1A;
+  padding: 10px;
   text-align: left;
+  width: 920px;
+}
+.element_box {
+  border: 3px solid #666666;
+  float: left;
+  height: 196px;
+  margin: 14px;
+  position: relative;
+  width: 196px;
+}
+.element_box .inner_element_box {
+  position: relative;
+  float:left;
+  width: 100%;
+  height: 100%;
+  background: #000;
+}
+.inner_element_box.yellow {
+  background: url(../images/nucleus_content_blocks-yellow.png) 0px 0px no-repeat;
+}
+.inner_element_box.green {
+  background: url(../images/nucleus_content_blocks-green.png) 0px 0px no-repeat;
+}
+.inner_element_box.blue {
+  background: url(../images/nucleus_content_blocks-blue.png) 0px 0px no-repeat;
+}
+.inner_element_box.red {
+  background: url(../images/nucleus_content_blocks-red.png) 0px 0px no-repeat;
+}
+.nucleus_content_footer {
+  width: 920px;
+  height: 60px;
+  padding-right: 20px;
+  border-top: 2px solid #5aaa46;
+  float: left;
+  background: #000;
+}
+.nucleus_content_footer a {
+  position: relative;
+  float: right;
+  display: block;
+  width: 300px;
+  height: 60px;
+  background: url(../images/nucleus_content_footer_logo.png) 0px 0px no-repeat;
+  text-indent: -3333em;
 }
 .nucleus_content {
   position: relative;

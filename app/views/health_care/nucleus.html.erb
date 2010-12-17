@@ -2,21 +2,23 @@
 <% meta_description("Nucleus is a fraud prevention SaaS application designed to help you minimize fraud and abuse in your claims payments.") %>
 
 <% content_for :banner do %>
-  <%= render :partial => "health_care/nucleus_banner" %>
+  <%= render :partial => "health_care/nucleus_banner2" %>
 <% end %>
 
 <div class="nucleus_content_wrap grid_12 alpha omega benefit_grid">
-  <div class="nucleus_content nucleus_text">
-    <h3>Get Real-Time Nucleus Updates</h3>
-    <p>
-      Want to know the latest on all things Nucleus? Sign up for real-time updates and news on the industry’s most advanced payment integrity application. We’ll send you emails and links to learn about the latest Nucleus features, functions and benefits. Nucleus is updated as regulations change and new fraud schemes are detected.
-    </p>
+  <div class="element_box">
+    <div class="inner_element_box blue"></div>
   </div>
-  <div class="nucleus_content nucleus_form">
-    <%= render :partial => "health_care/nucleus_form" %>
+  <div class="element_box">
+    <div class="inner_element_box green"></div>
+  </div>
+  <div class="element_box">
+    <div class="inner_element_box red"></div>
+  </div>
+  <div class="element_box last">
+    <div class="inner_element_box yellow"></div>
   </div>
 </div>
-<div class="nucleus_service_top_stripe"></div>
-<div class="nucleus_service_bottom_stripe">
-  <div class="nucleus_stripe_icon"></div>
+<div class="nucleus_content_footer">
+  <%= link_to "Get-Nucleus", "http://www.get-nucleus.com", :target => "_blank" %>
 </div>
