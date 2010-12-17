@@ -14,5 +14,8 @@
     <!-- flowplayer container --> 
     <div id="player"></div>
 </div>
-<%= javascript_include_tag 'index_videos' %>
+
+<% content_for :javascripts do %>
+  <%= javascript_include_tag 'index_videos', "scroll" %>
+<% end %>
 <%#= render :partial => "health_care/index_boxes" %>

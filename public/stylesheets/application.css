@@ -243,6 +243,9 @@ h2 a.small_text {
 .no_display {
   display: none;
 }
+.hidden {
+  display: none;
+}
 .white {
   color: #ffffff;
 }

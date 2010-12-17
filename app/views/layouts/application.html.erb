@@ -13,7 +13,6 @@
 	  <div id="hd" class='grid_12 alpha omega'>
       <%= render :partial => "layouts/header" %>
 	  </div>
-
     <div id="bd" class="grid_12 alpha omega">
       <% if current_user %>
         <%= render :partial => "layouts/admin_nav" %>
@@ -24,7 +23,6 @@
       <div id="banner" class="grid_12 alpha omega">
         <%= yield :banner %>
       </div>
-
       <div class="main_content grid_12 alpha omega">
         <%= yield %>
       </div>
@@ -35,9 +33,7 @@
     <div id="ft" class="grid_12 alpha omega">
       <%= render :partial => "layouts/footer" %>
     </div>
-
 	</div>
-	<%= javascript_include_tag 'scroll' %>
 	<%= render :partial => "layouts/scripts" %>
 </body>
 </html>
