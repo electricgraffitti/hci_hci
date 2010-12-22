@@ -57,6 +57,5 @@ $(document).ready(function() {
     screen: { 
       bottom: 0 
     }
-  }
-  ).playlist("#playlist .video_playlist_item");
+  }).playlist("#playlist .video_playlist_item").ipad();
 });

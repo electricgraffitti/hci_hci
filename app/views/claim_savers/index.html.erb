@@ -26,4 +26,12 @@
     <!-- flowplayer container --> 
     <div id="player"></div>
 </div>
-<%= javascript_include_tag 'index_videos' %>
+
+<% content_for :javascripts do %>
+  <%= javascript_include_tag 'index_videos' %>
+  <script type="text/javascript" charset="utf-8">
+    $(document).ready(function() {
+
+    });
+  </script>
+<% end %>

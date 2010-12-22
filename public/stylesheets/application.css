@@ -1494,6 +1494,14 @@ div.career_banner_text_wrap {
   left: 452px;
   color: #333;
 }
+#inner_banner_short .banner_cta_wrap {
+  color: #333333;
+  height: 95px;
+  left: 408px;
+  position: absolute;
+  top: 147px;
+  width: 380px;
+}
 .banner_cta_wrap h3, .banner_cta_wrap p, .banner_cta_wrap .text_link  {
   float: left;
   width: 226px;
@@ -4323,7 +4331,12 @@ div.overlay {
     background-image:url(../images/overlay/apple.png); 
     display:none; 
     padding: 0 !important; 
-} 
+}
+
+div.overlay.overlay-large {
+  width:768px; 
+  height:432px;
+}
  
 /* close button for overlay */ 
 div.overlay div.close { 
@@ -4345,7 +4358,10 @@ div.overlay div.close {
   top:0px;
   width:512px;
 } 
- 
+div.overlay.overlay-large #player, div.overlay.overlay-large #player embed, div.overlay.overlay-large #player object {
+  width:768px; 
+  height:432px;
+}
 /* absolute positioning of the player */ 
 #player embed, #player object { 
     position:relative; 

@@ -114,6 +114,8 @@ class ApplicationController < ActionController::Base
         blue_video
       when "yellow_video"
         yellow_video
+      when "nhcaa"
+        nhcaa_launch_video
       else
         main_video
     end
@@ -124,6 +126,14 @@ class ApplicationController < ActionController::Base
       video = "/banner_videos/nucleus_teaser_ipad.mp4"
     else
       video = "/banner_videos/nucleus_teaser.f4v"
+    end
+  end
+  
+  def nhcaa_launch_video
+    if ipad
+      video = "/banner_videos/nucleus_launch_ipad.mp4"
+    else
+      video = "/banner_videos/nucleus_launch.f4v"
     end
   end
   

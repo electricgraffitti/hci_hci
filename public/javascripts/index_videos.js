@@ -88,7 +88,7 @@ $(document).ready(function() {
     playlist: []
         
         
-  });
+  }).ipad();
   
   $("a.overlay_link").overlay({ 
 		// custom expose settings

@@ -45,7 +45,7 @@ $(document).ready(function() {
       plugins:  { 
         controls: null 
       }
-    });
+    }).ipad();
     
     $('.play_again_link').click(function() {
       document.getElementById("nucleus_main_video").style.display="";

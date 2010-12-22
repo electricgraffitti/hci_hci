@@ -158,3 +158,17 @@
     <%= render :partial => "health_care/job_board" %>
   </div>
 </div>
+
+<div id="video_div" class="overlay overlay-large">
+    <!-- flowplayer container --> 
+    <div id="player"></div>
+</div>
+
+<% content_for :javascripts do %>
+  <%= javascript_include_tag 'index_videos' %>
+  <script type="text/javascript" charset="utf-8">
+    $(document).ready(function() {
+
+    });
+  </script>
+<% end %>
