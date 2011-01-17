@@ -43,8 +43,10 @@ var app = {
   },
   
   mainNavHovers: function() {
-    $('ul#main_nav_ul li').removeClass('highlight');
-    $('ul#main_nav_ul a').append('<span class="hover" />').each(function(){
+    var navs = $('ul#main_nav_ul li a');
+    var lis = navs.parents('li');
+    lis.removeClass('highlight');
+    navs.append('<span class="hover" />').each(function(){
           $(this).css({fontSize : 0});
           var $span = $('> span.hover', this).css({opacity : 0});
           $(this).hover(function() {
@@ -58,7 +60,7 @@ var app = {
         });
         $(this).click( function() {
           $span.fadeTo(200, 0);
-          $('ul#main_nav_ul a').removeClass('active');
+          navs.removeClass('active');
           $(this).addClass('active');
         });
     });
@@ -88,8 +90,12 @@ var app = {
   },
   
   ctaArrows: function() {
-    $('div.cta_button').removeClass('highlight');
-    $('div.cta_button a').append('<span class="small_cta_button" />').each(function(){
+    
+    var ctaNavs = $('div.cta_button a');
+    var ctali = ctaNavs.parents('div.cta_button');
+    
+    ctali.removeClass('highlight');
+    ctaNavs.append('<span class="small_cta_button" />').each(function(){
           $(this).css({fontSize : 0});
           var $span = $('> span.small_cta_button', this).css({opacity : 0});
           $(this).hover(function() {
@@ -103,7 +109,7 @@ var app = {
         });
         $(this).click( function() {
           $span.fadeTo(300, 0);
-          $('div.small_cta_button a').removeClass('active');
+          ctaNavs.removeClass('active');
           $(this).addClass('active');
         });
     });
@@ -143,8 +149,12 @@ var panels = {
 var nucleus = {
   
   nucleusNav: function() {
-    $('ul#nucleus_banner_nav_ul li').removeClass('highlight');
-    $('ul#nucleus_banner_nav_ul a').append('<span class="hover" />').each(function(){
+    
+    var anchors = $('ul#nucleus_banner_nav_ul li a');
+    var anchorLis = anchors.parents("ul#nucleus_banner_nav_ul li");
+    
+    anchorLis.removeClass('highlight');
+    anchors.append('<span class="hover" />').each(function(){
           $(this).css({fontSize : 0});
           var $span = $('> span.hover', this).css({opacity : 0});
           $(this).hover(function() {
@@ -158,7 +168,7 @@ var nucleus = {
         });
         $(this).click( function() {
           $span.fadeTo(200, 0);
-          $('ul#nucleus_banner_nav_ul a').removeClass('active selected');
+          anchors.removeClass('active selected');
           $(this).addClass('active selected');
         });
     });
@@ -374,8 +384,8 @@ var admin = {
   },
   
   thirdPartyUrlToggle: function() {
-    $tpurl = $('#third_party_url_field').hide();
-    $tpcb = $('#article_third_party');
+    var $tpurl = $('#third_party_url_field').hide();
+    var $tpcb = $('#article_third_party');
 
     $tpcb.click( function() {
      if ($(this).is(':checked')) {
@@ -387,10 +397,12 @@ var admin = {
   },
   
   multipleUploads: function() {
-    $upload_div = $('.upload_div');
-    $upload_field = $('.upload_field');
+    var $upload_div = $('.upload_div');
+    var $upload_field = $('.upload_field');
+    var $add_link = $("#add_upload");
+    
     $upload_div.before('<a id="add_upload" href="#">Add More Attachments<a/>');
-    $add_link = $("#add_upload");
+    
     $add_link.click(function() {
       $upload_field.clone().appendTo($upload_div);
     });
