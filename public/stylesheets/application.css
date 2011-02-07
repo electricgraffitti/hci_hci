@@ -1034,6 +1034,10 @@ img.home_banner {
   border-left: 1px solid #CFCFCF;
   border-right: 1px solid #BEBEBE;
 }
+.webinar_button{height:47px;left:455px;overflow:hidden;position:relative;top:260px;width:292px;}
+.webinar_button a{position:relative;display:block;width:100%;height:100%;text-indent:-3333em;}
+.webinar_button a.register_blue{background:url(../images/banners/webinar_banner_button-blue.png) 0px 0px no-repeat;}
+.webinar_button a.register_blue:hover{background:url(../images/banners/webinar_banner_button-blue.png) 0px -48px no-repeat;}
 #nucleus_banner_nav.banner_nav .banner_nav_wrap{
   width: 120px;
   margin: 0 auto;
