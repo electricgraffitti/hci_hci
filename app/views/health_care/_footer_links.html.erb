@@ -23,13 +23,13 @@
   <ul>
     <h4>Other</h4>
     <li><%= link_to "WebEx", "https://hcinsight.webex.com/mw0305l/mywebex/default.do?siteurl=hcinsight" %></li>
-    <li>
-      <% if current_employee %>
+    <!-- <li>
+      <%# if current_employee %>
         <%= link_to "Insight U", employee_logout_path %>
-      <% else %>
+      <%# else %>
         <%= link_to "HCI Login", employee_login_path %>
-      <% end %>
-    </li>
+      <%# end %>
+    </li> -->
     <!-- <li><%= link_to "Insight U", university_path %></li> -->
     <li><%= link_to "Verisk Health", "http://www.veriskhealth.com", :target => "_blank" %></li>
     <li><%= link_to "Privacy Policy", privacy_path %></li>
