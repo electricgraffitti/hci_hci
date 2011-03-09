@@ -40,11 +40,11 @@ class Employee < ActiveRecord::Base
   # accepts_nested_attributes_for :tickets, :allow_destroy => true
   
   # Thinking Sphinx Indexes
-  define_index do
-    indexes email
-    indexes first_name
-    indexes last_name
-  end
+  # define_index do
+  #   indexes email
+  #   indexes first_name
+  #   indexes last_name
+  # end
   
   # RedCloth (textilize)
   acts_as_textiled  :description

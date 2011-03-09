@@ -1491,12 +1491,12 @@ div.career_banner_text_wrap {
 	background:url("../images/claimsaver_oci_button.png") repeat-x scroll 0 -36px transparent;
 }
 .banner_cta_wrap {
-  position: relative;
-  width: 380px;
+  color: #333333;
   height: 95px;
-  top: 230px;
-  left: 452px;
-  color: #333;
+  left: 658px;
+  position: relative;
+  top: 265px;
+  width: 380px;
 }
 #inner_banner_short .banner_cta_wrap {
   color: #333333;
@@ -1512,12 +1512,11 @@ div.career_banner_text_wrap {
   margin-left: 5px;
 }
 .main_link {
-  border:medium none;
-  display:block;
-  float:left;
-  height:95px;
-  margin-right:10px;
-  width:139px;
+  border: medium none;
+  display: block;
+  float: left;
+  height: 80px;
+  width: 251px;
 }
 .banner_cta_wrap .text_link {
   text-decoration: none;
@@ -1526,14 +1525,14 @@ div.career_banner_text_wrap {
   text-decoration: underline;
 }
 .banner_cta_wrap img {
-  box-shadow: 0px 1px 2px #666666;
+/*  box-shadow: 0px 1px 2px #666666;
   -moz-box-shadow:0 1px 2px #666666;
   -webkit-box-shadow: rgb(102, 102, 102) 0px 1px 2px;
-  background:none repeat scroll 0 0 #EFEFEF;
+  background:none repeat scroll 0 0 #EFEFEF;*/
   float:left;
-  margin:6px;
-  padding:4px;
-  border:1px solid #DEDEDE;
+/*  margin:6px;
+  padding:4px;*/
+/*  border:1px solid #DEDEDE;*/
 }
 .banner_button {
   position: absolute;
