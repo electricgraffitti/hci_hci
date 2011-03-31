@@ -1,6 +1,6 @@
 class ClaimSaversController < ApplicationController
   def index
-    @videos = Video.type("Webinar")
+    @videos = Video.type("Webinar").list(5, params[:page])
     @press_releases = Article.type('press_release').small_list(5)
     @events = Event.upcoming_events.small_list(1).last_created
     @advertisements = Advertisement.current_list.small_list(2).order_list
