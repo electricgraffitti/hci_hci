@@ -24,7 +24,13 @@ Rails::Initializer.run do |config|
   # config.gem 'bullet', :source => 'http://gemcutter.org'
   config.gem 'will_paginate'
   # config.gem "active_youtube"
-  config.gem 'thinking-sphinx'
+  config.gem(
+    'thinking-sphinx',
+    :lib     => 'thinking_sphinx',
+    :version => '1.3.20'
+  )
+
+  
     # 
     # ENV["MAGICK_CODER_MODULE_PATH"]="<installdir>/common/lib/ImageMagick-6.6.10-0/modules-Q16/coders"
     # ENV["GS_FONTPATH"] = "<installdir>/common/share/ghostscript/fonts"
