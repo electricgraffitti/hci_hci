@@ -124,6 +124,7 @@ ActionController::Routing::Routes.draw do |map|
   map.oldservices "Services.html", :controller => "health_care", :action => "OldServices"
   map.rcost_reduction "cost-reduction", :controller => "redirects", :action => "cost_reduction"
   map.rfraud_prevention "fraud-prevention", :controller => "redirects", :action => "fraud_software"
+  map.verisk_upgrade "upgrade", :controller => "redirects", :action => "verisk_upgrade"
   map.ahip_postcard "AHIP", :controller => "redirects", :action => "ahip_postcard"
   map.ahip_postcard_2 "ahip", :controller => "redirects", :action => "ahip_postcard"
   map.release_49 "49_Release_Tutorial.html", :controller => "tutorial_videos", :action => "index"

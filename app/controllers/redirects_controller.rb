@@ -24,4 +24,8 @@ class RedirectsController < ApplicationController
     redirect_to "http://www2.hcinsight.com/l/1492/2010-09-29/INNTX"
   end
   
+  def verisk_upgrade
+    redirect_to "http://www2.hcinsight.com/l/1492/2011-04-27/K9FJN"
+  end
+  
 end
