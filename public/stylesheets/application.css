@@ -1498,6 +1498,16 @@ div.career_banner_text_wrap {
   top: 265px;
   width: 380px;
 }
+.verisk_upgrade {
+  color: #333333;
+  display: block;
+  height: 42px;
+  left: 694px;
+  position: relative;
+  text-indent: -3000em;
+  top: 317px;
+  width: 180px;
+}
 #inner_banner_short .banner_cta_wrap {
   color: #333333;
   height: 95px;
@@ -3163,6 +3173,16 @@ div.nucleus_form_wrap .nucleus_submit {
 }
 #nucleus_main_video object {
   z-index: 20;
+}
+#brochure_link {
+  display: block;
+    left: 43px;
+    position: absolute;
+    top: 290px;
+    z-index: 10;
+}
+#brochure_link a {
+	text-decoration: none;
 }
 /*******Policy Page**********/
 #policy_page h4 {
