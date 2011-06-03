@@ -21,22 +21,12 @@ Rails::Initializer.run do |config|
   # config.gem "aws-s3", :lib => "aws/s3"
   config.gem 'RedCloth'
   config.gem "authlogic"
-  # config.gem 'bullet', :source => 'http://gemcutter.org'
-  config.gem 'will_paginate'
-  # config.gem "active_youtube"
+  config.gem 'will_paginate', :version => '~> 2.3.15', :source => 'http://gemcutter.org'
   config.gem(
     'thinking-sphinx',
     :lib     => 'thinking_sphinx',
     :version => '1.3.20'
-  )
-
-  
-    # 
-    # ENV["MAGICK_CODER_MODULE_PATH"]="<installdir>/common/lib/ImageMagick-6.6.10-0/modules-Q16/coders"
-    # ENV["GS_FONTPATH"] = "<installdir>/common/share/ghostscript/fonts"
-    # ENV["MAGICK_CONFIGURE_PATH"]="<installdir>/common/lib/ImageMagick-6.6.10-0/config"
-    # ENV["GS_LIB"] = "<installdir>/common/share/ghostscript/fonts"
-    
+  )    
     
   # Only load the plugins named here, in the order given (default is alphabetical).
   # :all can be used as a placeholder for all plugins not explicitly named
@@ -57,6 +47,7 @@ Rails::Initializer.run do |config|
   # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}')]
   # config.i18n.default_locale = :de
 end
+
 # require for pagination
 require 'will_paginate'
 require 'authlogic'
