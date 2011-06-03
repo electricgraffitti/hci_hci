@@ -1498,6 +1498,14 @@ div.career_banner_text_wrap {
   top: 265px;
   width: 380px;
 }
+.june_banner_cta_wrap {
+  color: #333333;
+  height: 95px;
+  left: 671px;
+  position: relative;
+  top: 283px;
+  width: 380px;
+}
 .verisk_upgrade {
   color: #333333;
   display: block;
@@ -3176,10 +3184,11 @@ div.nucleus_form_wrap .nucleus_submit {
 }
 #brochure_link {
   display: block;
-    left: 43px;
-    position: absolute;
-    top: 290px;
-    z-index: 10;
+  left: 43px;
+  position: absolute;
+  top: 290px;
+  z-index: 10;
+	font-size: 16px;
 }
 #brochure_link a {
 	text-decoration: none;
