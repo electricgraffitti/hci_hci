@@ -20,7 +20,7 @@ Rails::Initializer.run do |config|
   # config.gem "sqlite3-ruby", :lib => "sqlite3"
   # config.gem "aws-s3", :lib => "aws/s3"
   config.gem 'RedCloth'
-  config.gem "authlogic", :version => '~> 2.1.6', :source => 'http://rubygems.org'
+  config.gem "authlogic"
   config.gem 'will_paginate', :version => '~> 2.3.15', :source => 'http://gemcutter.org'
   config.gem(
     'thinking-sphinx',
