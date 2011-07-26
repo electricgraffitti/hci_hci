@@ -20,6 +20,9 @@ Rails::Initializer.run do |config|
   # config.gem "sqlite3-ruby", :lib => "sqlite3"
   # config.gem "aws-s3", :lib => "aws/s3"
   config.gem 'RedCloth'
+  # need this to run on local for now as a hack fix
+  # config.gem "authlogic", :version => '2.1.6'
+  #need this version for deploy
   config.gem "authlogic"
   config.gem 'will_paginate', :version => '~> 2.3.15', :source => 'http://gemcutter.org'
   config.gem(
