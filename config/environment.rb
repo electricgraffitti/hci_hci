@@ -23,6 +23,10 @@ Rails::Initializer.run do |config|
   # need this to run on local for now as a hack fix
   # config.gem "authlogic", :version => '2.1.6'
   #need this version for deploy
+  
+  # To run hci on local un-comment this line and comment out the other authlogic version
+  # config.gem "authlogic", :version => '2.1.6'
+  #be sure to change back before deploy
   config.gem "authlogic"
   config.gem 'will_paginate', :version => '~> 2.3.15', :source => 'http://gemcutter.org'
   config.gem(
