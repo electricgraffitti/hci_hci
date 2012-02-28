@@ -2,6 +2,9 @@
 # Likewise, all the methods added will be available for all controllers.
 
 class ApplicationController < ActionController::Base
+
+  before_filter :redirect_to_vhci
+
   helper :all # include all helpers, all the time
   protect_from_forgery # See ActionController::RequestForgeryProtection for details
 
@@ -10,6 +13,10 @@ class ApplicationController < ActionController::Base
   helper_method :current_user_session, :current_user, :current_student_session, :current_student, :box_video, :ipad, :super?, :current_employee_session, :current_employee, :employee_admin?, :super_user?
   
   private
+
+  def redirect_to_vhci
+    redirect_to "http://www.veriskhealthpad.com"
+  end
   
   def current_employee_session
     return @current_employee_session if defined?(@current_employee_session)
