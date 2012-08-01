@@ -15,7 +15,7 @@ class ApplicationController < ActionController::Base
   private
 
   def redirect_to_vhci
-    redirect_to "http://www.veriskhealthpad.com"
+    redirect_to "http://www.veriskhealth.com"
   end
   
   def current_employee_session
